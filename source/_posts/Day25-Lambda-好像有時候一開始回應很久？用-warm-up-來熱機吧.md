@@ -1,5 +1,5 @@
 ---
-title: Day25 - Lambda 好像有時候會回應失敗？用 warm-up 來熱機吧
+title: Day25 - Lambda 好像有時候一開始回應很久？用 warm-up 來熱機吧
 date: 2019-10-9 21:04:36
 tags: ["Serverless", "warm-up", "Lambda"]
 categories: 2019鐵人賽

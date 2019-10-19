@@ -4,7 +4,7 @@
 
 # Site
 title: NiJia
-subtitle: 把每一天當成第一天，當個永遠的新鮮人
+subtitle: 當個永遠的新鮮人
 description:
 keywords: ruby, python, chatbot
 author: NiJia Lin
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://nijialin.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

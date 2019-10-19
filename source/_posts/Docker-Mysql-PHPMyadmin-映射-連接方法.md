@@ -2,6 +2,7 @@
 title: "[Docker] Mysql & PHPMyadmin 映射 & 連接方法"
 date: 2019-10-16 22:06:49
 tags: ["Mysql", "Docker", "PHPMyadmin"]
+categories: Docker
 ---
 
 詳細文件[參考](https://hub.docker.com/_/mysql)

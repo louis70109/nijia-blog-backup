@@ -1,5 +1,5 @@
 ---
-title: Day 6 - 建立一個使用 Query string 來幫忙發送的 LINE Notify
+title: Day6 - 建立一個使用 Query string 來幫忙發送的 LINE Notify
 date: 2019-9-21 20:30:27
 tags: ["LINE", "Notify", "python"]
 categories: 2019鐵人賽
