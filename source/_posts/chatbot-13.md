@@ -48,7 +48,7 @@ categories: 研討會
 順手捐星星，救救卡米狗: https://github.com/etrex/kamigo
 
 ## 不懂開發也能建立屬於自己的 Chatbot - 白凱仁
-<script async class="speakerdeck-embed" data-slide="1" data-id="be82f20196b848958be409d1a34a2175" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="1" data-id="4386dd5577e74e528b353d1f56c8a201" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 接著由 Cloud Native Taiwan User Group Co-organizer - Kyle Bai 為大家帶來講題，藉由故事的敘述讓大家知道他是為甚麼啟動這個 idea 出來，並靈活運用圖片演示對話流程(筆記)，並因為打遊戲的困擾決定做一個機器人來解決朋友問題，運用 container 的技術來封裝 chatbot App，再用 k8s 透過 N 台機器來管理 container 讓它獲得不死之握能力，確保服務的可用性與延展性。
 
 最後再透過 live demo 的方式讓會眾們一飽眼福，若是對於 Cloud Native 相關技術有興趣的朋友別忘了[加入社群](https://www.facebook.com/groups/cloudnative.tw/)，或是你已經有相關主題遲遲沒地方講？趕快搭上線讓你有舞台可以發揮😎
