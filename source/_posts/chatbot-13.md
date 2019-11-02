@@ -36,8 +36,8 @@ categories: 研討會
 ![](https://i.imgur.com/zHx9RcBm.png)
 
 ## LINE Bot 上的表單驗證、搜尋以及分頁 - 郭佳甯
-<iframe name="kamigo" width="100%" height="500px" frameborder="1" src="https://docs.google.com/presentation/d/1MNCbVIsMoLAWtPjg22e1-_3PLA2OpyHKSAIvw53Vdsk/edit#slide=id.g654c56bcd3_0_5"></iframe>
-[連結](https://docs.google.com/presentation/d/1MNCbVIsMoLAWtPjg22e1-_3PLA2OpyHKSAIvw53Vdsk/edit#slide=id.g654c56bcd3_0_5)
+
+### [簡報連結](https://docs.google.com/presentation/d/1MNCbVIsMoLAWtPjg22e1-_3PLA2OpyHKSAIvw53Vdsk/edit#slide=id.g654c56bcd3_0_5)
 
 身為卡米粉的我終於再度聽到卡米哥的議程啦，這次介紹的是從 COSCUP 之後一直更新的 [kamigo](https://github.com/etrex/kamigo)，並完全使用這個套件做的寵物協尋機器人，此議程就已這隻機器人為主體介紹。
 
