@@ -1,7 +1,8 @@
 ---
 title: 使用 Serverless & Line Message API 在 AWS 上打造一個 Echo bot
 date: 2019-10-31 16:20:12
-tags:
+tags: ["Serverless", "LINE", "AWS"]
+categories: Serverless
 ---
 
 

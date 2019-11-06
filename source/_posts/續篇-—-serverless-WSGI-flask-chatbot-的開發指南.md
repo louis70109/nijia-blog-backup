@@ -1,7 +1,8 @@
 ---
 title: 續篇 — serverless + WSGI + flask + chatbot 的開發指南
 date: 2019-11-02 13:04:28
-tags:
+tags: ["Serverless", "LINE", "AWS"]
+categories: Serverless
 ---
 
 
