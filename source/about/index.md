@@ -8,6 +8,7 @@ date: 2019-10-16 11:28:36
 - [Chatbot Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
 - Farmer / Body Builder / Developer
 - [2019 COSCUP chatbot Taiwan](https://coscup.org/2019/) - organizer
+
 # Education
 - 朝陽科技大學 - 學士 2015/6
 - 朝陽科技大學 - 碩士 2016/6
