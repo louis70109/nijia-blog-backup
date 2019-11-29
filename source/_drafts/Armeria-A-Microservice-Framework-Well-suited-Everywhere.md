@@ -14,6 +14,8 @@ tags:
 # 前言
 大家好我是 [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) - NiJia，很開心這次能夠以 LINE API Expert 的身份被邀請來參加 LINE Developer Day 2019。
 
+KR 的 open source manager
+
 今年參加八月舉辦的 COSCUP，並且在第一天的 after party 參加 LINE BoF 上就已經看到 LINE 開發的 Open Source - Armeria，它是使用 Java 所撰寫的一個非同步的專案，支援 Java8, Netty, HTTP/2, Thrift 以及 gRPC。
 
 據之前的議程的以及講者的分享說這個服務已經被應用於很多 LINE 服務裡頭，因為覺得好用才推出來🤣
