@@ -51,6 +51,7 @@ date: 2019-10-16 11:28:36
 
 # Talks
 
+- [COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來ê muscle-man line bot](https://coscup2019.kktix.cc/events/coscup-taigi2019?fbclid=IwAR2K1QuVZ3RYsvtYc2U7mgSOQuh8yDe2e1UhQmN6g2_f31wTZxmn--V383Y)
 - [Chatbot Taiwan meetup 14 - 如何使用 kamigo 加速開發 LINE bot](https://chatbots.kktix.cc/events/meetup-014)
 - [中部人的 Chatbot Meetup 2 - 使用 serverless 快速建置應聲蟲](https://chatbots.kktix.cc/events/chatbots-taichung-002)
 - [Chatbot Taiwan meetup 12 - 肌肉仔](https://chatbots.kktix.cc/events/meetup-012)
