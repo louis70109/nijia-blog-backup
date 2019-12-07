@@ -6,13 +6,13 @@ date: 2019-10-16 11:28:36
 # About
 目前為 Chatbot Taiwan Co-organizer 以及 台灣 9 位 LINE API Expert 之一，主要能力為一位多棲型後端工程師，Ruby、Python、NodeJS、Golang ...，休閒時間為一位農夫以及健身者，剩餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 鐵人賽時文章獲得佳作。
 
-- Backend Developer - Hyena
-- Farmer / Body Builder / Developer
+- Backend Developer
+- Farmer / Body Builder
 - [2019 LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0)
 - [Chatbot Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
-- [2019 COSCUP chatbot Taiwan](https://coscup.org/2019/) - organizer
-- [2019 Modern Web Chatbot Taiwan](https://modernweb.tw/2019/index.html) - organizer
-- [2019 MOPCON Chatbot Taiwan](https://mopcon.org/2019/community/) - organizer
+- [2019 COSCUP [chatbot Taiwan]](https://coscup.org/2019/) - organizer
+- [2019 Modern Web [Chatbot Taiwan]](https://modernweb.tw/2019/index.html) - organizer
+- [2019 MOPCON [Chatbot Taiwan]](https://mopcon.org/2019/community/) - organizer
 
 # Education
 - 朝陽科技大學 - 學士 2015/6
