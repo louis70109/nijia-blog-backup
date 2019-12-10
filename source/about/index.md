@@ -1,5 +1,5 @@
 ---
-title: 關於 NiJia
+title: 關於 NiJia Lin
 date: 2019-10-16 11:28:36
 ---
 
@@ -10,9 +10,6 @@ date: 2019-10-16 11:28:36
 - Farmer / Body Builder
 - [2019 LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0)
 - [Chatbot Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
-- [2019 COSCUP [chatbot Taiwan]](https://coscup.org/2019/) - organizer
-- [2019 Modern Web [Chatbot Taiwan]](https://modernweb.tw/2019/index.html) - organizer
-- [2019 MOPCON [Chatbot Taiwan]](https://mopcon.org/2019/community/) - organizer
 
 # Education
 - 朝陽科技大學 - 學士 2015/6
@@ -27,7 +24,7 @@ date: 2019-10-16 11:28:36
 - Ruby / Rails
 - Python / Flask
 - Golang
-- NodeJS / Express
+- NodeJS
 
 ### Others
 - Serverless / AWS
@@ -35,11 +32,11 @@ date: 2019-10-16 11:28:36
 - Chatbot
 - Line Login
 - Line Messaging API
-- Telegram bot
+- Telegram bot API
 
 # Achievements
 
-- [LINE API Expert](https://www.line-community.me/contributors) - 2019
+- [LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0) - 2019
 - [iThome 2019 第 11 屆 **佳作**](https://ithelp.ithome.com.tw/announces/48) - 2019-11-26
 
 # Side project
@@ -61,6 +58,10 @@ date: 2019-10-16 11:28:36
 - [Chatbot Taiwan meetup 9 - 如何透過 LINE chatbot 追蹤追隨的實況主](https://chatbots.kktix.cc/events/meetup-009)
 - [Chatbot Taiwan meetup 8 - Chatbot x IOT](https://chatbots.kktix.cc/events/meetup-008)
 
+# Workshop
+
+- [手把手帶你用 LINE Notify @ 朝陽科技大學(2019/05)](https://www.slideshare.net/JiaYuLin6/step-by-step-to-use-line-notify-20190527)
+- [使用 bottender 串接 dialogflow 實現小聚機器人 @ GDG Taichung #12](https://www.meetup.com/GDGTaichung/events/266686542/)
 
 # Videos
 
@@ -68,3 +69,9 @@ date: 2019-10-16 11:28:36
 - [Modern Web 2019 - muscle man lighting talk](https://www.youtube.com/watch?v=0UUFH_nysFY)
 - [Modern web 2019 - Twitch bot lighting talk](https://www.youtube.com/watch?v=Plt9Hbt3P_I)
 - [Modern web 2019 - Live demo Kamigo gem in dojo](https://www.youtube.com/watch?v=rtULUl1eyXo)
+
+# Activities
+
+- [2019 COSCUP [chatbot Taiwan]](https://coscup.org/2019/) - organizer
+- [2019 Modern Web [Chatbot Taiwan]](https://modernweb.tw/2019/index.html) - organizer
+- [2019 MOPCON [Chatbot Taiwan]](https://mopcon.org/2019/community/) - organizer
