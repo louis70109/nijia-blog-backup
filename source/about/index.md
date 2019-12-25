@@ -17,41 +17,16 @@ date: 2019-10-16 11:28:36
 - 朝陽科技大學 - 學士 2015/6
 - 朝陽科技大學 - 碩士 2016/6
 
-# Skills
+# Experience
 
-### Frontend
-
-- Javascript / Vue.js, jQuery
-- CSS / Bootstrap
-
-### Backend
-
-- Ruby / Rails
-- Python / Flask
-- Golang
-- NodeJS
-
-### Others
-
-- Serverless / AWS
-- Ubuntu / CentOS
-- Chatbot
-- Line Login
-- Line Messaging API
-- Telegram bot API
+- 凱納股份有限 2019/06~
+- 慶宇行銷 2018/05~2019/05
+- 宜興資訊 2017/09~2018/05
 
 # Achievements
 
 - [LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0) - 2019
 - [iThome 2019 第 11 屆 **佳作**](https://ithelp.ithome.com.tw/announces/48) - 2019-11-26
-
-# Side project
-
-- [肌肉仔](https://github.com/louis70109/muscle_man)
-- [2019 鐵人賽 Serverless 範例](https://github.com/louis70109/aws-python-line-api)
-- [aws-line-echo-bot](https://github.com/louis70109/aws-line-echo-bot)
-- [bottender-typescript-sample](https://github.com/louis70109/bottender-typescript-sample)
-- [ABL 台灣隊賽程查詢機器人](https://github.com/louis70109/Taiwan-ABL-games)
 
 # Talks
 
@@ -63,8 +38,9 @@ date: 2019-10-16 11:28:36
 
 ## Lighting talks
 
-- [中部人的 Chatbot Meetup 2 - 使用 serverless 快速建置應聲蟲](https://chatbots.kktix.cc/events/chatbots-taichung-002)
-- [Chatbot Taiwan meetup 12 - 肌肉仔](https://chatbots.kktix.cc/events/meetup-012)
+- [Chatbot Taiwan meetup 15 - ABL 台灣隊查詢機器人](https://chatbots.kktix.cc/events/meetup-015)
+  <!-- - [中部人的 Chatbot Meetup 2 - 使用 serverless 快速建置應聲蟲](https://chatbots.kktix.cc/events/chatbots-taichung-002) -->
+  <!-- - [Chatbot Taiwan meetup 12 - 肌肉仔](https://chatbots.kktix.cc/events/meetup-012) -->
 - [中部人的 Chatbot Meetup 1 - 用 kamigo 打造肌肉仔](https://chatbots.kktix.cc/events/chatbots-taichung-001)
 - [Chatbot Taiwan meetup 11 - 結合 MQTT 以及 LINE API 的快問快答機器人](https://chatbots.kktix.cc/events/meetup-011)
 - [Chatbot Taiwan meetup 10 - 使用 Serverless & Line Message API 在 AWS 上打造一個 Echo bot](https://chatbots.kktix.cc/events/meetup-010)
@@ -74,6 +50,37 @@ date: 2019-10-16 11:28:36
 
 - [手把手帶你用 LINE Notify @ 朝陽科技大學(2019/05)](https://www.slideshare.net/JiaYuLin6/step-by-step-to-use-line-notify-20190527)
 - [使用 bottender 串接 dialogflow 實現 ABL 台灣隊賽程查詢機器人 @ GDG Taichung #12](https://www.meetup.com/GDGTaichung/events/266686542/)
+
+# Side project
+
+- [肌肉仔](https://github.com/louis70109/muscle_man)
+- [2019 鐵人賽 Serverless 範例](https://github.com/louis70109/aws-python-line-api)
+- [aws-line-echo-bot](https://github.com/louis70109/aws-line-echo-bot)
+- [bottender-typescript-sample](https://github.com/louis70109/bottender-typescript-sample)
+- [ABL 台灣隊賽程查詢機器人](https://github.com/louis70109/Taiwan-ABL-games)
+
+# Skills
+
+### Frontend
+
+- Javascript / Vue.js, jQuery
+- CSS / Bootstrap
+
+### Backend
+
+- Ruby / Rails
+- Python / Flask
+- NodeJS
+- Golang
+
+### Others
+
+- Serverless / AWS
+- Ubuntu / CentOS
+- Chatbot
+- Line Login
+- Line Messaging API
+- Telegram bot API
 
 # Videos
 
