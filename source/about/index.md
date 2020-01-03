@@ -11,6 +11,7 @@ date: 2019-10-16 11:28:36
 - Farmer / Body Builder
 - [2019 LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0)
 - [Chatbot Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
+- 德水園身障教養院 - 長期志工
 
 # Education
 
@@ -39,8 +40,6 @@ date: 2019-10-16 11:28:36
 ## Lighting talks
 
 - [Chatbot Taiwan meetup 15 - ABL 台灣隊查詢機器人](https://chatbots.kktix.cc/events/meetup-015)
-  <!-- - [中部人的 Chatbot Meetup 2 - 使用 serverless 快速建置應聲蟲](https://chatbots.kktix.cc/events/chatbots-taichung-002) -->
-  <!-- - [Chatbot Taiwan meetup 12 - 肌肉仔](https://chatbots.kktix.cc/events/meetup-012) -->
 - [中部人的 Chatbot Meetup 1 - 用 kamigo 打造肌肉仔](https://chatbots.kktix.cc/events/chatbots-taichung-001)
 - [Chatbot Taiwan meetup 11 - 結合 MQTT 以及 LINE API 的快問快答機器人](https://chatbots.kktix.cc/events/meetup-011)
 - [Chatbot Taiwan meetup 10 - 使用 Serverless & Line Message API 在 AWS 上打造一個 Echo bot](https://chatbots.kktix.cc/events/meetup-010)
@@ -78,9 +77,10 @@ date: 2019-10-16 11:28:36
 - Serverless / AWS
 - Ubuntu / CentOS
 - Chatbot
-- Line Login
-- Line Messaging API
-- Telegram bot API
+- LINE Login
+- LINE Messaging API
+- Dialogflow
+- Swagger
 
 # Videos
 
