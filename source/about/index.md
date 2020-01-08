@@ -3,7 +3,7 @@ title: 關於 NiJia Lin
 date: 2019-10-16 11:28:36
 ---
 
-# About
+# Who am I...
 
 目前為 Chatbot Taiwan Co-organizer 以及 台灣 9 位 LINE API Expert 之一，主要能力為一位多棲型後端工程師，Ruby、Python、NodeJS、Golang ...，休閒時間為一位農夫以及健身者，剩餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 鐵人賽時文章獲得佳作。
 
