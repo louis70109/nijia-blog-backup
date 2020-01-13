@@ -1,7 +1,7 @@
 ---
 title: Day14 - LINE Richmenu 介紹
 date: 2019-9-28 20:42:52
-tags: ["Richmenu", "LINE", "chatbot"]
+tags: ['Richmenu', 'LINE', 'chatbot']
 categories: 2019鐵人賽
 ---
 
