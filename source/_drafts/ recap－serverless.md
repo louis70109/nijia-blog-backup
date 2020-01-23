@@ -1,11 +1,13 @@
 ---
 title: recap serverless
-tags:
+tags: ['Serverless', 'Docker']
 ---
 
 # 前言
 
 這陣子在公司使用[Serverless](https://github.com/serverless/serverless)建立許多的服務在`AWS`上，而套件上也提供了[serverless-wsgi](https://www.npmjs.com/package/serverless-wsgi)這方便的的工具，讓需要快速上線一個 API 服務不再那麼難，同時也可以快速介接 AWS 的 API gateway 以及 Lambda 來實作`Serverless`架構的 API 服務。此外 Lambda 的另一個功能就是串接 AWS 上的各種服務，像是`SQS`、`SNS`、`IoT`..等等的服務，都需要在事件被觸發後有個實體(Lambda)來幫忙執行事件處理，總之講了這麼多就要來稍微抱怨一下 😆
+
+# 起源
 
 2019 的鐵人賽中我寫了使用 [serverless 串接 LINE API 的三十天文章](https://nijialin.com/categories/2019%E9%90%B5%E4%BA%BA%E8%B3%BD/)，裡頭提到很多使用 flask + WSGI 並搭配 LINE API 去建立 RESTful API，雖然這樣架起來之後很方便，但如果串到其他服務時就會有所有東西綁在一起搞成一大包的困擾
 
@@ -14,6 +16,29 @@ tags:
 因此我認為若有使用 AWS 服務的話用 serverless 寫`yaml`去控制裡頭的相依設定以及調用 AWS 上各種服務與`Lambda`相依作用來完成觸發任務會是比較好的選擇
 雖然 AWS Lambda 有 Auto-scaling 的服務，但在整個服務綁在一起之後就會一直依賴雲平台而沒辦法自己控制整體狀態
 
-而將 API 轉換成 container 之類的則可以更有彈性的切換到各個雲平台上(AWS、Google、Azure...)，只需要一個 container 就能解決這個問題
+而將 API 轉換成 container 之類的則可以更有彈性的切換到各個雲平台上(AWS、Google、Azure...)，只需要一個 container 就能解決這個問題，然後又想去玩看看 Google 的 GKE 😆
 
 使用 Serverless 專門來處理 AWS 上的各種應用服務可以讓這包程式不會因為加了 API 而讓整個專案耦合性暴增，彼此都用 call API 的方式互相溝通，達到微服務的開發方式，即便未來不想用 AWS 的服務時在切割專案時只需要換掉 Serverless 這包而不是將 container 刪除，如此一來 API 擁有 Docker 的靈活性並且擁有 Serverless 快速介接 AWS 的能力，
+
+## 短期
+
+為了快速實現與交付的情境下很適合使用，將所有資源給平台託管，只需要將`yaml`檔設定好之後基本上部署都不會有問題，後端工程師可以專心在實現需求服務，其他伺服器上的問題都交給平台來處理。
+
+> 在服務完整度、穩定性以及多元性讓開發者在前期不需要擔心整體服務是否會遇到什麼問題。
+
+## 中期
+
+在服務上線一陣子之後，流量也會逐漸提升，這些平台基本上都會提供 Auto-scaling 的服務，若可能在某些節慶中會遇到流量較大時其實還不太需要擔心，這些雲平台會幫忙處理。
+
+此時架構也有一定規模服務也穩定了，我認為在此時就要開始將 API 與其他特定雲平台服務拆開來，將 API 轉換為容器(Container)或是架在虛擬機(EC2 之類)上，原本服務可能有串接`IoT`、`SQS`等服務就繼續使用 Serverless 來幫忙，這樣的好處我列出幾點：
+
+- 服務間的責任可以分開
+- 容器化之後就不會因為雲平台有問題時而讓服務當在那邊，只需要帶著容器去其他地方即可。
+- 此時還是會依賴特定平台的其他功能，特此還是會繼續使用 Serverless 來方便串接
+  - 這些服務被觸發後都建議使用 call API 的方式來傳
+  - 才不會有共用資料庫的問題
+- 把主體先拿走才不會被綁架
+
+## 長期
+
+長期來說其實像是 AWS、Google、Azure 其實都還滿穩定的，只是說今天在實作一些東西時會需要考量到會不會有過度依賴的問題，當然被綁在特定平台上其實平常也不會遇到什麼問題，但就只是需要想好應對措施以防哪天你主機區域炸掉時所需面對到的問題們，當然自建就自建的問題，平台也會有平台的問題，還是要互相取捨去取出中間最大利益的部分，
