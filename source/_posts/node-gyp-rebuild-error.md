@@ -11,11 +11,10 @@ categories: 學習紀錄
 date: 2020-02-02 00:51:46
 ---
 
-
 # 前言
 
 我對這錯誤的印象是某次在練習寫測試時裝 [jest](https://jestjs.io/) 後出現的，檢查了`package-lock.json`後看起來`jest-haste-map`這個套件有用到 [fsevents](https://www.npmjs.com/package/fsevents)，而之後使用`npm install`或者`yarn install`皆會出現以下這個訊息：
-![node-gyp rebuild error](https://i.imgur.com/QlXtceD.png)
+![node-gyp rebuild error](https://i.imgur.com/zH6Mbzo.png)
 
 > 環境為 Mac OS Catalina version 10.15.2
 
