@@ -1,7 +1,7 @@
 ---
 title: Day21 - LINE Login 實作
 date: 2019-10-5 20:59:50
-tags: ["LINE", "LINE Login", "S3"]
+tags: ['LINE', 'LINE Login', 'S3']
 categories: 2019鐵人賽
 ---
 
@@ -28,11 +28,11 @@ categories: 2019鐵人賽
   <script>
     function auth() {
       $.ajax({
-        url: "https://YOUR_SERVERLESS_DOMAIN.amazonaws.com/dev/line/auth",
-        method: "POST",
+        url: 'https://YOUR_SERVERLESS_DOMAIN.amazonaws.com/dev/line/auth',
+        method: 'POST',
         success: function(data) {
           window.location.replace(data.result);
-        }
+        },
       });
     }
   </script>
@@ -67,7 +67,7 @@ class LineLoginController(Resource):
 			"https://api.line.me/oauth2/v2.1/token",
 			data={
 				"grant_type": "authorization_code",
-				"code": request.args.get('code'),
+				"code": request.args.get('CODE'),
 				"redirect_uri": os.environ.get('LINE_LOGIN_URI'),
 				"client_id": os.environ.get('LINE_LOGIN_CLIENT_ID'),
 				"client_secret": os.environ.get('LINE_LOGIN_SECRET'),
@@ -90,7 +90,6 @@ class LineLoginController(Resource):
 		state = "nostate" # it will be random value
 		uri = f"https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id={client}&redirect_uri={r_uri}&scope=profile%20openid%20email&state={state}"
 		return {'result': uri}
-
 ```
 
 JWT 解開的參數如下，`sub`就是 LINE 的唯一值 ID，一般拿到這個就可以知道是來自 LINE 的使用者了。
