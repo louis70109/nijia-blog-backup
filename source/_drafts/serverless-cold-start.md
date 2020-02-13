@@ -13,7 +13,17 @@ tags:
 
 ## 為什麼會休眠
 
-這裡就要提到
+主要是說這些服務建置時都是 `事件驅動`(`Event-Driven`)的屬性，意指是當前服務若收到訊息後，會呼叫對應的 Function 來處理對應服務所接收到的資料，
+
+而在處理資料之後過一段時間若沒有繼續執行，雲端提供商會將容器先刪除，然後 function 會處於 inactive 狀態(cold)，而當 function 再度被觸發時(`cold start`)則會再啟動容器來執行對應 function 來處理事件。
+
+Function Chain
+流程
+![[參考](https://mikhail.io/2018/08/serverless-cold-start-war/#how-do-languages-compare-)](https://i.imgur.com/DQoGYns.png)
+
+> 部署 -> 事件處理 -> 休眠 -> 刪除容器 -> 觸發 -> 啟動容器 -> 事件處理...
+
+上述流程就是本篇介紹的 `cold start`
 
 - event-driven functions
   Most FaaS providers have 1–3 second cold starts
@@ -32,6 +42,20 @@ use case
 
 ![platform cold start time](https://i.imgur.com/yZxWvlL.png)
 
+## 適合使用情境 - Chatbot 為例
+
+在實作聊天機器人時我們可能會針對不同的目的來定義當前的機器人的屬性，以下簡單提幾項常見的機器人：
+
+- 客服
+- 服務狀態回報
+  - CI/CD 建置狀態
+  - 伺服器 Error
+  - 排程
+- 查詢
+- 桌遊
+
+基於方便我們會使用 Serverless 來幫忙部署，考慮到在有 cold start 狀態時其實
+
 ## warm-up
 
 這邊使用 AWS 來做範例
@@ -43,3 +67,4 @@ https://serverless.com/blog/keep-your-lambdas-warm/#installing-the-warmup-plugin
 [2018 Serverless Community Survey: huge growth in serverless usage](https://serverless.com/blog/2018-serverless-community-survey-huge-growth-usage/)
 [Warm-up](https://serverless.com/blog/keep-your-lambdas-warm/#installing-the-warmup-plugin)
 [Heroku cold start](https://devcenter.heroku.com/articles/free-dyno-hours)
+[serverless 啟動流程](https://mikhail.io/2018/08/serverless-cold-start-war/#how-do-languages-compare-)
