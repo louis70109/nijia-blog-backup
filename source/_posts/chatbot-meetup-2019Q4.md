@@ -80,7 +80,7 @@ LINE->User: reply
 
 > 官方帳號已經有套用囉！想收到啲一手資訊或是想玩玩的朋友可以掃描加入 👾
 
-![](http://qr-official.line.me/L/9AirZgJAgb.png)
+![](https://qr-official.line.me/L/9AirZgJAgb.png)
 
 > 所有小聚資訊接收藏在 -> [Chatbot Taiwan GitHub](https://github.com/Chatbot-Taiwan/meetups) 上哦！
 

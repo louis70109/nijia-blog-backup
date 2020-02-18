@@ -1,7 +1,7 @@
 ---
 title: Day3 - LINE Notify 介紹
 date: 2019-9-18 14:21:37
-tags: ["LINE", "Notify"]
+tags: ['LINE', 'Notify']
 categories: 2019鐵人賽
 ---
 
@@ -13,7 +13,7 @@ LINE Notify 顧名思義就是通知屬性的服務，這個服務不是 LINE �
 
 > Overview: Becomes a provider based on OAuth2 (https://tools.ietf.org/html/rfc6749). The authentication method is authorization_code. The access token acquired here can only be used for notification services
 
-不負責任翻譯: 這個服務是基於 OAuth2 實作的，授權模式(grant_type)是 authorization_code [參考](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
+不負責任翻譯: 這個服務是基於 OAuth2 實作的，授權模式(grant_type)是 authorization_code [參考](https://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
 access_token 則是只能讓通知服務所使用的一個鑰匙
 
 ```

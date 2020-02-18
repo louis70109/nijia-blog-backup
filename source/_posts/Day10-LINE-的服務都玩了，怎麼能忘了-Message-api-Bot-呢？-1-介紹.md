@@ -1,7 +1,7 @@
 ---
 title: Day10 - LINE 的服務都玩了，怎麼能忘了 Message api (Bot) 呢？ (1) - 介紹
 date: 2019-9-24 20:36:40
-tags: ["LINE", "Message API", "chatbot"]
+tags: ['LINE', 'Message API', 'chatbot']
 categories: 2019鐵人賽
 ---
 
