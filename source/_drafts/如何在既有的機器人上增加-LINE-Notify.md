@@ -1,15 +1,19 @@
 ---
-title: 如何在既有的機器人上增加 LINE Notify
+title: 如何在既有的 Bottender chat app 上增加 LINE Notify
 tags:
 ---
 
-之前寫了一個 flask 版本的 line notify [範例](https://github.com/louis70109/flask-line-notify)
-這次就直接使用我之前的機器人 [Twitch Bot](https://github.com/louis70109/Twitch-Bot)上擴增綁定推播的功能
-這次機器人初期預設是只有回覆功能，沒有綁定推播
-但因為我時常沒跟到追蹤的直播主實況，憤而怒做 Notify 來消消氣 😆
+# 前言
 
-新增 express
-註冊 notify
+之前寫了一個 flask 版本的 line notify [範例](https://github.com/louis70109/flask-line-notify)
+這次就直接使用我之前的機器人 [Twitch Bot](https://github.com/louis70109/Twitch-Bot)上擴增綁定推播的功能，直接在既有的 Bottender Chat app 上把之前 Python 寫的 Notify 搬過來。
+因為機器人初期預設是只有回覆功能，沒有綁定推播，但時常不知道實況主開台的時間導致沒跟到追隨的實況，既然如此就直接做一個推播功能讓我可以訂閱特定直播主而不會錯過實況！😆
+
+# 新增 express
+
+# 註冊 notify
+
+# 建立一個 LIFF
 
 藉由 LIFF 把 user id 放到 state 裡面（需要 state 使用說明）
 在 notify callback 回來後會夾帶 code & state，而 state 是我們能控制的
