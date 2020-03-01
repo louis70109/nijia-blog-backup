@@ -23,3 +23,28 @@ tags:
 最後功能只要倒到對應的使用者 id 就可以進行推播了
 
 > 每個 provider 都會有不同的 user id，所以不用擔心同一個 user id 到別人的 chatbot 上會有外流的問題喔！
+
+# 綁定 Notify 後遇到的 mongoDB 問題
+
+## index
+
+> MongoDB indexes use a B-tree data structure. [[ref]](https://docs.mongodb.com/manual/indexes/#id2)
+
+## Unique
+
+使用 mongoose，目標想讓兩個欄位一起 unique，所以找到了[這篇](https://stackoverflow.com/questions/14283503/unique-documents-using-multiple-values-in-mongoose-schema)
+
+首先先定義 Schema
+
+```javascript
+const StreamNotifySchema = new Schema({
+  name: { type: String },
+  userId: { type: String, index: true },
+});
+```
+
+接著定義這兩個欄位為 unique
+
+```javascript
+StreamNotifySchema.index({ name: 1, userId: 1 }, { unique: true });
+```
