@@ -48,3 +48,5 @@ const StreamNotifySchema = new Schema({
 ```javascript
 StreamNotifySchema.index({ name: 1, userId: 1 }, { unique: true });
 ```
+
+> ⏰ 這邊有個坑需要注意: 我在還沒找到兩個欄位一起 unique 這個方法前，當時我設定 `userId` 為 unique，之後加上這個方法後卻一直卡在 userId 重複的問題，解決方法就是先把這個 table `drop`掉，重新建立每個鍵值才會正常喔！
