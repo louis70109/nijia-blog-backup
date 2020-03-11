@@ -1,12 +1,19 @@
 ---
 title: Twitch Bot 全面升級！ 增加 LINE Notify 綁定與推播實現 LINE 的三項之力！
-tags: ['LINE Bot', 'LINE Notify', 'LIFF', 'Twitch', 'Bottender']
+tags:
+  - LINE Bot
+  - LINE Notify
+  - LIFF
+  - Twitch
+  - Bottender
 categories: Chatbot
+date: 2020-03-09 23:18:11
 ---
+
 
 <img src="https://i.imgur.com/dOIsi7H.jpg" width="2000">
 
-> 滿滿的三項之力，有玩英雄聯盟的朋友一定都不陌生 🤣
+> 滿滿的三項之力 🏋️‍♂️
 
 > 來幫我的 [Twitch Bot](https://github.com/louis70109/Twitch-Bot) 按個星星 ⭐️⭐️
 
@@ -17,14 +24,9 @@ categories: Chatbot
   - 一天只推播一次絕對不吵你
   - 還有 deep link 喔！
 
-# 加入好友
-
-玩玩圖奇獸 ⬇️
-<img height="200" border="0" alt="QRcode" src="https://i.imgur.com/kRcEhBN.png">
-
 # 點子來源
 
-最近看到卡米哥寫了兩篇文章:
+最近卡米哥寫了兩篇文章
 
 - LINE Notify - [在 LINE 群組發送免費推播的方法大公開](https://medium.com/@EtrexKuo/%E7%A5%95%E6%8A%80-%E5%9C%A8-line-%E7%BE%A4%E7%B5%84%E7%99%BC%E9%80%81%E5%85%8D%E8%B2%BB%E6%8E%A8%E6%92%AD%E7%9A%84%E6%96%B9%E6%B3%95%E5%A4%A7%E5%85%AC%E9%96%8B-line%E5%AE%98%E6%96%B9%E5%B8%B3%E8%99%9F-2-0-%E9%9B%A3%E6%B0%91%E6%9C%89%E7%A6%8F%E4%BA%86-a4acd323769e)
 - [如何在 Bottender 中使用 LIFF](https://medium.com/@EtrexKuo/%E5%A6%82%E4%BD%95%E5%9C%A8-bottender-%E4%B8%AD%E4%BD%BF%E7%94%A8-liff-88634b187e72)

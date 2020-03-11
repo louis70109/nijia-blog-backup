@@ -7,11 +7,11 @@ date: 2019-10-16 11:28:36
 
 目前為 Chatbot Taiwan Co-organizer 以及 台灣 9 位 LINE API Expert 之一，主要能力為一位多棲型後端工程師，Ruby、Python、NodeJS、Golang ...，休閒時間為一位農夫以及健身者，剩餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 鐵人賽時文章獲得佳作。
 
-- Backend Developer
-- Farmer / Body Builder
-- [2019 LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0)
-- [Chatbot Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
-- 德水園身障教養院 - 長期志工
+- 🐛Backend Developer
+- 👨‍🌾Farmer / 🏋️‍♂️Body Builder
+- ⭐️[2019 LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0)
+- 👾[Chatbot Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
+- 😇 德水園身障教養院 - 長期志工
 
 # Education
 
@@ -54,6 +54,7 @@ date: 2019-10-16 11:28:36
 
 - [肌肉仔](https://github.com/louis70109/muscle_man)
 - [2019 鐵人賽 Serverless 範例](https://github.com/louis70109/aws-python-line-api)
+- [Twitch Bot](https://github.com/louis70109/Twitch-Bot)
 - [aws-line-echo-bot](https://github.com/louis70109/aws-line-echo-bot)
 - [bottender-typescript-sample](https://github.com/louis70109/bottender-typescript-sample)
 - [ABL 台灣隊賽程查詢機器人](https://github.com/louis70109/Taiwan-ABL-games)
@@ -67,18 +68,24 @@ date: 2019-10-16 11:28:36
 
 ### Backend
 
-- Ruby / Rails
 - Python / Flask
-- NodeJS
-- Golang
+- NodeJS / express
+- Ruby / Rails
+
+### SQL / NoSQL
+
+- PostgreSQL / MySQL
+- MongoDB / Redis
 
 ### Others
 
 - Serverless / AWS
+  - Route53, CloudFront, SQS, Lambda...
 - Ubuntu / CentOS
 - Chatbot
-- LINE Login
 - LINE Messaging API
+- LINE Notify
+- LINE Login
 - Dialogflow
 - Swagger
 
@@ -92,5 +99,5 @@ date: 2019-10-16 11:28:36
 # Activities
 
 - [2019 COSCUP [chatbot Taiwan]](https://coscup.org/2019/) - organizer
-- [2019 Modern Web [Chatbot Taiwan]](https://modernweb.tw/2019/index.html) - organizer
-- [2019 MOPCON [Chatbot Taiwan]](https://mopcon.org/2019/community/) - organizer
+- [2019 Modern Web [Chatbot Taiwan]](https://modernweb.tw/2019/index.html)
+- [2019 MOPCON [Chatbot Taiwan]](https://mopcon.org/2019/community/)
