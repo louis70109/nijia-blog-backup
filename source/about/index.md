@@ -48,7 +48,7 @@ date: 2019-10-16 11:28:36
 # Workshop
 
 - [手把手帶你用 LINE Notify @ 朝陽科技大學(2019/05)](https://www.slideshare.net/JiaYuLin6/step-by-step-to-use-line-notify-20190527)
-- [使用 bottender 串接 dialogflow 實現 ABL 台灣隊賽程查詢機器人 @ GDG Taichung #12](https://www.meetup.com/GDGTaichung/events/266686542/)
+- [週年 Hachathon party @ GDG Taichung #12](https://www.meetup.com/GDGTaichung/events/266686542/)
 
 # Side project
 
@@ -56,7 +56,6 @@ date: 2019-10-16 11:28:36
 - [2019 鐵人賽 Serverless 範例](https://github.com/louis70109/aws-python-line-api)
 - [Twitch Bot](https://github.com/louis70109/Twitch-Bot)
 - [aws-line-echo-bot](https://github.com/louis70109/aws-line-echo-bot)
-- [bottender-typescript-sample](https://github.com/louis70109/bottender-typescript-sample)
 - [ABL 台灣隊賽程查詢機器人](https://github.com/louis70109/Taiwan-ABL-games)
 
 # Skills

@@ -26,7 +26,7 @@ date: 2020-01-27 18:36:05
 
 > 透過以下的 gif 可以快速建立以上三個檔案
 
-![Alt text](https://github.com/microsoft/vscode-docker/raw/master/resources/readme/generateFiles.gif)
+![](https://github.com/microsoft/vscode-docker/raw/master/resources/readme/generateFiles.gif)
 
 操作方式為 `Cmd+Shift+P` >`docker: add` > `選擇語言(Node)` > `設定輸出 Port`
 
