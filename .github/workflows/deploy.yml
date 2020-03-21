@@ -28,6 +28,7 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         node-version: ${{ matrix.node-version }}
+    - run:  git config --global user.email "louis70109@gmail.com" && git config --global user.name "NiJia Lin"
     - run: npm install -g hexo
     - run: npm install
     - run: make d
