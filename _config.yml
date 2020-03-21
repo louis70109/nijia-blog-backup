@@ -92,7 +92,3 @@ deploy:
   type: git
   repo: https://github.com/louis70109/louis70109.github.io
   branch: master
-
-  plugins:
-    - hexo-generator-feed
-    - hexo-generator-sitemap
