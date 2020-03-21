@@ -13,8 +13,6 @@ jobs:
         uses: heowc/action-hexo@master
         with:
           args: generate
-        run: |
-          hexo generate
       - name: Deploy
         uses: heowc/action-hexo@master
         env:
@@ -22,5 +20,3 @@ jobs:
           NAME: NiJia Lin
         with:
           args: deploy
-        run: |
-          hexo deploy
