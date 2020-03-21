@@ -1,2 +1,2 @@
 d:
-	hexo g; hexo d -g
+	hexo clean; hexo g; hexo d -g
