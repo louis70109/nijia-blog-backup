@@ -20,8 +20,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-      - name: GIT
-        run: git config --global user.email "louis70109@gmail.com" && git config --global user.name "NiJia Lin"
       - name: NPM
         run: npm install
       - name: Clean
@@ -29,4 +27,4 @@ jobs:
       - name: Generate
         run: ./node_modules/.bin/hexo generate
       - name: Deploy
-        run: ./node_modules/.bin/hexo deploy
+        run: git config --global user.email "louis70109@gmail.com" && git config --global user.name "NiJia Lin" && ./node_modules/.bin/hexo deploy
