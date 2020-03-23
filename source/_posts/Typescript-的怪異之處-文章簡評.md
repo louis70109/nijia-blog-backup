@@ -1,5 +1,5 @@
 ---
-title: Typescript 的不一樣的地方 - Interface, Class Type, Multiple Type
+title: Typescript 不一樣的地方 - Interface, Class Type, 多型別
 date: 2020-03-21 16:11:54
 tags:
   - TypeScript

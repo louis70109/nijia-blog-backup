@@ -3,9 +3,8 @@ title: 關於 NiJia Lin
 date: 2019-10-16 11:28:36
 ---
 
-# Who am I...
 
-目前為 Chatbot Taiwan Co-organizer 以及 台灣 9 位 LINE API Expert 之一，主要能力為一位多棲型後端工程師，Ruby、Python、NodeJS、Golang ...，休閒時間為一位農夫以及健身者，剩餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 鐵人賽時文章獲得佳作。
+目前為 Chatbot Developer Taiwan Co-organizer 以及 台灣 9 位 LINE API Expert 之一，主要能力為一位多棲型後端工程師，Ruby、Python、NodeJS、Golang ...，休閒時間為一位農夫以及健身者，剩餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 鐵人賽時文章獲得佳作。
 
 - 🐛Backend Developer
 - 👨‍🌾Farmer / 🏋️‍♂️Body Builder
@@ -15,8 +14,8 @@ date: 2019-10-16 11:28:36
 
 # Education
 
-- 朝陽科技大學 - 學士 2015/6
 - 朝陽科技大學 - 碩士 2016/6
+- 朝陽科技大學 - 學士 2015/6
 
 # Experience
 
@@ -29,21 +28,6 @@ date: 2019-10-16 11:28:36
 - [LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0) - 2019
 - [iThome 2019 第 11 屆 **佳作**](https://ithelp.ithome.com.tw/announces/48) - 2019-11-26
 
-# Talks
-
-## Keynotes
-
-- [COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來 ê muscle-man line bot](https://coscup2019.kktix.cc/events/coscup-taigi2019?fbclid=IwAR2K1QuVZ3RYsvtYc2U7mgSOQuh8yDe2e1UhQmN6g2_f31wTZxmn--V383Y)
-- [Chatbot Taiwan meetup 14 - 如何使用 kamigo 加速開發 LINE bot](https://chatbots.kktix.cc/events/meetup-014)
-- [Chatbot Taiwan meetup 8 - Chatbot x IOT](https://chatbots.kktix.cc/events/meetup-008)
-
-## Lighting talks
-
-- [Chatbot Taiwan meetup 15 - ABL 台灣隊查詢機器人](https://chatbots.kktix.cc/events/meetup-015)
-- [中部人的 Chatbot Meetup 1 - 用 kamigo 打造肌肉仔](https://chatbots.kktix.cc/events/chatbots-taichung-001)
-- [Chatbot Taiwan meetup 11 - 結合 MQTT 以及 LINE API 的快問快答機器人](https://chatbots.kktix.cc/events/meetup-011)
-- [Chatbot Taiwan meetup 10 - 使用 Serverless & Line Message API 在 AWS 上打造一個 Echo bot](https://chatbots.kktix.cc/events/meetup-010)
-- [Chatbot Taiwan meetup 9 - 如何透過 LINE chatbot 追蹤追隨的實況主](https://chatbots.kktix.cc/events/meetup-009)
 
 # Workshop
 
@@ -79,14 +63,33 @@ date: 2019-10-16 11:28:36
 ### Others
 
 - Serverless / AWS
-  - Route53, CloudFront, SQS, Lambda...
+  - Route53, CloudFront, SQS, Lambda, API Gateway...
 - Ubuntu / CentOS
-- Chatbot
-- LINE Messaging API
-- LINE Notify
-- LINE Login
+- LINE 
+  - Bot
+  - Notify
+  - Login
+- Docker
+- VSTS
 - Dialogflow
 - Swagger
+
+# Talks
+
+## Keynotes
+
+- [COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來 ê muscle-man line bot](https://coscup2019.kktix.cc/events/coscup-taigi2019?fbclid=IwAR2K1QuVZ3RYsvtYc2U7mgSOQuh8yDe2e1UhQmN6g2_f31wTZxmn--V383Y)
+- [Chatbot Taiwan meetup 14 - 如何使用 kamigo 加速開發 LINE bot](https://chatbots.kktix.cc/events/meetup-014)
+- [Chatbot Taiwan meetup 8 - Chatbot x IOT](https://chatbots.kktix.cc/events/meetup-008)
+
+## Lighting talks
+
+- [Chatbot Taiwan meetup 15 - ABL 台灣隊查詢機器人](https://chatbots.kktix.cc/events/meetup-015)
+- [中部人的 Chatbot Meetup 1 - 用 kamigo 打造肌肉仔](https://chatbots.kktix.cc/events/chatbots-taichung-001)
+- [Chatbot Taiwan meetup 11 - 結合 MQTT 以及 LINE API 的快問快答機器人](https://chatbots.kktix.cc/events/meetup-011)
+- [Chatbot Taiwan meetup 10 - 使用 Serverless & Line Message API 在 AWS 上打造一個 Echo bot](https://chatbots.kktix.cc/events/meetup-010)
+- [Chatbot Taiwan meetup 9 - 如何透過 LINE chatbot 追蹤追隨的實況主](https://chatbots.kktix.cc/events/meetup-009)
+
 
 # Videos
 
