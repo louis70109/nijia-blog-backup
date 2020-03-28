@@ -12,6 +12,8 @@ categories: 學習紀錄
 
 # 三個項目
 
+<!-- more -->
+
 ## 1. 解釋 Interface 在加入額外參數時所會遇到的問題
 
 interface 必須 assign 給一個參數，若直接傳入則會出錯，雖然 TypeScript 可以多傳其他不相關的 key，但它嚴格限制沒有 assign 的使用方式
