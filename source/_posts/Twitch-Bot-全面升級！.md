@@ -10,7 +10,6 @@ categories: Chatbot
 date: 2020-03-09 23:18:11
 ---
 
-
 <img src="https://i.imgur.com/dOIsi7H.jpg" width="2000">
 
 > 滿滿的三項之力 🏋️‍♂️
@@ -20,6 +19,7 @@ date: 2020-03-09 23:18:11
 # 更新功能
 
 - 使用 LIFF 來綁定 Notify
+  <!-- more -->
 - 每個小時幫忙檢查訂閱的直播主開了沒
   - 一天只推播一次絕對不吵你
   - 還有 deep link 喔！
@@ -72,10 +72,10 @@ https://liff.line.me?state=code={NOTIFY_CODE}&state={NOTIFY_STATE}
 這樣的網址 api 接到之後一定會出問題，所以我就使用以下的 code 來幫我把它處理成我們認識的 query string:
 
 ```javascript
-const query = req.query['liff.state'].split('?')[1].split('&');
+const query = req.query["liff.state"].split("?")[1].split("&");
 const notifyPayload = { code: null, state: null };
 query.forEach(el => {
-  const queryObj = el.split('=');
+  const queryObj = el.split("=");
   if (queryObj[0] in notifyPayload) notifyPayload[queryObj[0]] = queryObj[1];
 });
 ```

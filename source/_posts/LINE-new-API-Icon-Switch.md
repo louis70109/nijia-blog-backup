@@ -10,12 +10,13 @@ categories: Chatbot
 date: 2020-03-28 11:16:47
 ---
 
-
 最近 LINE 釋出了一個我很喜歡的功能 - [Icon Switch](https://developers.line.biz/zh-hant/reference/messaging-api/#icon-nickname-switch)🎚，從字面上的意思就是可以切換機器人的 Icon (名稱以及大頭貼)，過往開發者在使用時都只能較死板的使用同一個頭像或暱稱來回應使用者，而現在只要使用這個這個功能就可以很輕易地切換你想要的大頭貼以及暱稱了 😇
 
 > 據可靠消息指出這以前是需要收費的功能，而現在則是免費推出來給大家使用，讓大家可以有更多的彈性去開發新功能～
 
 ![](https://i.imgur.com/TbtdNFjl.png)
+
+<!-- more -->
 
 # 差在哪邊
 
