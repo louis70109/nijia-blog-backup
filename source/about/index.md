@@ -80,8 +80,7 @@ date: 2019-10-16 11:28:36
 
 # Videos
 
-[COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來 ê muscle-man line bot](https://www.youtube.com/watch?v=wXV8aPj1Ibo&list=PLqfib4St70XNIzROJgyALYAdp-sQmfK0m&index=3)
-
+- [COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來 ê muscle-man line bot](https://www.youtube.com/watch?v=wXV8aPj1Ibo&list=PLqfib4St70XNIzROJgyALYAdp-sQmfK0m&index=3)
 - [Chatbot Taiwan meetup 14 - 如何使用 kamigo 快速打造 LINE bot](https://youtu.be/EJgfjrfVZPo)
 - [Modern Web 2019 - muscle man lighting talk](https://www.youtube.com/watch?v=0UUFH_nysFY)
 - [Modern web 2019 - Twitch bot lighting talk](https://www.youtube.com/watch?v=Plt9Hbt3P_I)
