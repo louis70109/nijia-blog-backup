@@ -5,7 +5,16 @@ tags:
 
 # LIFF reply 收費問題
 
-它是使用 Message api 的 Reply 功能來幫忙使用者發送條件引發 Bot 行為，並非是透過 Push api 發送讓 Bot 反應，這邊需要多注意喔！
+> [LIFF SendMessage api](https://developers.line.biz/en/docs/liff/developing-liff-apps/#developing-a-liff-app)
+
+字面上看起來很像 `Push Message` 的事件，但實際上是走 Flex Message，使用 Message api 的 Reply 功能來幫忙使用者發送條件引發 Bot 行為，並非是透過 Push api 發送讓 Bot 反應，這邊需要多注意喔！
+
+```
+liff.sendMessages([{
+    'type': 'text',
+    'text': "You've successfully sent a message! Hooray!"
+}])
+```
 
 > 但是現在 LIFF 還沒有 `postback` 的功能喔！😭
 
