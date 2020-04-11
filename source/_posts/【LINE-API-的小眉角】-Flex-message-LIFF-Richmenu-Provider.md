@@ -94,7 +94,8 @@ def link_rich_menu_to_user(self, user_id, rich_menu_id, timeout=None):
 def link_rich_menu_to_users(self, user_ids, rich_menu_id, timeout=None):
 ```
 
-範例影片
+### 範例影片
+
 ![](https://i.imgur.com/nFA7A7p.gif)
 
 ## 設定 richmenu 為預設
