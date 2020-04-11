@@ -1,5 +1,5 @@
 ---
-title: '【LINE API 的小眉角】feat. Flex message, LIFF, Richmenu, Provider'
+title: "【LINE API 的小眉角】feat. Flex message, LIFF, Richmenu, Provider"
 tags:
   - LINE
   - LIFF
@@ -9,7 +9,6 @@ tags:
 categories: Chatbot
 date: 2020-04-11 21:10:23
 ---
-
 
 ![birds](https://i.imgur.com/HHj7c5Kl.jpg)
 
@@ -31,6 +30,8 @@ liff.sendMessages([
   },
 ]);
 ```
+
+<!-- more -->
 
 > 但是現在 LIFF 還沒有 `postback` 的功能喔！😭
 
