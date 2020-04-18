@@ -5,8 +5,8 @@
 # Site
 title: NiJia
 subtitle:
-description:
-keywords: LINE API Expert, python, LINE Bot, serverless
+description: You are what you do.
+keywords: LINE API Expert, python, LINE Bot, serverless, nijialin, nijia, javascript, chatbot, LAE
 author: NiJia Lin
 language: zh-tw
 timezone:
@@ -54,7 +54,7 @@ highlight:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
