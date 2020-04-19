@@ -12,7 +12,6 @@ categories: Serverless
 date: 2020-04-19 02:38:29
 ---
 
-
 ![API Gateway Lambda authorization workflow](https://i.imgur.com/0QAGPDc.png)
 
 # 前言
@@ -20,6 +19,8 @@ date: 2020-04-19 02:38:29
 在 AWS 的 API gateway 上就有一個項目(`Authorizer`)是支援 Cognito 以及客制認證的方法，好處就是在進我們寫的 API 之前有個可以做**身份確認**的 Lambda Function 幫我們好前處理，而本篇則會介紹如何在 Serverless framework 上設定 API gateway 的 Authorizer 以及成功讓 API 回應，串接 Cognito 做使用部分就留給之後吧！
 
 #### 👉 本篇的範例全都在 [GitHub](https://github.com/louis70109/aws-serverless-authorizer)
+
+<!-- more -->
 
 # API Gateway - Authorizer
 
