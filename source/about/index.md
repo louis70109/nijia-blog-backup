@@ -3,13 +3,13 @@ title: 關於 NiJia Lin
 date: 2019-10-16 11:28:36
 ---
 
-目前為 [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) Co-organizer 以及 台灣 **11** 位 LINE API Expert 之一，主要能力為一位多棲型後端工程師，休閒時間為一位農夫以及健身者，剩餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 鐵人賽時文章獲得佳作。
+目前為 [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) Co-organizer 以及 台灣 **11** 位 [LINE API Expert](https://www.line-community.me/contributors) 之一，主要能力為一位多棲型後端工程師，喜愛參加各大研討會認識朋友收集新知，休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，剩餘時間則熱愛研究與貢獻 🐛 各種有趣的開源專案，並於 2019 鐵人賽時文章獲得佳作。
 
 - 🐛Backend Developer
 - 👨‍🌾Farmer / 🏋️‍♂️Body Builder
 - ⭐️[2019 LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0)
 - 👾[Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
-- 😇 德水園身障教養院 - 長期志工
+- 😇 德水園身障教養院 - 長期志工 2016~
 
 # Experience
 
@@ -47,15 +47,15 @@ date: 2019-10-16 11:28:36
 
 ### Others
 
-| Category         | List                                            |
-| ---------------- | ----------------------------------------------- |
-| Serverless / AWS | Route53, CloudFront, SQS, Lambda, API Gateway.. |
-| LINE             | Bot, Notify, Login                              |
-| OS               | Ubuntu, CentOS                                  |
-| Git              | GitHub, Azure DevOps                            |
-| Google           | Dialogflow                                      |
-| Document tool    | Markdown, Swagger                               |
-| DevOps           | Docker                                          |
+| Category      | List                                                                      |
+| ------------- | ------------------------------------------------------------------------- |
+| AWS           | Route53, CloudFront, SQS, Lambda, API Gateway, Amplify, S3, Cognito, IoT  |
+| LINE          | Message API(Bot), Notify, Login, LIFF                                     |
+| OS            | Ubuntu, CentOS                                                            |
+| Git           | GitHub, Azure DevOps, Bitbucket                                           |
+| Google        | Dialogflow                                                                |
+| Document tool | Markdown, [Swagger](https://github.com/louis70109/aws-swagger-wsgi-flask) |
+| DevOps        | Docker, Serverless                                                        |
 
 # Workshop
 
@@ -66,9 +66,10 @@ date: 2019-10-16 11:28:36
 
 - [肌肉仔](https://github.com/louis70109/muscle_man)
 - [2019 鐵人賽 Serverless 範例](https://github.com/louis70109/aws-python-line-api)
-- [Twitch Bot](https://github.com/louis70109/Twitch-Bot)
+- [圖奇獸 - Twitch Bot](https://github.com/louis70109/Twitch-Bot)
 - [aws-line-echo-bot](https://github.com/louis70109/aws-line-echo-bot)
-- [ABL 台灣隊賽程查詢機器人](https://github.com/louis70109/Taiwan-ABL-games)
+- ~~[ABL 台灣隊賽程查詢機器人](https://github.com/louis70109/Taiwan-ABL-games)~~ (因疫情關係停賽導致無法更新 😭)
+- [動物森有會揪團機器人](https://github.com/louis70109/animal-crossing-bot)
 
 # Talks
 
@@ -90,6 +91,6 @@ date: 2019-10-16 11:28:36
 
 ### Organizer
 
-- [2019 COSCUP [chatbot Taiwan]](https://coscup.org/2019/)
+- [2019 / 2020 COSCUP [chatbot Taiwan]](https://coscup.org/2019/)
 - [2019 Modern Web [Chatbot Taiwan]](https://modernweb.tw/2019/index.html)
 - [2019 MOPCON [Chatbot Taiwan]](https://mopcon.org/2019/community/)
