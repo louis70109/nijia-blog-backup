@@ -3,7 +3,7 @@ title: 關於 NiJia Lin
 date: 2019-10-16 11:28:36
 ---
 
-目前為 [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) Co-organizer 以及 台灣 **11** 位 [LINE API Expert](https://www.line-community.me/contributors) 之一，主要能力為一位多棲型後端工程師，喜愛參加各大研討會認識朋友收集新知，休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，剩餘時間則熱愛研究與貢獻 🐛 各種有趣的開源專案，並於 2019 鐵人賽時文章獲得佳作。
+目前為 [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) Co-organizer 以及 台灣 **11** 位 [LINE API Expert](https://www.line-community.me/contributors) 之一，對於新事物總是有著很多的熱情並勇於嘗試，主要能力為一位多棲型後端工程師，喜愛參加各大研討會認識朋友收集新知，休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，其餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 鐵人賽時於 Modern Web 獲得**佳作**。
 
 - 🐛Backend Developer
 - 👨‍🌾Farmer / 🏋️‍♂️Body Builder
