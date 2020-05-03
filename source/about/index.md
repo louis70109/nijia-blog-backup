@@ -5,7 +5,7 @@ date: 2019-10-16 11:28:36
 
 目前為 [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) Co-organizer 以及 台灣 **11** 位 [LINE API Expert](https://www.line-community.me/contributors) 之一，對於新事物總是有著很多的熱情並勇於嘗試，主要能力為一位多棲型後端工程師，喜愛參加各大研討會認識朋友收集新知，休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，其餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 鐵人賽時於 Modern Web 獲得**佳作**。
 
-- 🐛Backend Developer
+- 👊🐛Backend Developer
 - 👨‍🌾Farmer / 🏋️‍♂️Body Builder
 - ⭐️[2019 LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0)
 - 👾[Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
@@ -47,15 +47,15 @@ date: 2019-10-16 11:28:36
 
 ### Others
 
-| Category      | List                                                                      |
-| ------------- | ------------------------------------------------------------------------- |
-| AWS           | Route53, CloudFront, SQS, Lambda, API Gateway, Amplify, S3, Cognito, IoT  |
-| LINE          | Message API(Bot), Notify, Login, LIFF                                     |
-| OS            | Ubuntu, CentOS                                                            |
-| Git           | GitHub, Azure DevOps, Bitbucket                                           |
-| Google        | Dialogflow                                                                |
-| Document tool | Markdown, [Swagger](https://github.com/louis70109/aws-swagger-wsgi-flask) |
-| DevOps        | Docker, Serverless                                                        |
+| Category       | List                                                                      |
+| -------------- | ------------------------------------------------------------------------- |
+| AWS            | Route53, CloudFront, SQS, Lambda, API Gateway, Amplify, S3, Cognito, IoT  |
+| LINE           | Message API(Bot), Notify, Login, LIFF                                     |
+| OS             | Ubuntu, CentOS                                                            |
+| Git            | GitHub, Azure DevOps, Bitbucket                                           |
+| Google         | Dialogflow                                                                |
+| Document tools | Markdown, [Swagger](https://github.com/louis70109/aws-swagger-wsgi-flask) |
+| DevOps         | Docker, Serverless                                                        |
 
 # Workshop
 
@@ -64,12 +64,13 @@ date: 2019-10-16 11:28:36
 
 # Side project
 
+- [Lotify](https://github.com/louis70109/lotify) - LINE Notify Client SDK
 - [肌肉仔](https://github.com/louis70109/muscle_man)
 - [2019 鐵人賽 Serverless 範例](https://github.com/louis70109/aws-python-line-api)
-- [圖奇獸 - Twitch Bot](https://github.com/louis70109/Twitch-Bot)
+- [圖奇獸 - Twitch Bot](https://github.com/louis70109/Twitch-Bot) - 基於 Bottender 建立查詢 Twtich 直播的 LINE bot
 - [aws-line-echo-bot](https://github.com/louis70109/aws-line-echo-bot)
 - ~~[ABL 台灣隊賽程查詢機器人](https://github.com/louis70109/Taiwan-ABL-games)~~ (因疫情關係停賽導致無法更新 😭)
-- [動物森有會揪團機器人](https://github.com/louis70109/animal-crossing-bot)
+- [動物森友會揪團機器人](https://github.com/louis70109/animal-crossing-bot)
 
 # Talks
 
