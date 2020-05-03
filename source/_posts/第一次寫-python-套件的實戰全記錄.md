@@ -79,7 +79,7 @@ pytest
 
 <script src="https://gist.github.com/louis70109/e39302e76c66a450991fb2aea5838a35.js"></script>
 
-## 傳至 Dummy
+## 傳至 Dummy server
 
 這邊 api_origin & bot_origin 會這樣設計是某次看到 bottender 文件上有使用這樣的設計，目的為了讓開發者可以把請求打回自己建立的 server 上，不管壓力測試或是負載平衡，如此一來彈性就大增了 🙂，因此參考之下就加入 SDK 的設計了。
 
