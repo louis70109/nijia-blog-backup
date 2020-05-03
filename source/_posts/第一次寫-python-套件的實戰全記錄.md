@@ -1,5 +1,5 @@
 ---
-title: 第一次寫 Python SDK 的實戰全記錄
+title: 第一次寫 Python SDK 實戰全記錄
 tags:
   - Python
   - LINE
@@ -7,7 +7,6 @@ tags:
 categories: 學習紀錄
 date: 2020-05-03 19:46:49
 ---
-
 
 ![](https://i.imgur.com/Rms5ZNG.png)
 
@@ -89,6 +88,10 @@ pytest
 ## 預設環境變數 - `LINE_CLIENT_ID`、`LINE_CLIENT_SECRET`、`LINE_REDIRECT_URI`
 
 設定三個目的是可以讓使用者只要在`環境變數`中引入這三個參數，SDK 預設就會去載入至 Instance 中，當然使用者也可以手動輸入指定自己定義的變數名稱。
+😆
+放在 class level 用意是若開發者在起 server 時已經放在環境變數中，則不需要每次在 instance level 時才去環境變數中取值，稍微增加點效率(~~根本無感~~)。
+
+> 若對這部分不了解可以[參考這篇](https://www.digitalocean.com/community/tutorials/understanding-class-and-instance-variables-in-python-3)
 
 # Markdown 轉 RestructuredText 的麻煩事 - 使用 m2r 套件
 
