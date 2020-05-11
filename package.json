@@ -6,8 +6,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "server": "hexo server",
-    "new": "hexo new draft",
-    "publish": "hexo publish",
+    "new": "hexo new draft ",
+    "publish": "hexo publish ",
     "deploy": "git add .; git commit -m 'backup'; git push; hexo clean; hexo g; hexo d -g"
   },
   "hexo": {
