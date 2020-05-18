@@ -60,7 +60,7 @@ date: 2019-10-16 11:28:36
 # Workshop
 
 - [手把手帶你用 LINE Notify @ 朝陽科技大學(2019/05)](https://www.slideshare.net/JiaYuLin6/step-by-step-to-use-line-notify-20190527)
-- [週年 Hachathon party @ GDG Taichung #12](https://www.meetup.com/GDGTaichung/events/266686542/)
+- [GDG 週年之 Hachathon party @ GDG Taichung #12](https://www.meetup.com/GDGTaichung/events/266686542/)
 
 # Side project
 
