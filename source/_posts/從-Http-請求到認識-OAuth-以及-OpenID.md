@@ -115,7 +115,7 @@ DNS 全名為 Domain Name Server，主要職責是幫忙把 網域名稱(Domain 
 
 > 這裡會簡單敘述一下流程以及功能，但詳細的還是要參考其他部落格詳細的文章喔！
 
-## 裝備
+## SSL 有的裝備
 
 SSL 申請時一般都會給三種東西，公鑰(Public key)、私鑰(Private key)、CA(Certificate authority)
 
@@ -144,6 +144,10 @@ Visitor 就等於前面文章提到的 Client，而 CloudFlare 則等於 Server 
 這邊沒有提太多實作跟詳細內容，但看著上述的流程來說有沒有覺得其實跟`三方交握`很像，差別在於 Server 端回傳時有多給 Client 一個公鑰(Public Key)，所以再記這部分時，利用三方交握來理解這件事情，基本上就如魚得水了！😊
 
 # OAuth
+
+接著就一起陪我釐清 OAuth 吧！
+
+## 說明
 
 讓客戶端能以 OAuth 開放標準在第三方應用程式上透過授權(Authorization)的方式取得在服務提供商(LINE、Facebook、Google...)的資料(檔案、照片、影片...)。
 
@@ -193,6 +197,12 @@ Client = A 員工、RO = 大樓警衛、AS = 公司櫃檯、RS = 倉庫
 6. 倉庫門打開後 A 員工從裡面拿取自己需要的零件(Protected Resource)
 
 > 透過這樣的解釋應該比較好懂吧 ❓
+
+## 小結
+
+看著流程圖，有沒有覺得它還是很像三方交握嗎？只是 Server 端功能切開變成微服務的樣子，並透過三個步驟來獲取 Server 的資源，如此一來會不會覺得這樣親切點呢？
+
+希望能藉由文章的敘述讓你能更快速點了解這些玩意兒。
 
 # OpenID Connect
 
