@@ -35,9 +35,27 @@ date: 2020-06-01 02:26:55
 
 ## 向 DNS 要 IP
 
-![](https://i.imgur.com/8IUwjtr.png)
+```puml
+@startuml
 
-> 參考[六角學院](https://w3c.hexschool.com/blog/8d691e4f)
+User -> (Browser): 1. https://www.google.com
+(Browser) -down-> (DNS): 2. 請給我 IP
+(DNS) <--> (Name Server): 3. 將 Domain 轉成 IP
+(DNS) --> (Browser): 4. IP 為 123.223.45.6
+(Browser) -right-> (123.223.45.6): 5.取得 IP 後訪問主機\n並下載資源
+(123.223.45.6) --> (Web Server): 6. 索取資源
+(Web Server) -right-> (123.223.45.6): 7. 回傳\n靜態檔案\nJSON 或 XML
+(123.223.45.6) -> (Browser): 8. 回傳靜態資料
+(Browser) -right-> User: 9. 渲染畫面
+note left of (Name Server)
+  處理四個部分:
+  root
+  .com
+  www
+  .google
+end note
+@enduml
+```
 
 DNS 全名為 Domain Name Server，主要職責是幫忙把 網域名稱(Domain Name) 轉成 IP，因為網域名稱是人才看得懂而機器只認得 IP，因此需要 DNS 來幫忙轉譯。
 
