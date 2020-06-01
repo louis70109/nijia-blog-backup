@@ -35,8 +35,6 @@ date: 2020-06-01 02:26:55
 
 ## 向 DNS 要 IP
 
-![](https://i.imgur.com/utFSLWk.png)
-
 ```puml
 @startuml
 
