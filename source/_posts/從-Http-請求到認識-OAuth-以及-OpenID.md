@@ -89,7 +89,12 @@ DNS 全名為 Domain Name Server，主要職責是幫忙把 網域名稱(Domain 
 ## 準備連線 - 三方交握 (Three-Way Handshake)
 
 ![](https://i.imgur.com/9pRGWnc.png)
-
+@startuml
+Client -> Server: 我需要連線(SYN)，回答請用 M
+Server -> Client: 收到了，是 M+1 嗎(ACK)？\n 回答請用 N (SYN)
+Client -> Server: 收到了，N+1 是我收到的訊號(ACK)
+Client <--> Server: Server 確認完後開始連線
+@enduml
 這邊我用最簡單的表示，`SYN`在三方交握會是一個帶有序列號(n)的請求，而`ACK`則是代表回應對方我們這邊收到的訊號，會帶有 n+1 的數字回傳。
 
 在三方交握中，會先由 Client 告訴 Server 現在它要連線並給一個數字，回傳時會送 n+1 的原因是避免在請求的過程中因各種因素導致回來的值錯誤時的一個防範機制，用 `+1` 這個做法來確保對方給的回傳值是我剛剛送出去的值 +1，避免連線過程中混亂。
