@@ -129,11 +129,15 @@ social:
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   FB Page: https://www.facebook.com/linnijia || facebook
+  Linkedin: https://www.linkedin.com/in/jia-yu-lin-8991a9135 || linkedin
 #VK Group: https://vk.com/yourname || vk
 #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
 #YouTube: https://youtube.com/yourname || youtube
 #Instagram: https://instagram.com/yourname || instagram
 #Skype: skype:yourname?call|chat || skype
+
+plantuml:
+  render: "PlantUMLServer"
 
 social_icons:
   enable: true
@@ -204,7 +208,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+save_scroll: true
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
