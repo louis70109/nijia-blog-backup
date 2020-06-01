@@ -35,7 +35,7 @@ date: 2020-06-01 02:26:55
 
 ## 向 DNS 要 IP
 
-![Alt text](../diagrams/out/http_request/http_request.png "Optional title")
+![Alt text](/diagrams/out/http_request/http_request.png "Optional title")
 
 DNS 全名為 Domain Name Server，主要職責是幫忙把 網域名稱(Domain Name) 轉成 IP，因為網域名稱是人才看得懂而機器只認得 IP，因此需要 DNS 來幫忙轉譯。
 
