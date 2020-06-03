@@ -8,7 +8,6 @@ categories: 學習紀錄
 date: 2020-06-03 18:59:38
 ---
 
-
 ![](https://cdn.pixabay.com/photo/2015/03/04/16/11/sunset-659012_1280.jpg)
 
 # 前言
@@ -27,7 +26,7 @@ date: 2020-06-03 18:59:38
 
 > 不得不說 [hexo 官網](https://hexo.io/plugins/)真的是很多特別又好玩的套件，大家可以上去找找看有沒有適合自己寫作風格的套件喔！
 
-## 寫環境
+## 寫作環境
 
 - VScode
 - MacOS
