@@ -5,40 +5,56 @@ categories: 學習紀錄
 tags:
 ---
 
-![](https://i.imgur.com/0QAGPDc.png)
-
 # 前言
 
 以前在寫 Rails 時管理資料庫都是透過 ActiveRecord 來幫我處理 Database Schema 的事情，隨著年紀的增長以及語言的切換後，開始要自己手動建立 Database，只是過往都是憑著自己的印象去建立表格，抑或是遷移(migration)時開兩個視窗一個一個比對，但這樣的舉動實在是很費時。
 
-之後公司的主管教了 DDL 這個方法給我，讓我對於這個費時的工作有了新的見解，以下就是我學到的部分囉！
+之後被教了 DDL 這個方法，讓我對於這個費時的工作有了新的見解，以下就介紹我學到的部分囉！
+
+# What is DDL?
 
 <!-- more -->
 
-# DDL 步驟
+資料定義語言（Data Definition Language，DDL）屬於 DBMS 語言的一種，用於定義 DB schemas，且 DBMS 內有 DDL 編譯器 (complier) 能夠處理 DDL，由 CREATE、ALTER 與 DROP 三個語法所組成。
 
-建立一個新的 Table
+> 參考來自 [wiki](https://zh.wikipedia.org/wiki/%E8%B3%87%E6%96%99%E5%AE%9A%E7%BE%A9%E8%AA%9E%E8%A8%80)
+
+# 操作環境
+
+- MacOS
+- Docker
+- PgAdmin
+- PostgreSQL
+- [參考範例](https://github.com/louis70109/postgresql-pgadmin)
+
+# 介紹
+
+## 建立範例 Table
+
+首先先到 pgadmin 中，建立一個新的 Table
 ![](https://i.imgur.com/5lq8eip.png)
 
-建立一個 Item 的表
+建立一個範例的 Item table
 ![](https://i.imgur.com/NvDIicH.png)
 
-再來 Book 表
+再來是 Book table
 ![](https://i.imgur.com/qdmIQCE.png)
 
-加個 Item Foreign Key
+簡單加個 Item 的外鍵 (Foreign Key)
 ![](https://i.imgur.com/XoQai7x.png)
 
-透過 `CEATE SCRIPT` 來找我們要的 DDL 腳本
-![](https://i.imgur.com/kYoWCTg.png)
+## 找 DDL
+
+接著就要開始找 DDL 啦！透過 `CREATE SCRIPT` 來找我們要的 DDL 腳本
+![](https://i.imgur.com/kYoWCTgl.png)
 
 儲存 `Item` & `Book` 的內容 (存成`.sql` 或是任一文字檔案)
 ![](https://i.imgur.com/5Br3HkM.png)
 
-## 注意事項
+### 注意事項
 
-在前面的範例中 id 使用 流水號(`serial`)，它存在於 `Sequences` 的地方，要記得將它一併帶出
-![](https://i.imgur.com/d9jRfBi.png)
+在前面的範例中 id 使用 流水號(`serial`)，它存在於 `Sequences` 的地方，要記得將它一併帶出後複製起來：
+![](https://i.imgur.com/d9jRfBil.png)
 
 否則會遇到以下問題:
 
@@ -49,16 +65,16 @@ SQL state: 42P01
 
 ---
 
-![](https://i.imgur.com/kbCLciY.png)
-
----
+## 將範例 Item & Book 刪除
 
 接著就把它刪除來做測試吧！
-![](https://i.imgur.com/phQ8AYv.png)
-![](https://i.imgur.com/F6kVuYw.png)
+![](https://i.imgur.com/phQ8AYvl.png)
+![](https://i.imgur.com/F6kVuYwl.png)
+
+## 將 Table 放回去
 
 在 `Public` 這個下拉式選單中`右鍵`就會看到 `CREATE SCRIPT` 的選項
-![](https://i.imgur.com/BS6wNXx.png)
+![](https://i.imgur.com/BS6wNXxl.png)
 
 把剛剛的 DDL 複製過來，記得要先讓 Sequence 先進去接著才是 Table
 
