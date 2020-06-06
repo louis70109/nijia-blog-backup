@@ -1,37 +1,62 @@
 ---
-title:
-  "[object Object]": null
-categories: 學習紀錄
+title: 【SQL】如何在 pgAdmin 上使用 DDL 快速初始化資料表
 tags:
+  - PostgreSQL
+  - pgAdmin
+  - SQL
+  - DDL
+categories: SQL
+date: 2020-06-06 11:51:57
 ---
+
 
 # 前言
 
-以前在寫 Rails 時管理資料庫都是透過 ActiveRecord 來幫我處理 Database Schema 的事情，隨著年紀的增長以及語言的切換後，開始要自己手動建立 Database，只是過往都是憑著自己的印象去建立表格，抑或是遷移(migration)時開兩個視窗一個一個比對，但這樣的舉動實在是很費時。
-
-之後被教了 DDL 這個方法，讓我對於這個費時的工作有了新的見解，以下就介紹我學到的部分囉！
-
-# What is DDL?
+當接觸到 PostgreSQL 後 pgAdmin 應該是最常被找到的一個免費 GUI 工具，雖然因為是網站的緣故，很多體驗與桌面版稍嫌落差(跟 postwomen 之餘 postman 一樣)，但今天會告訴大家一個滿好用的功能 - `DDL`，而 DDL 在其他工具上(如 Navicat)上就讓我找不到地方使用，接著就帶大家認識一下 `DDL` 並透過 `pgAdmin` 講解使用的過程 🙂
 
 <!-- more -->
 
-資料定義語言（Data Definition Language，DDL）屬於 DBMS 語言的一種，用於定義 DB schemas，且 DBMS 內有 DDL 編譯器 (complier) 能夠處理 DDL，由 CREATE、ALTER 與 DROP 三個語法所組成。
+# 流程
+
+接下來文章會按照下圖的步驟去說明：
+
+```puml
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor user
+rectangle Container {
+  user -- (pgAdmin)
+  (pgAdmin) .> (PostgreSQL)
+}
+(pgAdmin) --> (Create table): [1]
+(pgAdmin) --> (Find & save DDL): [2]
+(pgAdmin) --> (Drop table): [3]
+(pgAdmin) --> (Use DDL to create Table): [4]
+@enduml
+```
+
+# What is DDL?
+
+簡單來說 `資料定義語言`（Data Definition Language，DDL）是屬於 DBMS 語言的一種，用於定義 DB schema，且 DBMS 內基本上都有 DDL 編譯器 (complier) 能夠處理 DDL，而它是由 CREATE、ALTER 與 DROP 三個語法所組成。
 
 > 參考來自 [wiki](https://zh.wikipedia.org/wiki/%E8%B3%87%E6%96%99%E5%AE%9A%E7%BE%A9%E8%AA%9E%E8%A8%80)
 
 # 操作環境
 
+以下是我操作的環境，使用 docker-compose 幫我架起 `postgreSQL` & `pgAdmin`。
+
 - MacOS
 - Docker
-- PgAdmin
-- PostgreSQL
-- [參考範例](https://github.com/louis70109/postgresql-pgadmin)
+  - pgAdmin
+  - PostgreSQL
+  - [參考範例](https://github.com/louis70109/postgresql-pgAdmin)
 
-# 介紹
+# 步驟介紹
 
-## 建立範例 Table
+## 1. 建立範例 Table
 
-首先先到 pgadmin 中，建立一個新的 Table
+首先先到 pgAdmin 中，建立一個新的 Table
 ![](https://i.imgur.com/5lq8eip.png)
 
 建立一個範例的 Item table
@@ -43,7 +68,7 @@ tags:
 簡單加個 Item 的外鍵 (Foreign Key)
 ![](https://i.imgur.com/XoQai7x.png)
 
-## 找 DDL
+## 2. 找出 DDL
 
 接著就要開始找 DDL 啦！透過 `CREATE SCRIPT` 來找我們要的 DDL 腳本
 ![](https://i.imgur.com/kYoWCTgl.png)
@@ -53,7 +78,7 @@ tags:
 
 ### 注意事項
 
-在前面的範例中 id 使用 流水號(`serial`)，它存在於 `Sequences` 的地方，要記得將它一併帶出後複製起來：
+在前面的範例中 id 使用 流水號(`serial`)，它存在於 `Sequences` 的地方，所以千萬要記得將它一併帶出後儲存起來：
 ![](https://i.imgur.com/d9jRfBil.png)
 
 否則會遇到以下問題:
@@ -65,20 +90,20 @@ SQL state: 42P01
 
 ---
 
-## 將範例 Item & Book 刪除
+## 3. 將範例 Item & Book 刪除
 
 接著就把它刪除來做測試吧！
 ![](https://i.imgur.com/phQ8AYvl.png)
 ![](https://i.imgur.com/F6kVuYwl.png)
 
-## 將 Table 放回去
+## 4. 使用 DDL 將 Table 放回去
 
 在 `Public` 這個下拉式選單中`右鍵`就會看到 `CREATE SCRIPT` 的選項
 ![](https://i.imgur.com/BS6wNXxl.png)
 
 把剛剛的 DDL 複製過來，記得要先讓 Sequence 先進去接著才是 Table
 
-抑或是可以將兩個組裝在一起，先把 Sequence 放在前面，如下:
+抑或是可以將兩個組裝在一起，先把 Sequence 放在前面，其中一個範例如下:
 
 ```
 -- SEQUENCE: public.Item_id_seq
@@ -112,7 +137,7 @@ ALTER TABLE public."Item"
     OWNER to postgres;
 ```
 
-這樣就能省掉一個步驟並且不用一直記得順序，儲存時也建議這樣儲存避免失誤。
+將 `Sequence` 以及 `Table` 的 DDL 組在一起建立就能省掉一個步驟，之後的 Table 使用情境也會雷同，若照著步驟做有出現錯誤時，請記得檢查使用否`順序`有問題。
 
 # 結論
 
