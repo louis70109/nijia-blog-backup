@@ -13,14 +13,14 @@ date: 2019-10-16 11:28:36
 
 # Experience
 
-- 凱納股份有限 2019/06~2020/04
-- 慶宇行銷 2018/05~2019/05
-- 宜興資訊 2017/09~2018/05
+- 凱納股份有限公司 2019/06~2020/04
+- 慶宇行銷有限公司 2018/05~2019/05
+- 宜興資訊有限公司 2017/09~2018/05
 
 # Education
 
-- 朝陽科技大學 - 碩士 2016/6
-- 朝陽科技大學 - 學士 2015/6
+- 朝陽科技大學 - 碩士 2015/09~2016/6
+- 朝陽科技大學 - 學士 2011/09~2015/6
 
 # Achievements
 
@@ -77,12 +77,17 @@ date: 2019-10-16 11:28:36
 - [COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來 ê muscle-man line bot](https://coscup2019.kktix.cc/events/coscup-taigi2019?)
   - [活動照片](https://www.flickr.com/photos/coscup/49694567242/in/album-72157713607815171/)
   - [影片](https://www.youtube.com/watch?v=wXV8aPj1Ibo&list=PLqfib4St70XNIzROJgyALYAdp-sQmfK0m&index=3)
+- [Chatbot Taiwan meetup 19 - 使用 Lotify + Swagger 建置可共用的 LINE Notify bot](https://chatbots.kktix.cc/events/meetup-019)
+  - [直播剪輯](https://www.youtube.com/watch?v=agYVz6dzh1I)
+  - [投影片](https://www.slideshare.net/JiaYuLin6/build-line-notify-bot-by-lotify-and-create-client-library-by-swagger-20200527-234623929)
 - [Chatbot Taiwan meetup 14 - 如何使用 kamigo 加速開發 LINE bot](https://chatbots.kktix.cc/events/meetup-014)
+  - [投影片](https://www.slideshare.net/JiaYuLin6/kamigo-reviews-20191127-198374007)
 - [Chatbot Taiwan meetup 8 - Chatbot x IOT](https://chatbots.kktix.cc/events/meetup-008)
 
 # Videos
 
 - [COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來 ê muscle-man line bot](https://www.youtube.com/watch?v=wXV8aPj1Ibo&list=PLqfib4St70XNIzROJgyALYAdp-sQmfK0m&index=3)
+- [Chatbot Taiwan meetup 19 - 使用 Lotify + Swagger 建置可共用的 LINE Notify bot](https://www.youtube.com/watch?v=agYVz6dzh1I)
 - [Chatbot Taiwan meetup 14 - 如何使用 kamigo 快速打造 LINE bot](https://youtu.be/EJgfjrfVZPo)
 - [Modern Web 2019 - muscle man lighting talk](https://www.youtube.com/watch?v=0UUFH_nysFY)
 - [Modern web 2019 - Twitch bot lighting talk](https://www.youtube.com/watch?v=Plt9Hbt3P_I)
