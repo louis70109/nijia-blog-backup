@@ -7,7 +7,6 @@ categories: Chatbot
 date: 2020-01-12 00:53:22
 ---
 
-
 # 前言
 
 在去年大約五月的時候寫了一隻 Twitch 的 LINE bot，不過後來似乎 Twitch API 有改版讓機器人壞掉了，最近又有需要一隻機器人幫我查詢，就開始去翻一下 Twitch 官方文件，碰巧逛到這個 [Community Resources page](https://dev.twitch.tv/code/)，看到了好多資料在裡面，就索性來重寫囉！
@@ -37,8 +36,16 @@ npm install --save twitch
 ```
 
 - 金鑰
-  - 申請 [Client ID](https://dev.twitch.tv/docs/v5#getting-a-client-id)
+  - ~~申請 [Client ID](https://dev.twitch.tv/docs/v5#getting-a-client-id)~~
   - 建立 [Access Token](https://twitchapps.com/tmi/)
+
+[2020/06/08 修正] 申請完後將 `oauth:` 後的 key 透過官方文件的 [Validating requests](https://dev.twitch.tv/docs/authentication/#validating-requests) 指令放入 access token 中取得 Client_id，如下:
+
+```
+curl -H "Authorization: OAuth <access token>" https://id.twitch.tv/oauth2/validate
+```
+
+本專案的 `TWITCH_CLIENT_ID` 的環境變數就是這個回傳值中的 `client_id`。
 
 > 這部分可能會需要去 twitch `設定 -> 連結` 去綁定 Oauth 的樣子，再麻煩各位注意一下。
 
@@ -71,11 +78,11 @@ Console 是 bottender 的特色之一，可以在終端機上直接測試 Bot �
 接著要讓同樣的 Action 可以導到 Messenger 以及 LINE，bottender 提供了可以設計針對特定平台處理 Action，如下:
 
 ```javascript
-import { platform } from 'bottender/router';
+import { platform } from "bottender/router";
 export default async function App(): Promise<void> {
   return await router([
-    platform('line', LineAction),
-    platform('messenger', MessengerAction),
+    platform("line", LineAction),
+    platform("messenger", MessengerAction),
   ]);
 }
 ```
