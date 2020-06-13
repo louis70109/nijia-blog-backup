@@ -12,7 +12,7 @@ date: 2020-06-13 22:12:08
 
 # 前言
 
-在寫 Javascript 時一定會碰到 callback function，而最擔心的問題就是 Callback Hell(也就是俗稱的波動拳)，最常見的範例為：
+在寫 Javascript 時一定會看到有套件或是範例有使用到 callback function，在過往的 coding 過程中最擔心的問題就是遇到 Callback Hell(也就是俗稱的波動拳)，最常見的範例為：
 
 ```
 doSomething(function(result) {
@@ -26,7 +26,7 @@ doSomething(function(result) {
 
 > Sample from [MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Using_promises)
 
-為了降低波動拳的出線機率，因此就在 `ES6` 時就誕生了 `Promise` 來幫忙處理 Hell world 的問題，至於如何處理就透過接下來就說明並介紹用法。
+為了降低波動拳的出現機率，因此就在 `ES6` 時就誕生了 `Promise` 來幫忙處理 Hell world 的問題，至於如何處理就透過接下來就說明並介紹用法。
 
 <!-- more -->
 
