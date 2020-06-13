@@ -2,7 +2,6 @@
 title: 【Javascript】你知道你常用 Promise 嗎?
 tags:
   - Promise
-  - ES5
   - IIFE
   - Arrow Function
   - Callback
@@ -26,13 +25,13 @@ doSomething(function(result) {
 
 > Sample from [MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Using_promises)
 
-為了降低波動拳的出現機率，因此就在 `ES6` 時就誕生了 `Promise` 來幫忙處理 Hell world 的問題，至於如何處理就透過接下來就說明並介紹用法。
+為了降低波動拳的出現機率，因此就就誕生了 `Promise` 來幫忙處理 Hell world 的問題，至於如何處理就透過接下來就說明並介紹用法。
 
 <!-- more -->
 
 # 介紹
 
-Promise 是 Javascript 的`非同步運算的物件`，並且包含 `resolve`(成功)、`reject`(失敗)、`pending`(處理中)三種狀態，而接下來範例會使用 `ES5`。
+Promise 是 Javascript 的`非同步運算的物件`，並且包含 `resolve`(成功)、`reject`(失敗)、`pending`(處理中)三種狀態，接下來就看看介紹吧！
 
 ## Promise 提供了什麼？
 
@@ -146,7 +145,7 @@ function numberCondition(num){
 })()
 ```
 
-以上是 `ES5` 的寫法，以下是使用 `ES6` 提供的 Arrow Function 做範例:
+以上是原生的寫法搭配 IIFE，以下則是使用 Arrow Function 做範例:
 
 ```
 (async () => {
