@@ -10,7 +10,6 @@ categories: Javascript
 date: 2020-06-13 22:12:08
 ---
 
-
 # 前言
 
 在寫 Javascript 時一定會碰到 callback function，而最擔心的問題就是 Callback Hell(也就是俗稱的波動拳)，最常見的範例為：
@@ -33,7 +32,7 @@ doSomething(function(result) {
 
 # 介紹
 
-Promise 是 Javascript 的`非同步運算的物件`，並且包含 `resolve`(成功)、`reject`(失敗)、`pending(處理中)`三種狀態，而接下來範例會使用 `ES5`。
+Promise 是 Javascript 的`非同步運算的物件`，並且包含 `resolve`(成功)、`reject`(失敗)、`pending`(處理中)三種狀態，而接下來範例會使用 `ES5`。
 
 ## Promise 提供了什麼？
 
