@@ -1,5 +1,5 @@
 ---
-title: 【Javascript】你知道你常用 Promise 嗎?
+title: 【Javascript】你知道你常用的 Promise 嗎?
 tags:
   - Promise
   - IIFE
