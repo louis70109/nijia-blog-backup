@@ -117,7 +117,7 @@ numberCondition(999)
 
 # 我知道 Promise 了，那 Async/Await 跟它有什麼關係？
 
-自己做了一個 Promise 後，使用它需要一直 `.then()`、`.catch()`，接下來就來介紹一下 `async/await` 這個這個 `ES7` 之後才誕生的語法糖。
+自己做了一個 Promise 後，使用它需要一直 `.then()`、`.catch()`，接下來就來介紹一下 `async/await` 在 Promise 之後才誕生的語法糖。
 
 ## 動手做 Implementation
 
@@ -170,7 +170,7 @@ function numberCondition(num){
 
 ## 待討論部分
 
-由於是 `ES7` 之後才出現的語法，若接手的專案本身並未支援到 `ES7` 時則需要將相關邏輯轉換使用 `.then()`、`.catch()` 去處理 Promise，在專案的`支援度`上這部分則需要多考慮。
+由於是在 Promise 之後才出現的語法，若接手的專案本身並未支援到 async/await 語法時則需要將相關邏輯轉換使用 `.then()`、`.catch()` 去處理 Promise，在專案的`支援度`上這部分則需要多考慮。
 
 # 結論
 
