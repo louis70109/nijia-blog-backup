@@ -174,4 +174,4 @@ function numberCondition(num){
 
 # 結論
 
-因為接觸到 [Bottender](https://github.com/Yoctol/bottender) 才接觸到 Promise 以及 async/await 這系列的工具，在理解上也花了好長一段時間才轉換過來，，藉由本篇紀錄我釐清的過程，透過這些例子希望讓大家能夠更快速的了解 Promise 🙂。
+因為接觸到 [Bottender](https://github.com/Yoctol/bottender) 才接觸到 Promise 以及 async/await 這系列的工具，在理解上也花了好長一段時間才轉換過來，藉由本篇紀錄我釐清的過程，透過這些例子希望讓大家能夠更快速的了解 Promise 🙂。
