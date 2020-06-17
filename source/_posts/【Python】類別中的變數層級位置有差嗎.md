@@ -8,7 +8,6 @@ categories: Python
 date: 2020-06-17 00:52:22
 ---
 
-
 # 前言
 
 常常在寫程式時沒搞清楚作用域時很容易留坑或邏輯混亂，因此花時間理解每個語言的作用域也很重要。
@@ -65,7 +64,30 @@ class Example:
          self.instance_variable = instance_variable or type(self).class_variable
 ```
 
-接著使用範例來實驗：
+Example 的類別(Class)物件值如下：
+
+```puml
+@startuml
+object Example
+Example : class_variable = "123"
+Example : instance_variable = "123"
+@enduml
+```
+
+接著宣告`s1` & `s2` 兩個 Instance 來做實驗：
+
+```puml
+@startuml
+
+object s1
+s1 : class_variable = "123"
+s1 : instance_variable = "123"
+
+object s2
+s2 : class_variable = "123"
+s2 : instance_variable = "456"
+@enduml
+```
 
 ```python
 s1 = Example()
@@ -73,7 +95,24 @@ s2 = Example(456)
 
 s1.class_variable     # 123
 s2.class_variable     # 123
+```
 
+此時因為初始化所以值都會 `123`，接下來直接改 Example 的 class 為 `"I am CLASS !!"`：
+
+```puml
+@startuml
+
+object s1
+s1 : class_variable = "I am CLASS !!"
+s1 : instance_variable = "123"
+
+object s2
+s2 : class_variable = "I am CLASS !!"
+s2 : instance_variable = "456"
+@enduml
+```
+
+```python
 #  直接改 Example 類別的值
 Example.class_variable = "I am CLASS !!"
 
@@ -96,6 +135,17 @@ s1.instance_variable = "I am S1 variable"
 print(s1.instance_variable)  # "I am S1 variable"
 print(s2.instance_variable)  # 456
 ```
+
+@startuml
+
+object s1
+s1 : class_variable = "I am CLASS !!"
+s1 : instance_variable = "I am S1 variable"
+
+object s2
+s2 : class_variable = "I am CLASS !!"
+s2 : instance_variable = "456"
+@enduml
 
 從這實驗中能看到個別 Instance 之間的參數不會互相影響，因此再更改變數值前記得要先了解當前的層級在哪才不會失手改錯造成問題。
 

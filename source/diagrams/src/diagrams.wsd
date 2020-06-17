@@ -1,13 +1,10 @@
 @startuml
-left to right direction
-skinparam packageStyle rectangle
-actor user
-rectangle Container {
-  user -- (PGadmin)
-  (PGadmin) .> (PostgreSQL)
-}
-(PGadmin) --> (Create table): [1]
-(PGadmin) --> (Find & save DDL): [2]
-(PGadmin) --> (Drop table): [3]
-(PGadmin) --> (Use DDL to create Table): [4]
+
+object s1
+s1 : class_variable = "I am CLASS !!"
+s1 : instance_variable = "123"
+
+object s2
+s2 : class_variable = "I am CLASS !!"
+s2 : instance_variable = "123"
 @enduml
