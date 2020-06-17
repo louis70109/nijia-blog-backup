@@ -8,6 +8,8 @@ categories: Python
 date: 2020-06-17 00:52:22
 ---
 
+![](https://media.istockphoto.com/photos/taiwan-on-map-picture-id153498409)
+
 # 前言
 
 常常在寫程式時沒搞清楚作用域時很容易留坑或邏輯混亂，因此花時間理解每個語言的作用域也很重要。
