@@ -1,6 +1,5 @@
 ---
-title:
-  '[object Object]': null
+title: 【Lint】寫程式為什麼要 Lint
 categories: 學習紀錄
 tags:
 ---

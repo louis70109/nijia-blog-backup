@@ -138,6 +138,7 @@ print(s1.instance_variable)  # "I am S1 variable"
 print(s2.instance_variable)  # 456
 ```
 
+```puml
 @startuml
 
 object s1
@@ -148,6 +149,7 @@ object s2
 s2 : class_variable = "I am CLASS !!"
 s2 : instance_variable = "456"
 @enduml
+```
 
 從這實驗中能看到個別 Instance 之間的參數不會互相影響，因此再更改變數值前記得要先了解當前的層級在哪才不會失手改錯造成問題。
 
