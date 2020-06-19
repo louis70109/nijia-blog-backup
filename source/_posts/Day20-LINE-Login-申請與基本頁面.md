@@ -1,8 +1,11 @@
 ---
 title: Day20 - LINE Login 申請與基本頁面
-date: 2019-10-4 20:59:09
-tags: ["LINE", "LINE Login"]
+tags:
+  - LINE
+  - LINE Login
 categories: 2019鐵人賽
+abbrlink: 864807826
+date: 2019-10-04 20:59:09
 ---
 
 ## 前言

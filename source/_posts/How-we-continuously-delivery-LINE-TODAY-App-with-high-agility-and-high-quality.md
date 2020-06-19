@@ -1,10 +1,13 @@
 ---
-title: 2019 LINE Dev Day - 議程心得(2) - How we continuously delivery LINE TODAY App with high agility and high quality
-date: 2019-11-22 00:55:53
+title: >-
+  2019 LINE Dev Day - 議程心得(2) - How we continuously delivery LINE TODAY App with
+  high agility and high quality
 tags:
   - LINE
   - Dev Day 2019
 categories: 研討會
+abbrlink: 2683526012
+date: 2019-11-22 00:55:53
 ---
 
 # How we continuously delivery LINE TODAY App with high agility and high quality

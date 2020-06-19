@@ -1,8 +1,12 @@
 ---
 title: Day14 - LINE Richmenu 介紹
-date: 2019-9-28 20:42:52
-tags: ['Richmenu', 'LINE', 'chatbot']
+tags:
+  - Richmenu
+  - LINE
+  - chatbot
 categories: 2019鐵人賽
+abbrlink: 772162306
+date: 2019-09-28 20:42:52
 ---
 
 Rich menu 是一個 LINE 提供給 chatbot 的圖文選單，可以再上面設定很多各式各樣的功能，下圖為一個範例

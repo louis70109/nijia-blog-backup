@@ -1,8 +1,14 @@
 ---
 title: Day9 - SQS 串接 Notify 實作！
-date: 2019-9-23 20:35:36
-tags: ["AWS", "SQS", "LINE", "Notify", "IAM"]
+tags:
+  - AWS
+  - SQS
+  - LINE
+  - Notify
+  - IAM
 categories: 2019鐵人賽
+abbrlink: 3810543739
+date: 2019-09-23 20:35:36
 ---
 
 首先先建立一個`consumer/`資料夾，新增`__init__.py`以及`notify_handler.py`

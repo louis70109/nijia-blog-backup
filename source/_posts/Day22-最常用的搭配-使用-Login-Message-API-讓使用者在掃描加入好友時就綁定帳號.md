@@ -1,8 +1,13 @@
 ---
 title: Day22 - 最常用的搭配 - 使用 Login + Message API 讓使用者在掃描加入好友時就綁定帳號
-date: 2019-10-6 21:01:02
-tags: ["LINE", "LINE Login", "Message api", "chatbot"]
+tags:
+  - LINE
+  - LINE Login
+  - Message api
+  - chatbot
 categories: 2019鐵人賽
+abbrlink: 4225183620
+date: 2019-10-06 21:01:02
 ---
 
 ## 前言

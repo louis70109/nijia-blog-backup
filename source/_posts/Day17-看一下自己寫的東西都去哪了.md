@@ -1,8 +1,14 @@
 ---
 title: Day17 - 看一下自己寫的東西都去哪了
-date: 2019-10-1 20:49:05
-tags: ["Serverless", "CloudFormation", "Lambda", "S3", "API gateway"]
+tags:
+  - Serverless
+  - CloudFormation
+  - Lambda
+  - S3
+  - API gateway
 categories: 2019鐵人賽
+abbrlink: 3898416250
+date: 2019-10-01 20:49:05
 ---
 
 ## 前言

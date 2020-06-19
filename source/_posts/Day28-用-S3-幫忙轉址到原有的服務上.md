@@ -1,8 +1,12 @@
 ---
 title: Day28 - 用 S3 幫忙轉址到原有的服務上
-date: 2019-10-12 21:07:18
-tags: ["AWS", "S3", "Route53"]
+tags:
+  - AWS
+  - S3
+  - Route53
 categories: 2019鐵人賽
+abbrlink: 1405710804
+date: 2019-10-12 21:07:18
 ---
 
 ## 前言

@@ -1,8 +1,11 @@
 ---
 title: Day13 - 試玩 python SDK
-date: 2019-9-27 20:41:31
-tags: ["python", "LINE SDK"]
+tags:
+  - python
+  - LINE SDK
 categories: 2019鐵人賽
+abbrlink: 4205642863
+date: 2019-09-27 20:41:31
 ---
 
 ## 前言

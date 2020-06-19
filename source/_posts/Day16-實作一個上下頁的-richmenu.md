@@ -1,8 +1,12 @@
 ---
 title: Day16 - 實作一個上下頁的 richmenu
-date: 2019-9-30 20:47:37
-tags: ["LINE", "Richmenu", "chatbot"]
+tags:
+  - LINE
+  - Richmenu
+  - chatbot
 categories: 2019鐵人賽
+abbrlink: 2636963893
+date: 2019-09-30 20:47:37
 ---
 
 ## 前言

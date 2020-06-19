@@ -1,8 +1,10 @@
 ---
 title: Day30 - 老是在吹 Serverless，他真的有那麼好？
-date: 2019-10-14 21:09:01
-tags: ["AWS"]
+tags:
+  - AWS
 categories: 2019鐵人賽
+abbrlink: 840027886
+date: 2019-10-14 21:09:01
 ---
 
 ## Cold start

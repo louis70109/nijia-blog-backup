@@ -1,8 +1,12 @@
 ---
 title: Day24 - 簡單使用 LINE LIFF API
-date: 2019-10-8 21:02:58
-tags: ["LINE", "LIFF", "webview"]
+tags:
+  - LINE
+  - LIFF
+  - webview
 categories: 2019鐵人賽
+abbrlink: 1083757629
+date: 2019-10-08 21:02:58
 ---
 
 ## 前言

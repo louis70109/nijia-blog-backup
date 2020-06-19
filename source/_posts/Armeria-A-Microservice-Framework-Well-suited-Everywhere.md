@@ -1,10 +1,13 @@
 ---
-title: 2019 LINE Dev Day - 議程心得(3) - Armeria - A Microservice Framework Well-suited Everywhere
-date: 2019-12-01 10:44:45
+title: >-
+  2019 LINE Dev Day - 議程心得(3) - Armeria - A Microservice Framework Well-suited
+  Everywhere
 tags:
   - LINE
   - Dev Day 2019
 categories: 研討會
+abbrlink: 1377449472
+date: 2019-12-01 10:44:45
 ---
 
 # Armeria: A Microservice Framework Well-suited Everywhere

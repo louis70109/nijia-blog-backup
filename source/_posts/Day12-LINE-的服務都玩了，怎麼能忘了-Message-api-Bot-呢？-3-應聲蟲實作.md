@@ -1,8 +1,12 @@
 ---
 title: Day12 - LINE 的服務都玩了，怎麼能忘了 Message api (Bot) 呢？ (3) - 應聲蟲實作
-date: 2019-9-26 20:39:32
-tags: ["LINE", "chatbot", "Message api"]
+tags:
+  - LINE
+  - chatbot
+  - Message api
 categories: 2019鐵人賽
+abbrlink: 1739126467
+date: 2019-09-26 20:39:32
 ---
 
 ## 實作

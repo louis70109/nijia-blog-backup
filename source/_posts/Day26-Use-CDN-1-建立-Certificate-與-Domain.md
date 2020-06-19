@@ -1,8 +1,13 @@
 ---
 title: Day26 - Use CDN (1) - 建立 Certificate 與 Domain
-date: 2019-10-10 21:05:23
-tags: ["Serverless", "CDN", "Route 53", "Certificate Manager"]
+tags:
+  - Serverless
+  - CDN
+  - Route 53
+  - Certificate Manager
 categories: 2019鐵人賽
+abbrlink: 2081624252
+date: 2019-10-10 21:05:23
 ---
 
 ## 簡介

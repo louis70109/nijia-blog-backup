@@ -1,8 +1,12 @@
 ---
 title: 續篇 — serverless + WSGI + flask + chatbot 的開發指南
-date: 2019-11-02 13:04:28
-tags: ["Serverless", "LINE", "AWS"]
+tags:
+  - Serverless
+  - LINE
+  - AWS
 categories: Serverless
+abbrlink: 895426056
+date: 2019-11-02 13:04:28
 ---
 
 # 前言
@@ -22,7 +26,7 @@ categories: Serverless
 
 這次的主題是延續上次的文章，過程中若有像是 AWS key 之類的問題可以回顧一下～
 
-- [使用 Serverless & Line Message API 在 AWS 上打造一個 Echo bot](https://nijialin.com/2019/10/31/%E4%BD%BF%E7%94%A8-Serverless-Line-Message-API-%E5%9C%A8-AWS-%E4%B8%8A%E6%89%93%E9%80%A0%E4%B8%80%E5%80%8B-Echo-bot/)
+- [使用 Serverless & LINE Message API 在 AWS 上打造一個 Echo bot](https://nijialin.com/2019/10/31/%E4%BD%BF%E7%94%A8-Serverless-Line-Message-API-%E5%9C%A8-AWS-%E4%B8%8A%E6%89%93%E9%80%A0%E4%B8%80%E5%80%8B-Echo-bot/)
 - [aws-line-echo-bot](https://github.com/louis70109/aws-line-echo-bot?source=post_page-----f11de7dee7aa----------------------)
 
 首先先透過 sls 至 Github 將 Python 範例抓下來並建專案。

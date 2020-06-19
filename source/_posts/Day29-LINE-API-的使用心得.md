@@ -1,8 +1,12 @@
 ---
 title: Day29 - LINE API 的使用心得
-date: 2019-10-13 21:08:19
-tags: ["LINE", "chatbot", "richmenu"]
+tags:
+  - LINE
+  - chatbot
+  - richmenu
 categories: 2019鐵人賽
+abbrlink: 264701470
+date: 2019-10-13 21:08:19
 ---
 
 - Imagemap

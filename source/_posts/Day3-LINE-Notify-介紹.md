@@ -1,8 +1,11 @@
 ---
 title: Day3 - LINE Notify 介紹
-date: 2019-9-18 14:21:37
-tags: ['LINE', 'Notify']
+tags:
+  - LINE
+  - Notify
 categories: 2019鐵人賽
+abbrlink: 2871688541
+date: 2019-09-18 14:21:37
 ---
 
 LINE Notify 顧名思義就是通知屬性的服務，這個服務不是 LINE 的 Message API，千外別把這兩個搞在一起哦！

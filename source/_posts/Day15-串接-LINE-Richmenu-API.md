@@ -1,8 +1,12 @@
 ---
 title: Day15 - 串接 LINE Richmenu API
-date: 2019-9-29 20:46:24
-tags: ["LINE", "LINE SDK", "Richmenu"]
+tags:
+  - LINE
+  - LINE SDK
+  - Richmenu
 categories: 2019鐵人賽
+abbrlink: 2470435375
+date: 2019-09-29 20:46:24
 ---
 
 ## 前言

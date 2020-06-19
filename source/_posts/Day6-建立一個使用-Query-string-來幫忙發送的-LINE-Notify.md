@@ -1,8 +1,12 @@
 ---
 title: Day6 - 建立一個使用 Query string 來幫忙發送的 LINE Notify
-date: 2019-9-21 20:30:27
-tags: ["LINE", "Notify", "python"]
+tags:
+  - LINE
+  - Notify
+  - python
 categories: 2019鐵人賽
+abbrlink: 2244661996
+date: 2019-09-21 20:30:27
 ---
 
 繼上一篇我們已經可以讓使用者註冊 Notify 並將 token 放入資料庫，接著就帶各位使用 query string 的方式讓你的 Notify 可以送訊息給所有註冊過的 Notify。

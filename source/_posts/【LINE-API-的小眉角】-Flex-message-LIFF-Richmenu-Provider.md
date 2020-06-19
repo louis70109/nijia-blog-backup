@@ -1,5 +1,5 @@
 ---
-title: "【LINE API 的小眉角】feat. Flex message, LIFF, Richmenu, Provider"
+title: '【LINE API 的小眉角】feat. Flex message, LIFF, Richmenu, Provider'
 tags:
   - LINE
   - LIFF
@@ -7,6 +7,7 @@ tags:
   - Richmenu
   - Provider
 categories: Chatbot
+abbrlink: 3574514001
 date: 2020-04-11 21:10:23
 ---
 

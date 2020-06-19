@@ -1,8 +1,12 @@
 ---
 title: Day21 - LINE Login 實作
-date: 2019-10-5 20:59:50
-tags: ['LINE', 'LINE Login', 'S3']
+tags:
+  - LINE
+  - LINE Login
+  - S3
 categories: 2019鐵人賽
+abbrlink: 4163822350
+date: 2019-10-05 20:59:50
 ---
 
 ## 前言

@@ -1,8 +1,13 @@
 ---
 title: Day18 - 在 Serverless 上設定個排程來發送空氣污染檢測吧
-date: 2019-10-2 20:55:35
-tags: ["Serverless", "Lambda", "LINE", "Schedule"]
+tags:
+  - Serverless
+  - Lambda
+  - LINE
+  - Schedule
 categories: 2019鐵人賽
+abbrlink: 4233874228
+date: 2019-10-02 20:55:35
 ---
 
 ## 前言

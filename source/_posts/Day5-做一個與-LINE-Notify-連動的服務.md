@@ -1,8 +1,11 @@
 ---
 title: Day5 - 做一個與 LINE Notify 連動的服務
-date: 2019-9-20 15:46:15
-tags: ["LINE Notify", "python"]
+tags:
+  - LINE Notify
+  - python
 categories: 2019鐵人賽
+abbrlink: 1338246174
+date: 2019-09-20 15:46:15
 ---
 
 ## 建立 LINE Notify 服務

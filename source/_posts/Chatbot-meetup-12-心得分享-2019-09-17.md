@@ -3,7 +3,8 @@ title: 'Chatbot meetup #12 心得分享 - 2019/09/17'
 tags:
   - chatbot
 categories: 研討會
-date: 2019-9-12 14:52:43
+abbrlink: 767274191
+date: 2019-09-12 14:52:43
 ---
 
 

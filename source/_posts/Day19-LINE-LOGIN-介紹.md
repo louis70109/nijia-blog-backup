@@ -1,8 +1,11 @@
 ---
 title: Day19 - LINE LOGIN 介紹
-date: 2019-10-3 20:58:22
-tags: ['LINE', 'LINE Login']
+tags:
+  - LINE
+  - LINE Login
 categories: 2019鐵人賽
+abbrlink: 3255201689
+date: 2019-10-03 20:58:22
 ---
 
 ## 前言

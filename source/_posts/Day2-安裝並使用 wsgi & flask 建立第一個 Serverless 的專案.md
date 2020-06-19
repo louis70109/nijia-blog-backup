@@ -1,8 +1,11 @@
 ---
 title: Day2 - 安裝並使用 wsgi & flask 建立第一個 Serverless 的專案
-date: 2019-9-17 14:17:01
-tags: ["Serverless", "python"]
+tags:
+  - Serverless
+  - python
 categories: 2019鐵人賽
+abbrlink: 3320746320
+date: 2019-09-17 14:17:01
 ---
 
 透過 npm 全域安裝 serverless 指令
@@ -154,7 +157,7 @@ endpoints: ANY - https://4omvn4z7re.execute-api.us-east-1.amazonaws.com/dev
 
 # 參考
 
-- [使用 Serverless & Line Message API 在 AWS 上打造一個 Echo bot](https://medium.com/@nijia.lin/%E4%BD%BF%E7%94%A8-serverless-line-message-api-%E5%9C%A8-aws-%E4%B8%8A%E6%89%93%E9%80%A0%E4%B8%80%E5%80%8B-echo-bot-1e3e785a2a01)
+- [使用 Serverless & LINE Message API 在 AWS 上打造一個 Echo bot](https://medium.com/@nijia.lin/%E4%BD%BF%E7%94%A8-serverless-line-message-api-%E5%9C%A8-aws-%E4%B8%8A%E6%89%93%E9%80%A0%E4%B8%80%E5%80%8B-echo-bot-1e3e785a2a01)
 - [sls cli 相關參數](https://serverless.com/framework/docs/providers/aws/cli-reference/)
 - [Serverless](https://serverless.com/)
 - [Serverless Github](https://github.com/serverless/serverless)

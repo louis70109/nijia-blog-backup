@@ -5,6 +5,7 @@ tags:
   - Class level
   - Instance level
 categories: Python
+abbrlink: 3330516601
 date: 2020-06-17 00:52:22
 ---
 

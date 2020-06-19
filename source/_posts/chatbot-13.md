@@ -3,8 +3,9 @@ title: 'Chatbot meetup 北部 #13 at 台北商業大學 & 中部 #3 at 夢森林
 tags:
   - chatbot
   - meetup
-date: 2019-10-25 16:59:43
 categories: 研討會
+abbrlink: 2496230010
+date: 2019-10-25 16:59:43
 ---
 
 ![](https://i.imgur.com/P3F7Xjp.png)

@@ -6,6 +6,7 @@ tags:
   - SQL
   - DDL
 categories: SQL
+abbrlink: 2631350634
 date: 2020-06-06 11:51:57
 ---
 

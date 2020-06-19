@@ -1,8 +1,12 @@
 ---
 title: Day27 - Use CDN (2) - CloudFront
-date: 2019-10-11 21:06:26
-tags: ["Serverless", "CDN", "CloudFront"]
+tags:
+  - Serverless
+  - CDN
+  - CloudFront
 categories: 2019鐵人賽
+abbrlink: 486052549
+date: 2019-10-11 21:06:26
 ---
 
 ## 前言

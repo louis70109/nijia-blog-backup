@@ -1,8 +1,12 @@
 ---
 title: Day4 - 認識與使用 S3 容器
-date: 2019-9-19 15:44:36
-tags: ["AWS", "Serverless", "S3"]
+tags:
+  - AWS
+  - Serverless
+  - S3
 categories: 2019鐵人賽
+abbrlink: 931534491
+date: 2019-09-19 15:44:36
 ---
 
 ## 前言

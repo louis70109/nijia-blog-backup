@@ -1,8 +1,11 @@
 ---
 title: Day23 - LIFF(LINE Front-end Framework) 簡介
-date: 2019-10-7 21:01:58
-tags: ["LINE", "LIFF"]
+tags:
+  - LINE
+  - LIFF
 categories: 2019鐵人賽
+abbrlink: 615916051
+date: 2019-10-07 21:01:58
 ---
 
 ## 介紹

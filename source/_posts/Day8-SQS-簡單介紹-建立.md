@@ -1,8 +1,11 @@
 ---
 title: Day8 - SQS 簡單介紹 & 建立
-date: 2019-9-22 20:34:30
-tags: ["AWS", "SQS"]
+tags:
+  - AWS
+  - SQS
 categories: 2019鐵人賽
+abbrlink: 3884948296
+date: 2019-09-22 20:34:30
 ---
 
 [詳細介紹](https://ithelp.ithome.com.tw/articles/10194654)

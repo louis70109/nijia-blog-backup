@@ -1,8 +1,11 @@
 ---
 title: Python - operator
-date: 2020-01-07 23:12:22
-tags: ['Python', 'operator']
+tags:
+  - Python
+  - operator
 categories: 學習紀錄
+abbrlink: 1458295714
+date: 2020-01-07 23:12:22
 ---
 
 # 前言

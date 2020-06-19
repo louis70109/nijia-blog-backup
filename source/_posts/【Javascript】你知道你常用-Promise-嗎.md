@@ -6,6 +6,7 @@ tags:
   - Arrow Function
   - Callback
 categories: Javascript
+abbrlink: 1394405821
 date: 2020-06-13 22:12:08
 ---
 

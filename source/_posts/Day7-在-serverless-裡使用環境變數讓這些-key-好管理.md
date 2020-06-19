@@ -1,8 +1,11 @@
 ---
 title: Day7 - 在 serverless 裡使用環境變數讓這些 key 好管理
-date: 2019-9-21 20:33:28
-tags: ["Serverless", "dotenv"]
+tags:
+  - Serverless
+  - dotenv
 categories: 2019鐵人賽
+abbrlink: 2061415749
+date: 2019-09-21 20:33:28
 ---
 
 ## 前言

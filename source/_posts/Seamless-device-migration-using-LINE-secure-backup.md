@@ -1,10 +1,13 @@
 ---
-title: 2019 LINE Dev Day - 議程心得(1) - Seamless device migration using LINE secure backup
+title: >-
+  2019 LINE Dev Day - 議程心得(1) - Seamless device migration using LINE secure
+  backup
 tags:
   - LINE
   - Dev Day 2019
-date: 2019-11-21 14:58:09
 categories: 研討會
+abbrlink: 3420766478
+date: 2019-11-21 14:58:09
 ---
 
 # Seamless device migration using LINE secure backup

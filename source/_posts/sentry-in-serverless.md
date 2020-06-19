@@ -3,8 +3,9 @@ title: 使用 Sentry 收集錯誤並將訊息送至 Slack
 tags:
   - Sentry
   - Serverless
-date: 2019-11-12 17:50:13
 categories: Third Party
+abbrlink: 3673111655
+date: 2019-11-12 17:50:13
 ---
 
 

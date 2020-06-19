@@ -4,6 +4,7 @@ tags:
   - chatbot
   - meetup
 categories: 研討會
+abbrlink: 1641980869
 date: 2019-12-22 20:48:54
 ---
 

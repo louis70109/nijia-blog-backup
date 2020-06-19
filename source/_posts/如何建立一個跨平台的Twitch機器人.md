@@ -4,6 +4,7 @@ tags:
   - Chatbot
   - bottender
 categories: Chatbot
+abbrlink: 4054342848
 date: 2020-01-12 00:53:22
 ---
 
@@ -154,7 +155,7 @@ async function MessengerAction(context): Promise<void> {
 這裡設計上只要屬於送出訊息相關的樣板(`Flex`、`Genetic`、`Text`)接放在此。
 
 - common: `作者資訊(author)` 以及 `幫助我(help)` 的相關
-- line: Flex message 相關樣板
+- LINE: Flex message 相關樣板
 - messenger: Genetic template 相關樣板
 
 ## [Controller](https://github.com/louis70109/Twitch-Bot/tree/master/src/controller)

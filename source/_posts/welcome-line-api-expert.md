@@ -2,8 +2,9 @@
 title: Welcome to LINE API Expert and first thing — LINE Developer Day
 tags:
   - LINE
-date: 2019-10-10 17:26:16
 categories: 日記
+abbrlink: 1142565030
+date: 2019-10-10 17:26:16
 ---
 
 # 前言
