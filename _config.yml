@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://nijialin.com
 root: /
-permalink: :year/:month/:day/:abbrlink/
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing index.html from permalinks
@@ -92,7 +92,3 @@ deploy:
   type: git
   repo: https://github.com/louis70109/louis70109.github.io
   branch: master
-# abbrlink config
-abbrlink:
-  alg: crc32 # 演算法：crc16(default) and crc32
-  rep: dec # 進位制：dec(default) and hex
