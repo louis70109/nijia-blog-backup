@@ -4,9 +4,9 @@ tags:
   - Chatbot
   - LINE
 categories: 研討會
+abbrlink: 19807
 date: 2020-06-24 02:54:28
 ---
-
 
 ![](https://i.imgur.com/eaU663s.png)
 
@@ -23,6 +23,8 @@ date: 2020-06-24 02:54:28
 <!-- more -->
 
 # Keynote 1 - LINE API Update - Evan Lin
+
+> 直播錄影網址：https://youtu.be/gtpm4zKlsXI
 
 首先 LINE Taiwan 資深技術推廣工程師 Evan 為我們帶來 LINE API 六月的更新介紹。
 
@@ -82,6 +84,8 @@ LINE 若有更新時都會同步到 [GitHub issue](https://github.com/line/line-
 
 # Keynote 2 - [專為高中生設計的管家型聊天機器人 - 廖煥杰](https://drive.google.com/file/d/10Qd-XvznwN_qVkZj2gXK3eLT3PPTqvc3/view?usp=sharing)
 
+> 直播錄影網址：https://youtu.be/HTXvpKWyNHE
+
 這個議程由高二的煥杰來分享，首先為什麼會做這個機器人三個主要原因：
 
 - 同學常常忘了帶考師準備的書籍。
@@ -116,9 +120,11 @@ LINE 若有更新時都會同步到 [GitHub issue](https://github.com/line/line-
 
 很有想法的高中生，從生活中解決需求一直都是一個好的方向去實踐專案，希望這隻機器人可以趕快完成未來展望的部分，期待繼續在社團露臉 😁。
 
-# Keynote 3 - [LIFF & Firebase - Richard](https://docs.google.com/presentation/d/1ZJIDpw9Cmte_9w1NxKHxzXtoaFBXsKVH7tQd4zlvb8k/edit?usp=sharing)
+# Keynote 3 - [LIFF & Firebase - Richard Lee](https://docs.google.com/presentation/d/1ZJIDpw9Cmte_9w1NxKHxzXtoaFBXsKVH7tQd4zlvb8k/edit?usp=sharing)
 
 ![](https://i.imgur.com/pApsiyi.png)
+
+> 直播錄影網址： https://youtu.be/U_nPlkTuk9s
 
 一開始提到 LINE 在剛開始推出 LIFF 時其實沒那麼好用，然而隨著時間的推移 LINE 有聽到大家的心聲持續更新到今日挺好用的地步，也開發出特別的功能 - share target picker 來分享訊息，也因為類似的功能讓 LIFF 介於聊天機器人與行動網頁之間，且隨之而來 LIFF v2 也開始支援 web 囉！
 
@@ -146,6 +152,8 @@ LINE 若有更新時都會同步到 [GitHub issue](https://github.com/line/line-
 能夠聽到含有 LAE & GDE 認證的專家分享這麼精實的內容實在是很賺，從中完美整合了 LINE 以及 Google 的服務讓我歎為觀止，讓我新的目標可以學新東西了！
 
 # Keynote 3 - [對話式表單架構設計 - 郭佳甯](https://docs.google.com/presentation/d/1np4_d6grkw6kMD-jSnMFFj2yH8FwT2SaEdNKKfA0w7w/edit)
+
+> 直播錄影網址：https://youtu.be/ScLQeFIJjLE
 
 本次再度邀請卡米哥前來分享主題，這次的主題很常會在討論區出現，在表單設計上一定是網頁(LIFF)來處理是較妥當的，但總不會每個需求都這麼完美，因此本次就分享在 Chatbot 上得多輪對話設計架構。
 
@@ -187,6 +195,8 @@ LINE 若有更新時都會同步到 [GitHub issue](https://github.com/line/line-
 
 ## 1. 奇步老爹（陳佳新）- [LIFF 圖片測試工具，設計師和工程師從此溝通無礙](https://www.slideshare.net/jarsing/20200623liffbgtester/jarsing/20200623liffbgtester)
 
+> 直播錄影網址： https://youtu.be/q2E9W4RDGW0
+
 在沒有設計師的情況下需要刻 UI 就只能使用工具，而講者即提供了 Chatbot 供大家測試使用。
 ![](https://i.imgur.com/LpSvuUAl.jpg)
 
@@ -194,6 +204,8 @@ LINE 若有更新時都會同步到 [GitHub issue](https://github.com/line/line-
 ![](https://i.imgur.com/NnegZEB.jpg)
 
 ## 2. 黃鈞亭 - [結合 LINE 和 Google Suite 來做定時回報系統](https://docs.google.com/presentation/d/1Xb6NWCLEqW5q74KOSjm51TWwokM-VXlBcOkpJqA2iTE/edit?usp=sharing)
+
+> 直播錄影網址：https://youtu.be/v6BNMJv782c
 
 因為軍中使用 LINE 回報時的 race condition 問題而讓講者動身實作一隻機器人處理問題，透過填寫 google 表單的方式也不會出現像前面講者所遇到的多輪對話問題。
 
@@ -203,6 +215,8 @@ LINE 若有更新時都會同步到 [GitHub issue](https://github.com/line/line-
 Github source: https://github.com/chungthuang/line-report-bot
 
 ## 臺北科技大學 - 即時通智慧攝影機(EdgeTPU 碰上 LINE Bot)
+
+> 直播錄影網址：https://youtu.be/4QcxQLVgiso
 
 主要解決讓不熟 APP 但熟悉即時通訊軟體的使用者來串接攝影機功能，結合 google 新出的開發版並讓使用者掃描裝置上的 QR Code 跟 LINE 做綁定，接著攝影機開始偵測後若發現有人經過時則會 push message 給用戶告知有問題。
 
