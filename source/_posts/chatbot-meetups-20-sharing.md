@@ -151,7 +151,7 @@ LINE 若有更新時都會同步到 [GitHub issue](https://github.com/line/line-
 
 能夠聽到含有 LAE & GDE 認證的專家分享這麼精實的內容實在是很賺，從中完美整合了 LINE 以及 Google 的服務讓我歎為觀止，讓我新的目標可以學新東西了！
 
-# Keynote 3 - [對話式表單架構設計 - 郭佳甯](https://docs.google.com/presentation/d/1np4_d6grkw6kMD-jSnMFFj2yH8FwT2SaEdNKKfA0w7w/edit)
+# Keynote 4 - [對話式表單架構設計 - 郭佳甯](https://docs.google.com/presentation/d/1np4_d6grkw6kMD-jSnMFFj2yH8FwT2SaEdNKKfA0w7w/edit)
 
 > 直播錄影網址：https://youtu.be/ScLQeFIJjLE
 
