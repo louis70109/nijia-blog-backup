@@ -3,7 +3,7 @@ title: 關於 NiJia Lin
 date: 2019-10-16 11:28:36
 ---
 
-目前為 [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) Co-organizer 以及 台灣 **11** 位 [LINE API Expert](https://www.line-community.me/contributors) 之一，平時喜愛關注與貢獻 GitHub 上的各種開源專案，從 ReadMe 的撰寫到程式碼的各種架構應用，盡可能在業餘時間幫忙 Close Issue，同時也熱愛參加各大研討會了解當前技術的走向與認識來自不同社群的朋友，對於新事物總是有著很多的熱情並勇於嘗試，休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，其餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 獲得 **LINE 官方專將認證** 與 iThome 鐵人賽 Modern Web 組**佳作**。
+平時喜愛關注與貢獻 GitHub 上的各種開源專案，從 ReadMe 的撰寫到程式碼的各種架構應用，盡可能在業餘時間幫忙 Close Issue，同時也熱愛參加各大研討會了解當前技術的走向與認識來自不同社群的朋友，對於新事物總是有著很多的熱情並勇於嘗試，休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，其餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 獲得 **LINE 官方專將認證** 與 iThome 鐵人賽 Modern Web 組**佳作**。
 
 - 👊🐛Backend Developer
 - 👨‍🌾Farmer / 🏋️‍♂️Body Builder
@@ -24,8 +24,8 @@ date: 2019-10-16 11:28:36
 
 # Achievements
 
-- [LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0) - 2019
-- [iThome 2019 第 11 屆 **佳作**](https://ithelp.ithome.com.tw/announces/48) - 2019-11-26
+- [LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0) - 2019/09~2020/07
+- [iThome 2019 第 11 屆 **佳作**](https://ithelp.ithome.com.tw/announces/48) - 2019/11/26
 
 # Skills
 
