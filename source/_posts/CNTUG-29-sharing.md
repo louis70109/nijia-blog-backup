@@ -1,7 +1,13 @@
 ---
-title: 【SDN x Cloud Native Meetup 29】活動心得
+title: SDN x Cloud Native Meetup 活動心得 #29
+tags:
+  - Cloud
+  - SDN
+  - Container
+  - Kubernetes
+  - meetup
 categories: 研討會
-tags: ["Cloud", "SDN", "Container", "Kubernetes", "meetup"]
+date: 2020-07-01 02:12:51
 ---
 
 # 前言
