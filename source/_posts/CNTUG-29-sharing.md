@@ -1,5 +1,5 @@
 ---
-title: "SDN x Cloud Native Meetup 29 心得"
+title: SDN x Cloud Native Meetup 29 活動心得
 categories: 研討會
 tags: ["Cloud", "SDN", "Container", "Kubernetes", "meetup"]
 ---
