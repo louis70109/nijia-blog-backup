@@ -1,6 +1,5 @@
 ---
-title:
-  "[object Object]": null
+title: 使用 Python 的標準函式庫 atexit
 categories: 學習紀錄
 abbrlink: 60549
 tags:
@@ -10,15 +9,13 @@ tags:
 
 # 前言
 
-當前專案規模若是不大時，其實不管怎麼`上版`、`關閉`、`重開服務`其實對於客戶來說影響並不大，但隨著服務日漸壯大後，想輕易關閉或重啟服務時若沒做好相對應措施可能會導致災情四起，例如 Redis 被清空、 DB transaction 到一半被關掉導致毀損...諸如此類的問題，因此 Graceful Shutdown 這機制就日漸被重視，主要是在當服務在接收關閉訊號之前，先`處理完`或`備份`資料後才讓服務關閉，如此一來就可以最大幅度的降低問題的產生，讓服務能夠可平滑的關閉、重啟。
+寫程式為了應付錯誤請求就需要 try catch 的機制來幫忙，那在語言本身也需要這樣的功能，因此 python 就提供了一個標準函式庫 - `atexit`，這名字從 C 語言時態就存在的一個工具，主要是監聽程式當收到關閉請求時，可以先跳至已註冊的韓中先處理掉一些事情後再接著關閉服務，這個做法被稱為 Exit Handler，主要就是當程式收到關閉的訊號時最後會進入的函式們，一般較常見的會放上關閉`資料庫連線`、`釋放記憶體`、`備份 cache` 等等的功能，如此一來就能降低問題的產生，讓服務能夠可平滑的關閉、重啟。
 
 概念上就會像 Rails 上的 `before_action` 一樣，在任何事件觸發前做些什麼事，猶如這邊文章提到的在斷開服務前要做些什麼事這樣，接著以下就使用 python 來做範例囉！
 
 <!-- more -->
 
-# 使用 atexit 來做 graceful shutdown
-
-## 介紹
+# 介紹
 
 atexit 有記載在[官方文件](https://docs.python.org/3/library/atexit.html)中，在 stackoverflow 中[也有提及](https://stackoverflow.com/a/30739397)，文件中說明這個模組(Module)可以去定義 `函式們`(functions) 去`註冊`或`反註冊`清除函式，並且它的優先權會在程序終止之上。開發者需預先在程式中註冊中事件(Event)，若同時註冊多個事件時，順序則是反向執行，舉例來說，當前註冊 A、B、C 三個事件，當程序意外終止時，執行的順序則會是 C、B、A，推測會反執行的原因是模組將註冊事件放進一個暫時 堆疊(stack) 中，當觸發後就會照著堆疊的方式去執行，若還是不懂[可參考](https://zh.wikipedia.org/zh-tw/%E5%A0%86%E6%A0%88)。
 
@@ -34,7 +31,7 @@ atexit 有記載在[官方文件](https://docs.python.org/3/library/atexit.html)
 
 不過除了第二項以外目前都會觸發 flask 中註冊的 atexit，以下就介紹一下如何在 flask 上使用並實測。
 
-## 實測
+# 實測
 
 建立一個 `app.py` 然後貼下以下程式碼:
 
@@ -76,7 +73,7 @@ if __name__ == '__main__':
 
 以下就帶幾個範例並且實測無法觸發的事件。
 
-### 範例一 - 外部清除
+## 範例一 - 外部清除
 
 這裡使用 `ps aux | grep python` 以及 `kill -9 PID` 來實測。
 
@@ -90,36 +87,36 @@ if __name__ == '__main__':
 
 ---
 
-#### 刪除不同的 PID 會有不同的結果 
+### 刪除不同的 PID 會有不同的結果 
 
-##### 刪除第一個 PID - 13642
+#### 刪除第一個 PID - 13642
 
 使用 `kill -9 13642` 時刪除它會觸發 atexit:
 ![](https://i.imgur.com/aLTyhC8.png)
 
-具體原因是因為刪除的事 `app.py` 本身而不是對於 `python app.py` 這整件事，也由於不是針對 python 本身處理，因此會觸發 graceful shutdown 也是合情合理。
+具體原因是因為刪除的事 `app.py` 本身而不是對於 `python app.py` 這整件事，也由於不是針對 python 本身處理，因此會觸發 exit handler 也是合情合理。
 
-##### 刪除第二個 PID - 13641
+#### 刪除第二個 PID - 13641
 
 > 若是照步驟來這部分可能已經沒有 PID，需要再重新執行一次程式。
 
 一樣使用 `kill -9 13641` 會得到如下圖所示:
 ![](https://i.imgur.com/wDDKCE1.png)
 
-在這個實測中他不會觸發 graceful shutdown，因為它刪除了 `python app.py` 的執行程序，也因為連同 python 的處理程序也一併刪除讓 python 無法觸發事件導致沒有 graceful shutdown。
+在這個實測中他不會觸發 exit handler，因為它刪除了 `python app.py` 的執行程序，也因為連同 python 的處理程序也一併刪除讓 python 無法觸發事件導致沒有 exit handler。
 
 在這個例子中就體驗到官方文件說的：「when the program is killed by a signal not handled by Python,」
 
-### 範例二 - 使用 os.\_exit(0)
+## 範例二 - 使用 os.\_exit(0)
 
 在一開始的程式碼中我已加入 `@app.route('/user/<username>')` 這個路由，若帶入 username 不等於 Tom 實則會使用 `ox._exit(0)`。
 
 這裡一樣先執行 `python app.py`，這邊可以使用 Postman、curl 都行，而我是使用 Python Command 搭配 requests 來測試，在呼叫 `http://localhost:5000/user/Amy` 後會收到出錯訊息：
 ![](https://i.imgur.com/u5y3wRh.png)
 
-這裡一樣有觸發到 graceful shutdown，推測在範例中應該是被 flask 攔截下來才導致有觸發到。
+這裡一樣有觸發到 exit handler，推測在範例中應該是被 flask 攔截下來才導致有觸發到。
 
-### Event 3 - Reverse
+## Event 3 - Reverse
 
 在 `def shutdown()` 下面直接加上以下的 code:
 
@@ -149,7 +146,11 @@ r = requests.get('http://localhost:5000/user/amy')
 
 # 結論
 
-使用 atexit 可以在 python 中簡單的實現 Graceful Shutdown，需要注意的是若在 atexit 中一樣需要 try catch 去`抓取錯誤`以及設定`時間長度`(太久了一樣要關閉)，畢竟需要透過這個機制去降低`重開`/`關閉成本`，希望能藉由這個機制讓各位的服務們可以安全下莊重新上功能 🙂。
+使用 atexit 可以在 python 中簡單的實現 exit handler，需要注意的是若在 atexit 中一樣需要 try catch 去`抓取錯誤`以及設定`時間長度`(太久了一樣要關閉)，畢竟需要透過這個機制去降低`重開`/`關閉成本`，希望能藉由這個機制讓各位的服務們可以安全下莊重新上功能 🙂。
+
+# 後續
+
+在寫這篇時感覺 atexit 這個 exit handler 比較屬於 Graceful Shutdown(GS) 的一環，但硬是把它說成是 GS 好像又有點奇怪，因為 GS 在其他語言中都會收到 `signal` 的訊號後才開始處理事件，而 python 這邊找到的資源中較多都是自己寫 class 來做 signal 的管控(沒套件)，因此在本篇的實作上就比較屬於 exit handler 的實驗與測試。
 
 # 參考
 
