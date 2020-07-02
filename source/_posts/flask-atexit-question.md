@@ -1,12 +1,11 @@
 ---
-title: 離開前讓我留點什麼吧 - 在 Flask 中測試 atexit 官方文件的 Note
+title: 在 Flask 中測試 atexit 官方文件的註解(Note)
 tags:
   - Python
   - atexit
 categories: Python
 date: 2020-07-01 18:41:14
 ---
-
 
 ![](https://cdn.pixabay.com/photo/2017/02/11/14/45/taipei-taiwan-2057818_1280.jpg)
 
