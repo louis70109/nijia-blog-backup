@@ -20,8 +20,6 @@ Kubernetes 在分散式系統中已經成為一個高可用性平台，並且有
 
 <!-- more -->
 
-# 介紹
-
 # Serverless
 
 來賓一開始提到，再做任何事情前都需要容量規劃(capacity planning)以及整體的計算資源(compute resources)，而像是 AWS Lambda 這類的平台讓開發者不需要擔心 CPU、RAM 以及提供 Auto Scaling 的功能，讓產品在前期可以更專注在開發上。
