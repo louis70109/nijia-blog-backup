@@ -2,9 +2,8 @@
 title: 【Podcast】Kubernetes vs Serverless with Matt Ward - Software Engineering Daily
 categories: Cloud Native
 date: 2020-07-05 19:43:28
-tags:
+tags: ["Kubernetes", "Serverless", "Podcast"]
 ---
-
 
 ![](https://cdn.pixabay.com/photo/2020/06/28/22/09/falcon-5350832_1280.jpg)
 
