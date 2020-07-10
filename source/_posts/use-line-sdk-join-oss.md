@@ -1,8 +1,14 @@
 ---
 title: 藉由 LINE Python SDK 初步認識開源專案
+tags:
+  - LINE
+  - Open source
+  - SDK
+  - Python
 categories: 學習紀錄
-tags: ["LINE", "Open source", "SDK", "Python"]
+date: 2020-07-10 15:11:20
 ---
+
 
 ![](https://cdn.pixabay.com/photo/2015/04/20/13/17/work-731198_1280.jpg)
 
