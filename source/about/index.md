@@ -5,14 +5,14 @@ date: 2019-10-16 11:28:36
 
 平時喜愛關注與貢獻 GitHub 上的各種開源專案，從 ReadMe 的撰寫到程式碼的各種架構應用，盡可能在業餘時間幫忙 Close Issue，同時也熱愛參加各大研討會了解當前技術的走向與認識來自不同社群的朋友，對於新事物總是有著很多的熱情並勇於嘗試，休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，其餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 獲得 **LINE 官方專將認證** 與 iThome 鐵人賽 Modern Web 組**佳作**。
 
-- 👊🐛Backend Developer
-- 👨‍🌾Farmer / 🏋️‍♂️Body Builder
-- ⭐️[2019 LINE API Expert](https://www.line-community.me/contributors/detail?apiId=0037F00001fJ0NHQA0)
-- 👾[Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
+- ☘️ Technology Evangelist / Software Engineer
+- 👨‍🌾 Farmer / 🏋️‍♂️Body Builder
+- 👾 [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
 - 😇 德水園身障教養院 - 長期志工 2016~
 
 # Experience
 
+- LINE Corporation 2020/07~
 - 凱納股份有限公司 2019/06~2020/04
 - 慶宇行銷有限公司 2018/05~2019/05
 - 宜興資訊有限公司 2017/09~2018/05
