@@ -58,7 +58,7 @@ LINE SDK 就是一個標準常見的 open source project
 - setup.py: 為 python SDK 上傳時必備的檔案之一，裡面放著所有專案對外的基本資訊
 - tox.ini: 使用 tox 所需的設定檔，LINE SDK 用來檢查支援版本、測試環境、Lint 規則、避免幾個 Lint 規則
 
-## 3. commit description
+## 3. Commit description
 
 從描述中可以知道維護者對這個專案的用心到哪，若前面還有加上 prefix 的話會更加分喔！當然清楚的表達更動需求還是最重要的！
 
