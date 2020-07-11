@@ -7,7 +7,6 @@ categories: Cloud Native
 date: 2020-07-08 15:07:53
 ---
 
-
 ![](https://i.imgur.com/kase2RE.png)
 
 # 前言
@@ -50,7 +49,7 @@ Grafana 是一個`視覺化`、`即時監控`以及 plug-in system 的工具，�
 
 這大概是每個公司都會遇到的問題吧 🤔
 
-# 4. Use language
+## 4. Use language
 
 在六年前開始他們是使用 Angular 2 來開發，隨著時間推移出現了 React 也將專案移到 React 上(可能 Angular 一直改版?)，也因為有前面提到的 `Hook API` 上
 
@@ -66,7 +65,7 @@ Grafana 是一個`視覺化`、`即時監控`以及 plug-in system 的工具，�
 
 Grafana 安裝時最小可以使用到 100~200 mb 的 RAM 並且搭配 SQLite，也因為他們是 Open Source Software(OSS)，因此也可自由的使用 Docker 來架設，當然若使用者太多時還是需要有效規劃來容納流量。
 
-# Apache Arrow
+## 7. Apache Arrow
 
 顧名思義就是 Apache 的一個項目，它是使用二進制檔案結構去處理一些進行中非序列化的任務，降低序列化所產生的消耗，主要提供跨平台應用來加快大數據分析項目的運行速度。
 
