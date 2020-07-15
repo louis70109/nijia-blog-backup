@@ -1,5 +1,5 @@
 ---
-title: 快速轉移基本的電腦開發環境
+title: 快速轉移我的 Mac 開發環境
 categories: 學習紀錄
 date: 2020-07-15 16:07:40
 tags: ["Workspace", "settings sync", "Mac"]
