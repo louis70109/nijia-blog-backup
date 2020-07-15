@@ -2,9 +2,8 @@
 title: 快速的回復我的基本工作環境
 categories: 學習紀錄
 date: 2020-07-15 16:07:40
-tags:
+tags: ["Workspace", "settings sync", "Mac"]
 ---
-
 
 ![](https://i.imgur.com/0QAGPDc.png)
 
