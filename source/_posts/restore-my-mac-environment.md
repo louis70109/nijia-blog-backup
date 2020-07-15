@@ -5,7 +5,7 @@ date: 2020-07-15 16:07:40
 tags: ["Workspace", "settings sync", "Mac"]
 ---
 
-![](https://i.imgur.com/0QAGPDc.png)
+![](https://cdn.pixabay.com/photo/2017/02/19/23/09/success-2081167_1280.jpg)
 
 # 前言
 
