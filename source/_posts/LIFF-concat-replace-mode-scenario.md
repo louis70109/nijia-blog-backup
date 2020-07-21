@@ -27,7 +27,7 @@ date: 2020-07-21 11:32:08
 ## CDN 路徑注意
 
 測試時若未使用 npm package 時需要注意 CDN 版本，一般來說使用 https://static.line-scdn.net/liff/edge/2/sdk.js 它會抓最新版本，
-但若是**指定版本**的話  則需像範例網址 ➡️ https://static.line-scdn.net/liff/edge/**versions/2.1.13**/sdk.js 去指定。
+但若是**指定版本**的話  則需像範例網址 ➡️ https://static.line-scdn.net/liff/edge/ **versions/2.1.13** /sdk.js 去指定。
 
 兩個路徑**最大差異**就在於網址中會多一個 `versions` 的 path，使用上需多注意！
 
