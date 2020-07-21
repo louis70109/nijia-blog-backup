@@ -7,7 +7,6 @@ categories: LINE
 date: 2020-07-21 11:32:08
 ---
 
-
 # 前言
 
 大家好，我是 LINE Taiwan 的 Tech Evangelist – NiJia Lin。隨著 LIFF v2.3.0 上線後 LIFF 出現了 `Concatenate` 與 `Replace` 兩個模式的選項，初次使用的朋友可能會有點困惑，以下就使用一些 Scenario 為各位介紹一下這兩個功能之間的差異。
@@ -44,14 +43,14 @@ date: 2020-07-21 11:32:08
 
 在更新之前已存在的 LIFF page 目前皆已 migrate 至 Replace mode，它是一個向下相容的模式提供給先前已有相關 workaround 處理掉在 Replace mode 上的例外情況，則可在不影響功能的情況下繼續使用，並讓開發者可以安排時間逐步將相關的 LIFF page migrate 至 `Concatenate` 上，而以下則是原本 Replace mode 相關的一些參數測試。
 
-| 編號 | 類型    | 原始網址                   | 使用者進入網址                               | 結果顯示網址                           |
-| ---- | ------- | -------------------------- | -------------------------------------------- | -------------------------------------- |
-| 1    | Replace | https://YOUR_DOMAIN        | https://liff.line.me/LIFF_ID/                | https://YOUR_DOMAIN/                   |
-| 2    | Replace | https://YOUR_DOMAIN        | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/brown/?q=2         |
-| 3    | Replace | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID                 | https://YOUR_DOMAIN/friend?liff.state= |
-| 4    | Replace | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/                | https://YOUR_DOMAIN/friend             |
-| 5    | Replace | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown           | https://YOUR_DOMAIN/friend/brown       |
-| 6    | Replace | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/brown/?q=2         |
+| 編號 | 原始網址                   | 使用者進入網址                               | 結果顯示網址                           |
+| ---- | -------------------------- | -------------------------------------------- | -------------------------------------- |
+| 1    | https://YOUR_DOMAIN        | https://liff.line.me/LIFF_ID/                | https://YOUR_DOMAIN/                   |
+| 2    | https://YOUR_DOMAIN        | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/brown/?q=2         |
+| 3    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID                 | https://YOUR_DOMAIN/friend?liff.state= |
+| 4    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/                | https://YOUR_DOMAIN/friend             |
+| 5    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown           | https://YOUR_DOMAIN/friend/brown       |
+| 6    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/brown/?q=2         |
 
 ## Concatenate mode
 
@@ -62,14 +61,15 @@ date: 2020-07-21 11:32:08
 - 子路徑(sub path)消失問題: 看到 Replace mode 中的 `case 6` 中在使用者進入網址後，應當結果是 `/friend/brown`，而 `/friend` 這個路徑消失的問題。目前在 `v2.3.1` 的版本中已經修正了之前會吃掉原始 `/friend` 這個 sub path 的問題。
 
 大家可以參考以下的 scenario 去測試一下實際情況：
-| 編號 | 類型 | 原始網址 | 使用者進入網址 | 結果顯示網址 |
-| ---- | ----------- | -------------------------- | -------------------------------------------- | ----------------------------------- |
-| 1 | Concatenate | https://YOUR_DOMAIN | https://liff.line.me/LIFF_ID/ | https://YOUR_DOMAIN |
-| 2 | Concatenate | https://YOUR_DOMAIN | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/brown/?q=2#hash |
-| 3 | Concatenate | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID | https://YOUR_DOMAIN/friend |
-| 4 | Concatenate | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/ | https://YOUR_DOMAIN/friend |
-| 5 | Concatenate | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown | https://YOUR_DOMAIN/brown |
-| 6 | Concatenate | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/friend/brown/?q=2#hash |
+
+| 編號 | 原始網址                   | 使用者進入網址                               | 結果顯示網址                               |
+| ---- | -------------------------- | -------------------------------------------- | ------------------------------------------ |
+| 1    | https://YOUR_DOMAIN        | https://liff.line.me/LIFF_ID/                | https://YOUR_DOMAIN                        |
+| 2    | https://YOUR_DOMAIN        | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/brown/?q=2#hash        |
+| 3    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID                 | https://YOUR_DOMAIN/friend                 |
+| 4    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/                | https://YOUR_DOMAIN/friend                 |
+| 5    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown           | https://YOUR_DOMAIN/brown                  |
+| 6    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/friend/brown/?q=2#hash |
 
 # 結論
 
