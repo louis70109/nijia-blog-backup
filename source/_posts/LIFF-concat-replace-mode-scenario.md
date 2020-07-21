@@ -1,5 +1,5 @@
 ---
-title: LIFF v2.3.1 更新內容 - Concat & Replace 模式
+title: LIFF v2.3 更新內容 - Concat & Replace 模式
 tags:
   - LINE
   - LIFF
@@ -20,7 +20,7 @@ date: 2020-07-21 11:32:08
 
 <!-- more -->
 
-# 環境
+# 測試環境
 
 - LIFF JS SDK ➡️ 2.3.1
 - LINE APP ➡️ v10.12
@@ -41,8 +41,8 @@ date: 2020-07-21 11:32:08
 
 這是在 2.3 後出現的 mode，以下是一些範例供大家參考，主要以 slash(`/`)、Query String、LIFF 網址接`子路徑`(`sub path`) 三個測向讓大家快速了解兩個 mode 的差異。
 
-> - 若 LINE APP 版本低於 v10.11 以下可能造成不同輸出結果。
 > - LINE APP 版本必須在 v10.11 以上才能測試此功能喔！
+> - 若 LINE APP 版本低於 v10.11 以下可能造成不同輸出結果。
 
 ## Replace mode
 
