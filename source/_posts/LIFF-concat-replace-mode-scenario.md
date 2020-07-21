@@ -1,5 +1,5 @@
 ---
-title: LIFF v2.3 更新內容 - Concat & Replace 模式
+title: LIFF v2.3 更新內容 - Concatenate & Replace 模式
 tags:
   - LINE
   - LIFF
