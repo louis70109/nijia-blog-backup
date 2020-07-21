@@ -9,7 +9,7 @@ date: 2020-07-21 11:32:08
 
 # 前言
 
-大家好，我是 LINE Taiwan 的 Tech Evangelist – NiJia Lin。隨著 LIFF v2.3.0 上線後 LIFF 出現了 `Concatenate` 與 `Replace` 兩個模式的選項，初次使用的朋友可能會有點困惑，以下就使用一些 Scenario 為各位介紹一下這兩個功能之間的差異。
+大家好，我是 LINE Taiwan 的 Tech Evangelist – NiJia Lin。隨著 LIFF v2.3 上線後 LIFF 出現了 `Concatenate` 與 `Replace` 兩個模式的選項，初次使用的朋友可能會有點困惑，以下就使用一些 Scenario 為各位介紹一下這兩個功能之間的差異。
 
 ![](https://i.imgur.com/SkUlT3P.png)
 
@@ -22,7 +22,11 @@ date: 2020-07-21 11:32:08
 
 # 環境
 
-習慣使用套件可朋友可以參考我們官方出的套件 - [@line/liff](https://www.npmjs.com/package/@line/liff)
+- LIFF JS SDK ➡️ 2.3.1
+- LINE APP ➡️ v10.12
+- iOS ➡️ 13.3.1
+
+習慣使用套件可朋友可以參考我們官方出的套件 - [@line/liff](https://www.npmjs.com/package/@line/liff)。
 
 ## CDN 路徑注意
 
@@ -35,9 +39,10 @@ date: 2020-07-21 11:32:08
 
 # 介紹
 
-這是在 2.3.1 後出現的 mode，以下是一些範例供大家參考，主要以 slash(`/`)、Query String、LIFF 網址接`子路徑`(`sub path`) 三個測向讓大家快速了解兩個 mode 的差異。
+這是在 2.3 後出現的 mode，以下是一些範例供大家參考，主要以 slash(`/`)、Query String、LIFF 網址接`子路徑`(`sub path`) 三個測向讓大家快速了解兩個 mode 的差異。
 
-> 以下測試結果皆用 v10.12 版本測試，若 APP 版本低於 v10.11 以下可能有不同輸出結果。
+> - 若 LINE APP 版本低於 v10.11 以下可能造成不同輸出結果。
+> - LINE APP 版本必須在 v10.11 以上才能測試此功能喔！
 
 ## Replace mode
 
@@ -73,4 +78,6 @@ date: 2020-07-21 11:32:08
 
 # 結論
 
-藉由上述範例快速帶大家了解這次 v2.3.1 更新的 `Replace` & `Concatenate`，本次更新調整 LIFF SDK 上的一些使用方法與問題修正，目前開發團隊正逐步的修正每個議題，接下來隨著 LIFF 的新功能上線時我們會將第一手將資訊釋出讓大家知道 🙂。
+在 Replace mode 中會因為不同的作業系統(`iOS/Android`)導致輸出結果不同，在引入 Concatenate mode 之後排除了這個問題，讓兩個系統的使用者在點選 LIFF page 後會引導至對應的頁面。
+
+藉由上述範例快速帶大家了解這次 v2.3 更新的 `Replace` & `Concatenate`，本次更新調整 LIFF SDK 上的一些使用方法與問題修正，目前開發團隊正逐步的修正每個議題，接下來隨著 LIFF 的新功能上線時我們會將第一手將資訊釋出讓大家知道 🙂。
