@@ -83,7 +83,7 @@ const userId = notifyPayload.state;
 
 ## Replace mode
 
-若是在改版之前已存在的 LIFF pages 並且有相對應 workaround 的朋友目前還 migrate 優先權相對低的話可以繼續沿用這個模式，讓原本的存在的程式可以繼續處理對應邏輯。而以下則是原本 Replace mode 相關的一些參數測試：
+若是在改版之前已存在的 LIFF pages 並且有相對應 workaround 的朋友但目前 LIFF migrate 優先權相對低的話可以繼續沿用這個模式，讓原本的存在的程式可以繼續處理對應邏輯，不過建議各位開發者朋友儘早將轉移至 `Concatenate` 已避免日後其他問題產生。而以下則是原本 Replace mode 相關的一些參數測試：
 
 | 編號 | 原始網址                   | 使用者進入網址                               | 結果顯示網址                           |
 | ---- | -------------------------- | -------------------------------------------- | -------------------------------------- |
@@ -100,7 +100,9 @@ const userId = notifyPayload.state;
 
 在 Replace mode 中會因為不同的作業系統(`iOS/Android`)導致輸出結果不同，在引入 Concatenate mode 之後排除了這個問題，讓兩個系統的使用者在點選 LIFF page 後會引導至對應的頁面。
 
-藉由上述範例快速帶大家了解這次 v2.3 更新的 `Replace` & `Concatenate`，本次更新調整 LIFF SDK 上的一些使用方法與問題修正，目前開發團隊正逐步的修正每個議題，接下來隨著 LIFF 的新功能上線時我們會將第一手將資訊釋出讓大家知道 🙂。
+除了透過上述範例快速帶大家了解這次 v2.3 更新的 `Replace` & `Concatenate` 以外，我之前寫的 `liff.state=` 的 workaround 也可以刪除了 🎉。
+
+而目前開發團隊正逐步的修正每個議題，接下來隨著 LIFF 的新功能上線時我們會將第一手將資訊釋出讓大家知道 🙂。
 
 # 參考
 
