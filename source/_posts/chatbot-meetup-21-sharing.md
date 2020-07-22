@@ -8,7 +8,6 @@ categories: 研討會
 date: 2020-07-23 01:43:51
 ---
 
-
 # 前言
 
 大家好，我是 LINE Taiwan 的 Tech Evangelist – NiJia Lin。這次很開心 DevRel 團隊受到 chatbot 社群的邀請，參加了 「Chatbot meetup 聊天機器人小聚 21 @ On-ramp Studio] 的聚會活動，並且分享 LINE API 更新的心得。在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。
@@ -23,8 +22,7 @@ date: 2020-07-23 01:43:51
 
 ### 整場分享的影片：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8Lu4LHKSMlo?start=369" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Lu4LHKSMlo?start=334" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!-- more -->
 
 ## LINE Platform 平台 2020 六月 & 七月更新
