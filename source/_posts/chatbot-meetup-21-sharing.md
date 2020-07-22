@@ -22,7 +22,7 @@ date: 2020-07-23 01:43:51
 
 ### 整場分享的影片：
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8Lu4LHKSMlo?start=334" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Lu4LHKSMlo?controls=0&amp;start=335" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!-- more -->
 
 ## LINE Platform 平台 2020 六月 & 七月更新
