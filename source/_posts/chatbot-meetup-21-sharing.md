@@ -33,7 +33,7 @@ date: 2020-07-23 01:43:51
 
 <script async class="speakerdeck-embed" data-id="279ac2f6f39348c482533ff9f12568d0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-在 6/22 的更新當中我們 Issue access_token 的功能([參閱](https://developers.line.biz/en/reference/messaging-api/#issue-channel-access-token-v2-1)除了可以拿到 chatbot 中 JWT 樣式的 access_token，裡面還有一個 unique 的 key_id 欄位，並且可以使用這個新的 API - [Get all valid channel access token key IDs v2.1](https://developers.line.biz/en/reference/messaging-api/#get-all-valid-channel-access-token-key-ids-v2-1) 去找到所有的 kid 來並交叉比對你手上所擁有的 access_token 中的 kid 是否有吻合其中一把鑰匙。
+在 6/22 的更新當中我們 Issue access_token 的功能([參閱](https://developers.line.biz/en/reference/messaging-api/#issue-channel-access-token-v2-1)除了可以拿到 chatbot 中 JWT 樣式的 access_token，裡面還有一個 unique 的 key_id 欄位，並且可以使用這個新的 API - [Get all valid channel access token key IDs v2.1](https://developers.line.biz/en/reference/messaging-api/#get-all-valid-channel-access-token-key-ids-v2-1) 去找到所有的 kid，除了來並交叉比對你手上所擁有的 access_token 中的 kid 是否有吻合其中一把鑰匙，也可以從中得知已經 issue 多少 access_token 出去囉！
 
 以下是 Get all valid channel access token key IDs v2.1 的流程圖：
 ![](https://i.imgur.com/LEAYqrL.png)
