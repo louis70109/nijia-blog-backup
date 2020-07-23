@@ -104,7 +104,7 @@ shareTargetPicker 之前的版本無法知道是否已經送出，在這次的 2
 
 這次的更新中因為許多開發者並未將 LIFF Icon 加上去，因此在種種考慮下我們選擇移除了這個 Icon，並且新增了一個分享(Share)的按鈕，當中可以將當前 LIFF page `分享`給其他好友，並且也擁有`重新整理`的按鈕，讓開發者可以不用一直關閉在開啟測試囉！
 
-# 最後
+## 小結
 
 LINE FRESH 2020 的校園競賽開始囉！若想要挑戰的朋友千萬別錯過，這次競賽中有`商業行銷`&`黑客松`組，可依照挑戰選擇參加喔！
 
@@ -114,7 +114,7 @@ LINE PROTOSTAR 與台北商業大學合作的對話機器人設計大賽也可�
 
 <script async class="speakerdeck-embed" data-slide="16" data-id="279ac2f6f39348c482533ff9f12568d0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-## 活動小結
+## 結論
 
 社群分享永遠是讓創意激盪的最佳方式，而 Chatbots Meetup 是一個很熱情與充滿創造力的社群組織。也希望有更多有創意的開發者願意加入 LINE Chatbot 的開發行列，更希望能熱情的參與社群的活動與一起來分享。
 
