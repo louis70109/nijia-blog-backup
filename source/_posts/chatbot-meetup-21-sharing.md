@@ -114,6 +114,10 @@ LINE PROTOSTAR 與台北商業大學合作的對話機器人設計大賽也可�
 
 <script async class="speakerdeck-embed" data-slide="16" data-id="279ac2f6f39348c482533ff9f12568d0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+## LINE Bot with Rasa Open Source
+
+<script async class="speakerdeck-embed" data-id="e7b8ca6a36b94af0b5977e34b0ec3a30" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 ## 結論
 
 社群分享永遠是讓創意激盪的最佳方式，而 Chatbots Meetup 是一個很熱情與充滿創造力的社群組織。也希望有更多有創意的開發者願意加入 LINE Chatbot 的開發行列，更希望能熱情的參與社群的活動與一起來分享。
