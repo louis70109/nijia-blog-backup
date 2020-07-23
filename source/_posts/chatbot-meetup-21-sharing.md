@@ -33,6 +33,8 @@ date: 2020-07-23 01:43:51
 
 <script async class="speakerdeck-embed" data-id="279ac2f6f39348c482533ff9f12568d0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+### 6/22 API Update
+
 在 6/22 的更新當中我們 Issue access_token 的功能([參閱](https://developers.line.biz/en/reference/messaging-api/#issue-channel-access-token-v2-1)除了可以拿到 chatbot 中 JWT 樣式的 access_token，裡面還有一個 unique 的 key_id 欄位，並且可以使用這個新的 API - [Get all valid channel access token key IDs v2.1](https://developers.line.biz/en/reference/messaging-api/#get-all-valid-channel-access-token-key-ids-v2-1) 去找到所有的 kid，除了來並交叉比對你手上所擁有的 access_token 中的 kid 是否有吻合其中一把鑰匙，也可以從中得知已經 issue 多少 access_token 出去囉！
 
 以下是 Get all valid channel access token key IDs v2.1 的流程圖：
@@ -44,7 +46,7 @@ date: 2020-07-23 01:43:51
 
 ### [06/29 LIFF v2.3.0 released](https://developers.line.biz/en/news/2020/06/29/release-liff-2.3/)
 
-- Concatenate & Replace 模式
+#### Concatenate & Replace 模式
 
 <script async class="speakerdeck-embed" data-slide="5" data-id="279ac2f6f39348c482533ff9f12568d0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -58,7 +60,7 @@ date: 2020-07-23 01:43:51
 
 > 請注意：iOS 版本必須在 10.11 之後 以及 LIFF SDK 需使用 v2.3.1。
 
-- liff.permanentLink.createUrl() 的 exception 方法使用介紹
+#### liff.permanentLink.createUrl() 的 exception 方法使用介紹
 
 若抓到當前網址與實際 Endpoint 不符的話，liff.permanentLink.createUrl() 會在 exception 中告知狀態。程式碼如下：
 
@@ -74,13 +76,13 @@ catch (err) {
 若不太清楚的話可以參考下圖範例試試看將 webhook 設定一個基本路由(`/bbb`)，若在原始路由後加個子路由(`/cc`)，則這樣是沒問題，但若將原始路由的路徑(`/bbb`)刪除改成`/ccc`的話就會跳到錯誤中了：
 ![](https://i.imgur.com/Fb1pRy6.png)
 
-- liff.shareTargetPicker 已經可以抓出錯誤囉！
+#### liff.shareTargetPicker 已經可以抓出錯誤囉！
 
 <script async class="speakerdeck-embed" data-slide="8" data-id="279ac2f6f39348c482533ff9f12568d0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 shareTargetPicker 之前的版本無法知道是否已經送出，在這次的 2.3 release 中可以在程式碼內部得知 shareTargetPicker 的狀態並讓開發者去 handle message。
 
-- liff.sendMessages() 增加了 LiffError 的 spec 囉！
+#### liff.sendMessages() 增加了 LiffError 的 spec 囉！
 
 <script async class="speakerdeck-embed" data-slide="11" data-id="279ac2f6f39348c482533ff9f12568d0" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -120,7 +122,7 @@ LINE PROTOSTAR 與台北商業大學合作的對話機器人設計大賽也可�
 
 「LINE 開發者官方社群」官方帳號 ID：[@line_tw_dev](https://lin.ee/s5RsZHo)
 
-![](http://www.evanlin.com/images/2020/line-tw-dev-qr.png)
+![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
 
 ## 關於「LINE 開發社群計畫」
 
