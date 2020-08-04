@@ -74,7 +74,7 @@ date: 2020-08-04 12:37:23
 
 在此步驟中，我們將創建一個名為 spotify.js 的 Util 類別，該類將幫助管理與 Spotify API 的連接，包括創建用於用戶登錄到 Spotify 的 URL，創建播放列表（如果尚未存在），搜索歌曲並將歌曲添加到播放列表。
 
-<script src="https://gist.github.com/tandevmode/3afd7e338ce499ceb5cdeebccf844cc7"></script>
+<script src="https://gist.github.com/tandevmode/3afd7e338ce499ceb5cdeebccf844cc7.js"></script>
 
 # 4. 管理 Webhooks 並將結果使用 Flex message 發送給用戶
 
@@ -84,7 +84,7 @@ date: 2020-08-04 12:37:23
 
 該檔案管理和執行 Express Web Server，並且有 Controller 調用 Class Util 來處理用戶的 Webhook。
 
-<script src="https://gist.github.com/tandevmode/d1a0d3580245af346f38c9f29bd3c85b"></script>
+<script src="https://gist.github.com/tandevmode/d1a0d3580245af346f38c9f29bd3c85b.js"></script>
 
 ## lineapp.js
 
@@ -92,7 +92,7 @@ date: 2020-08-04 12:37:23
 
 - 用戶想要查詢更多歌曲時的 **More** 按鈕。
 - **Add** 按鈕可將歌曲添加到播放列表。
-<script src="https://gist.github.com/tandevmode/f178e49d81ebb715efa460c7d893fedb"></script>
+<script src="https://gist.github.com/tandevmode/f178e49d81ebb715efa460c7d893fedb.js"></script>
 
 # 5. 啟用 ngrok 並更新 config
 
