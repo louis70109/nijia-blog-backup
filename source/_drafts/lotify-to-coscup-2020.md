@@ -1,6 +1,5 @@
 ---
 title:
-  "[object Object]": null
 categories: 學習紀錄
 tags:
 ---
