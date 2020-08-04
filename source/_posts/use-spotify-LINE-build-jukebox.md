@@ -11,6 +11,8 @@ date: 2020-08-04 12:37:23
 
 ![](https://i.imgur.com/JKOR5lp.jpg)
 
+> 原文出自 [มาสร้างตู้เพลง Jukebox เท่ห์ๆด้วย LINE Chatbot ผ่าน Spotify API กัน!](https://medium.com/linedevth/jukebox-chatbot-line-spotify-e410a84b50d8)
+
 今天我將透過這篇文章帶大家在 LINE 中創建聊天機器人 “Nickelodeon”。會實作此聊天機器人是因為有時會有朋友來我家做飯，我會同時在家中播放音樂。但是朋友們會一下這首一下要求那首。所以我有了新主意：嘿，不如讓 Chatbot 擔任我的助手，幫助我脫離 555+ 種 DJ 身份。而實際上這個 Chatbot 可以應用於其他情境，例如在辦公室中或開車和朋友一起旅行等。
 
 # 點唱機是什麼？
@@ -72,7 +74,7 @@ date: 2020-08-04 12:37:23
 
 在此步驟中，我們將創建一個名為 spotify.js 的 Util 類別，該類將幫助管理與 Spotify API 的連接，包括創建用於用戶登錄到 Spotify 的 URL，創建播放列表（如果尚未存在），搜索歌曲並將歌曲添加到播放列表。
 
-<script src="https://gist.github.com/tandevmode/3afd7e338ce499ceb5cdeebccf844cc7#file-spotify-js"></script>
+<script src="https://gist.github.com/tandevmode/3afd7e338ce499ceb5cdeebccf844cc7"></script>
 
 # 4. 管理 Webhooks 並將結果使用 Flex message 發送給用戶
 
@@ -82,7 +84,7 @@ date: 2020-08-04 12:37:23
 
 該檔案管理和執行 Express Web Server，並且有 Controller 調用 Class Util 來處理用戶的 Webhook。
 
-<script src="https://gist.github.com/tandevmode/d1a0d3580245af346f38c9f29bd3c85b#file-index-js"></script>
+<script src="https://gist.github.com/tandevmode/d1a0d3580245af346f38c9f29bd3c85b"></script>
 
 ## lineapp.js
 
@@ -90,7 +92,7 @@ date: 2020-08-04 12:37:23
 
 - 用戶想要查詢更多歌曲時的 **More** 按鈕。
 - **Add** 按鈕可將歌曲添加到播放列表。
-<script src="https://gist.github.com/tandevmode/f178e49d81ebb715efa460c7d893fedb#file-lineapp-js"></script>
+<script src="https://gist.github.com/tandevmode/f178e49d81ebb715efa460c7d893fedb"></script>
 
 # 5. 啟用 ngrok 並更新 config
 
