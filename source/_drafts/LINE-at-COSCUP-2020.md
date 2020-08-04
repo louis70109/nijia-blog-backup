@@ -82,6 +82,17 @@ Clojure 有以下特性：
 
 講者接著以 JS 為例說明在大部分 [M-expression](https://en.wikipedia.org/wiki/M-expression) 語言特性中與 [S-expression](https://en.wikipedia.org/wiki/S-expression) 的差異，並用 tree 的方式為大家快速介紹。
 
+- 由於 Clojure 是 immutable data structure，因此大部分狀況下都是 copy on write。
+- 若有更動到 tree 上的 node，則改動的部分會生成新的 node，其他沒有更動到的則直接 reference。
+- 相對減省許多 memory。
+
+有些 function 定義在 array or map
+
+sequences operation -> 操作各種 map filter, reduct, first,rest...
+而他是一個 linked list
+
+其他語言有不一致的相關 function name，人腦需要記憶時會覺得很痛苦無法記錄下來
+
 ## Record function time
 
 以往為了量測 function 執行時間時則需放入兩個 Timer 才可以計算出執行時間，而 Clojure 只需要在 vim 上輸入 `(time doSomething)` 即可馬上算出 function 執行時間(真的很方便)。
@@ -96,17 +107,6 @@ Clojure 有以下特性：
 ![](https://i.imgur.com/MoXAea0.jpg)
 
 ![](https://i.imgur.com/UDACfbi.jpg)
-
-Clojure immutable data structure: copy on write
-改到的部分生成新的 node，就的則使用 reference
-比較減省 memory
-
-有些 function 定義在 array or map
-
-sequences operation -> 操作各種 map filter, reduct, first,rest...
-而他是一個 linked list
-
-其他語言有不一致的相關 function name，人腦需要記憶時會覺得很痛苦無法記錄下來
 
 ## 小結
 
