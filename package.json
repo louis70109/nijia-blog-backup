@@ -2,12 +2,14 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "author": "NiJia Lin <louis70109@gmail.com>",
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
     "server": "hexo server",
     "new": "hexo new draft ",
     "publish": "hexo publish ",
+    "backup": "git add .; git commit -m 'backup'; git push;",
     "deploy": "git add .; git commit -m 'backup'; git push; hexo clean; hexo g; hexo d -g"
   },
   "hexo": {
