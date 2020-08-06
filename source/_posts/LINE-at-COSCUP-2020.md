@@ -52,7 +52,7 @@ date: 2020-08-06 12:10:29
 
 <script async class="speakerdeck-embed" data-slide="14" data-id="efd3904c14f7400cbbd4e62553e3976b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-接下來提到了整合 openstack 到 Verda 時帶來的挑戰與困難點，這裡提到的是與普羅大眾的 open source 一樣會遇到的問題，以下大概列出這次提到的困難點部分：
+接下來提到了整合 OpenStack 到 Verda 時帶來的挑戰與困難點，這裡提到的是與普羅大眾的 open source 一樣會遇到的問題，以下大概列出這次提到的困難點部分：
 
 - Feature
 - 政策問題
