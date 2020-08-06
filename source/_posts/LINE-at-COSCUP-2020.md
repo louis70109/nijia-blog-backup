@@ -1,17 +1,24 @@
 ---
-title:
-  "[object Object]": null
-categories: 學習紀錄
+title: COSCUP 2020 年會 - LINER 的議程分享
 tags:
+  - Verda
+  - LINE
+  - Lotify
+  - Clojure
+categories: 研討會
+date: 2020-08-06 12:10:29
 ---
 
-![](https://i.imgur.com/0QAGPDc.png)
+
+![](https://i.imgur.com/1hFoD0h.jpg)
 
 # 前言
 
-<!-- more -->
+感謝台灣的防疫英雄們的努力讓大家有機會參加線下的研討會，也辛苦大會在行前的各種宣導與措施，讓這次 COSCUP 可以圓滿結束！
 
-本次 LINE 出動了三個講者
+以下為大家帶來這次 LINE 的三個講者分別為大家帶來的內容分享 😃
+
+<!-- more -->
 
 # [How We Integrate and Develop Private Cloud in LINE](https://coscup.org/2020/zh-TW/agenda/PZPMCR) - Gene Kuo
 
@@ -80,18 +87,20 @@ Clojure 有以下特性：
 3. Composable functions
 4. Immutable database
 
+## 語言比較
+
 講者接著以 JS 為例說明在大部分 [M-expression](https://en.wikipedia.org/wiki/M-expression) 語言特性中與 [S-expression](https://en.wikipedia.org/wiki/S-expression) 的差異，並用 tree 的方式為大家快速介紹。
 
 - 由於 Clojure 是 immutable data structure，因此大部分狀況下都是 copy on write。
+
+![](https://i.imgur.com/5nevVHF.png)
+
 - 若有更動到 tree 上的 node，則改動的部分會生成新的 node，其他沒有更動到的則直接 reference。
 - 相對減省許多 memory。
 
-有些 function 定義在 array or map
+接著講解了其他語言有不一致的相關 function name 會讓開發者在記憶時比較痛苦，再使用 Clojure 的範例帶大家了解這部分是如何處理這部分。
 
-sequences operation -> 操作各種 map filter, reduct, first,rest...
-而他是一個 linked list
-
-其他語言有不一致的相關 function name，人腦需要記憶時會覺得很痛苦無法記錄下來
+![](https://i.imgur.com/iLIIEEF.png)
 
 ## Record function time
 
@@ -99,7 +108,7 @@ sequences operation -> 操作各種 map filter, reduct, first,rest...
 
 ![](https://i.imgur.com/MZZGvxl.jpg)
 
-- productivity 增加 30%
+> 開發上若是括號上的問題並是使用 vim 開發的話可以[參考這篇](http://irongateinfo.blogspot.com/2017/02/clojure-vim-rainbow-parentheses-cljfmt.html)
 
 ## Demo
 
@@ -110,9 +119,7 @@ sequences operation -> 操作各種 map filter, reduct, first,rest...
 
 ## 小結
 
-這個語言&語系我還是真的第一次聽到，從講者的分享中可以感覺到若已經習慣兩種生態的開發者其實若使用 Clojure 開發產品的話產出說不定真的比其他語言的開發速度快上許多，且在這場演講中講者用很實際的例子帶大家了解兩邊的差異，之後有機會不妨聽看看講者分享吧！
-
-> 開發上若是括號上的問題並是使用 vim 開發的話可以[參考這篇](http://irongateinfo.blogspot.com/2017/02/clojure-vim-rainbow-parentheses-cljfmt.html)
+藉由講者深入淺出的敘述讓我在議程中能夠快速的了解 Clojure，並且從分享中可以感覺到若已經習慣兩種生態的開發者其實若使用 Clojure 開發產品的話產出說不定真的比其他語言的開發速度快上許多，增加 30% productivity 一定是不為過的，且在這場演講中講者用很實際的例子帶大家了解兩邊的差異，之後有機會不妨到 [Clojure.tw](https://clojure.tw/) 找講者討論吧！
 
 # [Lotify: a python SDK for LINE Notify](https://coscup.org/2020/zh-TW/agenda/KNJDWQ) - NiJia Lin (就是我)
 
@@ -122,7 +129,50 @@ sequences operation -> 操作各種 map filter, reduct, first,rest...
 
 # 介紹
 
+既然這次演講是實作 LINE Notify SDK，那一定得先了解一下 LINE Notify 究竟含有什麼功能。
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="733b207481c441adab9cac7d241efc29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+並且搭配著一些在開源環境下適合使用場景的範例：
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="733b207481c441adab9cac7d241efc29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+LINE Notify 可以送以下四種類型的訊息：
+
+- Text
+- Sticker
+- Image url
+- Image file
+
+接著比較 Lotify 與其他 Pypi 上的 LINE Notify packages 差異，許多套件只實作出發送功能卻沒做模組化發送訊息、認證流程、單元測試，因此我在 SDK 上將這些功能加入進去，並且借鏡 [line-bot-sdk-python](https://github.com/line/line-bot-sdk-python) 的測試手法來確保 SDK 品質。
+
+<script async class="speakerdeck-embed" data-slide="21" data-id="733b207481c441adab9cac7d241efc29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 做一個 open source 需要注意的細節
+
+- 版本控制：讓關注專案的人可以清楚知道在每次 release 中修改了什麼內容，讓專案的管理有可控性。
+- 上傳至 Pypi 的設定檔：在這次的開發中於此部分卡了許久，分享步驟讓大家少走點冤望路。
+
+<script async class="speakerdeck-embed" data-slide="43" data-id="733b207481c441adab9cac7d241efc29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- 切割 requirements.txt 環境帶來的好處：若專案越來越大時切割環境是必要的，否則很容易污染貢獻者的環境導致開發不順。
+- 整合 Tox 與 Travis 確保 SDK 品質：Lotify 中整合了 Travis 來跑每次 commit 時的單元測試，避免改壞程式影響到其他專案。
+
+- Badge 帶來的重要性 - 以 Travis 為例：透過 Badge 讓使用者可以再看 README 時就清楚知道訊息，支援版本、LICENSE、測試狀態...
+
+<script async class="speakerdeck-embed" data-slide="51" data-id="733b207481c441adab9cac7d241efc29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- LICENSE 的重要性：保護專案與增加可信度。
+
+- 使用 Heroku 做一鍵式部署：讓有興趣的朋友可以快速上手你的 SDK，增加活躍度。
+
+<script async class="speakerdeck-embed" data-slide="58" data-id="733b207481c441adab9cac7d241efc29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 # 結論
+
+透過這次的議程希望可以讓聽眾從 `遇到問題`、`分析問題`、`解決問題`到`文件細節`的每個步驟的重要性，若你現在使用 python 並也在開發 LINE Notify，不妨試試看 [lotify](https://github.com/louis70109/lotify) 並用星星支持它吧！
+
+![](https://i.imgur.com/zP6BRFT.png)
 
 # 活動小結
 
