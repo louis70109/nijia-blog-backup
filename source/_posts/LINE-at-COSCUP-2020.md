@@ -11,9 +11,13 @@ date: 2020-08-06 12:10:29
 
 ![](https://i.imgur.com/1hFoD0h.jpg)
 
-# 前言
+# 什麼是 COSCUP？
 
-感謝台灣的防疫英雄們的努力讓大家有機會參加線下的研討會，也辛苦大會在行前的各種宣導與措施，讓這次 COSCUP 可以圓滿結束！
+大家好，我是 LINE Taiwan Technical Evangelist – NiJia Lin。很高興這次能以 LINER 身份於 8/1、8/2 參加 COSCUP 2020，並體驗開源社群充滿熱忱與活力的氛圍！[COSCUP](https://coscup.org/2019/)  是亞洲最大的開源會議之一，自 2006 年開始由開源社群舉行的年度會議，也是台灣自由開源軟體運動 (FOSSM) 的主要倡導者。COSCUP 包含演講、贊助商、社群攤位，以及 BoF 社群同樂會等，COSCUP 的宗旨在於提供一個聯結開放原始碼開發者、使用者與推廣者的平台。
+
+> 感謝台灣的防疫英雄們的努力讓大家有機會參加線下的研討會，也辛苦大會在行前的各種宣導與措施，讓這次 COSCUP 可以圓滿結束！
+
+- 2019 COSCUP 文章參考：https://engineering.linecorp.com/zh-hant/blog/line-coscup-2019/
 
 以下為大家帶來這次 LINE 的三個講者分別為大家帶來的內容分享 😃
 
@@ -167,13 +171,21 @@ LINE Notify 可以送以下四種類型的訊息：
 
 <script async class="speakerdeck-embed" data-slide="58" data-id="733b207481c441adab9cac7d241efc29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-## 結論
+## 小結
 
 透過這次的議程希望可以讓聽眾從 `遇到問題`、`分析問題`、`解決問題`到`文件細節`的每個步驟的重要性，若你現在使用 python 並也在開發 LINE Notify，不妨試試看 [lotify](https://github.com/louis70109/lotify) 並用星星支持它吧！
 
 ![](https://i.imgur.com/zP6BRFT.png)
 
-# 活動小結
+# 活動總結
+
+![](https://i.imgur.com/JAPBjX7.jpg)
+
+因為擁有這些熱情的社群議程讓 COSCUP 更加精彩，若你手邊有作品的話考慮來社群與大家分享，除了交流技術外也可以認識許多新朋友喔！心動不如馬上行動 🏃‍♂️：
+
+- [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/)
+- [Cloud Native Taiwan User Group](https://www.facebook.com/groups/cloudnative.tw/)
+- [Clojure.tw](https://clojure.tw/)
 
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 
