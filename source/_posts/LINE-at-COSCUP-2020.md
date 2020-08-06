@@ -13,7 +13,7 @@ date: 2020-08-06 12:10:29
 
 # 什麼是 COSCUP？
 
-大家好，我是 LINE Taiwan Technical Evangelist – NiJia Lin。很高興這次能以 LINER 身份於 8/1、8/2 參加 COSCUP 2020，並體驗開源社群充滿熱忱與活力的氛圍！[COSCUP](https://coscup.org/2019/)  是亞洲最大的開源會議之一，自 2006 年開始由開源社群舉行的年度會議，也是台灣自由開源軟體運動 (FOSSM) 的主要倡導者。COSCUP 包含演講、贊助商、社群攤位，以及 BoF 社群同樂會等，COSCUP 的宗旨在於提供一個聯結開放原始碼開發者、使用者與推廣者的平台。
+大家好，我是 LINE Taiwan Technology Evangelist – NiJia Lin。很高興這次能以 LINER 身份於 8/1、8/2 參加 COSCUP 2020，並體驗開源社群充滿熱忱與活力的氛圍！[COSCUP](https://coscup.org/2019/)  是亞洲最大的開源會議之一，自 2006 年開始由開源社群舉行的年度會議，也是台灣自由開源軟體運動 (FOSSM) 的主要倡導者。COSCUP 包含演講、贊助商、社群攤位，以及 BoF 社群同樂會等，COSCUP 的宗旨在於提供一個聯結開放原始碼開發者、使用者與推廣者的平台。
 
 > 感謝台灣的防疫英雄們的努力讓大家有機會參加線下的研討會，也辛苦大會在行前的各種宣導與措施，讓這次 COSCUP 可以圓滿結束！
 
