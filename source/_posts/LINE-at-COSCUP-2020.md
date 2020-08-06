@@ -1,5 +1,5 @@
 ---
-title: COSCUP 2020 年會 - LINER 的議程分享
+title: COSCUP 2020 年會 - LINER 工程團隊的議程分享
 tags:
   - Verda
   - LINE
