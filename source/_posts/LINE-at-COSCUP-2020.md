@@ -9,7 +9,6 @@ categories: 研討會
 date: 2020-08-06 12:10:29
 ---
 
-
 ![](https://i.imgur.com/1hFoD0h.jpg)
 
 # 前言
@@ -127,7 +126,7 @@ Clojure 有以下特性：
 
 <script async class="speakerdeck-embed" data-id="733b207481c441adab9cac7d241efc29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-# 介紹
+## 介紹
 
 既然這次演講是實作 LINE Notify SDK，那一定得先了解一下 LINE Notify 究竟含有什麼功能。
 
@@ -168,7 +167,7 @@ LINE Notify 可以送以下四種類型的訊息：
 
 <script async class="speakerdeck-embed" data-slide="58" data-id="733b207481c441adab9cac7d241efc29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-# 結論
+## 結論
 
 透過這次的議程希望可以讓聽眾從 `遇到問題`、`分析問題`、`解決問題`到`文件細節`的每個步驟的重要性，若你現在使用 python 並也在開發 LINE Notify，不妨試試看 [lotify](https://github.com/louis70109/lotify) 並用星星支持它吧！
 
