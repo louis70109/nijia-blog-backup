@@ -1,8 +1,12 @@
 ---
 title: Vue.js Taiwan 006 小聚花絮分享
+tags:
+  - Vue
+  - LINE
 categories: 研討會
-tags: ["Vue", "LINE"]
+date: 2020-08-20 12:31:04
 ---
+
 
 ![](https://i.imgur.com/FXFckeq.jpg)
 
