@@ -5,9 +5,39 @@ categories: 學習紀錄
 tags:
 ---
 
-![](https://i.imgur.com/0QAGPDc.png)
+![](https://i.imgur.com/FXFckeq.jpg)
 
 # 前言
+
+大家好，我是 LINE Taiwan Technology Evangelist - NiJia Lin，身為場地提供方也很感謝 Vue Taiwan 的大家配合相關防疫流程並座無虛席，熊大也表示終於有朋友來了 😆。
+![](https://i.imgur.com/XU0u7k3.jpg)
+
+# 開場
+
+![](https://i.imgur.com/g6MUhEK.jpg)
+一開始由我們 DelRel Team 的 Evan 快速跟大家講解 LINE Tech Fresh 的相關計畫與申請流程，若是學生身份的朋友歡迎參考[這個連結](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)，LINE 裡面不只高手雲集，且擁有很棒的環境！趕快來加入我們吧 🙂。
+
+# Nuxt i18n 實戰經驗分享
+
+<script async class="speakerdeck-embed" data-id="19960efd47314fba932e8403a9466108" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+首先由 LINE Today 的前端工程師 - Able 為大家帶來在實際上線產品中使用 i18n 的甘苦談。
+
+一開始帶了一個簡單的範例介紹設定檔與如何讓 i18n 知道要切換什麼語系，但隨著專案的成長與支援的語系越來越多情況下就會造成 loading 很重，以 LINE Today 來說他就支援了來說他就支援了 **4 種語系**並有 **2500** 多個訊息需要切換，因此就需要使用 lazy loading 來幫忙。
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="19960efd47314fba932e8403a9466108" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+接著講者提到因為 LINE Today 中有許多不同的 `模組(Module)`，會隨著不同區域的需求而導入，而載入時為了不影響原本的渲染而會使用 `Async`的方式來導入模組至 Component 中。
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="19960efd47314fba932e8403a9466108" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在前面的條件都滿足的情況下就遇到了第一個問題，網頁載入速度太慢(效能只有 60 分)，並且知道哪些檔案拖慢的載入速度。
+
+<script async class="speakerdeck-embed" data-slide="11" data-id="19960efd47314fba932e8403a9466108" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+雖然前面提到使用 lazy loading 來增加使用速度，但也因為訊息量太多(4 語系+2500 訊息)讓 import 時特別慢，在這種情況下就需要將訊息量批次處理，這邊講者也分別講解了各個 Task 放的數量的 Performance 比較，雖然劃分不同的 Task 可以讓載入加快，但也因為 JSON 需要 merge 而速度不見得比整包快，在簡報中 case 範例中的權衡制宜下最好情況就是 100x7 是 best practice，數量在低效率影響有不多。
+
+<script async class="speakerdeck-embed" data-slide="12" data-id="19960efd47314fba932e8403a9466108" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 - nuxt config
 - 英文 西班牙文
