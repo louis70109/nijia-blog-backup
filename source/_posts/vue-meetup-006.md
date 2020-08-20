@@ -28,7 +28,7 @@ date: 2020-08-20 12:31:04
 
 ![](https://i.imgur.com/6WJkYGp.jpg)
 
-首先由 LINE Today 的前端工程師 - Able 為大家帶來在實際上線產品中使用 i18n 的甘苦談。
+首先由 LINE Today 的前端工程師 - Abel 為大家帶來在實際上線產品中使用 i18n 的甘苦談。
 
 <script async class="speakerdeck-embed" data-id="19960efd47314fba932e8403a9466108" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
