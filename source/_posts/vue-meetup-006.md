@@ -15,6 +15,7 @@ date: 2020-08-20 12:31:04
 
 - Vue.js Taiwan 社群：https://www.facebook.com/groups/vuejs.tw/
 - 活動報名頁面：https://vuejs.kktix.cc/events/v-tw-meetup-006
+<!-- more -->
 
 ![](https://i.imgur.com/XU0u7k3.jpg)
 
@@ -60,8 +61,6 @@ date: 2020-08-20 12:31:04
 最後分享的部分則是在寫 Javascript 都需要注意的部分，Object literal & JSON parse 的速度比較，這部分較多是與 V8 引擎相關實作上的問題([參考](https://v8.dev/blog/cost-of-javascript-2019))，簡單來說若有使用 i18n 儲存相關訊息時記得使用 JSON 來處理。
 
 <script async class="speakerdeck-embed" data-slide="28" data-id="19960efd47314fba932e8403a9466108" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-<!-- more -->
 
 # 活動小結
 
