@@ -8,7 +8,8 @@ date: 2020-08-20 12:31:04
 ---
 
 ![](https://i.imgur.com/BSwS13h.jpg)
-![](images/img1.jpg)
+
+![test1](vue-meetup-006/img1.jpg)
 
 # 前言
 
