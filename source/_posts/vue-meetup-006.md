@@ -12,6 +12,7 @@ date: 2020-08-20 12:31:04
 ![test1](images/img1.jpg)
 ![test4](img1.jpg)
 ![test3](vue-meetup-006/img1.jpg)
+![test5](./vue-meetup-006/img1.jpg)
 ![test2](../images/img1.jpg)
 
 # 前言
