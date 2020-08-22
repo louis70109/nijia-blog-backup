@@ -9,9 +9,7 @@ date: 2020-08-20 12:31:04
 
 ![](https://i.imgur.com/BSwS13h.jpg)
 
-![2](../images/1.jpg)
-
-![1](/images/1.jpg)
+![1](https://nijialin.com/images/1.jpg)
 
 # 前言
 
