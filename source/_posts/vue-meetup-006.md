@@ -9,6 +9,10 @@ date: 2020-08-20 12:31:04
 
 ![](https://i.imgur.com/BSwS13h.jpg)
 
+![2](../images/1.jpg)
+
+![1](./images/1.jpg)
+
 # 前言
 
 大家好，我是 LINE Taiwan Technology Evangelist - NiJia Lin，身為場地提供方也很感謝 Vue.js Taiwan 的大家配合相關防疫流程並座無虛席，在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。(熊大也表示有新朋友來了 😆)
