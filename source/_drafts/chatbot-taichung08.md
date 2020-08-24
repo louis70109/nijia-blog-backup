@@ -38,6 +38,13 @@ tags: ["研討會心得", "DevRel", "LINE"]
 
 <script async class="speakerdeck-embed" data-slide="10" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這邊會需要加入兩個 Heroku 套件來輔助這次的實作：
+
+- Heroku Scheduler
+  - 輸入：`python scripts/sync_to_sql.py`
+  - 輸入：`python scripts/notify_me.py`
+- Heroku Postgres
+
 <script async class="speakerdeck-embed" data-slide="13" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 環境變數
@@ -61,100 +68,11 @@ DATABASE_URL=postgres://USER:PASSWORD@127.0.0.1:5432/postgres
 - how to build an open source flow
 -
 
-## LINE Platform 平台 2020 六月更新
+# 閃電秀 - 我要奮發向上！聊天機器人有哪些書？
 
-![](../images/2020/0623_2.jpg)
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/qc23PODCp5yDfj" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jarsing/lightning-talk-chatbotbooks-20200822" title="我要奮發向上！聊天機器人有哪些書？" target="_blank">我要奮發向上！聊天機器人有哪些書？</a> </strong> from <strong><a href="https://www.slideshare.net/jarsing" target="_blank">佳新 陳</a></strong> </div>
 
-#### [投影片](https://speakerdeck.com/line_developers_tw/room-api-demo)
-
-### [06/09: Flex Message Simulator tutorial now available](https://developers.line.biz/en/news/2020/06/09/flex-message-simulator-tutorial/)
-
-<script async class="speakerdeck-embed" data-slide="3" data-id="8517c0f0cbba4a18854c672827f71d86" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-Flex Message 一直都是開發者在開發 chatbot 上面最常用來跟使用者互動的訊息格式。除了提供各種基礎的樣版之外，更有許多有元件可以讓開發者發揮創造力。 而 [Flex Message Simulator](https://developers.line.biz/flex-simulator/) 更是開發者與設計師溝通最好的橋樑，設計師可以透過 [Flex Message Simulator](https://developers.line.biz/flex-simulator/) 來套出漂亮的 Flex Message 之後，再透過 JSON 資料給開發人員加入 Chatbot 中。
-
-但是要如何透過 [Flex Message Simulator](https://developers.line.biz/flex-simulator/) 來開發 Flex Message 呢？ 本月份就有新的文件更新，透過逐步的教學讓沒有程式開發基礎的人也能透過 [Flex Message Simulator](https://developers.line.biz/flex-simulator/) 開發出一個數位的名片。
-
-如果需要更多的 Flex Message 的樣板，也可以參考這篇我翻譯來自泰國 LINE API Expert 所提供的樣板。
-
-#### 參考鏈結:
-
-- [Flex Message Template](http://www.evanlin.com/th-lae-flextemplate/)
-
-### [06/10: Messaging API update for June 2020](https://developers.line.biz/en/news/2020/06/10/messaging-api-update-june-2020/)
-
-<script async class="speakerdeck-embed" data-slide="4" data-id="8517c0f0cbba4a18854c672827f71d86" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-接下就是到了本月份的 Messaging API 新功能更新了，這個月主要的更新都跟群組(Group) 與聊天室 (Room) 有關，主要圍繞著以下三個新功能：
-
-- [取得群組的資訊 (Get Group Profile)](https://developers.line.biz/en/reference/messaging-api/#get-group-summary)
-- [取得群組裡面成員總數](https://developers.line.biz/en/reference/messaging-api/#get-members-group-count)
-- [取得聊天室的成員總數](https://developers.line.biz/en/reference/messaging-api/#get-members-room-count)
-
-透過這三個資訊，筆者也在稍後的內容整理出如何製作出一個簡易的群組/聊天室管理機器人。
-
-### [06/15: Developer Console 裡面的設定 "Linked OA" 的位置修改](https://developers.line.biz/en/news/2020/06/15/linked-oa-relocation/)
-
-原本 LINE Login Channel 裡面都有一個 "Linked OA" 也就是指定 LINE Login Channel 鏈結的官方帳號 Channel 。 經過設定鏈結後，可以透過 LINE Login 的同時，詢問使用者要不要一起加入官方帳號為好友。 相當的有用啊！
-設定的位置從 "LINE Login" Tab 移到 "Basic Setting" 的位置，大家千萬別忘記。
-
-### [06/15: LIFF 支援 Error Code](https://developers.line.biz/en/news/2020/06/15/liff-added-lifferror-code/)
-
-<script async class="speakerdeck-embed" data-slide="6" data-id="8517c0f0cbba4a18854c672827f71d86" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-以往對於 LIFF 開發者而言，對於 API 請求如果失敗（或是發生錯誤）。只會出現 Exception 需要來處理，但是往往不知道到底是發生什麼問題？ 是參數設定錯誤？ 還是呼叫的方式不正確？
-
-現在開始有了 `LiffErr` 資料可以取得，目前先支援以下的 API :
-
-- [liff.init()](https://developers.line.biz/en/reference/liff/#initialize-liff-app)
-- [liff.getProfile()](https://developers.line.biz/en/reference/liff/#get-profile)
-- [liff.getFriendship()](https://developers.line.biz/en/reference/liff/#get-friendship)
-
-## LINE Group/Room Chatbot 功能介紹與小訣竅
-
-![](https://github.com/kkdai/linebot-group/raw/master/images/group_bot.jpg)
-
-#### 程式碼開源： [https://github.com/kkdai/linebot-group](https://github.com/kkdai/linebot-group)
-
-**直接加入官方帳號測試:**
-
-![](https://github.com/kkdai/linebot-group/raw/master/images/qrcode.png)
-
-### 範例說明:
-
-這是一個將所有跟群組 (Group) 與聊天室 (Room) 的 API 整合的 Demo Chatbot ，具有以下的功能:
-
-- 邀請進入(群組/聊天室)後，自動告知現在有多少人，並且告知現在的群組名稱。
-  - API:
-  - 取得資訊： [https://developers.line.biz/en/reference/messaging-api/#get-group-summary](https://developers.line.biz/en/reference/messaging-api/#get-group-summary)
-  - 取得聊天室成員總數： [https://developers.line.biz/en/reference/messaging-api/#get-members-room-count](https://developers.line.biz/en/reference/messaging-api/#get-members-room-count)
-  - 取得群組成員總數: [https://developers.line.biz/en/reference/messaging-api/#get-members-group-count](https://developers.line.biz/en/reference/messaging-api/#get-members-group-count)
-- 成員發言後，自動透過取得成員資訊的 API
-  - API:
-    - 取得群組成員資訊： [https://developers.line.biz/en/reference/messaging-api/#get-group-member-profile](https://developers.line.biz/en/reference/messaging-api/#get-group-member-profile)
-    - 取得聊天室成員資訊: [https://developers.line.biz/en/reference/messaging-api/#get-room-member-profile](https://developers.line.biz/en/reference/messaging-api/#get-room-member-profile)
-- 離開(群組/聊天室)
-  - API:
-    - 離開群組： [https://developers.line.biz/en/reference/messaging-api/#leave-group](https://developers.line.biz/en/reference/messaging-api/#leave-group)
-    - 離開聊天室：[https://developers.line.biz/en/reference/messaging-api/#leave-room](https://developers.line.biz/en/reference/messaging-api/#leave-room)
-
-### 小訣竅 1： 如何處理 Join Event
-
-<script async class="speakerdeck-embed" data-slide="10" data-id="8517c0f0cbba4a18854c672827f71d86" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-**群組：**
-
-聊天機器人被加入群組後，馬上就會收到 Join event 的 webhook 。
-
-**聊天室：**
-
-聊天機器人加入聊天室後，不會馬上收到 join event ，需要聊天室內成員發言，或是有人加入或離開，才會收到通知。
-
-### 小訣竅 2： 如何知道訊息是來自哪個（群組/聊天室）
-
-<script async class="speakerdeck-embed" data-slide="11" data-id="8517c0f0cbba4a18854c672827f71d86" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-Webhook 中有一個資訊 `source` 其中會顯示訊息來源是來自於群組還是聊天室。可以透過 `source.groupId` 或是 `source.roomId` 來確認相關的資訊。
+身為主辦人 & LINE API Expert 幫大家整理目前市面上有的書，雖然資訊迭代速度很快，想想有些時候我們都窩在網路上太久，若能好好地透過書籍溫習一下 Chatbot 知識也很讚喔！
 
 ### 總結:
 
