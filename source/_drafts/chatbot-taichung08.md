@@ -1,14 +1,11 @@
 ---
-layout: post
 title: "[研討會心得]  2020 六月 LINE 平台更新整理與 LINE Group/Room Chatbot 的展示"
-description: ""
-category:
+categories:
   - 研討會心得
-  - Chatbot.tw
 tags: ["研討會心得", "DevRel", "LINE"]
 ---
 
-![](../images/2020/0623.jpg)
+![all user](https://nijialin.com/images/2020/chatbot-taichung-008/IMG_4651.jpg)
 
 # 前言
 
@@ -21,9 +18,48 @@ tags: ["研討會心得", "DevRel", "LINE"]
 
 這次活動總算又回到 LINE 台灣的辦公室來舉辦，同時這也是疫情後 LINE 辦公室第一次舉辦線下的聚會。希望透過這次的聚會可以讓更多朋友了解到打造自己的聊天機器人是如此讓人開心的事情。
 
-### 整場分享的影片：
+### 投影片
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gtpm4zKlsXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script async class="speakerdeck-embed" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這次主題主要圍繞著三個平台實作
+
+- LINE: 提供 機器人(Bot)/網頁(LIFF)/通知(Notify) 的服務
+- Heroku: 部署的主機，會含有 Domain/服務套件(SQL、排程)
+- GitHub: 放置程式碼的倉庫
+
+搭配我已經寫好的專案: [LINE-subscribe-open-data-bot](https://github.com/louis70109/LINE-subscribe-open-data-bot)
+
+> 整體使用 flask/Python 3.7、PostgreSQL 實作，若想在本地端起服務的話要有這兩個喔！
+
+<script async class="speakerdeck-embed" data-slide="9" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在 Fork 專案到自己的帳號下之後，往下會找到 `Deploy to Heroku` 按鈕，按下去之後會到達設定名稱的畫面
+
+<script async class="speakerdeck-embed" data-slide="10" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<script async class="speakerdeck-embed" data-slide="13" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+環境變數
+
+```
+LINE_CHANNEL_ACCESS_TOKEN=
+LINE_CHANNEL_SECRET=
+LINE_NOTIFY_CLIENT_ID=
+LINE_NOTIFY_CLIENT_SECRET=
+LINE_NOTIFY_REDIRECT_URI=
+LIFF_BIND_ID=
+LIFF_CONFIRM_ID=
+LIFF_SHARE_ID=
+DATABASE_URL=postgres://USER:PASSWORD@127.0.0.1:5432/postgres
+```
+
+- 圍繞三個平台 LINE Heroku, Github
+- add template to send url for everyone by dai
+- Heroku scheduler need to verify credit card
+- LINE messaging api/LIFF/Notify
+- how to build an open source flow
+-
 
 ## LINE Platform 平台 2020 六月更新
 

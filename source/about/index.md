@@ -74,6 +74,9 @@ date: 2019-10-16 11:28:36
 
 # Talks
 
+- [第一次開發 Python SDK 就上手！ feat. LINE Notify](https://coscup.org/2020/zh-TW/agenda/KNJDWQ)
+  - [投影片](https://speakerdeck.com/line_developers_tw/lotify-a-python-sdk-for-line-notify)
+  - [影片](https://www.youtube.com/watch?v=nPS_442OszQ)
 - [COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來 ê muscle-man line bot](https://coscup2019.kktix.cc/events/coscup-taigi2019?)
   - [活動照片](https://www.flickr.com/photos/coscup/49694567242/in/album-72157713607815171/)
   - [影片](https://www.youtube.com/watch?v=wXV8aPj1Ibo&list=PLqfib4St70XNIzROJgyALYAdp-sQmfK0m&index=3)
