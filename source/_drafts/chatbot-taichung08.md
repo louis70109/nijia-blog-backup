@@ -32,20 +32,34 @@ tags: ["研討會心得", "DevRel", "LINE"]
 
 > 整體使用 flask/Python 3.7、PostgreSQL 實作，若想在本地端起服務的話要有這兩個喔！
 
+首先需要先到我的專案 [LINE-subscribe-open-data-bot](https://github.com/louis70109/LINE-subscribe-open-data-bot) 按下右上角的 `Fork` (並且按星星 ⭐️) 回自己的 GitHub page。
+
 <script async class="speakerdeck-embed" data-slide="9" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-在 Fork 專案到自己的帳號下之後，往下會找到 `Deploy to Heroku` 按鈕，按下去之後會到達設定名稱的畫面
+在 Fork 專案到自己的帳號下之後，沿著 README 往下會找到 `Deploy to Heroku` 按鈕，按下去之後會被引導至 Heroku 部署的頁面，並輸入一個你喜歡的名字。
 
 <script async class="speakerdeck-embed" data-slide="10" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="11" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這邊會需要加入兩個 Heroku 套件來輔助這次的實作：
+等待部署結束後按下最下面的 `Manage app` 的按鈕會到達你剛剛建立的主機頁面 ，這邊會需要按下 `Configure Add-ons` 並加入兩個 Heroku 套件來輔助這次的實作：
 
 - Heroku Scheduler
-  - 輸入：`python scripts/sync_to_sql.py`
-  - 輸入：`python scripts/notify_me.py`
 - Heroku Postgres
 
+<script async class="speakerdeck-embed" data-slide="12" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 <script async class="speakerdeck-embed" data-slide="13" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+並且加入完套件之後再點一次 `Heroku Scheduler` 到達可以建立排程作業的地方，分別按下 Create Job 建立兩個 Job 並輸入：
+
+- `python scripts/sync_to_sql.py`
+  - 定期將資料同步到資料庫中，而第一次觸發時會建立 DB Tables。
+- `python scripts/notify_me.py`
+  - 定期發送以訂閱通知的用戶。
+
+接著到 `Settings` 的頁面按下按鈕，這部分是填入環境變數的地方，且往下滑會看到 Heroku 送的 `Domain Name`，待會會大量的使用到它，這個頁面就先保留停在這邊。
+
+<script async class="speakerdeck-embed" data-slide="16" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 環境變數
 
