@@ -18,7 +18,7 @@ tags: ["研討會心得", "DevRel", "LINE"]
 
 這次活動總算又回到 LINE 台灣的辦公室來舉辦，同時這也是疫情後 LINE 辦公室第一次舉辦線下的聚會。希望透過這次的聚會可以讓更多朋友了解到打造自己的聊天機器人是如此讓人開心的事情。
 
-### 投影片
+## 投影片
 
 <script async class="speakerdeck-embed" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -31,6 +31,8 @@ tags: ["研討會心得", "DevRel", "LINE"]
 搭配我已經寫好的專案: [LINE-subscribe-open-data-bot](https://github.com/louis70109/LINE-subscribe-open-data-bot)
 
 > 整體使用 flask/Python 3.7、PostgreSQL 實作，若想在本地端起服務的話要有這兩個喔！
+
+## Deploy to Heroku
 
 首先需要先到我的專案 [LINE-subscribe-open-data-bot](https://github.com/louis70109/LINE-subscribe-open-data-bot) 按下右上角的 `Fork` (並且按星星 ⭐️) 回自己的 GitHub page。
 
@@ -57,23 +59,80 @@ tags: ["研討會心得", "DevRel", "LINE"]
 - `python scripts/notify_me.py`
   - 定期發送以訂閱通知的用戶。
 
-接著到 `Settings` 的頁面按下按鈕，這部分是填入環境變數的地方，且往下滑會看到 Heroku 送的 `Domain Name`，待會會大量的使用到它，這個頁面就先保留停在這邊。
+接著到 `Settings` 的頁面按下按鈕，這部分是填入環境變數的地方，且往下滑會看到 Heroku 送的 `Domain Name`(參考 17 頁)，待會會大量的使用到它，這個頁面就先保留停在這邊。
 
 <script async class="speakerdeck-embed" data-slide="16" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-環境變數
+這邊先提前說明一下所有的環境變數用途：
 
 ```
+// LINE bot 傳遞訊息時所需要的鑰匙
 LINE_CHANNEL_ACCESS_TOKEN=
 LINE_CHANNEL_SECRET=
+
+// LINE Notify 的鑰匙以及 callback url
 LINE_NOTIFY_CLIENT_ID=
 LINE_NOTIFY_CLIENT_SECRET=
 LINE_NOTIFY_REDIRECT_URI=
+
+// 處理 LINE Notify 所使用的 LIFF page
 LIFF_BIND_ID=
 LIFF_CONFIRM_ID=
+
+// 操作 Share Target Picker 需要使用的 LIFF page
 LIFF_SHARE_ID=
-DATABASE_URL=postgres://USER:PASSWORD@127.0.0.1:5432/postgres
+
+// 在增加 Heroku Postgres Add-ons 時會自動加入的環境變數，若在本地端測試時則需要建立相關參數
+DATABASE_URL=
 ```
+
+## Massaging API
+
+接著就要開始建立 LINE Bot 連動相關資訊，首先先到這個[LINE Developer Console](https://developers.line.biz/console/)頁面，建立一個 Provider(`100 channels per provider`)，並且把該填的部分填完。
+
+<script async class="speakerdeck-embed" data-slide="19" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+接下來處理訂閱服務的 Messaging API(Bot)部分，在眾多服務選項中選擇第二個建立 Channel。
+
+<script async class="speakerdeck-embed" data-slide="20" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+然後把該填的資訊填清楚 👍
+
+<script async class="speakerdeck-embed" data-slide="21" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在建立完後往下滑會看到 `Channel Secret`，將他複製起來放到 Heroku 環境變數的 `LINE_CHANNEL_SECRET` 欄位。
+
+<script async class="speakerdeck-embed" data-slide="22" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+接著點選 `Massaging API` 的頁籤並至下方看到 LINE Official Account features 的地方並按下 `Edit` 到另一個設定頁面。
+
+<script async class="speakerdeck-embed" data-slide="24" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+為了實作方便，由上到下依序為`停用`、`停用`、`啟用` 後將頁面關掉回到剛剛的 LINE Developer Console。
+
+<script async class="speakerdeck-embed" data-slide="25" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+到最下面 Issue 一個 Channel Access Token 並一樣的複製到 Heroku 環境變數中新增一個 `LINE_CHANNEL_ACCESS_TOKEN` 的欄位並填入。
+
+<script async class="speakerdeck-embed" data-slide="26" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這部分是整隻機器人最重要的一個部分，填入 webhook URL，將 Heroku settings 頁面下面 Heroku 給的 Domain Name 複製到這個地方，並在網址後面加上 `webhooks/line`，下面的 webhook 開關也記得打開。
+
+<script async class="speakerdeck-embed" data-slide="27" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+確認你的環境變數有沒有輸入正確 ❗️
+
+<script async class="speakerdeck-embed" data-slide="29" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 建立 LIFF page
+
+首先一樣先回到我們起初建立的 Provider 上並建立一個 LINE Login Channel，並且將必填欄位的資訊逐步打上，待會會需要在這 Channel 中建立三個 LIFF app。
+
+<script async class="speakerdeck-embed" data-slide="31" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在進入頁籤前，需點擊上面紅色框框的地方將這個 Channel 改成 `Published` 狀態，如此一來外部伺服器才會連結的到喔！
+
+<script async class="speakerdeck-embed" data-slide="32" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 - 圍繞三個平台 LINE Heroku, Github
 - add template to send url for everyone by dai
