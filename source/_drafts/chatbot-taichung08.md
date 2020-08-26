@@ -134,6 +134,17 @@ DATABASE_URL=
 
 <script async class="speakerdeck-embed" data-slide="32" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+Published 之後到 LIFF 頁籤新增三個 LIFF pages，參考第 33, 34 頁的資訊並輸入以下的 app name 以及 Endpoint url：
+
+- notify index
+  - https://HEROKU_RUL/notify
+- notify callback
+  - https://HEROKU_RUL/notify/callback
+- share message
+  - https://HEROKU_RUL/liff/air
+
+> 後續的步驟則會使用 app name 來解說喔！
+
 - 圍繞三個平台 LINE Heroku, Github
 - add template to send url for everyone by dai
 - Heroku scheduler need to verify credit card
