@@ -1,5 +1,5 @@
 ---
-title: '[研討會心得]  2020 六月 LINE 平台更新整理與 LINE Group/Room Chatbot 的展示'
+title: "[研討會心得]  2020 六月 LINE 平台更新整理與 LINE Group/Room Chatbot 的展示"
 tags:
   - 研討會心得
   - DevRel
@@ -8,7 +8,6 @@ categories:
   - 研討會心得
 date: 2020-08-27 20:23:04
 ---
-
 
 ![all user](https://nijialin.com/images/2020/chatbot-taichung-008/IMG_4651.jpg)
 
@@ -23,7 +22,7 @@ date: 2020-08-27 20:23:04
 
 這次活動總算又回到 LINE 台灣的辦公室來舉辦，同時這也是疫情後 LINE 辦公室第一次舉辦線下的聚會。希望透過這次的聚會可以讓更多朋友了解到打造自己的聊天機器人是如此讓人開心的事情。
 
-## 投影片
+# 投影片
 
 <script async class="speakerdeck-embed" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -37,7 +36,7 @@ date: 2020-08-27 20:23:04
 
 > 整體使用 flask/Python 3.7、PostgreSQL 實作，若想在本地端起服務的話要有這兩個喔！
 
-## Deploy to Heroku
+# Deploy to Heroku
 
 首先需要先到我的專案 [LINE-subscribe-open-data-bot](https://github.com/louis70109/LINE-subscribe-open-data-bot) 按下右上角的 `Fork` (並且按星星 ⭐️) 回自己的 GitHub page。
 
@@ -91,7 +90,7 @@ LIFF_SHARE_ID=
 DATABASE_URL=
 ```
 
-## Massaging API
+# Massaging API
 
 接著就要開始建立 LINE Bot 連動相關資訊，首先先到這個[LINE Developer Console](https://developers.line.biz/console/)頁面，建立一個 Provider(`100 channels per provider`)，並且把該填的部分填完。
 
@@ -129,7 +128,7 @@ DATABASE_URL=
 
 <script async class="speakerdeck-embed" data-slide="29" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-## 建立 LIFF page
+# 建立 LIFF page
 
 首先一樣先回到我們起初建立的 Provider 上並建立一個 LINE Login Channel，並且將必填欄位的資訊逐步打上，待會會需要在這 Channel 中建立三個 LIFF app。
 
@@ -162,7 +161,7 @@ Published 之後到 LIFF 頁籤新增三個 LIFF pages，參考第 33, 34 頁的
 
 這邊建立後並確認名字是否打對後就接著進入 LINE Notify 的部分囉！
 
-## [LINE Notify](https://notify-bot.line.me/zh_TW/)
+# [LINE Notify](https://notify-bot.line.me/zh_TW/)
 
 ![](https://nijialin.com/images/notify.png)
 
@@ -205,15 +204,7 @@ Published 之後到 LIFF 頁籤新增三個 LIFF pages，參考第 33, 34 頁的
 
 身為主辦人 & LINE API Expert 幫大家整理目前市面上有的書，雖然資訊迭代速度很快，想想有些時候我們都窩在網路上太久，若能好好地透過書籍溫習一下 Chatbot 知識也很讚喔！
 
-### 總結:
-
-希望透過這個 LINE Group/Room Demo Bot 可以讓開發者們更了解如何使用群組與聊天室的相關 API ，開發出更有創意的聊天機器人。
-
-### 關於活動其他聽眾的分享:
-
-- [【Chatbot Taiwan 20】這次參加我又學到了什麼呢 @ LINE](https://nijialin.com/2020/06/24/chatbot-meetups-20-sharing/)
-
-## 活動小結
+# 活動小結
 
 社群分享永遠是讓創意激盪的最佳方式，而 Chatbots Meetup 是一個很熱情與充滿創造力的社群組織。也希望有更多有創意的開發者願意加入 LINE Chatbot 的開發行列，更希望能熱情的參與社群的活動與一起來分享。
 
@@ -223,7 +214,7 @@ Published 之後到 LIFF 頁籤新增三個 LIFF pages，參考第 33, 34 頁的
 
 ![](http://www.evanlin.com/images/2020/line-tw-dev-qr.png)
 
-## 關於「LINE 開發社群計畫」
+# 關於 「LINE 開發社群計畫」
 
 LINE 今年年初在台灣啟動「LINE 開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，已經舉辦 30 場以上的活動。歡迎讀者們能夠持續回來察看最新的狀況。詳情請看:
 
