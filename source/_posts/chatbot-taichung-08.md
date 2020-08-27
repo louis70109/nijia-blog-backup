@@ -1,9 +1,14 @@
 ---
-title: "[研討會心得]  2020 六月 LINE 平台更新整理與 LINE Group/Room Chatbot 的展示"
+title: '[研討會心得]  2020 六月 LINE 平台更新整理與 LINE Group/Room Chatbot 的展示'
+tags:
+  - 研討會心得
+  - DevRel
+  - LINE
 categories:
   - 研討會心得
-tags: ["研討會心得", "DevRel", "LINE"]
+date: 2020-08-27 20:23:04
 ---
+
 
 ![all user](https://nijialin.com/images/2020/chatbot-taichung-008/IMG_4651.jpg)
 
@@ -150,16 +155,49 @@ Published 之後到 LIFF 頁籤新增三個 LIFF pages，參考第 33, 34 頁的
 接著需要將剛剛建立的三個 LIFF ID 放到 Heroku 的環境變數上，分別對應名稱是：
 
 - LIFF_BIND_ID ↔️ notify index
-- LIFF_CONFIRM_ID notify callback
-- LIFF_SHARE_ID share message
+- LIFF_CONFIRM_ID ↔️ notify callback
+- LIFF_SHARE_ID ↔️ share message
+
 <script async class="speakerdeck-embed" data-slide="36" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-- 圍繞三個平台 LINE Heroku, Github
-- add template to send url for everyone by dai
-- Heroku scheduler need to verify credit card
-- LINE messaging api/LIFF/Notify
-- how to build an open source flow
--
+這邊建立後並確認名字是否打對後就接著進入 LINE Notify 的部分囉！
+
+## [LINE Notify](https://notify-bot.line.me/zh_TW/)
+
+![](https://nijialin.com/images/notify.png)
+
+接著來到 [Notify 的頁面](https://notify-bot.line.me/zh_TW/)，並且確認 LINE Notify 是否已加入好友(或需解除封鎖)。
+
+> 這部分串接的套件為 - [lotify](https://github.com/louis70109/lotify) 來幫助快速串接 LINE Notify。
+
+<script async class="speakerdeck-embed" data-slide="38" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+從右上角按下 `登入` 結束後 👉`管理登入頁面` 👉 最下面的 `登入服務` 開始建立基本資訊。
+
+- 電子信箱一定要能收到信，否則會沒辦法驗證。
+- Callback URL 則輸入前面建立 LIFF app 時 `notify callback` 的網址。
+
+<script async class="speakerdeck-embed" data-slide="40" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+不清楚 Callback URL 是哪個話就是這個 👇
+
+<script async class="speakerdeck-embed" data-slide="41" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+建立完之後就到信箱收信按下驗證的網址囉！否則你的服務會無法使用。
+
+<script async class="speakerdeck-embed" data-slide="42" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+按照慣例一樣填入環境變數到 Heroku 中：
+
+- LINE_NOTIFY_CLIENT_ID
+- LINE_NOTIFY_CLIENT_SECRET
+- LINE_NOTIFY_REDIRECT_URI (這邊是 `URI` 喔！注意)：填入剛剛在設定 Callback URL 時的那個 LIFF app url。
+
+<script async class="speakerdeck-embed" data-slide="43" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+到這部基本上對 chatbot 說 「所有縣市」 應該要有反應，若沒反應的話要確認哪個步驟有沒有做錯或打錯字喔！(現場很多這樣的問題)
+
+<script async class="speakerdeck-embed" data-slide="46" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 # 閃電秀 - 我要奮發向上！聊天機器人有哪些書？
 
