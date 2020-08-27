@@ -1,18 +1,36 @@
 ---
-title:
-categories: 學習紀錄
+title: 【Chatbot】第 22 場社群活動紀錄分享
+categories: 研討會
 tags:
 ---
 
-![](https://i.imgur.com/0QAGPDc.png)
+![chatbot everyone](https://nijialin.com/images/2020/chatbot-22-total.jpg)
 
 # 前言
 
+大家好，我是 LINE Taiwan 技術推廣工程師 - NiJia，本次於 [Chatbot 第 22 場小聚](https://chatbots.kktix.cc/events/meetup-022)擔任講者分享與 LINE 相關的內容，感謝大家在外面下著大雨的平日晚上還是這麼熱情來參加，以下我就分享參加的活動紀錄。 😊
+
+- Chatbot 社群：https://www.facebook.com/groups/chatbot.tw
+- KKTIX 報名頁面：https://chatbots.kktix.cc/events/meetup-022
 <!-- more -->
 
 # LINE platform API update August
 
-<script async class="speakerdeck-embed" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+![chatbot nijia](https://nijialin.com/images/2020/chatbot-22-nijia.jpg)
+
+這個月的小聚由我來帶大家了解一下這個月 LINE API 更新了什麼內容 🎁
+
+## Unsend event
+
+<script async class="speakerdeck-embed" data-slide="4" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這功能是能在 webhook 收到當 Group(群組)/Room(聊天室) 中的使用者若有`收回`訊息時，Bot 會收到一個來自 webhook 的 unsend event，實際回傳回來的 JSON 如簡報中所示：
+
+## Video play complete Event
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這個部分一樣會是來自於 webhook 的 Event，當 Bot 發送一個含有 `Tracking id` 的影片給用戶(Reply/Push)，當用戶看完這個影片時會收到一個`影片播完`的 Event，如簡報的右邊的 JSON 所示， Tracking Id 會對應 Bot 剛剛送出的 Id，因此在設計時這部分需要特別注意喔！
 
 # 結論
 

@@ -19,7 +19,7 @@ categories: 學習紀錄
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 
 「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev
-![](https://i.imgur.com/gxHgAzB.png)
+![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
 
 # 關於「LINE 開發社群計畫」
 
