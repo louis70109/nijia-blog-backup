@@ -212,7 +212,7 @@ Published 之後到 LIFF 頁籤新增三個 LIFF pages，參考第 33, 34 頁的
 
 「LINE 開發者官方社群」官方帳號 ID：[@line_tw_dev](https://lin.ee/s5RsZHo)
 
-![](http://www.evanlin.com/images/2020/line-tw-dev-qr.png)
+![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
 
 # 關於 「LINE 開發社群計畫」
 
