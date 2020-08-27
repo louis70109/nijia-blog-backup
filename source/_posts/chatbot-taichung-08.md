@@ -1,11 +1,11 @@
 ---
-title: "[研討會心得]  2020 六月 LINE 平台更新整理與 LINE Group/Room Chatbot 的展示"
+title: Chatbot 台中小聚 08 - LINE platform 工作坊紀錄
 tags:
   - 研討會心得
   - DevRel
   - LINE
 categories:
-  - 研討會心得
+  - 研討會
 date: 2020-08-27 20:23:04
 ---
 
