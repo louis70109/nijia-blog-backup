@@ -143,7 +143,16 @@ Published 之後到 LIFF 頁籤新增三個 LIFF pages，參考第 33, 34 頁的
 - share message
   - https://HEROKU_RUL/liff/air
 
+#### 建立完 LIFF add 後記得打開 `ShareTargetPicker` 的選項喔！
+
 > 後續的步驟則會使用 app name 來解說喔！
+
+接著需要將剛剛建立的三個 LIFF ID 放到 Heroku 的環境變數上，分別對應名稱是：
+
+- LIFF_BIND_ID ↔️ notify index
+- LIFF_CONFIRM_ID notify callback
+- LIFF_SHARE_ID share message
+<script async class="speakerdeck-embed" data-slide="36" data-id="5fe13412f6ac4959a2bc468a90aa5b10" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 - 圍繞三個平台 LINE Heroku, Github
 - add template to send url for everyone by dai
