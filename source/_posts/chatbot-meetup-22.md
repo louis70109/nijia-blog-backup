@@ -33,14 +33,17 @@ date: 2020-08-28 13:00:22
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這個部分一樣會是來自於 webhook 的 Event，當 Bot 發送一個需含有 `Tracking id` 的影片給用戶(Reply/Push)，當用戶看完這個影片時會收到一個`影片播完`的 Event，如簡報的右邊的 JSON 所示， Tracking Id 會對應 Bot 剛剛送出的 Id，若在 Bot 被觸發時沒有攜帶 Tracking id 時，則 webhook 不會收到 video complete event，因此在設計時這部分需要特別注意！✏️
+這個部分一樣會是來自於 webhook 的 Event，當 Bot 發送一個需含有 `Tracking id` 的影片給用戶(Reply/Push)，當用戶看完這個影片時會收到一個`影片播完`的 Event，如簡報的右邊的 JSON 所示， Tracking Id 會對應 Bot 剛剛送出的 Id，若在 Bot 被觸發時沒有攜帶 Tracking id 時，則影片即便播完 webhook 不會收到 video complete event，因此在設計時這部分需要特別注意！✏️
 
 大家可以試玩一下我寫的這個範例之機器人，對著它輸入「video」並且把影片看完，不能偷偷加速也不能用電腦看喔！
 ![](https://nijialin.com/images/2020/chatbot-22/sample-qrcode.png)
 
 <script async class="speakerdeck-embed" data-slide="9" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這部分的更新改動 `audiences` 為 `Option` 選項，讓使用者可以有更多的彈性空間可以使用。
+- 先前 isIfaAudience 在文件中已註明預設為 `false`，因此這次的更新將此欄位修正為 `Option`。
+- 由於原本文件為必填欄位但提供的範例並未放入 audiences 相關，因此在這次的更新中就將 `audiences` 為 `Option` 選項，讓使用者可以有更多的彈性空間可以使用。
+
+> 透過這兩個改動也不會 AUDIENCE_GROUP_MISSING_AUDIENCES、AUDIENCE_GROUP_MISSING_IS_IFA_AUDIENCE
 
 <script async class="speakerdeck-embed" data-slide="12" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 

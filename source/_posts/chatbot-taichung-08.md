@@ -1,7 +1,6 @@
 ---
-title: Chatbot 台中小聚 08 - LINE platform 工作坊紀錄
+title: "LINE 開發社群計畫: Chatbot 台中小聚 08 - LINE platform 工作坊紀錄"
 tags:
-  - 研討會心得
   - DevRel
   - LINE
 categories:
