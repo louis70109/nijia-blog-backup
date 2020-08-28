@@ -27,13 +27,18 @@ date: 2020-08-28 13:00:22
 
 <script async class="speakerdeck-embed" data-slide="4" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這功能是能在 webhook 收到當 Group(群組)/Room(聊天室) 中的使用者若有`收回`訊息時，Bot 會收到一個來自 webhook 的 unsend event，實際回傳回來的 JSON 如簡報中所示。
+這功能是能在 webhook 收到當 Group(群組)/Room(聊天室) 中的使用者若有`收回`訊息時，Bot 會收到一個來自 webhook 的 unsend event，實際回傳回來的 JSON 如上簡報中所示。
+
+- 目前 Unsend event 並沒有 reply token 的機制，若在觸發時需要回應則需使用 push message 去做後續對話處理。
+- 目前 1:1 與 chatbot 對話也不能收回訊息喔！
 
 ## [Video play complete Event](https://developers.line.biz/en/reference/messaging-api/#video-viewing-complete)
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 這個部分一樣會是來自於 webhook 的 Event，當 Bot 發送一個需含有 `Tracking id` 的影片給用戶(Reply/Push)，當用戶看完這個影片時會收到一個`影片播完`的 Event，如簡報的右邊的 JSON 所示， Tracking Id 會對應 Bot 剛剛送出的 Id，若在 Bot 被觸發時沒有攜帶 Tracking id 時，則影片即便播完 webhook 不會收到 video complete event，因此在設計時這部分需要特別注意！✏️
+
+> Video complete event 在群組(Group)/聊天室(Room) 是無法使用，操作相關 API 需注意。
 
 大家可以試玩一下我寫的這個範例之機器人，對著它輸入「video」並且把影片看完，不能偷偷加速也不能用電腦看喔！
 ![](https://nijialin.com/images/2020/chatbot-22/sample-qrcode.png)
