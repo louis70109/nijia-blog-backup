@@ -53,15 +53,19 @@ date: 2020-08-28 13:00:22
 
 <script async class="speakerdeck-embed" data-slide="15" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這個新聞中提到若有 LINE Bot 在印尼(Indonesia)服務並且需要使用到 demographic 相關的功能，目前已開放可以使用這隻 API - [Get friend demographics](https://developers.line.biz/en/reference/messaging-api/#get-demographic)。
+
+<script async class="speakerdeck-embed" data-slide="14" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 若有在使用以下三個 API 的朋友需要注意：
 
 - [Get Content](https://developers.line.biz/en/reference/messaging-api/#get-content)
 - [Upload rich menu image](https://developers.line.biz/en/reference/messaging-api/#upload-rich-menu-image)
 - [Download rich menu image](https://developers.line.biz/en/reference/messaging-api/#download-rich-menu-image)
 
-Domain 已經從 api.line.me 改成 api-`data`.line.me，若有在使用相關功能請將網址置換掉避免問題產生。
+在這次的更新中 Domain 已經從 api.line.me 改成 api-`data`.line.me，若有在使用相關功能請儘速將網址置換成新的網址，避免產生相關使用上的問題。
 
-#《LINE API 與 UX 入門課程分享》Chatbot User Experience Design
+# 《LINE API 與 UX 入門課程分享》Chatbot User Experience Design
 
 接著到另一位講者也是新上任的 LINE API Expert - 溫明輝 教授為大家帶來分享，這次的分享中主要圍繞以下三個項目：
 

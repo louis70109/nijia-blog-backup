@@ -8,7 +8,7 @@ categories:
 date: 2020-08-27 20:23:04
 ---
 
-![all user](https://nijialin.com/images/2020/chatbot-taichung-008/IMG_4651.JPG)
+![all user](https://nijialin.com/images/chatbot.png)
 
 # 前言
 
