@@ -141,3 +141,5 @@ LINE 今年年初在台灣啟動「LINE 開發社群計畫」，將長期投入�
 
 - [Unsend event](https://developers.line.biz/en/reference/messaging-api/#unsend-event)
 - [Video viewing complete event](https://developers.line.biz/en/reference/messaging-api/#video-viewing-complete)
+- [The endpoint to get statistics is now available in Indonesia (ID)](https://developers.line.biz/en/news/2020/08/05/endpoint-to-get-statistics-is-now-available-in-Indonesia/)
+- [Reminder: Notice of domain name change for certain endpoints](https://developers.line.biz/en/news/2020/08/12/extention-of-domain-name-change-transition-period/)
