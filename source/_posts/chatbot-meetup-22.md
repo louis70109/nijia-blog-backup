@@ -1,8 +1,12 @@
 ---
-title: 【Chatbot】第 22 場社群活動紀錄分享
-categories: 研討會
+title: 'LINE 開發社群計畫: Chatbot Taiwan 第 22 場社群活動紀錄分享'
 tags:
+  - LINE
+  - DevRel
+categories: 研討會
+date: 2020-08-28 13:00:22
 ---
+
 
 ![chatbot everyone](https://nijialin.com/images/2020/chatbot-22-total.jpg)
 
@@ -52,14 +56,50 @@ tags:
 
 Domain 已經從 api.line.me 改成 api-`data`.line.me，若有在使用相關功能請將網址置換掉避免問題產生。
 
-#[《LINE API 與 UX 入門課程分享》Chatbot User Experience Design](http://profwen.com/uxchatbot) - 溫明輝
+#[《LINE API 與 UX 入門課程分享》Chatbot User Experience Design](http://profwen.com/uxchatbot)
 
 > 簡報連結： http://profwen.com/uxchatbot
-> https://medium.com/@nijia.lin/20190917-chatbot-meetup-12-65999085f029
 
-# 結論
+接著到另一位講者也是新上任的 LINE API Expert - 溫明輝 教授為大家帶來分享，這次的分享中主要圍繞以下三個項目：
+
+1. Chatbot 的基本認識
+2. Chatbot 的設計流程
+3. Chatbot 的經驗法則
+
+一開始先敘述一下我們日常所說的「聊天機器人」應該被更正為「對話機器人」，且它應該是個「對話式人機介面」
+(Conversational User Interface)，因為一隻機器人要是被定會在聊天的話，那他應該會擁有大量的人工智慧功能在裡面，只是一般 Chatbot 開發者在實作時都是以一個對話的形式下去開發而非聊天，因此開頭也直接說明一下 Chatbot 的用詞遣字問題。
+
+![don1](https://nijialin.com/images/2020/chatbot-22/don-1.png)
+
+接著從微股力的 LINE 官方平台的經營數據中談到對話式人機介面設計，用簡單的範例帶大家了解一下在設計介面時應該注意的哪些部分。
+
+> 平常在寫 chatbot 時需要多考量一下設計對話流程上的盲點，否則很容易使用傳統的設計思維來處理對話。
+
+![don2](https://nijialin.com/images/2020/chatbot-22/don-2.png)
+
+接著就帶了許多相關的 UI 介面元素讓大家知道一下要如何選取適合的元件放入對應的對話內容中。
+
+![don3](https://nijialin.com/images/2020/chatbot-22/don-3.png)
+![don4](https://nijialin.com/images/2020/chatbot-22/don-4.png)
+
+接下來到了第二部分就說明在什麼情況下屬於金字塔的何種位置，主要是需要知道目前大家的鋼需是什麼，即便當前的介面不是那麼美觀，但若能先解決掉目標族群需求的話這隻 chatbot 就是好的開始。
+
+> 這邊教授也建議大家有時別太執著於 80-90 的路，先把底層做好可以解決很多事
+
+![don5](https://nijialin.com/images/2020/chatbot-22/don-5.png)
+
+了解需求 ➡️ 定位需求 ➡️ 設計需求 ➡️ 開發需求
+
+![don6](https://nijialin.com/images/2020/chatbot-22/don-6.png)
+
+接著就從 OOTD 穿搭機器人告訴大家他們當初在設計專案時的整個脈絡思維，以及評估競爭對手、到功能資訊架構等等...帶大家了解要設計一隻機器人其實複雜度也是很高的，如何讓目標族群正確收到想要的內容也是需要經過很縝密的思考才能獲得到。
+![don7](https://nijialin.com/images/2020/chatbot-22/don-7.png)
+
+最後第三部分的 13 種設計原則可以參考 [Chatbot meetup 12 的心得](https://nijialin.com/2019/09/12/Chatbot-meetup-12/)，這部分很值得大家參考在設計 chatbot 時的一些核心原則。
 
 # 活動小結
+
+在每個月的 Chatbot meetup 與大家交流也讓我從中學到不少知識，希望透過 LINE API update 讓大家更快速的了解我們增加與改變的內容，進而讓大家的 Developer Experience(DX) 可以獲得提升 😊
 
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 

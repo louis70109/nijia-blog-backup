@@ -1,7 +1,6 @@
 ---
-title: 2020 六月與七月 LINE 平台更新總整理
+title: "LINE 開發社群計畫: 2020 六月與七月 LINE 平台更新總整理"
 tags:
-  - 研討會心得
   - DevRel
   - LINE
 categories: 研討會
