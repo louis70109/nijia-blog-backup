@@ -52,15 +52,15 @@ date: 2020-08-28 13:00:22
 
 <script async class="speakerdeck-embed" data-slide="12" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這個新聞中提到若有 LINE Bot 在印尼(Indonesia)服務並且需要使用到 demographic 相關的功能，目前已開放可以使用這隻 API - [Get friend demographics](https://developers.line.biz/en/reference/messaging-api/#get-demographic)。
+
+<script async class="speakerdeck-embed" data-slide="14" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 過往在建立 Audience 群眾時只能上傳 IFAs 的清單檔案，而在這次的更新中以可以建立 Audience 群眾時放入 User Id 囉！
 
 > User Id 如何取得可參考投影片左下角的部分。
 
 <script async class="speakerdeck-embed" data-slide="15" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-這個新聞中提到若有 LINE Bot 在印尼(Indonesia)服務並且需要使用到 demographic 相關的功能，目前已開放可以使用這隻 API - [Get friend demographics](https://developers.line.biz/en/reference/messaging-api/#get-demographic)。
-
-<script async class="speakerdeck-embed" data-slide="14" data-id="2ebf41de520842e8a557951cdd85583d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 若有在使用以下三個 API 的朋友需要注意：
 
