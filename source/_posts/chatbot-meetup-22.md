@@ -98,12 +98,12 @@ Domain 已經從 api.line.me 改成 api-`data`.line.me，若有在使用相關�
 
 # 閃電秀
 
-![chatbot jarsgin](https://nijialin.com/images/2020/chatbot-22/jarsing1.jpg)
+![chatbot jarsing](https://nijialin.com/images/2020/chatbot-22/jarsing1.jpg)
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/uAHL6LynBfL8Ce" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jarsing/lightning-talk-linebizcard20200827" title="用liff.shareTargetPicker分享我的名片（電話及網址可點擊）" target="_blank">用liff.shareTargetPicker分享我的名片（電話及網址可點擊）</a> </strong> from <strong><a href="https://www.slideshare.net/jarsing" target="_blank">佳新 陳</a></strong> </div>
 
 閃電秀就由一樣剛上任的佳新來展示一下他是如何使用 liff.shareTargetPicker 來發送自己的名片，透過簡單的步驟讓大家可以快速使用使用 LIFF 的新功能將名片分享給其他朋友。
-![jarsing2](https://nijialin.com/images/chatbot-22/jarsing2.png)
+![jarsing2](https://nijialin.com/images/2020/chatbot-22/jarsing2.png)
 
 # 活動小結
 
@@ -112,7 +112,7 @@ Domain 已經從 api.line.me 改成 api-`data`.line.me，若有在使用相關�
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 
 「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev
-![](https://i.imgur.com/gxHgAzB.png)
+![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
 
 # 關於「LINE 開發社群計畫」
 
