@@ -7,7 +7,7 @@ categories: 研討會
 date: 2020-08-28 13:00:22
 ---
 
-![](https://nijialin.com/images/2020/chatbot.png)
+![](https://nijialin.com/images/chatbot.png)
 
 # 前言
 
