@@ -1,12 +1,11 @@
 ---
-title: 'LINE 開發社群計畫: Chatbot Taiwan 第 22 場社群活動紀錄分享'
+title: "LINE 開發社群計畫: Chatbot Taiwan 第 22 場社群活動紀錄分享"
 tags:
   - LINE
   - DevRel
 categories: 研討會
 date: 2020-08-28 13:00:22
 ---
-
 
 ![chatbot everyone](https://nijialin.com/images/2020/chatbot-22-total.jpg)
 
@@ -20,7 +19,7 @@ date: 2020-08-28 13:00:22
 
 # LINE platform API update August
 
-![chatbot nijia](https://nijialin.com/images/2020/chatbot-22-nijia.jpg)
+![chatbot nijia](https://nijialin.com/images/2020/chatbot-22/nijia-1.jpg)
 
 這個月的小聚由我來帶大家了解一下這個月 LINE API 更新了什麼內容 🎁
 
@@ -96,6 +95,15 @@ Domain 已經從 api.line.me 改成 api-`data`.line.me，若有在使用相關�
 ![don7](https://nijialin.com/images/2020/chatbot-22/don-7.png)
 
 最後第三部分的 13 種設計原則可以參考 [Chatbot meetup 12 的心得](https://nijialin.com/2019/09/12/Chatbot-meetup-12/)，這部分很值得大家參考在設計 chatbot 時的一些核心原則。
+
+# 閃電秀
+
+![chatbot jarsgin](https://nijialin.com/images/2020/chatbot-22/jarsing1.jpg)
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/uAHL6LynBfL8Ce" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/jarsing/lightning-talk-linebizcard20200827" title="用liff.shareTargetPicker分享我的名片（電話及網址可點擊）" target="_blank">用liff.shareTargetPicker分享我的名片（電話及網址可點擊）</a> </strong> from <strong><a href="https://www.slideshare.net/jarsing" target="_blank">佳新 陳</a></strong> </div>
+
+閃電秀就由一樣剛上任的佳新來展示一下他是如何使用 liff.shareTargetPicker 來發送自己的名片，透過簡單的步驟讓大家可以快速使用使用 LIFF 的新功能將名片分享給其他朋友。
+![jarsing2](https://nijialin.com/images/chatbot-22/jarsing2.png)
 
 # 活動小結
 
