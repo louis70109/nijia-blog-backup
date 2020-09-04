@@ -7,7 +7,6 @@ categories: TypeScript
 date: 2020-09-04 22:07:47
 ---
 
-
 ## 為什麼選擇 TypeScript？
 
 雖然在動態語言中打滾了許久(Ruby ➡️ JavaScript ➡️ Python)，但對於型別定義這件事情還是一直耿耿於懷，而打滾的過程中也曾經寫過 Golang，隨後因為在 Chatbot 社群中接觸了 [Bottender](https://github.com/Yoctol/bottender) 並認識到了 TypeScript，因此改寫了第一個 Side Project - [圖奇獸](https://github.com/louis70109/Twitch-Bot) 為 TypeScript，深深的被 TypeScript 吸引過去，不僅擁有動態語言(JS)的彈性，又能有型別檢查(Type System)與介面(Interface)來輔助開發，在開發上都能~~滿江紅~~有滿滿的提示避免出錯，這也是型別檢查會帶來的好處(先天的 Linter)，只是往往都是靠人家 cli 來幫我 init project 卻沒動手做過，就借本篇來逐步初始化 project。
@@ -83,7 +82,7 @@ showTotal(100, 200);
 ```
 
 接著就可以執行 `npm run dev` 看看輸出結果，改動 showTotal() 裡面的值來測試一下是否正常 reload 喔！
-![npm dev](https://nijialin.com/images/2020/npm-run-dev-1.png)
+![npm dev](https://nijialin.com/images/2020/npm-run-dev1.png)
 
 # 結論
 
