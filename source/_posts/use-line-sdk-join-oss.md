@@ -76,7 +76,7 @@ LINE SDK 就是一個標準常見的 open source project
 
 # Pull Request (PR)
 
-在 PR 中最大的好處就是可以透過 code review 來回溝通學習從 ➡️ `完成需(implement)`、`提出問題(review)`、`釐清問題(ask)`、`完成功能(merge)`，在這過程中可能會有想法與做法的激烈碰撞，如：
+在 PR 中最大的好處就是可以透過 code review 來回溝通學習從 ➡️ `完成需求(implement)`、`提出問題(review)`、`釐清問題(ask)`、`完成功能(merge)`，在這過程中可能會有想法與做法的激烈碰撞，如：
 
 - 維護者希望維護品質覺得不該 xxx...
 - 貢獻者覺得這樣做比較好，應該 refactor...
