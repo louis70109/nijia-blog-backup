@@ -1,10 +1,11 @@
 @startuml
-
-object s1
-s1 : class_variable = "I am CLASS !!"
-s1 : instance_variable = "123"
-
-object s2
-s2 : class_variable = "I am CLASS !!"
-s2 : instance_variable = "123"
+User -> LIFF: Click and open url
+LIFF -> Vue: Redirect endpoint url with liff.state
+Vue -> LIFF: Init LIFF
+LIFF -> LINE: Access and identify user
+LINE -> Vue: Save information on localstorage
+User -> Vue: Input some information
+Vue -> LIFF: Use LIFF API - ShareTargetPicker
+LIFF -> LINE: Access user's friends list
+User -> LINE: Select Friend/Group/Room and send message to them
 @enduml
