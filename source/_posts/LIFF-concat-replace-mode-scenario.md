@@ -66,7 +66,7 @@ const userId = notifyPayload.state;
 | 2    | https://YOUR_DOMAIN        | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/brown/?q=2         |
 | 3    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID                 | https://YOUR_DOMAIN/friend?liff.state= |
 | 4    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/                | https://YOUR_DOMAIN/friend             |
-| 5    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown           | https://YOUR_DOMAIN/friend/brown       |
+| 5    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown           | https://YOUR_DOMAIN/brown              |
 | 6    | https://YOUR_DOMAIN/friend | https://liff.line.me/LIFF_ID/brown/?q=2#hash | https://YOUR_DOMAIN/brown/?q=2         |
 
 在這個模式中會遇到幾個問題：
