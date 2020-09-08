@@ -15,6 +15,32 @@ tags:
 
 # 介紹
 
+Vue router 需安裝 `^4.0.0-beta.9` 的版本
+這裡分享我 Debug 的過程
+
+首先我在開啟網頁時[遇到了這個問題](https://github.com/vuejs/vue-next/issues/972):
+
+```
+ warning  in ./node_modules/vue-router/dist/vue-router.esm.js
+
+"export 'markNonReactive' was not found in 'vue'
+```
+
+[照著這個回答](https://github.com/vuejs/vue-next/issues/972?fbclid=IwAR0zL3QMDIsf0FhNJJQRmesHkNfTrqaJpqT8P1l2PaoKL2b0kXjGJEe42pw#issuecomment-615149911)我到了另一個專案(vue-router-next)的 [commit log](https://github.com/vuejs/vue-router-next/commit/7636f556cd654fbdf49b494925628593e8383453) 中看到了修改，從這更改訊息中就知道改成這個版本應該沒問題...
+
+![vue-router-next-1](https://nijialin.com/images/vue3/issue1.png)
+
+但...你 npm install 的 router 套件專案名稱為 `vue-next`，因此這樣子根本就不對啊！
+
+若是使用 ngrok 來測試的開發者在一開始可以能遇到 `Invalid Host Header` 的問題
+
+參考[ stackoverflow ](https://stackoverflow.com/questions/45425721/invalid-host-header-when-ngrok-tries-to-connect-to-react-dev-server)上的解答：
+
+```
+ngrok http 8080 -host-header="localhost:8080"
+ngrok http --host-header=rewrite 8080
+```
+
 # 結論
 
 - [LIFF v2 API](https://developers.line.biz/en/reference/liff/)
