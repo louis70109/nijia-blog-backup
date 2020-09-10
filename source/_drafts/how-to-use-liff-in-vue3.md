@@ -15,22 +15,76 @@ tags:
 
 # 介紹
 
-在寫這篇文章時 Vue router 需安裝 `^4.0.0-beta.9` 的版本
-這裡分享我 Debug 的過程
-
-首先我在開啟網頁時[遇到了這個問題](https://github.com/vuejs/vue-next/issues/972):
+使用官方的 command line 來建立一個新的專案
 
 ```
- warning  in ./node_modules/vue-router/dist/vue-router.esm.js
-
-"export 'markNonReactive' was not found in 'vue'
+vue create liff-2_4-demo
 ```
 
-[照著這個回答](https://github.com/vuejs/vue-next/issues/972?fbclid=IwAR0zL3QMDIsf0FhNJJQRmesHkNfTrqaJpqT8P1l2PaoKL2b0kXjGJEe42pw#issuecomment-615149911)我到了另一個專案(vue-router-next)的 [commit log](https://github.com/vuejs/vue-router-next/commit/7636f556cd654fbdf49b494925628593e8383453) 中看到了修改，從這更改訊息中就知道改成這個版本應該沒問題...
+輸入之後就可以選擇要哪個模式，這邊我們選擇 `Vue 3 preview`
+![vue init](https://nijialin.com/images/vue3/vue-init.png)
 
-![vue-router-next-1](https://nijialin.com/images/vue3/issue1.png)
+建立好了之後畫面如下，接著就用 `cd liff-2_4-demo` 進入資料夾開始
+![vue init ok](https://nijialin.com/images/vue3/vue-init-ok.png)
 
-但...你 npm install 的 router 套件專案名稱為 `vue-next`，因此這樣子根本就不對啊！
+接著分別安裝 Vue Router 以及 LIFF 套件讓後續開發比較順利些
+
+```
+npm install vue-router@next @line/liff
+```
+
+接著預設會給一個 `HelloWorld` 的 component，將之沿用並在 `src/` 下建立一個 `router` 資料夾，接著在 router/ 下建立一個 index.js 並加入以下的內容開始使用 Vue3 Router:
+
+<script src="https://gist.github.com/louis70109/4c7ea0635e6f79af5ffb6f4781d87383.js"></script>
+
+```javascript
+import { createRouter, createWebHistory } from "vue-router";
+import HelloWorld from "../components/HelloWorld.vue";
+const routerHistory = createWebHistory();
+
+const router = createRouter({
+  history: routerHistory,
+  routes: [
+    {
+      path: "/liff/template",
+      component: HelloWorld,
+    },
+  ],
+});
+
+export default router;
+```
+
+Router 這邊處理好後就接著來處理 LIFF。接著進入到 `HelloWorld.vue` 的檔案中，找到 props 的部分將它置換成 `setup(){}`
+
+> 關於 composition API 的使用方法請參考[這個網址](https://composition-api.vuejs.org/#basic-example)
+
+```javascript
+export default {
+  name: "HelloWorld",
+  setup() {},
+};
+```
+
+接著因為 LIFF 啟用時需要先 init ([參考](https://developers.line.biz/en/reference/liff/#initialize-liff-app))，在 Vue 這邊就選擇放在 `Mounted` 下，並且搭配著 async/await 來改寫一下 liff 的 sample code：
+
+```javascript
+import { onMounted } from "vue";
+
+...
+setup(){
+  onMounted(async () => {
+    try {
+      await liff.init({ liffId });
+      if (!liff.isLoggedIn())
+        liff.login({ redirectUri: window.location.href });
+    } catch (err) {
+      console.log(`liff.state init error ${err}`);
+    }
+  })
+}
+...
+```
 
 若是使用 ngrok 來測試的開發者在一開始可以能遇到 `Invalid Host Header` 的問題
 
