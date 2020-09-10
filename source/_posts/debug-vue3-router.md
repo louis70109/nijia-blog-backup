@@ -8,10 +8,9 @@ categories: Vue
 date: 2020-09-10 16:53:58
 ---
 
-
 # 前言
 
-因為最近正在把自己在公司用的小工具從全端中的前端抽離出來，而也剛好在前一陣子參加了 Vue.js 社群聚會得知 Vue 3 可以開始試玩，那 side project 當然就是第一個試水溫的地方啦！但可能太久沒用 Vue 來處理前端的事情讓找錯誤中有點綁手綁腳，因此把整合 3 版 Router 中的一些除錯過程記錄下來 👍
+因為最近正在把自己在公司用的小工具 - [Announcer](https://github.com/louis70109/Announcer/releases/tag/v1-ejs)(Base on Node.js)中的前端抽離出來，而也剛好在前一陣子參加了 Vue.js 社群聚會得知 Vue 3 可以開始試玩，那 side project 當然就是第一個試水溫的地方啦！但可能太久沒用 Vue 來處理前端的事情讓找錯誤中有點綁手綁腳，因此把整合 3 版 Router 中的一些除錯過程記錄下來 👍
 
 <!-- more -->
 
