@@ -15,7 +15,7 @@ tags:
 
 # 介紹
 
-Vue router 需安裝 `^4.0.0-beta.9` 的版本
+在寫這篇文章時 Vue router 需安裝 `^4.0.0-beta.9` 的版本
 這裡分享我 Debug 的過程
 
 首先我在開啟網頁時[遇到了這個問題](https://github.com/vuejs/vue-next/issues/972):
