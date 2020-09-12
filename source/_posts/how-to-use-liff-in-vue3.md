@@ -1,10 +1,9 @@
 ---
-title: 在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享訊息給朋友
-categories: 學習紀錄
+title: 在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享 FlexMessage 訊息給 LINE 好友
+categories: Vue
 date: 2020-09-12 13:44:16
-tags:
+tags: ["Vue", "LINE", "LIFF", "ShareTargetPicker"]
 ---
-
 
 ![](https://engineering.linecorp.com/wp-content/uploads/2020/09/1-1.png)
 
