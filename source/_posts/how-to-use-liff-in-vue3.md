@@ -5,7 +5,7 @@ date: 2020-09-12 13:44:16
 tags: ["Vue", "LINE", "LIFF", "ShareTargetPicker"]
 ---
 
-![](https://engineering.linecorp.com/wp-content/uploads/2020/09/1-1.png)
+![flex sample](https://nijialin.com/images/2020/vue-use-liff/flex-sample.png)
 
 # 前言
 
