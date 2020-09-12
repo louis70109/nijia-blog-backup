@@ -66,16 +66,16 @@ export default {
 };
 ```
 
-接著因為 LIFF 啟用時需要先 init ([參考](https://developers.line.biz/en/reference/liff/#initialize-liff-app))，在 Vue 這邊就選擇放在 `Mounted` 下，並且搭配著 async/await 來改寫一下 liff 的 sample code：
+接著因為 LIFF 啟用時需要先 init ([參考](https://developers.line.biz/en/reference/liff/#initialize-liff-app))，在 Vue 這邊就選擇放在 `Mounted` 下，並且搭配著 async/await 來簡化一下 liff 的 sample code，可以選擇自己喜歡的方式去寫 🙂(對 Promise 不熟的話可以[參考這篇](https://nijialin.com/2020/06/13/learn-javascript-promise/))：
 
 ```javascript
 import { onMounted } from "vue";
-
-...
+import liff from "@line/liff";
+// ...
 setup(){
   onMounted(async () => {
     try {
-      await liff.init({ liffId });
+      await liff.init({ liffId: "123456-abcedfg" }); // Use own liffId
       if (!liff.isLoggedIn())
         liff.login({ redirectUri: window.location.href });
     } catch (err) {
@@ -83,7 +83,102 @@ setup(){
     }
   })
 }
-...
+// ...
+```
+
+```javascript
+onMounted(() => {
+  liff
+    .init({
+      liffId: "123456-abcedfg", // Use own liffId
+    })
+    .then(() => {
+      if (!liff.isLoggedIn()) liff.login({ redirectUri: window.location.href });
+    })
+    .catch((err) => {
+      console.log(err.code, err.message);
+    });
+});
+```
+
+在行動裝置開啟 Liff 時會是有登入狀態，而 `if (!liff.isLoggedIn())` 是讓桌機版瀏覽器在進入時可以判斷並導向 LINE 的登入畫面來確保使用者登入的狀態
+
+由於在 掛載(mount)階段已經初始化好 liff 了，接著在這邊就可以直接使用並參考 [ShareTargetPicker](https://developers.line.biz/en/reference/liff/#share-target-picker) 的文件把 code 複製過來並一樣提供兩種使用方法給大家:
+
+```javascript
+async function sendTargetPicker() {
+  if (!liff.isLoggedIn()) {
+    liff.login({ redirectUri: window.location.href });
+  }
+  if (liff.isApiAvailable("shareTargetPicker")) {
+    try {
+      const picker = await liff.shareTargetPicker([
+        {
+          type: "text",
+          text: "Hello, World!",
+        },
+      ]);
+      if (picker) {
+        // succeeded in sending a message through TargetPicker
+        console.log(`[${picker.status}] Message sent!`);
+      } else {
+        const [majorVer, minorVer] = (liff.getLineVersion() || "").split(".");
+        if (parseInt(majorVer) == 10 && parseInt(minorVer) < 11) {
+          console.log(
+            "TargetPicker was opened at least. Whether succeeded to send message is unclear"
+          );
+        } else console.log("TargetPicker was closed!");
+      }
+    } catch (error) {
+      // something went wrong before sending a message
+      console.log(error);
+      console.log("Flex Message got some error");
+      liff.closeWindow();
+    }
+  } else console.log("Please login...");
+}
+```
+
+若不習慣用語法糖的話可以用原本的範例：
+
+```javascript
+function sendTargetPicker() {
+  if (!liff.isLoggedIn()) {
+    liff.login({ redirectUri: window.location.href });
+  }
+  if (liff.isApiAvailable("shareTargetPicker")) {
+    liff
+      .shareTargetPicker([
+        {
+          type: "text",
+          text: "Hello, World!",
+        },
+      ])
+      .then(function (res) {
+        if (res) {
+          // succeeded in sending a message through TargetPicker
+          console.log(`[${res.status}] Message sent!`);
+        } else {
+          const [majorVer, minorVer] = (liff.getLineVersion() || "").split(".");
+          if (parseInt(majorVer) == 10 && parseInt(minorVer) < 11) {
+            // LINE 10.3.0 - 10.10.0
+            // Old LINE will access here regardless of user's action
+            console.log(
+              "TargetPicker was opened at least. Whether succeeded to send message is unclear"
+            );
+          } else {
+            // LINE 10.11.0 -
+            // sending message canceled
+            console.log("TargetPicker was closed!");
+          }
+        }
+      })
+      .catch(function (error) {
+        // something went wrong before sending a message
+        console.log("something wrong happen");
+      });
+  }
+}
 ```
 
 若是使用 ngrok 來測試的開發者在一開始可以能遇到 `Invalid Host Header` 的問題
@@ -95,6 +190,18 @@ ngrok http 8080 -host-header="localhost:8080"
 ngrok http --host-header=rewrite 8080
 ```
 
+```
+npx ngrok http --region ap --host-header=rewrite 8080
+```
+
 # 結論
+
+之所以會一直使用這個判斷式是因為有 IAB(In App Browser) 以及 External Browser 兩種模式，在情境不同時必須先確認有登入過 LINE 才可以使用之後的功能，否則很容易搞不清楚導致開始除錯後才發現沒確認這部分而浪費很多時間。
+
+```javascript
+if (!liff.isLoggedIn()) {
+  liff.login({ redirectUri: window.location.href });
+}
+```
 
 - [LIFF v2 API](https://developers.line.biz/en/reference/liff/)
