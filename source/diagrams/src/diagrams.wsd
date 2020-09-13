@@ -1,11 +1,16 @@
 @startuml
-User -> LIFF: Click and open url
+User -> Bot: Type any text to trigger
+Bot -> User: Reply templates
+User -> Bot: Click template url
+Bot -> LIFF: Open Browser to start LIFF
 LIFF -> Vue: Redirect endpoint url with liff.state
 Vue -> LIFF: Init LIFF
 LIFF -> LINE: Access and identify user
 LINE -> Vue: Save information on localstorage
 User -> Vue: Input some information
 Vue -> LIFF: Use LIFF API - ShareTargetPicker
-LIFF -> LINE: Access user's friends list
-User -> LINE: Select Friend/Group/Room and send message to them
+LIFF -> LINE: Access user's friend list
+LINE -> User: Return friend list page
+User -> LINE: Select Friend/Group/Room 
+LIFF -> LINE: Send messages by ShareTargetPicker
 @enduml
