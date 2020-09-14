@@ -205,6 +205,30 @@ function sendTargetPicker() {
 <button @click="sendTargetPicker">Send Sample</button>
 ```
 
+## 使用 Heroku 來部署 Vue
+
+首先需要安裝 [Heroku Command Line](https://devcenter.heroku.com/articles/heroku-cli)，安裝完之後就先使用 `Heroku login` 你的帳號，以下的指令會基於這兩個步驟去實現。
+
+由於這邊只使用到前端的部分，為求方便使用 express 來當作跟瀏覽器對接的入口。
+
+在目錄資料夾下建立一個 `index.js` 的入口檔案，以下的程式碼則是全部根據請求導向至對應的路由上：
+
+```javascript
+const express = require("express");
+const path = require("path");
+const serveStatic = require("serve-static");
+
+const app = express();
+app.use(serveStatic(__dirname));
+app.use("/", serveStatic(path.join(__dirname, "/dist")));
+app.get(/.*/, function (req, res) {
+  res.sendFile(path.join(__dirname, "/dist/index.html"));
+});
+const port = process.env.PORT || 8080;
+app.listen(port);
+console.log("server started " + port);
+```
+
 ## 使用 Ngrok 建立一個含有 SSL 的暫時性網址
 
 這邊使用 `npx` 來啟動 ngrok 的服務，避免安裝於全域污染環境(更多的使用方式[參考 npm](https://www.npmjs.com/package/npx)) ⬇️
