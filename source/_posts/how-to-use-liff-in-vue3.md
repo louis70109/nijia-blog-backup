@@ -254,7 +254,7 @@ ngrok http --host-header=rewrite 8080
 
 ## Bonus
 
-1. 若你是使用剛剛提到的工具產生 Flex Message，你需要再產生的 JSON 內容最外面加上：
+1. 若你是使用剛剛提到的工具產生 Flex Message，你需要再產生的 JSON 內容最外面加上下列的相關描述，才能讓 LINE app 收到你的 Flex Message 喔！
 
 ```javascript
 {
