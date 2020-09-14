@@ -254,7 +254,17 @@ ngrok http --host-header=rewrite 8080
 
 ## Bonus
 
-之所以會一直使用這個判斷式是因為有 IAB(In App Browser) 以及 External Browser 兩種模式，在情境不同時必須先確認有登入過 LINE 才可以使用之後的功能，否則很容易搞不清楚導致開始除錯後才發現沒確認這部分而浪費很多時間。
+1. 若你是使用剛剛提到的工具產生 Flex Message，你需要再產生的 JSON 內容最外面加上：
+
+```javascript
+{
+    "type": "flex",
+    "altText": "I am sample text",
+    "contents": [ 放入剛剛產生的 JSON ],
+  }
+```
+
+2. 之所以會一直使用這個判斷式是因為有 IAB(In App Browser) 以及 External Browser 兩種模式，在情境不同時必須先確認有登入過 LINE 才可以使用之後的功能，否則很容易搞不清楚導致開始除錯後才發現沒確認這部分而浪費很多時間。
 
 ```javascript
 if (!liff.isLoggedIn()) {
