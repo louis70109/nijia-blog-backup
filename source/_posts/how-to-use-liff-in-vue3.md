@@ -17,7 +17,7 @@ tags: ["Vue", "LINE", "LIFF", "ShareTargetPicker"]
 
 # 介紹
 
-> 範例專案在此: [GitHub](https://github.com/louis70109/liff-2_4-demo)
+> 範例專案在此: [GitHub](https://github.com/louis70109/vue-liff-shareTargetPicker)
 
 首先呢，就使用 vue 官方建議的 command line 來建立一個新的專案，名稱為 `liff-2_4-demo`:
 
