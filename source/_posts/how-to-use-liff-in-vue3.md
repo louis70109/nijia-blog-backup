@@ -76,6 +76,8 @@ export default {
 
 接著因為 LIFF 啟用時需要先 init ([參考](https://developers.line.biz/en/reference/liff/#initialize-liff-app))，在 Vue 這邊就選擇放在 `Mounted` 下，並且搭配著 async/await 來簡化一下 liff 的 sample code，可以選擇自己喜歡的方式去寫 🙂(對 Promise 不熟的話可以[參考這篇](https://nijialin.com/2020/06/13/learn-javascript-promise/))：
 
+#### Async/Await 版本：
+
 ```javascript
 import { onMounted } from "vue";
 import liff from "@line/liff";
@@ -93,6 +95,8 @@ setup(){
 }
 // ...
 ```
+
+#### 原版：
 
 ```javascript
 onMounted(() => {
@@ -114,6 +118,8 @@ onMounted(() => {
 ## liff.ShareTargetPicker()
 
 由於在 掛載(mount)階段已經初始化好 liff 了，接著在這邊就可以直接使用並參考 [ShareTargetPicker](https://developers.line.biz/en/reference/liff/#share-target-picker) 的文件把 code 複製過來並一樣提供兩種使用方法給大家:
+
+#### Async/Await 版本：
 
 ```javascript
 async function sendTargetPicker() {
@@ -148,6 +154,8 @@ async function sendTargetPicker() {
   } else console.log("Please login...");
 }
 ```
+
+#### 原版：
 
 若不習慣用語法糖的話可以用原本的範例：
 
