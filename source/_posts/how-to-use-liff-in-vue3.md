@@ -229,35 +229,25 @@ app.listen(port);
 console.log("server started " + port);
 ```
 
-## 使用 Ngrok 建立一個含有 SSL 的暫時性網址
+接著使用下 heroku cli 來建立一個服務，`-a` 後面接著服務的名稱
 
-這邊使用 `npx` 來啟動 ngrok 的服務，避免安裝於全域污染環境(更多的使用方式[參考 npm](https://www.npmjs.com/package/npx)) ⬇️
-
-```
-npx ngrok http --region ap --host-header=rewrite 8080
+```sh
+heroku create -a <your-service>
 ```
 
-![ngrok](https://nijialin.com/images/ngrok.png)
-
-- Vue 預設輸出的 port 為 8080
-- `--region`: 換個區域增加測試時的穩定性
-- `--host-header=rewrite`:本地端測試時必須複寫 header，否則將能遇到 `Invalid Host Header` 的問題
-  - 參考[ stackoverflow ](https://stackoverflow.com/questions/45425721/invalid-host-header-when-ngrok-tries-to-connect-to-react-dev-server)上的解答：
-
-兩種使用方法:
-
-```
-ngrok http 8080 -host-header="localhost:8080"
-ngrok http --host-header=rewrite 8080
-```
+![heroku create](https://nijialin.com/images/2020/vue-use-liff/heroku-create.png)
+建立完成後會自動連接剛剛建立的 repository，接著透過 `git push heroku master` 來推到 heroku 上：
+![heroku push 1](https://nijialin.com/images/2020/vue-use-liff/heroku-push-1.png)
+等待一會兒後就完成啦！！並且還附贈一個 Domain 給你。這邊範例的 domain 則是 `https://liff-sample-5.heroku.app/`
+![heroku push 2](https://nijialin.com/images/2020/vue-use-liff/heroku-push-2.png)
 
 到這裡測試環境已經啟動的差不多了，接著就來建立 LINE Login channel：
 ![login channel 1](https://nijialin.com/images/2020/vue-use-liff/login-create-1.png)
 
 選擇完最左邊的 channel 之後並依序填入相關資訊，並選擇 `web app`：
-![login channel 2](https://nijialin.com/images/2020/vue-use-liff/login-create-1.png)
+![login channel 2](https://nijialin.com/images/2020/vue-use-liff/login-create-2.png)
 
-待建立完成之後到 LIFF 的頁籤中新增(`Add`)一個 LIFF page，將剛剛使用 ngrok 建立的網址貼上只 Endpoint Url 輸入框並接著網址輸入`/liff/template`:
+待建立完成之後到 LIFF 的頁籤中新增(`Add`)一個 LIFF page，將剛剛使用 heroku 建立的網址貼上只 Endpoint Url 輸入框並接著網址輸入`/liff/template`:
 ![](https://nijialin.com/images/2020/vue-use-liff/liff-create-1.png)
 
 新增完 LIFF page 後要將 Channel `Published` 以及啟動 `ShareTargetPicker` 按鈕，並將下方的 LIFF url 複製起來貼到瀏覽器上
@@ -312,7 +302,6 @@ if (!liff.isLoggedIn()) {
 # 參考
 
 - [ShareTargetPicker](https://developers.line.biz/en/reference/liff/#share-target-picker)
-- [stackoverflow](https://stackoverflow.com/questions/45425721/invalid-host-header-when-ngrok-tries-to-connect-to-react-dev-server)
 - [FlexMessage](https://developers.line.biz/en/docs/messaging-api/using-flex-messages/)
 - [Simulator](https://developers.line.biz/flex-simulator/)
 - [LIFF v2 API](https://developers.line.biz/en/reference/liff/)
