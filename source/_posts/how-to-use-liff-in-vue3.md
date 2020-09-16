@@ -5,7 +5,7 @@ date: 2020-09-12 13:44:16
 tags: ["Vue", "LINE", "LIFF", "ShareTargetPicker"]
 ---
 
-![flex sample](https://nijialin.com/images/2020/vue-use-liff/flex-sample.png)
+![picker result](https://nijialin.com/images/2020/vue-use-liff/picker-result.png)
 
 # 前言
 
@@ -283,7 +283,6 @@ if (!liff.isLoggedIn()) {
 # 結論
 
 以往只能讓 Chatbot 回應 FlexMessage，而現在能透過 LIFF 使用 ShareTargetPicker 是否有煥然一新的感覺呢？讓發訊息的身份不會只被綁在 bot 身上，使用者本身也能共用 FlexMessage，透過這篇帶大家逐步使用 Vue3 試玩 LIFF 的新功能，若大家有使用經驗、作品、問題的話歡迎至 [Chatbot 社群](https://www.facebook.com/groups/chatbot.tw/)分享喔！讓大家互惠一同建造出 WOW 的 Side Project 吧！🙂
-![picker result](https://nijialin.com/images/2020/vue-use-liff/picker-result.png)
 
 # 參考
 
