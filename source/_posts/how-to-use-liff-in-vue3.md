@@ -9,7 +9,13 @@ tags: ["Vue", "LINE", "LIFF", "ShareTargetPicker"]
 
 # 前言
 
-身為技術推廣工程師必定是要跟上時代的潮流來試玩 Vue 3，主要是因為最近寫了一個 Side Project - [Announcer](https://github.com/louis70109/Announcer) 讓我可以再公布訊息時可以發送漂亮的樣板，而使用 Node.js 開發時因為需要使用 [LIFF](https://developers.line.biz/en/reference/liff/) 的 [ShareTargetPicker](https://developers.line.biz/en/reference/liff/#share-target-picker)，當時只透過 [EJS](https://ejs.co/) 幫我產生 html template 來發送 FlexMessage，一開始認為應該不會寫太多前端的邏輯，但隨著想增進更多的 UX 因此需要操作更多的前端邏輯(可以看看[這個 tag](https://github.com/louis70109/Announcer/releases/tag/v1-ejs) 裡的 views 資料夾)，但曾經寫過 Vue 2 的我當然不可能重新造輪子！同時也隨著最近參加 [Vue.js 社群聚會](https://engineering.linecorp.com/zh-hant/blog/vue-taiwan-006-sharing/)與大家聊到 Vue 3 已經可以先使用，因此就展開我 migrate EJS ➡️ Vue3 的路程了 😆，但在 migrate 之前總是要先了解一下兩邊結合的可行性，本篇就給大家帶來 Vue3 結合 LIFF 的相關使用介紹。 🙂
+以往在 LINE 平台上發送公告相關訊息時都只能編排文字順序、傳另一個圖片、抑或是傳影片...anyway，而隨著 LINE 推出了 [Flex Message](https://developers.line.biz/en/docs/messaging-api/using-flex-messages/) 讓開發者可以將訊息當作網頁 CSS 樣式塑造出一個客製化的訊息格式，這在 Chatbot 的領域裡基本上可以算是殺手級功能了，Chatbot 可以在過程中可以依照對話流程釋出不同樣版的內容，讓使用者體驗更上一層。
+
+隨著時間的演進 LINE 也 release 了自家的前端框架 - [LIFF](https://developers.line.biz/en/reference/liff/)，開發者能夠很快速的使用到 LINE Login 的相關功能並且整合到 Chatbot 上面，讓整體服務的使用體驗更上一層，接著在近些日子釋出了本篇介紹的主軸 - [ShareTargetPicker](https://developers.line.biz/en/reference/liff/#share-target-picker)，其功能主要是能將之前只有 Chatbot 才能使用的 Flex Message 透過 LIFF 的這隻 API 使用發送者的名義將客製化訊息幫忙發送給 `使用者`/`群組`/`聊天室`，讓我在群組公布訊息時能有煥然一新的模樣呢！
+
+- 也有 LINE API Expert 分享的 [看起來很專業的 LINE 數位版名片](https://taichunmin.idv.tw/blog/2020-07-12-liff-businesscard.html) 文章可以參考。
+
+會寫這篇的原因也是因為最近寫了一個 Side Project - [Announcer](https://github.com/louis70109/Announcer) 讓我可以再公布訊息時可以發送漂亮的 Flex MEssage，而使用 Node.js 開發時因為需要使用 [LIFF](https://developers.line.biz/en/reference/liff/) 的 [ShareTargetPicker](https://developers.line.biz/en/reference/liff/#share-target-picker)，當時只透過 [EJS](https://ejs.co/) 幫我產生 html template 來發送 FlexMessage，一開始認為應該不會寫太多前端的邏輯，但隨著想增進更多的 UX 因此需要操作更多的前端邏輯(可以看看[這個 tag](https://github.com/louis70109/Announcer/releases/tag/v1-ejs) 裡的 views 資料夾)，因此在多種考慮下決定使用 Vue 來簡化我的開發，但在 migrate 之前總是要先了解一下兩邊結合的可行性，本篇就給大家帶來 Vue3 結合 LIFF 的相關使用介紹。 🙂
 
 > FlexMessage 詳細介紹可以參考這篇 - [Flex Message 的 Update 1 已公開](https://engineering.linecorp.com/zh-hant/blog/flex-message-update1/)
 
@@ -205,35 +211,49 @@ function sendTargetPicker() {
 <button @click="sendTargetPicker">Send Sample</button>
 ```
 
-## 使用 Ngrok 建立一個含有 SSL 的暫時性網址
+## 使用 Heroku 來部署 Vue
 
-這邊使用 `npx` 來啟動 ngrok 的服務，避免安裝於全域污染環境(更多的使用方式[參考 npm](https://www.npmjs.com/package/npx)) ⬇️
+首先需要安裝 [Heroku Command Line](https://devcenter.heroku.com/articles/heroku-cli)，安裝完之後就先使用 `Heroku login` 你的帳號，以下的指令會基於這兩個步驟去實現。
 
+由於這邊只使用到前端的部分，為求方便使用 express 來當作跟瀏覽器對接的入口。
+
+在目錄資料夾下建立一個 `index.js` 的入口檔案，以下的程式碼則是全部根據請求導向至對應的路由上：
+
+```javascript
+const express = require("express");
+const path = require("path");
+const serveStatic = require("serve-static");
+
+const app = express();
+app.use(serveStatic(__dirname));
+app.use("/", serveStatic(path.join(__dirname, "/dist")));
+app.get(/.*/, function (req, res) {
+  res.sendFile(path.join(__dirname, "/dist/index.html"));
+});
+const port = process.env.PORT || 8080;
+app.listen(port);
+console.log("server started " + port);
 ```
-npx ngrok http --region ap --host-header=rewrite 8080
+
+接著使用下 heroku cli 來建立一個服務，`-a` 後面接著服務的名稱
+
+```sh
+heroku create -a <your-service>
 ```
 
-![ngrok](https://nijialin.com/images/ngrok.png)
-
-- Vue 預設輸出的 port 為 8080
-- `--region`: 換個區域增加測試時的穩定性
-- `--host-header=rewrite`:本地端測試時必須複寫 header，否則將能遇到 `Invalid Host Header` 的問題
-  - 參考[ stackoverflow ](https://stackoverflow.com/questions/45425721/invalid-host-header-when-ngrok-tries-to-connect-to-react-dev-server)上的解答：
-
-兩種使用方法:
-
-```
-ngrok http 8080 -host-header="localhost:8080"
-ngrok http --host-header=rewrite 8080
-```
+![heroku create](https://nijialin.com/images/2020/vue-use-liff/heroku-create.png)
+建立完成後會自動連接剛剛建立的 repository，接著透過 `git push heroku master` 來推到 heroku 上：
+![heroku push 1](https://nijialin.com/images/2020/vue-use-liff/heroku-push-1.png)
+等待一會兒後就完成啦！！並且還附贈一個 Domain 給你。這邊範例的 domain 則是 `https://liff-sample-5.heroku.app/`
+![heroku push 2](https://nijialin.com/images/2020/vue-use-liff/heroku-push-2.png)
 
 到這裡測試環境已經啟動的差不多了，接著就來建立 LINE Login channel：
 ![login channel 1](https://nijialin.com/images/2020/vue-use-liff/login-create-1.png)
 
 選擇完最左邊的 channel 之後並依序填入相關資訊，並選擇 `web app`：
-![login channel 2](https://nijialin.com/images/2020/vue-use-liff/login-create-1.png)
+![login channel 2](https://nijialin.com/images/2020/vue-use-liff/login-create-2.png)
 
-待建立完成之後到 LIFF 的頁籤中新增(`Add`)一個 LIFF page，將剛剛使用 ngrok 建立的網址貼上只 Endpoint Url 輸入框並接著網址輸入`/liff/template`:
+待建立完成之後到 LIFF 的頁籤中新增(`Add`)一個 LIFF page，將剛剛使用 heroku 建立的網址貼上只 Endpoint Url 輸入框並接著網址輸入`/liff/template`:
 ![](https://nijialin.com/images/2020/vue-use-liff/liff-create-1.png)
 
 新增完 LIFF page 後要將 Channel `Published` 以及啟動 `ShareTargetPicker` 按鈕，並將下方的 LIFF url 複製起來貼到瀏覽器上
@@ -287,7 +307,6 @@ if (!liff.isLoggedIn()) {
 # 參考
 
 - [ShareTargetPicker](https://developers.line.biz/en/reference/liff/#share-target-picker)
-- [stackoverflow](https://stackoverflow.com/questions/45425721/invalid-host-header-when-ngrok-tries-to-connect-to-react-dev-server)
 - [FlexMessage](https://developers.line.biz/en/docs/messaging-api/using-flex-messages/)
 - [Simulator](https://developers.line.biz/flex-simulator/)
 - [LIFF v2 API](https://developers.line.biz/en/reference/liff/)
