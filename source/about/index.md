@@ -3,7 +3,7 @@ title: 關於 NiJia Lin
 date: 2019-10-16 11:28:36
 ---
 
-平時喜愛關注與貢獻 GitHub 上的各種開源專案，從 ReadMe 的撰寫到程式碼的各種架構應用，盡可能在業餘時間幫忙 Close Issue，同時也熱愛參加各大研討會了解當前技術的走向與認識來自不同社群的朋友，對於新事物總是有著很多的熱情並勇於嘗試，休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，其餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 獲得 **LINE 官方專將認證** 與 iThome 鐵人賽 Modern Web 組**佳作**。
+平時喜愛關注與貢獻 GitHub 上的各種開源專案，從文件的撰寫到程式碼的各種架構應用。同時也熱愛參加各大研討會了解當前技術的走向與認識來自不同社群的朋友，對於新事物總是有著很多的熱情並勇於嘗試。休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，其餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 獲得 **LINE 官方專將認證** 與 iThome 鐵人賽 Modern Web 組**佳作**。
 
 - ☘️ Technology Evangelist / Software Engineer
 - 👨‍🌾 Farmer / 🏋️‍♂️Body Builder
@@ -50,8 +50,7 @@ date: 2019-10-16 11:28:36
 | Category       | List                                                                      |
 | -------------- | ------------------------------------------------------------------------- |
 | AWS            | Route53, CloudFront, SQS, Lambda, API Gateway, Amplify, S3, Cognito, IoT  |
-| LINE           | Message API(Bot), Notify, Login, LIFF                                     |
-| OS             | Ubuntu, CentOS                                                            |
+| LINE           | Messaging API(Bot), Notify, Login, LIFF                                   |
 | Git            | GitHub, Azure DevOps, Bitbucket                                           |
 | Google         | Dialogflow                                                                |
 | Document tools | Markdown, [Swagger](https://github.com/louis70109/aws-swagger-wsgi-flask) |
@@ -59,6 +58,9 @@ date: 2019-10-16 11:28:36
 
 # Workshop
 
+- [中部人的 Chatbots Meetup 聊天機器人小小聚 #8 @ 台中夢森林](https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-008)
+  - [投影片](https://speakerdeck.com/line_developers_tw/20200822-subscribe-open-data-with-line)
+  - [GitHub 範例](https://github.com/louis70109/LINE-subscribe-open-data-bot)
 - [手把手帶你用 LINE Notify @ 朝陽科技大學(2019/05)](https://www.slideshare.net/JiaYuLin6/step-by-step-to-use-line-notify-20190527)
 - [GDG 週年之 Hachathon party @ GDG Taichung #12](https://www.meetup.com/GDGTaichung/events/266686542/)
 
@@ -75,6 +77,7 @@ date: 2019-10-16 11:28:36
 # Talks
 
 - [第一次開發 Python SDK 就上手！ feat. LINE Notify](https://coscup.org/2020/zh-TW/agenda/KNJDWQ)
+  - [套件](https://github.com/louis70109/lotify)
   - [投影片](https://speakerdeck.com/line_developers_tw/lotify-a-python-sdk-for-line-notify)
   - [影片](https://www.youtube.com/watch?v=nPS_442OszQ)
 - [COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來 ê muscle-man line bot](https://coscup2019.kktix.cc/events/coscup-taigi2019?)
@@ -85,16 +88,8 @@ date: 2019-10-16 11:28:36
   - [投影片](https://www.slideshare.net/JiaYuLin6/build-line-notify-bot-by-lotify-and-create-client-library-by-swagger-20200527-234623929)
 - [Chatbot Taiwan meetup 14 - 如何使用 kamigo 加速開發 LINE bot](https://chatbots.kktix.cc/events/meetup-014)
   - [投影片](https://www.slideshare.net/JiaYuLin6/kamigo-reviews-20191127-198374007)
+  - [影片](https://youtu.be/EJgfjrfVZPo)
 - [Chatbot Taiwan meetup 8 - Chatbot x IOT](https://chatbots.kktix.cc/events/meetup-008)
-
-# Videos
-
-- [COSCUP 「來台講」- 有一 tsiah 完全用 kamigo 做出來 ê muscle-man line bot](https://www.youtube.com/watch?v=wXV8aPj1Ibo&list=PLqfib4St70XNIzROJgyALYAdp-sQmfK0m&index=3)
-- [Chatbot Taiwan meetup 19 - 使用 Lotify + Swagger 建置可共用的 LINE Notify bot](https://www.youtube.com/watch?v=agYVz6dzh1I)
-- [Chatbot Taiwan meetup 14 - 如何使用 kamigo 快速打造 LINE bot](https://youtu.be/EJgfjrfVZPo)
-- [Modern Web 2019 - muscle man lighting talk](https://www.youtube.com/watch?v=0UUFH_nysFY)
-- [Modern web 2019 - Twitch bot lighting talk](https://www.youtube.com/watch?v=Plt9Hbt3P_I)
-- [Modern web 2019 - Live demo Kamigo gem in dojo](https://www.youtube.com/watch?v=rtULUl1eyXo)
 
 # Activities
 
@@ -103,3 +98,9 @@ date: 2019-10-16 11:28:36
 - [2019 / 2020 COSCUP [chatbot Taiwan]](https://coscup.org/2019/)
 - [2019 Modern Web [Chatbot Taiwan]](https://modernweb.tw/2019/index.html)
 - [2019 MOPCON [Chatbot Taiwan]](https://mopcon.org/2019/community/)
+
+# Others
+
+- [Modern Web 2019 - muscle man lighting talk](https://www.youtube.com/watch?v=0UUFH_nysFY)
+- [Modern web 2019 - Twitch bot lighting talk](https://www.youtube.com/watch?v=Plt9Hbt3P_I)
+- [Modern web 2019 - Live demo Kamigo package in dojo](https://www.youtube.com/watch?v=rtULUl1eyXo)
