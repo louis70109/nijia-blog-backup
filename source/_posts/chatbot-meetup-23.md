@@ -1,8 +1,8 @@
 ---
 title: "LINE 開發社群計畫: 2020 九月 LINE 平台更新整理與 LIFF ShareTargetPicker 案例分享"
-category:
-  - 研討會
+category: 研討會
 tags: ["Chatbot", "DevRel", "LINE"]
+date: 2020-09-17 23:28:00
 ---
 
 ![](https://nijialin.com/images/chatbot.png)
