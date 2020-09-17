@@ -47,24 +47,6 @@ npm install vue-router@next @line/liff
 
 <script src="https://gist.github.com/louis70109/4c7ea0635e6f79af5ffb6f4781d87383.js"></script>
 
-```javascript
-import { createRouter, createWebHistory } from "vue-router";
-import HelloWorld from "../components/HelloWorld.vue";
-const routerHistory = createWebHistory();
-
-const router = createRouter({
-  history: routerHistory,
-  routes: [
-    {
-      path: "/liff/template",
-      component: HelloWorld,
-    },
-  ],
-});
-
-export default router;
-```
-
 > 若你在 Vue 3 使用 Router 的過程有問題的話可以[參考這篇文章](https://nijialin.com/2020/09/10/debug-vue3-router/)
 
 Router 這邊處理好後就接著來處理 LIFF。接著進入到 `HelloWorld.vue` 的檔案中，找到 props 的部分將它置換成 `setup(){}`
