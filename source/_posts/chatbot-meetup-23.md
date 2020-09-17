@@ -125,7 +125,10 @@ Announcer 是近期我為了在公司大群裡宣傳內部活動做的一個 Sid
 ## 專案分享 ：看財狗 - 鄭鈞瀚
 
 ![](https://nijialin.com/images/2020/chatbot-23/light-0.jpg)
+
 第一個閃電秀分享了跟記帳相關的 Chatbot，過程中除了介紹講者的痛點外，也實際操作使用語音輸入讓 Chatbot 幫忙自動記帳的功能，這麼棒的應用講者說會在 [LINE FRESH 競賽](https://linefresh.linecorp.com/)中展示，想到還不來參加一波？
+
+> [簡報連結](https://www.icloud.com/keynote/032q5eeS8afkIYYldqFfnjhqw#%E7%B0%A1%E5%A0%B1)
 
 ## 用 Liff 和 LINE API 實作即時投票 / 彈幕系統 - Yukai
 
