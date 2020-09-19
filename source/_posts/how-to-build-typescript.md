@@ -4,7 +4,7 @@ tags:
   - TypeScript
   - nodejs
 categories: TypeScript
-date: 2020-09-04 22:07:47
+date: 2020-09-19 13:04:00
 ---
 
 ## 為什麼選擇 TypeScript？
@@ -66,7 +66,7 @@ npm install ts-node nodemon --save-dev
 "scripts": {
     "build": "tsc",
     "dev": "nodemon index.ts"
-  },
+},
 ```
 
 接著我們在本地端建立一個 `index.ts` 並且輸入以下範例：
@@ -84,9 +84,50 @@ showTotal(100, 200);
 接著就可以執行 `npm run dev` 看看輸出結果，改動 showTotal() 裡面的值來測試一下是否正常 reload 喔！
 ![npm dev](https://nijialin.com/images/2020/npm-run-dev1.png)
 
+# Jest 測試
+
+透過 npm 來安裝與 TypeScript 相依的 jest 套件
+
+```bash
+npm install -D jest ts-jest @types/jest
+```
+
+在之前已經在 package.json 的 `scripts` 中加入了 build/dev 的指令，這部分就再加上 `test` 的相關啟動指令：
+
+```javascript
+"scripts": {
+  ...
+  "test": "jest --coverage"
+},
+```
+
+由於剛剛選擇了 `ts-jest` 來幫助我們使用 jest，接著就來用它來加入 jest 的設定檔，使用 npx 來幫忙啟動指令而不用額外安裝 ts-jest 的 global command：
+
+```
+npx ts-jest config:init
+```
+
+> 參考[這篇文章](https://titangene.github.io/article/jest-typescript.html#%E8%A8%AD%E5%AE%9A-jest-config-js)的說明，Jest 預設只會吃 `__test__` 裡的 `.test` || `.spec` 的後綴(suffix)結尾的檔案，在看任何專案以及新增檔案時需要注意這部分的命名，否則容易出錯。
+
+接著在主目錄下新增名為 `__test__` 的資料夾，在裡面接著新增 `index.test.ts` 的檔案後並加入以下測試範例：
+
+```typescript
+import { showTotal } from "../index";
+
+test("It should be 3", () => {
+  const total: number = showTotal(1, 2);
+  const expected: number = 3;
+  expect(total).toBe(expected);
+});
+```
+
+接著就使用 `npm run test` 來收成果囉！
+
 # 結論
 
-這篇就快速紀錄一下從一個乾淨的資料夾到建立環境來測試 TypeScript 的過程，接下來預計會帶入 Express + LINE Frontend Framework(LIFF) 來實際操作 API 與前端溝通的內容，並說明處理相關設定的問題。
+這篇就快速紀錄一下從一個乾淨的資料夾到建立環境來測試 TypeScript 的過程，沿途參考了許多文件以及文章來讓這次從頭新增專案的路比較順利，很感謝每位作者的付出才讓我無痛的踏上 TypeScript 的路程。
+
+接下來預計會帶入 Express + LINE Frontend Framework(LIFF) + LINE Messaging API(Bot) 來實際操作 API 與前端溝通的內容，並說明處理相關設定的問題。
 
 # 參考
 
@@ -95,3 +136,4 @@ showTotal(100, 200);
 - [nodemon](https://www.npmjs.com/package/nodemon)
 - [從零開始在 Windows 使用 Node.js 打造專屬於你的 LINE Bot 聊天機器人](https://medium.com/@EtrexKuo/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%9C%A8-windows-%E4%BD%BF%E7%94%A8-node-js-%E6%89%93%E9%80%A0%E5%B0%88%E5%B1%AC%E6%96%BC%E4%BD%A0%E7%9A%84-line-bot-%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA-173ac0f6be92)
 - [3 步建立 Typescript 開發環境](https://medium.com/@peterchang_82818/typescript-example-%E6%95%99%E5%AD%B8-tutorial-%E7%AF%84%E4%BE%8B-%E9%96%8B%E7%99%BC-%E6%95%99%E5%AD%B8-%E5%88%9D%E5%AD%B8%E8%80%85-%E7%92%B0%E5%A2%83-nodejs-javascript-react-js-3%E6%AD%A5-888fa8033fc7)
+- [Jest + TypeScript：建置測試環境](https://titangene.github.io/article/jest-typescript.html)
