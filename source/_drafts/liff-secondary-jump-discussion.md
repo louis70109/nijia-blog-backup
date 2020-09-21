@@ -11,6 +11,7 @@ tags:
 
 - 為了更有效的結合 Login 因此需要二次跳轉 TBC
   - Use liff.state to integrate LINE Login easily
+  - You could reference this page: https://developers.line.biz/en/docs/liff/using-user-profile/
 - 常見的名詞解釋
 
   - Query params
