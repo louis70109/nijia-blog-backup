@@ -11,6 +11,8 @@ date: 2020-09-17 23:28:00
 
 大家好，我是 LINE Taiwan 的 Tech Evangelist - NiJia Lin。這次很開心受到 chatbot 社群的邀請，參加了【[Chatbot meetup 聊天機器人小小聚 23 @Onramp Studio](https://events.chatbot.tw/events/10)】的聚會活動，前往且分享 LINE API 更新與個人 LINE Bot 開發心得，透過持續開發增加技術的敏銳度。在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。
 
+<!-- more -->
+
 - 本次活動網頁: [活動網址](https://events.chatbot.tw/events/10)
 - 本次活動的共筆紀錄： [https://hackmd.io/@chatbot-tw/meetups-023](https://hackmd.io/@chatbot-tw/meetups-023)
 
