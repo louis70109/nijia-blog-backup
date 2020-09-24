@@ -20,12 +20,9 @@ tags:
 我相信每個開發人員都會以不同的方式測試 LIFF App。根據我在 LIFF App 進行自動化測試的經驗中，我遇到了很多問題。因此我想總結以下 3 個常見問題：
 ![](https://nijialin.com/images/2020/cypress-liff/1.png)
 
-1. LIFF App 和 LINE Platform 具有很高的依賴性：例如，假設我們要使用 liff.getProfile() 這個 API，則需要先重新導向讓使用者進行 LINE Login，然後才能使用它。如此一來控制 LINE Login 就很困難。這樣情況下很容易變成 Flaky Tests（“ Flaky Tests” 是一項運行且會導致某些測試結果失敗的測試）無需修改任何代碼）
-
-> 去年 DevDay 有議程提到類似的部分，可以[參考文章](https://nijialin.com/2019/11/22/How-we-continuously-delivery-LINE-TODAY-App-with-high-agility-and-high-quality/)
-
-2. 根本無法模擬反向測試測試：例如，假設我們要測試何時 liff.init() 並且想碰巧 Promise Reject 檢查我們的應用程序是否可以處理這種情況 我覺得很難。還是做不到比正常測試更好的
-3. 像在移動 LINE Native App 上運行 LIFF App 一樣模擬環境非常困難：有時我們的 LIFF App 對於每個平台可能會有不同的使用行為，例如在 LINE App 和外部瀏覽器上運行。桌面可能具有不同的設計 UI 或功能，它們的工作方式有所不同。現在，我們如何簡化在這些環境中的測試仿真，我認為有時候這確實很困難？
+1. LIFF App 和 LINE Platform 具有很高的依賴性：例如，假設我們要使用 liff.getProfile() 這個 API，則需要先重新導向讓使用者進行 LINE Login，然後才能使用它。如此一來控制 LINE Login 就很困難。這樣情況下很容易變成 `Flaky Tests`（“Flaky Tests” 意指在測試結果中會出現不正常行為的測試）
+2. 無法 Simulate Negative Test：假設我們要使用 `Promise Reject` 測試 liff.init() 並且檢查我們的應用程式是否可以處理各種 Scenario，在一般的測試下我覺得很難達到預期效果。
+3. 在 LINE Native App 上運行 LIFF App 模擬一樣的環境非常困難：有時我們的 LIFF App 對於每個平台可能會有不同的使用行為，例如在 LINE App 和外部瀏覽器上運行。桌面可能具有不同的設計 UI 或功能，它們的工作方式有所不同。現在，我們如何簡化在這些環境中的測試仿真，我認為有時候這確實很困難？
 
 > 從以上所有問題 可以使用 Cypress 作為工具對 LIFF App 進行單元測試來進行編輯和實現。
 
@@ -35,7 +32,7 @@ tags:
 
 # 讓我們開始吧
 
-本文中的一個示例 我選擇使用 Vue.js 開發 LIFF App。
+接著的範例我選擇使用 Vue.js 來開發 LIFF App。
 
 ![](https://nijialin.com/images/2020/cypress-liff/2.png)
 我通過使用 vue-cli 和 Config Project 作為手動選擇功能來創建一個新項目，如下所示。

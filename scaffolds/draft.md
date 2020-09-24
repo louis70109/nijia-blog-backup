@@ -4,6 +4,16 @@ tags:
 categories: 學習紀錄
 ---
 
+<style>
+  section.compact {
+    font-size: 150%  
+  }
+  img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+
 ![](https://i.imgur.com/0QAGPDc.png)
 
 # 前言

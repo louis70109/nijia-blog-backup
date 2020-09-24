@@ -9,6 +9,7 @@ tags:
 
 # 前言
 
+- LIFF init - login
 - 為了更有效的結合 Login 因此需要二次跳轉 TBC
   - Use liff.state to integrate LINE Login easily
   - You could reference this page: https://developers.line.biz/en/docs/liff/using-user-profile/
