@@ -61,9 +61,16 @@ LINE Music 是一個強大且應用許多工具的服務，講者 - Wei 在本�
 - 使用 [Gin] 框架來當作 API Gateway 介接前端的需求。
   - 在 Routing 可以很快速的劃分 Group 讓 Controller 共用
   - 客製化 Middleware 很方便
-- 使用 gRPC 溝通內部服務降低 Response time
+- 使用 gRPC 溝通內部服務降低 Response time([grpc-go](https://github.com/grpc/grpc-go))
+- 因為視為微服務，因此相呼叫 API 是必要的，講者推薦使用 [resty](https://github.com/go-resty/resty)，且還能客製化 Before & After 的 Middleware
 
-> LINE 再審查 Open Source 是很嚴格的，必須檢查 Source code 確保沒有資安上的問題才可以使用。
+<script async class="speakerdeck-embed" data-slide="19" data-id="2865bb1c091b4210b4852bb76828a769" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- Database 的部分使用 [GORM](https://github.com/go-gorm/gorm) 來介接 MySQL 加速開發，在使用 Preload、hook、Auto Migration 相關的都很方便。
+- Redis 部分因為會因應場景處理 cookie、Session、Cache 的部分，這裡推薦使用 [go-redis](https://github.com/go-redis/redis)
+- Kafka 大多處理 Event log 的部分，因為已 Log 的使用情境不需要即時進資料庫，因此使用 Queue 當作 Middleware 降低資料庫的負擔，這裡推薦使用 [Shopify/sarama](https://github.com/Shopify/sarama)
+
+雖然以上介紹了在 LINE Music 裡使用的各種套件，但在 LINE 裡面審查 Open Source 是很嚴格的，會有相關專業同仁確保 Source code 沒有資安上的問題才可以使用。
 
 # 結論
 
