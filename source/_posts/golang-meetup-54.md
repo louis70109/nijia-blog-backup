@@ -1,9 +1,14 @@
 ---
-title:
-  "[object Object]": null
-categories: 學習紀錄
+title: 'LINE 開發社群計畫: Golang #54 場社群小聚心得'
 tags:
+  - DevRel
+  - 研討會
+  - Golang
+  - LINE
+categories: 研討會
+date: 2020-09-26 00:42:06
 ---
+
 
 <style>
   section.compact {
@@ -19,7 +24,7 @@ tags:
 
 # 前言
 
-大家好，我是 LINE Taiwan 的 Tech Evangelist - NiJia Lin。這次很開心再度參加了<mark>Golang 社群第 54 場</mark>的聚會活動。在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓開發動能更加的盛大。
+大家好，我是 LINE Taiwan 的 Tech Evangelist - NiJia Lin。這次很開心再度參加了<mark>Golang 社群第 54 場</mark>的聚會活動，繼上次參加 53 場精彩的社群小聚之後這次總算來到 LINE 的辦公室舉辦，辛苦社群夥伴們的舉辦此次的活動，在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓開發動能更加的盛大！
 
 - Golang 社群活動頁面： [https://www.meetup.com/golang-taipei-meetup/events/272926722/](https://www.meetup.com/golang-taipei-meetup/events/272926722/)
 
@@ -62,21 +67,40 @@ LINE Music 是一個強大且應用許多工具的服務，講者 - Wei 在本�
   - 在 Routing 可以很快速的劃分 Group 讓 Controller 共用
   - 客製化 Middleware 很方便
 - 使用 gRPC 溝通內部服務降低 Response time([grpc-go](https://github.com/grpc/grpc-go))
-- 因為視為微服務，因此相呼叫 API 是必要的，講者推薦使用 [resty](https://github.com/go-resty/resty)，且還能客製化 Before & After 的 Middleware
+- 因為是為微服務，因此相呼叫 API 是必要的，講者推薦使用 [resty](https://github.com/go-resty/resty)，且還能客製化 Before & After 的 Middleware
 
 <script async class="speakerdeck-embed" data-slide="19" data-id="2865bb1c091b4210b4852bb76828a769" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 - Database 的部分使用 [GORM](https://github.com/go-gorm/gorm) 來介接 MySQL 加速開發，在使用 Preload、hook、Auto Migration 相關的都很方便。
 - Redis 部分因為會因應場景處理 cookie、Session、Cache 的部分，這裡推薦使用 [go-redis](https://github.com/go-redis/redis)
-- Kafka 大多處理 Event log 的部分，因為已 Log 的使用情境不需要即時進資料庫，因此使用 Queue 當作 Middleware 降低資料庫的負擔，這裡推薦使用 [Shopify/sarama](https://github.com/Shopify/sarama)
+- Kafka 大多處理 Event log 的部分，因為已 Log 的使用情境不需要即時進資料庫，因此使用 Queue 當作 Middleware 降低資料庫的負擔，這裡推薦使用 [Shopify/sarama](https://github.com/Shopify/sarama)，使用情境的流程圖參考以下簡報：
 
-雖然以上介紹了在 LINE Music 裡使用的各種套件，但在 LINE 裡面審查 Open Source 是很嚴格的，會有相關專業同仁確保 Source code 沒有資安上的問題才可以使用。
+<script async class="speakerdeck-embed" data-slide="41" data-id="2865bb1c091b4210b4852bb76828a769" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- 前面提到了有使用 WebSocket 來介接資源，而 Server 端則是使用 [melody](https://github.com/olahol/melody) 來起服務。
+
+在這個微服務剛起的時候講者是參考 [golang-standards/project-layout](https://github.com/golang-standards/project-layout) 結構來建立所有的目錄檔案，藉由集結眾人意志貢獻的 project 也可以代表 LINE 是很重視參與 Open Source 的相關使用。
+
+每段程式中會有生命週期，當開發者在使用特定程式去相依注入(Dependency Injection)讓 Code 可以處理事件前後所需要做的相關功能(ex: 顯示錯誤 log 時可以發送 [Sentry](https://sentry.io/welcome/))，以下兩個套件可以參考 👍
+
+- dig: https://github.com/uber-go/dig
+- fix: https://github.com/uber-go/fx
+
+上述介紹了許多在開發上使用工具的套件，最後一定要寫測試來確保自己交付的程式碼是具有可靠性，這邊講者就推薦 [testify 套件](https://github.com/stretchr/testify) 來操作測試相關的操作，若是需要 code coverage 則使用 [goconvey](https://github.com/smartystreets/goconvey)
+
+## 小結
+
+雖然以上介紹了在 LINE Music 裡使用的各種套件，但在 LINE 裡面審查 Open Source 是很嚴格的，會有相關專業同仁確保 Source code 沒有資安上的問題才可以使用，因此在這次 LINE Music 的講者一次提供這個大補包介紹服務中的套件，若你也有介接相關的應用不妨參考一下 LINE Music 參考過的套件吧！🙂
+
+> 大家也來使用 [LINE Music](https://music-tw.line.me/) 體驗一下由我們自己打造的音樂平台服務吧！
 
 # 結論
 
-# 活動小結
+因為有大家對於社群的支持才有這麼精彩的議程可以聆聽，身為場地提供方也很開心看到大家如此熱情地交流與享用美食，讓整個場地都熱絡了起來！歡迎大家踴躍參加不同的社群讓開發者文化風氣可以更加的活躍！😊
 
-立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
+而在這次的 Keynote 中這次好不容易可以聽到 LINE Music 團隊的成員為大家來分享服務如何運作以及已上線服務服役的套件們，相信對於來參加的開發者們可以帶來不小的幫助，尤其這些套件也是經由專業的 LINE 同仁的審查才可以使用，希望透過本篇的介紹能讓大家可以更快速的了解為什麼要使用它們。
+
+若對相關服務還有興趣的話請大家持續關注我們喔！立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 
 「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev
 ![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
