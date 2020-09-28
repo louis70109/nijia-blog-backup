@@ -41,9 +41,9 @@ date: 2020-09-26 00:42:06
 
 <script async class="speakerdeck-embed" data-id="2865bb1c091b4210b4852bb76828a769" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-LINE Music 是一個強大且應用許多工具的服務，講者 - Wei 在本次社群分享中 Focus 在使用 Golang 的細節
+LINE MUSIC 是一個強大且應用許多工具的服務，講者 - Wei 在本次社群分享中 Focus 在使用 Golang 的細節
 
-> 很多人會很好奇 LINE Music 有什麼長處？可以參考官方部落格的這篇([【LINE MUSIC】獨家去人聲跟唱 歌神換你當！](http://official-blog.line.me/tw/archives/83474706.html))，
+> 很多人會很好奇 LINE MUSIC 有什麼長處？可以參考官方部落格的這篇([【LINE MUSIC】獨家去人聲跟唱 歌神換你當！](http://official-blog.line.me/tw/archives/83474706.html))，
 
 <script async class="speakerdeck-embed" data-slide="28" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -51,7 +51,7 @@ LINE Music 是一個強大且應用許多工具的服務，講者 - Wei 在本�
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="2865bb1c091b4210b4852bb76828a769" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-從 Agenda 中即可得知 Music 為了讓整題服務更加順暢並因應不同的使用情境而套用相當多的工具，在這次的分享中也一一介紹每個工具是如何選擇且應用於當前的微服務。
+從 Agenda 中即可得知 MUSIC 為了讓整題服務更加順暢並因應不同的使用情境而套用相當多的工具，在這次的分享中也一一介紹每個工具是如何選擇且應用於當前的微服務。
 
 <script async class="speakerdeck-embed" data-slide="5" data-id="2865bb1c091b4210b4852bb76828a769" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -89,11 +89,11 @@ LINE Music 是一個強大且應用許多工具的服務，講者 - Wei 在本�
 - dig: https://github.com/uber-go/dig
 - fix: https://github.com/uber-go/fx
 
-上述介紹了許多在開發上使用工具的套件，最後一定要寫測試來確保自己交付的程式碼是具有可靠性，這邊講者就推薦 [testify 套件](https://github.com/stretchr/testify) 來操作測試相關的操作，若是需要 code coverage 則使用 [goconvey](https://github.com/smartystreets/goconvey)
+上述介紹了許多在開發上使用工具的套件，最後一定要寫測試來確保自己交付的程式碼是具有可靠性，這邊講者就推薦 [testify 套件](https://github.com/stretchr/testify) 與 [goconvey](https://github.com/smartystreets/goconvey) 來操作測試相關的操作。
 
 ## 小結
 
-雖然以上介紹了在 LINE Music 裡使用的各種套件，但在 LINE 裡面審查 Open Source 是很嚴格的，會有相關專業同仁確保 Source code 沒有資安上的問題才可以使用，因此在這次 LINE Music 的講者一次提供這個大補包介紹服務中的套件，若你也有介接相關的應用不妨參考一下 LINE Music 參考過的套件吧！🙂
+雖然以上介紹了在 LINE MUSIC 裡使用的各種套件，但在 LINE 裡面審查 Open Source 是很嚴格的，會有相關專業同仁確保 Source code 沒有資安上的問題才可以使用，因此在這次 LINE MUSIC 的講者一次提供這個大補包介紹服務中的套件，若你也有介接相關的應用不妨參考一下 LINE MUSIC 參考過的套件吧！🙂
 
 > 大家也來使用 [LINE Music](https://music-tw.line.me/) 體驗一下由我們自己打造的音樂平台服務吧！
 
@@ -101,7 +101,7 @@ LINE Music 是一個強大且應用許多工具的服務，講者 - Wei 在本�
 
 因為有大家對於社群的支持才有這麼精彩的議程可以聆聽，身為場地提供方也很開心看到大家如此熱情地交流與享用美食，讓整個場地都熱絡了起來！歡迎大家踴躍參加不同的社群讓開發者文化風氣可以更加的活躍！😊
 
-而在這次的 Keynote 中這次好不容易可以聽到 LINE Music 團隊的成員為大家來分享服務如何運作以及已上線服務服役的套件們，相信對於來參加的開發者們可以帶來不小的幫助，尤其這些套件也是經由專業的 LINE 同仁的審查才可以使用，希望透過本篇的介紹能讓大家可以更快速的了解為什麼要使用它們。
+而在這次的 Keynote 中這次好不容易可以聽到 LINE MUSIC 團隊的成員為大家來分享服務如何運作以及已上線服務服役的套件們，相信對於來參加的開發者們可以帶來不小的幫助，尤其這些套件也是經由專業的 LINE 同仁的審查才可以使用，希望透過本篇的介紹能讓大家可以更快速的了解為什麼要使用它們。
 
 若對相關服務還有興趣的話請大家持續關注我們喔！立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 
