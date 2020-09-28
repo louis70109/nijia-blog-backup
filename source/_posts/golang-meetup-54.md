@@ -1,5 +1,5 @@
 ---
-title: 'LINE 開發社群計畫: Golang #54 場社群小聚心得'
+title: "LINE 開發社群計畫: Golang #54 場社群小聚心得"
 tags:
   - DevRel
   - 研討會
@@ -8,7 +8,6 @@ tags:
 categories: 研討會
 date: 2020-09-26 00:42:06
 ---
-
 
 <style>
   section.compact {
@@ -27,6 +26,10 @@ date: 2020-09-26 00:42:06
 大家好，我是 LINE Taiwan 的 Tech Evangelist - NiJia Lin。這次很開心再度參加了<mark>Golang 社群第 54 場</mark>的聚會活動，繼上次參加 53 場精彩的社群小聚之後這次總算來到 LINE 的辦公室舉辦，辛苦社群夥伴們的舉辦此次的活動，在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓開發動能更加的盛大！
 
 - Golang 社群活動頁面： [https://www.meetup.com/golang-taipei-meetup/events/272926722/](https://www.meetup.com/golang-taipei-meetup/events/272926722/)
+
+今晚的 Golang meetup 由 Tech Evangelist － Evan (同時負責本次的社群) 開場，介紹了什麼是 LINE TECH FRESH 校園新星人才計劃。什麼是 LINE TECH FRESH ? LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計劃](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)，招募資訊科技相關科系，或對此領域有所涉略的大學生 / 研究生加入 LINE 團隊進行長期實習 (一年期)，讓同學們能在國際級科技公司中觀摩學習。
+
+更多內容，可以參考這篇文章： [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
 
 <!-- more -->
 
