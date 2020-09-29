@@ -97,7 +97,7 @@ LINE MUSIC 是一個強大且應用許多工具的服務，講者 - Wei 在本�
 
 雖然以上介紹了在 LINE MUSIC 裡使用的各種套件，但在 LINE 裡面審查 Open Source 是很嚴格的，會有相關專業同仁確保 Source code 沒有資安上的問題才可以使用，因此在這次 LINE MUSIC 的講者一次提供這個大補包介紹服務中的套件，若你也有介接相關的應用不妨參考一下 LINE MUSIC 參考過的套件吧！🙂
 
-> 大家也來使用 [LINE Music](https://music-tw.line.me/) 體驗一下由我們自己打造的音樂平台服務吧！
+> 大家也來使用 [LINE MUSIC](https://music-tw.line.me/) 體驗一下由我們自己打造的音樂平台服務吧！
 
 # 結論
 
