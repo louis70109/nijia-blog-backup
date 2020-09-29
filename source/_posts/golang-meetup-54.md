@@ -27,6 +27,8 @@ date: 2020-09-26 00:42:06
 
 - Golang 社群活動頁面： [https://www.meetup.com/golang-taipei-meetup/events/272926722/](https://www.meetup.com/golang-taipei-meetup/events/272926722/)
 
+九月的社群邀請到 Golang Taipei Gathering 社群的朋友來到 LINE 台北辦公室，並且一起來分享與討論 LINE 內部開發流程上針對 Golang 使用上的心得分享。這次的相關資訊可以在 [Golang Taipei Gathering #54](https://www.meetup.com/golang-taipei-meetup/events/272926722/) 找到所有的內容介紹。
+
 今晚的 Golang meetup 由 Tech Evangelist － Evan (同時負責本次的社群) 開場，介紹了什麼是 LINE TECH FRESH 校園新星人才計劃。什麼是 LINE TECH FRESH ? LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計劃](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)，招募資訊科技相關科系，或對此領域有所涉略的大學生 / 研究生加入 LINE 團隊進行長期實習 (一年期)，讓同學們能在國際級科技公司中觀摩學習。
 
 更多內容，可以參考這篇文章： [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
@@ -43,7 +45,7 @@ date: 2020-09-26 00:42:06
 
 LINE MUSIC 是一個強大且應用許多工具的服務，講者 - Wei 在本次社群分享中 Focus 在使用 Golang 的細節
 
-> 很多人會很好奇 LINE MUSIC 有什麼長處？可以參考官方部落格的這篇([【LINE MUSIC】獨家去人聲跟唱 歌神換你當！](http://official-blog.line.me/tw/archives/83474706.html))，
+> 很多人會很好奇 LINE MUSIC 有什麼長處？可以參考官方部落格的這篇([【LINE MUSIC】獨家去人聲跟唱 歌神換你當！](http://official-blog.line.me/tw/archives/83474706.html))。
 
 <script async class="speakerdeck-embed" data-slide="28" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -67,15 +69,15 @@ LINE MUSIC 是一個強大且應用許多工具的服務，講者 - Wei 在本�
 內部部分：
 
 - 使用 [Gin] 框架來當作 API Gateway 介接前端的需求。
-  - 在 Routing 可以很快速的劃分 Group 讓 Controller 共用
-  - 客製化 Middleware 很方便
-- 使用 gRPC 溝通內部服務降低 Response time([grpc-go](https://github.com/grpc/grpc-go))
-- 因為是為微服務，因此相呼叫 API 是必要的，講者推薦使用 [resty](https://github.com/go-resty/resty)，且還能客製化 Before & After 的 Middleware
+  - 在 Routing 可以很快速的劃分 Group 讓 Controller 共用。
+  - 客製化 Middleware 很方便。
+- 使用 gRPC 溝通內部服務降低 Response time([grpc-go](https://github.com/grpc/grpc-go))。
+- 因為是為微服務，因此相呼叫 API 是必要的，講者推薦使用 [resty](https://github.com/go-resty/resty)，且還能客製化 Before & After 的 Middleware。
 
 <script async class="speakerdeck-embed" data-slide="19" data-id="2865bb1c091b4210b4852bb76828a769" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 - Database 的部分使用 [GORM](https://github.com/go-gorm/gorm) 來介接 MySQL 加速開發，在使用 Preload、hook、Auto Migration 相關的都很方便。
-- Redis 部分因為會因應場景處理 cookie、Session、Cache 的部分，這裡推薦使用 [go-redis](https://github.com/go-redis/redis)
+- Redis 部分因為會因應場景處理 cookie、Session、Cache 的部分，這裡推薦使用 [go-redis](https://github.com/go-redis/redis)。
 - Kafka 大多處理 Event log 的部分，因為已 Log 的使用情境不需要即時進資料庫，因此使用 Queue 當作 Middleware 降低資料庫的負擔，這裡推薦使用 [Shopify/sarama](https://github.com/Shopify/sarama)，使用情境的流程圖參考以下簡報：
 
 <script async class="speakerdeck-embed" data-slide="41" data-id="2865bb1c091b4210b4852bb76828a769" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
