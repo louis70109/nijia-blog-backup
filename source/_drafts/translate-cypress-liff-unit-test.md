@@ -118,6 +118,7 @@ Cypress 將啟動 UI Test Runner。
 <script src="https://gist.github.com/nottyo/fac82631d895d759ad7ea0bcdea64808.js"></script>
 
 使用 Cypress 進行測試時，將看到像這樣彈出 Error Modal。
+![](https://nijialin.com/images/2020/cypress-liff/6.png)
 
 # Test Scenario 3: Authentication with LINE Login + Get User Profile
 
@@ -127,25 +128,45 @@ Cypress 將啟動 UI Test Runner。
 
 <script src="https://gist.github.com/nottyo/e4c34130a1fcdb1eb6e996fb7c3cb1fa.js"></script>
 
-![](https://nijialin.com/images/2020/cypress-liff/6.png)
+# 動手做
+
+為了測試 Profile Component，我必須對屬性進行存根處理，liff.ready 就像它已經 liff.init()成功完成一樣，這是 liff.ready 使它等於 Promise 解析的結果。Cypress.sinon.replace(liff, 'ready', Promise.resolve())像這樣
+此外，我們將總是存根 liff.isLoggedIn 返回，true 以便不必像已經登錄一樣使 LINE Login 複雜化。剩下的就是存根 liff.getProfile 返回 promise resolve，並將我們存根的值作為用戶配置文件返回。
+
+<script src="https://gist.github.com/nottyo/fcfab3f6cd4d4c60c469eef406554a26.js"></script>
+
+當運行測試出現時 我們可以看到我們已經用存根用戶配置文件渲染了一個配置文件組件，並且可以使用賽普拉斯命令在 DOM 元素上聲明值。
+我們還可以使用命令 `Cypress.vue` 來訪問您的 Vue 實例！而且我們可以使用此命令來檢查 Vue 實例中的各種屬性，例如，在此示例中，我要檢查是否正確存儲了 User Profile Object 值的數據屬性。能跑 `Cypress.vue.$data.<propertyName>`可訪問性很棒，不是嗎？
+
 ![](https://nijialin.com/images/2020/cypress-liff/7.png)
+
+# Test Scenario 4: Emulate Opening LIFF App from LINE Native App
+
+在此示例中，我們將模擬打開 LIFF 應用程序的環境，類似於從 LINE 移動應用程序中打開它的環境。我將使用 APIliff.isInClient()來檢查它是否已在 LINE 應用程序中打開，並 liff.getOS()檢查是否什麼平台也正在開放？
+
+<script src="https://gist.github.com/nottyo/363bbd27695312e5d8302b1cbc9d18c7.js"></script>
+
+在編寫測試時，我們對函數`liff.isInClient()`進行存根以始終返回 true 並`liff.getOS()`返回 ios。
+此外，我還使用它 `cy.viewport(‘iphone-xr’)`來模擬屏幕大小，就像在移動 iPhone 上運行一樣，賽普拉斯為此準備了一個 [Mobile Viewport](https://docs.cypress.io/api/commands/viewport.html) 預設供我們使用。您可以在此處查看更多信息。
+
+<script src="https://gist.github.com/nottyo/c53bf9410dfe4399db4a9482426c82e9.js"></script>
+
 ![](https://nijialin.com/images/2020/cypress-liff/8.png)
+
+# Cypress 與另一個 Unit Test Framework 比較
+
+可以看出，賽普拉斯的優勢在於它可以在真實的瀏覽器上運行，從而支持所有瀏覽器本機 **API**，以及賽普拉斯使之適合進行測試的其他功能，例如 **Time Travel**，**Debuggability**。賽普拉斯可以建立虛擬的單元測試，但是仍然可以以更快的速度運行更快的合酶。
+除了 Vue.js，賽普拉斯還支持其他 Web 框架上的單元測試，[React](https://github.com/bahmutov/cypress-react-unit-test)和[Angularjs](https://github.com/bahmutov/cypress-angularjs-unit-test)也可以使用賽普拉斯進行單元測試。
 ![](https://nijialin.com/images/2020/cypress-liff/9.png)
+可以完整查看本文中的所有源代碼示例。在下面的鏈接 如果有人對使用賽普拉斯有疑問，您可以加入 Cypress.io 泰國社區進行諮詢。
+我希望本文能為所有開發人員提供一個構想，以開始為我們的 LIFF App 編寫單元測試，以便我們的 LIFF App 可以長期輕鬆維護，並具有良好的代碼質量。幸福的寫作測試，大家快樂的測試！
+您可以在下面的鏈接中看到本文的整個源代碼的示例。
+
+> [liff-cypress-unit-tests](https://github.com/nottyo/liff-cypress-unit-test)
+
 ![](https://nijialin.com/images/2020/cypress-liff/10.png)
 
-# 結論
+# 參考
 
-# 活動小結
-
-立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
-
-「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev
-![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
-
-# 關於「LINE 開發社群計畫」
-
-LINE 今年年初在台灣啟動「LINE 開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，已經舉辦 30 場以上的活動。歡迎讀者們能夠持續回來察看最新的狀況。詳情請看:
-
-- [2019 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
-- [LINE Taiwan Developer Relations 2019 回顧與 2019 開發社群計畫報告](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019/)
-- [2020 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2020-line-tw-devrel/)
+- [cypress-vue-unit-test](https://github.com/bahmutov/cypress-vue-unit-test)
+- [vue-cli-plugin-cypress-experimental](https://github.com/jessicasachs/vue-cli-plugin-cypress-experimental)
