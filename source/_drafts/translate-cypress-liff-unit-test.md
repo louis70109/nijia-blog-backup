@@ -83,12 +83,50 @@ sh$ yarn add vue-sweetalert2 // for modal dialog
 
 # Test Scenario 1: Initialize LIFF App
 
-首先，在已經透過 vue-cli 建立的專案並在 Component 中初始化 LIFF app。我已經創建了 LINE 登錄頻道，並在 [LINE Developer Console](https://developers.line.biz/console/) 中註冊了 LIFF App。
+首先，在已經透過 vue-cli 建立的專案並在 Component 中初始化 LIFF app。並且已經在我的 [LINE Developer Console](https://developers.line.biz/console/) 中註冊 LIFF App。
 
 <script src="https://gist.github.com/nottyo/ad63b1648ec9ee6c96be1a5626ddb31b.js"></script>
 
+# 使用 Cypress 來寫 Vue Component Test
+
+透過 `cypress-vue-unit-test` 提供的 `mount` API 來使用 Cypress 測試 Vue Component 是相當容易的，如此一來我們就可以安裝該套件來對其 Component 進行測試。在這裡我將使用 Cypress 控制 LIFF 的 APIs，按照所需測試使用 [Cypress Stub Feature](https://docs.cypress.io/guides/guides/stubs-spies-and-clocks.html)，讓 liff.init() Stub 時 Promise 總是回傳 resolve。大致如下：
+
+<script src="https://gist.github.com/nottyo/cc86b71c2b597e537ef2888ddd52db53.js"></script>
+
+若 liff.init() 的 Parameters 正確傳送，我們能查看函數的變化嗎？
+是的，接著我們可以使用此 Command 進行測試。
+
+```
+sh$ yarn test:components
+```
+
+Cypress 將啟動 UI Test Runner。
+
 ![](https://nijialin.com/images/2020/cypress-liff/4.png)
+
+讓我們選擇 `App.spec.js` 並按 "執行"，我們會看到 **Test Passed**。
+
 ![](https://nijialin.com/images/2020/cypress-liff/5.png)
+
+您可以看到在介面上都沒有測試，因為這是一項檢查是否 liff.init() 成功的測試。如此一來很快，不是嗎？
+
+# Test Scenario 2: Negative Test with LIFF SDK
+
+在這次的範例中，我們打算做 LIFF SDK 的 Negative Test 。我會假設如果 liff.init() 的 Promise `Reject` 了 app，我們則須看在 App.vue 的程式碼中使否有 Handle Error。在這份程式碼中我已經使用 try/catch 包裝 liff.init()，在執行失敗時彈出 modal 向用戶顯示錯誤。
+通過模擬這種情況下的 Negative Test，我們將像之前一樣再次使用 Cypress Stub，將 liff.init() 設定返回 Promise Reject，可以這樣寫：
+
+<script src="https://gist.github.com/nottyo/fac82631d895d759ad7ea0bcdea64808.js"></script>
+
+使用 Cypress 進行測試時，將看到像這樣彈出 Error Modal。
+
+# Test Scenario 3: Authentication with LINE Login + Get User Profile
+
+在此範例中，我將建立一個用於顯示 LINE User Profile 的 Component，將使用 `liff.getProfile()` 這個 API 來索取用戶訊息，而在使用此 Component 的 liff.getProfile() 之前須先進行 LINE Login，且同時我還之前先檢查用戶是否已登錄。若此時用戶還沒登入則會在 `liff.login()` 階段被 Redirect 至 LINE Login。
+
+此外，我還使用 `liff.ready` 這個 API 來確認 APP 中的 Component 是否在 liff.init() 階段成功調用至 APP 中。
+
+<script src="https://gist.github.com/nottyo/e4c34130a1fcdb1eb6e996fb7c3cb1fa.js"></script>
+
 ![](https://nijialin.com/images/2020/cypress-liff/6.png)
 ![](https://nijialin.com/images/2020/cypress-liff/7.png)
 ![](https://nijialin.com/images/2020/cypress-liff/8.png)
