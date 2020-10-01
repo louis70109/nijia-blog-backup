@@ -130,12 +130,13 @@ Cypress 將啟動 UI Test Runner。
 
 # 動手做
 
-為了測試 Profile Component，我必須對屬性進行存根處理，liff.ready 就像它已經 liff.init()成功完成一樣，這是 liff.ready 使它等於 Promise 解析的結果。Cypress.sinon.replace(liff, 'ready', Promise.resolve())像這樣
-此外，我們將總是存根 liff.isLoggedIn 返回，true 以便不必像已經登錄一樣使 LINE Login 複雜化。剩下的就是存根 liff.getProfile 返回 promise resolve，並將我們存根的值作為用戶配置文件返回。
+為了測試 Profile Component，我必須先對 Property 進行 Stub 處理，假設 `liff.init()` 已經完成讓 `liff.ready` 順利通過，使 `liff.ready` 解析的結果等於 Promise Resolve，結果的部分可以寫成像 Cypress.sinon.replace(liff, 'ready', Promise.resolve()) 這樣。
+
+此外，我們會 Stub `liff.isLoggedIn` 讓它總是 Return True，如此一來就不會因為走 LINE Login 而複雜化流程。剩下的就是 Stub liff.getProfile 返回 `promise resolve`，並將我們 Stub 的值作為 User Profile 返回。
 
 <script src="https://gist.github.com/nottyo/fcfab3f6cd4d4c60c469eef406554a26.js"></script>
 
-當運行測試出現時 我們可以看到我們已經用存根用戶配置文件渲染了一個配置文件組件，並且可以使用賽普拉斯命令在 DOM 元素上聲明值。
+當開始執行後，我們可以看到我們已經用 Stub 用戶的 Profile 配置文件 render Profile component，並且可以使用 Cypress Commands 在 DOM 元素上聲明值。
 我們還可以使用命令 `Cypress.vue` 來訪問您的 Vue 實例！而且我們可以使用此命令來檢查 Vue 實例中的各種屬性，例如，在此示例中，我要檢查是否正確存儲了 User Profile Object 值的數據屬性。能跑 `Cypress.vue.$data.<propertyName>`可訪問性很棒，不是嗎？
 
 ![](https://nijialin.com/images/2020/cypress-liff/7.png)
