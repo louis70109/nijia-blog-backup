@@ -71,8 +71,10 @@ date: 2019-10-16 11:28:36
 - [2019 鐵人賽 Serverless 範例](https://github.com/louis70109/aws-python-line-api)
 - [圖奇獸 - Twitch Bot](https://github.com/louis70109/Twitch-Bot) - 基於 Bottender 建立查詢 Twtich 直播的 LINE bot
 - [aws-line-echo-bot](https://github.com/louis70109/aws-line-echo-bot)
-- ~~[ABL 台灣隊賽程查詢機器人](https://github.com/louis70109/Taiwan-ABL-games)~~ (因疫情關係停賽導致無法更新 😭)
+- [Subscribe open data with LINE Bot/Notify/LIFF](https://github.com/louis70109/LINE-subscribe-open-data-bot)
+  - [介紹文章](https://nijialin.com/2020/08/27/chatbot-taichung-08/)
 - [動物森友會揪團機器人](https://github.com/louis70109/animal-crossing-bot)
+- [Announcer](https://github.com/louis70109/Announcer)
 
 # Talks
 
