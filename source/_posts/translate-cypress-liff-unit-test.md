@@ -1,8 +1,14 @@
 ---
-title: 讓我們開始使用 Cypress 為 LIFF app 編寫單元測試
-categories: 學習紀錄
+title: 【翻譯】讓我們使用 Cypress 開始為 LIFF app 撰寫單元測試
 tags:
+  - LINE
+  - Cypress
+  - LIFF
+  - Testing
+categories: Testing
+date: 2020-10-03 15:04:58
 ---
+
 
 ![](https://nijialin.com/images/2020/cypress-liff/logo.png)
 
@@ -130,25 +136,27 @@ Cypress 將啟動 UI Test Runner。
 
 # 動手做
 
-為了測試 Profile Component，我必須先對 Property 進行 Stub 處理，假設 `liff.init()` 已經完成讓 `liff.ready` 順利通過，使 `liff.ready` 解析的結果等於 Promise Resolve，結果的部分可以寫成像 Cypress.sinon.replace(liff, 'ready', Promise.resolve()) 這樣。
+為了測試 Profile Component，我必須先對 Property 進行 Stub 處理，假設 `liff.init()` 已經完成讓 `liff.ready` 順利通過，使 `liff.ready` 解析的結果等於 Promise Resolve，結果的部分可以寫成像 `Cypress.sinon.replace(liff, 'ready', Promise.resolve())` 這樣。
 
-此外，我們會 Stub `liff.isLoggedIn` 讓它總是 Return True，如此一來就不會因為走 LINE Login 而複雜化流程。剩下的就是 Stub liff.getProfile 返回 `promise resolve`，並將我們 Stub 的值作為 User Profile 返回。
+此外，我們會 Stub `liff.isLoggedIn` 讓它總是 Return True，如此一來就不會因為走 LINE Login 而複雜化流程。接著就是 Stub `liff.getProfile` 之後的 `promise resolve` 階段要返回 User Profile。
 
 <script src="https://gist.github.com/nottyo/fcfab3f6cd4d4c60c469eef406554a26.js"></script>
 
-當開始執行後，我們可以看到我們已經用 Stub 用戶的 Profile 配置文件 render Profile component，並且可以使用 Cypress Commands 在 DOM 元素上聲明值。
-我們還可以使用命令 `Cypress.vue` 來訪問您的 Vue 實例！而且我們可以使用此命令來檢查 Vue 實例中的各種屬性，例如，在此示例中，我要檢查是否正確存儲了 User Profile Object 值的數據屬性。能跑 `Cypress.vue.$data.<propertyName>`可訪問性很棒，不是嗎？
+當開始執行後，我們會看到我們之前已經 Stub User Profile 並回傳 Profile 的 component，而我們可以使用 Cypress Commands 觀察在 DOM 元素的狀態。
+
+我們還可以使用 `Cypress.vue` 來訪問您的 Vue Instance，而且我們可以使用它來檢查 Vue Instance 中的各種 Property。例如在此範例中，我要檢查 User Profile 是否能跑 `Cypress.vue.$data.<propertyName>` 並正確儲存了 User Profile Object 的 **Data Property**。
 
 ![](https://nijialin.com/images/2020/cypress-liff/7.png)
 
 # Test Scenario 4: Emulate Opening LIFF App from LINE Native App
 
-在此示例中，我們將模擬打開 LIFF 應用程序的環境，類似於從 LINE 移動應用程序中打開它的環境。我將使用 APIliff.isInClient()來檢查它是否已在 LINE 應用程序中打開，並 liff.getOS()檢查是否什麼平台也正在開放？
+在接下來的範例中，我們將模擬打開 LIFF app 的環境，像是從 Mobile app 中打開 LINE 的環境。我將使用 `liff.isInClient()` 這個 API 來檢查它是否已在 LINE app 中打開，並透過 `liff.getOS()` 檢查是否什麼平台開啟。
 
 <script src="https://gist.github.com/nottyo/363bbd27695312e5d8302b1cbc9d18c7.js"></script>
 
-在編寫測試時，我們對函數`liff.isInClient()`進行存根以始終返回 true 並`liff.getOS()`返回 ios。
-此外，我還使用它 `cy.viewport(‘iphone-xr’)`來模擬屏幕大小，就像在移動 iPhone 上運行一樣，賽普拉斯為此準備了一個 [Mobile Viewport](https://docs.cypress.io/api/commands/viewport.html) 預設供我們使用。您可以在此處查看更多信息。
+在寫測試時，我們對函數 `liff.isInClient()` 進行 Stub 讓回傳值為 true 並讓 `liff.getOS()` 回傳 ios。
+
+此外，我還使用它 `cy.viewport(‘iphone-xr’)` 來模擬手機螢幕大小，就像是在 iPhone 上運行一樣，Cypress 還為此準備了 [Mobile Viewport](https://docs.cypress.io/api/commands/viewport.html) 供我們使用。您可以在此處查看更多相關資訊。
 
 <script src="https://gist.github.com/nottyo/c53bf9410dfe4399db4a9482426c82e9.js"></script>
 
@@ -156,14 +164,17 @@ Cypress 將啟動 UI Test Runner。
 
 # Cypress 與另一個 Unit Test Framework 比較
 
-可以看出，賽普拉斯的優勢在於它可以在真實的瀏覽器上運行，從而支持所有瀏覽器本機 **API**，以及賽普拉斯使之適合進行測試的其他功能，例如 **Time Travel**，**Debuggability**。賽普拉斯可以建立虛擬的單元測試，但是仍然可以以更快的速度運行更快的合酶。
-除了 Vue.js，賽普拉斯還支持其他 Web 框架上的單元測試，[React](https://github.com/bahmutov/cypress-react-unit-test)和[Angularjs](https://github.com/bahmutov/cypress-angularjs-unit-test)也可以使用賽普拉斯進行單元測試。
-![](https://nijialin.com/images/2020/cypress-liff/9.png)
-可以完整查看本文中的所有源代碼示例。在下面的鏈接 如果有人對使用賽普拉斯有疑問，您可以加入 Cypress.io 泰國社區進行諮詢。
-我希望本文能為所有開發人員提供一個構想，以開始為我們的 LIFF App 編寫單元測試，以便我們的 LIFF App 可以長期輕鬆維護，並具有良好的代碼質量。幸福的寫作測試，大家快樂的測試！
-您可以在下面的鏈接中看到本文的整個源代碼的示例。
+可以看出 Cypress 的優勢在於它可以在真實的瀏覽器上運行，並擁有支持所有瀏覽器的 **API**，以及能使用 Cypress 進行相對應測試案例的其他功能，例如 **Time Travel**、**Debuggability**...。Cypress 也可以建立虛擬的 Unit Test，且能提供更快的速度運行速度。
 
-> [liff-cypress-unit-tests](https://github.com/nottyo/liff-cypress-unit-test)
+除了 Vue.js 之外，Cypress 也支援其他 Web 框架上的 Unit Test，如：[React](https://github.com/bahmutov/cypress-react-unit-test) 和 [Angularjs](https://github.com/bahmutov/cypress-angularjs-unit-test)。
+
+![](https://nijialin.com/images/2020/cypress-liff/9.png)
+
+最後，可以在下面連結中查看查看本篇的所有 [Source Code](https://github.com/nottyo/liff-cypress-unit-test)。若對對使用 Cypress 有任何疑問，您可以加入 [Cypress.io 泰國](https://www.facebook.com/groups/cypressiothailand) 並詢問相關問題。
+
+希望透過本篇能為所有開發人員提供一個動力，開始為我們的 LIFF App 撰寫單元測試(Unit Test)，以便我們的 LIFF App 可以長期的經營以及維護，並且具有良好的 Code Quality。大家可以使用它 Happy Testing!
+
+> 您可以在這看到本篇的完整範例：[liff-cypress-unit-tests](https://github.com/nottyo/liff-cypress-unit-test)
 
 ![](https://nijialin.com/images/2020/cypress-liff/10.png)
 
