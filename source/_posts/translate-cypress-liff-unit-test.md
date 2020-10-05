@@ -16,8 +16,7 @@ date: 2020-10-03 15:04:58
 
 # 前言
 
-大家好，本文將帶大家開始使用 Cypress 為您的 LIFF（LINE 前端框架）Application 寫單元測試，它非常容易撰寫。並且可以從本文的範例中幫助
-來閱讀這篇文章的朋友。若之前沒有嘗試過開發 LIFF App，建議您首先閱讀以下文章。因為在本文中可能會有很多技術術語，因此在使用它們之前必需要有 LIFF App 開發的基礎知識。
+大家好，本篇將帶大家使用 Cypress 為您的 LIFF（LINE Frontend Framework）Application 寫單元測試。並且可以從本文的範例幫助來閱讀這篇文章的開發者朋友。若之前沒有嘗試過開發 LIFF App，建議您先閱讀以下文章。因為在本文中可能會有很多相關技術用詞，因此在使用它們之前必需要有 LIFF App 開發的相關基礎知識。
 
 > Article: https://medium.com/linedevth/liff-v2-release-85fdfb678cc6
 
@@ -119,6 +118,7 @@ Cypress 將啟動 UI Test Runner。
 # Test Scenario 2: Negative Test with LIFF SDK
 
 在這次的範例中，我們打算做 LIFF SDK 的 Negative Test 。我會假設如果 liff.init() 的 Promise `Reject` 了 app，我們則須看在 App.vue 的程式碼中使否有 Handle Error。在這份程式碼中我已經使用 try/catch 包裝 liff.init()，在執行失敗時彈出 modal 向用戶顯示錯誤。
+
 通過模擬這種情況下的 Negative Test，我們將像之前一樣再次使用 Cypress Stub，將 liff.init() 設定返回 Promise Reject，可以這樣寫：
 
 <script src="https://gist.github.com/nottyo/fac82631d895d759ad7ea0bcdea64808.js"></script>
