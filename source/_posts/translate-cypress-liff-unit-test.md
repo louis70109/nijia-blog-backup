@@ -27,7 +27,7 @@ date: 2020-10-03 15:04:58
 ![](https://nijialin.com/images/2020/cypress-liff/1.png)
 
 1. LIFF App 和 LINE Platform 具有很高的依賴性：例如，假設我們要使用 liff.getProfile() 這個 API，則需要先重新導向讓使用者進行 LINE Login，然後才能使用它。如此一來控制 LINE Login 就很困難。這樣情況下很容易變成 `Flaky Tests`（“Flaky Tests” 意指在測試中測試程式不改變的情況下，偶爾會有產生不同的測試結果，也就是不穩定的測試）。
-2. 無法 Simulate Negative Test：假設我們要使用 `Promise` 的`Reject` 測試 liff.init() 並且檢查我們的應用程式是否可以處理各種 Scenario，在一般的測試下很難達到預期效果。
+2. 無法 Simulate Negative Test：假設我們要使用 `Promise` 的 `Reject` 測試 liff.init() 並且檢查我們的應用程式是否可以處理各種 Scenario，在一般的測試下很難達到預期效果。
 3. 要在 LINE Native App 上模擬與 LIFF App 一樣的環境相當困難。因為有時我們的 LIFF App 對於每個平台可能會有不同的操作行為，例如在 LINE App 和外部瀏覽器上運行。兩種環境可能因為尺寸問題具有不同的 UI 設計和功能，它們的運作模式會有所不同。若此時我們想如何簡化模擬這些測試環境，我認為這會相當困難。
 
 > 從以上所有問題 可以使用 Cypress 作為工具對 LIFF App 進行單元測試來進行編輯和實現。
