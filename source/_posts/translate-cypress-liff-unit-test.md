@@ -9,7 +9,6 @@ categories: Testing
 date: 2020-10-03 15:04:58
 ---
 
-
 ![](https://nijialin.com/images/2020/cypress-liff/logo.png)
 
 > [原文連結](https://medium.com/linedevth/%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99-unit-tests-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%81%E0%B8%B1%E0%B8%9A-liff-app-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-cypress-%E0%B8%81%E0%B8%B1%E0%B8%99-214f5b0c66b7)
@@ -27,9 +26,9 @@ date: 2020-10-03 15:04:58
 我相信每個開發人員都會以不同的方式測試 LIFF App。根據我在 LIFF App 進行自動化測試的經驗中，我遇到了很多問題。因此我想總結以下 3 個常見問題：
 ![](https://nijialin.com/images/2020/cypress-liff/1.png)
 
-1. LIFF App 和 LINE Platform 具有很高的依賴性：例如，假設我們要使用 liff.getProfile() 這個 API，則需要先重新導向讓使用者進行 LINE Login，然後才能使用它。如此一來控制 LINE Login 就很困難。這樣情況下很容易變成 `Flaky Tests`（“Flaky Tests” 意指在測試結果中會出現不正常行為的測試）
+1. LIFF App 和 LINE Platform 具有很高的依賴性：例如，假設我們要使用 liff.getProfile() 這個 API，則需要先重新導向讓使用者進行 LINE Login，然後才能使用它。如此一來控制 LINE Login 就很困難。這樣情況下很容易變成 `Flaky Tests`（“Flaky Tests” 意指在測試中測試程式不改變的情況下，偶爾會有產生不同的測試結果，也就是不穩定的測試）。
 2. 無法 Simulate Negative Test：假設我們要使用 `Promise` 的`Reject` 測試 liff.init() 並且檢查我們的應用程式是否可以處理各種 Scenario，在一般的測試下很難達到預期效果。
-3. 要在 LINE Native App 上模擬與 LIFF App 一樣的環境相當困難。因為有時我們的 LIFF App 對於每個平台可能會有不同的操作行為，例如在 LINE App 和外部瀏覽器上運行。桌面可能具有不同的 UI 設計和功能，它們的運作模式會有所不同。若此時我們想如何簡化模擬這些測試環境，我認為這會相當困難。
+3. 要在 LINE Native App 上模擬與 LIFF App 一樣的環境相當困難。因為有時我們的 LIFF App 對於每個平台可能會有不同的操作行為，例如在 LINE App 和外部瀏覽器上運行。兩種環境可能因為尺寸問題具有不同的 UI 設計和功能，它們的運作模式會有所不同。若此時我們想如何簡化模擬這些測試環境，我認為這會相當困難。
 
 > 從以上所有問題 可以使用 Cypress 作為工具對 LIFF App 進行單元測試來進行編輯和實現。
 
@@ -55,7 +54,7 @@ Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config 
 Save this as a preset for future projects? No
 ```
 
-重要的是 Cypress 創建了一個名為 Cypress Vue unit test 的 plugin，以幫助我們輕鬆地在 Vue.js application 上編寫單元測試。
+重要的是 Cypress 創建了一個名為 Cypress Vue unit test 的 plugin，以幫助我們輕鬆地在 Vue.js Application 上編寫單元測試。
 
 [cypress-vue-unit-test](https://github.com/bahmutov/cypress-vue-unit-test)是基於 Vue 官方單元測試函式庫 - [vue-test-utils](https://vue-test-utils.vuejs.org/) 所實作的套件。而它可以運行在真實的瀏覽器以及 Cypress 的所有功能上。
 
@@ -128,7 +127,7 @@ Cypress 將啟動 UI Test Runner。
 
 # Test Scenario 3: Authentication with LINE Login + Get User Profile
 
-在此範例中，我將建立一個用於顯示 LINE User Profile 的 Component，將使用 `liff.getProfile()` 這個 API 來索取用戶訊息，而在使用此 Component 的 liff.getProfile() 之前須先進行 LINE Login，且同時我還之前先檢查用戶是否已登錄。若此時用戶還沒登入則會在 `liff.login()` 階段被 Redirect 至 LINE Login。
+在此範例中，我將建立一個用於顯示 LINE User Profile 的 Component，將使用 `liff.getProfile()` 這個 API 來索取用戶訊息，而在使用 liff.getProfile() 之前須先 LINE Login，確認用戶是否已登錄。若此時用戶還沒登入則會在 `liff.login()` 階段被 Redirect 至 LINE Login。
 
 此外，我還使用 `liff.ready` 這個 API 來確認 APP 中的 Component 是否在 liff.init() 階段成功調用至 APP 中。
 
@@ -150,13 +149,13 @@ Cypress 將啟動 UI Test Runner。
 
 # Test Scenario 4: Emulate Opening LIFF App from LINE Native App
 
-在接下來的範例中，我們將模擬打開 LIFF app 的環境，像是從 Mobile app 中打開 LINE 的環境。我將使用 `liff.isInClient()` 這個 API 來檢查它是否已在 LINE app 中打開，並透過 `liff.getOS()` 檢查是否什麼平台開啟。
+在接下來的範例中，我們將模擬打開 LIFF App 的環境，像是從 Mobile app 中打開 LINE 的環境。我將使用 `liff.isInClient()` 這個 API 來檢查它是否已在 LINE App 中打開，並透過 `liff.getOS()` 查詢用戶是用何種平台開啟 LIFF。
 
 <script src="https://gist.github.com/nottyo/363bbd27695312e5d8302b1cbc9d18c7.js"></script>
 
 在寫測試時，我們對函數 `liff.isInClient()` 進行 Stub 讓回傳值為 true 並讓 `liff.getOS()` 回傳 ios。
 
-此外，我還使用它 `cy.viewport(‘iphone-xr’)` 來模擬手機螢幕大小，就像是在 iPhone 上運行一樣，Cypress 還為此準備了 [Mobile Viewport](https://docs.cypress.io/api/commands/viewport.html) 供我們使用。您可以在此處查看更多相關資訊。
+此外，我還使用它 `cy.viewport('iphone-xr')` 來模擬手機螢幕大小，就像是在 iPhone 上運行一樣，Cypress 還為此準備了 [Mobile Viewport](https://docs.cypress.io/api/commands/viewport.html) 供我們使用。您可以在此處查看更多相關資訊。
 
 <script src="https://gist.github.com/nottyo/c53bf9410dfe4399db4a9482426c82e9.js"></script>
 
