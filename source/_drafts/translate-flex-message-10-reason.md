@@ -1,7 +1,7 @@
 ---
-title: '【標題】題目'
-tags:
+title: 'Flex Message 2020 的 10 個新功能 - LINE 中設計消息的更大自由'
 categories: 學習紀錄
+tags:
 ---
 
 <style>
@@ -14,7 +14,7 @@ categories: 學習紀錄
   }
 </style>
 
-![](https://nijialin.com/images/1.png)
+![](https://i.imgur.com/0QAGPDc.png)
 
 # 前言
 
