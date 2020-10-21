@@ -1,10 +1,9 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 梅竹黑客松賽前企業工作坊 - LIFF shareTargetPicker
+categories: 研討會
 date: 2020-10-21 14:19:23
-tags:
+tags: ['LINE', 'LIFF', 'shareTargetPicker', '梅竹黑客松']
 ---
-
 
 <style>
   section.compact {
