@@ -138,7 +138,7 @@ Flex Message 是一個可以把訊息內容當作網頁排版的一個特殊(神
 
 按造前面的步驟進入後會發現頁面只有簡單的內容，接著就 `git checkout liff-meme-fin` 切換到完成版的分支(沒有`fin`的分支是讓大家可以發揮)，重新使用 `npm run dev` 啟動專案則可以看到上面的畫面，將文字更改後按 Share 即可分享給 LINE 好友。
 
-![](https://nijialin.com/2020/target-picker-sample.PNG)
+![](https://nijialin.com/images/2020/target-picker-sample.PNG)
 
 ### liff.isApiAvailable
 
