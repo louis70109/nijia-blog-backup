@@ -121,7 +121,7 @@ Flex Message 是一個可以把訊息內容當作網頁排版的一個特殊(神
 
 > 需要注意 shareTargetPicker 功能只支援 LINE 10.13.0 以上的版本
 
-## 梗圖範例
+## Part 2 - 梗圖範例
 
 相信經過前面的說明應該對三個平台操作方法有一定程度的熟悉，接下來這部分 Coke 做了一個 [Demo 專案](https://github.com/cichien/liff-workshop-demo)帶大家來操作，與前面的步驟一下先 Fork 至自己的 GitHub ➡️ 按下 README 裡的 Heroku Deploy 按鈕 ➡️ 建立一個新的 LIFF 頁面
 
