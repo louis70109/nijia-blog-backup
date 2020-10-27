@@ -34,6 +34,62 @@ tags:
 
 # LINE Platform Update 2020/10
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZFPN5inMtM8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+在九月與十月這兩個月中釋出了許多資訊，以下就一一帶大家了解一下究竟釋出了什麼新的強大 API 吧！
+
+## LIFF 釋出 v.2.4.1
+
+### Open another LIFF page would be checked at LIFF
+
+### fix called twice
+
+## Get bot info
+
+<script async class="speakerdeck-embed" data-slide="7" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## Webhook API
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- Get
+- PUT
+- Verify(Test)
+
+建議做法
+
+- Version migration
+- Rollback service
+- Procedure migration(e.g. C++ -> Golang)
+
+9~16 則是一個流程圖
+
+## TLS migration
+
+<script async class="speakerdeck-embed" data-slide="18" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+but we dont know our server supporting, so you could use verify webhook api to test you server.
+
+### next test example
+
+<script async class="speakerdeck-embed" data-slide="20" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+由於 webhook test 會送一個空的內容過去，若回傳 `200` 則代表當前 Server 是支援的喔！
+
+> 轉換時間 2020/10~2021/01，有使用到 LINE 服務的大家要注意時間，記得 migration！
+
+## Flex Message Update 2
+
+### Carousel count 10 -> 12
+
+### flex box
+
+<script async class="speakerdeck-embed" data-slide="24" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+既然使用 `flex` 這個名詞，勢必得加入更多支援讓 Flex Message 更像瀏覽器上的 Flexbox，
+`justifyContent`
+`alignItems`
+
 # 結論
 
 # 活動小結
