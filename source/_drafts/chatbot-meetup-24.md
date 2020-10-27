@@ -1,5 +1,5 @@
 ---
-title: 'LINE 開發社群計畫: 2020 LINE 平台九、十月更新整理'
+title: "LINE 開發社群計畫: 2020 LINE 平台九、十月更新整理"
 categories: 學習紀錄
 tags:
 ---
@@ -18,7 +18,7 @@ tags:
 
 # 前言
 
-大家好，我是 LINE Taiwan 的 Tech Evangelist - Evan Lin。這次很開心受到 chatbot 社群的邀請，參加了 "[Chatbot meetup 聊天機器人新手小聚 24 @ Gandi](https://chatbots.kktix.cc/events/meetup-024)" 的聚會活動，並且分享 LINE API 更新與個人開發的心得。在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。
+大家好，我是 LINE Taiwan 的 Tech Evangelist - NiJia Lin。這次很開心受到 chatbot 社群的邀請，參加了 "[Chatbot meetup 聊天機器人新手小聚 24 @ Gandi](https://chatbots.kktix.cc/events/meetup-024)" 的聚會活動，並且分享 LINE API 更新與個人開發的心得。在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。
 
 - 社群 Chatbots Meetup： [https://chatbots.kktix.cc/](https://chatbots.kktix.cc/)
 - 本次活動網頁: [活動網址](https://chatbots.kktix.cc/events/meetup-024)
@@ -80,15 +80,34 @@ but we dont know our server supporting, so you could use verify webhook api to t
 
 ## Flex Message Update 2
 
-### Carousel count 10 -> 12
+### 1. Carousel count from `10` to `12`
 
-### flex box
+### 2. Flex Message 相關參數新增
 
 <script async class="speakerdeck-embed" data-slide="24" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 既然使用 `flex` 這個名詞，勢必得加入更多支援讓 Flex Message 更像瀏覽器上的 Flexbox，
-`justifyContent`
-`alignItems`
+
+- `justifyContent`
+- `alignItems`
+- `linearGradient`
+  - 此參數讓讓背景顏色可以使用`漸層`，讓 Designer 可以更好的使用之配色。
+
+> 詳細圖片則參考下方簡報
+
+<script async class="speakerdeck-embed" data-slide="24" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### 3. 開發者福音：Flex Message `content` 參數可為空值！
+
+<script async class="speakerdeck-embed" data-slide="26" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在寫 Flex Message 時會因為一些情境的判斷式讓 `content` 的值為一個空陣列，過往在解析時遇到`空值`會無法顯示(出錯)，隨著這次更新中已經可以讓 `content` 參數為空值，若開發者們有因為這個參數多寫的許多判斷式，現今已可開始試著將程式相關判斷式看看，可以更減省你的 code 喔！
+
+### 4. Image, Icon, Text `size` property
+
+<script async class="speakerdeck-embed" data-slide="28" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這次更新中三個參數皆可使用 `px` 來設定大小，讓 Designer 們可以更有效地控制 Flex Message 的視覺，且 Image 還能以`百分比`(`percentages`) 表示，可以讓圖片更能適應各種手機尺寸。
 
 # 結論
 
