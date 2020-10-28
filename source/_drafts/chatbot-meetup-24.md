@@ -1,7 +1,7 @@
 ---
-title: "LINE 開發社群計畫: 2020 LINE 平台九、十月更新整理"
-categories: 學習紀錄
-tags:
+title: "LINE 開發社群計畫: 202010 Chatbot 社群心得分享"
+categories: 研討會
+tags: ["LINE", "Flex Message", "LIFF", "Chatbot"]
 ---
 
 <style>
@@ -80,22 +80,22 @@ but we dont know our server supporting, so you could use verify webhook api to t
 
 ## Flex Message Update 2
 
-### 1. Carousel count from `10` to `12`
+距離上次 `Update 1` 也經過一年了(參考[這篇文章](https://engineering.linecorp.com/zh-hant/blog/flex-message-update1/))，以下帶大家了解這次更新的部分！
 
-### 2. Flex Message 相關參數新增
+### 1. Carousel 的數量從 `10` ➡️ `12`
+
+### 2. 增加排版相關參數
 
 <script async class="speakerdeck-embed" data-slide="24" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-既然使用 `flex` 這個名詞，勢必得加入更多支援讓 Flex Message 更像瀏覽器上的 Flexbox，
+如同一年前的 [Update 1 文章](https://engineering.linecorp.com/zh-hant/blog/flex-message-update1/)，Flex Message 是一種對話介面，可使用 [CSS Flexible Box (CSS Flexbox)](https://www.w3.org/TR/css-flexbox-1/) 的基礎知識，自由客製化版面。既然使用 `flex` 這個名詞，勢必得加入更多支援讓 Flex Message 更像的 Flexbox，以下就增加了兩個參數讓排版的支援度更高：
 
 - `justifyContent`
 - `alignItems`
-- `linearGradient`
-  - 此參數讓讓背景顏色可以使用`漸層`，讓 Designer 可以更好的使用之配色。
 
-> 詳細圖片則參考下方簡報
+以及加了 `linearGradient`，此參數讓讓背景顏色可以使用`漸層`，讓 Designer 可以更好的使用之配色。
 
-<script async class="speakerdeck-embed" data-slide="24" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+> 詳細樣式請參考上方投影片。
 
 ### 3. 開發者福音：Flex Message `content` 參數可為空值！
 
@@ -103,11 +103,37 @@ but we dont know our server supporting, so you could use verify webhook api to t
 
 在寫 Flex Message 時會因為一些情境的判斷式讓 `content` 的值為一個空陣列，過往在解析時遇到`空值`會無法顯示(出錯)，隨著這次更新中已經可以讓 `content` 參數為空值，若開發者們有因為這個參數多寫的許多判斷式，現今已可開始試著將程式相關判斷式看看，可以更減省你的 code 喔！
 
-### 4. Image, Icon, Text `size` property
+### 4. 新增 Image, Icon, Text 三種 `size` 的參數
 
 <script async class="speakerdeck-embed" data-slide="28" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 這次更新中三個參數皆可使用 `px` 來設定大小，讓 Designer 們可以更有效地控制 Flex Message 的視覺，且 Image 還能以`百分比`(`percentages`) 表示，可以讓圖片更能適應各種手機尺寸。
+
+### 5. 增加參數讓按鈕文字不會被吃字
+
+<script async class="speakerdeck-embed" data-slide="29" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+如同投影片敘述，在之前長度過長時 APP 會自動將文字變成 `...` 的形式，這次的更新中只要在 `adjustMode` 屬性裡加入 `shrink-to-fit` 參數，如同字面上的意思，讓`收縮`的樣子轉變成 `適應` Flex Message，讓你的 Button 的文字不會被 APP 轉換，詳細請[參考文件](https://developers.line.biz/en/docs/messaging-api/flex-message-layout/#adjusts-fontsize-to-fit)。
+
+> 支援在 LINE 10.13.0 以上(含) for iOS and Android。
+
+## 小結
+
+若要使用 Flex Message 的開發者們記得使用 [Simulator](https://developers.line.biz/flex-simulator)，以及在 LINE Bot 中若有管理版本，大家可以使用 Webhook API 去做相關建制以及使用，或許可以讓你省下取多工喔！
+
+# 從 0~17 萬使用者，我的第一支 LINE Bot side project - 地方爸爸
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4HvMQA4LuPk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+講者從爸爸的角度出發，如何使用 LINE Bot 解決小孩子課堂的需求，並提到如何使用擴散讓 Chatbot 可以持續地吸收粉絲，講解了許多種為了適應各個課程做出來的 Chatbot(國語、數學...)，當中也提到開發者別因為開發的功能與市面上產品衝突而停止開發，更應該是將它開發出來，再更進一步的優化，或許你擁有的功能比市面上更親近使用者，讓你的 Chatbot 可以有更多人使用！
+
+# 閃電秀
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ovi8lkfGZ8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- 【用 .NET 打造 LINE 婚禮聊天機器人經驗分享】- Kyle Shen
+
+分享了許多使用 .NET 寫鐵人賽的相關經驗，並也為了婚禮打造客制的機器人，包括 LINE Messaging API、LIFF、Notify、Pay...，在這三十天中釐清了許多串接上的問題，以及搭配 Azure 許多功能做組合的三十天系列文章，最後講者提到了一段話很重要，「技術文章不難，難的是養成<mark>堅持</mark>的習慣」，將你學到的東西記錄下來，一個系列、一個文章、一個段落都行，記錄會讓你受用無窮的！
 
 # 結論
 
