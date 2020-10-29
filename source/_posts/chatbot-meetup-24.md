@@ -9,7 +9,6 @@ categories: 研討會
 date: 2020-10-29 22:02:04
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -42,9 +41,13 @@ date: 2020-10-29 22:02:04
 
 ## LIFF 釋出 v.2.4.1
 
-### Open another LIFF page would be checked at LIFF
+<script async class="speakerdeck-embed" data-slide="4" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-### fix called twice
+由於在 2.4 版釋出時可以透過 LIFF 開啟另一個 LIFF，讓使用體驗不中斷(不會關閉在打開)，但有時可能因為另一個頁面不是 LIFF 而導致出錯，在這次的版本釋出這個新功能可以在打開前確認欲前往的網址是否是可使用的 LIFF 才導過去，
+
+並且在此版本修復了當開發者呼叫兩次 `liff.init()` 時會出現的錯誤，若大家有遇到此問題若有寫相關的 workaround 的話可以在之後升版本將相關 workaround 移除試看看囉！
+
+> 但是以上功能必須要 LINE App `10.18.0` 版本以上才可以喔！大家需要多多注意！
 
 ## 管理 LINE Bot 相關資訊
 
@@ -71,7 +74,7 @@ date: 2020-10-29 22:02:04
 
 三個 API 皆是基於 `CHANNEL_ACCESS_TOKEN` 做相關使用，大家再使用時務必確認是否有使用到對應的 Token 喔！
 
-## TLS migration
+## TLS 支援度
 
 <script async class="speakerdeck-embed" data-slide="18" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -141,6 +144,8 @@ date: 2020-10-29 22:02:04
 分享了許多使用 .NET 寫鐵人賽的相關經驗，並也為了婚禮打造客制的機器人，包括 LINE Messaging API、LIFF、Notify、Pay...，在這三十天中釐清了許多串接上的問題，以及搭配 Azure 許多功能做組合的三十天系列文章，最後講者提到了一段話很重要，「技術文章不難，難的是養成<mark>堅持</mark>的習慣」，將你學到的東西記錄下來，一個系列、一個文章、一個段落都行，記錄會讓你受用無窮的！
 
 # 結論
+
+希望透過詳細的介紹除了讓大家更了解最近 API 的大更新之外，也讓大家透過認識到不同講者所帶來精彩的分享，開發出更多更有創意的 Chatbot 服務，也歡迎大家持續來到社群分享，讓社群可以更活絡並能碰撞出新的想法與點子 😁。
 
 # 活動小結
 
