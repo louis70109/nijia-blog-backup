@@ -1,8 +1,10 @@
 ---
 title: 'LINE 開發社群計畫: 2020 LINE 平台九、十月更新整理'
 categories: 學習紀錄
+date: 2020-10-29 21:45:59
 tags:
 ---
+
 
 <style>
   section.compact {
@@ -44,37 +46,40 @@ tags:
 
 ### fix called twice
 
-## Get bot info
+## 管理 LINE Bot 相關資訊
+
+開發者們在建立 LINE bot 時大多都是從 [LINE Developer Console](https://developers.line.biz/zh-hant/) 裡去設定相關參數，使用情境大多像是開發者在開發 Chatbot 時都會使用 ngrok 之類的服務建立一個暫時性 Domain，抑或是版本升級需要改網域(址)名稱，不管是哪種用途，最終需要都確認的 Bot 資訊、更改 Webhook 網址、測試 Webhook 網址是否有效，這次的更新一次釋出許多相關資訊的 API，詳細請參考下方。
+
+### Get bot info
 
 <script async class="speakerdeck-embed" data-slide="7" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-## Webhook API
+若開發者因為開發不同環境的 Chatbot 時需要管理前，一定需要取得相關資訊在 UI 上才有辦法管控，大家可使用[此 API](https://developers.line.biz/en/reference/messaging-api/#get-bot-info) 取得相關資訊。
+
+### Webhook Settings
+
+這個 API 是許多開發者敲碗許久的功能，大家請參考以下說明：
 
 <script async class="speakerdeck-embed" data-slide="8" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-- Get
-- PUT
-- Verify(Test)
+- [GET Webhook URL](https://developers.line.biz/en/reference/messaging-api/#get-webhook-endpoint-information)
+  - 取得當前 Webhook 的網址，可得知當前 Chatbot 所設定之 URL。
+- [Set Webhook URL](https://developers.line.biz/en/reference/messaging-api/#set-webhook-endpoint-url)
+  - 透過此 API 可以使用 `PUT` 來更新 Chatbot 的 Webhook URL，可透過前一個 API 先取得網址確認後再使用此 API 來更新。
+- [Verify(Test) URL](https://developers.line.biz/en/reference/messaging-api/#test-webhook-endpoint)
+  - 不管 `GET` 或 `PUT`，都需要確認當前的 URL 是否真的可行，透過此 API 即可 Verify 你的 Webhook URL。
 
-建議做法
-
-- Version migration
-- Rollback service
-- Procedure migration(e.g. C++ -> Golang)
-
-9~16 則是一個流程圖
+三個 API 皆是基於 `CHANNEL_ACCESS_TOKEN` 做相關使用，大家再使用時務必確認是否有使用到對應的 Token 喔！
 
 ## TLS migration
 
 <script async class="speakerdeck-embed" data-slide="18" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-but we dont know our server supporting, so you could use verify webhook api to test you server.
+在接下來的日子裡，LINE 將會開始支援 `TLS1.3`，並且開始停止支援 `TLS1.1` 以及 `TLS1.0`。HTTP 版本的部分也會開始支援 `HTTP/2`，讓開發者們的服務可以建構在更快、更安全的協定上。
 
-### next test example
+這邊就會有個問題產生，那我該如何測試才知道我的主機有沒有支援到呢？答案就是使用 Webhook 的 [Verify(Test) API](https://developers.line.biz/en/reference/messaging-api/#test-webhook-endpoint) 即可得知當前服務是否支援協定，而只要收到 Http 狀態碼(status code) 是 `200` 即是成功，而 Body 內容則如下方投影片所示。
 
 <script async class="speakerdeck-embed" data-slide="20" data-id="deb0906716b845a3a132cbafbc1074e8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-由於 webhook test 會送一個空的內容過去，若回傳 `200` 則代表當前 Server 是支援的喔！
 
 > 轉換時間 2020/10~2021/01，有使用到 LINE 服務的大家要注意時間，記得 migration！
 
