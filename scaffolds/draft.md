@@ -1,5 +1,5 @@
 ---
-title: '【標題】題目'
+title: "【標題】題目"
 tags:
 categories: 學習紀錄
 ---
@@ -14,7 +14,7 @@ categories: 學習紀錄
   }
 </style>
 
-![](https://nijialin.com/images/1.png)
+![](https://nijialin.com/2020/images/1.png)
 
 # 前言
 
