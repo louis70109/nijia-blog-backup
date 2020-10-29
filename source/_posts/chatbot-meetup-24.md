@@ -14,7 +14,7 @@ tags: ['LINE', 'Flex Message', 'LIFF', 'Chatbot']
   }
 </style>
 
-![](https://nijialin.com/images/1.png)
+![](https://nijialin.com/images/chatbot.png)
 
 # 前言
 
