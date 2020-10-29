@@ -1,8 +1,14 @@
 ---
 title: 'LINE 開發社群計畫: 202010 Chatbot 社群心得分享'
+tags:
+  - LINE
+  - Flex Message
+  - LIFF
+  - Chatbot
 categories: 研討會
-tags: ['LINE', 'Flex Message', 'LIFF', 'Chatbot']
+date: 2020-10-29 22:02:04
 ---
+
 
 <style>
   section.compact {
