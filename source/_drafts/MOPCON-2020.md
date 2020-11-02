@@ -90,7 +90,7 @@ openapi-generator generate -i https://HEROKU_URL.herokuapp.com/api/swagger.json 
 Unconference 的設計真的很讚，讓大家(講者、會眾)以一個較輕鬆的心情來分享與聆聽，互相交流變出更多不一樣的想法，讓作品可以注入更多的元素。
 ![](https://nijialin.com/images/2020/mopcon/5.PNG)
 
-每個聽的人數都超級多，不愧是南部最大的研討會 😲
+每個廳的人數都超級多，不愧是南部最大的研討會 😲
 ![](https://nijialin.com/images/2020/mopcon/9.PNG)
 
 ## 小結
