@@ -14,7 +14,7 @@ tags: ['LINE', 'MOPCON', 'DevRel', 'Chatbot']
   }
 </style>
 
-![](https://nijialin.com/images/2020/mopcon/4.JNG)
+![](https://nijialin.com/images/2020/mopcon/4.JPG)
 
 # 前言
 
