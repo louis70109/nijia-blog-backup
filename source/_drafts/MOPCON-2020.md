@@ -14,7 +14,7 @@ tags: ['LINE', 'MOPCON', 'DevRel', 'Chatbot']
   }
 </style>
 
-![](https://nijialin.com/images/2020/mopcon/4.PNG)
+![](https://nijialin.com/images/2020/mopcon/4.JNG)
 
 # 前言
 
@@ -82,16 +82,16 @@ openapi-generator generate -i https://HEROKU_URL.herokuapp.com/api/swagger.json 
 ![](https://nijialin.com/images/2020/mopcon/1.PNG)
 
 被~~刮刮卡~~社群吸引的會眾們，聽每個熱情的社群分享他們的理念，彼此交流想法讓資訊圈可以更活絡！👏
-![](https://nijialin.com/images/2020/mopcon/2.PNG)
+![](https://nijialin.com/images/2020/mopcon/2.JPG)
 
 精彩的 Unconference，看到上面的題目就知道野生的強者就藏在這裡面！
-![](https://nijialin.com/images/2020/mopcon/3.PNG)
+![](https://nijialin.com/images/2020/mopcon/3.JPG)
 
 Unconference 的設計真的很讚，讓大家(講者、會眾)以一個較輕鬆的心情來分享與聆聽，互相交流變出更多不一樣的想法，讓作品可以注入更多的元素。
-![](https://nijialin.com/images/2020/mopcon/5.PNG)
+![](https://nijialin.com/images/2020/mopcon/5.JPG)
 
 每個廳的人數都超級多，不愧是南部最大的研討會 😲
-![](https://nijialin.com/images/2020/mopcon/9.PNG)
+![](https://nijialin.com/images/2020/mopcon/9.JPG)
 
 ## 小結
 
@@ -103,7 +103,7 @@ Unconference 的設計真的很讚，讓大家(講者、會眾)以一個較輕�
 
 # 結論
 
-![](https://nijialin.com/images/2020/mopcon/10.PNG)
+![](https://nijialin.com/images/2020/mopcon/10.JPG)
 
 因為其他活動的關係只能在 MOPCON 停留一天，從以前只能在台下聽大神們的精彩分享到自己也有機會上台分享，藉由這次的前往 MOPCON 的經驗中學習到如何調整內容讓大家可以較快理解，並與路上的各位社群朋友交流了解不同區域的社群型態，期許各個領域的資訊技術可以在每個地方都有討論區可以互相交流。😊
 
