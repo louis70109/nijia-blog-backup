@@ -1,5 +1,5 @@
 ---
-title: '2020 MOPCON 心得分享'
+title: '2020 濁水溪以南最大研討會 MOPCON 心得分享'
 categories: 研討會
 tags: ['LINE', 'MOPCON', 'DevRel', 'Chatbot']
 ---
