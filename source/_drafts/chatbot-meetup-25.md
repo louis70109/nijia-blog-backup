@@ -25,6 +25,8 @@ tags:
 - developer console feedback
 
 [10 月分享](https://engineering.linecorp.com/zh-hant/blog/line-api-platform-update-202010)
+[9 月分享](https://engineering.linecorp.com/zh-hant/blog/line-api-platform-update-202009/)
+[8 月分享](https://engineering.linecorp.com/zh-hant/blog/line-api-platform-update-202008/)
 
 ## Group series
 
@@ -54,6 +56,18 @@ demo code
 4.
 
 - content can empty
+
+# TECHPULSE
+
+去年分享 [LINE TAIWAN TECHPULSE 2019 活動安排幕後秘辛](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-techpulse-2019-arrangement/)
+
+精彩回顧: [LINE TAIWAN TECHPULSE 2019 科技盛會精彩回顧](https://engineering.linecorp.com/zh-hant/blog/taiwan-techpulse-2019/)
+
+11/19
+
+# Bot Framework 和它的快樂夥伴 Composer - KoKo
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/eAulsFzSfday8F" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 # 結論
 
