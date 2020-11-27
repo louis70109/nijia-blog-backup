@@ -14,8 +14,6 @@ tags: ['LINE', 'MOPCON', 'DevRel', 'Chatbot']
   }
 </style>
 
-![](https://nijialin.com/images/2020/mopcon/4.JPG)
-
 # 前言
 
 大家好，我是 LINE Taiwan Technology Evangelist - NiJia Lin，在大概三、四月那投稿了 MOPCON，經過漫長的等待在 10/24 這天有機會被邀請至濁水溪以南最大的技術研討會，除了與大家分享實作 [Lotify](https://github.com/louis70109/lotify) 以及 Swagger 的使用經驗，並帶大家多認識研討會所帶來的魅力！
