@@ -38,6 +38,12 @@ OBS ->
 ![](https://nijialin.com/images/2020/OBS/multi-output.png)
 ![](https://nijialin.com/images/2020/OBS/select-output.png)
 
+> 藍芽耳機(Airpods)目前測試起來是不行的！
+
+# 如何看結果有沒有成功？
+
+![](https://nijialin.com/images/2020/OBS/obs-output.png)
+
 # 介紹
 
 # 結論
