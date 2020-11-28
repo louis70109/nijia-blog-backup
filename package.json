@@ -9,6 +9,7 @@
     "server": "hexo server",
     "new": "hexo new draft ",
     "publish": "hexo publish ",
+    "sync": "git pull",
     "backup": "git add .; git commit -m 'backup resource'; git push;",
     "deploy": "git add .; git commit -m 'deploy'; git push; hexo clean; hexo g; hexo d -g"
   },
