@@ -1,5 +1,5 @@
 ---
-title: '如何只使用一台 Mac 進行直播 feat, SoundFlower, OBS, Youtube'
+title: '如何只使用一台 Mac 進行直播 feat. SoundFlower, OBS, Youtube'
 tags:
   - OBS
   - SoundFlower
@@ -9,7 +9,6 @@ tags:
 categories: 直播
 date: 2020-11-29 20:01:51
 ---
-
 
 # 前言
 
