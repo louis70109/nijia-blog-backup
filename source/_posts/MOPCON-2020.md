@@ -9,7 +9,6 @@ categories: 研討會
 date: 2020-11-02 19:11:00
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -19,8 +18,6 @@ date: 2020-11-02 19:11:00
     margin: 0 auto;
   }
 </style>
-
-![](https://nijialin.com/images/2020/mopcon/4.PNG)
 
 # 前言
 
