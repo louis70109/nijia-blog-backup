@@ -1,36 +1,43 @@
 ---
-title: How to delivery your Youtube streaming on Mac by SoundFlower
-categories: 學習紀錄
-abbrlink: 2051073782
+title: '如何只使用一台 Mac 進行直播 feat, SoundFlower, OBS, Youtube'
 tags:
+  - OBS
+  - SoundFlower
+  - Youtube
+  - Mac
+  - Streaming
+categories: 直播
+date: 2020-11-29 20:01:51
 ---
 
-若你跟我一樣手上只有一台 mac 加一台手機但又有直播需求的朋友，你很適合看這篇
-本篇將已 MAC OS 為例
-由於 MAC 沒有額外的音效卡可以輸出，因此需要用軟體來解決
-![](https://nijialin.com/images/2020/OBS/os-version.png)
 
 # 前言
 
+若你跟我一樣手上只有一台 Mac 加一台手機但又有直播需求的朋友，這邊就很適合你，本篇接下來將已 MAC OS 為例，搭配 SoundeFlower 這個軟體來解決 Mac 只有獨立音效的問題，並使用 Youtube 來測試直播是否成功。(由於 MAC 沒有額外的音效卡可以輸出，因此需要用軟體來解決)
+
+![](https://nijialin.com/images/2020/OBS/os-version.png)
+
+- 作業系統 MacOS(Big Sur)
+- 軟體: Soundflower
+- 直播平台: Youtube
+
+> 在此之前記得安裝 Open Broadcaster Software(OBS): https://obsproject.com/download
+
 <!-- more -->
 
-Open Broadcaster Software(OBS): https://obsproject.com/download
+# [SoundFlower](https://github.com/mattingalls/Soundflower/releases)
 
-系統偏好 -> 聲音
-選擇聲音輸出 -> x64
-OBS ->
+首先透過[連結](https://github.com/mattingalls/Soundflower/releases)下載 Mac 版的安裝檔， 下載完後接著安裝，但此時會發現`安裝失敗`，但別緊張，因為 Mac 系統設定權限問題在第一次安裝會擋來路不明的軟體，在上述下載的連結中 release 說明有提到第一次安裝因為有權限問題而導致失敗，此時就按造以下步驟進行解鎖
 
-## [SoundFlower](https://github.com/mattingalls/Soundflower/releases)
+> `系統偏好設定` -> `安全性與隱私` -> `允許安裝`
 
-連結: https://github.com/mattingalls/Soundflower/releases
+通過隱私權後接著按下剛剛下載好的 `Soundflower-2.0b2.dmg`，再安裝一次就可以看到安裝成功的畫面。
+
+![](https://nijialin.com/images/2020/OBS/sound-install-success.png)
 
 > 雖然最後一版 release 是 2014 年 12 月底，但截至目前為止都還能用，若有任何不同的解法歡迎 mail 我！
 
-再 release 說明中有提到第一次安裝因為有權限問題而導致失敗，一樣到`系統偏好設定` -> 安全性與隱私 -> 允許安裝
-
-通過隱私權後接著再安裝一次就可以看到安裝成功的畫面
-
-## 多重輸出裝置
+# 多重輸出裝置
 
 會需要這個部分是因為不希望當聲音只能輸出卻不能同步監聽，因此需要 Mac 的內建軟體幫忙脫重輸出。
 
@@ -91,6 +98,6 @@ OBS ->
 
 最後就是調整看希望收哪邊的音要多一點，看是桌面來的聲音(第三方通訊軟體)或是自己的外接的麥克風，就調整`輔助音1`或是`輔助音2`來控制大小聲。
 
-# 介紹
-
 # 結論
+
+一般遊戲實況主因為都是自組電腦，音效卡都會另外在加裝(不用主機板內建)，因此使用桌機進行直播是相當方便的。但因為蘋果的電腦是一體成型，可以想像就只有電腦的主機板功能這樣，其他任何東西都需要透過 USB 來外接，但因為我的工作習慣就是使用 Mac，也沒考慮到會有直播上的需求，前一陣子因為疫情關係需要轉向線上，但在最近因為使用者習慣擁有線上的形式，因此許多社群即便再有線下聚會還是會搭配線上直播，並且有一些是遠端講者，因此就希望這篇能幫助到跟我同有一樣困擾的朋友～
