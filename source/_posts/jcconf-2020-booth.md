@@ -64,17 +64,7 @@ date: 2020-12-13 02:42:18
 - 容易從 JUnit4 移植
 - 並且有相關新功能
 
-> 詳細內容可參考 [2020/10/21 TWJUG@LINE](https://engineering.linecorp.com/zh-hant/blog/2020-10-21-twjug/#migrating-to-junit-5--joanna-hu)
-
 <script async class="speakerdeck-embed" data-slide="1" data-id="e939086a95c2498f8f683bf4c944e3af" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-## 大會快講 - Migrating to JUnit 5 / Joanna Hu
-
-**為何整合到 JUnit5**
-
-- 高度支援 IDE 與 build tool
-- 容易從 JUnit4 移植
-- 並且有相關新功能
 
 如果你是 JUnit4 的開發者，如何來 Migrating 到 JUnit5 呢？
 
@@ -87,8 +77,6 @@ date: 2020-12-13 02:42:18
 - 透過換名字方式即可，也可以使用 IntelliJ IDEA 的功能來置換
 
 > 更詳細內容可參考 [2020/10/21 TWJUG@LINE](https://engineering.linecorp.com/zh-hant/blog/2020-10-21-twjug/#migrating-to-junit-5--joanna-hu)，裡有更多議程的介紹。
-
-<script async class="speakerdeck-embed" data-slide="1" data-id="e939086a95c2498f8f683bf4c944e3af" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## 大會快講 - Introduction to AssertJ / Andy Chen
 
@@ -175,6 +163,8 @@ Client Team 主要負責有以下部分，從頁籤分類、 SDK 到 TODAY 以�
 <script async class="speakerdeck-embed" data-slide="13" data-id="cc7a74a469d24aa0bbd8493d1df76926" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## 攤位快講 - LINE Travel
+
+![](https://nijialin.com/images/2020/jcconf/travel.jpg)
 
 <script async class="speakerdeck-embed" data-slide="4" data-id="63a32ef2be4545e6aa6b4b6d704fd223" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
