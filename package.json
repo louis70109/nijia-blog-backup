@@ -1,6 +1,6 @@
 {
   "name": "hexo-site",
-  "version": "0.0.0",
+  "version": "6.0.0",
   "private": true,
   "author": "NiJia Lin <louis70109@gmail.com>",
   "scripts": {
@@ -14,10 +14,10 @@
     "deploy": "git add .; git commit -m 'deploy'; git push; hexo clean; hexo g; hexo d -g"
   },
   "hexo": {
-    "version": "5.2.0"
+    "version": "6.0.0"
   },
   "dependencies": {
-    "hexo": "5.1.1",
+    "hexo": "5.2.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-filter-plantuml": "^2.1.0",
     "hexo-filter-sequence": "^1.0.3",
