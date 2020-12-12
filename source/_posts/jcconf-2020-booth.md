@@ -1,13 +1,12 @@
 ---
-title: LINE Taiwan x Java 年度盛會：JCConf 2020
+title: 'LINE Taiwan x Java 年度盛會：JCConf 2020'
 tags:
   - LINE
   - DevRel
   - 研討會
-categories: 研討會
+categories: '研討會'
 date: 2020-12-13 02:42:18
 ---
-
 
 <style>
   section.compact {
