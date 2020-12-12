@@ -95,10 +95,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-# scheme: Muse
+scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-scheme: Gemini
+#scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -115,8 +115,8 @@ darkmode: false
 menu:
   home: / || fa fa-home
   about: /about/ || fa fa-user
-  # tags: /tags/ || fa fa-tags
-  # categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -159,7 +159,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /uploads/avatar.jpg
+  url: #/images/avatar.gif
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -173,11 +173,6 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/louis70109 || fab fa-github
-  E-Mail: mailto:louis70109@gmail.com || fa fa-envelope
-
-  FB Page: https://www.facebook.com/linnijia || fab fa-facebook
-  Linkedin: https://www.linkedin.com/in/jia-yu-lin-8991a9135 || linkedin
   #GitHub: https://github.com/yourname || fab fa-github
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
@@ -188,8 +183,6 @@ social:
   #YouTube: https://youtube.com/yourname || fab fa-youtube
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
-plantuml:
-  render: "PlantUMLServer"
 
 social_icons:
   enable: true
@@ -354,7 +347,7 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: night eighties
+  highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
     enable: false
@@ -513,7 +506,7 @@ pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
-fancybox: true
+fancybox: false
 
 # A JavaScript library for zooming images like Medium.
 # Do not enable both `fancybox` and `mediumzoom`.
@@ -641,22 +634,6 @@ gitalk:
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
   language:
 
-facebook_sdk:
-  enable: true
-  app_id: 792017867910978
-  fb_admin: #<user_id>
-  like_button: true
-  webmaster: true
-
-# Facebook comments plugin
-# This plugin depends on Facebook SDK.
-# If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
-facebook_comments_plugin:
-  enable: true
-  num_of_posts: 10 # min posts num is 1
-  width: 100% # default width is 550px
-  scheme: light # default scheme is light (light or dark)
-
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
 # See: https://theme-next.org/docs/third-party-services/post-widgets
@@ -680,7 +657,7 @@ add_this_id:
 
 # Google Analytics
 google_analytics:
-  tracking_id: UA-150180475-2
+  tracking_id: # <app_id>
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
