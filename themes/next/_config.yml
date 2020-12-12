@@ -173,12 +173,10 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/louis70109 || github
-  E-Mail: mailto:louis70109@gmail.com || envelope
-  #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
-  FB Page: https://www.facebook.com/linnijia || facebook
-  Linkedin: https://www.linkedin.com/in/jia-yu-lin-8991a9135 || linkedin
+  GitHub: https://github.com/louis70109 || fab fa-github
+  E-Mail: mailto:louis70109@gmail.com || fa fa-envelope
+
+  FB Page: https://www.facebook.com/linnijia || fab fa-facebook
   #GitHub: https://github.com/yourname || fab fa-github
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
@@ -393,7 +391,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
+  permalink: https://github.com/louis70109
   title: Follow me on GitHub
 
 # ---------------------------------------------------------------
@@ -644,21 +642,21 @@ gitalk:
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
   language:
 
-# facebook_sdk:
-#   enable: true
-#   app_id: 792017867910978
-#   fb_admin: #<user_id>
-#   like_button: true
-#   webmaster: true
+facebook_sdk:
+  enable: true
+  app_id: 792017867910978
+  fb_admin: #<user_id>
+  like_button: true
+  webmaster: true
 
-# # Facebook comments plugin
-# # This plugin depends on Facebook SDK.
-# # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
-# facebook_comments_plugin:
-#   enable: true
-#   num_of_posts: 10 # min posts num is 1
-#   width: 100% # default width is 550px
-#   scheme: light # default scheme is light (light or dark)
+# Facebook comments plugin
+# This plugin depends on Facebook SDK.
+# If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
+facebook_comments_plugin:
+  enable: true
+  num_of_posts: 10 # min posts num is 1
+  width: 100% # default width is 550px
+  scheme: light # default scheme is light (light or dark)
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
