@@ -189,8 +189,6 @@ social:
   #Skype: skype:yourname?call|chat || fab fa-skype
 plantuml:
   render: "PlantUMLServer"
-avatar: /uploads/avatar.jpg
-
 
 social_icons:
   enable: true
