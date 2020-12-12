@@ -1,27 +1,25 @@
 // CSS Style Guide: http://codeguide.co/#css
 
 
-$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
 
-$variables = base $scheme;
+$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
+$variables = base $scheme custom;
+$mixins    = base $scheme custom;
+
 
 
 // Variables Layer
 // --------------------------------------------------
 for $variable in $variables
-  @import "_variables/" + $variable;
-for $inject_variable in hexo-config('injects.variable')
-  @import $inject_variable;
+  @import "_variables/" + $variable
+
 
 // Mixins Layer
 // --------------------------------------------------
-@import "_mixins.styl";
-for $inject_mixin in hexo-config('injects.mixin')
-  @import $inject_mixin;
+for $mixin in $mixins
+  @import "_mixins/" + $mixin;
 
-// Dark mode colors
-// --------------------------------------------------
-@import "_colors.styl";
+
 
 // Common Layer
 // --------------------------------------------------
@@ -41,7 +39,7 @@ for $inject_mixin in hexo-config('injects.mixin')
 @import "_schemes/" + $scheme;
 
 
+
 // Custom Layer
 // --------------------------------------------------
-for $inject_style in hexo-config('injects.style')
-  @import $inject_style;
+@import "_custom/custom";
