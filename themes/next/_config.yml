@@ -658,7 +658,6 @@ facebook_comments_plugin:
   num_of_posts: 10 # min posts num is 1
   width: 100% # default width is 550px
   scheme: light # default scheme is light (light or dark)
-google_analytics: UA-150180475-2
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
@@ -683,7 +682,7 @@ add_this_id:
 
 # Google Analytics
 google_analytics:
-  tracking_id: # <app_id>
+  tracking_id: UA-150180475-2
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
