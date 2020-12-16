@@ -256,7 +256,7 @@ tag_icon: true
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
+  enable: true
   animation: false
   #comment: Donate comment here.
 
@@ -528,7 +528,7 @@ pangu: false
 quicklink:
   enable: false
 
-  # Home page and archive page can be controlled through home and archive options below.
+  # Home page and archive page can be controlled through 集點卡成果.movhome and archive options below.
   # This configuration item is independent of `enable`.
   home: false
   archive: false
@@ -661,6 +661,7 @@ google_analytics:
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
+
 facebook_sdk:
   enable: true
   app_id: 792017867910978
