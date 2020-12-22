@@ -44,11 +44,14 @@ tags:
 - LINE TODAY 的`中華職棒(CPBL)`一度閉門比賽，讓線上直播成長了 `74%`
 - 因為藝人們紛紛尋找線上直播的解決方案，因此直播的人數也是大大的提升
 - 國內旅遊一度被影響到相當嚴重，但適逢疫情舒緩以及連假，LINE TRAVEL 一度成長了 `24 倍`之多！
-  在新常態中，人們生活習慣改變，使用網路服務的行為也改變了。
 
-2. Life on LINE CLOVA by Aaron Wu https://speakerdeck.com/line_developers_tw/line-techpulse-2020-life-on-line-clova
-3. Platform API Update by Evan Lin https://speakerdeck.com/line_developers_tw/line-techpulse-2020-platform-api-update
-4. Scaling Machine Learning at LINE by Shawn Tsai and Penny Sun https://speakerdeck.com/line_developers_tw/line-techpulse-2020-scaling-machine-learning-at-line
+<script async class="speakerdeck-embed" data-slide="7" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+因為 LINE 是以網路服務為基礎的通訊軟體，在新常態中，人們生活習慣改變，使用網路服務的行為也改變了，因此讓 LINE 受到了別與平常的流量，在這環境下雖然公司成長了，但因為需要應付這麼大的流量，勢必得需要提供更穩定的基礎設施來增加可用性。
+
+<script async class="speakerdeck-embed" data-slide="9" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+因此接下來就介紹 Verda 2. Life on LINE CLOVA by Aaron Wu https://speakerdeck.com/line_developers_tw/line-techpulse-2020-life-on-line-clova 3. Platform API Update by Evan Lin https://speakerdeck.com/line_developers_tw/line-techpulse-2020-platform-api-update 4. Scaling Machine Learning at LINE by Shawn Tsai and Penny Sun https://speakerdeck.com/line_developers_tw/line-techpulse-2020-scaling-machine-learning-at-line
 
 #### 下午議程:
 
