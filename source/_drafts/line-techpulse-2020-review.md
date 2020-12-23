@@ -35,7 +35,12 @@ tags:
 
 ![](https://nijialin.com/images/2020/techpulse/keynotw-1.jpg)
 
-<script async class="speakerdeck-embed" data-slide="2" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+主軸：
+
+- VKS
+- CLOVA
+- IU -> MLU
+- <script async class="speakerdeck-embed" data-slide="2" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 接著由 CTO - Marco Chen 為各位帶來 LINE TAIWAN 開發團隊今年來的戰果。首先因應今年初疫情影響，除了大家都感受到了生活上的一些改變，不僅對大家，對 LINE 以及 LINE 的工程團隊們都有最直接的影響，
 
@@ -51,7 +56,56 @@ tags:
 
 <script async class="speakerdeck-embed" data-slide="9" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-因此接下來就介紹 Verda 2. Life on LINE CLOVA by Aaron Wu https://speakerdeck.com/line_developers_tw/line-techpulse-2020-life-on-line-clova 3. Platform API Update by Evan Lin https://speakerdeck.com/line_developers_tw/line-techpulse-2020-platform-api-update 4. Scaling Machine Learning at LINE by Shawn Tsai and Penny Sun https://speakerdeck.com/line_developers_tw/line-techpulse-2020-scaling-machine-learning-at-line
+因此接下來就介紹 Verda 這個屬於 LINE 的雲端基礎設施平台，在當時還沒普及容器化服務時團隊很容易因為預防高峰流量而多準備機器避免意外發生，因此這部分就在敘述從`虛擬主機`轉移到`容器化`的過程
+
+- 推薦社團: [Cloud Native Taiwan User Group](https://www.facebook.com/groups/cloudnative.tw)
+
+<script async class="speakerdeck-embed" data-slide="12" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+但要建立一個平台絕對是有所考量，在建立 Verda Kubernetes Service 時 LINE 總部則就以
+
+- `靈活性`: 需要能夠自由擴充管理功能。
+- `易用性`: 擁有許多生態系資源與 Open Source Software 可以使用。
+- `維護成本`: 開發社群的活躍度，如果有 Bug 需要能很快被修復。
+
+而總部在建立 VKS 的同時台灣團隊也正在嘗試各種可能性，並研究如何強化與部署的開發效率，以及有效地使用人力資源，同時也設立了兩個主要目標， `新人能立即加入開發`、`服務需 Auto-Scaling`
+
+綜合所有考量後，採用了 Container-Based 的架構來整合服務
+
+<script async class="speakerdeck-embed" data-slide="18" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+最後我們獲得了許多好處多了兩個好處，
+
+- 有很多共用的監控，追查問題的工具。
+- 讓系統微服務化，協同開發時相互影響變小了
+
+<script async class="speakerdeck-embed" data-slide="24" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+LINE 每天都承受著相當大的流量，超過 2 千萬人
+
+<script async class="speakerdeck-embed" data-slide="33" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+最後一定要提到資訊安全相關的議題，在日常對話中其實 LINE 就透過許多加密手段來確保資料，讓每位使用者在使用 LINE 時可以更安心的使用，
+
+<script async class="speakerdeck-embed" data-slide="34" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+而在近日推出的生物辨識登入，目的就是讓使用者可以不透過密碼靠特徵或指紋即可登入，降低輸入被竊取的風險，更詳細內容可以參考這篇：[不怕忘記密碼了～ LINE 開放「生物辨識」登入，iPad 用戶搶先體驗！](http://official-blog.line.me/tw/archives/84191413.html)
+
+2.  Life on LINE CLOVA by Aaron Wu https://speakerdeck.com/line_developers_tw/line-techpulse-2020-life-on-line-clova
+
+3.  Platform API Update by Evan Lin https://speakerdeck.com/line_developers_tw/line-techpulse-2020-platform-api-update
+
+<script async class="speakerdeck-embed" data-slide="4" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+既然都知道 LINE 了，你怎麼會不知道 LINE Bot 相關的知識呢？今年增加了一個 `Narrowcast` 的相關 API，目的是為了讓開發者可以更快速的使用 Narrowcast 來篩選出適合的受眾，並將訊息精準的發送給他，那大家一定會很好奇它有什麼條件可以使用
+
+- 性別
+- 年齡
+- 作業系統
+- 地區
+-
+
+4.  Scaling Machine Learning at LINE by Shawn Tsai and Penny Sun https://speakerdeck.com/line_developers_tw/line-techpulse-2020-scaling-machine-learning-at-line
 
 #### 下午議程:
 
@@ -78,6 +132,9 @@ tags:
    1. SmartPOI by Johnson Wu https://speakerdeck.com/line_developers_tw/line-techpulse-2020-smartpoi
    2. LDS - Sharing UI Components Between LINE Projects by Petr Mareš https://speakerdeck.com/line_developers_tw2/line-techpulse-2020-lds-sharing-ui-components-between-line-projects
    3. Large Scale Scrum (LeSS) Road, Where does it leads? by William Fu https://speakerdeck.com/line_developers_tw2/line-techpulse-2020-large-scale-scrum-less-road-where-does-it-leads
+
+<script async class="speakerdeck-embed" data-slide="37" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 3. Lightning Talk - TECH FRESH
    1. Life as FRESH LINER by Mandy Chang https://speakerdeck.com/line_developers_tw2/line-techpulse-2020-life-as-fresh-liner
    2. From Classroom Assignment to Realistic Problem in LINE by Troy Chiu https://speakerdeck.com/line_developers_tw2/line-techpulse-2020-from-classroom-assignment-to-realistic-problem-in-line
