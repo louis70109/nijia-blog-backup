@@ -103,9 +103,33 @@ tags:
 - 年齡
 - 作業系統
 - 地區
--
 
-4.  Scaling Machine Learning at LINE by Shawn Tsai and Penny Sun https://speakerdeck.com/line_developers_tw/line-techpulse-2020-scaling-machine-learning-at-line
+<script async class="speakerdeck-embed" data-slide="6" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+Icon Switch 在去年還是 Partner API
+
+- Emoji
+- 取得使用者語系
+- Group/Chatroom API
+  - name
+  - number of people
+- Unsend Event
+- Video viewing complete
+
+<script async class="speakerdeck-embed" data-slide="14" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- Share target picker
+
+- Channel access token v2.1
+- Retry API
+
+Endpoint API
+
+## LIFF
+
+Concate mode
+
+4. Scaling Machine Learning at LINE by Shawn Tsai and Penny Sun https://speakerdeck.com/line_developers_tw/line-techpulse-2020-scaling-machine-learning-at-line
 
 #### 下午議程:
 
