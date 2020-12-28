@@ -104,9 +104,26 @@ tags:
 - 作業系統
 - 地區
 
+#### 使用案例
+
+今天你是個手機銷售商，近日剛好有新款手機上市，且依照你們的商業分析得知男性族群消費力比較高此時你可以搜尋台北地區三十歲以上使用 iOS 系統的的男性，透過這樣去行銷你的廣告，符合自家需求並正確地找到你的客戶。
+
 <script async class="speakerdeck-embed" data-slide="6" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-Icon Switch 在去年還是 Partner API
+### Icon and Display name switcher
+
+> 曾經在 [TECHPULSE 2018](https://www.slideshare.net/linecorp/line-platform-api-update-chatbot) 的演講上有出現過的 Icon Switch 功能，當時受到相當多開發者的詢問。但是由於當時 Icon Switch API 仍然算是 Partner API (指的是需要透過跟 LINE 申請合作的開發廠商，才能使用的功能)，所以能使用的開發者並不多。[參考網址](https://engineering.linecorp.com/zh-hant/blog/chatbot-icon-switch/)
+
+而今年初 LINE 開放了這個強大的 API 給各位開發者，讓大家可以更靈活地使用它來讓你的 Chatbot 更生動！
+
+講者在這部分使用一個例子來說明用途：「經常大家在經營許多店家官方帳號的時候，在一些程式中條件無法正確判斷時，就需要讓客服人員透過官方帳號來回覆使用者的問題，此時使用 Icon Switch 這個 API 即可快速切換身份也同時讓使用者能夠在視窗內快速辨別身份。」
+
+> 「藉由這個 API 也讓使用者可以感覺到 chatbot 不再是個冷冰冰的機器，而是有溫度的互動。」
+
+你可以透過以下範例程式快速實踐 Icon Switch：
+
+- Golang: https://github.com/kkdai/line-bot-icon-switch
+- Python: https://github.com/louis70109/line-icon-switch-python
 
 - Emoji
 - 取得使用者語系
@@ -123,13 +140,24 @@ Icon Switch 在去年還是 Partner API
 - Channel access token v2.1
 - Retry API
 
-Endpoint API
+### Endpoint API
+
+這部分更詳細介紹可以參考我十月至 Chatbot meetups 的分享文章 - [管理 LINE Bot 相關資訊](https://engineering.linecorp.com/zh-hant/blog/line-api-platform-update-202010/#%E7%AE%A1%E7%90%86-line-bot-%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A)
+
+### Flex Message Update 2
+
+https://engineering.linecorp.com/zh-hant/blog/line-api-platform-update-202010/#flex-message-update-2
 
 ## LIFF
 
 Concate mode
 
+> 推薦文章：[The Best Practice Of LIFF - 卡米哥](https://medium.com/@EtrexKuo/the-best-practice-of-liff-fd89f2e612fc)
+
 4. Scaling Machine Learning at LINE by Shawn Tsai and Penny Sun https://speakerdeck.com/line_developers_tw/line-techpulse-2020-scaling-machine-learning-at-line
+
+![](https://nijialin.com/images/2020/techpulse/shawn.jpg)
+![](https://nijialin.com/images/2020/techpulse/penny.jpg)
 
 #### 下午議程:
 

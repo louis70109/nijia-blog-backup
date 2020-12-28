@@ -1,5 +1,5 @@
 ---
-title: "如何優化你的 LIFF"
+title: '如何優化你的 LIFF'
 categories: 學習紀錄
 tags:
 ---
@@ -16,7 +16,9 @@ tags:
 
 ![](https://nijialin.com/2020/images/1.png)
 
-# 前言
+# What is LIFF?
+
+![](https://nijialin.com/2020/images/optimaze-liff/liff-size.png)
 
 <!-- more -->
 
@@ -74,7 +76,7 @@ function initializeLiff(myLiffId) {
 
   end = new Date().getTime();
 
-  console.log((end - start) / 1000 + " sec");
+  console.log((end - start) / 1000 + ' sec');
 }
 ```
 
@@ -91,7 +93,7 @@ async function initializeLiff(myLiffId) {
   initializeApp();
   end = new Date().getTime();
   // 計算花多久時間
-  console.log((end - start) / 1000 + " sec");
+  console.log((end - start) / 1000 + ' sec');
 }
 ```
 
@@ -128,6 +130,8 @@ function runScript(src) {
 # preconnect
 
 # 結論
+
+雖然 LIFF 很好使用也幫忙 LINE Login，但在取得使用者資訊時千萬別直接使用來自瀏覽器裡存的使用者資訊，如需取得相關訊息請使用 `liff.getIDToken()` 以及 `liff.getAccessToken()` 產生的內容再轉交給你的 Server，避免資安上的疑慮喔
 
 引用：
 preload 告訴瀏覽器：「這份資源對目前的頁面是必要的，請用最快的速度下載此資源。」
