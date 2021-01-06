@@ -159,6 +159,8 @@ Concate mode
 ![](https://nijialin.com/images/2020/techpulse/shawn.jpg)
 ![](https://nijialin.com/images/2020/techpulse/penny.jpg)
 
+[2021 加速轉型 9 大趨勢（六）加速 AI 生命周期循環，MLOps 將成企業 AI 落地規模化的關鍵一步](https://www.ithome.com.tw/news/141978)
+
 #### 下午議程:
 
 1. LINE Pay New Service My Card by Hugo Huang https://speakerdeck.com/line_developers_tw2/line-techpulse-2020-line-pay-new-service-my-card
