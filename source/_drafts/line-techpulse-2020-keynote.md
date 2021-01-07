@@ -24,7 +24,7 @@ tags:
 
 <!-- more -->
 
-# 焦點回顧 - [LINE TAIWAN TECHPULSE Keynote](https://speakerdeck.com/line_developers_tw/line-techpulse-2020-keynote) / Marco Chen
+# 焦點回顧 1 - [Keynote](https://speakerdeck.com/line_developers_tw/line-techpulse-2020-keynote) / Marco Chen
 
 ![](https://nijialin.com/images/2020/techpulse/keynote-4.jpg)
 
@@ -46,7 +46,7 @@ tags:
 
 雖然 LINE 時常應付大流量在各服務間均已經有相對應的策略，但隨著公司的成長同時 LINE 工程團隊也需要優化基礎設施，讓平台在接受這麼大的流量可以更`有效地使用資源`，並且提供更穩定的基礎設施來增加`彈性`與`可用性`。
 
-因為在此之前出現了兩個問題`使用效率`與`維護性`，因為為了應付`流量高峰`而是先準備了許多資源，且因為每個服務會與不同的技術元件相依，導致無法經驗交流分享。在這之後我們意識到只有`作業系統虛擬化平台`還不夠，我們需要一個`執行環境虛擬化平台`，把應用程式與其相依性資源封裝起來。才能完全解決應用層與執行環境的區隔，讓應用程式可以任意的被部署在不同地方，而不會有資源相依性與版本衝突的問題。
+過往大多以`虛擬主機(VM)`為基礎設施去部署服務，但今年在策略上開發團隊需要更著重於`使用效率`與`維護性`，而在每個服務為了應付`流量高峰`而事先準備了許多資源(機器)，並會相依不同的技術元件，導致無法經驗交流分享。在這之後我們意識到只有`作業系統虛擬化平台`還不夠，我們需要一個`執行環境虛擬化平台`，把應用程式與其相依性資源封裝起來。才能完全解決應用層與執行環境的區隔，讓應用程式可以任意的被部署在不同地方，而不會有資源相依性與版本衝突的問題。
 
 <script async class="speakerdeck-embed" data-slide="12" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -75,18 +75,20 @@ tags:
 
 <script async class="speakerdeck-embed" data-slide="18" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-經過 Marco 詳細的敘述，除了原先預定的兩個方向`部署效率`以及`Auto-Scaling`以外，我們又額外獲得了兩個好處，不僅擁有更多的監控、追查問題工具，也讓系統微服務化，協同開發時相互影響的問題也降低了。
+除了原先預定的兩個方向`部署效率`以及`Auto-Scaling`以外，我們又額外獲得了兩個好處，不僅擁有更多的監控、追查問題工具，也讓系統微服務化，協同開發時相互影響的問題也降低了。
 
 ## 小結
 
-如果你對於 DevOps 或容器化相關技術有興趣可以前往這兩個社團：
+在有規模的企業中導入任何技術都不容易，需要制定一定的策略才有辦法應付過程中的挑戰，如果讀者們也在嘗試導入的話，不如參考看看吧！
+
+> 如果你對於 DevOps 或容器化相關技術有興趣可以前往這兩個社團：
 
 - [Cloud Native Taiwan User Group](https://www.facebook.com/groups/cloudnative.tw)
 - [DevOps Taiwan](https://www.facebook.com/groups/DevOpsTaiwan/)
 
-# [Life on LINE CLOVA](https://speakerdeck.com/line_developers_tw/line-techpulse-2020-life-on-line-clova) - Aaron Wu / Cid Chang
+# 焦點回顧 2 - [Life on LINE CLOVA](https://speakerdeck.com/line_developers_tw/line-techpulse-2020-life-on-line-clova) - Aaron Wu / Cid Chang
 
-![](https://nijialin.com/images/2020/techpulse/face-sign-3.jpg)
+![](https://nijialin.com/images/2020/techpulse/clova-aaron.jpg)
 
 <script async class="speakerdeck-embed" data-slide="8" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -132,7 +134,7 @@ OCR 能用在什麼地方呢？透過這張簡報應該就有想法了：
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/x5gt2sjnfh4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# 使用 CLOVA 技術開發活動頁面分享 - Cid
+## 使用 CLOVA 技術開發活動頁面分享 - Cid
 
 ![](https://nijialin.com/images/2020/techpulse/clova-cid.jpg)
 
@@ -156,23 +158,76 @@ OCR 能用在什麼地方呢？透過這張簡報應該就有想法了：
 
 - [您不能錯過的 LINE TAIWAN TECHPULSE 2020 年度盛會](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-techpulse-2020/)
 
-＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃
+# [Platform API Update](https://speakerdeck.com/line_developers_tw/line-techpulse-2020-platform-api-update) - Evan Lin
 
-接下來 Marco 就介紹 Verda 這個屬於 LINE 的雲端基礎設施平台，過往還在以`虛擬主機(VM)`為基礎設施時時常會需要預防高峰流量而多準備機器避免意外發生，只是在策略上開發團隊需要更注意`使用效率`與`維護性`的問題，因此這部分就在敘述從`虛擬主機`轉移到`容器化`的過程。
+今年的這部分則使用與以往不同的風格來講解 2020 平台更新的資訊
 
-<script async class="speakerdeck-embed" data-slide="12" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+## Narrowcast
 
-雖然說大家都認為 Container-based 的架構很讚，但要建立一個平台絕對是有所考量，而 LINE 總部在建立 Verda Kubernetes Service 時則考量以下三個部分：
+<script async class="speakerdeck-embed" data-slide="5" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-- `靈活性`: 需要能夠自由擴充管理功能。
-- `易用性`: 擁有許多生態系資源與 Open Source Software 可以使用。
-- `維護成本`: 開發社群的活躍度，如果有 Bug 需要能很快被修復。
+> 「我們不是不喜歡廣告…… 我們只是不喜歡與我們無關的廣告。」
 
-而總部在建立 VKS 的同時台灣團隊也正在嘗試各種可能性，並研究如何強化與部署的開發效率，以及有效地使用人力資源，同時也設立了兩個主要目標， `新人能立即加入開發`、`服務需 Auto-Scaling`
+許多使用者在使用官方帳號時，經常會忽略用戶的感受，因此可以藉由 Narrowcast 將可以讓你收斂用戶的條件，選出更加適合此封訊息內容的用戶並推送給他，說不定還可以藉此降低官方帳號的封鎖率喔！
 
-綜合所有考量後，採用了 Container-Based 的架構來整合服務
+> Narrowcast 相關文章請參閱[透過 Narrowcast API 在 LINE Chatbot 上發送 "精準" 且 "討喜" 的訊息](https://engineering.linecorp.com/zh-hant/blog/narrowcast-api-on-line-chatbot/)
 
-<script async class="speakerdeck-embed" data-slide="18" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+## Icon Switch
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+而今年初 LINE 開放了這個強大的 API 給各位開發者，讓大家可以更靈活地使用它來讓你的 Chatbot 更生動！
+
+講者在這部分使用一個例子來說明用途：「經常大家在經營許多店家官方帳號的時候，在一些程式中條件無法正確判斷時，就需要讓客服人員透過官方帳號來回覆使用者的問題，此時使用 Icon Switch 這個 API 即可快速切換身份也同時讓使用者能夠在視窗內快速辨別身份。」
+
+> 「藉由這個 API 也讓使用者可以感覺到 chatbot 不再是個冷冰冰的機器，而是有溫度的互動。」
+
+你可以透過以下範例程式快速實踐 Icon Switch：
+
+- Golang: https://github.com/kkdai/line-bot-icon-switch
+- Python: https://github.com/louis70109/line-icon-switch-python
+- [使用 Icon Switch 來變更聊天機器人的暱稱與圖示](https://engineering.linecorp.com/zh-hant/blog/chatbot-icon-switch/)
+
+## 其他 Messaging API 更新
+
+- [Emojis](https://developers.line.biz/en/reference/messaging-api/#wh-text): 讓你可以使用 API 的方式使用 LINE 的表情符號
+  - [表情符號清單](https://d.line-scdn.net/r/devcenter/sendable_line_emoji_list.pdf)
+- 取得使用者語系([get user profile](https://developers.line.biz/en/reference/messaging-api/#get-profile)): 除了讓你能取得使用者的基本資訊以外，今年更增加了語系的欄位，讓你可以依照所屬區域去對應前端語系喔！
+
+> 上述兩項的相關文章介紹:
+>
+> 1. [LINE 開發社群計畫: 2020/04/21 Chatbots#18 online](https://engineering.linecorp.com/zh-hant/blog/2020-04-21-chatbots18/)
+> 2. [關於 LINE Emoji 的一些細節（以 Golang 為例)](https://engineering.linecorp.com/zh-hant/blog/line-emoji-with-golang/)
+
+- Group/Chatroom API
+
+  - [2020 六月 LINE 平台更新整理與 LINE Group/Room Chatbot 的展示](https://engineering.linecorp.com/zh-hant/blog/2020-june-update/)
+
+  | Event        | Group                                                                                     | Chatroom                                                                                 |
+  | ------------ | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+  | 取得資訊     | [Link](https://developers.line.biz/en/reference/messaging-api/#get-group-summary)         |                                                                                          |
+  | 人數         | [Link](https://developers.line.biz/en/reference/messaging-api/#get-members-group-count)   | [Link](https://developers.line.biz/en/reference/messaging-api/#get-members-room-count)   |
+  | 用戶 IDs     | [Link](https://developers.line.biz/en/reference/messaging-api/#get-group-member-user-ids) | [Link](https://developers.line.biz/en/reference/messaging-api/#get-room-member-user-ids) |
+  | 取得人員資訊 | [Link](https://developers.line.biz/en/reference/messaging-api/#get-group-member-profile)  | [Link](https://developers.line.biz/en/reference/messaging-api/#get-room-member-profile)  |
+  | 離開         | [Link](https://developers.line.biz/en/reference/messaging-api/#leave-group)               | [Link](https://developers.line.biz/en/reference/messaging-api/#leave-room)               |
+
+- [Unsend Event](https://developers.line.biz/en/reference/messaging-api/#message-event): Chatbot 可收到使用者回收訊息的 Event，並作出對應的回饋(但目前僅限於`群組`以及`聊天室`)
+- [Video viewing complete](https://developers.line.biz/en/reference/messaging-api/#video-viewing-complete): 感官接受度普遍來說會是 影片 ➡️ 圖片 ➡️ 文字，但使用者看完影片若沒有回饋是否少了點什麼呢？你可以使用這個 API 讓 Chatbot 發送的訊息
+
+- [Share Target Picker 已經公開，透過 LIFF 來分享訊息將更加的便利](https://engineering.linecorp.com/zh-hant/blog/liff-share-target-picker/)
+- [Share Target Picker: LIFF（LINE Frontend Framework）中的新功能](https://engineering.linecorp.com/zh-hant/blog/share-target-picker-liff/)
+- [開啟 LINE LIFF v2 的無限潛力 — liff.shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/start-liff-v2-sharetargetpicker-power/)
+- [LINE 開發社群計畫: 2020 九月 LINE 平台更新整理與 LIFF ShareTargetPicker 案例分享](https://engineering.linecorp.com/zh-hant/blog/line-api-platform-update-202009/)
+- [在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享 FlexMessage 訊息給 LINE 好友](https://engineering.linecorp.com/zh-hant/blog/how-to-use-liff-in-vue3/)
+- [梅竹黑客松賽前企業工作坊 – LIFF shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/meichu-liff-share-target-picker-workshop/)
+
+# MLOps
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="822ff17fcd0b4a468ee1f275711b14f3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當一個團隊要擴大時，在職責中也都需要劃分清楚，並會遇到許多挑戰，
+
+# Security
 
 最後一定要提到資訊安全相關的議題，在日常對話中其實 LINE 就透過許多加密手段來確保資料，讓每位使用者在使用 LINE 時可以更安心的使用，
 
