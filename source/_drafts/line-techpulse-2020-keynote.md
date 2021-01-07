@@ -24,13 +24,9 @@ tags:
 
 <!-- more -->
 
-# 焦點回顧
+# 焦點回顧 - [LINE TAIWAN TECHPULSE Keynote](https://speakerdeck.com/line_developers_tw/line-techpulse-2020-keynote) / Marco Chen
 
-## [LINE TAIWAN TECHPULSE Keynote](https://speakerdeck.com/line_developers_tw/line-techpulse-2020-keynote) / Marco Chen
-
-![](https://nijialin.com/images/2020/techpulse/keynotw-1.jpg)
-
-主軸：
+![](https://nijialin.com/images/2020/techpulse/keynote-4.jpg)
 
 ## New Norma(新常態)
 
@@ -43,8 +39,6 @@ tags:
 - LINE TODAY 的`中華職棒(CPBL)`一度閉門比賽，讓線上直播成長了 `74%`
 - 因為藝人們紛紛尋找線上直播的解決方案，因此直播的人數也是大大的提升
 - 國內旅遊一度被影響到相當嚴重，但適逢疫情舒緩以及連假，LINE TRAVEL 一度成長了 `24 倍`之多！
-
-# `Verda Kubernetes Service`(`VKS`)
 
 ## 台灣工程團隊的考量點
 
@@ -90,31 +84,57 @@ tags:
 - [Cloud Native Taiwan User Group](https://www.facebook.com/groups/cloudnative.tw)
 - [DevOps Taiwan](https://www.facebook.com/groups/DevOpsTaiwan/)
 
-# LINE CLOVA
+# [Life on LINE CLOVA](https://speakerdeck.com/line_developers_tw/line-techpulse-2020-life-on-line-clova) - Aaron Wu / Cid Chang
+
+![](https://nijialin.com/images/2020/techpulse/face-sign-3.jpg)
 
 <script async class="speakerdeck-embed" data-slide="8" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 經過了一年的努力，將旗下兩大 AI 主力的品牌 LINE BRAIN 與 LINE Clova 整合成 LINE CLOVA，統整出 AI 產品與兩大解決方案：
 
-- 產品：
+## 三大產品
 
-  - CLOVA Chatbot
-    - 讓用戶可以在很短的時間內建造出一隻 LINE AI Bot，除了有基礎的樣板之外，還能夠客製化調整調整內容格式，並同時支援六種以上的功能。
-  - CLOVA Face(臉部辨識)
-    - <script async class="speakerdeck-embed" data-slide="25" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-  - CLOVA OCR(Optical Character Recognition)
-    - OCR 能用在什麼地方呢？透過這張簡報應該就有想法了：
-      - <script async class="speakerdeck-embed" data-slide="19" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+1. Chatbot
 
-- 解決方案：
-  - eKYC
-    - 結合 Face 與 OCR 打造的解決方案，例如：用戶持有健保卡想看診，透過此解決方案可以讓系統自動填入一些基本資訊，減低手動輸入的成本
-      - <script async class="speakerdeck-embed" data-slide="22" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-  - AiCall 可以看以下影片，會讓你更有感喔！
+讓用戶可以在很短的時間內建造出一隻 LINE AI Bot，除了有基礎的樣板之外，還能夠客製化調整調整內容格式，並同時支援六種以上的功能。
+
+在 2019 的 TECHPULSE 中也有提到這部分，想了解更多可以參考以下簡報：
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="20a06fe07ac74222ac6aa754110b0043" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+2. Face(臉部辨識)
+
+<script async class="speakerdeck-embed" data-slide="25" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+相信在大家於報到時，在報到處櫃檯就已經有體驗到`臉部辨識`的技術，讓有註冊的朋友可以在**非常短**的時間內就能入場，在研討會中有這個功能是不是很讚呢？
+
+![](https://nijialin.com/images/2020/techpulse/face-sign-3.jpg)
+
+3. OCR(Optical Character Recognition)
+
+OCR 能用在什麼地方呢？透過這張簡報應該就有想法了：
+
+<script async class="speakerdeck-embed" data-slide="19" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這次大會中各個攤位都有一個錦旗讓大家上傳體驗 CLOVA OCR 的技術。
+
+![](https://nijialin.com/images/2020/techpulse/lae_ocr.jpg)
+
+## 兩大解決方案
+
+1. eKYC
+
+結合 Face 與 OCR 打造的解決方案，例如：用戶持有健保卡想看診，透過此解決方案可以讓系統自動填入一些基本資訊，減低手動輸入的成本
+
+<script async class="speakerdeck-embed" data-slide="22" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+2. AiCall 可以看以下影片，會讓你更有感喔！
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/x5gt2sjnfh4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# CLOVA Develop - Cid
+# 使用 CLOVA 技術開發活動頁面分享 - Cid
+
+![](https://nijialin.com/images/2020/techpulse/clova-cid.jpg)
 
 <script async class="speakerdeck-embed" data-slide="28" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -127,6 +147,14 @@ tags:
 > 若讀者對於成為「合作夥伴」的話，可以使用[這個表單](https://tw.linebiz.com/contact-us/inquiry-partner)來申請。
 
 <script async class="speakerdeck-embed" data-slide="41" data-id="0280751f2565451c9c8c920208fec132" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 小結
+
+![](https://nijialin.com/images/2020/techpulse/photowall.JPG)
+
+其實在現場中的相片牆也有使用到 LINE CLOVA 的辨識技術，更多活動內容可以參考:
+
+- [您不能錯過的 LINE TAIWAN TECHPULSE 2020 年度盛會](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-techpulse-2020/)
 
 ＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃
 
@@ -153,6 +181,8 @@ tags:
 而在近日推出的生物辨識登入，目的就是讓使用者可以不透過密碼靠特徵或指紋即可登入，降低輸入被竊取的風險，更詳細內容可以參考這篇：[不怕忘記密碼了～ LINE 開放「生物辨識」登入，iPad 用戶搶先體驗！](http://official-blog.line.me/tw/archives/84191413.html)
 
 # 結論
+
+![](https://nijialin.com/images/2020/techpulse/see-you-next-year.jpg)
 
 # 活動小結
 
