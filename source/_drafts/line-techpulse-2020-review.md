@@ -152,8 +152,6 @@ https://engineering.linecorp.com/zh-hant/blog/line-api-platform-update-202010/#f
 
 Concate mode
 
-> 推薦文章：[The Best Practice Of LIFF - 卡米哥](https://medium.com/@EtrexKuo/the-best-practice-of-liff-fd89f2e612fc)
-
 4. Scaling Machine Learning at LINE by Shawn Tsai and Penny Sun https://speakerdeck.com/line_developers_tw/line-techpulse-2020-scaling-machine-learning-at-line
 
 ![](https://nijialin.com/images/2020/techpulse/shawn.jpg)

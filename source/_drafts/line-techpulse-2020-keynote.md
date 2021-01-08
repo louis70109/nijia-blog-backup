@@ -214,6 +214,12 @@ OCR 能用在什麼地方呢？透過這張簡報應該就有想法了：
 - [Unsend Event](https://developers.line.biz/en/reference/messaging-api/#message-event): Chatbot 可收到使用者回收訊息的 Event，並作出對應的回饋(但目前僅限於`群組`以及`聊天室`)
 - [Video viewing complete](https://developers.line.biz/en/reference/messaging-api/#video-viewing-complete): 感官接受度普遍來說會是 影片 ➡️ 圖片 ➡️ 文字，但使用者看完影片若沒有回饋是否少了點什麼呢？你可以使用這個 API 讓 Chatbot 發送的訊息
 
+## LIFF - [Share Target Picker](https://developers.line.biz/en/reference/liff/#share-target-picker)
+
+<script async class="speakerdeck-embed" data-slide="14" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+過往在開發 Chatbot 可以使用漂亮的 [Flex Message](https://developers.line.biz/en/docs/messaging-api/using-flex-messages/) 讓回覆內容更活潑有特色，而在去年約三月左右釋出的強大功能 - [ShareTargetPicker](https://developers.line.biz/en/reference/liff/#share-target-picker)，讓使用者可以透過 LIFF 發送屬於自己的 Flex Message，不管**個人名片**、**揪團**、**公布訊息**都很適合用喔！
+
 - [Share Target Picker 已經公開，透過 LIFF 來分享訊息將更加的便利](https://engineering.linecorp.com/zh-hant/blog/liff-share-target-picker/)
 - [Share Target Picker: LIFF（LINE Frontend Framework）中的新功能](https://engineering.linecorp.com/zh-hant/blog/share-target-picker-liff/)
 - [開啟 LINE LIFF v2 的無限潛力 — liff.shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/start-liff-v2-sharetargetpicker-power/)
@@ -221,11 +227,51 @@ OCR 能用在什麼地方呢？透過這張簡報應該就有想法了：
 - [在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享 FlexMessage 訊息給 LINE 好友](https://engineering.linecorp.com/zh-hant/blog/how-to-use-liff-in-vue3/)
 - [梅竹黑客松賽前企業工作坊 – LIFF shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/meichu-liff-share-target-picker-workshop/)
 
-# MLOps
+## 其他
+
+- LIFF endpoint 可以放上 subpath(子路徑)以及各種 parameters，增加使用
+- LIFF Concatenate 模式
+  - [您需要了解有關新 LIFF URL 的所有資訊](https://engineering.linecorp.com/zh-hant/blog/new-liff-url-infomation/)
+- Channel Access Token v2.1
+  - 參考由 LINE API Expert - CL Sung 所寫的: [Helper module to generate JWT for LINE OAuth2 v2.1](https://dev.clsung.tw/?p=247)
+- Safety Retry API: 有時在群發訊息時會因為網路卡住，導致發送人員以為沒有成功而重發導致成本上升，透過此 API 可以設定 `Retry 機制`，如此一來若發生相關問題時也不會導致成本上升囉！
+<script async class="speakerdeck-embed" data-slide="18" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- `Webhook` 相關設定與 `Flex Message Update 2` 的部分可以參考筆者我於 [Chatbot Developers Taiwan](https://www.facebook.com/groups/chatbot.tw/) 所[分享的文章](https://engineering.linecorp.com/zh-hant/blog/line-api-platform-update-202010/#webhook-settings)
+
+## Messaging API(LINE Bot) 2020 更新時序圖
+
+<script async class="speakerdeck-embed" data-slide="30" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## LIFF 2020 更新時序圖
+
+<script async class="speakerdeck-embed" data-slide="31" data-id="73943b1c8b0f4dde9a81fd856cf4ab24" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+其他參考：
+
+- [The Best Practice Of LIFF - 卡米哥](https://medium.com/@EtrexKuo/the-best-practice-of-liff-fd89f2e612fc)
+
+# Scaling Machine Learning at LINE - Shawn Tsai & Penny Sun
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="822ff17fcd0b4a468ee1f275711b14f3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-當一個團隊要擴大時，在職責中也都需要劃分清楚，並會遇到許多挑戰，
+在 LINE Developers Meetups 中的[How ML Powers LINE Services](https://engineering.linecorp.com/zh-hant/blog/how-ml-powers-line-services/)有稍微提到類似人員分工的概念。隨著當團隊與專案規模要擴大時，在職責中也都需要劃分清楚並有效的運用人力，並會遇到許多挑戰，這部分也從團隊建立初期一人須擔任多重角色、開始需要商業專業的角色加入(機器學習服務工程師、資料分析師)、到進入到第四階段讓各個專業角色可以投入更多心力在對的題目上，讓資料驅動的決策方式深入組織中提升高品質機器學習的品質。
+
+<script async class="speakerdeck-embed" data-slide="14" data-id="822ff17fcd0b4a468ee1f275711b14f3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+我們有完備的資料平台來實現跨服務的資料基礎建設，叫做 `Information Universe` (`IU`)。透過單一的自助式資料平台上，讓各角色遵守統一的規範，符合一致的隱私權政策，作為資料科學與機器學習應用發展的基礎。
+
+<script async class="speakerdeck-embed" data-slide="17" data-id="822ff17fcd0b4a468ee1f275711b14f3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+了解了 IU 這個資料來源，接著就需要有 `MLOps` 讓各領域的角色可以更專注於自己的領域上，參考影片
+
+<script async class="speakerdeck-embed" data-slide="20" data-id="822ff17fcd0b4a468ee1f275711b14f3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+接著這部分就更詳細的講解我們如何透過 Machine Learning Universe (MLU) 來建立一個 ML Platform，詳細可以參考影片時間軸。
+
+<script async class="speakerdeck-embed" data-slide="39" data-id="822ff17fcd0b4a468ee1f275711b14f3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+如何讓人力有效被運用一直都是個大議題，會因應不同情境而調整方式，希望能透過上述的內容以及影片讓大家可以有個參考的對象。
 
 # Security
 
