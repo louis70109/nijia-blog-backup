@@ -6,7 +6,7 @@ tags:
   - LIFF
   - Twitch
   - Bottender
-categories: Chatbot
+categories: 應用
 abbrlink: 3750677153
 date: 2020-03-09 23:18:11
 ---
@@ -73,10 +73,10 @@ https://liff.line.me?state=code={NOTIFY_CODE}&state={NOTIFY_STATE}
 這樣的網址 api 接到之後一定會出問題，所以我就使用以下的 code 來幫我把它處理成我們認識的 query string:
 
 ```javascript
-const query = req.query["liff.state"].split("?")[1].split("&");
+const query = req.query['liff.state'].split('?')[1].split('&');
 const notifyPayload = { code: null, state: null };
-query.forEach(el => {
-  const queryObj = el.split("=");
+query.forEach((el) => {
+  const queryObj = el.split('=');
   if (queryObj[0] in notifyPayload) notifyPayload[queryObj[0]] = queryObj[1];
 });
 ```

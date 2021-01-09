@@ -1,13 +1,13 @@
 ---
-title: 透過 IRC 與 Twich 聊天室連結互動
+title: 透過 IRC 與 Twitch 聊天室連結互動
 tags:
   - Twitch
   - irc
   - chatbot
 abbrlink: 307657668
+categories: 應用
 date: 2019-12-24 22:09:27
 ---
-
 
 # 前言
 

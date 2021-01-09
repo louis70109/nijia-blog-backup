@@ -3,7 +3,7 @@ title: 如何建立一個跨平台的 Twitch 機器人
 tags:
   - Chatbot
   - bottender
-categories: Chatbot
+categories: 應用
 abbrlink: 4054342848
 date: 2020-01-12 00:53:22
 ---
@@ -79,11 +79,11 @@ Console 是 bottender 的特色之一，可以在終端機上直接測試 Bot �
 接著要讓同樣的 Action 可以導到 Messenger 以及 LINE，bottender 提供了可以設計針對特定平台處理 Action，如下:
 
 ```javascript
-import { platform } from "bottender/router";
+import { platform } from 'bottender/router';
 export default async function App(): Promise<void> {
   return await router([
-    platform("line", LineAction),
-    platform("messenger", MessengerAction),
+    platform('line', LineAction),
+    platform('messenger', MessengerAction),
   ]);
 }
 ```
