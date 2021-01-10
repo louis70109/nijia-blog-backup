@@ -41,6 +41,14 @@ tags:
 
 ## 讓 Websocket 連結 Chatbot 跟前端吧！
 
+首先先說明一下 Chatbot 這部分，一般來說寫 Chatbot 都是使用 Web API 的形式接收 Webhook 事件，但因為彈幕是即時性的且現在需求無需儲存文字，因此就使用 Websocket 來溝通前後端啦！
+
+> NodeJS Webhook 寫法參考這篇: [JavaScript | WebSocket 讓前後端沒有距離](https://medium.com/enjoy-life-enjoy-coding/javascript-websocket-%E8%AE%93%E5%89%8D%E5%BE%8C%E7%AB%AF%E6%B2%92%E6%9C%89%E8%B7%9D%E9%9B%A2-34536c333e1b)
+
+那我是怎麼讓 Chatbot Webhook 事件透過 Websocket 送出去呢？答案很簡單，參考[這份程式碼](https://github.com/louis70109/Screen-LINE-Bullets/blob/master/chatbot/index.js)或`下方 Gist` 第`14、15行`，我設定了`BULLETS`、`USER_AVATAR` 兩個全域變數，再透過 65 行把 Socket Server 與 API Server 綁在一起，接著第 67~82 行的 Websocket
+
+<script src="https://gist.github.com/louis70109/fa0ae938a4b6f141e95191ff910a959e.js"></script>
+
 ## 在本地端啟動專案
 
 - chatbot: Heroku or ngrok
@@ -50,6 +58,8 @@ tags:
 - 網頁提到最高層
 
 # 結論
+
+這還只是很陽春的功能，還沒有後台可以調整各種內容，
 
 對直播設定有興趣，請參考[如何只使用一台 Mac 進行直播 feat. SoundFlower, OBS, Youtube](https://nijialin.com/2020/11/29/mac-stream-soundflower/)
 
