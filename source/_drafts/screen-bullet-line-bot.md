@@ -84,9 +84,10 @@ tags:
 
 ![](https://nijialin.com/images/2021/bullets/1.png)
 
-- 開啟 OBS 後，先建立一個場景，這邊我先放一張圖片來示意一下畫面
+- 開啟 OBS 後，先建立一個場景，這邊我先放一張圖片跟視訊鏡頭讓畫面別那麼乾
 
 ![](https://nijialin.com/images/2021/bullets/2.png)
+
 ![](https://nijialin.com/images/2021/bullets/3.png)
 ![](https://nijialin.com/images/2021/bullets/4.png)
 ![](https://nijialin.com/images/2021/bullets/5.png)
