@@ -1,5 +1,5 @@
 ---
-title: 'TECHPULSE 2020 - Keynote'
+title: 'LINE TAIWAN TECHPULSE 2020 議程內容分享'
 categories: 學習紀錄
 tags:
 ---
@@ -281,7 +281,12 @@ OCR 能用在什麼地方呢？透過這張簡報應該就有想法了：
 
 # 結論
 
-經過一年的淬鍊
+從「LINE TAIWAN TECHPULSE 2020」大會除了分享 LINE Platform 上的技術外，也從與大家交流中學習到不少寶貴的知識與建議，LINE 致力於打造一個優良的平台給每位使用者，並持續挑戰不同的新技術。而在有規模的企業中要導入任何技術技術實屬不易，希望透過這篇文章分享我們的經驗給讀者們，若對於一同打造 WoW 產品有興趣的讀者，不妨來[加入我們](https://careers.linecorp.com/jobs?co=Taiwan)吧！期待於 **LINE TAIWAN TECHPULSE 2021** 可以再與大家見面！
+
+- [Keynote: Marco](https://youtu.be/XE7-xpTCCTM)
+- [Life on LINE CLOVA: Aaron Wu & Cid Chang](https://youtu.be/C8j-tZEbMaQ)
+- [LINE Platform API Update: Evan Lin](https://youtu.be/6_I4kEt8LS8)
+- [Scaling Machine Learning at LINE: Shawn Tsai & Penny Sun](https://youtu.be/YCKYwfGY-Rc)
 
 ![](https://nijialin.com/images/2020/techpulse/see-you-next-year.jpg)
 
