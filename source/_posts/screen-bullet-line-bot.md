@@ -2,9 +2,8 @@
 title: 開發結合 LINE Chatbot 的簡易彈幕系統
 categories: 應用
 date: 2021-01-11 12:50:28
-tags:
+tags: ['LINE', 'Chatbot', 'Vue3', 'OBS']
 ---
-
 
 <style>
   section.compact {
@@ -117,7 +116,7 @@ tags:
 
 # 結論
 
-目前這個彈幕系統還只是很陽春的版本，未來可以加上後台調整各種內容(文字、速度...)，若你對於前端有較深的理解或是想練練手，歡迎送 [Pull Request](https://github.com/louis70109/Screen-LINE-Bullets/pulls) 給我的 [Screen-LINE-Bullets](https://github.com/louis70109/Screen-LINE-Bullets)，同時也歡迎大家拿去玩玩。
+目前這個彈幕系統還只是很陽春的版本，未來可以加上後台調整各種內容(文字、速度...)，若你對於前端有較深的理解或是想練練手，歡迎送 [Pull Request](https://github.com/louis70109/Screen-LINE-Bullets/pulls) 給我的 [Screen-LINE-Bullets](https://github.com/louis70109/Screen-LINE-Bullets)，同時也歡迎大家拿去玩玩，之後有個多應用會再分享給大家！
 
 > 若對直播設定有興趣，請參考[如何只使用一台 Mac 進行直播 feat. SoundFlower, OBS, Youtube](https://nijialin.com/2020/11/29/mac-stream-soundflower/)
 
