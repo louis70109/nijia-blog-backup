@@ -50,19 +50,21 @@ tags: ['LINE', 'Chatbot', 'Vue3', 'OBS']
 
 那我是怎麼讓 Chatbot Webhook 事件透過 Websocket 送出去呢？答案很簡單，參考[這份程式碼](https://github.com/louis70109/Screen-LINE-Bullets/blob/master/chatbot/index.js)或`下方 Gist`
 
+<script src="https://gist.github.com/louis70109/fa0ae938a4b6f141e95191ff910a959e.js"></script>
+
 - 第**14、15 行**，我設定了`BULLETS`、`USER_AVATAR` 兩個全域變數
 - **45 行** 則是使用 [Quick Reply](https://developers.line.biz/en/docs/messaging-api/using-quick-reply/) 功能讓用戶可以快速發送訊息
 - 透過 **65 行**把 Socket Server 與 API Server 綁在一起
 - 接著第 **67~82 行**的 Websocket 中使用 `setInterval()` 來週期性地送文字出去
 - 發送後需要把`全域變數`清空，否則前端會出現 undefined
 
-<script src="https://gist.github.com/louis70109/fa0ae938a4b6f141e95191ff910a959e.js"></script>
-
 > 或許讀者已經注意到一開始的圖片是使用手機點選 [Quick Reply](https://developers.line.biz/en/docs/messaging-api/using-quick-reply/)，這部分初步考量是為了避免來賓亂打字導致現場不可收拾，讀者若有照著實作請斟酌使用囉！
 
 ## 彈幕程式碼解析
 
 這邊為了方便我使用了 Vue 3，參考[這頁的程式碼](https://github.com/louis70109/Screen-LINE-Bullets/blob/master/frontend/src/components/Barrage.vue)並引入了 `{ onMounted, onUnmounted }` 來協助網頁生命週期當眾的`掛載`以及`卸載`，以下就來敘述一下程式碼區塊的用途：
+
+<script src="https://gist.github.com/louis70109/308be6a80d2e7977926ae099bb6471b8.js"></script>
 
 - 12 行: 從環境變數中取得 `VUE_APP_WEBSOCKET_URL`並建立 Websocket 連線
 - 19 行: 把 Websocket 的 `onmessage` 監聽事件掛載起來
