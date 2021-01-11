@@ -16,7 +16,7 @@ tags:
 
 # 前言
 
-![](https://nijialin.com/images/2021/bullts/bullets-sample1.gif)
+![](https://nijialin.com/images/2021/bullets/bullets-sample1.gif)
 
 去年下半年時於 [COSCUP 2020](https://coscup.org/2020/) 的閉幕閃電秀中與 [Chatbot 社群小聚](https://github.com/Chatbot-Taiwan/meetups/blob/master/taipei/2020.md#chatbot-meetup-23-at-onramp-studio)看到社群朋友展示使用 LIFF 來發射彈幕覺得有趣又回憶滿滿，從以前在看**ニコニコ動画**時就很常看到彈幕出現在影片中(甚至有時候彈幕還比影片還好笑)，而透過這樣的互動讓觀眾並及時回饋，拉近活動(影片、直播、演唱會...)與觀眾的距離。想到去年因為疫情需要把社群聚會改成線上，剛好在前一陣子搜尋到[這篇文章](https://qiita.com/youtoy/items/051dc658025a3b21c7f0)，以下就使用 Chatbot 搭配文章在使用 OBS 來使用它！
 
@@ -82,15 +82,15 @@ tags:
 
 > 若你正在照著本篇實作，請先[下載 OBS](https://obsproject.com/download)
 
-![](https://nijialin.com/images/2021/bullts/1.png)
+![](https://nijialin.com/images/2021/bullets/1.png)
 
-- 開啟 OBS 後，
+- 開啟 OBS 後，先建立一個場景，這邊我先放一張圖片來示意一下畫面
 
-![](https://nijialin.com/images/2021/bullts/2.png)
-![](https://nijialin.com/images/2021/bullts/3.png)
-![](https://nijialin.com/images/2021/bullts/4.png)
-![](https://nijialin.com/images/2021/bullts/5.png)
-![](https://nijialin.com/images/2021/bullts/6.png)
+![](https://nijialin.com/images/2021/bullets/2.png)
+![](https://nijialin.com/images/2021/bullets/3.png)
+![](https://nijialin.com/images/2021/bullets/4.png)
+![](https://nijialin.com/images/2021/bullets/5.png)
+![](https://nijialin.com/images/2021/bullets/6.png)
 
 - 網頁提到最高層
 
