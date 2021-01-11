@@ -1,5 +1,5 @@
 ---
-title: 【標題】題目
+title: 開發結合 LINE Chatbot 的簡易彈幕系統
 categories: 應用
 tags:
 ---
@@ -79,6 +79,18 @@ tags:
 > 你也可以部署上 Heroku，效果會是一樣的喔！
 
 ## 彈幕與 OBS 融合
+
+> 若你正在照著本篇實作，請先[下載 OBS](https://obsproject.com/download)
+
+![](https://nijialin.com/images/2021/bullts/1.png)
+
+- 開啟 OBS 後，
+
+![](https://nijialin.com/images/2021/bullts/2.png)
+![](https://nijialin.com/images/2021/bullts/3.png)
+![](https://nijialin.com/images/2021/bullts/4.png)
+![](https://nijialin.com/images/2021/bullts/5.png)
+![](https://nijialin.com/images/2021/bullts/6.png)
 
 - 網頁提到最高層
 
