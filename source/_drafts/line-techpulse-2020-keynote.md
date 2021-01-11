@@ -259,13 +259,19 @@ OCR 能用在什麼地方呢？透過這張簡報應該就有想法了：
 
 <script async class="speakerdeck-embed" data-slide="14" data-id="822ff17fcd0b4a468ee1f275711b14f3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YCKYwfGY-Rc?start=634" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 我們有完備的資料平台來實現跨服務的資料基礎建設，叫做 `Information Universe` (`IU`)。透過單一的自助式資料平台上，讓各角色遵守統一的規範，符合一致的隱私權政策，作為資料科學與機器學習應用發展的基礎。
 
 <script async class="speakerdeck-embed" data-slide="17" data-id="822ff17fcd0b4a468ee1f275711b14f3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YCKYwfGY-Rc?start=725" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 了解了 IU 這個資料來源，接著就需要有 `MLOps` 讓各領域的角色可以更專注於自己的領域上，參考影片
 
 <script async class="speakerdeck-embed" data-slide="20" data-id="822ff17fcd0b4a468ee1f275711b14f3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YCKYwfGY-Rc?start=897" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 接著這部分就更詳細的講解我們如何透過 Machine Learning Universe (MLU) 來建立一個 ML Platform，詳細可以參考影片時間軸。
 
@@ -273,15 +279,9 @@ OCR 能用在什麼地方呢？透過這張簡報應該就有想法了：
 
 如何讓人力有效被運用一直都是個大議題，會因應不同情境而調整方式，希望能透過上述的內容以及影片讓大家可以有個參考的對象。
 
-# Security
-
-最後一定要提到資訊安全相關的議題，在日常對話中其實 LINE 就透過許多加密手段來確保資料，讓每位使用者在使用 LINE 時可以更安心的使用，
-
-<script async class="speakerdeck-embed" data-slide="34" data-id="e69b000e4fe6410e9d062f1f5584c276" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-而在近日推出的生物辨識登入，目的就是讓使用者可以不透過密碼靠特徵或指紋即可登入，降低輸入被竊取的風險，更詳細內容可以參考這篇：[不怕忘記密碼了～ LINE 開放「生物辨識」登入，iPad 用戶搶先體驗！](http://official-blog.line.me/tw/archives/84191413.html)
-
 # 結論
+
+經過一年的淬鍊
 
 ![](https://nijialin.com/images/2020/techpulse/see-you-next-year.jpg)
 

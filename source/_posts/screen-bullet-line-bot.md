@@ -108,11 +108,10 @@ tags: ['LINE', 'Chatbot', 'Vue3', 'OBS']
 
 ![](https://nijialin.com/images/2021/bullets/6.png)
 
-- 最後就可以在 Chatbot 中按下 Quick Reply 來跑彈幕囉！這樣是不是很好玩呢：）
-
 ## 成果
 
-![](https://nijialin.com/images/2021/bullets/bullets-sample1.gif)
+- 最後就可以在 Chatbot 中按下 Quick Reply 來跑彈幕囉！這樣是不是很好玩呢：）
+- 最後你可以錄影或是透過串流來與觀眾玩玩看喔！
 
 # 結論
 
