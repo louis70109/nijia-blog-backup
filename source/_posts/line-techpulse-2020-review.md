@@ -1,8 +1,10 @@
 ---
-title: 'LINE TAIWAN TECHPULSE 2020 議程內容分享'
+title: LINE TAIWAN TECHPULSE 2020 議程內容分享
 categories: 學習紀錄
+date: 2021-01-11 18:10:07
 tags:
 ---
+
 
 <style>
   section.compact {
