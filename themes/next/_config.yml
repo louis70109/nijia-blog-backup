@@ -502,7 +502,7 @@ math:
 
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
-pjax: true
+pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
@@ -663,7 +663,7 @@ google_analytics:
   only_pageview: false
 
 facebook_sdk:
-  enable: true
+  enable: false
   app_id: 792017867910978
   fb_admin: #<user_id>
   like_button: true
@@ -673,7 +673,7 @@ facebook_sdk:
 # This plugin depends on Facebook SDK.
 # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
 facebook_comments_plugin:
-  enable: true
+  enable: false
   num_of_posts: 10 # min posts num is 1
   width: 100% # default width is 550px
   scheme: light # default scheme is light (light or dark)
@@ -823,7 +823,7 @@ mermaid:
 # For more information: http://velocityjs.org
 motion:
   enable: true
-  async: false
+  async: true
   transition:
     # Transition variants:
     # fadeIn | flipXIn | flipYIn | flipBounceXIn | flipBounceYIn
