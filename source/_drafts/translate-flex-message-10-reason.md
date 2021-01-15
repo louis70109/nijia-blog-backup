@@ -35,8 +35,8 @@ tags: ['LINE', 'Flex Message']
 6. 使用 px 來設定 Margin & Spacing
 7. 圖片大小（以 px 和 ％ 為單位）
 8. 內容可為空的 Box(Empty Box)
-9. 增加了單個氣泡的 JSON 最大大小。
-10. 轉盤中的最大氣泡數增加。
+9. 增加了單一 Bubble 的 JSON Max size
+10. 增加了 Carousel 的 Bubble 數量
 
 只需查看每個功能的名稱即可。就像看到後面 如果您想查看下一頁，我將告訴您。
 
@@ -303,16 +303,17 @@ Box 是提供 Flex Message 佈局的組件，類似於 Web 開發中的嵌套 <d
 
 但是為了獲得更大的靈活性，這個 2020 Flex Message 團隊可以讓您發送消息。即使未在內容中指定項目
 
-# 9. Max size of JSON for a Single bubble is increased
+# 9. 增加了單一 Bubble 的 JSON Max size
 
-我對此表示懷疑，我必須相信，在我們社區中，曾經有一些開發人員將 Flex Message 作為單個氣泡創建，JSON 的大小已超過 10KB 的限制。消息在那裡。
-但是從現在開始，您將能夠在消息中指定 3 倍的詳細信息，因為單個氣泡 Flex Message 中 JSON 的大小已經擴展到 30KB。
+曾經我認為 size 應該很夠用，但因為遇到了一些社群上的開發者將 Flex Message 作為單一 Bubble 創建，如此一來訊息的 JSON 的大小就會超過 10KB 的限制。
 
-# 10. Max number of bubbles in a Carousel is increased
+但是從現在開始，您將能夠在訊息中使用 3 倍的訊息量，因為單個 Bubble 的 Flex Message 中 JSON 的大小已經擴展到 30KB 囉！
 
-很多人都知道，在 LINE 中以模板消息或 Flex 消息形式創建 “輪播” 消息時，每條消息最多可以包含 10 個氣泡。
+# 10. 增加了 Carousel 的 Bubble 數量
 
-但是，幸運的是，在這裡讀過這篇文章的人更喜歡 因為我會說，今天，Flex Message 給您每條消息最多 12 個氣泡。
+很多人都知道，在 LINE 中以 Template Message 或 Flex Message 的形式創建 "Carousel Message" 時，每個訊息最多只能包含 10 個 Bubble。
+
+而在讀過本篇的您將會很幸運，因為我會跟您說，一個 Flex Message 讓您的每條訊息**最多擁有 12 個 Bubble**。
 
 # 結論
 
