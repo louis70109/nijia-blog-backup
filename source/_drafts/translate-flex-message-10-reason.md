@@ -17,24 +17,26 @@ tags: ['LINE', 'Flex Message']
 ![](https://nijialin.com/images/2021/translate/flex2/1.png)
 
 > [原文](https://medium.com/linedevth/10-%E0%B8%9F%E0%B8%B5%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B9%83%E0%B8%99-flex-message-%E0%B8%9B%E0%B8%B5-2020-%E0%B8%AD%E0%B8%B4%E0%B8%AA%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%83%E0%B8%99-line-47d9ba2cf9ed)
-> 參考之前的文章 - [使用 Flex Message 打破 LINE Messaging API 中的傳統顯示規則](https://medium.com/linedevth/%E0%B8%89%E0%B8%B5%E0%B8%81%E0%B8%81%E0%B8%8E%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9C%E0%B8%A5%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%E0%B9%86%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-flex-message-4ad4370562f)
 
-通常，Flex 消息或 LINE 消息允許開發人員獨立設計。並且所有設備上的顯示結果將每年更新一次，在 2020 年，Flex Message 團隊回應了開發人員的聲音 準備發布新功能 比以往更輕鬆地將您的想像力轉換成 LINE 文本
-對於閱讀本文的任何人 而且仍然不熟悉 Flex Message，建議先了解[這篇文章](https://medium.com/linedevth/%E0%B8%89%E0%B8%B5%E0%B8%81%E0%B8%81%E0%B8%8E%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9C%E0%B8%A5%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%E0%B9%86%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-flex-message-4ad4370562f)。
+經常許多開發人員會在 LINE 中設計 Flex Message，讓不同設備的使用者可以收到美美的訊息。在 2020 年也就是去年，Flex Message 開發團隊聽到各位開發者的聲音了，發布了比以往更輕鬆並能將您的想像力轉換成 LINE 樣式的版本。
 
+若您對於 Flex Message 不熟悉，建議先了解[這篇文章](https://medium.com/linedevth/%E0%B8%89%E0%B8%B5%E0%B8%81%E0%B8%81%E0%B8%8E%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9C%E0%B8%A5%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%E0%B9%86%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-flex-message-4ad4370562f)。
+
+- [使用 Flex Message 打破 LINE Messaging API 中的傳統顯示規則](https://medium.com/linedevth/%E0%B8%89%E0%B8%B5%E0%B8%81%E0%B8%81%E0%B8%8E%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9C%E0%B8%A5%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%E0%B9%86%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-flex-message-4ad4370562f)
 <!-- more -->
 
-還有 10 個新功能，將有助於釋放 2020 年 Flex 消息中消息設計的局限性…… 天哪！…… 已解決…… 天哪！……
+這次有 10 個新功能，將有助於了解 2020 年 Flex Message 中訊息設計的延展性。
 
 1. APNG Support
-2. Content Alignment
-3. 字體大小和圖標大小（以 px 為單位） 4.縮小到適合
-4. 漸變背景
-5. px 的邊距和間距
-6. 圖片大小（以 px 和％為單位）
-7. 空盒子
-8. 增加了單個氣泡的 JSON 最大大小。
-9. 轉盤中的最大氣泡數增加。
+2. 內容排版
+3. 字體大小和圖示大小（以 px 為單位）
+4. Shrink-to-Fit
+5. 漸層背景(Gradient Background)
+6. 使用 px 來設定 Margin & Spacing
+7. 圖片大小（以 px 和 ％ 為單位）
+8. 內容可為空的 Box(Empty Box)
+9. 增加了單個氣泡的 JSON 最大大小。
+10. 轉盤中的最大氣泡數增加。
 
 只需查看每個功能的名稱即可。就像看到後面 如果您想查看下一頁，我將告訴您。
 
@@ -60,7 +62,7 @@ tags: ['LINE', 'Flex Message']
 - 如果指定的圖像 URL 大於 300KB，則動畫將不起作用，並且僅呈現圖像的第一幀。
 - 每條消息最多可以指定 **3 個動畫圖像**組件，如果指定的數量超過 3，則無法發送消息。
 
-# 2. Content Alignment
+# 2. 內容排版
 
 當要對 Box 中的項目進行排序時，我們經常使用諸如 flex，width 和 height 之類的屬性來劃分寬度（垂直水平）和高度（水平垂直）的比率，並因此分配間距和邊距。 Box 內部組件之間存在一定距離，這與我們必須為每個組件配置它的方式相同。
 今年，Flex Message 團隊準備了 2 個新屬性，您只能將它們分配給一個 Box。但這會影響所有項目的安排，這絕對容易。
@@ -131,7 +133,7 @@ tags: ['LINE', 'Flex Message']
 
 ![](https://nijialin.com/images/2021/translate/flex2/6.png)
 
-# 3. Font size & Icon size in px
+# 3. 字體大小和圖示大小（以 px 為單位）
 
 要通過指定屬性決定了字體的大小尺寸中的[文字](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#text) 部分，，[跨度組件](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)和[圖標](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)你的組件將通過預先定義的關鍵字來確定（xxs(11px)，xs(13px)，sm(14px)，md(16px)，lg(19px)，xl(22px)，xxl(29px)，3xl(35px)，4xl(48px)，5xl(74px)），以及這些組件的大小。像我以前那樣，只是一個夢想
 
@@ -193,7 +195,7 @@ tags: ['LINE', 'Flex Message']
 
 AdjustMode 可以在 LINE v10.13.0 應用程序之後顯示。
 
-# 5. Gradient Background
+# 5. 漸層背景(Gradient Background)
 
 去年 我們可以使用名為 **backgroundColor** 的屬性更改 Box 的背景顏色。具有支持 alpha（rgba）的十六進制顏色代碼。
 今年，Flex Message 團隊使我們能夠設置漸變背景顏色，並具有一個稱為 **background** 的附加屬性。它包含以下子屬性：
@@ -224,7 +226,7 @@ AdjustMode 可以在 LINE v10.13.0 應用程序之後顯示。
 
 ![](https://nijialin.com/images/2021/translate/flex2/9.png)
 
-# 6. Margin & Spacing in px
+# 6. 使用 px 來設定 Margin & Spacing
 
 先前定義的間隙間距和餘量通過在 Flex 消息的整個屬性將通過定義的關鍵字來確定，預先（none，xs，sm，md，lg，xl，xxl）而已。
 但是為了提高消息設計的分辨率和準確性，今年 Flex Message 團隊現在已經能夠識別像素間隙。
@@ -268,7 +270,7 @@ AdjustMode 可以在 LINE v10.13.0 應用程序之後顯示。
 
 從現在開始，Box 中每個由邊距指定的組件都可以用於間距。（以前這不會影響 Box 中第一個列出的組件）
 
-# 7. Image size in px and %
+# 7. 圖片大小（以 px 和 ％ 為單位）
 
 以前設置圖像的大小。我們可以定義一個命名的屬性大小定義的關鍵字的，預（xxs，xs，sm，md，lg，xl，xxl，3xl，4xl，5xl，full），其中考慮到現實。這種大小確定仍然不是很獨立。
 但是從現在開始，現在可以設置大小的的圖像分量中的像素和百分比單位，設定大小將決定的圖像的寬度（寬度）和高度將被自動計算。
@@ -285,7 +287,7 @@ AdjustMode 可以在 LINE v10.13.0 應用程序之後顯示。
 
 ![](https://nijialin.com/images/2021/translate/flex2/11.png)
 
-# 8. Empty Box
+# 8. 內容可為空的 Box(Empty Box)
 
 Box 是提供 Flex Message 佈局的組件，類似於 Web 開發中的嵌套 <div> 層。
 
