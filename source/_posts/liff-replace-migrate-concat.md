@@ -1,10 +1,9 @@
 ---
 title: 'LIFF migration: from Replace to Concatenate mode'
-categories: 學習紀錄
+categories: 'LINE'
 date: 2021-01-19 16:50:13
-tags:
+tags: ['LIFF', 'LINE']
 ---
-
 
 <style>
   section.compact {
@@ -32,7 +31,7 @@ tags:
 於 2020/11/20 有發過即將移除的[新聞](https://developers.line.biz/en/news/2020/11/20/discontinue-replace-mode-announcement/)，隨後也有相關文章敘述這件事，許多更改內容可以參閱：
 
 - [您需要了解有關新 LIFF URL 的所有資訊](https://engineering.linecorp.com/zh-hant/blog/new-liff-url-infomation/)
-- LAE 戴均民 - [LINE LIFF v2 的 replace 模式即將被移除及建議程式寫法](https://hackmd.io/@taichunmin/H1c7qJEJu)
+- LAE 戴均民 - [LINE LIFF v2 的 replace 模式即將被移除及建議程式寫法](https://taichunmin.idv.tw/blog/2021-01-19-line-liff-v2-replace-deprecated.html)
 - LAE 卡米哥 - [The Best Practice Of LIFF](https://etrexkuo.medium.com/the-best-practice-of-liff-fd89f2e612fc)
 <!-- more -->
 
