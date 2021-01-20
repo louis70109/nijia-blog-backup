@@ -38,11 +38,11 @@ tags: ['LINE', 'Flex Message']
 9. 增加了單一 Bubble 的 JSON Max size
 10. 增加了 Carousel 的 Bubble 數量
 
-只需查看每個功能的名稱即可。就像看到後面 如果您想查看下一頁，我將告訴您。
+您只需查看每個功能的名稱即可。我將會在你的查詢過程中告訴您～
 
 # 1. APNG Support
 
-今天，任何想要使用動畫（APNG 或 GIF）的人都可以在 Flex Message 中使用，只需在 “圖像” 組件中輸入名為 animation 的屬性即可。
+當今天有任何開發者想在 Flex Message 中使用動畫(APNG)，只需在 "圖片" 的 Component 中加入名為 animation 的屬性即可。
 
 - animated: `true`, `false`(default)
 
@@ -58,25 +58,25 @@ tags: ['LINE', 'Flex Message']
 
 ## 注意
 
-- 如果用戶未在 "Settings > Photos & videos" 中 disable **" Auto-play GIFs"**菜單，則 Animation 將繼續運行。
-- 如果指定的圖像 URL 大於 300KB，則動畫將不起作用，並且僅呈現圖像的第一幀。
-- 每條消息最多可以指定 **3 個動畫圖像**組件，如果指定的數量超過 3，則無法發送消息。
+- 需注意用戶是否有在 "設定 > 照片．影片" 中開啟 **" Auto-play GIFs"** 選項，否則 Animation 將會不能執行。
+- 當前使用的圖片 URL 若大於 300KB，則動畫將無法使用，並且只會呈現第一張圖片。
+- 每個訊息最多可以指定 **3 個動畫圖片** Component，超過則無法發送訊息。
 
 # 2. 內容排版
 
-當要對 Box 中的項目進行排序時，我們經常使用諸如 flex，width 和 height 之類的屬性來劃分寬度（垂直水平）和高度（水平垂直）的比率，並因此分配間距和邊距。 Box 內部組件之間存在一定距離，這與我們必須為每個組件配置它的方式相同。
-今年，Flex Message 團隊準備了 2 個新屬性，您只能將它們分配給一個 Box。但這會影響所有項目的安排，這絕對容易。
+當我們要對 Box 中的內容進行排序時，經常使用 flex、width 和 height 之類的屬性來劃分寬度（horizontal）和高度（vertical）的比例，藉此分配間距和邊距。 Box 裡的內容之間都會需要一定距離，讓整體內容看起來更舒適。
+此時 Flex Message 團隊準備了 2 個新屬性，您只要在 Box 中使用它們，將能讓您的內容安排更加容易。
 
-## 2.1 justifyContent
+## 2.1 [justifyContent](https://developers.line.biz/en/docs/messaging-api/flex-message-layout/#justify-content)
 
-該屬性以與我們在父級中設置的相同的方式幫助安排項目，每個值具有以下屬性。
+該屬性讓我們能在父階層中設置幫助安排內容，且以下每個值具有不同功能屬性：
 
-- `flex-start`：這將從頭開始對所有項目進行排序。如果是水平的，則將基於氣泡中給出的方向：ltr（從左至右）或 rtl（從右至左），如果它是垂直的，則所有項目將從上至下進行排序。
-- `center`：將所有項目垂直和水平排列在中心
-- `flex-end`：是最後一點的所有項目 如果它是水平的，則將基於氣泡中從 ltr 或 rtl 指定的方向；如果它是垂直的，則所有項目將從下至上進行排序。
-- `space-between`：這是第一個和最後一個項目在每一側對齊的佈局，而其餘項目將平均分配到顯示屏的中央。
-- `space-around`：通過將每個項目的距離均勻地除以該項目的寬高比來進行排序。
-- `space-evenly`：是通過平均劃分每個項目的距離來對項目進行排序
+- `flex-start`：這將從起點開始對所有項目進行排序。如果是水平，則將基於 bubble 給出的方向：ltr(從左至右)或 rtl(從右至左)；反之若是垂直，則所有項目將從上至下進行排序。
+- `center`：將所有項目排列在中心點
+- `flex-end`：這將從終點開始對所有項目進行排序。如果是水平，則將基於 bubble 給出的方向：ltr(從左至右)或 rtl(從右至左)；反之若是垂直，則所有項目將從下至上進行排序。
+- `space-between`：第一個與最後一個項目貼齊左右側的佈局，其餘項目平均分配到顯示畫面的中心。
+- `space-around`：將每個項目之間的距離均勻地分配。
+- `space-evenly`：平均劃分每個項目與訊息佈局的距離來進行排序
 
 ```json
 {
@@ -101,11 +101,11 @@ tags: ['LINE', 'Flex Message']
 
 ![](https://nijialin.com/images/2021/translate/flex2/4.png)
 
-## 2.2 alignItems
+## 2.2 [alignItems](https://developers.line.biz/en/docs/messaging-api/flex-message-layout/#align-items)
 
-該屬性有助於以與我們在 parent 中指定的相反的方式排列項目，每個值具有以下屬性。
+該屬性能讓我們指定父階層中的項目更換排序方向，而每個值具有以下屬性功能：
 
-- `flex-start`：如果父項水平排列，則所有項目將自上而下；如果父母具有垂直排列，則所有項目將從一開始（取決於氣泡中的哪個方向）到 ltr 或 rtl）
+- `flex-start`：如果父階層水平排列，則所有項目將自上而下；如果父母垂直排列，則所有項目將從一開始（取決於氣泡中的哪個方向）到 ltr 或 rtl）
 - `center`：將所有項目排列在水平和垂直方向的中心
 - `flex-end`：如果將父級水平放置，則所有項目將從下至上，並且如果將父級垂直排列，則所有項目將從末尾排列（取決於氣泡在哪個方向 ltr 或 rtl）
 
