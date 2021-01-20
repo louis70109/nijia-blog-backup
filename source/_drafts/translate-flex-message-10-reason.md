@@ -71,12 +71,12 @@ tags: ['LINE', 'Flex Message']
 
 該屬性讓我們能在父階層中設置幫助安排內容，且以下每個值具有不同功能屬性：
 
-- `flex-start`：這將從起點開始對所有項目進行排序。如果是水平，則將基於 bubble 給出的方向：ltr(從左至右)或 rtl(從右至左)；反之若是垂直，則所有項目將從上至下進行排序。
+- `flex-start`：這將從起點開始對所有項目進行排列。如果是水平，則將基於 bubble 給出的方向：ltr(從左至右)或 rtl(從右至左)；反之若是垂直，則所有項目將從上至下進行排列。
 - `center`：將所有項目排列在中心點
-- `flex-end`：這將從終點開始對所有項目進行排序。如果是水平，則將基於 bubble 給出的方向：ltr(從左至右)或 rtl(從右至左)；反之若是垂直，則所有項目將從下至上進行排序。
+- `flex-end`：這將從末端開始對所有項目進行排列。如果是水平，則將基於 bubble 給出的方向：ltr(從左至右)或 rtl(從右至左)；反之若是垂直，則所有項目將從下至上進行排列。
 - `space-between`：第一個與最後一個項目貼齊左右側的佈局，其餘項目平均分配到顯示畫面的中心。
 - `space-around`：將每個項目之間的距離均勻地分配。
-- `space-evenly`：平均劃分每個項目與訊息佈局的距離來進行排序
+- `space-evenly`：平均劃分每個項目與訊息佈局的距離來進行排列
 
 ```json
 {
@@ -105,9 +105,9 @@ tags: ['LINE', 'Flex Message']
 
 該屬性能讓我們指定父階層中的項目更換排序方向，而每個值具有以下屬性功能：
 
-- `flex-start`：如果父階層水平排列，則所有項目將自上而下；如果父母垂直排列，則所有項目將從一開始（取決於氣泡中的哪個方向）到 ltr 或 rtl）
-- `center`：將所有項目排列在水平和垂直方向的中心
-- `flex-end`：如果將父級水平放置，則所有項目將從下至上，並且如果將父級垂直排列，則所有項目將從末尾排列（取決於氣泡在哪個方向 ltr 或 rtl）
+- `flex-start`：如果父階層水平排列，則所有項目將自上而下；如果父母垂直排列，則所有項目將從一開始（取決於 Bubble 的方向）
+- `center`：將所有項目排列在水平和垂直方向的中心點
+- `flex-end`：如果將父階層水平排列，則所有項目將從下至上；並且如果將父接成垂直排列，則所有項目將從末端排列（取決於 Bubble 的方向）
 
 ```json
 {
@@ -135,11 +135,11 @@ tags: ['LINE', 'Flex Message']
 
 # 3. 字體大小和圖示大小（以 px 為單位）
 
-要通過指定屬性決定了字體的大小尺寸中的[文字](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#text) 部分，，[跨度組件](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)和[圖標](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)你的組件將通過預先定義的關鍵字來確定（xxs(11px)，xs(13px)，sm(14px)，md(16px)，lg(19px)，xl(22px)，xxl(29px)，3xl(35px)，4xl(48px)，5xl(74px)），以及這些組件的大小。像我以前那樣，只是一個夢想
+過往只能指定屬性來決定[文字的大小](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#text)，[Span Component](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)和[ Icon](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)也只能透過特定關鍵字來決定尺寸：xxs(11px)、xs(13px)、sm(14px)、md(16px)、lg(19px)、xl(22px)、xxl(29px)、3xl(35px)、4xl(48px)、5xl(74px)來規範這些 Component 的大小。像我以前就很希望能有不同的方式可以設定大小。
 
-但是現在每個人的夢想都實現了。因為所有給定的組件大小現在都可以以像素為單位設置。
+但是現在讓每個人的夢想都實現了。因為所有給定的 Component 大小都可以設定`像素`(`px`)。
 
-- size: keywords, px
+- size: `keywords`, `px`
 
 ```json
 {
@@ -168,13 +168,13 @@ tags: ['LINE', 'Flex Message']
 
 # 4. Shrink-to-Fit
 
-如果文本的長度大於組件的寬度，則會發生這種情況。多餘的文本將被隱藏並顯示為...（點，點）。
+如果按鈕內的文字的長度大於該項目的寬度，則會發生多餘的文字將被使用 `...` 隱藏起來。
 
-以前，完全呈現長文本的方式是將名為 **wrap** 的屬性設置為 true，但這可能會使佈局變形，因為 Text 或 Button 組件的高度可能會受到影響。展開以顯示文本。
+以前，想要完全呈現長所有文字內容的方式是將名為 **wrap** 的屬性設置為 `true`，但這可能會使整體佈局變形，而 Text 或 Button 所設定的高度也可能因為展開內容會受到影響。
 
-因此，Flex Message 2020 提供了 **adjustMode** 屬性，該屬性會自動減小字體大小以適合組件的寬度，從而使佈局保持與設計相同。
+因此，Flex Message 2020 提供了 **adjustMode** 屬性，該屬性會自動減小字體大小以適應 Component 的寬度，從而使整體佈局與設計相同。
 
-- **AdjustMode**：shrink-to-fit
+- **AdjustMode**：`shrink-to-fit`
 
 ```json
 {
@@ -193,7 +193,7 @@ tags: ['LINE', 'Flex Message']
 
 ## 注意
 
-AdjustMode 可以在 LINE v10.13.0 應用程序之後顯示。
+AdjustMode 可以在 LINE v10.13.0 以上的版本使用。
 
 # 5. 漸層背景(Gradient Background)
 
