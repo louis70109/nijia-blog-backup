@@ -1,5 +1,5 @@
 ---
-title: 'LINE 開發社群計畫: 202101 Chatbot 社群心得分享'
+title: 'LINE 開發社群計畫: 202101 Chatbot 社群心得與彈幕分享'
 categories: 研討會
 date: 2021-01-21 16:12:37
 tags: ['LINE', 'Chatbot']
@@ -56,6 +56,7 @@ tags: ['LINE', 'Chatbot']
 <script async class="speakerdeck-embed" data-slide="10" data-id="72900f18058940949e021bbc93066200" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 再次提醒各位有在使用開發 Beacon 的用戶要注意自己是否有使用到 Leave Event，此功能目前已經停止支援。
+
 ![](https://nijialin.com/images/2021/chatbot-27/3.png)
 
 建議能改成使用 Stay Event，但可能會有開發者問要使用 Stay 取代呢？
@@ -89,7 +90,7 @@ tags: ['LINE', 'Chatbot']
 
 此次加入了這兩個屬性 `acceptedTime` & `completedTime`，讓使用 Narrowcast 的廠商可以透過這兩個屬性來得知服務`接收到的時間`與`訊息完成時間`(成功或失敗)，可以更加有效地從小地方得知狀態喔！
 
-### 用 Mention API 得知誰 tag 誰
+### 用 Mention API 得知群組/聊天室誰 tag 誰
 
 <script async class="speakerdeck-embed" data-slide="9" data-id="72900f18058940949e021bbc93066200" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
