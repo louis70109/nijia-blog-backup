@@ -97,9 +97,15 @@ tags: ['LINE', 'Chatbot']
 
 現在透過這 API 不僅可以避免類似的問題，也能讓讀者們抓到相關的姓名位置做更多相關的應用，詳細使用方式可[參考文件](https://developers.line.biz/zh-hant/reference/messaging-api/#wh-text)。
 
-# 結論
+## 彈幕範例
 
 ![](https://nijialin.com/images/2021/chatbot-27/demo.gif)
+
+前一陣子我寫了一篇文章來介紹 - [開發結合 LINE Chatbot 的簡易彈幕系統](https://engineering.linecorp.com/zh-hant/blog/line-chatbot-screen-bullets/)，細節就不加贅述，筆者就在這次的分享中直接讓大家試玩這個功能，了解一下 Chatbot 究竟還有什麼有趣的心應用！ ：）
+
+參考專案連結：[https://github.com/louis70109/Screen-LINE-Bullets](https://github.com/louis70109/Screen-LINE-Bullets)
+
+# 結論
 
 除了在社群上分享 LINE 平台的更新之外，當中也看到許多不同的應用(Bert、地方創生、旅遊 AA 小幫手、Swift SDK、LIFF 密室遊戲...)，在討論中也激發出許多不同應用的點子，若你也在做 Chatbot 相關的開發，不妨到 [Chatbot 的小聚](https://www.facebook.com/groups/chatbot.tw)中與各位分享吧！
 
