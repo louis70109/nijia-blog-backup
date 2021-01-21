@@ -1,8 +1,10 @@
 ---
 title: 【標題】題目
 categories: 學習紀錄
+date: 2021-01-21 16:12:37
 tags:
 ---
+
 
 <style>
   section.compact {
@@ -32,6 +34,8 @@ tags:
 
 # 介紹
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OaX09Qp95Yw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## [Share Target Picker UI](<(https://developers.line.biz/zh-hant/news/2020/12/01/share-target-picker-ui-improve/)>)
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="72900f18058940949e021bbc93066200" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
@@ -50,6 +54,8 @@ tags:
 
 ## [Beacon - 請使用 Stay Event 取代 Leave Event](https://developers.line.biz/zh-hant/news/2021/01/07/deprecate-leave-event-for-beacon/)
 
+<script async class="speakerdeck-embed" data-slide="10" data-id="72900f18058940949e021bbc93066200" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 再次提醒各位有在使用開發 Beacon 的用戶要注意自己是否有使用到 Leave Event，此功能目前已經停止支援。
 ![](https://nijialin.com/images/2021/chatbot-27/3.png)
 
@@ -59,13 +65,44 @@ tags:
 
 ![](https://nijialin.com/images/2021/chatbot-27/2.png)
 
-## [更改您的 LIFF 至 Concatenate 模式](https://developers.line.biz/zh-hant/news/2021/01/18/remind-discontinue-replace-mode-announcement/)
+## LIFF 相關資訊
+
+<script async class="speakerdeck-embed" data-slide="12" data-id="72900f18058940949e021bbc93066200" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- [2.7.0 release](https://developers.line.biz/zh-hant/news/2021/01/14/release-liff-2-7-0/):
+  - 加入 **RequireJS**: 讓您的 LIFF 能夠確保載入後在執行，避免出現非預期錯誤
+  - 修正 `liff.getDecodedIDToken()`: 修正解開後名字亂碼的問題
+- [2.7.1 release](https://developers.line.biz/zh-hant/news/2021/01/20/release-liff-2-7-1/) 修正了開啟外部瀏覽器會出錯的問題
+
+> 若各位開發者有使用新版的需求請記得要升級至 `2.7.1` 喔！避免使用時遇到非預期錯誤。
+
+### [更改您的 LIFF 至 Concatenate 模式](https://developers.line.biz/zh-hant/news/2021/01/18/remind-discontinue-replace-mode-announcement/)
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="72900f18058940949e021bbc93066200" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 筆者近期寫了[一篇教學文章](https://engineering.linecorp.com/zh-hant/blog/liff-replace-to-concatenate/)教大家如何轉移至 **Concatenate 模式**，避免在 **2021/03/01** 移除 Replace 模式時影響到您的 LIFF 應用程式喔！
 
+## [一月平台更新資訊](https://developers.line.biz/zh-hant/news/2021/01/20/messaging-api-update-january-2021/)
+
+### Narrowcast 訊息發送狀態參數
+
+<script async class="speakerdeck-embed" data-slide="7" data-id="72900f18058940949e021bbc93066200" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+此次加入了這兩個屬性 `acceptedTime` & `completedTime`，讓使用 Narrowcast 的廠商可以透過這兩個屬性來得知服務`接收到的時間`與`訊息完成時間`(成功或失敗)，可以更加有效地從小地方得知狀態喔！
+
+### 用 Mention API 得知誰 tag 誰
+
+<script async class="speakerdeck-embed" data-slide="9" data-id="72900f18058940949e021bbc93066200" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這邊使用一個翻譯的 Chatbot 案例來呈現，過往 Chatbot 在收到句子時就會直接進行整串文字翻譯，但在不同語系對話中多少會有 Tag 對方的時候，過去名字會直接進入翻譯程序，會造成翻譯上的困擾。
+
+現在透過這 API 不僅可以避免類似的問題，也能讓讀者們抓到相關的姓名位置做更多相關的應用，詳細使用方式可[參考文件](https://developers.line.biz/zh-hant/reference/messaging-api/#wh-text)。
+
 # 結論
+
+![](https://nijialin.com/images/2021/chatbot-27/demo.gif)
+
+除了在社群上分享 LINE 平台的更新之外，當中也看到許多不同的應用(Bert、地方創生、旅遊 AA 小幫手、Swift SDK、LIFF 密室遊戲...)，在討論中也激發出許多不同應用的點子，若你也在做 Chatbot 相關的開發，不妨到 [Chatbot 的小聚](https://www.facebook.com/groups/chatbot.tw)中與各位分享吧！
 
 # 活動小結
 
