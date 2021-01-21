@@ -66,6 +66,7 @@ date: 2019-10-16 11:28:36
 
 # Side project
 
+- [Chatbot 彈幕](https://github.com/louis70109/Screen-LINE-Bullets)
 - [Lotify](https://github.com/louis70109/lotify) - LINE Notify Client SDK
 - [肌肉仔](https://github.com/louis70109/muscle_man)
 - [2019 鐵人賽 Serverless 範例](https://github.com/louis70109/aws-python-line-api)
@@ -78,6 +79,14 @@ date: 2019-10-16 11:28:36
 
 # Talks
 
+- [Chatbot Taiwan meetup 27 - LINE Platform API Update & 彈幕範例](https://events.chatbot.tw/events/26)
+  - [投影片](https://speakerdeck.com/line_developers_tw2/line-api-platform-update-202101)
+  - [影片](https://youtu.be/OaX09Qp95Yw)
+  - [做品](https://github.com/louis70109/Screen-LINE-Bullets)
+- [Chatbot Taiwan meetup 27 - LINE API Update](https://events.chatbot.tw/events/20-chatbots-meetup-%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA%E6%96%B0%E6%89%8B%E5%B0%8F%E8%81%9A-25)
+- [MOPCON 2020 - 結合 Lotify 與 Swagger 建置共用型通知服務](https://mopcon.org/2020/schedule/2020011)
+  - [影片](https://www.youtube.com/watch?v=sPg7qIwWD_o)
+  - [範例](https://github.com/louis70109/lotify-swagger-example)
 - [第一次開發 Python SDK 就上手！ feat. LINE Notify](https://coscup.org/2020/zh-TW/agenda/KNJDWQ)
   - [套件](https://github.com/louis70109/lotify)
   - [投影片](https://speakerdeck.com/line_developers_tw/lotify-a-python-sdk-for-line-notify)
