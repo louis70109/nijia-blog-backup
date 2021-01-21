@@ -1,10 +1,9 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 'LINE 開發社群計畫: 202101 Chatbot 社群心得分享'
+categories: 研討會
 date: 2021-01-21 16:12:37
-tags:
+tags: ['LINE', 'Chatbot']
 ---
-
 
 <style>
   section.compact {
