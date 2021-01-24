@@ -42,7 +42,7 @@ tags: ['LINE', 'Flex Message']
 
 # 1. APNG Support
 
-當今天有任何開發者想在 Flex Message 中使用動畫(APNG)，只需在 "圖片" 的 Component 中加入名為 animation 的屬性即可。
+當今天有任何開發者想在 Flex Message 中使用動畫(APNG)，只需在 "圖片" 的 Component 中加入名為 animation 的 property 即可。
 
 - animated: `true`, `false`(default)
 
@@ -64,12 +64,12 @@ tags: ['LINE', 'Flex Message']
 
 # 2. 內容排版
 
-當我們要對 Box 中的內容進行排序時，經常使用 flex、width 和 height 之類的屬性來劃分寬度（horizontal）和高度（vertical）的比例，藉此分配間距和邊距。 Box 裡的內容之間都會需要一定距離，讓整體內容看起來更舒適。
-此時 Flex Message 團隊準備了 2 個新屬性，您只要在 Box 中使用它們，將能讓您的內容安排更加容易。
+當我們要對 Box 中的內容進行排序時，經常使用 flex、width 和 height 之類的 property 來劃分寬度（horizontal）和高度（vertical）的比例，藉此分配間距和邊距。 Box 裡的內容之間都會需要一定距離，讓整體內容看起來更舒適。
+此時 Flex Message 團隊準備了 2 個新 property ，您只要在 Box 中使用它們，將能讓您的內容安排更加容易。
 
 ## 2.1 [justifyContent](https://developers.line.biz/en/docs/messaging-api/flex-message-layout/#justify-content)
 
-該屬性讓我們能在父階層中設置幫助安排內容，且以下每個值具有不同功能屬性：
+該 property 讓我們能在父階層中設置幫助安排內容，且以下每個值具有不同功能 property ：
 
 - `flex-start`：這將從起點開始對所有項目進行排列。如果是水平，則將基於 bubble 給出的方向：ltr(從左至右)或 rtl(從右至左)；反之若是垂直，則所有項目將從上至下進行排列。
 - `center`：將所有項目排列在中心點
@@ -103,7 +103,7 @@ tags: ['LINE', 'Flex Message']
 
 ## 2.2 [alignItems](https://developers.line.biz/en/docs/messaging-api/flex-message-layout/#align-items)
 
-該屬性能讓我們指定父階層中的項目更換排序方向，而每個值具有以下屬性功能：
+該 property 能讓我們指定父階層中的項目更換排序方向，而每個值具有以下 property 功能：
 
 - `flex-start`：如果父階層水平排列，則所有項目將自上而下；如果父母垂直排列，則所有項目將從一開始（取決於 Bubble 的方向）
 - `center`：將所有項目排列在水平和垂直方向的中心點
@@ -135,7 +135,7 @@ tags: ['LINE', 'Flex Message']
 
 # 3. 字體大小和圖示大小（以 px 為單位）
 
-過往只能指定屬性來決定[文字的大小](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#text)，[Span Component](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)和[ Icon](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)也只能透過特定關鍵字來決定尺寸：xxs(11px)、xs(13px)、sm(14px)、md(16px)、lg(19px)、xl(22px)、xxl(29px)、3xl(35px)、4xl(48px)、5xl(74px)來規範這些 Component 的大小。像我以前就很希望能有不同的方式可以設定大小。
+過往只能指定 property 來決定[文字的大小](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#text)，[Span Component](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)和[ Icon](https://developers.line.biz/en/docs/messaging-api/flex-message-elements/#component)也只能透過特定關鍵字來決定尺寸：xxs(11px)、xs(13px)、sm(14px)、md(16px)、lg(19px)、xl(22px)、xxl(29px)、3xl(35px)、4xl(48px)、5xl(74px)來規範這些 Component 的大小。像我以前就很希望能有不同的方式可以設定大小。
 
 但是現在讓每個人的夢想都實現了。因為所有給定的 Component 大小都可以設定`像素`(`px`)。
 
@@ -170,9 +170,9 @@ tags: ['LINE', 'Flex Message']
 
 如果按鈕內的文字的長度大於該項目的寬度，則會發生多餘的文字將被使用 `...` 隱藏起來。
 
-以前，想要完全呈現長所有文字內容的方式是將名為 **wrap** 的屬性設置為 `true`，但這可能會使整體佈局變形，而 Text 或 Button 所設定的高度也可能因為展開內容會受到影響。
+以前，想要完全呈現長所有文字內容的方式是將名為 **wrap** 的 property 設置為 `true`，但這可能會使整體佈局變形，而 Text 或 Button 所設定的高度也可能因為展開內容會受到影響。
 
-因此，Flex Message 2020 提供了 **adjustMode** 屬性，該屬性會自動減小字體大小以適應 Component 的寬度，從而使整體佈局與設計相同。
+因此，Flex Message 2020 提供了 **adjustMode** property ，該 property 會自動減小字體大小以適應 Component 的寬度，從而使整體佈局與設計相同。
 
 - **AdjustMode**：`shrink-to-fit`
 
@@ -197,15 +197,18 @@ AdjustMode 可以在 LINE v10.13.0 以上的版本使用。
 
 # 5. 漸層背景(Gradient Background)
 
-去年 我們可以使用名為 **backgroundColor** 的屬性更改 Box 的背景顏色。具有支持 alpha（rgba）的十六進制顏色代碼。
-今年，Flex Message 團隊使我們能夠設置漸變背景顏色，並具有一個稱為 **background** 的附加屬性。它包含以下子屬性：
+之前我們可以使用名為 **backgroundColor** 的 property 來更改 Box 的背景顏色，並支援使用 alpha（rgba）的十六進制色碼。
 
-- type：linearGradient（Required）
-- angle：0deg — 360deg 漸變開始的度數。可以定義為十進制，例如 88.8deg（Required）
-- startColor：任意十六進制顏色或八進制十六進制顏色代碼（Required）。
-- endColor：十六進制顏色或八進制十六進制顏色代碼（Required）。
-- centerColor：中心的顏色代碼，用於 6 或 8 個十六進製字符。
-- CenterPosition：0 — 100%啟動的級配的位置 **centerColor** 在框中，這可以被定義為的地方，如 88.8％。
+今年，Flex Message 團隊讓我們能夠透過一個稱為 **background** 的 property 設定漸變背景顏色，它包含了以下的 property ：
+
+- type：linearGradient（**必填**）
+- angle（**必填**）：漸層變化的起點角度，或是您也可以使用整數(含小數)來定義角度，例如 **88.8**deg。
+  - 設定數值: `0deg — 360deg`
+- startColor：起始位置顏色的十六進制(6 或 8 個字元)色碼（**必填**）。
+- endColor：結束位置顏色的十六進制(6 或 8 個字元)色碼（**必填**）。
+- centerColor：中心位置的十六進制(6 或 8 個字元)色碼。
+- CenterPosition：從 Box 的 **centerColor** 位置對顏色做分區，一樣可以使用整數(含小數)來定義角度，如 **88.8**％。
+  - 設定數值：`0 — 100%`
 
 ```json
 {
@@ -228,7 +231,7 @@ AdjustMode 可以在 LINE v10.13.0 以上的版本使用。
 
 # 6. 使用 px 來設定 Margin & Spacing
 
-先前定義的間隙間距和餘量通過在 Flex 消息的整個屬性將通過定義的關鍵字來確定，預先（none，xs，sm，md，lg，xl，xxl）而已。
+先前定義的間隙間距和餘量通過在 Flex 消息的整個 property 將通過定義的關鍵字來確定，預先（none，xs，sm，md，lg，xl，xxl）而已。
 但是為了提高消息設計的分辨率和準確性，今年 Flex Message 團隊現在已經能夠識別像素間隙。
 
 - margin: keywords, px
@@ -272,7 +275,7 @@ AdjustMode 可以在 LINE v10.13.0 以上的版本使用。
 
 # 7. 圖片大小（以 px 和 ％ 為單位）
 
-以前設置圖像的大小。我們可以定義一個命名的屬性大小定義的關鍵字的，預（xxs，xs，sm，md，lg，xl，xxl，3xl，4xl，5xl，full），其中考慮到現實。這種大小確定仍然不是很獨立。
+以前設置圖像的大小。我們可以定義一個命名的 property 大小定義的關鍵字的，預（xxs，xs，sm，md，lg，xl，xxl，3xl，4xl，5xl，full），其中考慮到現實。這種大小確定仍然不是很獨立。
 但是從現在開始，現在可以設置大小的的圖像分量中的像素和百分比單位，設定大小將決定的圖像的寬度（寬度）和高度將被自動計算。
 
 - size: keywords, px, %
