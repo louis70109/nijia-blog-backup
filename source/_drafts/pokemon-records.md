@@ -19,6 +19,7 @@ tags:
 # 前言
 
 - [努力值升級降低介紹](https://forum.gamer.com.tw/C.php?bsn=1647&snA=109986)
+- 犀獅海壬 - https://www.youtube.com/watch?v=VbrQpKAMiaI
 <!-- more -->
 
 # 介紹
