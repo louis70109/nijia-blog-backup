@@ -1,8 +1,13 @@
 ---
-title: '使用 2020 Flex Message 的 10 個新功能 - 讓你在 LINE 中設計的更自由'
+title: 使用 2020 Flex Message 的 10 個新功能 - 讓您在 LINE 的訊息設計更有彈性
+tags:
+  - LINE
+  - Flex Message
+  - Chatbot
 categories: 翻譯
-tags: ['LINE', 'Flex Message']
+date: 2021-01-25 12:32:42
 ---
+
 
 <style>
   section.compact {
@@ -231,10 +236,10 @@ AdjustMode 可以在 LINE v10.13.0 以上的版本使用。
 
 # 6. 使用 px 來設定 Margin & Spacing
 
-先前定義的間隙間距和餘量通過在 Flex 消息的整個 property 將通過定義的關鍵字來確定，預先（none，xs，sm，md，lg，xl，xxl）而已。
-但是為了提高消息設計的分辨率和準確性，今年 Flex Message 團隊現在已經能夠識別像素間隙。
+先前定義整個 Flex Message 的間距只能透過輸入`關鍵字`(`keywords`)的 property(`none`、`xs`、`sm`、`md`、`lg`、`xl`、`xxl`)來調整。
+但是為了提高整體訊息設計的辨識率和精準度，今年 Flex Message 團隊提供出能夠使用 `pixel` 來設定間距，參考範例如下：
 
-- margin: keywords, px
+- margin: `keywords`, `px`
 
 ```json
 {
@@ -244,7 +249,7 @@ AdjustMode 可以在 LINE v10.13.0 以上的版本使用。
 }
 ```
 
-- spacing: keywords, px
+- spacing: `keywords`, `px`
 
 ```json
 {
@@ -271,14 +276,14 @@ AdjustMode 可以在 LINE v10.13.0 以上的版本使用。
 
 ## 注意
 
-從現在開始，Box 中每個由邊距指定的組件都可以用於間距。（以前這不會影響 Box 中第一個列出的組件）
+從現在開始，Box 中每個 component 的間距都可以使用 Margin 設定（以前不會影響 Box 中第一個列出的 component）
 
 # 7. 圖片大小（以 px 和 ％ 為單位）
 
-以前設置圖像的大小。我們可以定義一個命名的 property 大小定義的關鍵字的，預（xxs，xs，sm，md，lg，xl，xxl，3xl，4xl，5xl，full），其中考慮到現實。這種大小確定仍然不是很獨立。
-但是從現在開始，現在可以設置大小的的圖像分量中的像素和百分比單位，設定大小將決定的圖像的寬度（寬度）和高度將被自動計算。
+過往設置圖片大小時，我們一樣只能使用關鍵字來定義大小(`xxs`、`xs`、`sm`、`md`、`lg`、`xl`、`xxl`、`3xl`、`4xl`、`5xl`、`full`)，以圖片的設定來說這樣設定的確會綁手綁腳。
+但是從現在開始，圖片可以使用`關鍵字`、`百分比`、`pixel`設定，圖片的**寬度**和**高度**將會被自動計算出來，範例如下：
 
-- size: keywords, px, %
+- size: `keywords`, `px`, `%`
 
 ```json
 {
@@ -292,9 +297,9 @@ AdjustMode 可以在 LINE v10.13.0 以上的版本使用。
 
 # 8. 內容可為空的 Box(Empty Box)
 
-Box 是提供 Flex Message 佈局的組件，類似於 Web 開發中的嵌套 <div> 層。
+Box 是提供整個 Flex Message 佈局的主要元件，類似於 Web 開發中的 <div>。
 
-當我們設置它 我們還需要用內容名稱定義一個對象，其中包含一個項目數組，但是如果我們由於忘記在內容中指定該項目而偶然創建了一個 Box，即使只是一個盒子，我們也將無法發送消息。
+以前要設定 Box 的內容時我們都需要指定一個物件(Object)給 Box，但是在寫一些判斷式時會不小心會漏了定義給它 Object 導致內容為空，以至於我們無法發送 Chatbot 的訊息出去。
 
 ```json
 {
@@ -304,22 +309,24 @@ Box 是提供 Flex Message 佈局的組件，類似於 Web 開發中的嵌套 <d
 }
 ```
 
-但是為了獲得更大的靈活性，這個 2020 Flex Message 團隊可以讓您發送消息。即使未在內容中指定項目
+很慶幸的是，Flex Message 團隊考量到更大的靈活性，在 2020 推出可以讓 Box 的 contents `可為空`，讓開發者們可以送出空的物件，增加更多的彈性！
 
 # 9. 增加了單一 Bubble 的 JSON Max size
 
-曾經我認為 size 應該很夠用，但因為遇到了一些社群上的開發者將 Flex Message 作為單一 Bubble 創建，如此一來訊息的 JSON 的大小就會超過 10KB 的限制。
+曾經我認為 size 應該很夠用，但因為遇到了一些社群上的開發者將所有的 Flex Message 放到單一個 Bubble 裡面，導致訊息的 JSON 的大小就會超過 10KB 的限制。
 
-但是從現在開始，您將能夠在訊息中使用 3 倍的訊息量，因為單個 Bubble 的 Flex Message 中 JSON 的大小已經擴展到 30KB 囉！
+但是從現在開始，您將能夠在訊息中使用 3 倍的訊息量，因為單個 Bubble 的 Flex Message 中 JSON 的大小已經擴展到 `30KB` 囉！但開發者們還是要小心使用避免因為超出限制而導致錯誤發生。
 
 # 10. 增加了 Carousel 的 Bubble 數量
 
 很多人都知道，在 LINE 中以 Template Message 或 Flex Message 的形式創建 "Carousel Message" 時，每個訊息最多只能包含 10 個 Bubble。
 
-而在讀過本篇的您將會很幸運，因為我會跟您說，一個 Flex Message 讓您的每條訊息**最多擁有 12 個 Bubble**。
+而在讀過本篇的您將會很幸運，因為我會跟您說，一個 Flex Message 現在能夠讓您的每個 Carousel 訊息最多**擁有 12 個 Bubble**。
 
 # 結論
 
-話雖如此，2020 年出現的所有功能都是由於 Flex Message 團隊已經聽取了開發人員的聲音並實際上改善了服務的事實。我要感謝泰國開發人員和 LINE API 專家組幫助我們提供反饋和請求新功能。最後，我想用一個漂亮的句子結尾這篇文章...
+2020 年 Flex Message 團隊聽到各位開發者的聲音並釋出了許多新功能並增加彈性來改善開發流程的體驗，這裡我要幹謝泰國開發人員以及 LINE API Expert 提供我們許多意見回饋和新功能需求，讓我們得服務可以持續改善。
+
+最後，我想用一個漂亮的句子結尾這篇文章...
 
 > A Technology without a Community has no Meaning.
