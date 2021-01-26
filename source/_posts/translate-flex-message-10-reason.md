@@ -1,5 +1,5 @@
 ---
-title: 使用 2020 Flex Message 的 10 個新功能 - 讓您在 LINE 的訊息設計更有彈性
+title: 【翻譯】使用 2020 Flex Message 的 10 個新功能 - 讓您在 LINE 的訊息設計更有彈性
 tags:
   - LINE
   - Flex Message
@@ -7,7 +7,6 @@ tags:
 categories: 翻譯
 date: 2021-01-25 12:32:42
 ---
-
 
 <style>
   section.compact {
