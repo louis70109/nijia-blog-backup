@@ -20,9 +20,58 @@ tags:
 
 寫這篇時好友數 450+
 
+跟在實事上的任何作品我相信都紅很快，如 口罩地圖、動森揪團系統...，只是這些題目紅的時候我個人沒有那麼大的憧憬去做相關題目。去年原本有`東南亞職業聯賽`(**ABL**)，我也做了一隻 Chatbot，只是當時用比較土炮的方法用 CSV 輸入議程，每次查詢時都進 CSV 查詢，但也適逢疫情關係而聯盟停辦進而機器人荒廢。但在最近出現了一個籃球新聯盟 `P+ league`，而我既然學 Python 也一段時間了也該拿來試試看爬蟲，因此下定決定開爬，以下會記錄一下在這過程中我有遇到的問題。
+
 很習慣寫完一個 side project 就在技術社團發文
 
+困境：
+
+- TA 不同
+- 技術相對不深
+
+我的作法：
+
+- 尋找 ptt 台灣相關籃球的版，最後找到`basketballTW`
+- Facebook 一樣找一輪，找到`同好會`
+- LINE OpenChat 有貼，但目前只有一個隊伍有討論區，效果有限
+
 <!-- more -->
+
+Flex Message 用法：
+
+在回應單一訊息時則直接使用這樣的函式
+
+```python
+def response_flex():
+  return {'type': 'flex'}
+```
+
+但諸如新聞或是球員數據，總是希望能使用像是 Carousel 來輸出，讓用戶可以左右滑動來查看數據，因此我就會這樣包裝：
+
+```python
+def response_carousel(flex):
+  return {'type': 'carousel', 'contents': [flex]}
+```
+
+這樣的好處是讓上述 `response_flex()` 可以達到共用的目的，只要個別設計相關的 Flex(使用 [Simulator]())，當邏輯寫完之後產生 1~N 個 Flex Message 並放進一個陣列，丟給 carousel 函式即可達到共用！
+
+User-Agent
+
+在本地端可以，但一上 Heroku 之後想說 Chatbot 沒反應，是不是資料庫沒資料？使用 `heroku run bash` 進去跑一次腳本之後發現陣列值都時空的(本地可以上線不行)？因此就乾脆把網頁內容整個印出來(範例)：
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+res = requests.get('https://example.com')
+soup = BeautifulSoup(res.content, 'html.parser')
+
+print(soup.pretty())
+```
+
+發現一個很驚人的問題！當中的錯誤訊息認為我不是網頁因此擋下我的爬蟲(錯誤訊息待查)，實際原因是因為我沒有設定 `User-Agent` ([參考](https://stackoverflow.com/questions/27652543/how-to-use-python-requests-to-fake-a-browser-visit-a-k-a-and-generate-user-agent))，
+
+> 這邊因為網站算小，因此不會有快取上的問題，而若讀者有遇到可以[參考設定](https://stackoverflow.com/questions/53899170/python-3-beautifulsoup-and-cache)
 
 # 介紹
 
