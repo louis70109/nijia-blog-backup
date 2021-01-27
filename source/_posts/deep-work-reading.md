@@ -8,7 +8,6 @@ categories: 閱讀
 date: 2021-01-27 22:46:04
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -19,7 +18,7 @@ date: 2021-01-27 22:46:04
   }
 </style>
 
-![](https://nijialin.com/images/2021/depp-work/1.jpeg)
+![](https://nijialin.com/images/2021/deep-work/1.jpeg)
 
 # 前言
 
