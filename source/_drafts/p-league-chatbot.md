@@ -32,9 +32,10 @@ tags:
 我的作法：
 
 - 尋找 ptt 台灣相關籃球的版，最後找到`basketballTW`
-- Facebook 一樣找一輪，找到`同好會`
+- Facebook 一樣找一輪，找到 [P.LEAGUE + 台灣新職業籃球聯賽 (球迷討論區)](https://www.facebook.com/groups/292574422078791)
 - LINE OpenChat 有貼，但目前只有一個隊伍有討論區，效果有限
 
+- 結合 Chatbot 與 LIFF 的 ShareTargetPicker 的分享，把影片、戰績、比分分享給朋友
 <!-- more -->
 
 Flex Message 用法：

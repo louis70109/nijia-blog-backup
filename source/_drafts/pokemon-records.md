@@ -31,19 +31,16 @@ tags:
   - 招式: 電球、大字暴炎、彈跳、暗影球
   - 除了基本的打點以外，彈跳在極巨化下會變`飛衝`(加速)並讓對方以外你是物理，可能會用`拳鬥`之類的絕招而派出飛行屬性，此時用`電球`即可直接摧毀；暗影球則是變成幽靈屬性來讓屬性多樣。
 
+# 獲得稀有寶可夢的方法
+
+- 生蛋
+  - 色違(異色): 不同顏色的寶可夢就是稀有！透過生蛋老實地慢慢孵蛋也別有成就 😊
+  - 特定技能: 以**閃焰王牌**來說，若為了`飛膝踢`、`突襲`技能，就會透過生蛋來學習招式，可以參考[這個 wiki](https://wiki.52poke.com/zh-hant/%E9%97%AA%E7%84%B0%E7%8E%8B%E7%89%8C#%E8%9B%8B%E6%8B%9B%E5%BC%8F)
+- 野生極巨團體戰
+  - 透過在路上的洞窟丟進**許願星塊**有機會獲得各種極巨化的寶可夢，
+- 極巨洞窟(冠之雪原)
+- 連線交換
+
+一般我們使用連線交換都是跟朋友換需要進化的寶可夢(ex: 胡地、怪力、多邊獸)，最近在跟外甥一起玩的時候發現一個新的玩法...就是瘋狂跟陌生人連線！！
+
 # 結論
-
-# 活動小結
-
-立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
-
-「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev
-![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
-
-# 關於「LINE 開發社群計畫」
-
-LINE 今年年初在台灣啟動「LINE 開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，已經舉辦 30 場以上的活動。歡迎讀者們能夠持續回來察看最新的狀況。詳情請看:
-
-- [2019 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
-- [LINE Taiwan Developer Relations 2019 回顧與 2019 開發社群計畫報告](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019/)
-- [2020 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2020-line-tw-devrel/)
