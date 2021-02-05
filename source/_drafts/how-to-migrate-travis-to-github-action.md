@@ -32,6 +32,8 @@ tags:
 
 ## 開始測試
 
+Error: The operation was canceled.
+
 ## 檢查 tox.ini
 
 - py37-flake8 在 3.8 版後會出現錯誤訊息
