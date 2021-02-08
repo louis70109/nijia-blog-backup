@@ -1,10 +1,13 @@
 @startuml
-User -right-> (Chatbot): 加好友
-(Chatbot) -up-> (Flex 函式): 請求產生樣板
-(Flex 函式) <-right-> (資料庫): 取得相關資訊
-(Flex 函式) -> (Chatbot): 回應樣板
+User->Chatbot: 發送訊息
+Chatbot->Mac: Webhook 通知主機
+Mac->Docker: 進入容器服務
+Docker->k3d: 轉打到 k3d 叢集
 
-(主機) -down-> (官方網站): 定時抓取相關數據資訊
-(主機) -down-> (Youtube 頻道): 定時抓取相關數據資訊
-(主機) -up-> (資料庫): 儲存資料
+k3d->forward.yml: 將請求交給 proxy
+forward.yml->bot_service.yml: Proxy 轉交請求給 Bot
+bot_service.yml->API: 進入 API 環節
+note over k3d, API #FFAAAA: 叢集(Cluster)
+
+API-->User: 完成請求並逐步回應
 @enduml
