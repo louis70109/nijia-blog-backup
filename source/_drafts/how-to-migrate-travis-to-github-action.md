@@ -87,7 +87,24 @@ tags:
 
 ![](https://nijialin.com/images/2021/action/test1.png)
 
-接著我們點選 `Release`
+接著我們點選 `Release` 後，會看到畫面上有 `Draft a new release` 的按鈕：
 ![](https://nijialin.com/images/2021/action/release0.png)
+
+進入後輸入相關的資訊：
+
+- 版號
+- 標題
+- 細節描述
+
+![](https://nijialin.com/images/2021/action/release1.png)
+
+輸入完之後點選 **Action**，就會看到相關觸發的流程開始執行了
+![](https://nijialin.com/images/2021/action/release2.png)
+
+想看更多執行細節就點入，會看到相關的執行 Action Task， 若有錯誤則在當中查看。(感覺可以在設定讓整個 Task 串在一起)
+![](https://nijialin.com/images/2021/action/release3.png)
+
+如上圖完成之後，至 [Pypi](https://pypi.org/) 上查看你的套件，以下圖來說我就釋出了 **0.2.0** 的版本囉！
+![](https://nijialin.com/images/2021/action/release4.png)
 
 # 結論
