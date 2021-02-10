@@ -24,7 +24,7 @@ tags:
 
 在過往很多開源專案大家都會使用 Travis (也真的好用)，但隨著 GitHub Action 推出之後也許多人轉移上去，畢竟讓資源都在同一個平台上也比較好管理。而最近  因緣際會下看到 GitHub 的文件上敘述如何使用，而在個人專案上也能很清楚明瞭的點選到相關的 Action flow，所以本次就用這篇來介紹一下啦～
 
-## 開始測試
+## 測試前介紹
 
 一般專案設計都會依照環境去切割相依套件的檔案，例如 (**production** vs **develop**)，(**Production** vs **CI 環境**)，這[此次的範例中](https://github.com/louis70109/GitHub_Action_Python_Example)我建立的 `requirements-ci.txt` 來安裝在 CI 環境中會用到的工具。
 
