@@ -1,3 +1,7 @@
 @startuml
-Developer->(LINE): Modify webhook url
+專案->自動測試: 觸發自動測試
+自動測試->專案: 測試完成(成功/失敗)
+
+專案->上版本
+
 @enduml
