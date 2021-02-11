@@ -1,8 +1,14 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 【GitHub】建立自動測試並推送至 PyPi
 tags:
+  - GitHub
+  - CI
+  - Python
+  - SDK
+categories: Python
+date: 2021-02-11 17:31:36
 ---
+
 
 <style>
   section.compact {
@@ -14,23 +20,25 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/action/)
+![](https://nijialin.com/images/2021/action/action.png)
 
 # 前言
+
+在過往很多開源專案大家都會使用 Travis (也真的好用)，但隨著 GitHub Action 推出之後也許多人轉移上去，畢竟讓資源都在同一個平台上也比較好管理。而最近看到許多專案(LINE SDK)都開始改到 Action 上，且因緣際會下看到 GitHub 的文件上敘述如何使用，而在個人專案上也能很清楚明瞭的點選到相關的 Action flow，所以本次就用這篇來介紹一下啦～
 
 <!-- more -->
 
 # 介紹
 
-在過往很多開源專案大家都會使用 Travis (也真的好用)，但隨著 GitHub Action 推出之後也許多人轉移上去，畢竟讓資源都在同一個平台上也比較好管理。而最近  因緣際會下看到 GitHub 的文件上敘述如何使用，而在個人專案上也能很清楚明瞭的點選到相關的 Action flow，所以本次就用這篇來介紹一下啦～
+[GitHub Action](https://docs.github.com/en/actions/learn-github-actions) 到底是什麼？或許你聽過也用過 Travis CI、Circle CI、Jenkins ...，大多人用途可能是 `自動測試`、`持續部署`...`自動化ＯＯＯ`，簡而言之就是透過這些工具讓我們日常重覆性極高的工作可以讓機器去自動處理，而只要收最後的結果即可(成功/失敗)。那 GitHub Action 就是如前面幾樣工具一樣的功能，定義好 yaml 檔後就會自動觸發工作開始執行，最大的優點就是：若寫的套件、side project 剛好放在 GitHub 上，就可以達到 **single source of truth** 的效果，不用到處設定相關參數而導致搞混 🙂
 
-## 測試前介紹
+## 處理相依套件資訊
 
-一般專案設計都會依照環境去切割相依套件的檔案，例如 (**production** vs **develop**)，(**Production** vs **CI 環境**)，這[此次的範例中](https://github.com/louis70109/GitHub_Action_Python_Example)我建立的 `requirements-ci.txt` 來安裝在 CI 環境中會用到的工具。
+首先一般專案設計都會依照環境去切割相依套件的檔案，例如 (**production** vs **develop**)，(**Production** vs **CI 環境**)，在[此次的範例中](https://github.com/louis70109/GitHub_Action_Python_Example)我建立的 `requirements.txt` 與 `requirements-ci.txt` 來安裝相關套件，主要是為了切割環境避免造成多餘的安裝，後者則是在 CI 環境中會用到的工具。
 
 ## 檢查 tox.ini
 
-這個檔案目的是為了讓你在跑 tox 這個指令時可以參考相關設定檔，讓開發者可以彈性的設定需求。
+這個檔案目的是為了讓你在跑 tox 這個指令時可以參考相關設定檔，讓個人開發者可以在當中彈性的設定相依需求。
 
 <script src="https://gist.github.com/louis70109/25c3f2fefc12a277ec97ae6aab25c915.js"></script>
 
@@ -106,3 +114,7 @@ tags:
 ![](https://nijialin.com/images/2021/action/release4.png)
 
 # 結論
+
+若讀者在看這邊時也在嘗試做 Python 套件的話不妨參考看看，而透過 GitHub Action 也能讓你只要下 Release 時即可自動推到 Pypi 上，整體體驗就超省時的，是不是很方便呀！
+
+接下來則預計寫一篇如何讓 GitHub Action 串相關通知型服務，近請期待！
