@@ -9,7 +9,6 @@ categories: Python
 date: 2021-02-11 17:31:36
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -25,6 +24,8 @@ date: 2021-02-11 17:31:36
 # 前言
 
 在過往很多開源專案大家都會使用 Travis (也真的好用)，但隨著 GitHub Action 推出之後也許多人轉移上去，畢竟讓資源都在同一個平台上也比較好管理。而最近看到許多專案(LINE SDK)都開始改到 Action 上，且因緣際會下看到 GitHub 的文件上敘述如何使用，而在個人專案上也能很清楚明瞭的點選到相關的 Action flow，所以本次就用這篇來介紹一下啦～
+
+> 範例專案請參考[我的 GitHub](https://nijialin.com/2021/02/11/how-to-use-github-action/)
 
 <!-- more -->
 
