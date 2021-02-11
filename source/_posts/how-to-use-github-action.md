@@ -1,5 +1,5 @@
 ---
-title: 【GitHub】建立自動測試並推送至 PyPi
+title: 在 GitHub Action 上建立自動測試並打包至 PyPi
 tags:
   - GitHub
   - CI
