@@ -94,7 +94,7 @@ date: 2021-02-11 17:31:36
 
 ![](https://nijialin.com/images/2021/action/test1.png)
 
-接著我們點選 `Release` 後，會看到畫面上有 `Draft a new release` 的按鈕：
+修改 `GitHub_Action_Python_Example/__version__.py` 裡的版本號(例如: 1.0.2)演進版好，接著我們在點選 `Release` 後，會看到畫面上有 `Draft a new release` 的按鈕：
 ![](https://nijialin.com/images/2021/action/release0.png)
 
 進入後輸入相關的資訊：
