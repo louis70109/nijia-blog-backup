@@ -7,7 +7,6 @@ categories: JavaScript
 date: 2021-02-11 21:43:48
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -41,7 +40,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 ```
 
-## 重新定義模板語法(避免`{{}}`被使用)
+## 重新定義模板語法
+
+為了避免`{{}}`被某些框架使用到(如 flask)，因此可以如下定義來避免掉這個問題：
 
 ```javascript
 const vm = createApp({
