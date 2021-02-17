@@ -110,7 +110,7 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 
 ## 行前說明
 
-- $\{\{ \}\} 為 GitHub Actions 取得參數的用法
+- \$\{\{ \}\} 為 GitHub Actions 取得參數的用法
   - **secrets.ＯＯＯ** 為分頁(tab) Setting ➡️ Secrets 裡所設定的參數(ＯＯＯ為參數名稱)
   - **github.** 為預設的環境變數，相關參數使用請[參考官方文件](https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables)
 - 需設定 **LINE_NOTIFY_TOKEN** 於 Secrets
