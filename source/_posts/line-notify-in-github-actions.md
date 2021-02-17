@@ -162,6 +162,8 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 
 - image_file 為路徑，以[本專案](https://github.com/louis70109/line-notify-action)為例則是在 **tests 資料夾**下的 **sally.png** 圖片。
 
+![](https://nijialin.com/images/2021/line-notify-github-actions/result.png)
+
 # 結論
 
 在過年前寫了[【Python】在 GitHub Actions 上建立自動測試並打包至 PyPi](https://nijialin.com/2021/02/11/how-to-use-github-action/)，讓我自己寫的專案可以自動化推上 PyPi(成就感十足)，並設定了此篇為過年期間的寒假作業，讓自己對於 GitHub Actions 的操作與流程更加熟悉，希望透過[上一篇](https://nijialin.com/2021/02/11/how-to-use-github-action/)與此篇可以讓讀者們可以更加熟悉 GitHub Actions 這套工具，透過熟悉它也能讓讀者們未來在使用其他工具時更加快上手喔！
