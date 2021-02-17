@@ -171,4 +171,11 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 - 使用上也要注意自己的使用狀態，雖然是免費的服務但也別超過人家提供的上限喔！([參考網址](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration#usage-limits))
   ![](https://nijialin.com/images/2021/line-notify-github-actions/limit.png)
 
+- LINE Notify API 上限注意：
+
+  - 單一 **access_token** 一個小時不可超過 1000 則(訊息 與 圖片).
+  - 上限狀態可以查看 response 的 Header ([文件](https://notify-bot.line.me/doc/en/))
+
+![](https://nijialin.com/images/2021/line-notify-github-actions/3.png)
+
 - 或許會需要定期執行**部署**或**測試**，可以參考[GitHub 排程頁面](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events)
