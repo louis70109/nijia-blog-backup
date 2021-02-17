@@ -27,6 +27,8 @@ date: 2021-02-17 17:51:55
 
 在台灣訊息入口首選一定是使用大家都有的 LINE，而若只是單純要接收訊息的話，則使用單向型推播型服務的 LINE Notify，它提供了 **文字**、**貼圖**、**圖片**(包含網址與檔案) 的訊息推送方式，常用情境 **天氣通知**、**服務健康狀態**、**GitHub Event** 等等(可[參考官網](https://notify-bot.line.me/zh_TW/))，既然當中提到應用於 GitHub Event，那本篇當然也要將 LINE Notify 的應用情境整合進為 GitHub Actions，讓讀者們的專案執行完的狀態透過 LINE Notify 通知！
 
+> 本次的作品 - [louis70109/line-notify-action](https://github.com/louis70109/line-notify-action)
+
 <!-- more -->
 
 ## 取得 LINE Notify 的 access_token
