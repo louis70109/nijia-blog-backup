@@ -118,7 +118,7 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 ## 僅送純文字
 
 ```yaml
-- name: LINE Notify Message
+- name: send default message
   uses: louis70109/line-notify-action@master
   with:
     token: ${{ secrets.LINE_NOTIFY_TOKEN }}
@@ -128,7 +128,7 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 ## 文字+貼圖
 
 ```yaml
-- name: LINE Notify Message
+- name: send message with sticker
   uses: louis70109/line-notify-action@master
   with:
     token: ${{ secrets.LINE_NOTIFY_TOKEN }}
@@ -139,7 +139,7 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 ## 文字+圖片(透過網址方式)
 
 ```yaml
-- name: send image url message
+- name: send message with image url
   uses: louis70109/line-notify-action@master
   with:
     token: ${{ secrets.LINE_NOTIFY_TOKEN }}
@@ -151,7 +151,7 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 ## 文字+圖片(本地端路徑)
 
 ```yaml
-- name: send image file message
+- name: send message with image file
   uses: louis70109/line-notify-action@master
   with:
     token: ${{ secrets.LINE_NOTIFY_TOKEN }}
