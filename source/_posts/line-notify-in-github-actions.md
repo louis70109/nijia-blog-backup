@@ -19,17 +19,33 @@ date: 2021-02-17 17:51:55
   }
 </style>
 
-![](https://nijialin.com/images/2021/action/action.png)
+![](https://nijialin.com/images/2021/line-notify-github-actions/result.png)
 
-# 前言
+# 以前怎麼做
 
-在台灣訊息入口首選一定是使用大家都有的 LINE，而若只是單純要接收訊息的話，則使用單向型推播型服務的 LINE Notify，它提供了 **文字**、**貼圖**、**圖片**(包含網址與檔案) 的訊息推送方式，常用情境 **天氣通知**、**服務健康狀態**、**GitHub Event** 等等(可[參考官網](https://notify-bot.line.me/zh_TW/))，既然當中提到應用於 GitHub Event，那本篇當然也要將 LINE Notify 的應用情境整合進為 GitHub Actions，讓讀者們的專案執行完的狀態(自動測試、部署、上版...)透過 LINE Notify 通知！
+- 寫 Script 並用 Linux 的排程(Crontab)在固定時間跑測試案例、爬資料、部署...等狀態
+- CI/CD 過了之後自己上網站看 log (沒通知)
+- 即便寫通知程式在 Script 裡，未來的可用性極低(不好管控金鑰、換程式語言...)
+
+# Why GitHub Actions
+
+- GitHub 自家出的 CI 工具
+- 專案大多放在 GitHub 上的情況
+  - 可達到資源 Single Source of Truth
+- 市集(Marketplace)已經有許多工具可以合併使用
+  - [之前的文章中](https://nijialin.com/2021/02/11/how-to-use-github-action/)使用過 Python 自動打包與自動測試的工具
+
+# Why LINE Notify
+
+在台灣訊息入口首選一定是使用大家都有的 LINE，而若只是單純要接收訊息，則使用單向型推播型服務的 LINE Notify，它提供了 **文字**、**貼圖**、**圖片**(包含網址與檔案) 的訊息推送方式，常用情境 **天氣通知**、**服務健康狀態**、**GitHub Event** 等等(可[參考官網](https://notify-bot.line.me/zh_TW/))，既然當中提到應用於 GitHub Event，那本篇當然也要將 LINE Notify 的應用情境整合進為 GitHub Actions，讓讀者們的專案執行完的狀態(自動測試、部署、上版...)透過 LINE Notify 通知！
 
 > 本次的作品 - [louis70109/line-notify-action](https://github.com/louis70109/line-notify-action)
 
 <!-- more -->
 
-## 取得 LINE Notify 的 access_token
+- [LINE Notify 介紹文章](https://nijialin.com/2019/09/18/Day3-LINE-Notify-%E4%BB%8B%E7%B4%B9/)
+
+# 1. 取得 LINE Notify 的 access_token
 
 1. 使用筆者過往寫過的專案 - [louis70109/flask-line-notify](https://github.com/louis70109/flask-line-notify) 當中文件的**一鍵部署**，將專案直接部署於 Heroku 上，當然讀者們也可以參考說明文件將之於本地端建立。
 
@@ -49,7 +65,7 @@ LINE_NOTIFY_REDIRECT_URI
 
 ![](https://nijialin.com/images/2021/action/env1.png)
 
-# GitHub Actions 套件運作流程
+# 2. GitHub Actions 套件運作流程
 
 可以使用[三種模式](https://docs.github.com/en/actions/creating-actions/about-actions#types-of-actions)建立，分別為 Docker、JavaScript、Composite run steps(把 Bash 寫在 yaml 裡)，本篇則使用 Docker 做範例。
 
@@ -88,11 +104,11 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 - input: 所有會使用到的參數
 - runs: 三種模式選一種執行，這邊我選擇使用 Docker。
 
-# 如何上 Marketplace
+# 3. 如何上 Marketplace
 
 參考[line-notify-action](https://github.com/louis70109/line-notify-action)，在建立上述必要的檔案後，需要下 Release Note 才後就會被自動上架到 GitHub Actions Marketplace(市集)，若不清楚怎麼手動加入可以參考[這個環節](https://nijialin.com/2021/02/11/how-to-use-github-action/#Testing)，抑或是透過 [Command Line 的方式](https://git-scm.com/book/en/v2/Git-Basics-Tagging)也行。
 
-# 如何使用在 GitHub 專案上
+# 4. 如何使用在 GitHub 專案上
 
 <script src="https://gist.github.com/louis70109/05edb76a3556e0ea7d67a5f2057251f5.js"></script>
 
@@ -161,8 +177,6 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 ```
 
 - image_file 為路徑，以[本專案](https://github.com/louis70109/line-notify-action)為例則是在 **tests 資料夾**下的 **sally.png** 圖片。
-
-![](https://nijialin.com/images/2021/line-notify-github-actions/result.png)
 
 # 結論
 
