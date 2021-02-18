@@ -21,6 +21,10 @@ date: 2021-02-17 17:51:55
 
 ![](https://nijialin.com/images/2021/line-notify-github-actions/result.png)
 
+# 前言
+
+以前不管在**單元/整合測試**、**部署**或是一些**週期性**的工作，有點經驗的工程師通常會很習慣寫個 Script 去跑相關指令集。而隨著寫的服務越來越多，許多部分也微服務化後，同一個指令集可能會服務到對象也越來越多，因此就開始有了像是 Jenkins、Drone、Travis 以及本篇會介紹 GitHub Actions 這類的 CI 工具，但既然是工程師當然要把指令集內的耦合性盡可能的降到最低，因此就有像是 [GitHub Marketplace](https://github.com/marketplace) 的套件市集，讓大家可以在上面選擇不同功能的工具套入於自己的 CI 中，接下來就讓我帶你來了解一下平時會遇到什麼問題，以及如何建立與使用 LINE Notify 於 GitHub Actions 上吧！
+
 # 以前如何知道結果？
 
 - 寫 Script 並用 Linux 的排程(Crontab)在固定時間跑測試案例、爬資料、部署...等狀態
@@ -191,7 +195,17 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
 在過年前寫了[【Python】在 GitHub Actions 上建立自動測試並打包至 PyPi](https://nijialin.com/2021/02/11/how-to-use-github-action/)，讓我自己寫的專案可以自動化推上 PyPi(成就感十足)，並設定了此篇為過年期間的寒假作業，讓自己對於 GitHub Actions 的操作與流程更加熟悉，希望透過[上一篇](https://nijialin.com/2021/02/11/how-to-use-github-action/)與此篇可以讓讀者們可以更加熟悉 GitHub Actions 這套工具，透過熟悉它也能讓讀者們未來在使用其他工具時更加快上手喔！
 
 - 使用上也要注意自己的使用狀態，雖然是免費的服務但也別超過人家提供的上限喔！([參考網址](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration#usage-limits))
-  ![](https://nijialin.com/images/2021/line-notify-github-actions/limit.png)
+  - Job execution time: 所有的 job 加總執行時間為: **6 個小時**，超過則會變成 fails 狀態
+  - Workflow run time: 所有的 workflow 加總執行時間為: **72 個小時** ，超過則會被取消
+  - API requests: 一個專案的 Actions 可以在**一個小時內**最多執行 **1000 次 API requests**，超過則 job 會變成 fails 狀態
+  - Concurrent jobs - 如果有很多專案會同時跑 jobs，請參考下面的表格對應你的方案，如果超過則會被 queue 住喔
+
+| GitHub plan | Total concurrent jobs | Maximum concurrent macOS jobs |
+| ----------- | --------------------- | ----------------------------- |
+| Free        | 20                    | 5                             |
+| Pro         | 40                    | 5                             |
+| Team        | 60                    | 5                             |
+| Enterprise  | 180                   | 50                            |
 
 - LINE Notify API 上限注意：
 
