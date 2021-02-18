@@ -27,7 +27,7 @@ date: 2021-02-17 17:51:55
 - CI/CD 過了之後自己上網站看 log (沒通知)
 - 即便寫通知程式在 Script 裡，未來的可用性極低(不好管控金鑰、換程式語言...)
 
-# Why GitHub Actions
+# Why GitHub Actions?
 
 - GitHub 自家出的 CI 工具
 - 專案大多放在 GitHub 上的情況
@@ -35,15 +35,23 @@ date: 2021-02-17 17:51:55
 - 市集(Marketplace)已經有許多工具可以合併使用
   - [之前的文章中](https://nijialin.com/2021/02/11/how-to-use-github-action/)使用過 Python 自動打包與自動測試的工具
 
-# Why LINE Notify
+# Why LINE Notify?
+
+<!-- more -->
 
 在台灣訊息入口首選一定是使用大家都有的 LINE，而若只是單純要接收訊息，則使用單向型推播型服務的 LINE Notify，它提供了 **文字**、**貼圖**、**圖片**(包含網址與檔案) 的訊息推送方式，常用情境 **天氣通知**、**服務健康狀態**、**GitHub Event** 等等(可[參考官網](https://notify-bot.line.me/zh_TW/))，既然當中提到應用於 GitHub Event，那本篇當然也要將 LINE Notify 的應用情境整合進為 GitHub Actions，讓讀者們的專案執行完的狀態(自動測試、部署、上版...)透過 LINE Notify 通知！
 
 > 本次的作品 - [louis70109/line-notify-action](https://github.com/louis70109/line-notify-action)
 
-<!-- more -->
-
 - [LINE Notify 介紹文章](https://nijialin.com/2019/09/18/Day3-LINE-Notify-%E4%BB%8B%E7%B4%B9/)
+
+## Why not LINE Messaging API(ChatBot)?
+
+- Chatbot 有 Reply 以及 Push 兩種模式，大多使用情境是以 Reply 模式執行，因此不適合
+- 將 Push 的訊息量留在使用者身上以換取流量
+- 劃分服務職責
+  - 僅推播的功能交給 LINE Notify
+  - 更多使用者互動交給 Chatbot
 
 # 1. 取得 LINE Notify 的 access_token
 
