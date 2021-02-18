@@ -21,7 +21,7 @@ date: 2021-02-17 17:51:55
 
 ![](https://nijialin.com/images/2021/line-notify-github-actions/result.png)
 
-# 以前怎麼做
+# 以前如何知道結果？
 
 - 寫 Script 並用 Linux 的排程(Crontab)在固定時間跑測試案例、爬資料、部署...等狀態
 - CI/CD 過了之後自己上網站看 log (沒通知)
