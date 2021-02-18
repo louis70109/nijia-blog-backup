@@ -1,5 +1,5 @@
 ---
-title: 於 GitHub Actions 市集中建立 LINE Notify 套件
+title: 如何建置與使用 GitHub Actions 市集的 LINE Notify 套件
 tags:
   - LINE
   - LINE Notify
