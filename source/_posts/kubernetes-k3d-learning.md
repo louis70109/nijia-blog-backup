@@ -1,8 +1,14 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 將 Chatbot 丟入一台筆電中的 Kubernetes 叢集海 | k3d | Docker
 tags:
+  - Kubernetes
+  - LINE
+  - Docker
+  - Container
+categories: Kubernetes
+date: 2021-02-19 18:04:29
 ---
+
 
 <style>
   section.compact {
@@ -13,8 +19,6 @@ tags:
     margin: 0 auto;
   }
 </style>
-
-![](https://nijialin.com/images/2021/)
 
 # 前言
 
@@ -34,8 +38,7 @@ API-->User: 完成請求並逐步回應
 @enduml
 ```
 
-- Kubernetes’ default NodePort range is **30000-32767**.
-  - [Reference](https://k3d.io/usage/guides/exposing_services/)
+Kubernetes 幫忙處理掉許多以前很繁雜的問題(Auto-Scaling、容器管理..)，讓開發者只要手持 Container 與大量 yaml 檔即可將工具部署上去(前提是容器要正常工作)，但作為僅有一台筆電的開發者(我)想試玩總不能直接至雲端開叢集(金幣攻擊)，因此找到了一個解決方案，使用 k3d 來幫助我們建立 Kubernetes 試玩，以下就一步步帶大家從容器建立到將服務部署於叢集上。
 
 範例專案：[louis70109/kubernetes-line-echo-bot](https://github.com/louis70109/kubernetes-line-echo-bot)
 
@@ -148,6 +151,7 @@ ports:
 ```
 
 - [文件上](https://k3d.io/usage/guides/exposing_services/#2-via-nodeport)有提到 Kubernetes 預設的 NodePort 範圍為**30000-32767**，因此上述則被設定在 **30080**(範圍中)
+  [Reference](https://k3d.io/usage/guides/exposing_services/)
 - port 與 targetPort 則是 Deployment(chatbot) 的對外 port
 
 知道動作後，接著就把它放上 kubernetes 吧！
@@ -179,6 +183,12 @@ note over Deployment, Chatbot #FFAAAA: 將 8000 port 對外
 
 ## 6. 測試 Chatbot 有沒有 Echo
 
+![](https://nijialin.com/images/ngrok.png)
+
 由於我是在 Mac 上執行，為求方便我使用 ngrok 來建立暫時含有 SSL 的網址，並把網址複製到剛剛於 [LINE Developer Console](https://developers.line.biz/console/) 建立的 Chatbot 當中的 endpoint 欄位，接著就到剛剛的 Chatbot 上開始跟它聊天吧！
 
+![Echo bot](https://i.imgur.com/Tn1XS13.png)
+
 # 結論
+
+憑藉著過往僅存的經驗好不容易完成了一整個 Kubernetes 試玩的循環，雖然曾經因為不小心忘了叢集而被被索取大量費用(怕.png)，但在這次的經驗中了解到文件完整性的重要性([Kubernetes](https://kubernetes.io/docs/home/) & [k3d](https://k3d.io/))，讓開發者可以在碰壁的情況下快速找到需要的解答，也體現出 Kubernetes 生態的完整性！接下來若有其他的練習(踩坑)經驗我也會再透過文章分享給大家！😊
