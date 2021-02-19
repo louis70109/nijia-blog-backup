@@ -1,13 +1,7 @@
 @startuml
-User->Chatbot: 發送訊息
-Chatbot->Mac: Webhook 通知主機
-Mac->Docker: 進入容器服務
-Docker->k3d: 轉打到 k3d 叢集
+Mac->k3d: 8082 port 對應 30080 port
 
-k3d->forward.yml: 將請求交給 proxy
-forward.yml->bot_service.yml: Proxy 轉交請求給 Bot
-bot_service.yml->API: 進入 API 環節
-note over k3d, API #FFAAAA: 叢集(Cluster)
 
-API-->User: 完成請求並逐步回應
+Deployment<-Chatbot: 將 8000 port 對外
+note over k3d, Deployment #FFAAAA: 缺少中間層 middleware 幫忙介接
 @enduml
