@@ -9,7 +9,6 @@ categories: Kubernetes
 date: 2021-02-19 18:04:29
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -81,6 +80,8 @@ docker push  # 推上 Docker Hub
 k3d 是什麼呢？它是將 [k3s](https://github.com/k3s-io/k3s) 這個輕量化(Lightweight) Kubernetes 打包成 Docker Image，讓不同平台的 Docker 用戶可以在 Docker 上操作 Kubernetes，當然也有很多不同的服務可以支援，這邊就不贅述。
 
 ## 1. 安裝 k3d ([其他安裝方式](https://k3d.io/#installation)) 與 kubectl ([其他](https://kubernetes.io/docs/tasks/tools/install-kubectl/)) 於 Mac
+
+![k3d](https://nijialin.com/images/2021/k3d/logo.png)
 
 ```
 brew install k3d
