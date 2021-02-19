@@ -100,6 +100,17 @@ k3d cluster create mycluster --agents 1 -p '8082:30080@agent[0]'
 
 -p 的意思是將本機(Mac)的 8082 port 轉到 Docker 裡的 Kubernetes 環境中的 30080 port
 
+建立完後使用 `k3d node list` 來看自己剛剛建立的 cluster 們:
+
+```
+k3d node list
+
+NAME                        ROLE           CLUSTER        STATUS
+k3d-nijiacluster-agent-0    agent          nijiacluster   running
+k3d-nijiacluster-server-0   server         nijiacluster   running
+k3d-nijiacluster-serverlb   loadbalancer   nijiacluster   running
+```
+
 > 按造過往經驗， Mac 在這裡會是代表像是 Linux 中的 iptable(防火牆)，也就是最後一到對外關卡，因此才需要挖通道讓 Mac 與 Docker 中的 kubernetes 互通。
 
 ## 3. 將 chatbot(bot_service.yml) 部署到 cluster 中
@@ -122,11 +133,26 @@ containers:
         value: '剛剛設定的 TOKEN'
 ```
 
-將 bot_service.yml 部署上 kubernetes(k3d)
+將 bot_service.yml 部署上 kubernetes(k3d) 並用 get 看來看 pods 的狀態：
+
+```bash
+kubectl apply -f bot_service.yml
+kubectl get -f bot_service.yml
 
 ```
-kubectl apply -f bot_service.yml
+
 ```
+NAME             READY   UP-TO-DATE   AVAILABLE   AGE
+bot-deployment   0/1     1            0           12s
+```
+
+如果要看更詳細資訊的話可以使用 describe 來看：
+
+```bash
+kubectl describe pods # 看細節
+```
+
+![k3d](https://nijialin.com/images/2021/k3d/chatbot-pod.png)
 
 ## 4. 進入 [forward.yml](https://github.com/louis70109/kubernetes-line-echo-bot) 介接 kubernetes(k3d) 與 Deployment(chatbot) 的 port
 
@@ -159,9 +185,15 @@ ports:
 
 ```bash
 kebectl apply -f forward.yml
+kubectl get -f forward.yml
 ```
 
-如此一來就用 forward.yml 這個 deployment 介接完成啦！
+如此一來就用 forward.yml 這個 deployment 介接完成還可以看到是否有對應成功啦！
+
+```
+NAME          TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
+bot-service   NodePort   10.xx.ooo.70   <none>        8000:30080/TCP   4s
+```
 
 ```puml
 @startuml
