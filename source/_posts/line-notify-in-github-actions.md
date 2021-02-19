@@ -212,6 +212,4 @@ GitHub Actions 中預設會將輸入的參數加上 **INPUT\_** 的前綴(prefix
   - 單一 **access_token** 一個小時不可超過 1000 則(訊息 與 圖片).
   - 上限狀態可以查看 response 的 Header ([文件](https://notify-bot.line.me/doc/en/))
 
-![](https://nijialin.com/images/2021/line-notify-github-actions/3.png)
-
 - 或許會需要定期執行**部署**或**測試**，可以參考[GitHub 排程頁面](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events)
