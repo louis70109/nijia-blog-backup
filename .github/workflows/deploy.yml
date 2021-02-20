@@ -1,22 +1,23 @@
-on: push
+on: [push, pull_request]
 name: Deploy
 jobs:
   build:
-    name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-16.04
+    strategy:
+      matrix:
+        node: [ '10', '12' ]
+    name: Node ${{ matrix.node }} sample
     steps:
-    - name: Clean
-      uses: heowc/action-hexo@main
-      with:
-        args: clean
-    - name: Generate
-      uses: heowc/action-hexo@main
-      with:
-        args: generate
-    - name: Deploy
-      uses: heowc/action-hexo@main
-      env:
-        EMAIL: ${{ secrets.EMAIL }}
-        NAME: ${{ secrets.USERNAME }}
-      with:
-        args: d -g
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - run: |
+          git config --global user.name ${{ secrets.USERNAME }}
+          git config --global user.email ${{ secrets.EMAIL }}
+      - run: npm install
+      - run: |
+          ./node_modules/hexo/bin/hexo clean
+          ./node_modules/hexo/bin/hexo g
+          ./node_modules/hexo/bin/hexo d -g
