@@ -1,40 +1,22 @@
+on: push
 name: Deploy
-
-on: [push]
-
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
-    name: A job to deploy blog.
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
+    - name: Clean
+      uses: heowc/action-hexo@main
       with:
-        submodules: true # Checkout private submodules(themes or something else).
-    
-    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
-    - name: Cache node modules
-      uses: actions/cache@v1
-      id: cache
+        args: clean
+    - name: Generate
+      uses: heowc/action-hexo@main
       with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: Install Dependencies
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: npm ci
-    
-    # Deploy hexo blog website.
+        args: generate
     - name: Deploy
-      id: deploy
-      uses: sma11black/hexo-action@v1.0.3
+      uses: heowc/action-hexo@main
+      env:
+        EMAIL: ${{ secrets.EMAIL }}
+        NAME: ${{ secrets.USERNAME }}
       with:
-        deploy_key: ${{ secrets.BLOG_DEPLOY_KEY }}
-        user_name: ${{ secrets.USERNAME }}
-        user_email: ${{ secrets.EMAIL }}
-        commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
-    # Use the output from the `deploy` step(use for test action)
-    - name: Get the output
-      run: |
-        echo "${{ steps.deploy.outputs.notify }}"
+        args: deploy
