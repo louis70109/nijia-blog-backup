@@ -8,6 +8,14 @@ jobs:
         node: [ '12' ]
     name: Blog deploy
     steps:
+      - name: Public IP
+        id: ip
+        uses: haythem/public-ip@v1.2
+
+      - name: Print Public IP
+        run: |
+          echo ${{ steps.ip.outputs.ipv4 }}
+          echo ${{ steps.ip.outputs.ipv6 }}
       - uses: actions/checkout@v2
       - name: Setup node
         uses: actions/setup-node@v2
@@ -19,6 +27,8 @@ jobs:
           mkdir -p ~/.ssh/
           echo ${{ secrets.BLOG_DEPLOY_KEY }} > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+          echo ${{ steps.ip.outputs.ipv4 }} github.com | tee /etc/hosts
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+          
       - run: npm install
       - run: npm run deploy
