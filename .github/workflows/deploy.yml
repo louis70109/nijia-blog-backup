@@ -20,6 +20,8 @@ jobs:
           echo ${{ secrets.BLOG_DEPLOY_KEY }} > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-          
-      - run: npm install
-      - run: npm run deploy
+      - run: |
+          npm install hexo-cli -g
+          npm install hexo-deployer-git --save
+          npm install
+          npm run deploy
