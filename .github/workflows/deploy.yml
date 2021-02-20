@@ -27,7 +27,6 @@ jobs:
           mkdir -p ~/.ssh/
           echo ${{ secrets.BLOG_DEPLOY_KEY }} > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          echo ${{ steps.ip.outputs.ipv4 }} github.com | tee /etc/hosts
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
           
       - run: npm install
