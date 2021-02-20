@@ -19,4 +19,4 @@ jobs:
         EMAIL: ${{ secrets.EMAIL }}
         NAME: ${{ secrets.USERNAME }}
       with:
-        args: deploy
+        args: d -g
