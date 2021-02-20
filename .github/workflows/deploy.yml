@@ -21,7 +21,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
       - run: |
-          npm install hexo-cli -g
-          npm install hexo-deployer-git --save
           npm install
-          npm run deploy
+          ./node_modules/hexo/bin/hexo clean
+          ./node_modules/hexo/bin/hexo g
+          ./node_modules/hexo/bin/hexo d -g
