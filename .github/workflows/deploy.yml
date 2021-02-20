@@ -16,9 +16,9 @@ jobs:
       - run: |
           git config --global user.name ${{ secrets.USERNAME }}
           git config --global user.email ${{ secrets.EMAIL }}
-          mkdir -p /root/.ssh/
-          echo ${{ secrets.BLOG_DEPLOY_KEY }} > /root/.ssh/id_rsa
-          chmod 600 /root/.ssh/id_rsa
-          ssh-keyscan -t rsa github.com >> /root/.ssh/known_hosts
+          mkdir -p ~/.ssh/
+          echo ${{ secrets.BLOG_DEPLOY_KEY }} > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
       - run: npm install
       - run: npm run deploy
