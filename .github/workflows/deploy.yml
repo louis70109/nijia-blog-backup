@@ -16,6 +16,5 @@ jobs:
       - run: |
           git config --global user.name ${{ secrets.USERNAME }}
           git config --global user.email ${{ secrets.EMAIL }}
-          git remote add origin https://github.com/louis70109/louis70109.github.io.git
       - run: npm install
       - run: npm run deploy
