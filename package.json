@@ -10,8 +10,7 @@
     "new": "hexo new draft ",
     "publish": "hexo publish ",
     "sync": "git pull",
-    "backup": "git add .; git commit -m 'backup resource'; git push;",
-    "deploy": "hexo clean; hexo g; hexo d -g"
+    "d": "git add .; git commit -m 'backup resource'; git push;"
   },
   "hexo": {
     "version": "5.2.0"
