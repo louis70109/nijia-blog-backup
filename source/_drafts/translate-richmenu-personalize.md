@@ -32,19 +32,17 @@ tags:
 
 # 1. 準備使用 Cloud Functions for Firebase 開發的 LINE Chatbot
 
-對於從未開發過具有用於 Firebase 的 Cloud Functions 的 LINE Chatbot 的用戶，請遵循以下文章的步驟（1-3 就足夠了），但如果有經驗的話。現在跳到步驟 2。
+對於從未開發過具有用於 Firebase 的 Cloud Functions 的 LINE Chatbot 的用戶，請遵循以下文章的步驟（1-3 就足夠了），但如果有經驗的話。現在跳到步驟 2 - 準備**泰語**和**英語**的 Rich Menu。
 
 > [使用 Messaging API 和 Cloud Functions 在 Firebase 建置 LINE Bot](https://medium.com/linedevth/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-line-bot-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-messaging-api-%E0%B9%81%E0%B8%A5%E0%B8%B0-cloud-functions-for-firebase-20d284edea1b)
 
-注意：隨著 LINE Chatbot 使用 Cloud Functions 開發，您需要在 Google 域之外調用 API，這要求您從 Spark 切換到 Blaze，但好處是您會在 Blaze 中獲得更多的免費配額。
+注意：隨著使用 Cloud Functions 開發 LINE Chatbot，因為您需要在 Google 網域外調用 LINE API，Cloud Functions 會要求您從 Spark 切換到 Blaze，但好處是您會在 Blaze 中獲得更多的免費配額。
 
 ![](https://nijialin.com/images/2021/translate/richmenu-personalize/2.png)
 
 # 2. 準備**泰語**和**英語**的 Rich Menu
 
-此步驟將根據以下文章將方法分為 3 個子步驟。
-
-[在 LINE 中完成設定 Rich Menu](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)
+此步驟將根據 [在 LINE 中完成設定 Rich Menu](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38) 文章將方法分為 3 個子步驟。
 
 ## 2.1 使用 Rich Menu Maker 創建 Rich Menu 圖像
 
@@ -52,23 +50,29 @@ tags:
 
 ![](https://nijialin.com/images/2021/translate/richmenu-personalize/3.jpeg)
 
-> 英文的 Richmenu 範例
+> 英文的 Rich Menu 範例
 
 ![](https://nijialin.com/images/2021/translate/richmenu-personalize/4.jpeg)
 
-> 泰文的 Richmenu 範例
+> 泰文的 Rich Menu 範例
 
 ## 2.2 使用 LINE Bot Designer 為 Rich Menu 創建 JSON
 
-讓讀者通過使用兩種語言為 Rich Menu 創建 JSON 來遵循本文的＃3 ，從而產生兩個 JSON。
+讀者們可以參考[此篇文章](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)的步驟 3 使用 [LINE Bot Designer](https://developers.line.biz/zh-hant/services/bot-designer/) 建立 Rich Menu，透過使用兩種語系(泰語、英語)為 Rich Menu 建立兩個 JSON。
 
-![](https://nijialin.com/images/2021/translate/richmenu-personalize/4.png)
-對於此示例，如果單擊 Rich Menu，則將打開 LINE Developers 網站。
+![](https://nijialin.com/images/2021/translate/richmenu-personalize/5.png)
+
+在這個範例中，如果點擊 Rich Menu 則將打開 [LINE Developers 網站](https://developers.line.biz/)。
 
 ## 2.3 通過 Messaging API 創建 Rich Menu
 
-請把從上述工序得到的 JSON 和遵循的第 4.1 條（創建）和 4.2（上傳）的文章，可以使用類似的工具郵差來幫助和需要做它用兩種語言，其結果一定是 richMenuIdsaved.2 眼鏡蛇 ID
-![](https://nijialin.com/images/2021/translate/richmenu-personalize/ㄓ.png)
+請把從上述工法得到的 JSON 和遵循[此篇文章](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)的第 4.1 項(Create Rich Menu) 和 4.2 項(Upload Rich Menu Image)，可以使用類似 [Postman](https://www.postman.com/) 的工具來幫助呼叫 LINE API 以建立兩種語系的 Rich menu，其結果一定是 **richMenuId**，而我們需要建立兩次取得泰語與英語的 richMenuId。
+![](https://nijialin.com/images/2021/translate/richmenu-personalize/6.png)
+
+> 中文相關內容可以參考
+>
+> - [Day14 - LINE Richmenu 介紹](https://nijialin.com/2019/09/28/Day14-LINE-Richmenu-%E4%BB%8B%E7%B4%B9/)
+> - [Day15 - 串接 LINE Richmenu API](https://nijialin.com/2019/09/29/Day15-%E4%B8%B2%E6%8E%A5-LINE-Richmenu-API/)
 
 # 3. 建立條件以獲取 Follow 類型 Webhook 的事件
 
