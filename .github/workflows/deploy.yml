@@ -15,8 +15,8 @@ jobs:
       - uses: yrpang/github-actions-hexo@v1.3
         with:
           deploykey: ${{ secrets.BLOG_DEPLOY_TOKEN }}
-          username: ${{ secrets.USERNAME }}
-          email: ${{ secrets.EMAIL }}
+          username: nijia-blog[bot]
+          email: nijia-blog-backup@example.com
       - name: send default message
         uses: louis70109/line-notify-action@master
         with:
