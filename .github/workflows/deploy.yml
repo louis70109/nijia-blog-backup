@@ -17,3 +17,8 @@ jobs:
           deploykey: ${{ secrets.BLOG_DEPLOY_TOKEN }}
           username: ${{ secrets.USERNAME }}
           email: ${{ secrets.EMAIL }}
+      - name: send default message
+        uses: louis70109/line-notify-action@master
+        with:
+          token: ${{ secrets.LINE_NOTIFY_TOKEN }}
+          message: 'Blog deploy done.'
