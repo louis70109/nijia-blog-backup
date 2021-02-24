@@ -5,7 +5,7 @@ tags:
   - Open source
   - SDK
   - Python
-categories: 學習紀錄
+categories: Python
 date: 2020-07-10 15:11:20
 ---
 

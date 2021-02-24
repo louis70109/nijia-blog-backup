@@ -1,0 +1,24 @@
+name: Hexo Build and Deploy
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+      - uses: yrpang/github-actions-hexo@v1.3
+        with:
+          deploykey: ${{ secrets.BLOG_DEPLOY_TOKEN }}
+          username: nijia-blog[bot]
+          email: nijia-blog-backup@example.com
+      - name: send default message
+        uses: louis70109/line-notify-action@master
+        with:
+          token: ${{ secrets.LINE_NOTIFY_TOKEN }}
+          message: 'Blog deploy done.'
