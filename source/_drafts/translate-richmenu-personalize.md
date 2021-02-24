@@ -32,11 +32,11 @@ tags:
 
 # 1. 準備使用 Cloud Functions for Firebase 開發的 LINE Chatbot
 
-對於從未開發過具有用於 Firebase 的 Cloud Functions 的 LINE Chatbot 的用戶，請遵循以下文章的步驟（1-3 就足夠了），但如果有經驗的話。現在跳到步驟 2 - 準備**泰語**和**英語**的 Rich Menu。
+對於從未開發過具有用於 Firebase 的 Cloud Functions 的 LINE Chatbot 的用戶，請遵循以下文章的步驟(1-3 章節就足夠了)，但如果有經驗的話，直接跳到步驟 2 - 準備**泰語**和**英語**的 Rich Menu。
 
 > [使用 Messaging API 和 Cloud Functions 在 Firebase 建置 LINE Bot](https://medium.com/linedevth/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-line-bot-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-messaging-api-%E0%B9%81%E0%B8%A5%E0%B8%B0-cloud-functions-for-firebase-20d284edea1b)
 
-注意：隨著使用 Cloud Functions 開發 LINE Chatbot，因為您需要在 Google 網域外調用 LINE API，Cloud Functions 會要求您從 Spark 切換到 Blaze，但好處是您會在 Blaze 中獲得更多的免費配額。
+注意：隨著使用 Cloud Functions 開發 LINE Chatbot，因為您需要在 Google 網域外使用 LINE API，因此 Cloud Functions 會要求您從 **Spark** 切換到 **Blaze**，但好處是您會在 Blaze 中獲得更多的免費配額。
 
 ![](https://nijialin.com/images/2021/translate/richmenu-personalize/2.png)
 
@@ -76,11 +76,9 @@ tags:
 
 # 3. 建立條件以獲取 Follow 類型 Webhook 的事件
 
-當用戶將我們的聊天機器人添加為朋友或取消阻止我們的聊天機器人時，我們將捕獲 Webhook 事件的關注類型，以便根據用戶的機器語言顯示 Rich Menu。
+當用戶將我們的 Chatbot 添加為好友或封鎖時，我們將獲取 Webhook 事件的 Follow 類型，以便根據用戶的手機語系顯示對應的 Rich Menu。
 
-[來自 webhook 事件的 15 個信號將喚醒您的 LINE 機器人。](https://medium.com/linedevth/12-%E0%B8%AA%E0%B8%B1%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%93%E0%B8%88%E0%B8%B2%E0%B8%81-webhook-events-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%88%E0%B8%B0%E0%B8%9B%E0%B8%A5%E0%B8%B8%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B9%89-line-bot-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%95%E0%B8%B7%E0%B9%88%E0%B8%99%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%A0%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B9%8C-4cb7da653274)
-
-根據上述文章的第 2 點，從 Follow 事件中的有效負載結構中得出。我們感興趣的是兩件事情，events[0].type 並且 events[0].source.userId 因此我們打算寫一個條件並保持價值 userId 這樣的。
+根據 [透過 webhook 事件的 15 種訊號來喚醒您的 LINE Chatbot](https://medium.com/linedevth/12-%E0%B8%AA%E0%B8%B1%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%93%E0%B8%88%E0%B8%B2%E0%B8%81-webhook-events-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%88%E0%B8%B0%E0%B8%9B%E0%B8%A5%E0%B8%B8%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B9%89-line-bot-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%95%E0%B8%B7%E0%B9%88%E0%B8%99%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%A0%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B9%8C-4cb7da653274) 文章的第 2 點，從 Follow 事件中的結構中得出我們感興趣的兩個欄位: `events[0].type` 與 `events[0].source.userId`，因此我們打算寫一個判斷式來獲取 **userId**。
 
 ```javascript
 exports.LineBot = functions.https.onRequest((req, res) => {
@@ -98,7 +96,7 @@ exports.LineBot = functions.https.onRequest((req, res) => {
 
 [與通過 LINE 中的各種 API 檢索用戶個人資料的位置完全相同。](https://medium.com/linedevth/%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%88%E0%B8%9A%E0%B9%83%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B6%E0%B8%87-user-profile-%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-api-%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%86%E0%B9%83%E0%B8%99-line-dafb17e5864a)
 
-因此，我將創建一個像這樣的 getProfile（）函數。
+因此，我將創建一個像這樣的 getProfile() 函式。
 
 ```javascript
 const getProfile = (userId) => {

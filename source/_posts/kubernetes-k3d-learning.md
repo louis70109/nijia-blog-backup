@@ -21,22 +21,6 @@ date: 2021-02-19 18:04:29
 
 # 前言
 
-```puml
-@startuml
-User->Chatbot: 發送訊息
-Chatbot->Mac: Webhook 通知主機
-Mac->Docker: 進入容器服務
-Docker->k3d: 轉打到 k3d 叢集
-
-k3d->forward.yml: 將請求交給 proxy
-forward.yml->bot_service.yml: Proxy 轉交請求給 Bot
-bot_service.yml->API: 進入 API 環節
-note over k3d, API #FFAAAA: 叢集(Cluster)
-
-API-->User: 完成請求並逐步回應
-@enduml
-```
-
 Kubernetes 幫忙處理掉許多以前很繁雜的問題(Auto-Scaling、容器管理..)，讓開發者只要手持 Container 與大量 yaml 檔即可將工具部署上去(前提是容器要正常工作)，但作為僅有一台筆電的開發者(我)想試玩總不能直接至雲端開叢集(金幣攻擊)，因此找到了一個解決方案，使用 k3d 來幫助我們建立 Kubernetes 試玩，以下就一步步帶大家從容器建立到將服務部署於叢集上。
 
 範例專案：[louis70109/kubernetes-line-echo-bot](https://github.com/louis70109/kubernetes-line-echo-bot)
