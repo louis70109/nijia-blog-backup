@@ -84,7 +84,18 @@ k3d cluster create mycluster --agents 1 -p '8082:30080@agent[0]'
 
 -p 的意思是將本機(Mac)的 8082 port 轉到 Docker 裡的 Kubernetes 環境中的 30080 port
 
-建立完後使用 `k3d node list` 來看自己剛剛建立的 cluster 們:
+#### [2021/02/24 更新]
+
+透過 `docker ps` 會看到剛剛建立的 agent 被起了一個 Docker Container，並 forward `8082:30080` port，這就是 k3d 將 k3s 包裝起來的 Container
+
+```
+CONTAINER ID   IMAGE                      COMMAND                  CREATED      STATUS      PORTS                             NAMES
+cd60952ed93a   rancher/k3d-proxy:v4.0.0   "/bin/sh -c nginx-pr…"   4 days ago   Up 4 days   80/tcp, 0.0.0.0:52713->6443/tcp   k3d-nijiacluster-serverlb
+120e93a4ca0a   rancher/k3s:latest         "/bin/k3s agent"         4 days ago   Up 4 days   0.0.0.0:8082->30080/tcp           k3d-nijiacluster-agent-0
+dc82667faec0   rancher/k3s:latest         "/bin/k3s server --t…"   4 days ago   Up 4 days                                     k3d-nijiacluster-server-0
+```
+
+建立完後使用 `k3d node list` 來看自己剛剛建立的 cluster 們狀態:
 
 ```
 k3d node list
@@ -122,7 +133,6 @@ containers:
 ```bash
 kubectl apply -f bot_service.yml
 kubectl get -f bot_service.yml
-
 ```
 
 ```
