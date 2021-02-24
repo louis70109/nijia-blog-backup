@@ -1,7 +1,7 @@
 ---
-title: 如何以個性化方式在 LINE 中顯示 Rich Menu 以匹配用戶的機器語言
-categories: 學習紀錄
-tags:
+title: 【翻譯】如何個性化在 LINE 中顯示 Rich Menu 以匹配用戶的語系
+categories: 翻譯
+tags: ['LINE', 'Richmenu', 'Firebase', 'Chatbot']
 ---
 
 <style>
@@ -58,7 +58,9 @@ tags:
 
 ## 2.2 使用 LINE Bot Designer 為 Rich Menu 創建 JSON
 
-讀者們可以參考[此篇文章](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)的步驟 3 使用 [LINE Bot Designer](https://developers.line.biz/zh-hant/services/bot-designer/) 建立 Rich Menu，透過使用兩種語系(泰語、英語)為 Rich Menu 建立兩個 JSON。
+讀者們可以參考[下列文章](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)的步驟 3 使用 [LINE Bot Designer](https://developers.line.biz/zh-hant/services/bot-designer/) 建立 Rich Menu，透過使用兩種語系(泰語、英語)為 Rich Menu 建立兩個 JSON。
+
+> 泰文：[在 LINE 中實作 Rich Menu 的相關訊息](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)
 
 ![](https://nijialin.com/images/2021/translate/richmenu-personalize/5.png)
 
@@ -66,13 +68,10 @@ tags:
 
 ## 2.3 通過 Messaging API 創建 Rich Menu
 
-請把從上述工法得到的 JSON 和遵循[此篇文章](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)的第 4.1 項(Create Rich Menu) 和 4.2 項(Upload Rich Menu Image)，可以使用類似 [Postman](https://www.postman.com/) 的工具來幫助呼叫 LINE API 以建立兩種語系的 Rich menu，其結果一定是 **richMenuId**，而我們需要建立兩次取得泰語與英語的 richMenuId。
+請把從上述工法得到的 JSON 和參考[下列文章](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)的第 4.1 項(Create Rich Menu) 和 4.2 項(Upload Rich Menu Image)，可以使用類似 [Postman](https://www.postman.com/) 的工具來幫助呼叫 LINE API 以建立兩種語系的 Rich menu，其結果一定是 **richMenuId**，而我們需要建立兩次取得泰語與英語的 richMenuId。
 ![](https://nijialin.com/images/2021/translate/richmenu-personalize/6.png)
 
-> 中文相關內容可以參考
->
-> - [Day14 - LINE Richmenu 介紹](https://nijialin.com/2019/09/28/Day14-LINE-Richmenu-%E4%BB%8B%E7%B4%B9/)
-> - [Day15 - 串接 LINE Richmenu API](https://nijialin.com/2019/09/29/Day15-%E4%B8%B2%E6%8E%A5-LINE-Richmenu-API/)
+> 泰文：[在 LINE 中實作 Rich Menu 的相關訊息](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)
 
 # 3. 建立條件以獲取 Follow 類型 Webhook 的事件
 
@@ -92,11 +91,11 @@ exports.LineBot = functions.https.onRequest((req, res) => {
 
 # 4. 從用戶個人資料中取得 “**language**” 參數
 
-在這一步中，我們將使用 `userId` 上一步來識別用戶的語言。讓我們根據以下文章的條款 2.1 檢索配置文件。
+此章節將接續著上一章節並透過使用 **userId** 識別用戶的語系，讓我們根據以下文章的 2.1 章節查看相關配置訊息。
 
-[與通過 LINE 中的各種 API 檢索用戶個人資料的位置完全相同。](https://medium.com/linedevth/%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%88%E0%B8%9A%E0%B9%83%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B6%E0%B8%87-user-profile-%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-api-%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%86%E0%B9%83%E0%B8%99-line-dafb17e5864a)
+> 泰文：[透過 LINE 中的各式 API 比對用戶個人資料是否相同](https://medium.com/linedevth/%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%88%E0%B8%9A%E0%B9%83%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B6%E0%B8%87-user-profile-%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-api-%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%86%E0%B9%83%E0%B8%99-line-dafb17e5864a)
 
-因此，我將創建一個像這樣的 getProfile() 函式。
+因此，我們需要建立一個 getProfile() 的函式：
 
 ```javascript
 const getProfile = (userId) => {
@@ -108,7 +107,7 @@ const getProfile = (userId) => {
 };
 ```
 
-然後，您可以通過發送變量來調用函數，僅`userId`此而已。
+然後，您可以通過發送 **userId** 參數來使用函式。
 
 ```javascript
 exports.LineBot = functions.https.onRequest(async (req, res) => {
@@ -122,15 +121,15 @@ exports.LineBot = functions.https.onRequest(async (req, res) => {
 });
 ```
 
-> 注意：由於我們將不得不等待 getProfile（）函數的回調，因此為了收緊代碼，我使用了 **async / await** 來提供幫助。
+> 注意：由於我們必須等待 getProfile() 函式的 callback 回傳，為了簡潔程式碼，因此我借助了 **async / await** 來幫忙。
 
 # 5. 讓用戶匹配對應語系的 Rich Menu
 
-到最後一步 即根據每個用戶的語言定義豐富菜單。順便說一下，該鏈接將遵循 [LINE 中 Rich Menu](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38) 文章的 4.6 條，[完成公式](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)，我將創建一個函數。linkRichMenu（）並通過傳遞變量 userId 和 language 從上一步獲得的變量進行調用。這就是整個代碼。
+到了最後一步，我們需要根據每個用戶的語系來定義 Rich Menu。接下來將參考 - [在 LINE 中實作 Rich Menu 的相關訊息(泰文)](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38) 文章中的 4.6 項目來完成，我將建立一個函式 - linkRichMenu()，透過傳遞參數 **userId** 和 **language** 並結合上一步(第四小節)來進行相關操作，以下則是參考所有的程式碼：
 
 <script src="https://gist.github.com/jirawatee/ec8f05a496a2d5b95cedcd059a8a19ea.js"></script>
 
-準備好了，外殼程序，轉到 functions 文件夾並使用命令進行部署
+準備好了整個程式碼區塊，接著就使用 Command Line 將 functions 文件夾進行部署上傳：
 
 ```bash
 firebase deploy --only functions
@@ -142,5 +141,4 @@ firebase deploy --only functions
 
 # 結論
 
-可以看到 LINE 已添加 language 到用戶的個人資料 我們可以使用它來創建豐富菜單之外的個性化體驗，例如以用戶語言回復等。我希望本文中的技術將有助於讀者應用。並為您的 LINE 聊天機器人創建 “一見鍾情” 或 “一見鍾情”。
-在離開所有人之前，也請按跟隨出版物。這樣您就不會錯過我們的任何新文章 今天我必須先離開 next 下一篇再見。🙏 您好，兄弟姐妹，泰國開發人員。
+透過加入了 `language` 參數判斷語系並讓 Rich Menu 可以更貼近特定語系的用戶，或者是針對不同語系的回覆等等。希望透過本文的講解讓讀者們可以發揮出更不同的應用情境，並期待著您可以創造出更多更驚豔的服務！
