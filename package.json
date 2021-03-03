@@ -34,5 +34,8 @@
     "hexo-renderer-stylus": "2.0.1",
     "hexo-server": "^1.0.0",
     "hexo-theme-next": "^8.1.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
   }
 }
