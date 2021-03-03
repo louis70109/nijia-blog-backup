@@ -1,5 +1,5 @@
 ---
-title: 【標題】題目
+title: 嘗試透過 Sticker 建立 Sticker-Driven Conversations 的 Chatbot
 categories: 學習紀錄
 tags:
 ---
@@ -14,28 +14,70 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
-
-# 前言
-
 <!-- more -->
 
-# 介紹
+![](https://nijialin.com/images/2021/translate/sticker-driven/1.png)
 
-# 結論
+> [翻譯原文](https://medium.com/linedevth/line-chatbot-sticker-driven-conversation-920087b8fe44)
 
-# 活動小結
+![](https://nijialin.com/images/2021/translate/sticker-driven/2.jpeg)
+![](https://nijialin.com/images/2021/translate/sticker-driven/3.png)
 
-立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
+<script src="https://gist.github.com/tandevmode/a833ff7ca8b1e2bcd9fcc50770fa6667.js"></script>
 
-「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev
-![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
+```javascript
+let keywords = event.message.keywords;
+let stickerIntent = "";
+for (var i = 0; i <= 2; i++) {
+    stickerIntent += randomItem(keywords) + " ";
+}
+...
+function randomItem(items) {
+    return items[Math.floor(Math.random() * items.length)];
+}
+```
 
-# 關於「LINE 開發社群計畫」
+```javascript
+req.headers['x-line-signature'] = crypto
+  .createHmac('SHA256', LINE_CHANNEL_SECRET)
+  .update(body)
+  .digest('base64')
+  .toString();
+req.headers.host = 'dialogflow.cloud.google.com';
+req.headers['content-length'] = Buffer.byteLength(body, 'utf8');
+```
 
-LINE 今年年初在台灣啟動「LINE 開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，已經舉辦 30 場以上的活動。歡迎讀者們能夠持續回來察看最新的狀況。詳情請看:
+![](https://nijialin.com/images/2021/translate/sticker-driven/4.gif)
 
-- [2019 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
-- [LINE Taiwan Developer Relations 2019 回顧與 2019 開發社群計畫報告](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019/)
-- [2020 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2020-line-tw-devrel/)
-- [2021 年 LINE 開發社群計畫活動時程表 (持續更新)](https://engineering.linecorp.com/zh-hant/blog/2021-line-tw-devrel/)
+<script src="https://gist.github.com/tandevmode/e5045de4e811aa979f86fbf462e8c043.js"></script>
+
+# 4.
+
+```sh
+ngrok http 3000
+```
+
+![](https://nijialin.com/images/2021/translate/sticker-driven/5.png)
+![](https://nijialin.com/images/2021/translate/sticker-driven/6.png)
+
+# 5.
+
+## 5.1
+
+![](https://nijialin.com/images/2021/translate/sticker-driven/7.png)
+
+## 5.2
+
+![](https://nijialin.com/images/2021/translate/sticker-driven/8.png)
+
+## 5.3
+
+![](https://nijialin.com/images/2021/translate/sticker-driven/9.png)
+
+# Demo
+
+![](https://nijialin.com/images/2021/translate/sticker-driven/10.gif)
+
+# Reference
+
+- [揭示如何使 Dialogflow 開發的 LINE Bot 支持 Text 以外的各種事件](https://medium.com/linedevth/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89-line-bot-%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%B2%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-dialogflow-%E0%B8%A3%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%9A-events-%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%86%E0%B8%99%E0%B8%AD%E0%B8%81%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B7%E0%B8%AD%E0%B8%88%E0%B8%B2%E0%B8%81-text-2cae8214c647)
