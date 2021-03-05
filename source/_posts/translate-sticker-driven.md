@@ -117,7 +117,7 @@ ngrok http 3000
 
 # 5. 將 Chatbot 收集到的詞彙添加到 Dialogflow 做訓練
 
-Dialogflow 的其中一個功能是我們可以輸入每個 Intent 的句子，因為我們 BMI Chatbot 輸入都是泰文，但 `keywords` 裡的數值都是英文，因此我們也必須提供更多訓練的詞彙。
+Dialogflow 的其中一個功能是我們可以輸入每個 Intent 的句子，因為我們 BMI Chatbot 輸入都是泰文句子，但是 `keywords` 裡回應的數值都是英文，因此我們也必須提供更多訓練的詞彙。
 
 ### 5.1 Default Welcome Intent
 
