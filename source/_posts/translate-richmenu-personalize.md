@@ -16,7 +16,7 @@ tags: ['LINE', 'Richmenu', 'Firebase', 'Chatbot']
 
 ![](https://nijialin.com/images/2021/translate/richmenu-personalize/1.png)
 
-> [翻譯原文](https://medium.com/linedevth/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9C%E0%B8%A5-rich-menu-%E0%B9%83%E0%B8%99-line-%E0%B9%81%E0%B8%9A%E0%B8%9A-personalize-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%95%E0%B8%A3%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99-9c3fd2083ba7)
+> 翻譯來自泰國的 Jirawatee 的[文章](https://medium.com/linedevth/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%9C%E0%B8%A5-rich-menu-%E0%B9%83%E0%B8%99-line-%E0%B9%81%E0%B8%9A%E0%B8%9A-personalize-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%95%E0%B8%A3%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99-9c3fd2083ba7)
 
 在過去的一年中，Rich Menu 上的文章非常受歡迎，它的優點是在用戶聊天頁面上顯示重要的**選單(Menu)**並可以選擇各種操作，降低用戶使用官方帳號的門檻。而對於擁有 LINE 正式帳戶或 LINE Chatbot 的用戶而言，加上創建步驟是相當簡單的，可以透過 [Official Account 後台](https://manager.line.biz/)或是讓具有程式能力的朋友透過呼叫 API 的方式建立 Rich Menu，若能這麼容易就建立 Rich Menu，那麼成為每個帳戶必須具備的基本功能也就不足為奇了。
 

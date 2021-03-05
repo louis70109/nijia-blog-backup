@@ -7,7 +7,6 @@ categories: 翻譯
 date: 2021-03-05 14:17:49
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -20,7 +19,7 @@ date: 2021-03-05 14:17:49
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/1.png)
 
-> [翻譯原文](https://medium.com/linedevth/line-chatbot-sticker-driven-conversation-920087b8fe44)
+> 翻譯來自泰國的 Tan 的[文章](https://medium.com/linedevth/line-chatbot-sticker-driven-conversation-920087b8fe44)
 
 大家好，我希望 2021 年對每個人來說都是美好的一年 😃，本次會分享一篇對於有在開發 LINE Chatbot 朋友相關的有趣文章。
 
