@@ -1,7 +1,7 @@
 ---
 title: 【翻譯】嘗試透過貼圖建立 Sticker-Driven Conversations 的 Chatbot
 categories: 翻譯
-tags:
+tags: ['LINE', 'Chatbot']
 ---
 
 <style>
@@ -36,7 +36,7 @@ tags:
 
 # 透過 Sticker 與您的 BMI Chatbot(Dialogflow)對話。
 
-我將在本文中做的是開發給 [Jirawatee](https://medium.com/@jirawatee) 使用的 BMI Chatbot，[Jirawatee](https://medium.com/@jirawatee)希望 Chatbot 透過 Sticker 了解他的需求(Intent)。但眾所周知，Dialogflow 僅支持文字類型的文本，因此我們必須先創建一個 Proxy 幫忙轉譯，然後再將訊息轉發給 Dialogflow。
+我將在本文中做的是開發給 [Jirawatee](https://medium.com/@jirawatee) 使用的 BMI Chatbot，[Jirawatee](https://medium.com/@jirawatee)希望 Chatbot 透過 Sticker 了解他的需求(Intent)，讓他能更方便的使用。但眾所周知，Dialogflow 僅支持文字類型的文本，因此我們必須先創建一個 Proxy 幫忙轉譯，然後再將訊息轉發給 Dialogflow。
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/3.png)
 
@@ -50,45 +50,23 @@ tags:
 
 ## 1. 建立 LINE Official Account (Chatbot)
 
-如果您以前沒有創建 LINE Chatbot，則可以關注 Pee Tee 的這篇文章。至於是誰做的，您可以跳到下一個項目
+如果您以前沒有建立過 LINE Chatbot，則可以關注 Jirawatee 的[這篇文章](https://medium.com/linedevth/%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%81%E0%B8%B2%E0%B8%A3-integrate-line-bot-%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%81%E0%B8%B1%E0%B8%9A-dialogflow-%E0%B9%81%E0%B8%A5%E0%B8%B0-firebase-%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-bmi-bot-5a30a672f6ae)(泰文)。若你已經有帳號了，直接跳到下一小節。
+
+> 中文版的建立流程可以參考 - [LINE 開發社群計畫: Chatbot 台中小聚 08 – LINE platform 工作坊紀錄](https://engineering.linecorp.com/zh-hant/blog/chatbot-taichung-08-line-workshop/#massaging-api)
 
 ## 2. 使用 Dialogflow 建構 BMI Chatbot
 
-如建議的那樣，誰沒有 BMI Chatbot，請仔細閱讀下面的文章。
-
-> 參考此篇文章(泰文)：[了解如何通過 BMI Bot 將 LINE Bot 與 Dialogflow 和 Firebase 集成。](https://medium.com/linedevth/%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%81%E0%B8%B2%E0%B8%A3-integrate-line-bot-%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%81%E0%B8%B1%E0%B8%9A-dialogflow-%E0%B9%81%E0%B8%A5%E0%B8%B0-firebase-%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-bmi-bot-5a30a672f6ae)
+如前面 Jirawatee 建議的那樣，我們需要一隻 BMI Chatbot，想了解實作細節可以參考此篇(泰文)：[如何透過 BMI Bot 將 LINE Bot、Dialogflow 和 Firebase 結合](https://medium.com/linedevth/%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%81%E0%B8%B2%E0%B8%A3-integrate-line-bot-%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%81%E0%B8%B1%E0%B8%9A-dialogflow-%E0%B9%81%E0%B8%A5%E0%B8%B0-firebase-%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-bmi-bot-5a30a672f6ae)
 
 ## 3. 建立 Proxy Server
 
-此步驟是使用 Node.js 編寫一個 Web 應用程序，以接收當用戶向我們的 Chatbot 發送消息時 Line 從 Line 發送的 Webhook，然後我們將其解包。`keywords` 創建新消息 並轉發到 Dialogflow
+此步驟是使用 Node.js 撰寫一個 Web app，用來接收用戶向我們的 Chatbot 發送訊息時 LINE 發送回來的 Webhook，然後我們將從 Webhook 中 找出 `keywords` 欄位並轉發到 Dialogflow
 
 <script src="https://gist.github.com/tandevmode/a833ff7ca8b1e2bcd9fcc50770fa6667.js"></script>
 
-```javascript
-let keywords = event.message.keywords;
-let stickerIntent = "";
-for (var i = 0; i <= 2; i++) {
-    stickerIntent += randomItem(keywords) + " ";
-}
-...
-function randomItem(items) {
-    return items[Math.floor(Math.random() * items.length)];
-}
-```
+創建新 Text 類型的原則是:
 
-```javascript
-req.headers['x-line-signature'] = crypto
-  .createHmac('SHA256', LINE_CHANNEL_SECRET)
-  .update(body)
-  .digest('base64')
-  .toString();
-req.headers.host = 'dialogflow.cloud.google.com';
-req.headers['content-length'] = Buffer.byteLength(body, 'utf8');
-```
-
-創建新的文本類型文本的原則是:
-
-- 正文：我們必須將 Sticker 類型的文本轉換為 Text 類型的文本，以便 Dialogflow 能夠理解它。實際上，我們可以採用所有關鍵字並將其發送。但是，如果仔細看，關鍵字的含義非常廣泛（例如 cony，sally，line，.. 也來），可能會使 Dialogflow 難以解釋 Intent，因此我嘗試了僅 3 個隨機關鍵字發送給 Dialogflow。
+- **Body**：我們必須將 Sticker 類型轉換為 Text 類型的文字，以便 Dialogflow 能夠理解它。而實際上，我們也可以將其所有關鍵字發送過去。但是，如果仔細看，關鍵字的含義非常廣泛(例如：cony、sally、line.. 等等)，可能會使 Dialogflow 難以解釋 Intent，因此我嘗試僅發送 3 個隨機關鍵字給 Dialogflow。
 
 ```javascript
 let keywords = event.message.keywords;
@@ -102,7 +80,7 @@ function randomItem(items) {
 }
 ```
 
-- Headers：這是一個非常棘手的問題，在上一篇文章中，我們可以 在轉發到 Dialogflow 之前，將 “x-line-signature” 和 “ hosts” 與 “ hosts” 一起使用，但是對於其他使用新 Body 造型的人，我們必須編輯稱為 ' 內容長度'也是！！！
+- Headers：我們在轉發到 Dialogflow 之前，需將 "x-line-signature" 和 "hosts" 一起使用，而 'content-length' 也是需要注意的部分，因此也需要將 Body 加入其中。
 
 ```javascript
 req.headers['x-line-signature'] = crypto
@@ -114,16 +92,15 @@ req.headers.host = 'dialogflow.cloud.google.com';
 req.headers['content-length'] = Buffer.byteLength(body, 'utf8');
 ```
 
-給我一點鼠標：剛開始，我嘗試轉發，但 Dialogflow（她）沒有連接。我一直都在刷牙。🥺 之後，我來諮詢 Tee Tee。我們在一起坐了好幾個小時 在拍攝結束時，我們發現需要修復。內容長度 只有 ...
-![](https://nijialin.com/images/2021/translate/sticker-driven/4.gif)
+- 給我一點鼠標：接著開始嘗試轉發到 Dialogflow 上，但 Dialogflow 都沒有連接成功。一直在原地轉圈圈 🥺。之後，我來諮詢 Jirawatee，討論了許久時間，我們發現需要修復'content-length' 即可...
 
-##＃ index.js 的所有代碼
+### index.js 的所有程式碼
 
 <script src="https://gist.github.com/tandevmode/e5045de4e811aa979f86fbf462e8c043.js"></script>
 
 # 4. 啟用 ngrok
 
-對於以前從未使用過 ngrok 的新手，我們建議您閱讀這篇經驗豐富的用戶，以在端口 3000 負載下啟用 ngrok！
+對於以前從未使用過 ngrok 的朋友，我們建議您閱讀[這篇文章](https://medium.com/linedevth/linebot-ngrok-b319841a49d7)(泰文)，可以在 3000 port 下啟用 ngrok！
 
 ```sh
 ngrok http 3000
@@ -137,17 +114,17 @@ ngrok http 3000
 
 # 5. 將 Chatbot 收集到的詞彙添加到 Dialogflow 做訓練
 
-Dialogflow 的英雄功能是我們可以輸入每個 Intent 的例句，因為我們選擇的泰文 BMI Chatbotkeywords 都是英文，所以我們也必須訓練更多的詞彙。
+Dialogflow 的其中一個功能是我們可以輸入每個 Intent 的句子，因為我們 BMI Chatbot 輸入都是泰文，但 `keywords` 裡的數值都是英文，因此我們也必須提供更多訓練的詞彙。
 
-## 5.1 默認歡迎意向
+### 5.1 Default Welcome Intent
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/7.png)
 
-## 5.2 BMI 意圖
+### 5.2 BMI Intent
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/8.png)
 
-## 5.3 BMI - 自定義 - 是意圖
+### 5.3 BMI — custom — yes Intent
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/9.png)
 
@@ -155,10 +132,11 @@ Dialogflow 的英雄功能是我們可以輸入每個 Intent 的例句，因為�
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/10.gif)
 
-## 得出結論
+## 結論
 
-本文與此相關，提供了一些小技巧，這些技巧增加了一些功能，以使 Chatbot 通過不干膠標籤類型的文本理解用戶的意圖，請嘗試將其一起應用：)
-注：關鍵詞實驗階段 - 它 keywords 仍處於試驗階段。將來可能會停止使用或更改
+本文提供了一些貼圖的小技巧，透過這些技巧增加了一些功能，讓 Chatbot 透過貼圖(Sticker)類型讓 Chatbot 理解用戶的意圖，歡迎各位參考本篇文章並嘗試各種不同的應用吧：)
+
+**Note**: Keywords experimental phase - keywords 目前仍處於試驗階段，使用前須注意相關支援度喔！
 
 # Reference
 
