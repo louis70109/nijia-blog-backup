@@ -1,8 +1,12 @@
 ---
 title: 【翻譯】嘗試透過貼圖建立 Sticker-Driven Conversations 的 Chatbot
+tags:
+  - LINE
+  - Chatbot
 categories: 翻譯
-tags: ['LINE', 'Chatbot']
+date: 2021-03-05 14:17:49
 ---
+
 
 <style>
   section.compact {
@@ -14,8 +18,6 @@ tags: ['LINE', 'Chatbot']
   }
 </style>
 
-<!-- more -->
-
 ![](https://nijialin.com/images/2021/translate/sticker-driven/1.png)
 
 > [翻譯原文](https://medium.com/linedevth/line-chatbot-sticker-driven-conversation-920087b8fe44)
@@ -23,6 +25,8 @@ tags: ['LINE', 'Chatbot']
 大家好，我希望 2021 年對每個人來說都是美好的一年 😃，本次會分享一篇對於有在開發 LINE Chatbot 朋友相關的有趣文章。
 
 12 月時，LINE 更新了 Messaging API 的新功能([新聞連結](https://developers.line.biz/en/news/2020/12/02/messaging-api-update-december-2020/))，方法是當用戶將**貼圖**發送給 Chatbot 時，將會從 Webhook 的 `keywords` 中找到貼圖的**關鍵字**訊息。
+
+<!-- more -->
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/2.jpeg)
 
