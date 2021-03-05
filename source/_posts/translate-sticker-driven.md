@@ -33,13 +33,13 @@ date: 2021-03-05 14:17:49
 
 以前，當用戶發送的貼圖給我們時，從中只能拿到 `stickerId` 與 `packageId`，很難使用它做其他的用途，也因此我們無法理解使用貼圖時的上下文為何。
 
-但如今增加了 `keywords` 這個欄位，它將幫助我們透過 **貼圖**(**Sticker**) 更好地去理解其中含意，了解用戶的意圖或感受(WoW!)
+但如今增加了 `keywords` 這個欄位，它將幫助我們透過 **貼圖**(**Sticker**) 更好地去理解其中含意，了解用戶的意圖與感受(WoW!)
 
-> 注意：`keywords` 欄位最多將只能擁有 15 個關鍵字，並且排序為**雖機**。
+> 注意：`keywords` 欄位最多將只能擁有 15 個關鍵字，並且排序為**隨機**。
 
 # 透過 Sticker 與您的 BMI Chatbot(Dialogflow)對話。
 
-我將在本文中做的是開發給 [Jirawatee](https://medium.com/@jirawatee) 使用的 BMI Chatbot，[Jirawatee](https://medium.com/@jirawatee)希望 Chatbot 透過 Sticker 了解他的需求(Intent)，讓他能更方便的使用。但眾所周知，Dialogflow 僅支持文字類型的文本，因此我們必須先創建一個 Proxy 幫忙轉譯，然後再將訊息轉發給 Dialogflow。
+我將在本文中做的是開發給 [Jirawatee](https://medium.com/@jirawatee) 使用的 BMI Chatbot，[Jirawatee](https://medium.com/@jirawatee)希望 Chatbot 透過 Sticker 了解他的需求(Intent)，讓他能更方便的使用。但眾所周知，Dialogflow 僅支援文字類型，因此我們必須先創建一個 Proxy 幫忙轉譯，然後再將訊息轉發給 Dialogflow。
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/3.png)
 
@@ -53,7 +53,7 @@ date: 2021-03-05 14:17:49
 
 ## 1. 建立 LINE Official Account (Chatbot)
 
-如果您以前沒有建立過 LINE Chatbot，則可以關注 Jirawatee 的[這篇文章](https://medium.com/linedevth/%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%81%E0%B8%B2%E0%B8%A3-integrate-line-bot-%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%81%E0%B8%B1%E0%B8%9A-dialogflow-%E0%B9%81%E0%B8%A5%E0%B8%B0-firebase-%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-bmi-bot-5a30a672f6ae)(泰文)。若你已經有帳號了，直接跳到下一小節。
+如果您以前沒有建立過 LINE Chatbot，則可以查看 Jirawatee 的[這篇文章](https://medium.com/linedevth/%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%81%E0%B8%B2%E0%B8%A3-integrate-line-bot-%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%81%E0%B8%B1%E0%B8%9A-dialogflow-%E0%B9%81%E0%B8%A5%E0%B8%B0-firebase-%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-bmi-bot-5a30a672f6ae)(泰文)。若你已經有帳號了，直接跳到下一小節。
 
 > 中文版的建立流程可以參考 - [LINE 開發社群計畫: Chatbot 台中小聚 08 – LINE platform 工作坊紀錄](https://engineering.linecorp.com/zh-hant/blog/chatbot-taichung-08-line-workshop/#massaging-api)
 
@@ -95,7 +95,7 @@ req.headers.host = 'dialogflow.cloud.google.com';
 req.headers['content-length'] = Buffer.byteLength(body, 'utf8');
 ```
 
-- 給我一點鼠標：接著開始嘗試轉發到 Dialogflow 上，但 Dialogflow 都沒有連接成功。一直在原地轉圈圈 🥺。之後，我來諮詢 Jirawatee，討論了許久時間，我們發現需要修復'content-length' 即可...
+接著開始嘗試轉發到 Dialogflow 上，但 Dialogflow 都沒有連接成功。一直在原地轉圈圈 🥺。之後，我來諮詢 Jirawatee，討論了許久時間，我們發現需要修復'content-length' 即可...
 
 ### index.js 的所有程式碼
 
@@ -103,7 +103,7 @@ req.headers['content-length'] = Buffer.byteLength(body, 'utf8');
 
 # 4. 啟用 ngrok
 
-對於以前從未使用過 ngrok 的朋友，我們建議您閱讀[這篇文章](https://medium.com/linedevth/linebot-ngrok-b319841a49d7)(泰文)，可以在 3000 port 下啟用 ngrok！
+對於以前從未使用過 ngrok 的朋友，我們建議您閱讀[這篇文章](https://medium.com/linedevth/linebot-ngrok-b319841a49d7)(泰文)，可以讓我們在 3000 port 下啟用 ngrok！
 
 ```sh
 ngrok http 3000
@@ -111,7 +111,7 @@ ngrok http 3000
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/5.png)
 
-然後，像以前一樣，從 ngrok 獲取 URL，並添加 /webhook 放入我們的 Chatbot Channel。
+像過往一樣，從 ngrok 獲取 URL 後，在網址後面添加 `/webhook` 並放入我們的 Chatbot Channel 當中。
 
 ![](https://nijialin.com/images/2021/translate/sticker-driven/6.png)
 
