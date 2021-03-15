@@ -18,12 +18,12 @@ tags:
 
 # 前言
 
-大家好，我是 LINE Taiwan 的 Tech Evangelist - NiJia Lin。這次很開心受到 chatbot 社群的邀請，，參加了 "[Chatbot meetup 聊天機器人小小聚 28 @ Onramp Studio](https://events.chatbot.tw/events/27)" 的聚會活動，過了一個農曆年，相信很多人也很期待三月 LINE Platform API 的新功能，並且分享 LINE API 更新與個人開發的心得。在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。
+大家好，我是 LINE Taiwan 的 Tech Evangelist - NiJia Lin。這次很開心受到 chatbot 社群的邀請，，參加了 "[Chatbot meetup 聊天機器人小小聚 28 @ Onramp Studio](https://events.chatbot.tw/events/27)" 的聚會活動，過了一個農曆年，相信很多人也很期待三月 LINE Platform API 的新功能，藉由在社群上與大家分享 LINE API 更新與個人開發的心得。並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。
 
 - 社群 Chatbots Meetup： [https://www.facebook.com/groups/chatbot.tw](https://www.facebook.com/groups/chatbot.tw)
 - 本次活動網頁: [活動網址](https://events.chatbot.tw/events/27)
 
-由於 Chatbots Meetup 本身屬於社群自主性的活動，裡面也有許多社群朋友所贊助的閃電秀。裡面的所有內容也是相當的難得與有趣。也希望能夠透過本篇文章讓大家稍微了解 Chatbots Meetup 社群閃電秀的魅力。
+由於 Chatbot Meetup 本身屬於社群自主性的活動，裡面也有許多社群朋友所贊助的閃電秀。裡面的所有內容也是相當的難得與有趣。也希望能夠透過本篇文章讓大家稍微了解 Chatbot Meetup 社群閃電秀的魅力。
 
 這次就由我用文章帶大家了解一下近期有什麼有趣的更新內容吧！
 
@@ -41,9 +41,35 @@ tags:
 
 在應用許多 Chatbot 功能之後，相信開發者們都會漸漸的開始嘗試使用 [LIFF](https://developers.line.biz/en/docs/liff/overview/) 去做更多變化的組合應用，但以往在群組中要開啟 Chatbot 的 LIFF 是需要讓 Chatbot 多回應一則訊息，在對話中就會多了一則訊息是為了讓用戶可以點選並觸發相關事件。
 
-然後現在可以透過在群組中使用 Quick Reply 來減少多餘的訊息，讓 Chatbot 可以輸出相關選項讓使用者可以在下方選擇後開啟對應的 LIFF 功能，達到快速觸發的功能，
+然後現在可以透過在群組中使用 Quick Reply 來減少多餘的訊息，讓 Chatbot 可以輸出相關選項讓使用者可以在下方選擇後開啟對應的 LIFF 功能，達到快速觸發的功能，以下是 URI Action 的 Demo：
+
+![](https://nijialin.com/images/2021/chatbot-28/1.gif)
+
+> 對於寫法有興趣的朋友可以[參考這邊](https://github.com/louis70109/PLeagueBot/blob/master/controller/line_controller.py#L49)
+
+這邊建議僅使用以下三種方式，[文件參考](https://developers.line.biz/en/docs/messaging-api/using-line-url-scheme/):
+
+- https://line.me/R/
+- https://liff.line.me/
+- tel:09001234567 (手機用戶可以支援打電話)
 
 <script async class="speakerdeck-embed" data-slide="12" data-id="fc4da12ffb4c4f779be22900e3268f67" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+既然提到 LIFF 了，當然要提一下在 LINE v11.3.0 之後更新的功能。當用戶在 LIFF 的 A 頁面要轉到 B 頁面時 LIFF 會在視窗中間出現一個以切換的提示，為了提升用戶的使用體驗，在 v11.3.0 之後將更改至最底端，讓用戶在使用上不僅可以收到換頁提醒，必且也不會影響使用，更多細節請[參閱新聞](https://developers.line.biz/en/news/2021/03/01/liff-on-line-11-3-0/#change-toast)。
+
+> LIFF to LIFF [參考範例](https://github.com/louis70109/LIFF-to-LIFF-Example)
+
+<script async class="speakerdeck-embed" data-slide="15" data-id="fc4da12ffb4c4f779be22900e3268f67" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+另一個改善開發者體驗的改動則是讓 LIFF 在 iPadOS 上的顯示方式更友善，讓前端的畫面排版上可以更擁有良好的排版而不會拉寬設計樣式，更多細節請[參閱新聞](https://developers.line.biz/en/news/#ipad-window-size)。
+
+<script async class="speakerdeck-embed" data-slide="17" data-id="fc4da12ffb4c4f779be22900e3268f67" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在 3/1 時正式移除掉 LIFF 的 Replace Mode，若您有在使用 LIFF 的話請參考 ➡️ [轉移你的 LIFF: 從 Replace 到 Concatenate 模式](https://engineering.linecorp.com/zh-hant/blog/liff-replace-to-concatenate/)
+
+2021 年的 TECH FRESH 實習生計畫預計從 3 月開始實習，我們正在尋找對技術有熱情、積極解決問題、勇於接受挑戰的優秀同學，目前招募通道已經開啟了，馬上手刀申請送出履歷，下一位 TECH FRESH 就是你！[招募連結](https://careers.linecorp.com/jobs/83)
+
+<script async class="speakerdeck-embed" data-slide="20" data-id="fc4da12ffb4c4f779be22900e3268f67" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 - 讀書會的庶務
 
