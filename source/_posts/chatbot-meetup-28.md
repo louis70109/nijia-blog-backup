@@ -1,8 +1,12 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 'LINE 開發社群計畫: 202101 Chatbot 社群心得與彈幕分享'
 tags:
+  - LINE
+  - Chatbot
+categories: 研討會
+date: 2021-03-19 17:00:05
 ---
+
 
 <style>
   section.compact {
@@ -14,7 +18,7 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://nijialin.com/images/chatbot.png)
 
 # 前言
 
@@ -101,15 +105,14 @@ tags:
   - 分享一個可以在 Chatbot 的對話中讓使用者快速結帳的範例
 - 聊天機器人框架 Bottender 與 Kamigo 的設計
   - 將長議程的簡報濃縮在濃縮，用五分鐘快速介紹精華的部分讓大家了解其中的內容
+  - [簡報](https://docs.google.com/presentation/d/1BbfW8ZkDS1lt-uzFXop6k2PmXg30OcQI35NCeH-S9AY/edit#slide=id.ga39021286c_0_523)
   - 框架：
     - Ruby: [Kamigo](https://github.com/etrex/kamigo)
     - NodeJS: [Bottender](https://github.com/Yoctol/bottender)
 
 # 結論
 
-# 活動小結
-
-立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
+透過參加每一場社群小聚的分享並與參加者交流都可以讓我學到許多不同的新知，未來也會持續分享更多有關於 LINE Platform 相關的新知與應用，歡迎各位持續關注「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動與平台更新新知，或與開發者計畫有關的最新消息的推播通知。▼
 
 「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev
 ![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
