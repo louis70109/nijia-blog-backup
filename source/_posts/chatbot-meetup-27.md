@@ -1,5 +1,5 @@
 ---
-title: 'LINE 開發社群計畫: 202101 Chatbot 社群心得與彈幕分享'
+title: 'LINE 開發社群計畫: 202103 Chatbot 社群心得與彈幕分享'
 categories: 研討會
 date: 2021-01-21 16:12:37
 tags: ['LINE', 'Chatbot']
