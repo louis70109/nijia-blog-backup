@@ -1,5 +1,5 @@
 ---
-title: 'LINE 開發社群計畫: 202103 LINE Platform 與 Chatbot 社群心得分享'
+title: 'LINE 開發社群計畫: 202103 LINE Platform API 更新與 Chatbot 社群心得分享'
 tags:
   - LINE
   - Chatbot
