@@ -1,8 +1,14 @@
 ---
 title: 【翻譯】如何個性化在 LINE 中顯示 Rich Menu 以匹配用戶的語系
+tags:
+  - LINE
+  - Richmenu
+  - Firebase
+  - Chatbot
 categories: 翻譯
-tags: ['LINE', 'Richmenu', 'Firebase', 'Chatbot']
+date: 2021-03-22 11:59:30
 ---
+
 
 <style>
   section.compact {
