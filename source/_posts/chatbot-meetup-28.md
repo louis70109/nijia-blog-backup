@@ -43,7 +43,7 @@ date: 2021-03-19 17:00:05
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="fc4da12ffb4c4f779be22900e3268f67" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-但以上功能是基於用戶與 Chatbot 是一對一互動狀態才能使用 Rich menu，如今天第二位講者聖佑所提到的讀書會小幫手，讀書會群組基本上都是以**一個群組(Group)**為單位，若在群組中 Chatbot 則無法使用 Rich menu，會讓一些原本優秀的功能瞬間失去，因此這時候使用 Image map 或者 Quick Reply 來幫忙處理群組相關訊息。以下有些案例提供讀者們參考：
+但以上功能是基於用戶與 Chatbot 是一對一互動狀態才能使用 Rich menu，如今天第二位講者聖佑所提到的讀書會小幫手，讀書會群組基本上都是以 **一個群組(Group)** 為單位，若在群組中 Chatbot 則無法使用 Rich menu，會讓一些原本優秀的功能瞬間失去，因此這時候使用 Image map 或者 Quick Reply 來幫忙處理群組相關訊息。以下有些案例提供讀者們參考：
 
 <script async class="speakerdeck-embed" data-slide="10" data-id="fc4da12ffb4c4f779be22900e3268f67" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -81,7 +81,7 @@ date: 2021-03-19 17:00:05
 
 ## TECH FRESH 實習生計畫
 
-2021 年的 TECH FRESH 實習生計畫預計從 3 月開始實習，我們正在尋找對技術有熱情、積極解決問題、勇於接受挑戰的優秀同學，目前招募通道已經開啟了，馬上手刀申請送出履歷，下一位 TECH FRESH 就是你！[招募連結](https://careers.linecorp.com/jobs/83)
+目前 2021 年的 TECH FRESH 實習生計畫招募通道已經開啟了，我們正在尋找對技術有熱情、積極解決問題、勇於接受挑戰的優秀同學，馬上手刀申請送出履歷，下一位 TECH FRESH 就是你！[招募連結](https://careers.linecorp.com/jobs/83)
 
 <script async class="speakerdeck-embed" data-slide="20" data-id="fc4da12ffb4c4f779be22900e3268f67" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -104,7 +104,7 @@ date: 2021-03-19 17:00:05
 - LINE Bot + LINE Pay 實作自動購物流程
   - 分享一個可以在 Chatbot 的對話中讓使用者快速結帳的範例
 - 聊天機器人框架 Bottender 與 Kamigo 的設計
-  - 將長議程的簡報濃縮在濃縮，用五分鐘快速介紹精華的部分讓大家了解其中的內容
+  - 將長議程的簡報濃縮在濃縮，用五分鐘快速介紹精華的部分讓大家了解框架的實作流程與說明
   - [簡報](https://docs.google.com/presentation/d/1BbfW8ZkDS1lt-uzFXop6k2PmXg30OcQI35NCeH-S9AY/edit#slide=id.ga39021286c_0_523)
   - 框架：
     - Ruby: [Kamigo](https://github.com/etrex/kamigo)
