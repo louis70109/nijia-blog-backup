@@ -227,10 +227,9 @@ git commit -m '想放在 commit 裡的訊息'
 
 ![heroku create](https://nijialin.com/images/2020/vue-use-liff/heroku-create.png)
 
-
-
 建立完成後會自動連接剛剛建立的 repository，接著透過 `git push heroku master` 來推到 heroku 上：
 ![heroku push 1](https://nijialin.com/images/2020/vue-use-liff/heroku-push-1.png)
+
 等待一會兒後就完成啦！！並且還附贈一個 Domain 給你。這邊範例的 domain 則是 `https://liff-sample-5.heroku.app/`
 ![heroku push 2](https://nijialin.com/images/2020/vue-use-liff/heroku-push-2.png)
 
