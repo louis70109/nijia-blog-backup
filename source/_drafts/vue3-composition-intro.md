@@ -31,20 +31,33 @@ tags:
 
 除了 IE 支援度問題以外，目前就我所知 Vue3 向下相容基本上達到九成以上，且也可以在 3 版中套入 2 版的相關 API 實作。
 
+## Vite
 
-## Html v-for 迴圈 的 key 可以放在父階層
+看名字很容易覺得他只支援 Vue，實則不然，其實他支援了許多種前端框架([文件](https://vitejs.dev/guide/#scaffolding-your-first-vite-project))，本文中就都會以 Vue 為主。
 
-```javascript
-<div v-for="item in items">
-  <div v-key="index">商品1</div>
-  <div v-key="index">商品2</div>
-  ...
-</div>
+- vanilla
+- vue
+- vue-ts
+- react
+- react-ts
+- preact
+- preact-ts
+- lit-element
+- lit-element-ts
+
+### [alias](https://vitejs.dev/guide/migration.html#alias-behavior-change) - 客製化你想要的路徑
+
+過去剛使用時常常搞不清楚為什麼是用 `@` 來開始一個路徑，若常使用 Linux 相關的指令會很直觀地想為什麼不用 `./` (當前目錄)、 `~/` (絕對路徑的目錄)、 `../` (當前檔案位置的上層資料夾)，這些都是我剛開始碰到的用法上的困擾(根本是文件沒看清楚😆)，以 Vue 來說， `@` 的設定通常都是 **src/** 下，Vite 這邊可以參考以下用法來客製化代表路徑：
+
+```
+alias: { '/@foo': path.resolve(__dirname, 'some-special-dir') }
 ```
 
-- Vite 支援 vue 以外的框架
-- Vite alias -> config ‘@‘ to an resolve path
+> 引入時使用 **/@foo** 這個字串就等於找到當前專案目錄(__dirname)的 **some-special-dir** 的資料夾
+
 - 會有 tpye=‘module’
+
+## Vue 2 與 3 Mount 的差異
 
 - Vue3 掛載都是在 createApp() 後面一直接著 .use() 後再掛置 #app
 
