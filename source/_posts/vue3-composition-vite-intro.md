@@ -1,8 +1,13 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 簽書會紀錄 | Vue3 | Composition API | Vite
 tags:
+  - Vue
+  - Vite
+  - Composition API
+categories: JavaScript
+date: 2021-03-27 21:03:36
 ---
+
 
 <style>
   section.compact {
@@ -14,7 +19,6 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
 
 # 前言
 
@@ -101,15 +105,19 @@ alias: { '/@foo': path.resolve(__dirname, 'some-special-dir') }
 
 > [Vite 官方文件](https://vitejs.dev/config/#resolve-alias)中說明在 resolve 路徑時是使用這個套件作成的 - [rollup/plugins](https://github.com/rollup/plugins/tree/master/packages/alias)。
 
-- Store.commit -> mutation
+## Composition API
 
-- 用 composition api 做類似 vuex 會遇到的問題
-  - 設計的方式不是來處理共享的元件
-  - 解決過去都使用 mixin 的作法，在同個 component 會有機會衝突，在 life cycle 中很容易互相影響 component
-  - 需要使用 reactive 去 hook 相關數值
+過往需要共用 Component 時會需要使用 mixin 來處理，但因為每個 Component 都有各自的 Computed、Method...因此很容易在不同的 Component 之間造成衝突，且在渲染 life cycle 中也有機會影響到其他 Component。
 
-每個 component API 都有自己的 data, method, compute - 在個別去 import 避免在北改時影響到其他的頁面
+## 模擬 Vuex
 
-- Use inject and provide to hook like Vuex mutation, reactive data like store
+這邊一般都不推薦直接當作替代方案，因為原本設計的用計就不是做**資料狀態管理**，但也是許多人發現流程可以做出來，因此在某些情境下若無需透過 Global 來管理資料狀態的話，可以使用這個方式來對資料做檢疫的處理。
+
+- 需要使用 reactive 去 hook 相關數值。
+- 每個 component API 都有自己的 data, method, compute，需要用時在個別去 import 避免在修改時影響到其他的頁面。
+- Use **inject** and **provide** to hook which would like Vuex mutation, and reactive data like Vuex Store。
+
+> 範例專案: TBD
 
 # 結論
+在這次聽講過程中也藉由過往有些使用 Vue 框架讓我在過程中**較沒**那麼苦手😆，現場許多 Live Demo 也解開了我一些過往未解的疑惑，透過參加活動也讓我更了解新工具的相關操作方式，期待之後我也可以應用在我的 Side Project 上～
