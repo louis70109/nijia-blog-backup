@@ -19,6 +19,7 @@ date: 2021-03-28 22:46:50
   }
 </style>
 
+![](https://nijialin.com/images/heroku.png)
 # TL;DR
 
 Heroku Postgresql 引入時預設 DATABASE_URL 的開頭是 `postgres`，因 Python ORM - SQLAlchemy 有先天限制問題，需另起一個環境變數並改成 `postgresql` 才不會遇到：
