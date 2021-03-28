@@ -8,7 +8,6 @@ categories: JavaScript
 date: 2021-03-27 21:03:36
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -19,6 +18,7 @@ date: 2021-03-27 21:03:36
   }
 </style>
 
+![](https://nijialin.com/images/vue3/1.png)
 
 # 前言
 
@@ -120,4 +120,5 @@ alias: { '/@foo': path.resolve(__dirname, 'some-special-dir') }
 > 範例專案: TBD
 
 # 結論
-在這次聽講過程中也藉由過往有些使用 Vue 框架讓我在過程中**較沒**那麼苦手😆，現場許多 Live Demo 也解開了我一些過往未解的疑惑，透過參加活動也讓我更了解新工具的相關操作方式，期待之後我也可以應用在我的 Side Project 上～
+
+在這次聽講過程中也藉由過往有些使用 Vue 框架讓我在過程中**較沒**那麼苦手 😆，現場許多 Live Demo 也解開了我一些過往未解的疑惑，透過參加活動也讓我更了解新工具的相關操作方式，期待之後我也可以應用在我的 Side Project 上～
