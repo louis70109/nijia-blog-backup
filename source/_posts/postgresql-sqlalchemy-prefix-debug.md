@@ -1,8 +1,13 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 解決 SQLAlchemy 無法在 Heroku 上連接 PostgreSQL
 tags:
+  - SQLAlchemy
+  - Heroku
+  - Postgresql
+categories: Python
+date: 2021-03-28 22:46:50
 ---
+
 
 <style>
   section.compact {
@@ -14,12 +19,19 @@ tags:
   }
 </style>
 
-# 前言
+# TL;DR
+
+Heroku Postgresql 引入時預設 DATABASE_URL 的開頭是 `postgres`，因 Python ORM - SQLAlchemy 有先天限制問題，需另起一個環境變數並改成 `postgresql` 才不會遇到：
+
+```
+sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:postgres
+```
 
 <!-- more -->
 
-# 介紹
-以 Python 以及我的 Side Project - [PLeagueBot](https://github.com/louis70109/PLeagueBot)為例，專案初期因對 ORM 相關設定不熟(懶)，因此在寫 DB 時因為選擇使用 `psycopg2-binary` 讓我直接寫 raw query 來操作 DB，在許多情境下連結 postgresql 參數時網址範例如下：
+# 抓蟲過程
+
+以 Python 以及我的 Side Project - [PLeagueBot](https://github.com/louis70109/PLeagueBot)為例，專案初期因對 ORM 相關設定不熟(懶)，因此在寫 DB 時因習慣選擇使用 `psycopg2-binary` 讓我直接寫 raw query 來操作 DB，在許多情境下連結 postgresql 參數時網址範例如下：
 
 ```
 postgres://USER:PASSWORD@127.0.0.1:5432/postgres
@@ -41,8 +53,7 @@ sqlalchemy.exc.NoSuchModuleError: Can't load plugin: sqlalchemy.dialects:postgre
 
 問: 但 Heroku 引入 Postgrsql 時會自動產生一個 **DATABASE_URL** 的環境變入且開頭是 **postgres**，那他都不能改我 DB 連線要怎麼辦？
 打: 不能怎麼辦，重新弄一個環境變數吧！除非你砍了 DB 的 add-on，不然這個網址一般來說都不會變，以我而言就另起一個環境變數名為 `DATABASE_URI` 複製參數過去並把開頭改成 `postgresql` 就沒問題了！
-## 
 
 # 結論
 
-為什麼會引入之後才遇到這個問題呢？因為初期我已經先把 DB 建立好後才引入 ORM，在使用上都不會出現這個錯誤，但當我開始測試新的 Table 後就開始出現上述說的問題，因此以後再湧時要多注意一下這個部分喔！
+為什麼會引入之後才遇到這個問題呢？因為初期我已經先把 DB 建立好後(使用 `postgresql`)，跑了許久之後才引入 SQLAlchemy(ORM)，在使用上都不會出現這個錯誤，但當我開始測試新的 Table 後就開始出現上述說的問題，本地端也是會遇到這個問題喔！大家使用上要多注意才行
