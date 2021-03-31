@@ -68,7 +68,11 @@ KKTIX 活動網頁: [活動網址](https://linegroup.kktix.cc/events/20210319)
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="b6b53ddd79624379b4809fc52cb4dd87" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-當然現場的大家對於技術團隊中運作的方式也很好奇，如上簡報所示
+當然現場的大家對於技術團隊中運作的方式也很好奇，因為需要整合許多平台的資料，會有以下三個部分：
+
+- Domain：整合與處理不同形式的 API 資料。
+- Large Scale Project：因為專案本身規模龐大，因此**程式碼品質**、**CI/CD**、**跨團隊(國)合作**都是在開發過程中相當重要的部分。
+- Scalability：擴展性在 LINE 中一直是很重要的一環，寫出具有彈性且有品質的程式碼也是每位 LINE 的開發者所注重的。
 
 - front https://speakerdeck.com/line_developers_tw2/line-frontend-team
 - frontend https://speakerdeck.com/line_developers_tw2/line-frontend-team
