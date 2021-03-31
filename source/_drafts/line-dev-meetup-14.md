@@ -1,7 +1,7 @@
 ---
-title: LINE Developers Meetup 活動紀錄
-categories: 學習紀錄
-tags:
+title: 帶你了解 LINE Developers Meetup 第 14 場的精彩內容！
+categories: 研討會
+tags: ['LINE']
 ---
 
 <style>
@@ -113,11 +113,47 @@ KKTIX 活動網頁: [活動網址](https://linegroup.kktix.cc/events/20210319)
 
 ![](https://nijialin.com/images/2021/line-14/7.jpg)
 
-https://speakerdeck.com/line_developers_tw2/20210319-line-travel-team
+<script async class="speakerdeck-embed" data-slide="5" data-id="9902387d29304ad6af58a39852beb825" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-## TECH FRESH
+講到服務平台當然不能少了 LINE TRAVEL 呀！LINE TRAVEL 致力於打造全台最大的行程規劃與旅遊導購平台，從旅遊前的資訊搜集、與旅伴共同規劃行程，到導購下單的訂購機票飯店與團旅等的一站式體驗。
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="9902387d29304ad6af58a39852beb825" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+講者也分享了再交付平台功能時的週期中會有什麼部分在其中，Scrum Sprint 從計畫-開發-測試(Unit、Automation、Regression...)-Release，是不是跟上述其他團隊的流程也很像呢？在 LINE 工程部門內都會遵照一定的標準下開發，讓大家同樣的環境下工作，一方面增加開發效率，另一方面則可以降低大家的溝通成本。
+
+<script async class="speakerdeck-embed" data-slide="9" data-id="9902387d29304ad6af58a39852beb825" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+![](https://nijialin.com/images/2021/line-14/13.jpg)
+
+> 大家再跟 TRAVEL 同仁溝通時也都非常熱絡，相信在交流中也能學到不少知識～
+
+## [TECH FRESH](https://careers.linecorp.com/jobs/83)
+
+![](https://nijialin.com/images/2021/line-14/5.jpg)
+
+學生時期最快與社會接軌其中宜方法就是到企業實習啦！LINE 除了提供優良的實習環境給學生外，也讓學生朋友能實際體會到跨國企業的開發流程上的規模。
+
+<script async class="speakerdeck-embed" data-slide="3" data-id="d30fa9ef715c40eb89e3d14be4bce5cd" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當然如同上述其他團隊一樣，我們更鼓勵學生別限制自己的技能樹，勇於挑戰不同的開發環境，不管前/後端、DevOps、Database、ML...，讓自己成為獨一無二的人才，增加自己的競爭力！
+
+<script async class="speakerdeck-embed" data-slide="5" data-id="d30fa9ef715c40eb89e3d14be4bce5cd" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+最後講者也大方的更大家說在投遞履歷時需要注意的部分，以下這些都是能夠幫助你職涯的內容，學生朋友別忘了日常就培養一下自己的專業技能喔！
+
+<script async class="speakerdeck-embed" data-slide="7" data-id="d30fa9ef715c40eb89e3d14be4bce5cd" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 # 結論
+
+![](https://nijialin.com/images/2021/line-14/9.jpg)
+
+分享 Evan 在交流中說過的一段話 「這場聚會可能是某個參與者畢生參與的第一次活動，也可能是改變他人生，最重要（或是最難忘）的活動。 」
+
+我們在每次舉辦的活動時都希望會眾能在其中獲取新知，也盡力與每位會眾交流，並幫助每一位同學與求職者可以媒合到想要交流的同仁們，希望大家能夠享受在這個活動中。
+
+最後別忘了，在四月我們還會在**清華大學教育館**舉辦第 15 場的線下活動喔！大家趕快手刀報名起來～
+
+- [活動網址](https://linegroup.kktix.cc/events/20210416)
 
 # 活動小結
 
