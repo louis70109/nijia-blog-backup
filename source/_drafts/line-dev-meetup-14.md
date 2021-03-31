@@ -24,7 +24,7 @@ KKTIX 活動網頁: [活動網址](https://linegroup.kktix.cc/events/20210319)
 
 <!-- more -->
 
-# 介紹
+# 活動內容與外場分享
 
 ![](https://nijialin.com/images/2021/line-14/1.jpg)
 
@@ -44,9 +44,33 @@ KKTIX 活動網頁: [活動網址](https://linegroup.kktix.cc/events/20210319)
 
 在一個研討會中最重要的時光除了聽講者的精彩議程外，最精華的部分就是把握與講者交流時間，透過交流除了了解相關職務以外，也能幫你釐清剛剛在聽講過程中不了解的部分，也許你的疑問也是大家的疑問，前往不同的研討會時別害羞提出你的問題哦！
 
-- client https://speakerdeck.com/line_developers_tw2/line-client-team
+## [LINE CLIENT 團隊](https://speakerdeck.com/line_developers_tw2/line-client-team)
+
+![](https://nijialin.com/images/2021/line-14/6.jpg)
+
+<script async class="speakerdeck-embed" data-slide="2" data-id="d0a4a5f15ad54a688f3eea7ab3258e92" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+工程師成就感許多的來源相信大多都是希望自己開發的產品是能夠在路上看到有人使用它，而 LINE 的 CLIENT 團隊負責的部分正是大家平常每天在用的 App，如下圖所示，除了將 [LINE TODAY 的新聞頁面](https://today.line.me/tw/v2/tab)引入 APP 的分頁外，如我們平常使用的 **影片自動播放**、**子畫面觀看影片**、**長截圖**(還可以匿名)也都是 CLIENT 團隊處理的喔！
+
+<script async class="speakerdeck-embed" data-slide="3" data-id="d0a4a5f15ad54a688f3eea7ab3258e92" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當然不只有這些開發，還有像是 [LINE TODAY](https://today.line.me/tw/v2/tab)、[LINE SHOPPING](https://buy.line.me/)、[LINE SDK](https://github.com/line) 都是工作上會接觸到的產品，想了解更多關於工作以及團隊文化可以參考下方簡報：
+
+<script async class="speakerdeck-embed" data-slide="7" data-id="d0a4a5f15ad54a688f3eea7ab3258e92" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+> 如果你對於開發 Client 產品有興趣，目前有在找 [iOS Developer](https://careers.linecorp.com/jobs/17)。
+
+## [LINE SHOPPING(購物)](https://speakerdeck.com/line_developers_tw2/20210319-line-shopping-team)
+
+<script async class="speakerdeck-embed" data-slide="3" data-id="b6b53ddd79624379b4809fc52cb4dd87" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+電商在我們生活中已經是密不可分的一部份，LINE 購物作為一個導購平台與各大電商平台合作，讓用戶可以在平台上比價找到自己最滿意的價格去購買商品，因此就有了「**先 LINE 購物 再購物**」的這句名言產生了～
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="b6b53ddd79624379b4809fc52cb4dd87" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當然現場的大家對於技術團隊中運作的方式也很好奇，如上簡報所示
+
 - front https://speakerdeck.com/line_developers_tw2/line-frontend-team
-- shopping https://speakerdeck.com/line_developers_tw2/20210319-line-shopping-team
 - frontend https://speakerdeck.com/line_developers_tw2/line-frontend-team
 - today: https://speakerdeck.com/line_developers_tw2/20210319-line-today-team
 - Travel https://speakerdeck.com/line_developers_tw2/20210319-line-travel-team
