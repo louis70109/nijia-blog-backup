@@ -37,7 +37,6 @@ KKTIX 活動網頁: [活動網址](https://linegroup.kktix.cc/events/20210319)
 
 ![](https://nijialin.com/images/2021/line-14/2.jpg)
 
-
 本次 LINE Developer Meetup 開發者小聚，第一位講者 Nina Chang 來分享在資料工程團隊中的經驗分享 - 「**Let’s Play in DataPark**」，帶大家認識 LINE 資料工程團隊的角色分工以及目前所接觸到的部分(**MLOps、MarTech、NLP**)，也敘述了許多與在學時學習的比較，更多內容歡迎參考 Nina 寫的文章：[LINE 資料工程團隊如何透過專業分工與 MLOps 打造不同服務 | 以 MarTech & NLP 為例](https://engineering.linecorp.com/zh-hant/blog/lets-play-in-data-park/)。
 
 ![](https://nijialin.com/images/2021/line-14/12.jpg)
@@ -50,7 +49,9 @@ KKTIX 活動網頁: [活動網址](https://linegroup.kktix.cc/events/20210319)
 
 <script async class="speakerdeck-embed" data-slide="2" data-id="d0a4a5f15ad54a688f3eea7ab3258e92" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-工程師成就感許多的來源相信大多都是希望自己開發的產品是能夠在路上看到有人使用它，而 LINE 的 CLIENT 團隊負責的部分正是大家平常每天在用的 App，如下圖所示，除了將 [LINE TODAY 的新聞頁面](https://today.line.me/tw/v2/tab)引入 APP 的分頁外，如我們平常使用的 **影片自動播放**、**子畫面觀看影片**、**長截圖**(還可以匿名)也都是 CLIENT 團隊處理的喔！
+工程師成就感許多的來源相信大多都是希望自己開發的產品是能夠在路上看到有人使用它，而 LINE 的 CLIENT 團隊負責的部分正是大家平常每天在用的 App，如以下簡報所示，除了將 [LINE TODAY 的新聞頁面](https://today.line.me/tw/v2/tab)引入 APP 的分頁外，如我們平常使用的 **影片自動播放**、**子畫面觀看影片**、**長截圖**(還可以匿名)也都是 CLIENT 團隊處理的喔！
+
+- 長截圖相關開發介紹影片 - [Android Chatroom Message Capturing](https://www.youtube.com/watch?v=y22Z76j3S00)
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="d0a4a5f15ad54a688f3eea7ab3258e92" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -74,10 +75,47 @@ KKTIX 活動網頁: [活動網址](https://linegroup.kktix.cc/events/20210319)
 - Large Scale Project：因為專案本身規模龐大，因此**程式碼品質**、**CI/CD**、**跨團隊(國)合作**都是在開發過程中相當重要的部分。
 - Scalability：擴展性在 LINE 中一直是很重要的一環，寫出具有彈性且有品質的程式碼也是每位 LINE 的開發者所注重的。
 
-- front https://speakerdeck.com/line_developers_tw2/line-frontend-team
-- frontend https://speakerdeck.com/line_developers_tw2/line-frontend-team
-- today: https://speakerdeck.com/line_developers_tw2/20210319-line-today-team
-- Travel https://speakerdeck.com/line_developers_tw2/20210319-line-travel-team
+> 對於挑戰流量有興趣的朋友可以查看相關職缺：[Server-Side Developer](https://careers.linecorp.com/jobs/250)
+
+## [LINE Frontend 團隊](https://speakerdeck.com/line_developers_tw2/line-frontend-team)
+
+![](https://nijialin.com/images/2021/line-14/8.jpg)
+
+在你我看到 LINE APP 許多頁面中，其實藏著許多 Webview 的畫面，也就是開發者們常見的 [LIFF](https://developers.line.biz/en/docs/liff/overview/)，在大部分的服務內都有前端部門的足跡，當然除了提供外部服務外，其中也建立了三個內部的服務讓 LINE 前端工程師們可以更有效率的使用一些常用的功能：
+
+<script async class="speakerdeck-embed" data-slide="4" data-id="b1a6c4534d5942dcb89e709b8b3416d3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+而在 LINE 中很鼓勵大家多學習不同的技能，在前端部門這當然也是一樣，如平常所見開發者為了提升 SEO 會去使用一些 [Server-Side Rendering](https://nuxtjs.org/docs/2.x/concepts/server-side-rendering)(SSR) 的框架(如 Nuxt.js)來提升搜尋效率等等，除了鼓勵大家勇於學習不同的技能外，另一方面當然也讓大家提升對於產品的了解度。
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="b1a6c4534d5942dcb89e709b8b3416d3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+如上述所說除了產品開發外，LINE 也很注重多元學習，講者概略統計出一週工程師們常做的事情，是不是覺得很讚呢！如果你也喜歡前端部門的話歡迎來挑戰一起加入 LINE 的大家庭！([投遞入口](https://careers.linecorp.com/jobs/7))
+
+<script async class="speakerdeck-embed" data-slide="10" data-id="b1a6c4534d5942dcb89e709b8b3416d3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## [LINE TODAY 團隊](https://today.line.me/tw/v2/tab)
+
+<script async class="speakerdeck-embed" data-slide="4" data-id="52067d63f1814086824fdec298e3f1e7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在前面 Client 團隊有稍微提到，LINE TODAY 作為數一數二的新聞入口相信也是大家平常每天看時事的一個平台，且不只在台灣，泰國、印尼、香港也都有上架喔！當然除了時事以外也有相關轉播(直播)的功能，像我最愛看的 NBA 就有在 TODAY 上轉播。
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="52067d63f1814086824fdec298e3f1e7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當然要面對大流量勢必得有個好的架構才有辦法應付不同的情境，講者也不吝嗇提供出 LINE TODAY 的架構，從前端、串接第三方 API、推薦系統、後端、Cache Sever、Databases...都有在上面。
+
+如果你也喜歡 LINE TODAY 並想加入，目前也有在徵人喔！
+
+- [Frontend](https://careers.linecorp.com/jobs/7)
+- [Server-Side Developer](https://careers.linecorp.com/jobs/250)
+- [QA Engineer](https://careers.linecorp.com/jobs/19)
+
+## [LINE Travel 團隊](https://travel.line.me/)
+
+![](https://nijialin.com/images/2021/line-14/7.jpg)
+
+https://speakerdeck.com/line_developers_tw2/20210319-line-travel-team
+
+## TECH FRESH
 
 # 結論
 
