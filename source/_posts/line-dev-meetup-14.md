@@ -1,8 +1,11 @@
 ---
 title: 帶你了解 LINE Developers Meetup 第 14 場的精彩內容！
+tags:
+  - LINE
 categories: 研討會
-tags: ['LINE']
+date: 2021-04-01 10:00:24
 ---
+
 
 <style>
   section.compact {
