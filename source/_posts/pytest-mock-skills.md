@@ -1,5 +1,5 @@
 ---
-title: 【Python】測試階段的類別、函式、全域變數、期望值 | Pytest | Mock | MonkeyPatch
+title: 【Python】測試階段的類別、函式、全域變數、期望值設定 | Pytest | Mock | MonkeyPatch
 tags:
   - Python
   - Pytest
