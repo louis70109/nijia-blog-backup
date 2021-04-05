@@ -1,7 +1,8 @@
 @startuml
-專案->自動測試: 觸發自動測試
-自動測試->專案: 測試完成(成功/失敗)
-
-專案->上版本
-
+專案->Pytest: 本地端執行測試
+Pytest->專案: 本地測試完成(成功/失敗)
+專案->GitHub: 送上倉庫
+GitHub->GitHubActions: 觸發 CI
+GitHubActions->GitHub: 線上 CI 測試完成(成功/失敗)
+GitHub->Heroku: 測試成功即部署
 @enduml
