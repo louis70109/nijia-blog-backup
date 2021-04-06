@@ -34,8 +34,8 @@ tags:
 
 **Park**: 在上一份工作中，我在一家提供公有雲服務的公司中擔任 IaaS 的開發和營運主管。但是因為前公司的策略關係讓我覺得與用戶距離越來越遠，且我想繼續增加更多 IaaS 領域的開發經驗，因緣際會下我決定加入 Verda 團隊，並為為內部開發人員提供更多私有雲層級的服務。
 
-**Yamada**: 在上一份工作中，我主要負責為公司行號(或集團)尋找與開發雲端服務的解決方案，在這份工作中我無法親身經歷整個雲端的交付與營運週期。因此我決定加入Verda團隊，除了與我自身的專業能力相符之外，團隊提供我有許多開發以及營運的空間，並且讓我能夠開發出與使用者息息相關的平台。
+**Yamada**: 在上一份工作中，我主要負責為公司行號(或集團)尋找與開發雲端服務的解決方案，在這份工作中我無法親身經歷整個雲端的交付與營運週期。因此我決定加入 Verda 團隊，除了與我自身的專業能力相符之外，團隊提供我有許多開發以及營運的空間，並且讓我能夠開發出與使用者息息相關的平台。
 
-**Kang**: My major at university was cloud computing, and I had been eyeing LINE as a company in Korea that would allow me to work in that field. In particular, the work of the VRE team aligned with my specialty, so I decided to join the company after my internship. What impressed me most about my internship experience was that I was able to take the initiative in discovering and solving problems. I received a lot of feedback from the team members on my efforts, and I felt engaged at work, which was key to my decision to join the company.
+**Kang**: 在我大學時期，我的技能面向 cloud computing，我一直將 LINE 視為我在韓國裡最想加入的公司，特別是因為 VRE 團隊的許多工作與我的專業相吻合，因此在我實習生涯結束之後決定加入該團隊。如果有人問我說我在實習經歷印象最深的是什麼，我覺得需要主動發現和解決問題的能力，這也是我收到很多團隊成員對我的回饋，這些回饋也是我持續留在這裡的動力之一。
 
 # 結論
