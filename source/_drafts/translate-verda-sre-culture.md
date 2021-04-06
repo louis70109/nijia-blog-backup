@@ -38,4 +38,12 @@ tags:
 
 **Kang**: 在我大學時期，我的技能面向 cloud computing，我一直將 LINE 視為我在韓國裡最想加入的公司，特別是因為 VRE 團隊的許多工作與我的專業相吻合，因此在我實習生涯結束之後決定加入該團隊。如果有人問我說我在實習經歷印象最深的是什麼，我覺得需要主動發現和解決問題的能力，這也是我收到很多團隊成員對我的回饋，這些回饋也是我持續留在這裡的動力之一。
 
+![](https://nijialin.com/images/2021/translate/sre/2.png)
+
+## 在 LINE 工作中做過最有意義的部分是什麼呢？
+
+Park: 我能夠在一個以**可靠性為重要目標的**工作環境工作，並讓我可以全心全意挑戰大型基礎架構，如此的環境是很難能可貴的。除了 IaaS 之外，Verda 還提供服務管理功能，例如 container-based 的 PaaS 和 DB。雖然每種服務的 SRE都需要專業且深入的知識和經驗，但是知識和經驗的廣度對於改善跨服務的系統操作和開發 standard 系統也是相對重要的。 另一方面，我處於可以相對自由地移動並承擔許多不同挑戰的位置，因此我覺得這份工作非常有意義。 I find it rewarding to be in an environment where I can actively challenge large-scale infrastructures with the important goal of reliability. In addition to IaaS, Verda also provides managed services, such as container-based PaaS and DB. While specialized and in-depth knowledge and experience are required for SRE activities for each service, breadth of knowledge and experience is important for improving the operation system across services and developing standard systems. On the other hand, I am in a position where I can move relatively freely and take on many different kinds of challenges, so I find that part of the job very rewarding.
+
+Yamada: There are many jobs where the system I developed, or even a single line of code I wrote, has an impact on the entire large-scale infrastructure environment, and I find it rewarding to see the huge impact of the work I was involved in. Also, since the users are internal developers, it is easy to get detailed feedback, which naturally leads to faster development and improvement. There are not many products in the field of infrastructure that have a development cycle as short as Verda’s (laughs).
+
 # 結論
