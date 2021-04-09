@@ -60,40 +60,44 @@ Yamada: 就我而言，上圖的角色劃分不太能切分清楚每個工作領
 
 Kang: 我平常負責 SRE 的儲存服務以及跨服務監控基礎結構的開發和營運。此外，我也很積極的參與處理 Customer Reliability Engineering(CRE) 相關問題，來改善服務效能以及處理服務故障通知。
 
-## — Please tell us about the technology and development environment you use.
+## — 請告訴我們使用到的技術以及開發環境
 
-Park: The relationship between Verda users, Verda developers, and us can be summarized as follows.
+Park: 這個問題關係到 Verda 用戶、開發人員，那與我們的關係可以參考下圖：
 
 ![](https://nijialin.com/images/2021/translate/sre/4.png)
 
-In this diagram, there are three areas that we are responsible for developing and operating: Operation Automation System, CI/CD, and Monitoring. Actually, it is more complicated than that, but since this is an interview article, I have kept it simple.
+在此圖中，我們負責的三個領域：營運自動化系統、CI/CD、監控。在日常生活中這部分會再複雜許多，我盡可能的簡化讓讀者們容易閱讀這篇採訪文章。
 
 ![](https://nijialin.com/images/2021/translate/sre/5.png)
 
-I will start off by explaining CI/CD simply. We use Ansible extensively for server configuration management and service deployment. We have developed modules to improve readability and stability and implemented event-driven Ansible execution by introducing execution platforms, such as AWX, so we feel we are using Ansible quite extensively.
+我將簡單地從 CI/CD 開始解釋。我們很廣泛的使用 Ansible，像是我們將 Ansible 廣泛的用於 Server 的管理 Configuration 和部署，同時我們也著手開發一些模組來提高可讀性和穩定性，並透過引入類似 AWX 的執行平台來實現 event-driven Ansible execution。
 
-For deployments and history management, we are currently using Jenkins, but since we are doing many manual operations, we are trying to sort out new requirements and consider alternative methods.
-For operations automation, we often use Python. We write simple scripts and develop intermediate services with interfaces to simplify complex operations and provide them to users and developers.
-Requests from users are basically received via Slack, and we are working on improvements to provide a more user-friendly interface by using bots.
+對於部署和歷史記錄管理，我們當前使用的是 Jenkins，但由於我們有許多部分都是手動執行，因此我們試圖梳理新的需求並考慮替代方案。
 
-As for monitoring, we are using standard technologies such as Prometheus for metrics management and Elasticsearch + Kibana for log management. Especially for Prometheus, we are actively developing our own exporters to monitor more detailed status of service processes and middleware. We use Go and Python for development. For services with Web APIs, we use API specs based on OpenAPI (swagger) to get Prometheus-style metrics, which have been implemented in various services.
+對於自動化，我們大部分使用 Python，我們撰寫輕量的 scripts 並使用在服務之間以簡化過多的手動操作，最後我們會將這些 scripts 提供給用戶和開發人員。
 
-Incident information is aggregated via Alertmanager to an external incident management and notification service called PagerDuty. We are also developing an event-driven recovery flow, such as by executing an automatic recovery playbook and issuing webhooks to AWX from the same Alertmanager.
+基本上，用戶的需求是透過 Slack 發送過來，但如此以來訊息會非常多，因此我們正在努力透過 Bot 提供更好的介面給用戶。
 
-Yamada: We often use Bash and Python to implement tools to facilitate operations. Python in particular is easy to use and works well with OpenStack and Ansible, so I use it frequently. I also use Bash to implement scripts using the CLI of each service, so coding skills are required in one way or the other.
+關於監控，我們使用常見的技術，像是使用 Prometheus 進行 metrics 管理，Elasticsearch + Kibana 進行 log 管理。特別是 Prometheus，我們正積極開發自己的 exporters，提供監控服務流程以及套件的詳細狀態。
 
-## Please tell us about your current team issues and what you are doing to solve them.
+對於有 Web API 需求的服務，我們使用 Go 和 Python 進行開發 API 並使用基於 OpenAPI(Swagger) 的規範來獲取 Prometheus 的 metrics，目前這個 metrics 已在各種服務中。
 
-Park: In the IaaS domain, one of the major challenges is the high usage of Baremetal.
-In our company, there are many use cases that emphasize the upper limit of performance and stability of computing power, and the migration to VMs has not progressed very well. VM and Baremetal differ in their management methods in many ways, and the operational costs associated with Baremetal are particularly high, so the high usage of Baremetal leads to high overall operational costs.
+事件訊息透過 Alertmanager 匯整到稱為 PagerDuty 的外部事件管理和通知服務。當前我們還正在開發 event-driven recovery 流程，像是透過執行自動 recovery 的 playbook 並從同樣的 Alertmanager 向 AWX 發出 Webhooks。
 
-We are currently trying to encourage users to migrate from Baremetal to VMs through projects, such as developing VM types with strict resource isolation to handle use cases with strict performance requirements and reducing the usage cost per VM by scheduling VMs efficiently.
+Yamada: 我們經常使用 Bash 和 Python 來開發操作的工具，特別是 Python 它易於使用，並且可以與 OpenStack 和 Ansible 有很高的整合。此外我還使用 Bash 建立 Scripts 處理通過每個服務的 CLI，在開發上會因不同的環境而使用對的語言去撰寫。
 
-The monitoring and deployment areas are still in the early stages of development, so there are very few areas that are not being addressed. The final scope of work, such as improving the monitoring system across services and streamlining the deployment mechanism, is very large, so we are moving forward step by step, starting with those areas that are most likely to be effective.
+## 請告訴我們您當前的團隊 issues 以及您如何解決？
 
-As for SRE activities for individual services, there are many areas that cannot be covered by VRE because they require deep expertise in virtualization and networking. I am not sure how to proceed with these projects since they need to be balanced with my other duties.
+Park: 在 IaaS 領域裡，主要挑戰之一是 Baremetal 的高使用率。
+在我們公司中，有許多案例是注重計算能力的性能和穩定性的上限，且在搬遷到 VM 上過程不太順利，因為 VM 和 Baremetal 在很多方面都有不同的管理方式，一般與 Baremetal 相關的營運成本特別高，因此 Baremetal 的高使用率就會導致增加整體營運成本。
 
-I feel that we lack the manpower to proceed in a balanced manner, so we are focusing on recruitment.
+我們現在鼓勵用戶把專案從 Baremetal 轉到 VM 上，並要大家有效地調度 VM，降低一些具有嚴格性能要求與資源隔離 VM 的使用成本。
+
+監控和部署部分仍處於早期開發的階段，因此很少有部分還沒有解決。而在支的規劃中我們的工作範圍會持續擴大，例如改善跨服務的監空系統和簡化部署機制，因此，我們將從可能最有效的部分開始逐步著手。
+
+至於針對處理單個 SRE 職責，VRE 可能無法完全處理，因為它們需要更多關於虛擬化和網絡方面的深厚知識。有些項目我不確定該如何進行，因此我們也需要從中找到與其他職責間的平衡。
+
+因為我們缺乏人力來讓工作上的職責更加平衡，因此我們也需要優秀的高手加入我們。
 
 ![](https://nijialin.com/images/2021/translate/sre/6.png)
 Yamada: We are working to improve some inefficiencies in operations that require cooperation with other departments. For example, when adding servers, it is necessary to collaborate with the data center and the department that manages the configuration management DB, but in the series of workflows, such as rack management, server installation, asset registration, registration to operation tools, BIOS setting, RAID setting, registration to automatic OS installer, registration to private cloud, and user management, each task is divided into different departments and there are gaps in the workflows. Although the individual tasks are mostly automated, the tasks are not well coordinated, and there is a limit to the efficiency improvement in this situation.
