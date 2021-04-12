@@ -88,10 +88,9 @@ Yamada: 我們經常使用 Bash 和 Python 來開發操作的工具，特別是 
 
 ## 請告訴我們您當前的團隊 issues 以及您如何解決？
 
-Park: 在 IaaS 領域裡，主要挑戰之一是 Baremetal 的高使用率。
-在我們公司中，有許多案例是注重計算能力的性能和穩定性的上限，且在搬遷到 VM 上過程不太順利，因為 VM 和 Baremetal 在很多方面都有不同的管理方式，一般與 Baremetal 相關的營運成本特別高，因此 Baremetal 的高使用率就會導致增加整體營運成本。
+Park: 在 IaaS 領域裡，主要挑戰之一是 Baremetal 的高使用率。而在我們公司中，有許多案例是注重計算能力的性能和穩定性的上限，且因為 VM 和 Baremetal 在很多方面都有不同的管理方式，導致在搬遷到 VM 上過程不太順利。而 Baremetal 相關的營運成本也比較高，因此 Baremetal 的高使用率就會導致增加整體營運成本。
 
-同時我們現在鼓勵用戶把專案從 Baremetal 轉到 VM 上並有效地使用 VM，降低一些具有嚴格性能要求與資源隔離 VM 的使用成本。
+進行搬遷的同時我們現在鼓勵用戶把專案從 Baremetal 轉到 VM 上並有效地使用 VM，降低一些具有嚴格性能要求與資源隔離 VM 的使用成本。
 
 此外，監控和部署部分仍處於早期開發的階段，隨著團隊越來越成熟，將會持續往改善跨服務的監控系統和簡化部署機制前進，與此同時，我們將從最有效率的部分開始逐步著手進行。
 
@@ -101,7 +100,9 @@ Park: 在 IaaS 領域裡，主要挑戰之一是 Baremetal 的高使用率。
 
 ![](https://nijialin.com/images/2021/translate/sre/6.png)
 Yamada: 我們正在努力改善需要與其他部門合作的運營效率低下的問題。 例如，添加服務器時，有必要與數據中心和管理配置管理數據庫的部門進行協作，但是在一系列工作流中，例如機架管理，服務器安裝，資產註冊，向操作工具的註冊，BIOS 設置，RAID設置，向自動操作系統安裝程序的註冊，向私有云的註冊以及用戶管理，每個任務被劃分為不同的部門，並且工作流程中存在空白。 儘管各個任務大多是自動化的，但是任務之間的協調性不高，因此在這種情況下提高效率是有局限性的。
-當前，我們正在開展一個由VRE領導的項目，以組織一系列工作流和任務之間的鏈接，並使所有任務自動化，以解決此問題。 We are working to improve some inefficiencies in operations that require cooperation with other departments. For example, when adding servers, it is necessary to collaborate with the data center and the department that manages the configuration management DB, but in the series of workflows, such as rack management, server installation, asset registration, registration to operation tools, BIOS setting, RAID setting, registration to automatic OS installer, registration to private cloud, and user management, each task is divided into different departments and there are gaps in the workflows. Although the individual tasks are mostly automated, the tasks are not well coordinated, and there is a limit to the efficiency improvement in this situation.
+當前，我們正在開展一個由VRE領導的項目，以組織一系列工作流和任務之間的鏈接，並使所有任務自動化，以解決此問題。
+
+ We are working to improve some inefficiencies in operations that require cooperation with other departments. For example, when adding servers, it is necessary to collaborate with the data center and the department that manages the configuration management DB, but in the series of workflows, such as rack management, server installation, asset registration, registration to operation tools, BIOS setting, RAID setting, registration to automatic OS installer, registration to private cloud, and user management, each task is divided into different departments and there are gaps in the workflows. Although the individual tasks are mostly automated, the tasks are not well coordinated, and there is a limit to the efficiency improvement in this situation.
 Currently, we are working on a VRE-led project to organize a series of workflows and linkages between tasks and automate all of them, with the aim of solving this problem.
 
 In the context of automation, in addition to organizing workflows among teams, we also routinely carry out activities to standardize and automate operations that occur on a daily basis. However, if we reduce the time we spend on operations because of our improvement activities, it will slow down our operations, so one of our challenges is how to strike a balance between the two.
