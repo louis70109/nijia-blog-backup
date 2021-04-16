@@ -88,24 +88,21 @@ Yamada: 我們經常使用 Bash 和 Python 來開發操作的工具，特別是 
 
 ## 請告訴我們目前 VRE 團隊面臨的挑戰以及將如何應對這些挑戰
 
-
 Park: 在 IaaS 領域裡，主要挑戰之一是實體機的高使用率。而在我們公司中，有許多案例是注重計算能力的性能和穩定性的上限，而實體機相關的營運成本本身就比較高，與此同時 VM 和實體機在很多方面都有不同的管理方式，因此實體機的高使用率就會導致增加整體營運成本。為了應對**性能要求較嚴格的案例**以及處理資源分離且獨立的虛擬機類型，透過有效地調度虛擬機推動用戶從實體機遷移到虛擬機，從而降低每個專案的成本。
 
+整體而言，監視和部署領域仍處於起步階段，許多問題都還待解決。另一方面，由於改善跨服務監控系統和簡化部署機制效率等等的範圍非常廣泛，因此我們將從有效率的部分逐步開始處理。
 
-整體而言，監視和部署領域仍處於起步階段，因此很難找到沒有問題的地方。由於改善服務監控系統和分配結構的效率等進展範圍非常廣泛，因此我們從似乎有效的領域處於逐步發展的狀態。
-
-每個服務的SRE工作都需要深入的專業知識，例如虛擬化和網絡，因此VRE團隊無法覆蓋許多領域。我必須做其他工作，所以我正在考慮如何進行。總的來說，我覺得沒有足夠的員工來平衡地處理工作，因此我目前正在招聘。
+由於 VRE 團隊日常需要處理更多其他工作，與其他服務的 SRE 的工作比較不同 都需要深入的專業知識，例如虛擬化和網路，而 VRE 團隊無法處理太多相關領域問題。我必須做其他工作，所以我正在考慮如何進行。總的來說，我覺得沒有足夠的員工來平衡地處理工作，因此我目前正在招聘。
 
 此外，監控和部署部分仍處於早期開發的階段，隨著團隊越來越成熟，將會持續往改善跨服務的監控系統和簡化部署機制前進，與此同時，我們將從最有效率的部分開始逐步著手進行。
-
-至於針對處理單個 SRE 職責，VRE 可能無法完全處理，因為它們需要更多關於虛擬化和網絡方面的深厚知識。有些項目我不確定該如何進行，因此我們也需要從中找到與其他職責間的平衡。
 
 因為我們缺乏人力來讓工作上的職責更加平衡，因此我們也需要優秀的高手加入我們。
 
 ![](https://nijialin.com/images/2021/translate/sre/6.png)
+
 Yamada: 我們正在努力改善需要與其他部門合作的營運效率下降問題。例如：增加 Server 時，必須與數據中心和管理資料庫設定的部門合作，但是在一個工作流程，從機房管理、Server 安裝、資產註冊、操作工具申請、BIOS 設定、RAID 設定、自動化系統安裝、私有雲的申請以及用戶管理，因為每個工作都有不同的部門負責，在申請的流程中有許多的等待的時間，儘管很多任務是自動化，但是在任務之間的連結不好的情況下，提升效率是有限制的。
 
-當前我們正在展開一個由 VRE 團隊負責的專案，主要處理工作流程相關問題並使任務與自動化之間有所連結，以實現自動化來解決上述問題。
+當前我們正在展開一個由 VRE 團隊負責的專案，主要處理工作流程相關問題並使任務與自動化有所連結，以實現自動化來解決上述問題。
 
 We are working to improve some inefficiencies in operations that require cooperation with other departments. For example, when adding servers, it is necessary to collaborate with the data center and the department that manages the configuration management DB,
 but in the series of workflows, such as rack management, server installation, asset registration, registration to operation tools, BIOS setting, RAID setting, registration to automatic OS installer, registration to private cloud, and user management, each task is divided into different departments and there are gaps in the workflows. Although the individual tasks are mostly automated, the tasks are not well coordinated, and there is a limit to the efficiency improvement in this situation.
