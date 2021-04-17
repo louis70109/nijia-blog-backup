@@ -8,9 +8,9 @@
     "clean": "hexo clean",
     "server": "hexo server",
     "new": "hexo new draft ",
-    "publish": "hexo publish ",
+    "p": "hexo publish ",
     "sync": "git pull",
-    "d": "git add .; git commit -m 'backup resource'; git push;"
+    "d": "git add .; git commit -m '🚀 deploy blog resource'; git push;"
   },
   "hexo": {
     "version": "5.2.0"
