@@ -1,7 +1,7 @@
 ---
 title: 初見 FastAPI (From Flask to FastAPI)
-categories: 學習紀錄
-tags:
+categories: Python
+tags: ['Python', 'FastAPI', 'Flask', 'Framework']
 ---
 
 <style>
@@ -20,7 +20,7 @@ tags:
 
 雖然現在網路越來越快，每個**同步**(Synchronize)的 request 處理速度都很快，但用**非同步**(Asynchronous)不僅可以同時處理較多 request，也不會被前面那個 request 拖時間導致後面排隊的 request 不用做事，各走各的路，出事自己負責(咦？)，雖然非同步有其他也要探討的問題，但這裡就先不討論這個～
 
-## 使用起來有什麼感覺呢？
+# FastAPI 使用起來有什麼感覺呢？
 
 - 適用於 Python 3.6 (含)以上的版本
   - 3.6 為目前 line-bot-sdk-python 最多人使用的版本
@@ -115,4 +115,29 @@ async def callback(request: Request, x_line_signature: str = Header(None)):
 ## [路由 Router]((https://fastapi.tiangolo.com/tutorial/bigger-applications/))
 
 在上面的範例中有提到 router，這邊要提醒各位就是一定要在茲聊夾中加入 \_\_init\_\_.py 這個空檔案，在 Python 3 後倡導不需要這個東西，我們就很容易忽略這個傢伙！在 FastAPI 這是依靠他去找到對應的檔案，因此一定要先加上它，避免未來踩到雷。
+
+
+下方為官方的範例改寫，路徑大致如下：
+
+```
+...
+├── main.py
+├── requirements.txt
+├── routers
+│   ├── __init__.py
+│   └── items.py
+```
+
+只要在 main.py 裡面使用 `app.include_router(items.router)` 引入 items.py 的 router 變數即可，下面網址則為 `http://DOMAIN/items/campaign`
+
+```python
+router = APIRouter(
+    prefix="/items",
+    tags=["items"],
+)
+
+@router.get("/campaign")
+async def read_items():
+    return "HI"
+```
 # 結論
