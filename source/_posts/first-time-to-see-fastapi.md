@@ -1,8 +1,14 @@
 ---
 title: 初見 FastAPI (From Flask to FastAPI)
+tags:
+  - Python
+  - FastAPI
+  - Flask
+  - Framework
 categories: Python
-tags: ['Python', 'FastAPI', 'Flask', 'Framework']
+date: 2021-04-18 22:42:16
 ---
+
 
 <style>
   section.compact {
@@ -14,7 +20,7 @@ tags: ['Python', 'FastAPI', 'Flask', 'Framework']
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://camo.githubusercontent.com/86d9ca3437f5034da052cf0fd398299292aab0e4479b58c20f2fc37dd8ccbe05/68747470733a2f2f666173746170692e7469616e676f6c6f2e636f6d2f696d672f6c6f676f2d6d617267696e2f6c6f676f2d7465616c2e706e67)
 
 # 前言
 
@@ -24,7 +30,7 @@ tags: ['Python', 'FastAPI', 'Flask', 'Framework']
 
 - 適用於 Python 3.6 (含)以上的版本
   - 3.6 為目前 line-bot-sdk-python 最多人使用的版本
-- 支援**非同步**，藉由 [Asyncio](https://docs.python.org/3/library/asyncio.html) 
+- 支援**非同步**，藉由 [Asyncio](https://docs.python.org/3/library/asyncio.html)
 - Pydantic 做型別檢查 (超讚)
   - 效能不錯，可以[參考這](https://pydantic-docs.helpmanual.io/benchmarks/)
 - 寫起來跟 Flask 很像，無痛上手
@@ -62,7 +68,7 @@ FastAPI 推薦使用 [Uvicorn](https://www.uvicorn.org/) 作為跑服務的工�
 
 # 引入函式庫
 
-由於 Python 各個版本的用戶居多2.7~3.9，因此許多函式庫都還是以同步的方式去寫，才能向下相容，這邊我就使用 [line-bot-sdk-python](https://github.com/line/line-bot-sdk-python) 作為本次引入的範例。
+由於 Python 各個版本的用戶居多 2.7~3.9，因此許多函式庫都還是以同步的方式去寫，才能向下相容，這邊我就使用 [line-bot-sdk-python](https://github.com/line/line-bot-sdk-python) 作為本次引入的範例。
 
 因為標題是從 Flask 切到 FastAPI，這邊就使用 LINE 官方的 [Flask 範例](https://github.com/line/line-bot-sdk-python/blob/master/examples/flask-echo/app_with_handler.py)。
 
@@ -107,15 +113,14 @@ async def callback(request: Request, x_line_signature: str = Header(None)):
 ```
 
 - router 是因為我預期我會有多個 API，因此先劃分資料夾，使用方法[參考](https://fastapi.tiangolo.com/tutorial/bigger-applications/)
-- request 的型別則是 FastAPI 接進來時所定義的格式，**x_line_signature** 等於 **X-Line-Signature**，只是因為在 Python 裡的寫法而變成底線式的寫法，後面需用 Header 的 Class 把它轉成 FastAPI 看得懂的東西
+- request 的型別則是 FastAPI 接進來時所定義的格式，**x_line_signature** 等於 **X-Line-Signature**，只是因為在 Python 裡的寫法而變成底線式的寫法，後面需用 `Header()` 的 Class 把它轉成 FastAPI 看得懂的東西
 - body 接到 LINE Server 資料時裡面的東西是沒有 decode，因此加入 **decode('UTF-8')** 來處理資料
 
-看完是不是很想也開始著手了呢🎉，文件通通看起來！
+看完是不是很想也開始著手了呢 🎉，文件通通看起來！
 
-## [路由 Router]((https://fastapi.tiangolo.com/tutorial/bigger-applications/))
+## [路由 Router](<(https://fastapi.tiangolo.com/tutorial/bigger-applications/)>)
 
 在上面的範例中有提到 router，這邊要提醒各位就是一定要在茲聊夾中加入 \_\_init\_\_.py 這個空檔案，在 Python 3 後倡導不需要這個東西，我們就很容易忽略這個傢伙！在 FastAPI 這是依靠他去找到對應的檔案，因此一定要先加上它，避免未來踩到雷。
-
 
 下方為官方的範例改寫，路徑大致如下：
 
@@ -140,4 +145,10 @@ router = APIRouter(
 async def read_items():
     return "HI"
 ```
+
 # 結論
+
+以上是我最近玩 FastAPI 的紀錄，建立了兩個官方範例的 repo，預計接下來再放個有 PostgreSQL 的版本，這樣子未來在開發時就可以比較快速開工了～ 😁
+
+- [fastapi-example](https://github.com/louis70109/fastapi-example)
+- [fastapi-line-bot-example](https://github.com/louis70109/fastapi-line-bot-example)
