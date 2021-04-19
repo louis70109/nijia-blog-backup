@@ -9,7 +9,6 @@ categories: Python
 date: 2021-04-18 22:42:16
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -115,6 +114,20 @@ async def callback(request: Request, x_line_signature: str = Header(None)):
 - router 是因為我預期我會有多個 API，因此先劃分資料夾，使用方法[參考](https://fastapi.tiangolo.com/tutorial/bigger-applications/)
 - request 的型別則是 FastAPI 接進來時所定義的格式，**x_line_signature** 等於 **X-Line-Signature**，只是因為在 Python 裡的寫法而變成底線式的寫法，後面需用 `Header()` 的 Class 把它轉成 FastAPI 看得懂的東西
 - body 接到 LINE Server 資料時裡面的東西是沒有 decode，因此加入 **decode('UTF-8')** 來處理資料
+
+> [2021/04/19 更新] Request 型別 decode 問題
+
+以下是 Request 型別裡的所呼叫的 function，由於它最後是使用 二進制(Binary)，因此要使用 `decode('UTF-8')` 的方式解回來。
+
+```python
+async def body(self) -> bytes:
+    if not hasattr(self, "_body"):
+        chunks = []
+        async for chunk in self.stream():
+            chunks.append(chunk)
+        self._body = b"".join(chunks)
+    return self._body
+```
 
 看完是不是很想也開始著手了呢 🎉，文件通通看起來！
 
