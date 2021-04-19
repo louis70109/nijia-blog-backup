@@ -50,9 +50,9 @@ slide
 彈性要面對較多與商業邏輯上的問題，處理上也要避免讓程式碼疊床架屋的方式進行
 
 
-Isomorphic JavaScript
 
-使用 Nuxt.js 來整合讓前後端整合 寫同一份 JS 也讓
+Isomorphic JavaScript
+使用 Nuxt.js 來整合，處理上面那些事時可以讓一些事情交給前端做，同時提升效能也可以降低 Backend 的 workload，在這部分前後端使用同個語言也讓整個專案架構相似，藉此增加彈性。
 
 Reuseable SDK 參考 [Workspaces in Yarn](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/)
 ## Data dev
