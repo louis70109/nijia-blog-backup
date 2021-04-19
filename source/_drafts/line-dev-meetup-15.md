@@ -25,7 +25,36 @@ tags:
 ## Frontend
 
 做出一個高可用性&彈性的應用程式都會是每位工程師的目標，所需要下的功夫也是要下足，以 TODAY 為例子
+Liz 主要負責 LINE TODAY 的前端部分，TODAY 作為新聞網站的主要路口之一，隨著流量越來越大的情況下，效能優化就是很主要的部分，但有主要的兩個挑戰
 
+- 大流量
+- 產品架構
+
+同時要注重：
+
+- 彈性
+- 效能
+
+效能的挑戰，莫過於該評估現在是否有嚴重的效能問題，或是該把時間投資在其他新 feature 上
+
+這邊以 [First Contentful Paint](https://web.dev/fcp/)(FCP) 作為一個 出現所有 DOM 所需的時間
+
+slide
+
+- 自己做快取
+- SEO
+- ...
+
+### 彈性
+
+彈性要面對較多與商業邏輯上的問題，處理上也要避免讓程式碼疊床架屋的方式進行
+
+
+Isomorphic JavaScript
+
+使用 Nuxt.js 來整合讓前後端整合 寫同一份 JS 也讓
+
+Reuseable SDK 參考 [Workspaces in Yarn](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/)
 ## Data dev
 
 運用科技與量化技術來解決行銷通點
@@ -36,6 +65,9 @@ tags:
 
 MLE 來分享在服務中所應用日常的技能，加速整體服務的推薦
 
+這次分享內容與上次不同的是，從 MLE 角度來分享
+
+> 更多請參考[第 14 場 LINE Developers Meetup 活動分享](https://engineering.linecorp.com/zh-hant/blog/line-developer-meetup-14/#LINE-SHOPPING-購物)
 ### TODAY
 
 座落許多服務於 TODAY 上，已是大家不可學少的一部份
