@@ -120,7 +120,7 @@ async def callback(request: Request, x_line_signature: str = Header(None)):
 
 ## [路由 Router](<(https://fastapi.tiangolo.com/tutorial/bigger-applications/)>)
 
-在上面的範例中有提到 router，這邊要提醒各位就是一定要在茲聊夾中加入 \_\_init\_\_.py 這個空檔案，在 Python 3 後倡導不需要這個東西，我們就很容易忽略這個傢伙！在 FastAPI 這是依靠他去找到對應的檔案，因此一定要先加上它，避免未來踩到雷。
+在上面的範例中有提到 router，這邊要提醒各位就是一定要在資料夾中加入 \_\_init\_\_.py 這個空檔案，在 Python 3 後倡導不需要這個東西，我們就很容易忽略這個傢伙！在 FastAPI 這是依靠他去找到對應的檔案，因此一定要先加上它，避免未來踩到雷。
 
 下方為官方的範例改寫，路徑大致如下：
 
