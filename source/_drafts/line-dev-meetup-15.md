@@ -39,11 +39,13 @@ tags:
 
 效能的挑戰，莫過於該評估現在效能是否會有影響的問題，或是該把時間投資在新功能的開發時程，這邊使用 [First Contentful Paint](https://web.dev/fcp/)(FCP) 作為一個指標(當然還有很多不同的指標)，FCP 簡單來說表示畫面渲染出所有 DOM **所需的時間**
 
-slide
+<script async class="speakerdeck-embed" data-slide="10" data-id="76931cf6c2aa474ab12185ac509c5768" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這部分選擇 Nuxt.js 做為處理前端部分的框架，在做某些需要 SSR 的功能(SEO)，它的好處可以寫一份程式碼
 
 - 自己做快取
 - SEO
-- ...
+- 後端處理時的語言統一
 
 ### 彈性
 
