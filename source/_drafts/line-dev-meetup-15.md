@@ -24,45 +24,50 @@ tags:
 
 ## Frontend
 
-做出一個高可用性&彈性的應用程式都會是每位工程師的目標，該下的功夫也是要下足，
+做出一個高可用性&彈性的應用程式都會是每位工程師的目標
 
-講者 Liz 主要負責 LINE TODAY 的前端部分，TODAY 作為新聞網站的主要路口之一，架構裡也涵蓋了許多不同面向的功能，除了大家熟知的新聞外，也有影音、天氣、留言元件、甚至到泰國的樂透...等等
+講者 Liz 目前是負責 LINE TODAY 的前端部分，開始前介紹一下 LINE TODAY，LINE TODAY 作為新聞網站的主要路口之一，架構裡也涵蓋了許多不同面向的功能，除了大家熟知的新聞外，也有影音、天氣、留言元件、甚至到泰國的樂透...等等，因此在這麼大的平台下就擁有許多不同單元的服務。
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="76931cf6c2aa474ab12185ac509c5768" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-隨著流量與產品面向越來越多的情況下，優化就是很主要的部分，這次演講中主要列出以下兩個挑戰
+既然 LINE TODAY 富含了豐富的功能，在流量與產品面向越來越多的情況下，為了長期提供穩定的服務，該下的功夫也是要下足，尤其優化就是很重要的一部分，開始就先列出以下兩個挑戰：
 
 - 巨大的流量
-- 多元的產品架構
+- 多元的產品服務
 
-並且在如此大的專案底下同時需要注意 `彈性` 與 `效能`。
+為了提供穩定的服務與 UX 以外(`效能`)，在開發的過程也要注重 `彈性`，讓整個平台的架構可以乘載未來的新功能，因此有許多部分項目都是需要注意的部分。
 
-效能的挑戰，莫過於該評估現在效能是否會有影響的問題，或是該把時間投資在新功能的開發時程，這邊使用 [First Contentful Paint](https://web.dev/fcp/)(FCP) 作為一個指標(當然還有很多不同的指標)，FCP 簡單來說表示畫面渲染出所有 DOM **所需的時間**
+<script async class="speakerdeck-embed" data-slide="9" data-id="76931cf6c2aa474ab12185ac509c5768" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## Performance
+
+提到效能的挑戰，莫過於該評估現在效能是否會有影響的問題，或是該把時間投資在新功能的開發時程，這邊使用 [First Contentful Paint](https://web.dev/fcp/)(FCP) 作為其中一個指標(當然還有很多不同的指標)，FCP 簡單來說表示使用者從進入 web app 時畫面渲染出所有 DOM **所需的時間**，大家不妨可以使用它來測試一下自己 web 的狀態如何。
 
 <script async class="speakerdeck-embed" data-slide="10" data-id="76931cf6c2aa474ab12185ac509c5768" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這部分選擇 Nuxt.js 做為處理前端部分的框架，在做某些需要 SSR 的功能(SEO)，它的好處可以寫一份程式碼
+另一個效能處理的部分，這邊選擇 Nuxt.js 做為處理前端部分的框架，在處理 web 應用程式時，會因為不同的環境條件而需要從 Server 處理好整包 HTML 再丟到前端渲染(`Server-Side Render`)，抑或是直接在前端做`靜態檔案處理`(讀者可以參考 [Nuxt.js 官網說明](https://nuxtjs.org/))，選擇當前環境最需要的部分做處理，讓效能能夠最大化。
 
-- 自己做快取
-- SEO
-- 後端處理時的語言統一
+![](https://nijialin.com/images/2021/line-15/1.png)
 
-### 彈性
+## Scalable
 
-彈性要面對較多與商業邏輯上的問題，處理上也要避免讓程式碼疊床架屋的方式進行
+而因為 Nuxt.js 在處理兩個部分時能夠讓整個專案共用同一個邏輯，且在初始化時就已經幫大家分類好架構，只要依循官方所提供的架構下實作，就不用因為使用的渲染方式不同而將同個操作邏輯分開導致專案使用各種方法處理(例如: Class、Function、Interface)，Nuxt.js 在這部分提供很好的開發者體驗，讓開發者可以更專心的實作其他的邏輯。
 
-Isomorphic JavaScript
-使用 Nuxt.js 來整合，處理上面那些事時可以讓一些事情交給前端做，同時提升效能也可以降低 Backend 的 workload，在這部分前後端使用同個語言也讓整個專案架構相似，藉此增加彈性。
+講者另外提到可以參考  [Workspaces in Yarn](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/) 的規範，來 Reuseable 不同的 SDK。
 
-Reuseable SDK 參考 [Workspaces in Yarn](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/)
+<script async class="speakerdeck-embed" data-slide="18" data-id="76931cf6c2aa474ab12185ac509c5768" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-持續優化現有架構，因此需要優秀的人才加入，一起處理台灣的新聞入口服務！
+此外也可以使用 async 的方式來降低主要`檔案的大小`，並且可以切分商業邏輯，讓可以先處理的部分先去處理，除了讓更多的東西可以達到共用外，也可以同步增加效能。
 
-- 對 TODAY 有興趣可以參考[架構]()
+在結合了上述提到的功能，大幅增加效率，或許大家在處理前端領域的專案時不妨也使用看看以上的技能吧！
+
+<script async class="speakerdeck-embed" data-slide="21" data-id="76931cf6c2aa474ab12185ac509c5768" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+> 對 TODAY 有興趣可以參考其架構
 
 <script async class="speakerdeck-embed" data-slide="8" data-id="52067d63f1814086824fdec298e3f1e7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-職缺的部分可以參考以下的方式
+持續優化現有架構，因此需要優秀的人才加入，一起處理台灣的新聞入口服務！職缺的部分可以參考以下：
 
 - [Frontend Engineer](https://careers.linecorp.com/jobs/7)
 - [Server-Side Developer](https://careers.linecorp.com/jobs/250)
@@ -70,9 +75,35 @@ Reuseable SDK 參考 [Workspaces in Yarn](https://classic.yarnpkg.com/blog/2017/
 
 ## Data dev
 
-運用科技與量化技術來解決行銷通點
+MarTech = Marketing + Technology，簡單來說運用科技與量化技術來解決行銷上痛點，任何幫助行銷達成目的的科技手段。以下圖來說，從用戶的獲取、培養到最後的成功轉化或流失，其中每一個環節都是行銷所在意的點，這也就是 MarTech 被分為六大領域應用的原因。
 
-- [LINE 資料工程團隊如何透過專業分工與 MLOps 打造不同服務 | 以 MarTech & NLP 為例](https://engineering.linecorp.com/zh-hant/blog/lets-play-in-data-park/)
+<script async class="speakerdeck-embed" data-slide="6" data-id="113fe6d7a3294eb58de8532e4a9ededc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+除了資料收集、整合、分析、應用之外，在這部分與行銷人合作也需要許多的考量，不同技能領域的了解程度、運算資源、資安考量...
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="113fe6d7a3294eb58de8532e4a9ededc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+而在資料工程團隊中主要有四個主要的應用:
+
+- 視覺化系統
+- 推薦系統
+- 廣告
+- Chatbot
+
+透過分享上述的一些使用案例，並實際帶入平常專案有使用到的技術來把握每次曝光的機會，如透過 Related Search、Smart POI、User Tagging、Uplift Modeling 來處理個人化需求以及優化廣告的成效表現(例如：ROI)，將廣告優惠提供給對的人身上，將效益發揮到最大化。
+
+> 相關文章： [LINE 資料工程團隊如何透過專業分工與 MLOps 打造不同服務 | 以 MarTech & NLP 為例](https://engineering.linecorp.com/zh-hant/blog/lets-play-in-data-park/)
+
+<script async class="speakerdeck-embed" data-slide="13" data-id="113fe6d7a3294eb58de8532e4a9ededc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在講者的經驗中，使用 MarTech 相關工具都會有三種特性，透過自動化與平台來降低成本與共用資源外，也讓 Marketing 更能有效地使用科技來解決實務上的痛點。
+
+<script async class="speakerdeck-embed" data-slide="16" data-id="113fe6d7a3294eb58de8532e4a9ededc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在傾聽 Marketing 同仁對於商業上應用的影響範圍同時，我們也需要將訊息收斂並使用模型所量化出來指標告知同仁，已達到 MarTech 的極致目標。
+
+<script async class="speakerdeck-embed" data-slide="17" data-id="113fe6d7a3294eb58de8532e4a9ededc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 - [「How ML Powers LINE Services」機器學習如何的讓 LINE 的服務能更貼近使用者](https://engineering.linecorp.com/zh-hant/blog/how-ml-powers-line-services/)
 
 ## 團隊介紹
@@ -119,18 +150,32 @@ LINE Pay 運用密碼學的原理，使用公、私鑰讓用戶可以在很短�
 - [Front-end Engineer](https://careers.linecorp.com/jobs/76)
 - [Server-side Engineer](https://careers.linecorp.com/jobs/75)
 
-### SPOT
+### [LINE SPOT](https://spot.line.me/)
 
 LINE SPOT 團隊是主要是開發 O2O (Online to Offline) 及活動相關的服務，LINE SPOT 是一個以您所在的位置為起點，讓您可以在上面看到各式店家的優惠資訊，把線下的資訊整合到線上的一個全新的服務。此外 SPOT 團隊也很熱衷於使用新技術，包含 Docker、kubernetes、Kafka，各類程式語言 (Java、Scala、Go、Node.js) 等，提供使用者更多創新的功能。
 
-- [在 「LINE 熱點」服務上如何處理地理性資訊 ( Serving Location-based data)](https://engineering.linecorp.com/zh-hant/blog/serving-location-based-data/)
-- SPOT 強者同事的分享 - [Open Policy Agent – 快速導入 Authz 至 Microservice 架構](https://engineering.linecorp.com/zh-hant/blog/open-policy-agent-authz-in-microservice/)
+<script async class="speakerdeck-embed" data-slide="4" data-id="22a9ae41b3154def9d21fc2001ec5415" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-### AE & SRE
+在團隊中有幾項被歸類出來的挑戰：
+
+- 彈性與可用性: 有許多需要運算的資源，如最近地點
+- 整合不同來源的資料集
+- 管理 Kubernetes 中的微服務們
+
+除了要克服上述的挑戰之外，LINE SPOT 團隊也很享受使用新的技術，讓對的工具放在對的地方。
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="22a9ae41b3154def9d21fc2001ec5415" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+更多過往的分享可以參考
+
+- [在 「LINE 熱點」服務上如何處理地理性資訊 ( Serving Location-based data)](https://engineering.linecorp.com/zh-hant/blog/serving-location-based-data/)
+- SPOT 團隊強者同事的分享 - [Open Policy Agent – 快速導入 Authz 至 Microservice 架構](https://engineering.linecorp.com/zh-hant/blog/open-policy-agent-authz-in-microservice/)
+
+### Automation Engineer & SRE
 
 如果讓開發人員與維運人員之前的交付過程更順暢，工程文化在其中佔了很大的比例，有好的環境才有辦法讓整體服務交付更加順暢，並且又有品質保證，是不是很棒呢？
 
-LINE 除了非常重視品質之外，也很注重自動化 pipline，除了使用到許多測試工具外，也遵照一定的工法執行來加速交付時間。
+Automation Engineer 致力於強化 LINE 的產品品質，了解產品需求，掌握產品開發及測試時的脈絡，分析並快速反應產品的問題，並開發相對應的自動化測試，確保產品品質信心水準，加速整個開發循環。除了使用到許多測試工具外，也遵照一定的工法執行來加速交付時間。
 
 <script async class="speakerdeck-embed" data-slide="4" data-id="4a233e90fafd4fa3b08fb1d847cf65c8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -139,12 +184,14 @@ LINE 除了非常重視品質之外，也很注重自動化 pipline，除了使�
 <script async class="speakerdeck-embed" data-slide="5" data-id="4a233e90fafd4fa3b08fb1d847cf65c8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 講者也額外分享，隨著工具越來越多，與團隊同仁討論並挑選出最適合團隊的工具往往才會是最佳解，希望大家在導入工具時要仔細評估。
+
 <script async class="speakerdeck-embed" data-slide="6" data-id="4a233e90fafd4fa3b08fb1d847cf65c8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 - [QA Automation Engineer](https://careers.linecorp.com/jobs/18)
 - [QA Engineer](https://careers.linecorp.com/jobs/19)
 - [TECH FRESH](https://careers.linecorp.com/jobs/83)
-### Verda
+
+### LINE Verda
 
 一切的基礎都需要有 Infra 團隊才有辦法建構服務，LINE Verda 作為私有雲服務即是負責處理 LINE 裡所有的基礎設施，在 2020 的[ COSCUP 中也有分享](https://engineering.linecorp.com/zh-hant/blog/line-coscup-2020/#How-We-Integrate-and-Develop-Private-Cloud-in-LINE-Gene-Kuo)與 Verda 相關內容，過了一年之後，Verda 的基礎設施又更加的成長了～
 
