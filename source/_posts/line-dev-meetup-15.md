@@ -1,8 +1,12 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 回顧 LINE Developers Meetup 第 15 場現場活動
 tags:
+  - LINE
+  - DevRel
+categories: 研討會
+date: 2021-04-27 15:04:18
 ---
+
 
 <style>
   section.compact {
@@ -14,19 +18,21 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://nijialin.com/images/2021/line-15/0.jpg)
 
 # 前言
+
+每年 LINE 都會安排許多活動讓每一位對 LINE 工程團隊有興趣開發者可以在**線上**或是**線下**直接詢問負責不同領域的同仁們，藉由交流不僅分享在企業中使用的技術細節，也拉近企業與開發者的距離，讓大家感受在 LINE 工作的幸福感指數 😊，希望可以透過本篇活動紀錄讓大家更認識 LINE 的工程團隊！
 
 <!-- more -->
 
 # 介紹
 
-## Frontend
+## 前端團隊
 
-做出一個高可用性&彈性的應用程式都會是每位工程師的目標
+![](https://nijialin.com/images/2021/line-15/2.jpeg)
 
-講者 Liz 目前是負責 LINE TODAY 的前端部分，開始前介紹一下 LINE TODAY，LINE TODAY 作為新聞網站的主要路口之一，架構裡也涵蓋了許多不同面向的功能，除了大家熟知的新聞外，也有影音、天氣、留言元件、甚至到泰國的樂透...等等，因此在這麼大的平台下就擁有許多不同單元的服務。
+本次開場由負責 LINE TODAY 前端的 Liz 為大家介紹，開始前介紹一下 LINE TODAY，LINE TODAY 作為新聞網站的主要路口之一，架構裡也涵蓋了許多不同面向的功能，除了大家熟知的新聞外，也有影音、天氣、留言元件、甚至到泰國的樂透...等等，因此在這麼大的平台下就擁有許多不同單元的服務，同時這些服務都需要專業的前端同仁處理才能讓用戶可以使用到更流暢的服務。
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="76931cf6c2aa474ab12185ac509c5768" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -39,7 +45,7 @@ tags:
 
 <script async class="speakerdeck-embed" data-slide="9" data-id="76931cf6c2aa474ab12185ac509c5768" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-## Performance
+### Performance
 
 提到效能的挑戰，莫過於該評估現在效能是否會有影響的問題，或是該把時間投資在新功能的開發時程，這邊使用 [First Contentful Paint](https://web.dev/fcp/)(FCP) 作為其中一個指標(當然還有很多不同的指標)，FCP 簡單來說表示使用者從進入 web app 時畫面渲染出所有 DOM **所需的時間**，大家不妨可以使用它來測試一下自己 web 的狀態如何。
 
@@ -49,7 +55,7 @@ tags:
 
 ![](https://nijialin.com/images/2021/line-15/1.png)
 
-## Scalable
+### Scalable
 
 而因為 Nuxt.js 在處理兩個部分時能夠讓整個專案共用同一個邏輯，且在初始化時就已經幫大家分類好架構，只要依循官方所提供的架構下實作，就不用因為使用的渲染方式不同而將同個操作邏輯分開導致專案使用各種方法處理(例如: Class、Function、Interface)，Nuxt.js 在這部分提供很好的開發者體驗，讓開發者可以更專心的實作其他的邏輯。
 
@@ -73,7 +79,9 @@ tags:
 - [Server-Side Developer](https://careers.linecorp.com/jobs/250)
 - [QA Engineer](https://careers.linecorp.com/jobs/19)
 
-## Data dev
+## 資料工程團隊
+
+![](https://nijialin.com/images/2021/line-15/3.jpg)
 
 MarTech = Marketing + Technology，簡單來說運用科技與量化技術來解決行銷上痛點，任何幫助行銷達成目的的科技手段。以下圖來說，從用戶的獲取、培養到最後的成功轉化或流失，其中每一個環節都是行銷所在意的點，這也就是 MarTech 被分為六大領域應用的原因。
 
@@ -131,7 +139,9 @@ LINE SHOPPING 是我們的主要服務之一，由 [LINE 電商團隊](https://e
 - [第 14 場 LINE Developers Meetup 活動分享](https://engineering.linecorp.com/zh-hant/blog/line-developer-meetup-14/#LINE-SHOPPING-購物)
 - [LINE Taiwan x Java 年度盛會：JCConf 2020](https://engineering.linecorp.com/zh-hant/blog/line-jcconf-2020/)
 
-### PAY
+### LINE Pay
+
+![](https://nijialin.com/images/2021/line-15/6.jpg)
 
 打開 LINE 之後點選最右邊的 tab，不僅有錢包，包含了付款、贊助、金融、我的會員卡...等等許多功能
 
@@ -150,7 +160,7 @@ LINE Pay 運用密碼學的原理，使用公、私鑰讓用戶可以在很短�
 - [Front-end Engineer](https://careers.linecorp.com/jobs/76)
 - [Server-side Engineer](https://careers.linecorp.com/jobs/75)
 
-### [LINE SPOT](https://spot.line.me/)
+### [LINE SPOT](https://spot.line.me/)(熱點)
 
 LINE SPOT 團隊是主要是開發 O2O (Online to Offline) 及活動相關的服務，LINE SPOT 是一個以您所在的位置為起點，讓您可以在上面看到各式店家的優惠資訊，把線下的資訊整合到線上的一個全新的服務。此外 SPOT 團隊也很熱衷於使用新技術，包含 Docker、kubernetes、Kafka，各類程式語言 (Java、Scala、Go、Node.js) 等，提供使用者更多創新的功能。
 
@@ -166,12 +176,14 @@ LINE SPOT 團隊是主要是開發 O2O (Online to Offline) 及活動相關的服
 
 <script async class="speakerdeck-embed" data-slide="8" data-id="22a9ae41b3154def9d21fc2001ec5415" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-更多過往的分享可以參考
+更多過往的分享可以參考：
 
 - [在 「LINE 熱點」服務上如何處理地理性資訊 ( Serving Location-based data)](https://engineering.linecorp.com/zh-hant/blog/serving-location-based-data/)
 - SPOT 團隊強者同事的分享 - [Open Policy Agent – 快速導入 Authz 至 Microservice 架構](https://engineering.linecorp.com/zh-hant/blog/open-policy-agent-authz-in-microservice/)
 
 ### Automation Engineer & SRE
+
+![](https://nijialin.com/images/2021/line-15/5.jpg)
 
 如果讓開發人員與維運人員之前的交付過程更順暢，工程文化在其中佔了很大的比例，有好的環境才有辦法讓整體服務交付更加順暢，並且又有品質保證，是不是很棒呢？
 
@@ -208,8 +220,19 @@ Automation Engineer 致力於強化 LINE 的產品品質，了解產品需求，
   - [[Team & Project] Introducing the team in charge of Site Reliability Engineering for the Verda platform](https://engineering.linecorp.com/en/blog/team-project-introducing-the-team-in-charge-of-site-reliability-engineering-for-the-verda-platform/)
 
 # 結論
+![](https://nijialin.com/images/2021/line-15/LRD.png)
 
-[招募日](https://engineering.linecorp.com/zh-hant/blog/2021-line-taiwan-developers-recruitment-day/)
+看了上述的內容是否想更了解 LINE 的工作呢？除了可以直接至 [LINE Career]((https://careers.linecorp.com/jobs?co=Taiwan)) 上投履歷之外，LINE 也即將在 **5/22** 的[招募日](https://engineering.linecorp.com/zh-hant/blog/2021-line-taiwan-developers-recruitment-day/)與大家見面，現場會有許多工程團隊的同仁來為大家介紹，歡迎大家來[報名頁面報名](https://linegroup.kktix.cc/events/20210522-devel)參加本次盛會！
+
+### 【學生票申請方法】
+請先翻拍或掃描學生證
+寄送至 dl_dev_meetup@linecorp.com
+資格符合後即可獲得邀請碼
+
+### 【轉職邀請票申請方法】
+寄送履歷至 dl_dev_meetup@linecorp.com
+資格符合後即可獲得邀請碼
+
 
 # 活動小結
 
