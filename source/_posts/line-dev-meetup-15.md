@@ -32,7 +32,7 @@ date: 2021-04-27 15:04:18
 
 ![](https://nijialin.com/images/2021/line-15/2.jpeg)
 
-本次開場由負責 LINE TODAY 前端的 Liz 為大家介紹，開始前介紹一下 LINE TODAY，LINE TODAY 作為新聞網站的主要路口之一，架構裡也涵蓋了許多不同面向的功能，除了大家熟知的新聞外，也有影音、天氣、留言元件、甚至到泰國的樂透...等等，因此在這麼大的平台下就擁有許多不同單元的服務，同時這些服務都需要專業的前端同仁處理才能讓用戶可以使用到更流暢的服務。
+本次開場由負責 LINE TODAY 前端的 Liz 為大家介紹，開始前介紹一下 LINE TODAY，LINE TODAY 作為新聞網站的**主要路口**之一，架構裡也涵蓋了許多不同面向的功能，除了大家熟知的新聞外，也有影音、天氣、留言元件、甚至到泰國的樂透...等等，因此在這麼大的平台下就擁有許多不同單元的服務，同時這些服務都需要專業的前端同仁處理才能讓用戶可以使用到更流暢的服務。
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="76931cf6c2aa474ab12185ac509c5768" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
