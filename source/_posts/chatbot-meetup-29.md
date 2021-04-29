@@ -1,8 +1,12 @@
 ---
 title: Chatbot Developer Meetup - LINE API Platform Update Sharing
+tags:
+  - LINE
+  - Chatbot
 categories: 研討會
-tags: ['LINE', 'Chatbot']
+date: 2021-04-29 11:28:01
 ---
+
 
 <style>
   section.compact {
@@ -14,9 +18,9 @@ tags: ['LINE', 'Chatbot']
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
-
 # 前言
+
+透過每個月持續的分享，將 LINE 平台上有更新的內容透過更生活化的方式整理給大家，希望透過此篇文章讓大家認識一樣 LINE API 的魅力！如果已經有正在開發的聊天機器人，抑或是有不同的搭配技巧，都歡迎至[社群](https://www.facebook.com/groups/linebot/)或是各大討論區分享你的技術吧！
 
 <!-- more -->
 
@@ -71,15 +75,11 @@ LINE Login 本身支援 Web 以及 APP 的操作，因此在 Developer Console �
 
 ## [LINE API 狀態查詢網站](https://api.line-status.info/)
 
-當服務有問題產生時，
-
-大家可以使用 RSS 相關系統訂閱它
+當服務可能因為各種因素導致問題產生時，需要排除是否為自身服務或是介接的服務是否有發生什麼問題藉此排除狀態。因此在這次釋出了 [LINE API 狀態查詢的網站](https://api.line-status.info/) 供大家在不確定專案狀態時可以查詢做第一線的排除，大家可以使用 RSS 相關軟體訂閱它～
 
 <script async class="speakerdeck-embed" data-slide="14" data-id="b4de0b8800ae44b3bd652e3beadfb7c3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 > 更多資訊起參閱網站內說明
-
-## Provider
 
 # 結論
 
