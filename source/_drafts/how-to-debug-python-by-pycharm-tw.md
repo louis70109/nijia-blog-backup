@@ -17,14 +17,13 @@ categories: Python
   }
 </style>
 
-從我開始工作時，因為**動態語言**方便且快速上手，因此我就選擇動態語言作為我吃飯的工具。隨著時間的推進我寫過了 Python、Ruby、JavaScript，由於大多都使用 Vscode 撰寫程式，對於環境設定不是很熟捻的我設定相關東西就很困擾，因此大多數都是用 `print`(Python)、`console.log`(JS) 或是 `puts`(Ruby) 直接印在終端機上來除錯腳本或是網站。
+從我開始工作時，因為**動態語言**方便且快速上手，因此我就選擇動態語言作為我吃飯的工具。隨著時間的推進我寫過了 Python、Ruby、JavaScript，由於大多都使用 VScode 撰寫程式，對於環境設定不是很熟捻的我設定相關東西就很困擾，因此大多數都是用 `print`(Python)、`console.log`(JS) 或是 `puts`(Ruby) 直接印在終端機上來除錯腳本或是網站。
 
 在過去這些日子中最有印象的就是使用 Ruby 的 `byebug` 套件來幫我除蟲，它是個可以在終端機透過快捷鍵讓你取得想除錯的地方開始進行除錯，對於當時的我來說簡直是福音，也讓我在那段日子中非常的快樂ＸＤ
 
 <!-- more -->
 
-由於現在轉戰 Python 
-In this article, I will take you to know how to debug Python apps by Pycharm which was I learn recently...😆
+由於現在轉戰 Python 之後有了 PyCharm 這個超讚的 IDE，把 VScode 的環境就拿來寫前端跟一些部落格(Markdown)使用。因此接下來就將分享我是如何在 PyCharm 上 debug Python 相關的程式。
 
 1. Open your project and click the dropdown button
 
