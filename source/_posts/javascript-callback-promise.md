@@ -1,8 +1,12 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 解決在 NodeJS 環境中遇到 Redis 套件的 Callback 的問題 | Prmoise 封裝
 tags:
+  - JavaScript
+  - Callback
+categories: JavaScript
+date: 2021-05-13 19:45:59
 ---
+
 
 <style>
   section.compact {
@@ -14,7 +18,6 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
 
 # 前言
 
@@ -65,6 +68,15 @@ redisPromise = {
 ```
 
 最後在程式的尾端加上 `module.exports = redisPromise;`，即可將剛剛包裝好的東西都輸出出去，讓引入此檔案的地方可以使用剛剛定義的 `redisPromise.getAndUpdateUserLint()` 功能，詳細用法可以參考[我的 GitHub](https://github.com/louis70109/vote-bullets-line-bot/blob/master/index.js#L41)。
+
+> 如果你是寫 Python 的朋友可以想像這個 dictionary (Object) 是一個 Class，裡面的每個 key 都是一個 function，如此一來在撰寫程式時會有比較好的連結喔！
+
 # 結論
 
-這個問題在 JavaScript 圈內應該不是個常見的問題
+以上這次是我第一次遇到這樣的問題，未來可能也會遇到有些套件提供的功能如下：
+
+```javascript
+someFunction(callbackOne(), callbackTwo());
+```
+
+因為 JavaScript 本身是非同步，因此在 Debug 時可能會看到在後面的 log 已經先印出來了，才看到 Callback 打回來的訊息，若大家切換語系到 JavaScript 時要注意使用的套件是否有遇到這類的問題喔！(還真不適應 😆)
