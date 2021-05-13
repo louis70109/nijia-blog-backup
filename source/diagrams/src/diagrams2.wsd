@@ -1,13 +1,7 @@
 @startuml
-backend->frontend: Send bullets by Websocket 
-frontend->user: Show bullets
-frontend->localStorage: Save bullets by list of JSON
-chat->localStorage: Get bullets
-localStorage->chat: Return list of JSON
-chat->user: show 20 messages
+crawler->web: if success, return HTML
+crawler->S3: cached the web data
+sync_script->S3: download file and sync to database
 
-frontend->voting: Get result
-voting->backend: Get award data
-backend->voting: Return data by Redis
-voting->frontend: Return award data
+
 @enduml
