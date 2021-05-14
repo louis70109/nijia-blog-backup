@@ -1,8 +1,14 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 除錯 Python 套件遇到 Command Line 無法使用的問題 | lotify
 tags:
+  - LINE Notify
+  - LINE
+  - Python
+  - Command Line
+categories: Python
+date: 2021-05-15 00:59:36
 ---
+
 
 <style>
   section.compact {
@@ -72,5 +78,10 @@ pip install lotify
 重新安裝之後這個問題就會被解決掉囉！就目前而言我這邊測試起來都沒問題了～
 
 # 結論
+
+寫下來整理估計是這兩個問題：
+
+- 可能是沒有 \_\_init\_\_.py 的問題
+- setup.py 裡的 entry_point 還是要照著官網寫法寫
 
 感謝網友熱情幫忙，送了一個 Pull Request 卸下這個套件的一個大石，讓它可以支援 Command line 的方式了，當然接下來也很歡迎大家持續送 PR 給我 ，增加套件的可用性 😊(也歡迎 test case)，如果覺得本篇不錯的話請幫我的 [Lotify](https://github.com/louis70109/lotify) 按個星星支持一下吧！
