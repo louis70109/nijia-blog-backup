@@ -663,21 +663,6 @@ google_analytics:
   only_pageview: false
 utterances:
   enable: true
-facebook_sdk:
-  enable: false
-  app_id: 792017867910978
-  fb_admin: #<user_id>
-  like_button: true
-  webmaster: true
-
-# Facebook comments plugin
-# This plugin depends on Facebook SDK.
-# If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
-facebook_comments_plugin:
-  enable: false
-  num_of_posts: 10 # min posts num is 1
-  width: 100% # default width is 550px
-  scheme: light # default scheme is light (light or dark)
 
 # Baidu Analytics
 baidu_analytics: # <app_id>

@@ -1,8 +1,15 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 在 Hexo 的 Next 樣板中引入 utterances 的留言區 | GitHub Issue
 tags:
+  - Hexo
+  - Next
+  - utterances
+  - GitHub
+  - Blog
+categories: 學習紀錄
+date: 2021-05-15 21:44:11
 ---
+
 
 <style>
   section.compact {
@@ -13,8 +20,6 @@ tags:
     margin: 0 auto;
   }
 </style>
-
-![](https://nijialin.com/images/2021/)
 
 # 前言
 
@@ -66,7 +71,7 @@ tags:
 > theme -> next -> layout -> _partials -> comments.swig
 
 會找到 swig 的檔案(格式可[參考 wiki](https://zh.wikipedia.org/wiki/SWIG))
-![html tag](https://nijialin.com/images/2021/hexo-utt/5.png)
+![hexo structure](https://nijialin.com/images/2021/hexo-utt/5.png)
 
 當中找到如以下的判斷式：
 
@@ -85,4 +90,13 @@ tags:
 </script>
 ```
 
-# 結論
+最後在 themes -> next -> _config.yml 的最下面加入:
+
+```
+utterances:
+  enable: true
+```
+
+部署上去之後，進去部落格就可以看到結果啦！
+
+![comment result](https://nijialin.com/images/2021/hexo-utt/result.png)
