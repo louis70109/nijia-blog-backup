@@ -17,8 +17,15 @@ jobs:
           deploykey: ${{ secrets.BLOG_DEPLOY_TOKEN }}
           username: nijia-blog[bot]
           email: nijia-blog-backup@example.com
-      - name: send default message
+      - name: send deploy success message
+        if: ${{ success() }}
         uses: louis70109/line-notify-action@master
         with:
           token: ${{ secrets.LINE_NOTIFY_TOKEN }}
-          message: 'Blog deploy done.'
+          message: '✅  Blog deploy done.'
+      - name: send failure message
+        if: ${{ failure() }}
+        uses: louis70109/line-notify-action@master
+        with:
+          token: ${{ secrets.LINE_NOTIFY_TOKEN }}
+          message: '🔥 Blog deploy failure. https://github.com/louis70109/nijia-blog-backup/actions'
