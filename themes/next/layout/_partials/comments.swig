@@ -1,12 +1,12 @@
 {%- if page.comments %}
   <script src="https://utteranc.es/client.js"
-        repo="louis70109/nijia-blog-backup"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+          repo="louis70109/louis70109.github.io"
+          issue-term="title"
+          label="💬 Comment ✨"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
   {%- if theme.injects.comment.length == 1 %}
     {%- set inject_item = theme.injects.comment[0] %}
     {{ partial(inject_item.layout, inject_item.locals, inject_item.options) }}
