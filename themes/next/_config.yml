@@ -661,7 +661,8 @@ google_analytics:
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
-
+utterances:
+  enable: true
 facebook_sdk:
   enable: false
   app_id: 792017867910978
@@ -993,7 +994,3 @@ vendors:
 css: css
 js: js
 images: images
-
-
-utterances:
-  enable: true
