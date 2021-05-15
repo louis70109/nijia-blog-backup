@@ -1,11 +1,11 @@
 {%- if page.comments %}
   <script src="https://utteranc.es/client.js"
-    repo="https://github.com/louis70109/blog-command"
-    issue-term="pathname"
-    label="Command"
-    theme="github-light"
-    crossorigin="anonymous"
-    async>
+        repo="louis70109/blog-command"
+        issue-term="pathname"
+        label="Command"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
   </script>
   {%- if theme.injects.comment.length == 1 %}
     {%- set inject_item = theme.injects.comment[0] %}
