@@ -1,5 +1,5 @@
 ---
-title: 解決在 NodeJS 環境中遇到 Redis 套件的 Callback 的問題 | Prmoise 封裝
+title: 解決在 NodeJS 環境中遇到 Redis 套件的 Callback 的問題 | Promise 封裝
 tags:
   - JavaScript
   - Callback
