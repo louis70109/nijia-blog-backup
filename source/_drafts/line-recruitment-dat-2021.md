@@ -48,6 +48,21 @@ LINE 的工程文化中，分為以下三點
 - Tech Branding and Tech Hiring
 - Internal Evangelism
 
+
+此外，我們辦了許多場對內對外的活動，
+
+## LINE Pay
+
+專案有三個不同專案
+
+支付與金融相關 相關信用卡回饋等等
+Extra Service 在地化服務 我的會員卡 廣告投放 LINE Pay 地圖
+內部 PoC 專案，給內部員工使用，去驗證想法的專案，身為工程師一定會有很多想法想用，想實驗很多新學的東西
+很鼓勵工程師來做這樣的事情
+
+技術與大家平常在用的都是一樣，鼓勵大家多去透過技術去實現你的想法
+
+若認同 LINE Pay 文化，歡迎加入 LINE Pay
 ## LINE TECH FRESH 技術新星人才計畫
 
 
@@ -87,20 +102,78 @@ Let's do some WoW project in the world.
 
 ## LINE 電商 (LINE SHOPPING)
 
+口袋商店 讓客戶可以一站式打造電商服務
+酷卷
+這次以 SHOPPING 為主
+讓大家先 LINE 購物 在購物這樣的導購，讓大家可以在合作商家購買東西之後獲得 LINE Point 點數
+
+用線上母親節的案例來分享流程到底怎麼實作 （架構圖）並搭配著頁面做相關解釋，例如快取首頁、推薦系統、
+
+點數紅包是額外的消費方式，
+
+團員組成
+兩個禮拜一個
+
+清楚講解產品從發想到回顧的瞭解
+並透過許多內部分享會或者 code review 等等的方式
 ## QA 工程團隊
 
+講解與一般的 QC 的差異
+
+透過講解在不同把關階段所遇到的問題與付出的代價來解釋品質問題，
+
+QA 團隊會讓工程同仁在產品 Design 階段時就加入討論，讓產品在早期就可以參與計畫定製，討論整個流程
+
+在開發階段則會開始建立不同的測試案例，與 developer 討論自動化相關問題，讓 QA 可以有更好的切入點讓自動化更順暢
+
+描述所有的條件與腳本
+
+進入測試階段最重要的一點就是要 code frezze control
+確認 loading comsuming 相關
+邀請不同團隊來抓出非預期的 bug
+
+
+也會訂出最重要的腳本是什麼
+
+automation engineer 
+
+- [QA Automation Engineer](https://careers.linecorp.com/jobs/18)
+- [https://careers.linecorp.com/jobs/19](https://careers.linecorp.com/jobs/19)
 ## Frontend 工程團隊
 
+後端 web render 以效率和專長做對比
+
+招募流程的介紹
+
+pretest -> 線上技術測試 -> 覺得等了歡迎告知
 ## Client 工程團隊
 
+為了在有限的人力下加速開發，因此也選用近期很火紅的 flutter
 ## SRE 團隊
 
-## CLOVA AI 團隊
+量化指標
+data-driven
+才能透過工具增加監測指標
+以及可靠程度
+
+標準化的開發工具
+讓開發者更專注在ａｐｐｌｉｃａｔｉｏｎ開發
+藉由一些自動化 alerting 來找問題
+
+迅速且系統化的 deploy 
+且水平自動拓展
+
+gitops - techpulse
+
+為了提供ＤＸ  openfaas
+## LINE CLOVA AI 團隊
 
 ## 資料工程團隊
 
 # 結論
 
+
+更多職缺相關的內容請參考先的文章 [LINE Recruitment Day 2021](https://engineering.linecorp.com/zh-hant/blog/2021-line-taiwan-developers-recruitment-day/)
 # 活動小結
 
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
