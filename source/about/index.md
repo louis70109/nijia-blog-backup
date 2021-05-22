@@ -79,6 +79,12 @@ date: 2019-10-16 11:28:36
 
 # Talks
 
+- [LINE Recruitment Day 2021 - TECH FRESH 技術新星人才計畫介紹](https://events.chatbot.tw/events/28)
+  - [投影片]()
+- [Chatbot Taiwan meetup 29 - LINE Platform API Update](https://events.chatbot.tw/events/28)
+  - [投影片]()
+- [Chatbot Taiwan meetup 28 - LINE Platform API Update](https://events.chatbot.tw/events/27)
+  - [投影片]()
 - [Chatbot Taiwan meetup 27 - LINE Platform API Update & 彈幕範例](https://events.chatbot.tw/events/26)
   - [投影片](https://speakerdeck.com/line_developers_tw2/line-api-platform-update-202101)
   - [影片](https://youtu.be/OaX09Qp95Yw)
