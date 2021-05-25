@@ -30,24 +30,28 @@ tags:
 
 ## Internal Developer Relations
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t_WhOd9XVMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 LINE 的工程文化中，分為以下三點
 
 - Take Ownership
 
-我們讓每位人員都擁有高自主權，從規劃、開發、參與討論，讓大家決定該做什麼、該怎麼做
+我們注重讓每位開發人員的自主權，從規劃、開發、參與討論，讓大家決定該做什麼、該怎麼做。這邊講者首先以 Antman 這個專案為開場介紹，透過工程師們自主提出問題，與不同團隊協同開發，讓壓縮的方式來節省圖片儲存空間([詳細參考此篇](https://engineering.linecorp.com/en/blog/developing-the-antman-project/))。
 
-這邊首先 Antman 這個專案，開發團隊認為不同的圖片的例子讓大家了解
-接著是口罩地圖
+接著是去年的 [LINE SPOT](https://spot.line.me/) 口罩地圖，因為疫情的關係，剛好搭配 location-based 的 LINE SPOT，在短短的幾天內迅速打造出口罩地圖，讓各位可以在線上就可以查詢還有哪邊還可以買到口罩，在嚴峻的疫情下效率最大化讓大家可以以嘴有效的方式找到需要的東西。
 
-- Be Open
-- Trust and Respect
-  團隊中我們有許多不同國家的人
+- Be Open：我們鼓勵每位同仁多參加研討會或是當講者，除了分享自己在專案上學到的東西外，也能學習不同領域的講者所使用的技能，在以下也會有片段介紹相關內容。
+- Trust and Respect：因為疫情，我們需要透過 Work From Home 的機制來避免相關問題，透過此案例也驗證了這個文化的精髓。
 
-- External Evangelism
-- Tech Branding and Tech Hiring
-- Internal Evangelism
+<script async class="speakerdeck-embed" data-slide="13" data-id="a2866e7dc0a34af7b2f1a15e71b422c4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-此外，我們辦了許多場對內對外的活動，
+<script async class="speakerdeck-embed" data-slide="16" data-id="a2866e7dc0a34af7b2f1a15e71b422c4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+除了上述的內容之外，我們也舉辦了舉多官方的 Meetup(如上)並參加**研討會**以及**社群**，不管是透過**實體**/**線上**的方式呈現，希望透過這些內容除了讓大家更了解運用的技術之外，也可以更了解究竟要如何才有辦法加入 LINE 的工程團隊當中。
+
+<script async class="speakerdeck-embed" data-slide="27" data-id="a2866e7dc0a34af7b2f1a15e71b422c4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當然除了對外的活動之外，也有許多內部活動，如寫作日、On Job Training、Internal Hackathon...當然還有一年一度的盛會 - TECHPULSE，如果對於這些內部活動相當有興趣的朋友，千萬要多關注以下的內容唷！
 
 ## LINE Pay
 
@@ -62,38 +66,47 @@ Extra Service 在地化服務 我的會員卡 廣告投放 LINE Pay 地圖
 
 若認同 LINE Pay 文化，歡迎加入 LINE Pay
 
+1. 請問不熟 Java 可以投 LINE Pay backend 嗎? 例如: Python, Go。
+   都歡迎來面試，不過可以多花一點時間準備 JAVA 會比較好。
+2. 請問專案開發，包括 planner, dev, security, qa 總共有多少人執行一個專案？
+   實際上人數沒辦法透露，但參與人數會跟專案大小有關。台灣的開發人數相對韓國會小一些，如果是大專案的話開發團隊大部分的人都參與是蠻有可能的。
+
 ## LINE TECH FRESH 技術新星人才計畫
 
-you can do anything you want, something like frontend, backend, QA,SRE, client, Data...
+<script async class="speakerdeck-embed" data-slide="3" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-we had lots of tools for our engineering
+過去在公開活動中，同仁們時常會被詢問：「實習生再加入後是否只能在特定團隊內工作？」，過往有許多同學透過特定專業能力進到實習生計畫中，而我們都很鼓勵每位同學勇於挑戰不同的領域，持續強化不同的專業能力，找尋出自己的想走的道路。
 
-made the technology in you/me life.
+<script async class="speakerdeck-embed" data-slide="7" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-workshop, on/offline resources, on job training to know each other
+除了日常專案與累積技術能力之外，我們很鼓勵透過文章的方式呈現來記錄自己的學習成果，同時也將自己的學習成果分享給未來的學弟妹們，讓大家可以參考學長姐們的結晶，有興趣可以參考以下內容：
 
-we encourage fresh that you can write down your office life, something like conference, engineering and daily life.
+- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
+- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
+- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
+- [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
+- [LINE Developer Day 2020 – The past and future of machine learning research 議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-dev-day-2020-the-past-and-future-of-machine-learning-research/)
 
-- monthly
-  \
+<script async class="speakerdeck-embed" data-slide="8" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-internal hackathon had lots of ideas and member, and most of fresh are there, give company a new energy.
+此外，我們每個月皆會舉辦月會讓實習生可以在固定的時間中與不同專業領域的 Mentor 們聊聊，除了了解前輩們過往的經驗之外，透過交流也可以了解到新興人才們所思考以及顧慮的部分，也讓我們能夠更持續的優化這個計畫的內容。
 
-- techpulse, we give stage that fresh can show themself
+<script async class="speakerdeck-embed" data-slide="11" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-we wish fresh could be a full-time engineer after one-year ago, and we provide some quota for fresh to become FTE.
-
-### 累積技術力
-
-### Where can find us?
-
-- LDM 14
-- LDM 15
-- TECHPULSE
-
-Let's do some WoW project in the world.
+在經過一年的磨練過後，我們也希望菁英同學們有機會加入 LINE 工程部門的大家庭中，一同為 LINE 打造 WoW 的產品給社會大眾，讓你所寫的每一行程式碼都成為大家日常生活的一部份！
 
 ## LINE TODAY 團隊
+
+<script async class="speakerdeck-embed" data-slide="4" data-id="0e5a937f3ac24af2a3e0c34ddced2ed6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+作為大家天天會用的主流新聞平台，除了日常提供大家許多新聞相關題材外，其實裡面也含有許多不同的內容，如：**賽事直播**(近期很火紅的 NBA 季後賽也有轉播)、
+**電影訂票**、**選情專區**、**泰國限定的樂透**、**電影**...等等，擁有這麼多功能都是為了讓用戶可以在 LINE TODAY 中看到大家最新、最值得關注的內容。
+
+<script async class="speakerdeck-embed" data-slide="11" data-id="0e5a937f3ac24af2a3e0c34ddced2ed6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+擁有這麼多功能的平台，同時也是一個跨國的產品，同時也提供給泰國、印尼以及香港，為了服務這麼廣大的用戶，在開發流程上也採取了 Large Scale Scrum 的方式([這部分可參考 TECHPULSE 議程](https://www.youtube.com/watch?v=mMF_cwGGze0))來管理這麼龐大的團隊，目前也正積極找 [Frontend](https://careers.linecorp.com/jobs/7)、[Server-Side](https://careers.linecorp.com/jobs/250)、[QA Automation](https://careers.linecorp.com/jobs/18)、[QA](https://careers.linecorp.com/jobs/19) 的工程師，若您對於更詳細的介紹大家可以參考 Recruitment Day 的影片喔！
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jlevziTzues" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## LINE 電商 (LINE SHOPPING)
 
@@ -122,28 +135,34 @@ Let's do some WoW project in the world.
 
 而在 LINE Taiwan QA 部門這邊為了確保整體服務的品質，會在專案早期就參與計劃定製，與 Developer、Design、Planner..等等不同部門的角色一起討論整個流程，協助訂定不同的 Scenario 讓初期的討論可以更加完整。
 
+<script async class="speakerdeck-embed" data-slide="4" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 而在開發階段時，QA 同仁則會開始建立許多不同情境的測試案例，同時也與 developer 討論相關情境與測試自動化的相關問題，讓 QA 的同仁可以有更好的切入點找出問題，同時也透過自動化讓整體作業更加順暢。
 
-描述所有的條件與腳本
+<script async class="speakerdeck-embed" data-slide="7" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-進入測試階段最重要的一點就是要 code frezze control
-確認 loading comsuming 相關
-邀請不同團隊來抓出非預期的 bug
+同時 QA 團隊除了建置自動化流程外，也會打造 CI/CD 輔助優化整體流程。我們透過自動化讓我們獲得了不少的好處。更多精彩內容也歡迎各位參閱影片內容。
 
-也會訂出最重要的腳本是什麼
+<script async class="speakerdeck-embed" data-slide="11" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-automation engineer
+若您對於優化提升品質與以及自動化工程等等的工作內容有興趣的話歡迎參考以下職缺，目前也正如火如荼地找尋優秀人才！
 
 - [QA Automation Engineer](https://careers.linecorp.com/jobs/18)
-- [https://careers.linecorp.com/jobs/19](https://careers.linecorp.com/jobs/19)
+- [QA Engineer](https://careers.linecorp.com/jobs/19)
 
-> Q: QA 工程團隊好，請問您們用 cypress 自動化測試工具時，有遇到什麼困難點嗎？當有測試的情境是無法用 cypress 測試時，是如何克服呢？感謝您的解答
-> A: 困難點：
->
-> - 團隊從 Python / Selenium / Robot Framework 體系切換過來，對 JS 開發生態 / 語法的不熟悉。這個是透過團隊內部的 study gruop，以及直接找前端同事請益的方式解決
->   難以自動化的測試情境，如何克服：
-> - 如果是 UX 相關的情境，不得不手動測，自動化的幫助就是把小工具準備好，讓測試執行順暢
-> - 另外常見難以自動化的情境是跟第三方串接相關的，對方沒有完整測試環境，或是很難做 api mock。這種情況只能在自己的範圍內做好自動化，整個 end-to-end 流程還是保留部分 acceptance test 做手動測試
+> Q: 請問您們用 cypress 自動化測試工具時，有遇到什麼困難點嗎？
+
+1. Cypress 是 Javascript based, 大部分的 QA 需要學習了解 JS 的特性
+2. Cypress 不支援 mobile app solution
+3. 目前 Cypress 未支援 iframe，官方已經在開發中
+4. Cypress 無法進行垮 domain 測試
+5. 團隊從 Python / Selenium / Robot Framework 體系切換過來，對 JS 開發生態 / 語法的不熟悉。這個是透過團隊內部的 study group，以及直接找前端同事請益的方式解決
+
+> Q: 當有測試的情境是無法用 cypress 測試時，是如何克服呢
+
+1. 就技術上而言，如果夠了解 JS 相關語言，可以解決蠻多 Cypress 本身的限制。例如上方提到 iframe 的問題，可以運用 jQuery 寫一個 Cypress comment 來處理，抑或是請教前端工程師來協助一同開發 Cypress。
+2. 如果是 UX 相關的情境，不得不手動測，自動化的幫助就是把小工具準備好，讓測試執行順暢。
+3. 就測試情境上來說，應該蠻多機會會遇到 E2E 需要 cross domain 的 situation．LINE QA 團隊其實會把 test case 維持一個主軸來測試，test case 不會過於複雜，遇到 crosses domain 會運用 mock, stub 等相關 SUT 概念來完成整合測試。
 
 ## Frontend 工程團隊
 
