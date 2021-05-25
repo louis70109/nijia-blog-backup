@@ -66,34 +66,11 @@ Extra Service 在地化服務 我的會員卡 廣告投放 LINE Pay 地圖
 
 若認同 LINE Pay 文化，歡迎加入 LINE Pay
 
-1. 請問不熟 Java 可以投 LINE Pay backend 嗎? 例如: Python, Go。
-   都歡迎來面試，不過可以多花一點時間準備 JAVA 會比較好。
-2. 請問專案開發，包括 planner, dev, security, qa 總共有多少人執行一個專案？
-   實際上人數沒辦法透露，但參與人數會跟專案大小有關。台灣的開發人數相對韓國會小一些，如果是大專案的話開發團隊大部分的人都參與是蠻有可能的。
+> Q: 請問不熟 Java 可以投 LINE Pay backend 嗎? 例如: Python, Go。
+> A: 都歡迎來面試，不過可以多花一點時間準備 JAVA 會比較好。
 
-## LINE TECH FRESH 技術新星人才計畫
-
-<script async class="speakerdeck-embed" data-slide="3" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-過去在公開活動中，同仁們時常會被詢問：「實習生再加入後是否只能在特定團隊內工作？」，過往有許多同學透過特定專業能力進到實習生計畫中，而我們都很鼓勵每位同學勇於挑戰不同的領域，持續強化不同的專業能力，找尋出自己的想走的道路。
-
-<script async class="speakerdeck-embed" data-slide="7" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-除了日常專案與累積技術能力之外，我們很鼓勵透過文章的方式呈現來記錄自己的學習成果，同時也將自己的學習成果分享給未來的學弟妹們，讓大家可以參考學長姐們的結晶，有興趣可以參考以下內容：
-
-- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
-- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
-- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
-- [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
-- [LINE Developer Day 2020 – The past and future of machine learning research 議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-dev-day-2020-the-past-and-future-of-machine-learning-research/)
-
-<script async class="speakerdeck-embed" data-slide="8" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-此外，我們每個月皆會舉辦月會讓實習生可以在固定的時間中與不同專業領域的 Mentor 們聊聊，除了了解前輩們過往的經驗之外，透過交流也可以了解到新興人才們所思考以及顧慮的部分，也讓我們能夠更持續的優化這個計畫的內容。
-
-<script async class="speakerdeck-embed" data-slide="11" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-在經過一年的磨練過後，我們也希望菁英同學們有機會加入 LINE 工程部門的大家庭中，一同為 LINE 打造 WoW 的產品給社會大眾，讓你所寫的每一行程式碼都成為大家日常生活的一部份！
+> Q: 請問專案開發，包括 planner, dev, security, qa 總共有多少人執行一個專案？
+> A: 實際上人數沒辦法透露，但參與人數會跟專案大小有關。
 
 ## LINE TODAY 團隊
 
@@ -176,6 +153,30 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 
 pretest -> 線上技術測試 -> 覺得等了歡迎告知
 
+## LINE TECH FRESH 技術新星人才計畫
+
+<script async class="speakerdeck-embed" data-slide="3" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+過去在公開活動中，同仁們時常會被詢問：「實習生再加入後是否只能在特定團隊內工作？」，過往有許多同學透過特定專業能力進到實習生計畫中，而我們都很鼓勵每位同學勇於挑戰不同的領域，持續強化不同的專業能力，找尋出自己的想走的道路。
+
+<script async class="speakerdeck-embed" data-slide="7" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+除了日常專案與累積技術能力之外，我們很鼓勵透過文章的方式呈現來記錄自己的學習成果，同時也將自己的學習成果分享給未來的學弟妹們，讓大家可以參考學長姐們的結晶，有興趣可以參考以下內容：
+
+- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
+- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
+- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
+- [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
+- [LINE Developer Day 2020 – The past and future of machine learning research 議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-dev-day-2020-the-past-and-future-of-machine-learning-research/)
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+此外，我們每個月皆會舉辦月會讓實習生可以在固定的時間中與不同專業領域的 Mentor 們聊聊，除了了解前輩們過往的經驗之外，透過交流也可以了解到新興人才們所思考以及顧慮的部分，也讓我們能夠更持續的優化這個計畫的內容。
+
+<script async class="speakerdeck-embed" data-slide="11" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在經過一年的磨練過後，我們也希望菁英同學們有機會加入 LINE 工程部門的大家庭中，一同為 LINE 打造 WoW 的產品給社會大眾，讓你所寫的每一行程式碼都成為大家日常生活的一部份！
+
 ## Client 工程團隊
 
 為了在有限的人力下加速開發，因此也選用近期很火紅的 flutter
@@ -201,19 +202,13 @@ pretest -> 線上技術測試 -> 覺得等了歡迎告知
 
 ## SRE 團隊
 
-量化指標
-data-driven
-才能透過工具增加監測指標
-以及可靠程度
-
-標準化的開發工具
-讓開發者更專注在ａｐｐｌｉｃａｔｉｏｎ開發
+在 SRE 團隊中，**量化指標** 以及 **Data-Driven** 是很重要的兩個部分，接著才會透過工具增加**監測指標**以及**服務的可靠度**，最後若有需要時才會開發*標準化*的工具給所有團隊使用，也透過提供這些標準化的工具，讓開發者們可以更專注在 application 上。
 藉由一些自動化 alerting 來找問題
 
 迅速且系統化的 deploy
 且水平自動拓展
 
-gitops - techpulse
+- [How GitOps Helps Kubernete Adoption](https://www.youtube.com/watch?v=jk8nBXb74sQ)
 
 為了提供ＤＸ openfaas
 
