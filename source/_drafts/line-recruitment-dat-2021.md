@@ -202,15 +202,23 @@ pretest -> 線上技術測試 -> 覺得等了歡迎告知
 
 ## SRE 團隊
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/30kC1wru8Z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<script async class="speakerdeck-embed" data-slide="3" data-id="23468040be034fd395884b7ab0455ffb" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 在 SRE 團隊中，**量化指標** 以及 **Data-Driven** 是很重要的兩個部分，接著才會透過工具增加**監測指標**以及**服務的可靠度**，最後若有需要時才會開發*標準化*的工具給所有團隊使用，也透過提供這些標準化的工具，讓開發者們可以更專注在 application 上。
-藉由一些自動化 alerting 來找問題
 
-迅速且系統化的 deploy
-且水平自動拓展
+<script async class="speakerdeck-embed" data-slide="4" data-id="23468040be034fd395884b7ab0455ffb" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-- [How GitOps Helps Kubernete Adoption](https://www.youtube.com/watch?v=jk8nBXb74sQ)
+當然為了上述這些事情，SRE 團隊使用許多工具來處理，並藉由一些自動化 alerting 來找尋問題的所在點。
 
-為了提供ＤＸ openfaas
+<script async class="speakerdeck-embed" data-slide="6" data-id="23468040be034fd395884b7ab0455ffb" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+由於服務眾多，且由於服務們皆需面對大量的用戶，因此都需要迅速且系統化的部署應用程式，所以每個團隊的服務都要以 container 的方式呈現，接著會透過 CI/CD 的工具整合並部署於 Kubernetes 上，同時也讓服務可以獲得水平擴展的能力來處理大量的請求。
+
+- 延伸閱讀：[How GitOps Helps Kubernete Adoption](https://www.youtube.com/watch?v=jk8nBXb74sQ)
+
+除了上述提到的事情之外，LINE 裡面有許多 PoC 在被實踐之後，避免浪費資源同時也注重開發者體驗，因此在這邊有建立一個內部 [OpenFaaS](https://www.openfaas.com/) 的平台提供給需要部署 PoC 的開發者使用，讓大家在最短的時間內部署應用程式測試可行性。
 
 > Q: SRE 要有什麼相關技能呢？
 > A: 這邊提出幾個相關技能，詳細還是以到時 LINE Career 上面開出來的職缺為主喔！
