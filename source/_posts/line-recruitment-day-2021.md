@@ -18,6 +18,9 @@ date: 2021-05-26 13:55:55
 
 ![LRD](https://nijialin.com/images/2021/LRD.png)
 
+- [Internal Developer Relations]()
+-
+
 # 介紹
 
 開場由 LINE Taiwan CTO - Marco 為大家介紹，因為大環境的關係，觀察到許多人使用網路的方式改變了，同時也看到線上線下整合(Online Merge Offline)的趨勢，而在 LINE 的生態系服務當中有許多都是使用 Online Merge Offline 的方式，如 LINE SHOPPING、LINE SPOT、LINE Taxi...等等。現在也人手一隻手機，並且裡頭也都安裝著 LINE，為了提供用戶在這數位生態圈中生活更加便利，因此我們也就打造了各式各樣的服務來提供給大家。
@@ -50,27 +53,63 @@ LINE 的工程文化中，分為以下三點
 
 當然除了對外的活動之外，也有許多內部活動，如寫作日、On Job Training、Internal Hackathon...當然還有一年一度的盛會 - TECHPULSE，如果對於這些內部活動相當有興趣的朋友，千萬要多關注以下的內容唷！
 
-## Frontend 工程團隊
+## LINE Pay
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HGu7jUmxXJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script async class="speakerdeck-embed" data-slide="4" data-id="3298c104de1646e89c202f575f04fc4f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為前端的一份子，就是要讓用戶可以在 Client 端與 Web 端使用起來的體驗一致，以下這些服務你使用時是否也覺得跟 APP 差不多呢？
+除了大家平常所使用且熟悉的支付服務以外，其實日常也需要處理**金融相關**、**信用卡回饋**等等的專案內容，而從 [TECHPUSE 2020](https://www.youtube.com/watch?v=K9ZHOdjZyug) 之後，LINE Pay 陸續提供了 Extra Service 來達到在地化服務，像是 **我的會員卡**、**廣告投放**與透過**LINE Pay 地圖**讓大家知道到底有哪些商家支援 LINE Pay，不用出門就可以知道可去哪邊使用 LINE Point 回饋點數了。
 
-<script async class="speakerdeck-embed" data-slide="4" data-id="3448a654c505429ba38fb8c1a7f24a65" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rndT5K8isww?start=336" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-且由於前端產品線很多，許多時候需要打造共用的工具來讓不同服務可以使用共同的元件，把已有成效的解決方案有計畫的打造出來，除了品質統一與避免重造輪子之外，也讓往後新進來的人員能夠有個標準化的內容參閱來維護既有的產品。
+在日常處理不同的專案之外，LINE Pay 也含有許多內部 PoC 專案，身為工程師一定會有很多想法想用，想實驗很多新學的東西，透過這些專案去驗證想法的可行性，讓想法有機會進入產品之中。
 
-<script async class="speakerdeck-embed" data-slide="9" data-id="3448a654c505429ba38fb8c1a7f24a65" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+若認同 LINE Pay 文化，歡迎加入 LINE Pay：
 
-而接下來公司的方向將會漸漸將重心轉換到自然流量上，因此 Frontend 團隊就會更多處理 **SEO** 與 **Web 效能優化** 相關的工作內容，同時也引入 SSR 以及 AMP 來對齊公司的目標。
+- [Front-end Engineer](https://careers.linecorp.com/jobs/76)
+- [Server-side Engineer](https://careers.linecorp.com/jobs/75)
 
-<script async class="speakerdeck-embed" data-slide="12" data-id="3448a654c505429ba38fb8c1a7f24a65" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+> Q: 請問不熟 Java 可以投 LINE Pay backend 嗎? 例如: Python, Go。
+> A: 都歡迎來面試，不過可以多花一點時間準備 JAVA 會比較好。
 
-當然在裡面也會與不同團隊的成員合作，讓產品可以更快速地交付、維護、更安全以外，內部也會透過分享來讓更多團隊了解不同的解決方案的優點。
+> Q: 請問專案開發，包括 planner, dev, security, qa 總共有多少人執行一個專案？
+> A: 實際上人數沒辦法透露，但參與人數會跟專案大小有關。
 
-最後，Frontend 團隊由於成員會持續協助不同專案以及產品的開發，在大家學習到不同的經驗之後也會透過許多的讀書會來分享不同專案間的差異與經驗，藉由交流也讓彼此可以更快速的上手且了解不同專案的屬性。
+## LINE TECH FRESH 技術新星人才計畫
 
-今年 [Front-end Engineer](https://careers.linecorp.com/jobs/7) 正在擴大招募，尋找在前端領域的高手們來一同來打造驚艷的產品於 LINE 生態系中。
+<script async class="speakerdeck-embed" data-slide="3" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+過去在公開活動中，同仁們時常會被詢問：「實習生再加入後是否只能在特定團隊內工作？」，過往有許多同學透過特定專業能力進到實習生計畫中，而我們都很鼓勵每位同學勇於挑戰不同的領域，持續強化不同的專業能力，找尋出自己的想走的道路。
+
+<script async class="speakerdeck-embed" data-slide="7" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+除了日常專案與累積技術能力之外，我們很鼓勵透過文章的方式呈現來記錄自己的學習成果，同時也將自己的學習成果分享給未來的學弟妹們，讓大家可以參考學長姐們的結晶，有興趣可以參考以下內容：
+
+- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
+- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
+- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
+- [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
+- [LINE Developer Day 2020 – The past and future of machine learning research 議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-dev-day-2020-the-past-and-future-of-machine-learning-research/)
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+此外，我們每個月皆會舉辦月會讓實習生可以在固定的時間中與不同專業領域的 Mentor 們聊聊，除了了解前輩們過往的經驗之外，透過交流也可以了解到新興人才們所思考以及顧慮的部分，也讓我們能夠更持續的優化這個計畫的內容。
+
+<script async class="speakerdeck-embed" data-slide="11" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在經過一年的磨練過後，我們也希望菁英同學們有機會加入 LINE 工程部門的大家庭中，一同為 LINE 打造 WoW 的產品給社會大眾，讓你所寫的每一行程式碼都成為大家日常生活的一部份！
+
+## LINE TODAY 團隊
+
+<script async class="speakerdeck-embed" data-slide="4" data-id="0e5a937f3ac24af2a3e0c34ddced2ed6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+作為大家天天會用的主流新聞平台，除了日常提供大家許多新聞相關題材外，其實裡面也含有許多不同的內容，如：**賽事直播**(近期很火紅的 NBA 季後賽也有轉播)、
+**電影訂票**、**選情專區**、**泰國限定的樂透**、**電影**...等等，擁有這麼多功能都是為了讓用戶可以在 LINE TODAY 中看到大家最新、最值得關注的內容。
+
+<script async class="speakerdeck-embed" data-slide="11" data-id="0e5a937f3ac24af2a3e0c34ddced2ed6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+擁有這麼多功能的平台，同時也是一個跨國的產品，同時也提供給泰國、印尼以及香港，為了服務這麼廣大的用戶，在開發流程上也採取了 Large Scale Scrum 的方式([這部分可參考 TECHPULSE 議程](https://www.youtube.com/watch?v=mMF_cwGGze0))來管理這麼龐大的團隊，目前也正積極找 [Frontend](https://careers.linecorp.com/jobs/7)、[Server-Side](https://careers.linecorp.com/jobs/250)、[QA Automation](https://careers.linecorp.com/jobs/18)、[QA](https://careers.linecorp.com/jobs/19) 的工程師，若您對於更詳細的介紹大家可以參考 Recruitment Day 的影片喔！
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jlevziTzues" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## LINE 電商團隊
 
@@ -89,7 +128,7 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 
 - [Server-Side Engineer](https://careers.linecorp.com/jobs/250)
 
-\## QA 工程團隊
+## QA 工程團隊
 
 <script async class="speakerdeck-embed" data-slide="2" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -128,84 +167,27 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 2. 如果是 UX 相關的情境，不得不手動測，自動化的幫助就是把小工具準備好，讓測試執行順暢。
 3. 就測試情境上來說，應該蠻多機會會遇到 E2E 需要 cross domain 的 situation．LINE QA 團隊其實會把 test case 維持一個主軸來測試，test case 不會過於複雜，遇到 crosses domain 會運用 mock, stub 等相關 SUT 概念來完成整合測試。
 
-## LINE TODAY 團隊
+## Frontend 工程團隊
 
-<script async class="speakerdeck-embed" data-slide="4" data-id="0e5a937f3ac24af2a3e0c34ddced2ed6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HGu7jUmxXJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-作為大家天天會用的主流新聞平台，除了日常提供大家許多新聞相關題材外，其實裡面也含有許多不同的內容，如：**賽事直播**(近期很火紅的 NBA 季後賽也有轉播)、
-**電影訂票**、**選情專區**、**泰國限定的樂透**、**電影**...等等，擁有這麼多功能都是為了讓用戶可以在 LINE TODAY 中看到大家最新、最值得關注的內容。
+LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為前端的一份子，就是要讓用戶可以在 Client 端與 Web 端使用起來的體驗一致，以下這些服務你使用時是否也覺得跟 APP 差不多呢？
 
-<script async class="speakerdeck-embed" data-slide="11" data-id="0e5a937f3ac24af2a3e0c34ddced2ed6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="4" data-id="3448a654c505429ba38fb8c1a7f24a65" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-擁有這麼多功能的平台，同時也是一個跨國的產品，同時也提供給泰國、印尼以及香港，為了服務這麼廣大的用戶，在開發流程上也採取了 Large Scale Scrum 的方式([這部分可參考 TECHPULSE 議程](https://www.youtube.com/watch?v=mMF_cwGGze0))來管理這麼龐大的團隊，目前也正積極找 [Frontend](https://careers.linecorp.com/jobs/7)、[Server-Side](https://careers.linecorp.com/jobs/250)、[QA Automation](https://careers.linecorp.com/jobs/18)、[QA](https://careers.linecorp.com/jobs/19) 的工程師，若您對於更詳細的介紹大家可以參考 Recruitment Day 的影片喔！
+且由於前端產品線很多，許多時候需要打造共用的工具來讓不同服務可以使用共同的元件，把已有成效的解決方案有計畫的打造出來，除了品質統一與避免重造輪子之外，也讓往後新進來的人員能夠有個標準化的內容參閱來維護既有的產品。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jlevziTzues" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script async class="speakerdeck-embed" data-slide="9" data-id="3448a654c505429ba38fb8c1a7f24a65" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-## LINE CLOVA AI 團隊
+而接下來公司的方向將會漸漸將重心轉換到自然流量上，因此 Frontend 團隊就會更多處理 **SEO** 與 **Web 效能優化** 相關的工作內容，同時也引入 SSR 以及 AMP 來對齊公司的目標。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kVPn3aPNeWY?start=336" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script async class="speakerdeck-embed" data-slide="12" data-id="3448a654c505429ba38fb8c1a7f24a65" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
----
+當然在裡面也會與不同團隊的成員合作，讓產品可以更快速地交付、維護、更安全以外，內部也會透過分享來讓更多團隊了解不同的解決方案的優點。
 
-<script async class="speakerdeck-embed" data-slide="4" data-id="155d7a3a5d774d66b6076da5ce516fbc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+最後，Frontend 團隊由於成員會持續協助不同專案以及產品的開發，在大家學習到不同的經驗之後也會透過許多的讀書會來分享不同專案間的差異與經驗，藉由交流也讓彼此可以更快速的上手且了解不同專案的屬性。
 
-許多人第一次認識 CLOVA 時應該都是智慧喇叭，其實在打造產品時也同時打造了 AI 技術平台 - LINE BRAIN，經過了一些時日，將兩個產品名稱合併並稱為 - LINE CLOVA，合併的過程這邊就不贅述，請大家參考影片中的內容。
-
-> 更多產品細節可以參考 TECHPULSE 2020 的 [LINE CLOVA 主議程](https://www.youtube.com/watch?v=C8j-tZEbMaQ)
-
-<script async class="speakerdeck-embed" data-slide="24" data-id="155d7a3a5d774d66b6076da5ce516fbc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-而在 LINE Taiwan 團隊這邊，主要以 NLU、FACE、STT、OCR 去打造不同產品的應用，而 LINE Clova [Technical Project Manager](https://careers.linecorp.com/jobs/494) 與 [Product Engineer](https://careers.linecorp.com/jobs/495) 主要會與總部的核心團隊合作，並利用相關技術在台灣團隊打造本地端 AI 相關應用服務。
-
-大家可能會好奇這兩個職位分別要做什麼(除了看以下內容外也可以參考 LINE Career 上面):
-
-- [Technical Project Manager](https://careers.linecorp.com/jobs/494): 系統分析、系統架構規劃、開發與管理 LINE CLOVA 專案
-- [Product Engineer](https://careers.linecorp.com/jobs/495): 設計 DevOps 解決方案、系統整合與實現、PoC、技術支援
-
-## LINE TECH FRESH 技術新星人才計畫
-
-<script async class="speakerdeck-embed" data-slide="3" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-過去在公開活動中，同仁們時常會被詢問：「實習生再加入後是否只能在特定團隊內工作？」，過往有許多同學透過特定專業能力進到實習生計畫中，而我們都很鼓勵每位同學勇於挑戰不同的領域，持續強化不同的專業能力，找尋出自己的想走的道路。
-
-<script async class="speakerdeck-embed" data-slide="7" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-除了日常專案與累積技術能力之外，我們很鼓勵透過文章的方式呈現來記錄自己的學習成果，同時也將自己的學習成果分享給未來的學弟妹們，讓大家可以參考學長姐們的結晶，有興趣可以參考以下內容：
-
-- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
-- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
-- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
-- [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
-- [LINE Developer Day 2020 – The past and future of machine learning research 議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-dev-day-2020-the-past-and-future-of-machine-learning-research/)
-
-<script async class="speakerdeck-embed" data-slide="8" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-此外，我們每個月皆會舉辦月會讓實習生可以在固定的時間中與不同專業領域的 Mentor 們聊聊，除了了解前輩們過往的經驗之外，透過交流也可以了解到新興人才們所思考以及顧慮的部分，也讓我們能夠更持續的優化這個計畫的內容。
-
-<script async class="speakerdeck-embed" data-slide="11" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-在經過一年的磨練過後，我們也希望菁英同學們有機會加入 LINE 工程部門的大家庭中，一同為 LINE 打造 WoW 的產品給社會大眾，讓你所寫的每一行程式碼都成為大家日常生活的一部份！
-
-## LINE Pay
-
-<script async class="speakerdeck-embed" data-slide="4" data-id="3298c104de1646e89c202f575f04fc4f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-除了大家平常所使用且熟悉的支付服務以外，其實日常也需要處理**金融相關**、**信用卡回饋**等等的專案內容，而從 [TECHPUSE 2020](https://www.youtube.com/watch?v=K9ZHOdjZyug) 之後，LINE Pay 陸續提供了 Extra Service 來達到在地化服務，像是 **我的會員卡**、**廣告投放**與透過**LINE Pay 地圖**讓大家知道到底有哪些商家支援 LINE Pay，不用出門就可以知道可去哪邊使用 LINE Point 回饋點數了。
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rndT5K8isww?start=336" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-在日常處理不同的專案之外，LINE Pay 也含有許多內部 PoC 專案，身為工程師一定會有很多想法想用，想實驗很多新學的東西，透過這些專案去驗證想法的可行性，讓想法有機會進入產品之中。
-
-若認同 LINE Pay 文化，歡迎加入 LINE Pay：
-
-- [Front-end Engineer](https://careers.linecorp.com/jobs/76)
-- [Server-side Engineer](https://careers.linecorp.com/jobs/75)
-
-> Q: 請問不熟 Java 可以投 LINE Pay backend 嗎? 例如: Python, Go。
-> A: 都歡迎來面試，不過可以多花一點時間準備 JAVA 會比較好。
-
-> Q: 請問專案開發，包括 planner, dev, security, qa 總共有多少人執行一個專案？
-> A: 實際上人數沒辦法透露，但參與人數會跟專案大小有關。
+今年 [Front-end Engineer](https://careers.linecorp.com/jobs/7) 正在擴大招募，尋找在前端領域的高手們來一同來打造驚艷的產品於 LINE 生態系中。
 
 ## Client 工程團隊
 
@@ -254,6 +236,27 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 > Q: SRE 要有什麼相關技能呢？
 > A: 這邊提出幾個相關技能，詳細還是以日後 LINE Career 上面開出來的職缺為主喔！
 > Application observability, Public cloud experience (AWS, GCP, Azure), Web application/technology stack, CI/CD tooling, Linux Operating System,Networking...
+
+## LINE CLOVA AI 團隊
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kVPn3aPNeWY?start=336" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+<script async class="speakerdeck-embed" data-slide="4" data-id="155d7a3a5d774d66b6076da5ce516fbc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+許多人第一次認識 CLOVA 時應該都是智慧喇叭，其實在打造產品時也同時打造了 AI 技術平台 - LINE BRAIN，經過了一些時日，將兩個產品名稱合併並稱為 - LINE CLOVA，合併的過程這邊就不贅述，請大家參考影片中的內容。
+
+> 更多產品細節可以參考 TECHPULSE 2020 的 [LINE CLOVA 主議程](https://www.youtube.com/watch?v=C8j-tZEbMaQ)
+
+<script async class="speakerdeck-embed" data-slide="24" data-id="155d7a3a5d774d66b6076da5ce516fbc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+而在 LINE Taiwan 團隊這邊，主要以 NLU、FACE、STT、OCR 去打造不同產品的應用，而 LINE Clova [Technical Project Manager](https://careers.linecorp.com/jobs/494) 與 [Product Engineer](https://careers.linecorp.com/jobs/495) 主要會與總部的核心團隊合作，並利用相關技術在台灣團隊打造本地端 AI 相關應用服務。
+
+大家可能會好奇這兩個職位分別要做什麼(除了看以下內容外也可以參考 LINE Career 上面):
+
+- [Technical Project Manager](https://careers.linecorp.com/jobs/494): 系統分析、系統架構規劃、開發與管理 LINE CLOVA 專案
+- [Product Engineer](https://careers.linecorp.com/jobs/495): 設計 DevOps 解決方案、系統整合與實現、PoC、技術支援
 
 ## 資料工程團隊
 
