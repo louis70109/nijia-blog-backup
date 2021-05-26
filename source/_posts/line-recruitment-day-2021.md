@@ -6,7 +6,6 @@ categories: 研討會
 date: 2021-05-26 13:55:55
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -35,9 +34,8 @@ LINE 的工程文化中，分為以下三點
 
 - Take Ownership
 
-我們注重讓每位開發人員的自主權，從規劃、開發、參與討論，讓大家決定該做什麼、該怎麼做。這邊講者首先以 Antman 這個專案為開場介紹，透過工程師們自主提出問題，與不同團隊協同開發，讓壓縮的方式來節省圖片儲存空間([詳細參考此篇](https://engineering.linecorp.com/en/blog/developing-the-antman-project/))。
-
-接著是去年的 [LINE SPOT](https://spot.line.me/) 口罩地圖，因為疫情的關係，剛好搭配 location-based 的 LINE SPOT，在短短的幾天內迅速打造出口罩地圖，讓各位可以在線上就可以查詢還有哪邊還可以買到口罩，在嚴峻的疫情下效率最大化讓大家可以以嘴有效的方式找到需要的東西。
+  - 我們注重讓每位開發人員的自主權，從規劃、開發、參與討論，讓大家決定該做什麼、該怎麼做。這邊講者首先以 Antman 這個專案為開場介紹，透過工程師們自主提出問題，與不同團隊協同開發，讓壓縮的方式來節省圖片儲存空間([詳細參考此篇](https://engineering.linecorp.com/en/blog/developing-the-antman-project/))。
+  - 接著是去年的 [LINE SPOT](https://spot.line.me/) 口罩地圖，因為疫情的關係，剛好搭配 location-based 的 LINE SPOT，在短短的幾天內迅速打造出口罩地圖，讓各位可以在線上就可以查詢還有哪邊還可以買到口罩，在嚴峻的疫情下效率最大化讓大家可以以最有效的方式找到需要的東西。
 
 - Be Open：我們鼓勵每位同仁多參加研討會或是當講者，除了分享自己在專案上學到的東西外，也能學習不同領域的講者所使用的技能，在以下也會有片段介紹相關內容。
 - Trust and Respect：因為疫情，我們需要透過 Work From Home 的機制來避免相關問題，透過此案例也驗證了這個文化的精髓。
