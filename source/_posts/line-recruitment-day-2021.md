@@ -18,21 +18,19 @@ date: 2021-05-26 13:55:55
 
 ![LRD](https://nijialin.com/images/2021/LRD.png)
 
-# TOC 
-- [Internal Developer Relations]()
-- [LINE Pay 團隊]()
-- [LINE TECH FRESH 技術新星人才計畫]()
-- [LINE TODAY 團隊]()
-- [LINE 電商團隊]()
-- [QA 工程團隊]()
-- [Frontend 工程團隊]()
-- [Client 團隊]()
-- [SRE 團隊]()
-- [LINE CLOVA AI 團隊]()
-- [資料工程團隊]()
+# 快速連結
 
-
-
+- [Internal Developer Relations](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#Internal-Developer-Relations)
+- [LINE Pay 團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#LINE-Pay-團隊)
+- [LINE TECH FRESH 技術新星人才計畫](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#LINE-TECH-FRESH-技術新星人才計畫)
+- [LINE TODAY 團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#LINE-TODAY-團隊)
+- [LINE 電商團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#LINE-電商團隊)
+- [QA 工程團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#QA-工程團隊)
+- [Frontend 工程團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#Frontend-工程團隊)
+- [Client 團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#Client-工程團隊)
+- [SRE 團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#SRE-團隊)
+- [LINE CLOVA AI 團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#LINE-CLOVA-AI-團隊)
+- [資料工程團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#資料工程團隊)
 
 # 介紹
 
