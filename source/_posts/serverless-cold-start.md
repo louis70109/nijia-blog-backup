@@ -1,6 +1,6 @@
 ---
 title: Serverless cold start 問題
-categories: 學習紀錄
+categories: Serverless
 tags:
   - AWS
   - GCP

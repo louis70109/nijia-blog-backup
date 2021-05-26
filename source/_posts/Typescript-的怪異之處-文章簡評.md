@@ -2,7 +2,8 @@
 title: 'Typescript 不一樣的地方 - Interface, Class Type, 多型別'
 tags:
   - TypeScript
-categories: 學習紀錄
+  - JavaScript
+categories: JavaScript
 abbrlink: 2145224856
 date: 2020-03-21 16:11:54
 ---
