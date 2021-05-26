@@ -18,8 +18,21 @@ date: 2021-05-26 13:55:55
 
 ![LRD](https://nijialin.com/images/2021/LRD.png)
 
+# TOC 
 - [Internal Developer Relations]()
--
+- [LINE Pay 團隊]()
+- [LINE TECH FRESH 技術新星人才計畫]()
+- [LINE TODAY 團隊]()
+- [LINE 電商團隊]()
+- [QA 工程團隊]()
+- [Frontend 工程團隊]()
+- [Client 團隊]()
+- [SRE 團隊]()
+- [LINE CLOVA AI 團隊]()
+- [資料工程團隊]()
+
+
+
 
 # 介紹
 
@@ -53,7 +66,7 @@ LINE 的工程文化中，分為以下三點
 
 當然除了對外的活動之外，也有許多內部活動，如寫作日、On Job Training、Internal Hackathon...當然還有一年一度的盛會 - TECHPULSE，如果對於這些內部活動相當有興趣的朋友，千萬要多關注以下的內容唷！
 
-## LINE Pay
+## LINE Pay 團隊
 
 <script async class="speakerdeck-embed" data-slide="4" data-id="3298c104de1646e89c202f575f04fc4f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
