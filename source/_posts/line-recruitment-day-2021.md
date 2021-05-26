@@ -206,8 +206,6 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 
 ## Client 工程團隊
 
-為了在有限的人力下加速開發，因此也選用近期很火紅的 flutter
-
 近期也在打造很火紅的電商直播，讓 LINE 購物可以有效整合直播，優化用戶的邊看邊買的體驗。
 
 <script async class="speakerdeck-embed" data-slide="4" data-id="6d356966131c4673b1f9da890f84754a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
