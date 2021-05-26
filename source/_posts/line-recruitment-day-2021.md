@@ -18,6 +18,7 @@ date: 2021-05-26 13:55:55
 
 ![LRD](https://nijialin.com/images/2021/LRD.png)
 
+
 # 索引列表
 
 - [Internal Developer Relations](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#Internal-Developer-Relations)
@@ -33,6 +34,8 @@ date: 2021-05-26 13:55:55
 - [資料工程團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#資料工程團隊)
 
 # 介紹
+
+> 本次[活動頁面](https://linegroup.kktix.cc/events/20210522-devel): https://linegroup.kktix.cc/events/20210522-devel
 
 開場由 LINE Taiwan CTO - Marco 為大家介紹，因為大環境的關係，觀察到許多人使用網路的方式改變了，同時也看到線上線下整合(Online Merge Offline)的趨勢，而在 LINE 的生態系服務當中有許多都是使用 Online Merge Offline 的方式，如 LINE SHOPPING、LINE SPOT、LINE Taxi...等等。現在也人手一隻手機，並且裡頭也都安裝著 LINE，為了提供用戶在這數位生態圈中生活更加便利，因此我們也就打造了各式各樣的服務來提供給大家。
 
