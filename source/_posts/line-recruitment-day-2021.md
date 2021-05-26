@@ -18,7 +18,7 @@ date: 2021-05-26 13:55:55
 
 ![LRD](https://nijialin.com/images/2021/LRD.png)
 
-# 快速連結
+# 索引列表
 
 - [Internal Developer Relations](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#Internal-Developer-Relations)
 - [LINE Pay 團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#LINE-Pay-團隊)
