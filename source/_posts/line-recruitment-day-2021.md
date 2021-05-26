@@ -128,6 +128,7 @@ LINE 的工程文化中，分為以下三點
 ## LINE 電商團隊
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Gf8c4Atkmt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 電商已成為現代人不可或缺的一部份，在本次的議程中很詳細地透過不同的例子(母親節、送禮優惠...)來解釋在 LINE 電商服務中的不同使用情境，讓大家可以更快速的了解透過 LINE 來購買相關東西時的好處以及可用性。
 
 <script async class="speakerdeck-embed" data-slide="5" data-id="1cfe6d52cca148ff96fc555e41ad1f53" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
