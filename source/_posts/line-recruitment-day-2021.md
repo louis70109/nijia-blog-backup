@@ -19,7 +19,11 @@ date: 2021-05-26 13:55:55
 ![LRD](https://nijialin.com/images/2021/LRD.png)
 
 
-# 索引列表
+# 前言
+
+由於疫情突然的加溫，LINE 工程團隊緊急將活動改為線上的方式呈現給大家，在避免群聚的情況下盡可能地呈現最好的方式給大家，同時也讓大家了解 LINE 工程部門裡每個團隊所負責的內容，以下就整理出當天的所有內容給各位囉！
+
+# 議程列表
 
 - [Internal Developer Relations](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#Internal-Developer-Relations)
 - [LINE Pay 團隊](https://nijialin.com/2021/05/26/line-recruitment-day-2021/#LINE-Pay-團隊)
