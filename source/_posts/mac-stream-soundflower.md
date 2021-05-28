@@ -24,6 +24,10 @@ date: 2020-11-29 20:01:51
 
 > 在此之前記得安裝 Open Broadcaster Software(OBS): https://obsproject.com/download
 
+
+> [2021/05/28 更新]： 目前並不支援 M1 晶片喔！ [M1 chip-based Macs are NOT YET SUPPORTED](https://github.com/mattingalls/Soundflower/releases/tag/2.0b2)
+
+
 <!-- more -->
 
 # [SoundFlower](https://github.com/mattingalls/Soundflower/releases)
