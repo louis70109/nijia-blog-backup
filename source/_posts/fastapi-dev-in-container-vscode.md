@@ -1,8 +1,13 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 如何在 VSCode 中以 Container 方式開發 FastAPI + PostgreSQL
 tags:
+  - Python
+  - VSCode
+  - PostgreSQL
+categories: Python
+date: 2021-05-29 19:25:33
 ---
+
 
 <style>
   section.compact {
@@ -13,8 +18,6 @@ tags:
     margin: 0 auto;
   }
 </style>
-
-![](https://nijialin.com/images/2021/)
 
 # 前言
 
@@ -91,3 +94,11 @@ tags:
 ![sql1](https://nijialin.com/images/2021/fastapi-container/sql1.png)
 
 # 結論
+
+像筆者我之前都很習慣在筆電中直接灌爆所有環境需要的東西，想要時直接取用，使用速度也都很及時，到目前比較有經驗之後也很少遇到環境打架問題。
+
+但想起以前有些開發時需要多環境切換測試時就很容易遇到污染的問題，導致本地端看似對的但部署上去都是錯的的問題，因此之後才會逐漸切換成將開發用的工具以 Docker 的方式切開來使用。
+
+藉由這次與各位分享在 VSCode 中以 Container 的方式開發 FastAPI + PostgreSQL 中的經驗，過程中也讓我釐清了許多操作上的內容，希望透過這篇文章能夠讓各位也可以開始嘗試在 Container 裡面開始開發自己的服務，同時也讓自己系統內的環境更加乾淨喔！
+
+> Docker 是 Container 這個技術的解決方案之一，但是 Container 不是 Docker 喔！！
