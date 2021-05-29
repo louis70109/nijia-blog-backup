@@ -68,4 +68,26 @@ tags:
 進來之後就要來啟動專案，按下畫面上執行的按鈕，而這個按鈕則會在 `.vscode` 中建立 `launch.json` 來幫忙放相關設定檔，裡頭就是設定要跑的相關指令。
 ![launch](https://nijialin.com/images/2021/fastapi-container/launch1.png)
 
+執行之後會在下方出現終端機來顯示跑起來的訊息，相關 call API 的測試結果當然也都會在這邊。
+![launch2](https://nijialin.com/images/2021/fastapi-container/launch2.png)
+
+執行完後大概果幾秒後，右下角會出現視窗來詢問你說要不要在`瀏覽器上開啟` 的彈跳視窗，按下去後 VSCode 就會幫忙把相對應的 Port 全部對外，讓大家可以無痛在本地端(127.0.0.1)直接 call API
+
+解決了：
+
+- 不用找 Docker IP 為了呼叫容器裡的服務
+- 跟在電腦(本地端)開發狀態一樣，而多了不會`污染環境`的好處
+
+![port](https://nijialin.com/images/2021/fastapi-container/port.png)
+
+跟許多開發工具一樣，要 Debug 時就在行數的`左邊`點上`紅點`，打一次訊息到 API 後就會在想除錯的那行中停下來，左邊訊息欄就會顯示當前相關參數喔。
+
+> 下方有兩個顏色，`紫色`是當前正在的處於的環境(Container)，紅色則是告訴你現在`服務啟動`了，等關閉終端機時就會變回一般的顏色囉。
+
+![debug](https://nijialin.com/images/2021/fastapi-container/debug1.png)
+
+這邊看資料庫解決了筆者開發的一個小痛點，左邊欄支援直接看資料庫，可以快速查詢相關開發的資料是否正確，透過介面上的內容大致可以解決許多開發上會遇到的問題。(當然其他工具(pgadmin)還是有他好用的地方)
+
+![sql1](https://nijialin.com/images/2021/fastapi-container/sql1.png)
+
 # 結論
