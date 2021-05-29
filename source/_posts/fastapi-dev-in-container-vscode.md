@@ -52,6 +52,8 @@ date: 2021-05-29 19:25:33
 
 ![remote container](https://nijialin.com/images/2021/fastapi-container/remote0.png)
 
+## 範例專案 [fastapi-vscode-example](https://github.com/louis70109/fastapi-vscode-example) 架構
+
 接著 Clone 這次的範例專案 [fastapi-vscode-example](https://github.com/louis70109/fastapi-vscode-example)，以下我來跟大家稍微解釋一下資料夾結構：
 
 - `.devcontainer/`: Remote-Container 使用時所需要的資料夾，下面會有三個檔案 Dockerfile、docker-compose.yml、devcontainer.json，前兩個為容器的設定檔，最後一個則是 Remote-Container 所需要的檔案。
@@ -59,6 +61,8 @@ date: 2021-05-29 19:25:33
 - `Container database.session.sql`: 在 VSCode 中透過介面來操作資料庫時會初始化跑的檔案。
 - `main.py`: 主程式要跑的檔案。
 - 其餘檔案則是專案在寫時所分類的資料夾以及 Heroku 設定檔。
+
+## 開始使用 Remote Container 環境
 
 大致了解架構後，接著按下 Command+Shift+p 開啟一個輸入框，並輸入 `remote container` 後找到 `Reopen in Container` 的選項，如下圖所示。
 
@@ -73,7 +77,9 @@ date: 2021-05-29 19:25:33
 執行之後會在下方出現終端機來顯示跑起來的訊息，相關 call API 的測試結果當然也都會在這邊。
 ![launch2](https://nijialin.com/images/2021/fastapi-container/launch2.png)
 
-執行完後大概果幾秒後，右下角會出現視窗來詢問你說要不要在`瀏覽器上開啟` 的彈跳視窗，按下去後 VSCode 就會幫忙把相對應的 Port 全部對外，讓大家可以無痛在本地端(127.0.0.1)直接 call API
+## Port Forward
+
+執行完後大概果幾秒後，右下角會出現視窗來詢問你說要不要在 `瀏覽器上開啟` 的彈跳視窗，按下去後 VSCode 就會幫忙把相對應的 Port 全部對外，讓大家可以無痛在本地端(127.0.0.1)直接 call API
 
 解決了：
 
@@ -82,11 +88,15 @@ date: 2021-05-29 19:25:33
 
 ![port](https://nijialin.com/images/2021/fastapi-container/port.png)
 
+## 執行與除錯(Debug)模式
+
 跟許多開發工具一樣，要 Debug 時就在行數的`左邊`點上`紅點`，打一次訊息到 API 後就會在想除錯的那行中停下來，左邊訊息欄就會顯示當前相關參數喔。
 
 > 下方有兩個顏色，`紫色`是當前正在的處於的環境(Container)，紅色則是告訴你現在`服務啟動`了，等關閉終端機時就會變回一般的顏色囉。
 
 ![debug](https://nijialin.com/images/2021/fastapi-container/debug1.png)
+
+## 資料庫
 
 這邊看資料庫解決了筆者開發的一個小痛點，左邊欄支援直接看資料庫，可以快速查詢相關開發的資料是否正確，透過介面上的內容大致可以解決許多開發上會遇到的問題。(當然其他工具(pgadmin)還是有他好用的地方)
 
