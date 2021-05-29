@@ -72,7 +72,7 @@ date: 2021-05-29 19:25:33
 ![open folder](https://nijialin.com/images/2021/fastapi-container/open1.png)
 
 進來之後就要來啟動專案，按下畫面上執行的按鈕，而這個按鈕則會在 `.vscode` 中建立 `launch.json` 來幫忙放相關設定檔，裡頭就是設定要跑的相關指令。
-![launch](https://nijialin.com/images/2021/fastapi-container/launch1.png)
+![launch](https://nijialin.com/images/2021/fastapi-container/lauch1.png)
 
 執行之後會在下方出現終端機來顯示跑起來的訊息，相關 call API 的測試結果當然也都會在這邊。
 ![launch2](https://nijialin.com/images/2021/fastapi-container/launch2.png)
