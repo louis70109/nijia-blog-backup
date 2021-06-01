@@ -22,18 +22,25 @@ tags:
 
 # 介紹
 
-- 登入 Simulator https://developers.line.biz/flex-simulator
+Flex Message 是什麼？它是一個 LINE 很強大的訊息圖文選單，能夠讓開發者透過 JSON 的方式建立起漂亮的選單(如下)，讓 LINE 官方帳號(Official Account)的擁有者(Provider)可以使用設計過的訊息選單與用戶做更多的互動。
 
-  - LINE 官方提供的一個強大介面
-  - 可發送
+![](https://nijialin.com/images/2021/line-simulator/sample.png)
+
+# 如何設計 Flex Message？使用 LINE Simulator
+
+許多開發者在開發 Flex Message 給 Chatbot 或是 ShareTargetPicker 時 經常會透過 [LINE Simulator](https://developers.line.biz/flex-simulator) 來將想要的樣式透過介面上的操作選項來處理內容
+![](https://nijialin.com/images/2021/line-simulator/send0.png)
+
+- LINE 官方提供的一個強大介面
+- 可發送
 
 官方新聞稿 - [You can now send test messages from Flex Message Simulator](https://developers.line.biz/en/news/2021/05/20/send-test-message-flex-message-simulator/)
 
 - [使用 2020 Flex Message 的 10 個新功能 – 讓您在 LINE 的訊息設計更有彈性](https://engineering.linecorp.com/zh-hant/blog/2020-flex-message-10-reason/)
 - [在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享 FlexMessage 訊息給 LINE 好友](https://engineering.linecorp.com/zh-hant/blog/how-to-use-liff-in-vue3/)
 - [Flex Message 的 Update 1 已公開](https://engineering.linecorp.com/zh-hant/blog/flex-message-update1/)
-
-對戰範例一：
+- [2020/10 Flex Message Update 2 released](https://developers.line.biz/en/news/2020/10/08/flex-message-update-2-released/)
+  對戰範例一：
 
 <script src="https://gist.github.com/louis70109/9a6f3b742b603e298a321a3e96a8b9e9.js"></script>
 
