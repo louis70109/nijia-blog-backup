@@ -26,6 +26,10 @@ tags:
   - LINE 官方提供的一個強大介面
   - 可發送
 
+[使用 2020 Flex Message 的 10 個新功能 – 讓您在 LINE 的訊息設計更有彈性](https://engineering.linecorp.com/zh-hant/blog/2020-flex-message-10-reason/)
+[在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享 FlexMessage 訊息給 LINE 好友](https://engineering.linecorp.com/zh-hant/blog/how-to-use-liff-in-vue3/)
+[Flex Message 的 Update 1 已公開](https://engineering.linecorp.com/zh-hant/blog/flex-message-update1/)
+
 對戰範例一：
 
 <script src="https://gist.github.com/louis70109/9a6f3b742b603e298a321a3e96a8b9e9.js"></script>
