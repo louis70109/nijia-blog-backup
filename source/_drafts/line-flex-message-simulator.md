@@ -28,7 +28,8 @@ Flex Message 是什麼？它是一個 LINE 很強大的訊息圖文選單，能�
 
 # 如何設計 Flex Message？使用 LINE Simulator
 
-許多開發者在開發 Flex Message 給 Chatbot 或是 ShareTargetPicker 時 經常會透過 [LINE Simulator](https://developers.line.biz/flex-simulator) 來將想要的樣式透過介面上的操作選項來處理內容
+許多開發者在開發 Flex Message 給 Chatbot 或是 ShareTargetPicker ([參考文章](https://engineering.linecorp.com/zh-hant/blog/share-target-picker-liff/))時經常會透過 [LINE Simulator](https://developers.line.biz/flex-simulator) 來將想要的樣式透過介面上的操作選項來處理想發送在 LINE 平台上的內容。
+
 ![](https://nijialin.com/images/2021/line-simulator/send0.png)
 
 - LINE 官方提供的一個強大介面
