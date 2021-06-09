@@ -36,11 +36,11 @@ date: 2019-10-16 11:28:36
 
 ### Backend
 
-- Python / Flask
-- NodeJS / express
+- Python / Flask, FastAPI
+- NodeJS / Express
 - Ruby / Rails
 
-### SQL / NoSQL
+### SQL, NoSQL
 
 - PostgreSQL / MySQL
 - MongoDB / Redis
@@ -52,9 +52,8 @@ date: 2019-10-16 11:28:36
 | AWS            | Route53, CloudFront, SQS, Lambda, API Gateway, Amplify, S3, Cognito, IoT  |
 | LINE           | Messaging API(Bot), Notify, Login, LIFF                                   |
 | Git            | GitHub, Azure DevOps, Bitbucket                                           |
-| Google         | Dialogflow                                                                |
 | Document tools | Markdown, [Swagger](https://github.com/louis70109/aws-swagger-wsgi-flask) |
-| DevOps         | Docker, Serverless                                                        |
+| Others         | Docker, Serverless                                                        |
 
 # Workshop
 
