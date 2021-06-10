@@ -25,6 +25,13 @@ date: 2021-06-09 18:46:47
 
 平時開發 LINE Bot 相關功能時，我們都會使用許多的文字、貼圖、圖片...來實現一個服務所需要的對話流程，而在開發許久之後，總想為自己的 LINE Bot 添加更多有特色的內容，不論是在文字中加入特殊符號、發送對應情境的貼圖、影片..等等。而在 LINE Bot 中有個可以讓開發者自由添加各種特色的訊息選單 - [Flex Message](https://developers.line.biz/en/docs/messaging-api/using-flex-messages/)，那這個功能有什麼特別的呢？以及我可以如何快速測試使用這功能呢？以下就讓我為各位介紹介紹。
 
+# 索引
+
+- [Flex Message 簡介](https://nijialin.com/2021/06/09/line-flex-message-simulator/#Flex-Message-簡介)
+- [如何設計與測試 Flex Message？使用 Flex Message Simulator](https://nijialin.com/2021/06/09/line-flex-message-simulator/#如何設計與測試-Flex-Message？使用-Flex-Message-Simulator)
+- [其他範例提供](https://nijialin.com/2021/06/09/line-flex-message-simulator/#其他範例提供)
+- [活動小結](https://nijialin.com/2021/06/09/line-flex-message-simulator/#活動小結)
+- [關於「LINE-開發社群計畫」](https://nijialin.com/2021/06/09/line-flex-message-simulator/#關於「LINE-開發社群計畫」)
 <!-- more -->
 
 # [Flex Message](https://developers.line.biz/en/docs/messaging-api/using-flex-messages/) 簡介
