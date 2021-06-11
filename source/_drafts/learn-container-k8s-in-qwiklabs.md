@@ -49,3 +49,10 @@ Service 透過 label 來判斷哪個 pods 是他的，若是他的即會把 pods
 ClusterIP (internal) -- the default type means that this Service is only visible inside of the cluster,
 NodePort gives each node in the cluster an externally accessible IP and
 LoadBalancer adds a load balancer from the cloud provider which forwards traffic from the service to Nodes within it.
+
+## [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#what-is-a-deployment)
+
+![](https://cdn.qwiklabs.com/1UD7MTP0ZxwecE%2F64MJSNOP8QB7sU9rTI0PSv08OVz0%3D)
+
+當今天有個 Node 掛掉時，其他 Node 會先把 pod 接過去處理，等他回覆之後再還給他
+![](https://cdn.qwiklabs.com/fH4ZxGNxg5KLBy5ykbwKNIS9MIJ9cgcMEDuhB0a9uBo%3D)
