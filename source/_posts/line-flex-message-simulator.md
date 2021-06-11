@@ -96,11 +96,16 @@ Flex Message 是什麼？它是一個 LINE 很強大的訊息圖文選單，能�
 # 其他範例提供
 
 以下是我在開發 Side Project 時所使用的樣式，歡迎大家取用並開發出更多更吸睛的 Flex Message!
+
 對戰範例一：
+
+![範例2](https://nijialin.com/images/2021/line-simulator/sample1.png)
 
 <script src="https://gist.github.com/louis70109/9a6f3b742b603e298a321a3e96a8b9e9.js"></script>
 
-疊層範例：
+疊層範例二：
+
+![範例2](https://nijialin.com/images/2021/line-simulator/sample2.png)
 
 <script src="https://gist.github.com/louis70109/4cf6eda9a4267b24041435cebfe6b333.js"></script>
 
