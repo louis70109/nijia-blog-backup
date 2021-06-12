@@ -56,3 +56,45 @@ LoadBalancer adds a load balancer from the cloud provider which forwards traffic
 
 當今天有個 Node 掛掉時，其他 Node 會先把 pod 接過去處理，等他回覆之後再還給他
 ![](https://cdn.qwiklabs.com/fH4ZxGNxg5KLBy5ykbwKNIS9MIJ9cgcMEDuhB0a9uBo%3D)
+
+## Rolling update
+
+Rolling update
+Deployments support updating images to a new version through a rolling update mechanism. When a Deployment is updated with a new version, it creates a new ReplicaSet and slowly increases the number of replicas in the new ReplicaSet as it decreases the replicas in the old ReplicaSet.
+
+讓線上的 deployment 可以分批更新成新的版本
+
+上新版 - 暫停舊版 - 沒問題後砍掉舊版
+
+![](https://cdn.qwiklabs.com/uc6D9jQ5Blkv8wf%2FccEcT35LyfKDHz7kFpsI4oHUmb0%3D)
+
+透過指令修改
+
+```
+kubectl edit deployment hello
+```
+
+```bash
+kubectl rollout pause deployment/hello # 暫停
+kubectl rollout status deployment/hello
+kubectl rollout resume deployment/hello #
+kubectl rollout undo deployment/hello # 還原
+```
+
+若改版過去發現還是有問題可以透過 undo 還原
+
+## Canary deployments
+
+When you want to test a new deployment in production with a subset of your users, use a canary deployment. Canary deployments allow you to release a change to a small subset of your users to mitigate risk associated with new releases.
+
+![](https://cdn.qwiklabs.com/qSrgIP5FyWKEbwOk3PMPAALJtQoJoEpgJMVwauZaZow%3D)
+
+# Blue-green deployments
+
+Rolling updates are ideal because they allow you to deploy an application slowly with minimal overhead, minimal performance impact, and minimal downtime. There are instances where it is beneficial to modify the load balancers to point to that new version only after it has been fully deployed. In this case, blue-green deployments are the way to go.
+
+Kubernetes achieves this by creating two separate deployments; one for the old "blue" version and one for the new "green" version. Use your existing hello deployment for the "blue" version. The deployments will be accessed via a Service which will act as the router. Once the new "green" version is up and running, you'll switch over to using that version by updating the Service.
+
+> A major downside of blue-green deployments is that you will need to have at least 2x the resources in your cluster necessary to host your application. Make sure you have enough resources in your cluster before deploying both versions of the application at once.
+
+如果有需要還是可以 rollback 回籃版
