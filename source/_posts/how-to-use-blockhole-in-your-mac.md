@@ -19,8 +19,6 @@ date: 2021-06-19 18:19:20
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
-
 # 前言
 
 常常看著我的另外一篇設定直播的文章 - [如何只使用一台 Mac 進行直播 feat. SoundFlower, OBS, Youtube](https://nijialin.com/2020/11/29/mac-stream-soundflower/) 長期蟬聯本部落格的流量冠軍(感謝大家愛戴)。當時這篇的目標是為了解決透過 OBS 直播時也要同時把桌面音訊打出去(e.g. 線上研討會)，讓觀眾可以同步聽到在電腦中所收到的聲音。
