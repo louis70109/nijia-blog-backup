@@ -1,9 +1,5 @@
 @startuml
-(Simulator 中設計 Flex Message)-down->(JSON 貼到專案中)
-(JSON 貼到專案中)-down->(設定關鍵字)
-(設定關鍵字)-down->(啟動專案)
-(啟動專案)-down->(填入 SSL 網址)
-(填入 SSL 網址)-down->(在 Chatbot 中測試)
-(在 Chatbot 中測試)-down->(Simulator 中設計 Flex Message): 失敗，檢查設計
-(在 Chatbot 中測試)-down->(結束)
+(LINE Platform)->(Data)
+(Data)->(Your Server)
+(Attacker)-down->(Data): catch and fake it
 @enduml
