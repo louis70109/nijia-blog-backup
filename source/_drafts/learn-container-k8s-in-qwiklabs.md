@@ -24,6 +24,8 @@ tags:
 
 # 結論
 
+gcloud compute ssh gcelab2 --zone us-central1-f
+
 ## [Pods](https://kubernetes.io/docs/concepts/workloads/pods/)
 
 ![](https://cdn.qwiklabs.com/tzvM5wFnfARnONAXX96nz8OgqOa1ihx6kCk%2BelMakfw%3D)
