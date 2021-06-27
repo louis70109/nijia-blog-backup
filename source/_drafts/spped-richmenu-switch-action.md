@@ -14,7 +14,7 @@ tags: ['LINE', 'Richmenu']
   }
 </style>
 
-![](https://nijialin.com/images/2021/switch-menu/1.jpeg)
+![](https://nijialin.com/images/2021/switch-richmenu/1.jpeg)
 
 相信有在使用 LINE 官方帳號(Official Account)的朋友，基本上都會知道 Rich Menu 可以有效幫助並引導使用者來使用服務中的主要內容。其中要使用到 Rich Menu 非常容易，只需使用工具([Official Account Manager](https://manager.line.biz/))或撰寫程式即可完成。
 
@@ -22,11 +22,11 @@ tags: ['LINE', 'Richmenu']
 
 <!-- more -->
 
-![](https://nijialin.com/images/2021/switch-menu/2.gif)
+![](https://nijialin.com/images/2021/switch-richmenu/2.gif)
 
-從上圖可以看出，當前的 Rich Menu 切換延遲了很多，因為後面的步驟很多。
+從上圖可以看出，當前的 Rich Menu 切換延遲許多，因為後面實際執行了許多步驟。
 
-![](https://nijialin.com/images/2021/switch-menu/3.png)
+![](https://nijialin.com/images/2021/switch-richmenu/3.png)
 
 1. 用戶按下 Rich Menu 以通過消息或 Postback 操作從聊天室向 LINE 服務器發送請求。
 2. LINE 服務器會將 Webhook 事件轉發到我們的 Bot 應用程序。
@@ -40,7 +40,7 @@ tags: ['LINE', 'Richmenu']
 # 了解 Richmenu Switch Action
 
 **Richmenu Switch Action**是為 Rich Menu 而生的 Action，它會幫助用戶比以前更快地切換 Rich Menu，因為發生的請求在 Client 和 LINE 服務器之間只有 2 個請求。
-![](https://nijialin.com/images/2021/switch-menu/4.png)
+![](https://nijialin.com/images/2021/switch-richmenu/4.png)
 
 1. 用戶按下 Rich Menu 向 LINE 服務器發送請求。
 2. LINE 服務器接受請求並將 Rich Menu 切換到請求用戶。
@@ -65,7 +65,7 @@ tags: ['LINE', 'Richmenu']
 
 然後按照上述文章的第 3 項為兩個富菜單創建 JSON 。例如，我將 Rich Menu 命名為 **richmenu-a**（另一幅名為 **richmenu-b** 的圖像），並將更多按鈕（另一幅圖像為 Back 按鈕）的區域定義為可點擊。此時忽略操作設置。
 
-![](https://nijialin.com/images/2021/switch-menu/5.png)
+![](https://nijialin.com/images/2021/switch-richmenu/5.png)
 
 > 注意：名稱可以與連字符一起使用，但不得包含空格。
 
@@ -90,7 +90,7 @@ areas.action.data: "richmenu=a"
 
 一旦我們自定義了兩種 Rich Menu 類型的 JSON，那麼我們必須按照文章的 4.1（創建）和 4.2（上傳）步驟創建一個 Rich Menu 。您可以使用[Postman](https://www.postman.com/) 之類的工具來幫助。結果必須被 richMenuId 拒之門外。2.眼鏡蛇標識
 
-![](https://nijialin.com/images/2021/switch-menu/6.png)
+![](https://nijialin.com/images/2021/switch-richmenu/6.png)
 
 ---
 
@@ -117,7 +117,7 @@ Body:
 
 最後一步是給我們帶來已經用 OA 或 LINE Chatbot 展示過的 Rich Menu，定義為大家看到相同的 item 4.3 或將其定義為單個 item，[文章](https://medium.com/linedevth/6cf12b394f38)的 item 4.6 或 4.7 ，以及然後看看結果 一起努力 它有多快！
 
-![](https://nijialin.com/images/2021/switch-menu/7.gif)
+![](https://nijialin.com/images/2021/switch-richmenu/7.gif)
 
 # 5. Alias 相關的其他 API
 
