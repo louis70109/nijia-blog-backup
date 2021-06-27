@@ -14,7 +14,7 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://nijialin.com/images/2021/root.JPG)
 
 # 前言
 
