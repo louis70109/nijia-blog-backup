@@ -76,7 +76,14 @@ tags:
 在這一步中，取上一步得到的JSON，修改新的Action如下。
 
 ```
-
+// Action ของ Rich Menu แบบ A
+areas.action.type: "richmenuswitch"
+areas.action.richMenuAliasId: "richmenu-b"
+areas.action.data: "richmenu=b"
+// Action ของ Rich Menu แบบ B
+areas.action.type: "richmenuswitch"
+areas.action.richMenuAliasId: "richmenu-a"
+areas.action.data: "richmenu=a"
 ```
 
 <script src="https://gist.github.com/jirawatee/da1e9a6e6430140f406118789c8c140e.js"></script>
@@ -91,14 +98,110 @@ tags:
 在這一步中，我們需要將 Alias 分配給 Rich Menu，在 A 和 B 之前都知道。
 
 ```
-
+Headers:
+  + Authorization: Bearer {channel access token}
+  + Content-Type: application/json
+Endpoint: https://api.line.me/v2/bot/richmenu/alias
+Method: POST
+Body:
+  + richMenuId: ID ของ Rich Menu ที่ได้จากข้อ 2
+  + richMenuAliasId: ชื่อของ Rich Menu โดยสามารถระบุเป็น a-z, A-Z, 0-9, _, และ - สูงสุด 100 ตัวอักษร
 ```
 如果成功，您將獲得 200 狀態並{}返回。
 
 ---
 
 # 4.為用戶分配 Rich Menu
+
 最後一步是給我們帶來已經用OA或LINE Chatbot展示過的Rich Menu，定義為大家看到相同的item 4.3或將其定義為單個item，[文章](https://medium.com/linedevth/6cf12b394f38)的item 4.6或4.7 ，以及然後看看結果 一起努力 它有多快！
+
+![](https://nijialin.com/images/2021/switch-menu/7.gif)
+
+# 5. Alias相關的其他API
+## 5.1 更新豐富菜單別名
+
+定義 Rich Menu Alias 的便利之一是我們可以不用回到步驟 1-3 來更新目標 Rich Menu ID，但是這種方法不是實時的，會有一個緩存期。所以會有效的。
+```
+Headers:
+  + Authorization: Bearer {channel access token}
+  + Content-Type: application/json
+Endpoint: https://api.line.me/v2/bot/richmenu/alias/{richMenuAliasId}
+Method: POST
+Param:
+  + richMenuAliasId: ชื่อของ Rich Menu (สูงสุด 100 ตัวอักษร)
+Body:
+  + richMenuId: ID ของ Rich Menu ที่อยู่ใน channel เดียวกัน
+```
+
+
+如果成功，您將獲得 200 狀態並{}返回。
+
+## 5.2 獲取豐富菜單別名列表
+
+```
+Headers:
+  + Authorization: Bearer {channel access token}
+Endpoint: https://api.line.me/v2/bot/richmenu/alias/list
+Method: GET
+```
+如果成功，將返回狀態 200，並返回這樣結構的 JSON。
+
+```json
+{
+  "aliases": [
+    {
+        "richMenuAliasId": "richmenu-alias-a",
+        "richMenuId": "richmenu-862e6ad6..."
+    },
+    {
+      "richMenuAliasId": "richmenu-alias-b",
+      "richMenuId": "richmenu-88c05ef6..."
+    }
+  ]
+}
+```
+
+## 5.3 Get Rich Menu Alias Info
+```
+Headers:
+  + Authorization: Bearer {channel access token}
+Endpoint: https://api.line.me/v2/bot/richmenu/alias/{richMenuAliasId}
+Method: GET
+Param:
+  + richMenuAliasId: ชื่อของ Rich Menu (สูงสุด 100 ตัวอักษร)
+```
+
+如果成功，將返回狀態 200，並返回這樣結構的 JSON。
+
+```json
+{ 
+  "richMenuAliasId": "richmenu-alias-a", 
+  "richMenuId": "richmenu-88c05ef6..." 
+}
+```
+
+## 5.4 刪除豐富菜單別名
+
+由於1個Chatbot最多可以有1000個Rich Menu Alias，所以以防萬一它有限制並且想要創建更多。您需要先刪除不使用的任何別名。
+
+```
+Headers:
+  + Authorization: Bearer {channel access token}
+Endpoint: https://api.line.me/v2/bot/richmenu/alias/{richMenuAliasId}
+Method: DELETE
+Param:
+  + richMenuAliasId: ชื่อของ Rich Menu (สูงสุด 100 ตัวอักษร)
+```
+
+如果成功，您將獲得 200 狀態並`{}`返回。
+
+---
+# 結論
+
+
+LINE發布的Richmenu Switch Action從用戶的角度幫助了Rich Menu的實時切換，同時也減少了開發者的工作量。告訴我是誰在這裡讀的。不用不知道說啥哈哈哈哈
+最後，如果這篇文章對您有用，請按Clap、按Share 並按Follow 發布：LINE Developers Thailand以免錯過我們的新文章。今天，我不得不說再見。下一篇文章再見。
+
 # 活動小結
 
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
