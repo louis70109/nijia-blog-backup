@@ -95,9 +95,9 @@ areas.action.data: "richmenu=a"
 
 ---
 
-# 3. 定義 Rich Menu 別名
+# 3. 自定義 Rich Menu 別名
 
-在這一步中，我們需要將 Alias 分配給 Rich Menu，在 A 和 B 之前都知道。
+在這一步中，我們需要將先前建立的 Alias 分配給 Rich Menu(A 和 B)。
 
 ```
 Headers:
@@ -106,23 +106,24 @@ Headers:
 Endpoint: https://api.line.me/v2/bot/richmenu/alias
 Method: POST
 Body:
-  + richMenuId: ID ของ Rich Menu ที่ได้จากข้อ 2
-  + richMenuAliasId: ชื่อของ Rich Menu โดยสามารถระบุเป็น a-z, A-Z, 0-9, _, และ - สูงสุด 100 ตัวอักษร
+  + richMenuId: 此 ID 從 Rich Menu 第二步驟中取得
+  + richMenuAliasId: 此項目是 Rich Menu 的別稱。可以指定為 a-z、A-Z、0-9、_ 和 - ，最多 100 個字元。
 ```
 
-如果成功，您將獲得 200 狀態並{}返回。
+如果成功，您將獲得狀態馬 200 與 `{}`。
 
 ---
 
-# 4.為使用者分配 Rich Menu
+# 4. 將 Rich Menu 分配給使用者
 
-最後一步是給我們帶來已經用 OA 或 LINE Chatbot 展示過的 Rich Menu，定義為大家看到相同的 item 4.3 或將其定義為單個 item，[文章](https://medium.com/linedevth/6cf12b394f38)的 item 4.6 或 4.7 ，以及然後看看結果 一起努力 它有多快！
+最後一步，讓我們在 OA 或 LINE Chatbot 展示 Rich Menu，定義的內容為[文章](https://medium.com/linedevth/6cf12b394f38)中的 4.3、4.6 以及 4.7 項目，接著我們來看看結果，看它有多快！
 
 ![](https://nijialin.com/images/2021/switch-richmenu/7.gif)
 
-# 5. Alias 相關的其他 API
+# 5. 其他與 Alias 相關的 API
 
-## 5.1 更新豐富菜單別名
+## 5.1  Update Rich Menu Alias
+
 
 定義 Rich Menu Alias 的便利之一是我們可以不用回到步驟 1-3 來更新目標 Rich Menu ID，但是這種方法不是實時的，會有一個緩存期。所以會有效的。
 
@@ -140,7 +141,8 @@ Body:
 
 如果成功，您將獲得 200 狀態並{}返回。
 
-## 5.2 獲取豐富菜單別名列表
+## 5.2 Get List of Rich Menu Alias
+
 
 ```
 Headers:
@@ -186,7 +188,7 @@ Param:
 }
 ```
 
-## 5.4 刪除豐富菜單別名
+## 5.4 Delete Rich Menu Alias
 
 由於 1 個 Chatbot 最多可以有 1000 個 Rich Menu Alias，所以以防萬一它有限制並且想要創建更多。您需要先刪除不使用的任何別名。
 
