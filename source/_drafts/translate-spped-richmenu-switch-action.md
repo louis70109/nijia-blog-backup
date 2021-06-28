@@ -125,7 +125,7 @@ Body:
 ## 5.1  Update Rich Menu Alias
 
 
-定義 Rich Menu Alias 的便利之一是我們可以不用回到步驟 1-3 來更新目標 Rich Menu ID，但是這種方法不是實時的，會有一個緩存期。所以會有效的。
+定義 Rich Menu Alias 的其中一個便利之處是我們可以不用回到步驟 1-3 來更新目標 Rich Menu ID，但是這種方法不是實時的，會有一個緩存期。所以會有效的。
 
 ```
 Headers:
