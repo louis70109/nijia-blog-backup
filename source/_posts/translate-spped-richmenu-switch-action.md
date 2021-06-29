@@ -1,8 +1,12 @@
 ---
 title: 透過 Rich Menu Switch Action 快速地切換 LINE 的個人化的 Rich Menu
+tags:
+  - LINE
+  - Richmenu
 categories: 翻譯
-tags: ['LINE', 'Richmenu']
+date: 2021-06-29 10:14:14
 ---
+
 
 <style>
   section.compact {
@@ -30,7 +34,7 @@ tags: ['LINE', 'Richmenu']
 
 1. 使用者按下 Rich Menu 後透過訊息或 Postback 從聊天室向 LINE Server 發送操作請求。
 2. LINE Server 會將 Webhook 事件轉發到我們的 Bot 應用程式中。
-3. Boy 應用程式處理來自 Webhook 事件的Rich Menu 切換訊號，並將切換請求發送回 LINE Server。
+3. Boy 應用程式處理來自 Webhook 事件的 Rich Menu 切換訊號，並將切換請求發送回 LINE Server。
 4. LINE Server 處理完請求後並更新使用者的 Rich Menu。
 
 > 注意：從切換 Rich Menu 到使用者看到之前，必須有 4 個請求需要處理，當然請求越多，延遲時間也會跟著越高。
@@ -64,7 +68,7 @@ tags: ['LINE', 'Richmenu']
 
 > [使用 LINE 的 Rich Menu 打造一個食譜選單](https://medium.com/linedevth/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87-rich-menu-%E0%B9%83%E0%B8%99-line-messaging-api-%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3-6cf12b394f38)
 
-然後按照上述文章的第 3 項為兩個Rich Menu 建立 JSON 。例如，我將 Rich Menu 命名為 **richmenu-a**（另一幅名為 **richmenu-b** 的圖像），並將更多按鈕（另一幅圖像為 Back 按鈕）的區域定義為可點擊。此時忽略操作設置。
+然後按照上述文章的第 3 項為兩個 Rich Menu 建立 JSON 。例如，我將 Rich Menu 命名為 **richmenu-a**（另一幅名為 **richmenu-b** 的圖像），並將更多按鈕（另一幅圖像為 Back 按鈕）的區域定義為可點擊。此時忽略操作設置。
 
 ![](https://nijialin.com/images/2021/switch-richmenu/5.png)
 
@@ -110,7 +114,7 @@ Body:
   + richMenuAliasId: 此項目是 Rich Menu 的別稱。可以指定為 a-z、A-Z、0-9、_ 和 - ，最多 100 個字元。
 ```
 
-如果成功，您將獲得狀態馬 200 與 `{}`。
+如果成功，您將獲得狀態碼 200 與 `{}`。
 
 ---
 
@@ -122,10 +126,9 @@ Body:
 
 # 5. 其他與 Alias 相關的 API
 
-## 5.1  Update Rich Menu Alias
+## 5.1 Update Rich Menu Alias
 
-
-定義 Rich Menu Alias 的其中一個便利之處是我們可以不用回到步驟 1-3 來更新目標 Rich Menu ID，但是這種方法不是實時的，會有一個緩存期。所以會有效的。
+定義 Rich Menu Alias 的其中一個便利之處是我們不用像之前一樣更新使用者對應的 Rich Menu ID，它是透過 Cache 機制來更新，而不是透過 real-time 來更新使用者的 Rich Menu。
 
 ```
 Headers:
@@ -134,15 +137,14 @@ Headers:
 Endpoint: https://api.line.me/v2/bot/richmenu/alias/{richMenuAliasId}
 Method: POST
 Param:
-  + richMenuAliasId: ชื่อของ Rich Menu (สูงสุด 100 ตัวอักษร)
+  + richMenuAliasId: Rich Menu 名稱(最多 100 字元)
 Body:
-  + richMenuId: ID ของ Rich Menu ที่อยู่ใน channel เดียวกัน
+  + richMenuId: 同一個 Channel 中的其他 Rich Menu ID
 ```
 
-如果成功，您將獲得 200 狀態並{}返回。
+如果成功，您將獲得狀態碼 200 與 `{}`。
 
 ## 5.2 Get List of Rich Menu Alias
-
 
 ```
 Headers:
@@ -151,7 +153,7 @@ Endpoint: https://api.line.me/v2/bot/richmenu/alias/list
 Method: GET
 ```
 
-如果成功，將返回狀態 200，並返回這樣結構的 JSON。
+如果成功，您將獲得狀態碼 200，並回傳以下結構的 JSON：
 
 ```json
 {
@@ -176,7 +178,7 @@ Headers:
 Endpoint: https://api.line.me/v2/bot/richmenu/alias/{richMenuAliasId}
 Method: GET
 Param:
-  + richMenuAliasId: ชื่อของ Rich Menu (สูงสุด 100 ตัวอักษร)
+  + richMenuAliasId: Rich Menu 名稱(最多 100 字元)
 ```
 
 如果成功，將返回狀態 200，並返回這樣結構的 JSON。
@@ -198,17 +200,16 @@ Headers:
 Endpoint: https://api.line.me/v2/bot/richmenu/alias/{richMenuAliasId}
 Method: DELETE
 Param:
-  + richMenuAliasId: ชื่อของ Rich Menu (สูงสุด 100 ตัวอักษร)
+  + richMenuAliasId: Rich Menu 名稱(最多 100 字元)
 ```
 
-如果成功，您將獲得 200 狀態並`{}`返回。
+如果成功，您將獲得狀態碼 200 與 `{}`。
 
 ---
 
 # 結論
 
-LINE 發布的 Richmenu Switch Action 從使用者的角度幫助了 Rich Menu 的實時切換，同時也減少了開發者的工作量。告訴我是誰在這裡讀的。不用不知道說啥哈哈哈哈
-最後，如果這篇文章對您有用，請按 Clap、按 Share 並按 Follow 發布：LINE Developers Thailand 以免錯過我們的新文章。今天，我不得不說再見。下一篇文章再見。
+LINE 發布的 `Richmenu Switch Action` 從使用者的角度幫助了大家做最即時的 Rich Menu 切換，同時也減少了開發者的工作量。更多更有趣的應用，歡迎大家在社群分享給其他開發者朋友知道吧！下一篇文章再見囉！
 
 # 活動小結
 
