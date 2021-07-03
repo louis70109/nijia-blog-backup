@@ -18,7 +18,7 @@ tags:
 
 # 前言
 
-大家好我是技術推廣工程師 Nijia Lin，本次很開心可以與陽明交通大學 - 國際事務處 一同合辦 「NYCU Glocal Digital Service & Innovation Competition」，本次的活動內容為三天的黑客松，期間包括了演講、工作坊、競賽 三個環節，讓同學們可以在這三天的時間內與來自不同國家的同學一同發揮創意打造產品。
+大家好我是技術推廣工程師 Nijia Lin，本次將分享我們(Developer Relations)與陽明交通大學 - 國際事務處 一同合辦 「NYCU Glocal Digital Service & Innovation Competition」活動中的相關內容，此次活動內容為三天的黑客松，期間包括了演講、工作坊、競賽 三個環節，讓同學們可以在這三天的時間內與來自不同國家的同學一同發揮創意打造產品，想了解這三天究竟發生了什麼事情嗎？讓我們一同往下看吧！
 
 活動網頁: https://event.oia.nycu.edu.tw
 活動日期: 7/1(四)-7/3(六)
@@ -36,7 +36,6 @@ tags:
 ## Introducing LINE ecosystem
 
 ![](https://nijialin.com/images/2021/nycu-hackathon/4.jpg)
-
 
 第一天下午 LINE 的時段開場由資深技術推廣工程師 - Evan Lin 為大家介紹 LINE 的 Ecosystem，逐步讓各位了解每個服務以及 Chatbot 能帶來更多的應用與契機。
 
@@ -66,18 +65,15 @@ tags:
 
 ![](https://nijialin.com/images/2021/nycu-hackathon/2021_0.7.1_210703.jpg)
 
-
 <script async class="speakerdeck-embed" data-slide="5" data-id="7ae54be5df744f079c10e5c7348dadd5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 接著輪到我為各位更詳細介紹 LINE Bot API 與提供範例給大家參考。首先就先帶大家了解 LINE Bot 的運作流程(在 LINE 上面打字 -> LINE 轉發至你的服務中)，並說明 LINE Bot 主要的兩個功能 Repl 與 Push Event 個別的使用情境，讓同學們在開發時可以依照自己的創意點子來使用(如下圖所示)。
 
 <script async class="speakerdeck-embed" data-slide="12" data-id="7ae54be5df744f079c10e5c7348dadd5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-
 <script async class="speakerdeck-embed" data-slide="13" data-id="7ae54be5df744f079c10e5c7348dadd5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 接著此部分則詳述每則訊息可涵蓋的訊息格式為哪些，不論是純文字、貼圖、圖片、影片、聲音、位置、以及客製化訊息內容(Flex Message)皆可使用，更詳細的說明大家請參考[官方文件](https://developers.line.biz/en/docs/messaging-api/sending-messages/#methods-of-sending-message)。
-
 
 下一個環節則是帶大家手把手從程式碼中一步一步頗析在演講中的功能究竟如何實現，透過 [MIT_flask-line-bot-demo](https://github.com/louis70109/MIT_flask-line-bot-demo) 可以讓各位實際演練從最基本的 Echo bot(所見即所得)、各式[回應訊息](https://github.com/louis70109/MIT_flask-line-bot-demo/blob/master/reply_message/reply_event_bot.py)的練習、到 Rich Menu 的建立，全部都在 [MIT_flask-line-bot-demo](https://github.com/louis70109/MIT_flask-line-bot-demo) 這個專案中，大家可以 Fork 去試玩看看。
 
@@ -89,8 +85,6 @@ tags:
   - [建立步驟程式碼](https://github.com/louis70109/MIT_flask-line-bot-demo/tree/master/richmenu)
 
 <script async class="speakerdeck-embed" data-slide="31" data-id="7ae54be5df744f079c10e5c7348dadd5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-
 
 ## Advanced UX patterns with LINE Bot APIs
 
@@ -111,7 +105,6 @@ tags:
 ![](https://nijialin.com/images/2021/nycu-hackathon/cd3f91f975efca3489160ca15c1c72a7b_29947608_210703_1.jpg)
 
 下午時段由 均民 與 Wolke 與各位同學在線上解答，下午的部分除了同學們把先前討論的問題提出外，再請教實作問題的同時 均民 也大方分享了他在開發上有遇到的狀況，提醒同學們在實作時需要注意哪些環節，讓整個發想的流程可以更順利地被完成！
-
 
 ![](https://nijialin.com/images/2021/nycu-hackathon/cd3f91f975efca3489160ca15c1c72a7b_29947608_210703.jpg)
 
