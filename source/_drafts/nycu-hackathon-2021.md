@@ -35,7 +35,7 @@ tags:
 
 ## Introducing LINE ecosystem
 
-![](https://nijialin.com/images/2021/nycu-hackathon/2021.7.1_210703.jpg)
+![](https://nijialin.com/images/2021/nycu-hackathon/4.jpg)
 
 
 第一天下午 LINE 的時段開場由資深技術推廣工程師 - Evan Lin 為大家介紹 LINE 的 Ecosystem，逐步讓各位了解每個服務以及 Chatbot 能帶來更多的應用與契機。
