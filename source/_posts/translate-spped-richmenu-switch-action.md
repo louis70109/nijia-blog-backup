@@ -1,5 +1,5 @@
 ---
-title: 透過 Rich Menu Switch Action 快速地切換 LINE 的個人化的 Rich Menu
+title: 【翻譯】透過 Rich Menu Switch Action 快速地切換 LINE 的個人化的 Rich Menu
 tags:
   - LINE
   - Richmenu
@@ -19,6 +19,8 @@ date: 2021-06-29 10:14:14
 </style>
 
 ![](https://nijialin.com/images/2021/switch-richmenu/1.jpeg)
+
+> 翻譯原文網址：https://medium.com/linedevth/richmenu-swich-action-ba3aa0a9f80a
 
 相信有在使用 LINE 官方帳號(Official Account)的朋友，基本上都會知道 Rich Menu 可以有效幫助並引導使用者來使用服務中的主要內容。其中要使用到 Rich Menu 非常容易，只需使用工具([Official Account Manager](https://manager.line.biz/))或撰寫程式即可完成。
 
