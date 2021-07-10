@@ -80,7 +80,7 @@ date: 2021-06-29 10:14:14
 
 # 2. 建立 Rich Menu
 
-在這一步中，先取到上一步的 JSON，並修改城以下新的 Action：
+在這一步中，先取到上一步的 JSON，並修改成以下新的 Action：
 
 ```
 // Action 的 Rich Menu 樣板 A
