@@ -18,7 +18,7 @@ date: 2021-07-14 11:56:10
   }
 </style>
 
-![](https://nijialin.com/images/2021/fresh1)
+![](https://nijialin.com/images/2021/fresh1.png)
 
 # 前言
 
