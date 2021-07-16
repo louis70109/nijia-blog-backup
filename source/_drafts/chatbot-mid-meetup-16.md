@@ -14,18 +14,26 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://nijialin.com/images/2021/chatbot-mid-16/1.png)
 
 # 前言
+
 大家好，我是 LINE Taiwan DevRel 團隊的 NiJia Lin。
 
 社團頁面：https://www.facebook.com/groups/chatbot.tw
 活動報名頁面：https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-016
-活動簡報：https://speakerdeck.com/line_developers_tw/line-api-platform-update-202011
+活動簡報：https://speakerdeck.com/line_developers_tw/line-bot-ru-men-jie-shao-yu-platorm-api-geng-xin-zi-xun-202107
+整場影片：https://www.youtube.com/watch?v=rZJ0yBSLaMc
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rZJ0yBSLaMc?start=386" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- more -->
 
 # LINE Bot 入門介紹與 Platform API 更新資訊
+
+![](https://nijialin.com/images/2021/chatbot-mid-16/2.png)
+
+---
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="d06175338bb24488b51bbd7bfcd0e32a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -39,9 +47,14 @@ tags:
 
 Provider 是各位需要注意的部分，它代表的是個人、公司或是一個組織，這部分大家在建立是要非常注意這個部分([Policy 參考](https://line.me/en/terms/policy/))，各位所建立的 Channel(可能是一隻 Bot、LINE Login...)是不能切換 Provider，因為在建立 Channel 時是當中有說明 Channel 是與當前 Provider 綁定相關資訊保護大家當中 Channel 的資訊，因此大家要建立時要再三注意當前 Provider 是誰喔！
 
+接著提到了初階的 LINE Bot 事件介紹，相關內容大家可以參考下方兩篇文章：
+
+- [開發 LINE 聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)
+- Flex Message 相關介紹 - [藉由 Flex Message Simulator 實現並發送測試用 Flex Message](https://engineering.linecorp.com/zh-hant/blog/how-to-send-flex-message-on-simulator/)
+
 <script async class="speakerdeck-embed" data-slide="13" data-id="d06175338bb24488b51bbd7bfcd0e32a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這部分的內容介紹了引用內容 [NYCU Glocal Digital Service & Innovation Competition 黑客松活動紀錄](https://engineering.linecorp.com/zh-hant/blog/nycu-glocal-digital-innovation-competition-2021/#line-bot-apis-introduction-and-demonstration)
+這部分的內容介紹了引用內容 [NYCU Glocal Digital Service & Innovation Competition 黑客松活動紀錄](https://engineering.linecorp.com/zh-hant/blog/nycu-glocal-digital-innovation-competition-2021/#line-bot-apis-introduction-and-demonstration)中的部分：
 
 - [取得使用者資訊](https://developers.line.biz/en/reference/messaging-api/#get-profile)
 - [取得貼圖關鍵字範例](https://github.com/louis70109/MIT_flask-line-bot-demo/blob/master/reply_message/sticker_keywords.py)
@@ -50,7 +63,23 @@ Provider 是各位需要注意的部分，它代表的是個人、公司或是�
 - 強大而樸實無華，讓你可以建立選單給使用者滿滿的視覺饗宴 – [Rich Menu](https://developers.line.biz/en/docs/messaging-api/using-rich-menus/)
   - [建立步驟程式碼](https://github.com/louis70109/MIT_flask-line-bot-demo/tree/master/richmenu)
 
+<script async class="speakerdeck-embed" data-slide="36" data-id="d06175338bb24488b51bbd7bfcd0e32a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+Rich Menu 作為 LINE Bot 中很重要的一個圖文選單，能夠讓使用者可以快速點選服務功能按鈕，而當一隻 LINE Bot 功能越來越多時， Rich Menu 就需要切換。但過去在切換時需要透過較長的步驟才有辦法切換，在 [2021/06/21](https://developers.line.biz/en/news/2021/06/21/switch-between-multiple-rich-menus/) 的更新中透過 alias 的方式來加速切換 Rich Menu 的速度，詳細內容請大家泰國同事所分享的內容 - [透過 Rich Menu Switch Action 快速地切換 LINE 的個人化的 Rich Menu](https://engineering.linecorp.com/zh-hant/blog/rich-menu-alias-switch-action/)，當中接一步一步帶大家實作喔！
+
+![](https://engineering.linecorp.com/wp-content/uploads/2021/07/7.gif)
+
+<script async class="speakerdeck-embed" data-slide="40" data-id="d06175338bb24488b51bbd7bfcd0e32a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+LIFF 近期釋出了 v2.11 版本，在之前的版本中二次跳轉後(`liff.init()`後)也會帶著 access_token 以及相關參數在路徑上，而在這次新版本訊息中 `liff.init()` 執行之後會將相關參數放入 local storage，避免開發者在用第三方追蹤工具追蹤時代上許多不必要的參數且不會洩漏使用者的 access_token 之類的參數導致資安問題產生。
+
+<script async class="speakerdeck-embed" data-slide="41" data-id="d06175338bb24488b51bbd7bfcd0e32a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+另一則更新則是小修正，修正了路徑中 `/` 在跳轉後會被 url encode 的問題，大家若有遇到類似的問題就麻煩將版本更新上來囉！
+
 # 結論
+
+許久沒有透過社群與大家分享相關平台更新資訊及相關內容，帶了一些在 [NYCU Glocal Digital Service & Innovation Competition 黑客松活動紀錄](https://engineering.linecorp.com/zh-hant/blog/nycu-glocal-digital-innovation-competition-2021/#line-bot-apis-introduction-and-demonstration) 中分享的內容，讓剛開始接觸 LINE Bot 的開發者可以更快速加入開發行列中，並帶到近期的平台的相關更新內容，後半段則由 LINE API Expert 均民與大家分享的內容
 
 # 活動小結
 
