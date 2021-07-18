@@ -1,8 +1,12 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 'LINE 開發社群計畫: 中部人的聊天機器人小小聚第 16 場心得分享'
 tags:
+  - LINE
+  - Chatbot
+categories: 研討會
+date: 2021-07-18 23:34:33
 ---
+
 
 <style>
   section.compact {
@@ -18,12 +22,13 @@ tags:
 
 # 前言
 
-大家好，我是 LINE Taiwan DevRel 團隊的 NiJia Lin。
+大家好，我是 LINE Taiwan DevRel 團隊的 NiJia Lin，感覺已經許久沒有在社群上與大家分享相關的內容，本次受邀請參加「[2021/07/14 中部人的聊天機器人小小聚 第 16 場](https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-016)」，能夠透過線上的方式帶各位會眾分享從最基本的 LINE Bot 操作開始認識，到一些大家常常會需要的 API 範例，再接著 Platform API 的更新內容，對於當天內容想回味的讀者們，趕快往下繼續看吧！
 
-社團頁面：https://www.facebook.com/groups/chatbot.tw
-活動報名頁面：https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-016
-活動簡報：https://speakerdeck.com/line_developers_tw/line-bot-ru-men-jie-shao-yu-platorm-api-geng-xin-zi-xun-202107
-整場影片：https://www.youtube.com/watch?v=rZJ0yBSLaMc
+- 社團頁面：https://www.facebook.com/groups/chatbot.tw
+- 活動報名頁面：https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-016
+- 共同筆記：https://hackmd.io/@chatbot-tw/chatbots-meetup-in-central-taiwan-016
+- 活動簡報：https://speakerdeck.com/line_developers_tw/line-bot-ru-men-jie-shao-yu-platorm-api-geng-xin-zi-xun-202107
+- 整場影片：https://www.youtube.com/watch?v=rZJ0yBSLaMc
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rZJ0yBSLaMc?start=386" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -79,8 +84,13 @@ LIFF 近期釋出了 v2.11 版本，在之前的版本中二次跳轉後(`liff.i
 
 # 結論
 
-許久沒有透過社群與大家分享相關平台更新資訊及相關內容，帶了一些在 [NYCU Glocal Digital Service & Innovation Competition 黑客松活動紀錄](https://engineering.linecorp.com/zh-hant/blog/nycu-glocal-digital-innovation-competition-2021/#line-bot-apis-introduction-and-demonstration) 中分享的內容，讓剛開始接觸 LINE Bot 的開發者可以更快速加入開發行列中，並帶到近期的平台的相關更新內容，後半段則由 LINE API Expert 均民與大家分享的內容
+許久沒有透過社群與大家分享相關平台更新資訊及相關內容，帶了一些在 [NYCU Glocal Digital Service & Innovation Competition 黑客松活動紀錄](https://engineering.linecorp.com/zh-hant/blog/nycu-glocal-digital-innovation-competition-2021/#line-bot-apis-introduction-and-demonstration) 中分享的內容，讓剛開始接觸 LINE Bot 的開發者可以更快速加入開發行列中，並帶到近期的平台的相關更新內容，後半段則由 LINE API Expert 們的分享
 
+-  均民 - [Flex 開發人員工具與 richmenuswitch 新功能範例](https://hackmd.io/@taichunmin/chatbot-tw-202107)
+- 佳新 - [Flex訊息真的很有彈性，文字也可以有紅字](https://www.slideshare.net/jarsing/flex-message-with-red-words-20210714)
+- David Tung - [使用bash/cmd發送LINE訊息](https://hackmd.io/@chatbot-tw/chatbots-meetup-in-central-taiwan-016#%E9%96%83%E9%9B%BB%E7%A7%801%EF%BC%9A%E4%BD%BF%E7%94%A8bashcmd%E7%99%BC%E9%80%81LINE%E8%A8%8A%E6%81%AF---David-Tung)
+
+最後歡迎大家踴躍分享你所開發的 LINE API 範例至[社群上](https://www.facebook.com/groups/linebot)吧！那我們就下次再見囉！
 # 活動小結
 
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
