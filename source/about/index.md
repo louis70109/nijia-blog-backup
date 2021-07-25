@@ -57,6 +57,9 @@ date: 2019-10-16 11:28:36
 
 # Workshop
 
+- [[EN] NYCU Glocal Design Competition @ online](https://event.oia.nycu.edu.tw/page/competition)
+  - [LINE Bot APIs introduction and demonstration](https://speakerdeck.com/line_developers_tw2/line-bot-apis-introduction-and-demonstration)
+  - [Agenda](https://event.oia.nycu.edu.tw/page/competition#agenda)
 - [中部人的 Chatbots Meetup 聊天機器人小小聚 #8 @ 台中夢森林](https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-008)
   - [投影片](https://speakerdeck.com/line_developers_tw/20200822-subscribe-open-data-with-line)
   - [GitHub 範例](https://github.com/louis70109/LINE-subscribe-open-data-bot)
@@ -78,8 +81,10 @@ date: 2019-10-16 11:28:36
 
 # Talks
 
+- [Chatbot Taiwan 中部人 meetup 16 - LINE Bot 入門介紹與 Platorm API 更新資訊 202107](https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-016)
+  - [投影片](https://speakerdeck.com/line_developers_tw/line-bot-ru-men-jie-shao-yu-platorm-api-geng-xin-zi-xun-202107)
 - [LINE Recruitment Day 2021 - TECH FRESH 技術新星人才計畫介紹](https://events.chatbot.tw/events/28)
-  - [投影片]()
+  - [投影片](https://speakerdeck.com/line_developers_tw2/line-api-platform-update-202104)
 - [Chatbot Taiwan meetup 29 - LINE Platform API Update](https://events.chatbot.tw/events/28)
   - [投影片]()
 - [Chatbot Taiwan meetup 28 - LINE Platform API Update](https://events.chatbot.tw/events/27)
@@ -109,6 +114,7 @@ date: 2019-10-16 11:28:36
 
 # Activities
 
+- [LINE Style](https://careers.linecorp.com/culture/17)
 ### Organizer
 
 - [2019 / 2020 COSCUP [chatbot Taiwan]](https://coscup.org/2019/)
