@@ -1,5 +1,5 @@
 ---
-title: 【標題】題目
+title: COSCUP Throwback - LINE 泰國開發者關係部門分享
 categories: 學習紀錄
 tags:
 ---
@@ -14,13 +14,21 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+
+![](https://nijialin.com/images/2021/coscup/1.jpeg)
 
 # 前言
-
+開發者關係與技術推廣(Developer Relations)部門除了台灣之外，在韓國、日本、台灣、泰國、印尼皆都有此部門，在本次 COSCUP 活動中邀請到泰國的 - Tee、Tan、Bee 來為我們分享在泰國所實踐的內容
 <!-- more -->
 
 # 介紹
+
+泰國與台灣 LAE 交流中
+![](https://nijialin.com/images/2021/coscup/2.jpeg)
+
+
+卡米哥 Live demo
+
 
 # 結論
 
