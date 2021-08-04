@@ -18,37 +18,41 @@ tags:
 ![](https://nijialin.com/images/2021/coscup/th/0-1.png)
 
 # 前言
-開發者關係與技術推廣(Developer Relations)部門除了台灣之外，在韓國、日本、台灣、泰國、印尼皆都有此部門，在本次 COSCUP 活動中邀請到泰國的 - Tee、Tan、Bee 來為我們分享在泰國所實踐的內容
-
-- 當天的錄影檔
+開發者關係與技術推廣(Developer Relations)部門除了台灣之外，在韓國、日本、台灣、泰國、印尼皆都有此部門，在本次 COSCUP 活動中邀請到泰國的 - Tee、Tan、Bee 來為我們分享在泰國所實踐的內容，對於當天的內容有興趣的朋友，除了繼續觀看本文外也可收看當天的錄影檔：
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=820" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- more -->
 
-- LINE Developers Thailand
-  - [Blog](https://medium.com/linedevth)
-  - [GitHub](https://github.com/linedevth)
+以下就由我帶各位回味當天的內容吧！
 
-# 介紹
+
+
+# 與技術社群共同成長
 
 ![](https://nijialin.com/images/2021/coscup/th/0-2.png)
 
-技術若沒有社群是不行的
+在技術領域中，我們很長需要透過交流的方式才有辦法獲取知識，可能會透過搜尋、論壇發問、Podcast、課程等等，但無論你是透過何種方式獲取知識，都是需要透過社群的凝聚才有辦法讓大家持續討論新知並一起進步，透過社群管道也是讓大家在學習的過程中不孤單，都會有人陪伴著一起學習，因此我們也很歡迎大家一起加入我們的社群平台：
 
+- LINE Developers Thailand
+  - [Blog](https://medium.com/linedevth)
+  - [GitHub](https://github.com/linedevth)
+- [LINE 台灣開發者討論區](https://www.facebook.com/groups/linebot/)
+
+# 多元化活動
 
 ![](https://nijialin.com/images/2021/coscup/th/0-3.png)
 
-- workshop
-- meetup
-- LINE Hack
-- dev conf
+在成立社群(團)之後，接下來就會需要讓大家更了解 LINE 平台上要如何透過 LINE API 來實現功能，因此就會有以下的活動：
+
+- workshop(工作坊)：透過一個主題討論並實踐它，讓大家的想法可以在工作坊中被實現出來，也同步為自己開啟一個服務應用的小專案。
+- meetup：線上/下聚會往往可以讓我們藉由一個主題延伸發想出許多精彩的創意內容，在活動中討論每個場景的應用，往往可以激起更多的發想。
+- LINE Hack：把自己所學到的知識透過競賽方式呈現，大家可以參考 LINE FRESH 2021
+- dev conf：技術研討會可以追蹤最新釋出的知識，往往在演討會中才能了解最新趨勢
   - 最酷的就是有攤位
 
 ![](https://nijialin.com/images/2021/coscup/th/0-4.png)
 - Online course
-
-![](https://nijialin.com/images/2021/coscup/th/0-5.png)
 
 - 因為 COVID-19 的關係
   - Podcast
@@ -68,12 +72,13 @@ tags:
 
 ![](https://nijialin.com/images/2021/coscup/th/0-7.png)
  - Flower us
-泰國與台灣 LAE 交流中
+
+
 ![](https://nijialin.com/images/2021/coscup/th/2.jpeg)
+泰國與台灣 LAE 交流中
 
-
+![](https://nijialin.com/images/2021/coscup/th/3.jpeg)
 卡米哥 Live demo
-
 
 # 結論
 
