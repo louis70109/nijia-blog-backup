@@ -15,16 +15,55 @@ tags:
 </style>
 
 
-![](https://nijialin.com/images/2021/coscup/1.jpeg)
+![](https://nijialin.com/images/2021/coscup/th/0-1.png)
 
 # 前言
 開發者關係與技術推廣(Developer Relations)部門除了台灣之外，在韓國、日本、台灣、泰國、印尼皆都有此部門，在本次 COSCUP 活動中邀請到泰國的 - Tee、Tan、Bee 來為我們分享在泰國所實踐的內容
+
+- 當天的錄影檔
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=820" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <!-- more -->
+
+- LINE Developers Thailand
+  - [Blog](https://medium.com/linedevth)
+  - [GitHub](https://github.com/linedevth)
 
 # 介紹
 
+![](https://nijialin.com/images/2021/coscup/th/0-2.png)
+
+技術若沒有社群是不行的
+
+
+![](https://nijialin.com/images/2021/coscup/th/0-3.png)
+
+- workshop
+- meetup
+- LINE Hack
+- dev conf
+  - 最酷的就是有攤位
+
+![](https://nijialin.com/images/2021/coscup/th/0-4.png)
+- Online course
+
+![](https://nijialin.com/images/2021/coscup/th/0-5.png)
+
+- 因為 COVID-19 的關係
+  - Podcast
+
+
+![](https://nijialin.com/images/2021/coscup/th/0-6.png)
+- Code Lab
+  - https://codelab.line.me/
+
+![](https://nijialin.com/images/2021/coscup/th/0-7.png)
+
+- Dev Conf 2020
+
 泰國與台灣 LAE 交流中
-![](https://nijialin.com/images/2021/coscup/2.jpeg)
+![](https://nijialin.com/images/2021/coscup/th/2.jpeg)
 
 
 卡米哥 Live demo
