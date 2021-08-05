@@ -43,13 +43,12 @@ tags:
 
 ![](https://nijialin.com/images/2021/coscup/th/0-3.png)
 
-在成立社群(團)之後，接下來就會需要讓大家更了解 LINE 平台上要如何透過 LINE API 來實現功能，因此就會有以下的活動：
+成立社群(團)之後，接下來就會需要讓大家更了解 LINE 平台上要如何透過 LINE API 來實現功能，在泰國當地也舉辦了許多活動讓來自不同專長的開發者能夠了解到開發 LINE API 的成就感，因此就會有以下的活動：
 
 - workshop(工作坊)：透過一個主題討論並實踐它，讓大家的想法可以在工作坊中被實現出來，也同步為自己開啟一個服務應用的小專案。
-- meetup：線上/下聚會往往可以讓我們藉由一個主題延伸發想出許多精彩的創意內容，在活動中討論每個場景的應用，往往可以激起更多的發想。
-- LINE Hack：把自己所學到的知識透過競賽方式呈現，大家可以參考 LINE FRESH 2021
-- dev conf：技術研討會可以追蹤最新釋出的知識，往往在演討會中才能了解最新趨勢
-  - 最酷的就是有攤位
+- Meetup：線上/下聚會往往可以讓我們藉由一個主題延伸發想出許多精彩的創意內容，在活動中討論每個場景的應用，往往可以激起更多的發想，。
+- LINE Hack：把自己所學到的知識透過競賽方式呈現，並將適地化以及更多充滿創意的點子結合進去，讓自己的創意被看見是一件非常棒的事情！如果你是台灣朋友可以參考 [LINE FRESH 2021](https://tw-fresh.line.me/?utm_source=Facebook-Ads&utm_medium=FRESHFB-Ads&utm_campaign=FRESH2021) 的相關活動簡章。
+- Developer conference(台灣為 TECHPULSE)：技術研討會上總可以追蹤大公司所釋出的最新知識與資訊，在演討會中最棒的除了聽議程之外，就是與攤位上的人互動，藉此了解更多最新的趨勢，同時也因為有大家熱情的參與，我們才能夠一次接著一次的舉辦大型演討會給大家！
 
 ![](https://nijialin.com/images/2021/coscup/th/0-4.png)
 - Online course
@@ -70,7 +69,7 @@ tags:
 - use case
 
 
-![](https://nijialin.com/images/2021/coscup/th/0-7.png)
+![](https://nijialin.com/images/2021/coscup/th/0-9.png)
  - Flower us
 
 
