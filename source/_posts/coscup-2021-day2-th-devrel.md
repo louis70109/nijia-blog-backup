@@ -1,8 +1,12 @@
 ---
-title: COSCUP Throwback - LINE 泰國開發者關係部門分享
-categories: 學習紀錄
+title: 【COSCUP Throwback】LINE Thailand Developer Relation 議程分享
 tags:
+  - COSCUP
+  - LINE
+categories: 研討會
+date: 2021-08-06 12:18:28
 ---
+
 
 <style>
   section.compact {
@@ -18,7 +22,7 @@ tags:
 
 # 前言
 
-開發者關係與技術推廣(Developer Relations)部門除了台灣之外，在韓國、日本、台灣、泰國、印尼皆都有此部門，在本次 COSCUP 活動中邀請到泰國的 - Tee、Tan、Bee 來為我們分享在泰國裡所實踐的內容與經驗分享，對於當天的內容有興趣的朋友，除了繼續觀看本文外也可收看當天的錄影檔：
+開發者關係與技術推廣(Developer Relations)部門除了台灣之外，在韓國、日本、台灣、泰國、印尼皆都有此部門，除了技術品牌經營外，也會安排許多對外技術活動，本次 COSCUP 活動中邀請到泰國的 - Tee、Tan、Bee 來為我們分享在泰國裡所實踐的內容與經驗分享，對於當天的內容有興趣的朋友，除了繼續觀看本文外也可收看當天的錄影檔(英文版本)：
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=820" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -46,6 +50,9 @@ tags:
 - workshop(工作坊)：透過一個主題討論並實踐它，讓大家的想法可以在工作坊中被實現出來，也同步為自己開啟一個服務應用的小專案。
 - Meetup：線上/下聚會往往可以讓我們藉由一個主題延伸發想出許多精彩的創意內容，在活動中討論每個場景的應用，往往可以激起更多的發想，。
 - LINE Hack：把自己所學到的知識透過競賽方式呈現，並將適地化以及更多充滿創意的點子結合進去，讓自己的創意被看見是一件非常棒的事情！如果你是台灣朋友可以參考 [LINE FRESH 2021](https://tw-fresh.line.me/?utm_source=Facebook-Ads&utm_medium=FRESHFB-Ads&utm_campaign=FRESH2021) 的相關活動簡章。
+
+![](https://nijialin.com/images/2021/coscup/th/0-7.png)
+
 - Developer conference(台灣為 TECHPULSE)：技術研討會上總可以追蹤大公司所釋出的最新知識與資訊，在演討會中最棒的除了聽議程之外，就是與攤位上的人互動，藉此了解更多最新的趨勢，同時也因為有大家熱情的參與，我們才能夠一次接著一次的舉辦大型演討會給大家！
 
 ![](https://nijialin.com/images/2021/coscup/th/0-4.png)
@@ -53,17 +60,13 @@ tags:
 
 因應疫情的關係，我們都需要尋求不同的方式提供更好的內容給線上的每位開發者，泰國同事透過**線上課程**以及**Code Lab**([https://codelab.line.me](https://codelab.line.me)) 提供內容給大家，讓剛加入的開發者能以最低的學習曲線去學習 LINE API 的相關使用方法，內容上也都簡潔明瞭，大家不妨進入網站並透過翻譯來試玩看看吧！
 
-![](https://nijialin.com/images/2021/coscup/th/0-7.png)
-
-泰國也都有舉辦非常棒的 dev Conf，去年因為疫情的緣故只能透過線上的方式舉辦，
-
 ![](https://nijialin.com/images/2021/coscup/th/0-8.JPG)
 
 除了在這邊分享許多 LINE Bot 的案例分享，並且介紹泰國 API Expert 們的貢獻與介紹，讓現場的各位可以與他們一起聊聊
 
 ![](https://nijialin.com/images/2021/coscup/th/0-9.png)
 
-如果你對於泰國的相關資訊有興趣可以 Follow 上述的相關資訊
+泰國同事的內容也非常多元，現在許多平台也都有內建翻譯軟體，如果你對於泰國的相關資訊有興趣可以追蹤上述的相關資訊。
 
 # 交流時間
 
