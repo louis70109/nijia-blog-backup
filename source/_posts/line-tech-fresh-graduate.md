@@ -1,8 +1,12 @@
 ---
 title: TECH FRESH 實習的一年間，除了開發還有什麼內部活動呢？
+tags:
+  - LINE
+  - TECH FRESH
 categories: LINE
-tags: ['LINE', 'TECH FRESH']
+date: 2021-06-30 10:16:16
 ---
+
 
 <style>
   section.compact {

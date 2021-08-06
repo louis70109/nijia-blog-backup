@@ -51,15 +51,10 @@ tags:
 - Developer conference(台灣為 TECHPULSE)：技術研討會上總可以追蹤大公司所釋出的最新知識與資訊，在演討會中最棒的除了聽議程之外，就是與攤位上的人互動，藉此了解更多最新的趨勢，同時也因為有大家熱情的參與，我們才能夠一次接著一次的舉辦大型演討會給大家！
 
 ![](https://nijialin.com/images/2021/coscup/th/0-4.png)
-- Online course
-
-- 因為 COVID-19 的關係
-  - Podcast
-
-
 ![](https://nijialin.com/images/2021/coscup/th/0-6.png)
-- Code Lab
-  - https://codelab.line.me/
+
+因應疫情的關係，我們都需要尋求不同的方式提供更好的內容給線上的每位開發者，泰國同事透過**線上課程**以及**Code Lab**([https://codelab.line.me](https://codelab.line.me)) 提供內容給大家，內容上也都簡潔明瞭，大家不妨進入網站並透過翻譯來試玩看看吧！
+
 
 ![](https://nijialin.com/images/2021/coscup/th/0-7.png)
 
