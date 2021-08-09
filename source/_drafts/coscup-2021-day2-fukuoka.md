@@ -58,6 +58,14 @@ tags:
 
 當中也有許多一直持續在增進的地方，也有支援到近期推出的訂閱功能服務
 
+<script async class="speakerdeck-embed" data-slide="9" data-id="f5d9a47bbef44f418fdfe2ab7d1c9834" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+做到跨國/服務的團隊在整合上就會有許多需要在整合上就會有許多需要挑戰以及更新的內容，相信在這邊大家不管對於國際觀、程式碼的理解應該都可以更上一層樓
+
+<script async class="speakerdeck-embed" data-slide="11" data-id="f5d9a47bbef44f418fdfe2ab7d1c9834" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+挑戰的內容在每個正在成長的團隊中都會遇到，但如何面對問題產生時的做法也是時常需要演練的，資源調度也是需要處理的部分，演練遇到問題時所需要克服的問題(成立專職 SRE)
+
 # 介紹
 
 # 結論
