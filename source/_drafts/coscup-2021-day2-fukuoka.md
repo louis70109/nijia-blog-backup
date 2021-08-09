@@ -20,6 +20,8 @@ tags:
 
 相信在螢幕前觀看此篇文章得你一定對 LINE 貼圖小舖不陌生(畢竟都要買貼圖來對付朋友)，因為背後的技術與流量其實是需要非常龐大的架構才支撐的下，本次 COSCUP 攤位上就邀請到福岡的前端與 CSI 團隊團隊來分享
 
+<!-- more -->
+
 ## 前端團隊分享
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=11268" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -40,11 +42,21 @@ tags:
 有 hybrid app 的方式，有 mobile, iOS, Android, 需要一致性體驗，
 把更多重複性的內容自動化，增加大家開發上的效率
 
-## CSI 團隊
+## CSI 團隊 communication service integration
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=12031" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!-- more -->
+成員非常多元，當然除了本地的日本人之外，也有許多來自各地的人，大家看下圖就知道多多元了吧ＸＤ，基本上也都是用英文在討論事情
+
+<script async class="speakerdeck-embed" data-slide="5" data-id="f5d9a47bbef44f418fdfe2ab7d1c9834" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+各式貼圖系列/樣式/表情貼
+也有跟金融融相關合作，像是 LINE Pay 上的 wallet tab 就是他們開發的
+由 CSI 團隊整合完之後再傳輸給 LINE 的本體去渲染出整體樣式 proxy API
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="f5d9a47bbef44f418fdfe2ab7d1c9834" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當中也有許多一直持續在增進的地方，也有支援到近期推出的訂閱功能服務
 
 # 介紹
 
