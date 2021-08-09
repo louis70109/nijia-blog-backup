@@ -1,5 +1,5 @@
 ---
-title: 【標題】題目
+title: 【標題】福岡團隊分享
 categories: 學習紀錄
 tags:
 ---
@@ -18,11 +18,42 @@ tags:
 
 # 前言
 
+相信在螢幕前觀看此篇文章得你一定對 LINE 貼圖小舖不陌生(畢竟都要買貼圖來對付朋友)，因為背後的技術與流量其實是需要非常龐大的架構才支撐的下，本次 COSCUP 攤位上就邀請到福岡的前端與 CSI 團隊團隊來分享
+
+## 前端團隊分享
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=11268" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![](https://nijialin.com/images/2021/coscup/lfk/2.png)
+
+最近出的訂閱服務，之前在日本上線時非常火紅，而近期也到了台灣以及印尼，歡迎大家可以來使用貼圖用飽飽
+
+- React + Redux
+- Styled Component
+- Webpack
+- Sentry
+- Drone CI
+  ...
+
+當然服務久了之後一定會有舊 code 的問題，有些程式
+注重用戶體驗
+有 hybrid app 的方式，有 mobile, iOS, Android, 需要一致性體驗，
+把更多重複性的內容自動化，增加大家開發上的效率
+
+## CSI 團隊
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=12031" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <!-- more -->
 
 # 介紹
 
 # 結論
+
+履歷健檢與海外工作詢問，大家對於相關詢問度很高，甚至活動都結束了大家都還在詢問，
+照片
+
+職缺連結：https://linefukuoka.co.jp/en/career/
 
 # 活動小結
 
