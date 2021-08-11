@@ -66,23 +66,25 @@ tags:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=12031" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-成員非常多元，當然除了本地的日本人之外，也有許多來自各地的人，大家看下圖就知道多多元了吧ＸＤ，基本上也都是用英文在討論事情
-
 <script async class="speakerdeck-embed" data-slide="5" data-id="f5d9a47bbef44f418fdfe2ab7d1c9834" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-各式貼圖系列/樣式/表情貼
-也有跟金融融相關合作，像是 LINE Pay 上的 wallet tab 就是他們開發的
-由 CSI 團隊整合完之後再傳輸給 LINE 的本體去渲染出整體樣式 proxy API
+成員非常多元，當然除了本地的日本人之外，也有許多來自各地的人，大家看上圖就知道多多元了吧ＸＤ，基本上也都是用英文在討論事情(在議程後的討論也有分享趣事)。
 
 <script async class="speakerdeck-embed" data-slide="8" data-id="f5d9a47bbef44f418fdfe2ab7d1c9834" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-當中也有許多一直持續在增進的地方，也有支援到近期推出的訂閱功能服務
+團隊中也負責到各式**貼圖系列**/**聊天室樣式**/**表情貼**的內容，畢竟大家 LINE 打開後與朋友聊天都會使用到各種貼圖，其背後負責技術的團隊就是他們啦～
+
+其中在此團隊中還會負責到與各地 Family Service 串接的內容，上圖中除了貼圖之外，以台灣用戶來說會看到許多如 LINE 購物、熱點、禮物等等的服務
+其中跟金融相關合作，像是 LINE Pay 上的 wallet tab 就是他們開發的
+由 CSI 團隊整合完之後再傳輸給 LINE 的本體去渲染出整體樣式 proxy API
 
 <script async class="speakerdeck-embed" data-slide="9" data-id="f5d9a47bbef44f418fdfe2ab7d1c9834" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-做到跨國/服務的團隊在整合上就會有許多需要在整合上就會有許多需要挑戰以及更新的內容，相信在這邊大家不管對於國際觀、程式碼的理解應該都可以更上一層樓
+當中也有許多一直持續在增進的地方，也有支援到近期推出的訂閱功能服務
 
 <script async class="speakerdeck-embed" data-slide="11" data-id="f5d9a47bbef44f418fdfe2ab7d1c9834" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+做到跨國/服務的團隊在整合上就會有許多需要在整合上就會有許多需要挑戰以及更新的內容，相信在這邊大家不管對於國際觀、程式碼的理解應該都可以更上一層樓
 
 挑戰的內容在每個正在成長的團隊中都會遇到，但如何面對問題產生時的做法也是時常需要演練的，資源調度也是需要處理的部分，演練遇到問題時所需要克服的問題(成立專職 SRE)
 
