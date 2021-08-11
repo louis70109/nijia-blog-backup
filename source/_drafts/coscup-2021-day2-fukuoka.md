@@ -14,35 +14,55 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://nijialin.com/images/2021/coscup/lfk/1.png)
 
 # 前言
 
 相信在螢幕前觀看此篇文章得你一定對 LINE 貼圖小舖不陌生(畢竟都要買貼圖來對付朋友)，因為背後的技術與流量其實是需要非常龐大的架構才支撐的下，本次 COSCUP 攤位上就邀請到福岡的前端與 CSI 團隊團隊來分享
 
 <!-- more -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=11268" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 前端團隊分享
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=11268" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+大家在購買貼圖時可能會在 LINE APP 中直接進行，也可能透過網頁的方式去購買，當然兩者的入口不一樣，背後所需要處理的技術內容也就不同，當然在前端團隊中會需要做到許多活動頁面
+
+> 過去講者也有在 JSDC 分享 - [從開發 LINE 隨你填貼圖來談](<https://engineering.linecorp.com/zh-hant/blog/line-jsdc-2019/#JSDC2019%E6%B4%BB%E5%8B%95%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB(@zh)-%E5%BE%9E%E9%96%8B%E7%99%BCLINE%E9%9A%A8%E4%BD%A0%E5%A1%AB%E8%B2%BC%E5%9C%96%E4%BE%86%E8%AB%87/Tzu-LinHuang>)
 
 ![](https://nijialin.com/images/2021/coscup/lfk/2.png)
 
-最近出的訂閱服務，之前在日本上線時非常火紅，而近期也到了台灣以及印尼，歡迎大家可以來使用貼圖用飽飽
+<script async class="speakerdeck-embed" data-slide="4" data-id="ed0d168dda894f92831ab078fa6fd106" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在 Web 的貼圖小舖中，需要了解現在用戶正在使用的平台為何，可能是 PC、手機 app 中的瀏覽器、LINE Web Browser，因為用戶當前所在的購買位置不同，許多內容中都需要很仔細的內部討論並更新，讓用戶不管在電腦或是手機上購買貼圖的體驗都會一致。
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="ed0d168dda894f92831ab078fa6fd106" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當然會因為公司活動需求需要建立許多的 Campaign 頁面，與活動需求結合並讓活動中的用戶可以有入口能夠使用，畢竟前端與使用者是第一線接觸的地方，在當中也有人詢問：
+
+> Q: 日文排版上會不會有什麼問題呢？
+> A: 漢字與日文有筆畫問題，上頁面時需要再多跟設計確認版型。
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="ed0d168dda894f92831ab078fa6fd106" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+最近新出的貼圖訂閱服務，在日本上線時就非常的火紅，而近期也到了台灣以及印尼，若大家還在考慮想要購買哪個貼圖，不妨先訂閱看看來使用貼圖用飽飽～
+
+<script async class="speakerdeck-embed" data-slide="11" data-id="ed0d168dda894f92831ab078fa6fd106" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+隨著服務的成長，當然有些過往的程式碼就會需要維護，而在貼圖這部分都是 hybrid app 的方式，同時會有 iOS 與 Android 相關作業系統上的內容需要支援，並且讓使用體驗一致。
+
+當然身為工程師的各位最需要的就是把更多重複性的內容自動化，除了增加大家開發上的效率，也讓往後的維護上可以更加有彈性喔！
+
+#### Tech Stacks
 
 - React + Redux
 - Styled Component
 - Webpack
 - Sentry
 - Drone CI
-  ...
 
-當然服務久了之後一定會有舊 code 的問題，有些程式
-注重用戶體驗
-有 hybrid app 的方式，有 mobile, iOS, Android, 需要一致性體驗，
-把更多重複性的內容自動化，增加大家開發上的效率
+> 如果你對福岡前端團隊有興趣，歡迎參考 [Front-end Engineer](https://linefukuoka.co.jp/en/career/list/engineer/2331)
 
-## CSI 團隊 communication service integration
+## CSI 團隊 Communication Service Integration
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=12031" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
