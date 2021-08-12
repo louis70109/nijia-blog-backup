@@ -22,8 +22,8 @@ tags: ['JavaScript', 'Headless']
 
 近期也剛好在研究 headless browser 的內容，可以模擬用戶點選瀏覽器畫面，常見是使用在模擬測試等等，但既然現在是要搶金牌，那當然是直接拿來幫忙搶金牌啦！
 
-popcat Twitter: https://twitter.com/PopCatClick
-GitHub: https://github.com/louis70109/popcat-automation
+- popcat Twitter: https://twitter.com/PopCatClick
+- GitHub: https://github.com/louis70109/popcat-automation
 
 <!-- more -->
 
