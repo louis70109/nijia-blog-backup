@@ -80,8 +80,6 @@ tags: ['LINE', 'COSCUP']
 
 其中在此團隊中還會負責到與各地 Family Service 串接的內容，上圖中除了貼圖之外，以台灣用戶來說會看到許多如 LINE 購物、熱點、禮物等等的服務入口，也是由 CSI 團隊透過 Proxy API 整合完之後，再傳輸給 LINE 的本體去渲染出服務的入口。
 
----
-
 <script async class="speakerdeck-embed" data-slide="9" data-id="f5d9a47bbef44f418fdfe2ab7d1c9834" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 在錢包頁面中近期也持續在增進與與優化內容，需要與許多國家合作打造不同區域的入口，同時也要調整 CMS 的的內部流程，降低開發者介入查詢資料的部分。

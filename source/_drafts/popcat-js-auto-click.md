@@ -1,6 +1,6 @@
 ---
 title: 坐而言不如起而行，用 puppeteer 來幫忙搶 popcat 金牌
-categories: JavasScript
+categories: JavaScript
 tags: ['JavaScript', 'Headless']
 ---
 
