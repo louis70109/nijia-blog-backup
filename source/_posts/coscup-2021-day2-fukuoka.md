@@ -16,7 +16,7 @@ tags: ['LINE', 'COSCUP']
   }
 </style>
 
-![](../images/2021/coscup/lfk/1.png)
+![](https://nijialin.com/images/2021/coscup/lfk/1.png)
 
 # 前言
 
@@ -93,7 +93,7 @@ tags: ['LINE', 'COSCUP']
 
 # 結論
 
-![](../images/2021/coscup/resume.png)
+![](https://nijialin.com/images/2021/coscup/resume.png)
 
 最後在攤位的小角落安排履歷健檢的環節，意外的發現大家對於海外工作與相關履歷問題都非常有興趣，詢問度都非常高，甚至 COSCUP 活動都結束了大家都還在討論，重疊的人數都甚至達到 30、40 人左右，非常的踴躍！未來 LINE 的相關活動也歡迎大家前來與我們討論想了解的問題喔！
 
