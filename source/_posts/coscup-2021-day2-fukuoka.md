@@ -5,7 +5,6 @@ date: 2021-08-12 15:35:29
 tags: ['LINE', 'COSCUP']
 ---
 
-
 <style>
   section.compact {
     font-size: 150%  
@@ -46,6 +45,8 @@ tags: ['LINE', 'COSCUP']
 <script async class="speakerdeck-embed" data-slide="8" data-id="ed0d168dda894f92831ab078fa6fd106" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 最近新出的貼圖訂閱服務，在日本上線時就非常的火紅，而近期也到了台灣以及印尼，若大家還在考慮想要購買哪個貼圖，不妨先訂閱看看來使用貼圖用飽飽～
+
+- 貼圖訂閱介紹：https://store.line.me/stickers-premium/landing/zh-Hant
 
 <script async class="speakerdeck-embed" data-slide="11" data-id="ed0d168dda894f92831ab078fa6fd106" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
