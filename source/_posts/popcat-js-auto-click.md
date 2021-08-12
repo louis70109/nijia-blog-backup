@@ -3,8 +3,8 @@ title: 坐而言不如起而行，用 puppeteer 來幫忙搶 popcat 金牌
 tags:
   - JavaScript
   - Headless
-categories: JavasScript
-date: 2021-08-12 16:39:51
+categories: JavaScript
+date: 2021-08-12 18:11:58
 ---
 
 
@@ -18,7 +18,7 @@ date: 2021-08-12 16:39:51
   }
 </style>
 
-![](https://nijialin.com/images/2021/images/2021/popcat/2021-08-12-16-27-10.png)
+![](https://nijialin.com/images/2021/popcat/2021-08-12-16-27-10.png)
 
 # 前言
 
@@ -26,14 +26,14 @@ date: 2021-08-12 16:39:51
 
 近期也剛好在研究 headless browser 的內容，可以模擬用戶點選瀏覽器畫面，常見是使用在模擬測試等等，但既然現在是要搶金牌，那當然是直接拿來幫忙搶金牌啦！
 
-popcat Twitter: https://twitter.com/PopCatClick
-GitHub: https://github.com/louis70109/popcat-automation
+- popcat Twitter: https://twitter.com/PopCatClick
+- GitHub: https://github.com/louis70109/popcat-automation
 
 <!-- more -->
 
 # 介紹
 
-![](https://nijialin.com/images/2021/images/2021/popcat/2021-08-12-16-28-29.png)
+![](https://nijialin.com/images/2021/popcat/2021-08-12-16-28-29.png)
 
 而且當名次上升時，popcat twitter 會幫忙推送名次上去，大家為此就瘋狂在搶名次啦！
 
@@ -41,11 +41,11 @@ GitHub: https://github.com/louis70109/popcat-automation
 
 - 用遙控器點擊 popcat： https://twitter.com/akina_mochi_/status/1425052609308553221?s=20
 
-![](https://nijialin.com/images/2021/images/2021/popcat/2021-08-12-16-06-44.png)
+![](https://nijialin.com/images/2021/popcat/2021-08-12-16-06-44.png)
 
 - 多手指同步點擊 popcat： https://twitter.com/akina_mochi_/status/1425052609308553221?s=20
 
-![](https://nijialin.com/images/2021/images/2021/popcat/2021-08-12-16-07-23.png)
+![](https://nijialin.com/images/2021/popcat/2021-08-12-16-07-23.png)
 
 當然還有看到許多不同的 Client 用法，那本次就透過模擬瀏覽器點擊的方式來實作啦！
 
@@ -85,7 +85,7 @@ Demo:
 
 > 因為轉成 gif 幀數降低
 
-![](https://nijialin.com/images/2021/images/2021/popcat/demo.gif)
+![](https://nijialin.com/images/2021/popcat/demo.gif)
 
 程式碼參考 GitHub: https://github.com/louis70109/popcat-automation
 
