@@ -81,6 +81,8 @@ date: 2019-10-16 11:28:36
 
 # Talks
 
+- COSCUP Keynote: [Open up with LINE: from beginning to the next​.](https://coscup.org/2021/zh-TW/session/7YY9MN)
+  - [投影片](https://speakerdeck.com/line_developers_tw/coscup-2021-open-up-with-line-from-beginning-to-the-next)
 - [Chatbot Taiwan 中部人 meetup 16 - LINE Bot 入門介紹與 Platorm API 更新資訊 202107](https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-016)
   - [投影片](https://speakerdeck.com/line_developers_tw/line-bot-ru-men-jie-shao-yu-platorm-api-geng-xin-zi-xun-202107)
 - [LINE Recruitment Day 2021 - TECH FRESH 技術新星人才計畫介紹](https://events.chatbot.tw/events/28)
