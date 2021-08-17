@@ -92,7 +92,7 @@ date: 2019-10-16 11:28:36
 - [Chatbot Taiwan meetup 27 - LINE Platform API Update & 彈幕範例](https://events.chatbot.tw/events/26)
   - [投影片](https://speakerdeck.com/line_developers_tw2/line-api-platform-update-202101)
   - [影片](https://youtu.be/OaX09Qp95Yw)
-  - [做品](https://github.com/louis70109/Screen-LINE-Bullets)
+  - [作品](https://github.com/louis70109/Screen-LINE-Bullets)
 - [Chatbot Taiwan meetup 27 - LINE API Update](https://events.chatbot.tw/events/20-chatbots-meetup-%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA%E6%96%B0%E6%89%8B%E5%B0%8F%E8%81%9A-25)
 - [MOPCON 2020 - 結合 Lotify 與 Swagger 建置共用型通知服務](https://mopcon.org/2020/schedule/2020011)
   - [影片](https://www.youtube.com/watch?v=sPg7qIwWD_o)
