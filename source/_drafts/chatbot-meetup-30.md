@@ -1,6 +1,6 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 'Chatbot Dev Meetup 30'
+categories: 研討會
 tags:
 ---
 
