@@ -14,7 +14,7 @@
     "d": "git add .; git commit -m '🚀 deploy blog resource'; git push;"
   },
   "hexo": {
-    "version": "5.2.0"
+    "version": "3.9.0"
   },
   "dependencies": {
     "hexo": "5.2.0",
