@@ -18,10 +18,24 @@ tags:
 
 # 前言
 
+- 投影片
+  - [LINE Verda](https://speakerdeck.com/line_developers_tw/20210801-line-verda-tuan-dui-jie-shao)
+  - [Build an mini-app ecosystem for LINE developers](https://speakerdeck.com/line_developers_tw/20210801-build-an-mini-app-ecosystem-for-line-developers)
 <!-- more -->
 
 # 介紹
 
+## Verda 團隊分享
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=4734" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+## LIFF 團隊
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=7756" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 # 結論
 
 # 活動小結
