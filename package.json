@@ -11,7 +11,7 @@
     "new": "hexo new draft ",
     "p": "hexo publish ",
     "sync": "git pull",
-    "d": "git add .; git commit -am 'deploy blog resource'; git push;"
+    "d": "git add --all . ; git commit -am 'deploy blog resource'; git push;"
   },
   "hexo": {
     "version": "3.9.0"
