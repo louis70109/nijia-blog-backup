@@ -31,11 +31,29 @@ tags: ['LINE', 'LIFF', 'Verda']
 
 ---
 
+<script async class="speakerdeck-embed" data-slide="3" data-id="4ae92ff6f73b428b92a53f2aca576538" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+過去在 2020 COSCUP 中的 Cloud Native 議程中有分享到類似的內容，Verda 是 LINE 的私有雲服務，提供給 LINE 開發者所需要開發的基礎建設，而在經過了一年的時間機器數量又在更多了，也代表著服務一直在成長，需要更多的機器才能支撐的下 
+
+- [COSCUP 2020 年會 – LINE 工程團隊的議程分享](https://engineering.linecorp.com/zh-hant/blog/line-coscup-2020/)
+
+<script async class="speakerdeck-embed" data-slide="4" data-id="4ae92ff6f73b428b92a53f2aca576538" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+而基礎設施的基底則是使用 OpenStack 作為基礎，且做為團隊的一員必須對雲原生的東西有一定的熟悉度，如 Kubernetes、Prometheus、Grafana、CI/CD 流程...諸多的內容
+
+更多的內容可以參考 Verda 團隊的成員們分享的內容: [【Team & Project】Meet the Team Developing the Verda Platform Using OpenStack and Kubernetes](https://engineering.linecorp.com/en/blog/verda-platform-team/)
+
+而作為私有雲的服務，需要提供給內部用戶穩定工具以及介面上的功能給全球的開發者使用，如果你也對於打造國際級企業內的服務，歡迎加入我們喔!
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="4ae92ff6f73b428b92a53f2aca576538" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 ## LIFF 團隊
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=7756" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
+
+LINE Frontend Framework 是許多 LINE 開發者每天都會碰到的內容，同仁也分享了許多
 # 結論
 
 
