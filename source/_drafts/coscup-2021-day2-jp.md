@@ -1,7 +1,7 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
-tags:
+title: 【COSCUP throwback】日本團隊分享 | Verda, LIFF
+categories: 研討會
+tags: ['LINE', 'LIFF', 'Verda']
 ---
 
 <style>
@@ -37,6 +37,8 @@ tags:
 
 ---
 # 結論
+
+
 
 # 活動小結
 
