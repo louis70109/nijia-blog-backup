@@ -18,6 +18,8 @@ tags: ['LINE', 'LIFF', 'Verda']
 
 # 前言
 
+在COSCUP的安排中很幸運可以邀請到國外的同仁來為我們分享在當地工作的內容，本次文章則與大家介紹在日本的團隊(Verda + LIFF)，當天也是有許多朋友前來詢問相關的問題
+
 - 投影片
   - [LINE Verda](https://speakerdeck.com/line_developers_tw/20210801-line-verda-tuan-dui-jie-shao)
   - [Build an mini-app ecosystem for LINE developers](https://speakerdeck.com/line_developers_tw/20210801-build-an-mini-app-ecosystem-for-line-developers)
@@ -48,6 +50,8 @@ tags: ['LINE', 'LIFF', 'Verda']
 <script async class="speakerdeck-embed" data-slide="6" data-id="4ae92ff6f73b428b92a53f2aca576538" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## LIFF 團隊
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=7756" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
