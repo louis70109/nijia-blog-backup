@@ -18,11 +18,12 @@ tags: ['LINE', 'LIFF', 'Verda']
 
 # 前言
 
-在COSCUP的安排中很幸運可以邀請到國外的同仁來為我們分享在當地工作的內容，本次文章則與大家介紹在日本的團隊(Verda + LIFF)，當天也是有許多朋友前來詢問相關的問題
+在COSCUP的安排中很幸運可以邀請到國外的同仁來為我們分享在當地工作的內容，本次文章則帶大家了解遺下在日本的團隊(Verda + LIFF)的工作內容，如果想回味當天講者實際分享的內容在稍後也可以看 youtube 影片回味一下喔!(當天也是有許多朋友前來詢問許多與日本工作相關的問題，生活、履歷等等)
 
 - 投影片
   - [LINE Verda](https://speakerdeck.com/line_developers_tw/20210801-line-verda-tuan-dui-jie-shao)
   - [Build an mini-app ecosystem for LINE developers](https://speakerdeck.com/line_developers_tw/20210801-build-an-mini-app-ecosystem-for-line-developers)
+
 <!-- more -->
 
 # 介紹
@@ -58,6 +59,31 @@ tags: ['LINE', 'LIFF', 'Verda']
 ---
 
 LINE Frontend Framework 是許多 LINE 開發者每天都會碰到的內容，同仁也分享了許多
+
+## WHY
+
+<script async class="speakerdeck-embed" data-slide="5" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+LINE 其實在 APP 中開發 Web 也有相當久的時間，在之前使用的技術上()因為有一些技術上以及安全性的問題，且要引入到 LINE APP 中也是個負擔，因此在許多的規劃以及考量下就決定重新設計推出 LIFF 這套框架，不光是提供給內部使用，同時也可以推廣給所有目前正在使用LIFF的你使用!
+
+當然最重要的就是要提供用戶簡潔與直觀的 API 設計，也避免與 APP 橋接後所遇到的問題。(也就有現在的支援一般瀏覽器的功能啦~~)
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+因為LIFF是使用 JavaScript 開發的框架，因此大家在開發後也無須安裝，
+
+
+為什麼要有LIFF這樣的框架出現呢?
+
+因為有許多 Family Service 都需要網頁的方式去呈現
+
+參考資源:
+
+- [梅竹黑客松賽前企業工作坊 – LIFF shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/meichu-liff-share-target-picker-workshop/)
+- [讓我們使用 Cypress 開始為 LIFF app 撰寫單元測試](https://engineering.linecorp.com/zh-hant/blog/cypress-liff-unit-test/)
+- [開啟 LINE LIFF v2 的無限潛力 — liff.shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/start-liff-v2-sharetargetpicker-power/)
+- [在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享 FlexMessage 訊息給 LINE 好友](https://engineering.linecorp.com/zh-hant/blog/how-to-use-liff-in-vue3/)
+- [您需要了解有關新 LIFF URL 的所有資訊](https://engineering.linecorp.com/zh-hant/blog/new-liff-url-infomation/)
 # 結論
 
 
