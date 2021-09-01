@@ -84,6 +84,29 @@ LINE 其實在 APP 中開發 Web 也有相當久的時間，在之前使用的�
 - [開啟 LINE LIFF v2 的無限潛力 — liff.shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/start-liff-v2-sharetargetpicker-power/)
 - [在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享 FlexMessage 訊息給 LINE 好友](https://engineering.linecorp.com/zh-hant/blog/how-to-use-liff-in-vue3/)
 - [您需要了解有關新 LIFF URL 的所有資訊](https://engineering.linecorp.com/zh-hant/blog/new-liff-url-infomation/)
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當中有提到為了讓開發者可以在任何地方開發LIFF(不管在 **LINE APP** 或是**外部瀏覽器**上)，就會遇到許多瀏覽器上的挑戰，雖然瀏覽器大多都是以 Webkit 方式實作，但實際上還是會有些許的差異需要去做調整，因此就需要花許多時間去處理相對應的問題
+
+> 在這過程中也能對各種的底層更加了解，是個非常棒的經驗!
+
+<script async class="speakerdeck-embed" data-slide="9" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+為了讓LIFF開發者的開發體驗(Developer Experience)更棒，也引入了 TypeScript 讓大家可以在開發時更快的使用到 LIFF 相關的API Snippet、Hint 等等(當然還有開發上的靜態型別檢查的優點)，當然為了減少套件依賴的問題，開發上盡可能以 PureJS 來開發，降低SDK的 Bundle Size，當然如一些單元測試、CI、分析工具等也都是有在使用
+
+
+因為LINE非常注重資安問題，用戶在許多地方使用上都會需要同意很多的使用者條款，單然有些時候可能會影響到用戶的使用體驗導致不想使用等等，因此就有提議要降低 bounce rate 的作法(目前還在計畫中)，目標就是要讓用戶可以使用者體驗更棒，讓有需要的地方去執行即可，也是在遵守 Policy 的狀態下執行內容
+
+
+未來期望會在LIFF上有的功能
+
+提升維護姓
+改善測試的架構，讓QA可以更好的測試方式去測試
+
+目前是一個專屬團隊在開發，當然也希望提供更好的架構讓想貢獻的開發者可以盡一分心力到LIFF SDK 上，讓不同團隊可以開發出更多屬於自己的 Plugin 等等的內容。
+
+當中講者也是屬於早期LIFF的開發者，了解一些痛點上的內容，未來當然也希望改善開發者體驗上的內容，例如提供 Debug Tool、Playground 等等的工具來幫助普羅大眾的開發者們(好期待阿!!)，而不用真的實際串接 LIFF 才能執行之類的
 # 結論
 
 
