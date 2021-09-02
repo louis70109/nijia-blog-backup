@@ -18,7 +18,7 @@ tags: ['LINE', 'LIFF', 'Verda']
 
 # 前言
 
-在COSCUP的安排中很幸運可以邀請到國外的同仁來為我們分享在當地工作的內容，本次文章則帶大家了解遺下在日本的團隊(Verda + LIFF)的工作內容，如果想回味當天講者實際分享的內容在稍後也可以看 youtube 影片回味一下喔!(當天也是有許多朋友前來詢問許多與日本工作相關的問題，生活、履歷等等)
+在 COSCUP 的安排中很幸運可以邀請到國外的同仁來為我們分享在當地工作的內容，本次文章則帶大家了解遺下在日本的團隊(Verda + LIFF)的工作內容，如果想回味當天講者實際分享的內容在稍後也可以看 youtube 影片回味一下喔!(當天也是有許多朋友前來詢問許多與日本工作相關的問題，生活、履歷等等)
 
 - 投影片
   - [LINE Verda](https://speakerdeck.com/line_developers_tw/20210801-line-verda-tuan-dui-jie-shao)
@@ -36,7 +36,7 @@ tags: ['LINE', 'LIFF', 'Verda']
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="4ae92ff6f73b428b92a53f2aca576538" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-過去在 2020 COSCUP 中的 Cloud Native 議程中有分享到類似的內容，Verda 是 LINE 的私有雲服務，提供給 LINE 開發者所需要開發的基礎建設，而在經過了一年的時間機器數量又在更多了，也代表著服務一直在成長，需要更多的機器才能支撐的下 
+過去在 2020 COSCUP 中的 Cloud Native 議程中有分享到類似的內容，Verda 是 LINE 的私有雲服務，提供給 LINE 開發者所需要開發的基礎建設，而在經過了一年的時間機器數量又在更多了，也代表著服務一直在成長，需要更多的機器才能支撐的下
 
 - [COSCUP 2020 年會 – LINE 工程團隊的議程分享](https://engineering.linecorp.com/zh-hant/blog/line-coscup-2020/)
 
@@ -52,28 +52,25 @@ tags: ['LINE', 'LIFF', 'Verda']
 
 ## LIFF 團隊
 
-
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iq0nSph2ZNk?start=7756" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
-LINE Frontend Framework 是許多 LINE 開發者每天都會碰到的內容，同仁也分享了許多
+LINE Frontend Framework 是許多 LINE 開發者每天都會碰到的內容，本次也特邀在日本工作的台灣同仁來分享內容，以下簡錄當天的一些內容，更詳細可以參考以上影片喔！
 
-## WHY
+## 為什麼要有 LIFF 呢?
 
 <script async class="speakerdeck-embed" data-slide="5" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-LINE 其實在 APP 中開發 Web 也有相當久的時間，在之前使用的技術上()因為有一些技術上以及安全性的問題，且要引入到 LINE APP 中也是個負擔，因此在許多的規劃以及考量下就決定重新設計推出 LIFF 這套框架，不光是提供給內部使用，同時也可以推廣給所有目前正在使用LIFF的你使用!
+LINE 其實在 APP 中開發 Web 也有相當久的時間，在之前使用的技術上(底層是 Cordova)因為有一些技術上以及安全性的問題，且要引入到 LINE APP 中也是個負擔，因此在許多的規劃以及考量下就決定重新設計推出 LIFF 這套框架，不光是提供給內部使用，同時也可以推廣給所有目前正在使用 LIFF 的你使用!
 
 當然最重要的就是要提供用戶簡潔與直觀的 API 設計，也避免與 APP 橋接後所遇到的問題。(也就有現在的支援一般瀏覽器的功能啦~~)
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-因為LIFF是使用 JavaScript 開發的框架，因此大家在開發後也無須安裝，
+因為 LIFF 是使用 JavaScript 開發的框架，因此大家在開發後也無須安裝，
 
 
-為什麼要有LIFF這樣的框架出現呢?
 
 因為有許多 Family Service 都需要網頁的方式去呈現
 
@@ -87,29 +84,32 @@ LINE 其實在 APP 中開發 Web 也有相當久的時間，在之前使用的�
 
 <script async class="speakerdeck-embed" data-slide="8" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-當中有提到為了讓開發者可以在任何地方開發LIFF(不管在 **LINE APP** 或是**外部瀏覽器**上)，就會遇到許多瀏覽器上的挑戰，雖然瀏覽器大多都是以 Webkit 方式實作，但實際上還是會有些許的差異需要去做調整，因此就需要花許多時間去處理相對應的問題
+當中有提到為了讓開發者可以在任何地方開發 LIFF(不管在 **LINE APP** 或是**外部瀏覽器**上)，就會遇到許多瀏覽器上的挑戰，雖然瀏覽器大多都是以 Webkit 方式實作，但實際上還是會有些許的差異需要去做調整，因此就需要花許多時間去處理相對應的問題
 
 > 在這過程中也能對各種的底層更加了解，是個非常棒的經驗!
 
 <script async class="speakerdeck-embed" data-slide="9" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-為了讓LIFF開發者的開發體驗(Developer Experience)更棒，也引入了 TypeScript 讓大家可以在開發時更快的使用到 LIFF 相關的API Snippet、Hint 等等(當然還有開發上的靜態型別檢查的優點)，當然為了減少套件依賴的問題，開發上盡可能以 PureJS 來開發，降低SDK的 Bundle Size，當然如一些單元測試、CI、分析工具等也都是有在使用
+為了讓 LIFF 開發者的開發體驗(Developer Experience)更棒，也引入了 TypeScript 讓大家可以在開發時更快的使用到 LIFF 相關的 API Snippet、Hint 等等(當然還有開發上的靜態型別檢查的優點)，當然為了減少套件依賴的問題，開發上盡可能以 PureJS 來開發，降低 SDK 的 Bundle Size，當然如一些單元測試、CI、分析工具等也都是有在使用
 
+<script async class="speakerdeck-embed" data-slide="11" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-因為LINE非常注重資安問題，用戶在許多地方使用上都會需要同意很多的使用者條款，單然有些時候可能會影響到用戶的使用體驗導致不想使用等等，因此就有提議要降低 bounce rate 的作法(目前還在計畫中)，目標就是要讓用戶可以使用者體驗更棒，讓有需要的地方去執行即可，也是在遵守 Policy 的狀態下執行內容
+因為 LINE 非常注重資安問題，用戶在許多地方使用上都會需要同意很多的使用者條款，單然有些時候可能會影響到用戶的使用體驗導致不想使用等等，因此就有提議要降低 bounce rate 的作法(目前還在計畫中)，目標就是要讓用戶可以使用者體驗更棒，讓有需要的地方去執行即可，也是在遵守 Policy 的狀態下執行內容
 
+<script async class="speakerdeck-embed" data-slide="12" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-未來期望會在LIFF上有的功能
+當中講者也是屬於早期 LIFF 的開發者，了解一些痛點上的內容，未來當然也希望改善開發者體驗上的內容
 
-提升維護姓
-改善測試的架構，讓QA可以更好的測試方式去測試
+- 提升維護姓
+- 改善測試的架構，讓 QA 可以更好的測試方式去測試
+- 目前是一個專屬團隊在開發，當然也希望提供更好的架構讓想貢獻的開發者可以盡一分心力到 LIFF SDK 上，讓不同團隊可以開發出更多屬於自己的 Plugin 等等的內容。
+- 規劃提供 Debug Tool、Playground 等等的工具來幫助普羅大眾的開發者們(好期待阿!!)，而不用真的實際串接 LIFF 才能執行。
 
-目前是一個專屬團隊在開發，當然也希望提供更好的架構讓想貢獻的開發者可以盡一分心力到LIFF SDK 上，讓不同團隊可以開發出更多屬於自己的 Plugin 等等的內容。
+當然最後如果你希望開發一個網頁框架，它是會在日常再大家手機中執行的內容，歡迎準備好你的履歷投到以下網址喔！
 
-當中講者也是屬於早期LIFF的開發者，了解一些痛點上的內容，未來當然也希望改善開發者體驗上的內容，例如提供 Debug Tool、Playground 等等的工具來幫助普羅大眾的開發者們(好期待阿!!)，而不用真的實際串接 LIFF 才能執行之類的
+- [LIFF 職缺](https://linecorp.com/ja/career/position/1659)
+
 # 結論
-
-
 
 # 活動小結
 
