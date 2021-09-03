@@ -1,8 +1,13 @@
 ---
-title: 【COSCUP throwback】日本團隊分享 | Verda, LIFF
+title: '【COSCUP throwback】日本團隊分享 | Verda, LIFF'
+tags:
+  - LINE
+  - LIFF
+  - Verda
 categories: 研討會
-tags: ['LINE', 'LIFF', 'Verda']
+date: 2021-09-03 10:39:02
 ---
+
 
 <style>
   section.compact {
@@ -36,19 +41,21 @@ tags: ['LINE', 'LIFF', 'Verda']
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="4ae92ff6f73b428b92a53f2aca576538" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-過去在 2020 COSCUP 中的 Cloud Native 議程中有分享到類似的內容，Verda 是 LINE 的私有雲服務，提供給 LINE 開發者所需要開發的基礎建設，而在經過了一年的時間機器數量又在更多了，也代表著服務一直在成長，需要更多的機器才能支撐的下
+過去在 2020 COSCUP 中的 Cloud Native 議程中有分享到類似的內容，Verda 是 LINE 的私有雲服務，提供給 LINE 開發者所需要開發的基礎建設，而在經過了一年的時間機器數量又在更多了，也代表著服務一直在成長，需要更多的機器才能支撐的下這麼大量的服務與用戶。
 
 - [COSCUP 2020 年會 – LINE 工程團隊的議程分享](https://engineering.linecorp.com/zh-hant/blog/line-coscup-2020/)
 
 <script async class="speakerdeck-embed" data-slide="4" data-id="4ae92ff6f73b428b92a53f2aca576538" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-而基礎設施的基底則是使用 OpenStack 作為基礎，且做為團隊的一員必須對雲原生的東西有一定的熟悉度，如 Kubernetes、Prometheus、Grafana、CI/CD 流程...諸多的內容
+而基礎設施的基底則是使用 OpenStack 作為基礎，且做為團隊的一員必須對雲原生的東西有一定的熟悉度，如 Kubernetes、Prometheus、Grafana、CI/CD 流程、網路架構...等等諸多的內容，畢竟要打造一個私有雲的服務，許多的基礎內容要是不熟悉的話也不太好對吧～？
 
-更多的內容可以參考 Verda 團隊的成員們分享的內容: [【Team & Project】Meet the Team Developing the Verda Platform Using OpenStack and Kubernetes](https://engineering.linecorp.com/en/blog/verda-platform-team/)
+> 更多的內容可以參考 Verda 團隊的成員們分享的內容: [【Team & Project】Meet the Team Developing the Verda Platform Using OpenStack and Kubernetes](https://engineering.linecorp.com/en/blog/verda-platform-team/)
 
-而作為私有雲的服務，需要提供給內部用戶穩定工具以及介面上的功能給全球的開發者使用，如果你也對於打造國際級企業內的服務，歡迎加入我們喔!
+而作為私有雲的服務，需要提供給內部用戶穩定工具以及介面上的功能給全球的開發者使用，如果你也對於打造國際級企業內的服務並提供給世界各地的用戶使用，歡迎加入我們 Verda 團隊!
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="4ae92ff6f73b428b92a53f2aca576538" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+> 小編偷偷說，講者當初在畢業前許久就已經拿到 Offer 了(代表團隊願意等)，如果你是學生且想發展長才，歡迎投履歷試試看喔！
 
 ## LIFF 團隊
 
@@ -62,19 +69,19 @@ LINE Frontend Framework 是許多 LINE 開發者每天都會碰到的內容，�
 
 <script async class="speakerdeck-embed" data-slide="5" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-LINE 其實在 APP 中開發 Web 也有相當久的時間，在之前使用的技術上(底層是 Cordova)因為有一些技術上以及安全性的問題，且要引入到 LINE APP 中也是個負擔，因此在許多的規劃以及考量下就決定重新設計推出 LIFF 這套框架，不光是提供給內部使用，同時也可以推廣給所有目前正在使用 LIFF 的你使用!
+LINE 其實在 APP 中開發 Web 也有相當久的時間，在之前使用的技術上(底層是 Cordova)因為有一些技術上以及安全性的問題，且要引入到 LINE APP 中也是個負擔，因此在許多的規劃以及考量下就決定重新設計推出 LIFF 這套框架，不光是提供給內部使用，同時也可以推廣給所有目前正在使用 LIFF 的你使用!讓大家一起在 LINE 的平台上建立屬於自己的 Web App～
 
 當然最重要的就是要提供用戶簡潔與直觀的 API 設計，也避免與 APP 橋接後所遇到的問題。(也就有現在的支援一般瀏覽器的功能啦~~)
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="f23e18b74ffa4660b5c76d592e6bf346" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-因為 LIFF 是使用 JavaScript 開發的框架，因此大家在開發後也無須安裝，
+因為 LIFF 是使用 JavaScript 開發的框架，好處是大家在開發後也無須安裝，只要有瀏覽器的地方打開就可以使用(前提是要登入 LINE 帳號)。
 
+而大家在使用 LINE App 聊天時，時常會看到/使用許多 LINE 服務，而這些服務有些是 Native、有些則是 Web 形式，也因此為了提供/整合更好的使用者介面給大家，讓內部的開發者可以有高度客製化的功能，讓 Family Service 可以使用 LIFF。
 
+> 此外，LIFF 一些部分是基於 Login 去實作，因此往往在用戶盡數 LIFF 時即可取得使用者的基本資訊。
 
-因為有許多 Family Service 都需要網頁的方式去呈現
-
-參考資源:
+以下有些過往的參考資源提供給大家閱讀:
 
 - [梅竹黑客松賽前企業工作坊 – LIFF shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/meichu-liff-share-target-picker-workshop/)
 - [讓我們使用 Cypress 開始為 LIFF app 撰寫單元測試](https://engineering.linecorp.com/zh-hant/blog/cypress-liff-unit-test/)
@@ -110,6 +117,12 @@ LINE 其實在 APP 中開發 Web 也有相當久的時間，在之前使用的�
 - [LIFF 職缺](https://linecorp.com/ja/career/position/1659)
 
 # 結論
+
+海外同仁在 COSCUP 中分享內容到這邊告一段落啦！如果你對在不同國家工作的內容有興趣歡迎參考以下的文章內容，相信對於你的了解上也會更有幫助喔！
+- [【COSCUP Throwback】LINE Fukuoka 團隊分享](https://engineering.linecorp.com/zh-hant/blog/coscup-2021-line-fukuoka/)
+- [【COSCUP Throwback】LINE Thailand Developer Relations 議程分享](https://engineering.linecorp.com/zh-hant/blog/coscup-2021-line-thailand-developer-relations/)
+
+當然這一系列還沒結束呢！正在讀文章的你千萬別錯過接下來更精彩的分享內容，那我們就下回見：）
 
 # 活動小結
 
