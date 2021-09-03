@@ -19,7 +19,7 @@ date: 2021-09-03 10:39:02
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://nijialin.com/images/2021/coscup-booth.png)
 
 # 前言
 
