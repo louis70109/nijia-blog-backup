@@ -20,7 +20,20 @@ tags:
 
 <!-- more -->
 
-# 介紹
+# 什麼是 COSCUP?
+
+[COSCUP](https://coscup.org/2021/zh-TW/) 是亞洲最大的開源會議之一，自 2006 年開始由開源社群舉行的年度會議，也是台灣自由開源軟體運動 (FOSSM) 的主要倡導者。COSCUP 包含演講、贊助商、社群攤位，以及 BoF 社群同樂會等，COSCUP 的宗旨在於提供一個聯結開放原始碼開發者、使用者與推廣者的平台。
+
+> 可惜今年因為疫情關係改為線上，但也不減大家參與 COSCUP 的熱情！
+
+<script async class="speakerdeck-embed" data-slide="3" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+參與社群活動一直是我很喜歡做的事情之一，從演講中分享自己這段日子學習的經驗、攤位上與每位社群朋友交流意見、甚至到坐下來一起研究某段**程式碼/專案**的可行性，而若能在 COSCUP 中分享任何主題對我來說都是一個非常棒的肯定，因此除了在攤位與大家分享外，我也踴躍於 COSCUP 中投稿(2019, 2020)，今年也很榮幸可以代表 LINE 講一場 Keynote！
+# Open Up with LINE - From Beginning TO THE NEXT
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iaFAOS6XS00?start=37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 # 結論
 
