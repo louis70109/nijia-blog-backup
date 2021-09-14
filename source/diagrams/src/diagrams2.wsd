@@ -1,5 +1,14 @@
 @startuml
-(LINE Platform)->(Data)
-(Data)->(Your Server)
-(Attacker)-down->(Data): catch and fake it
+User->WordGame
+WordGame->API: Sync User setting
+API-->NoSQL: Find cache Data
+API->RDBMS: Catch Data
+API->WordGame: Response status
+WordGame->User: Status setting
+
+User->WordGame: Play one round
+WordGame->API: Save Data
+
+WordGame->API: Cacth All Rank
+API->RDBMS: Catch data
 @enduml
