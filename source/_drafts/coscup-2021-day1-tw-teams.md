@@ -40,7 +40,7 @@ tags:
 
 今年是 LINE 的十週年，對於 LINE 來說，過去的十年只是一個開始。 10 週年概念口號 “To The Next” 表達了 LINE 將繼續傾聽用戶的聲音，並在未來 10 年繼續創造更好服務的理念。
 
-## 持續支持開源社群
+## 支持開源專案
 
 <script async class="speakerdeck-embed" data-slide="9" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -53,11 +53,12 @@ tags:
 第一個是 Armeria，他是個讓開發者能夠使用的微服務框架，現在容器化這麼盛行，服務間溝通可能會用到 gRPC, 然後可能是用 spring boot 開發的程式，以及 Kotlin 一條龍開發等等，讓 Java 生態圈的的開發者可以更輕易用的內容，當然像是 http/2 …都還是有支援
 
 微服務的時代， oberservibility 是很重要的，包括日誌記錄、監控、跟踪、服務發現和 RPC，Armiria 都有提供，並且有 async 架構提供出色的性能跟高併發能力
-
-- Central Dogma
+- 範例專案：https://github.com/line/armeria-examples
+- [Central Dogma](https://github.com/line/centraldogma)
 
 當然還有更多的開源專案大家可以上去查看並使用它們
 
+## 參與開源社群
 # 團隊介紹
 
 ## Frontend 工程團隊
