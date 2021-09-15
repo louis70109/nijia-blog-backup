@@ -44,21 +44,34 @@ tags:
 
 <script async class="speakerdeck-embed" data-slide="9" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-或許大家很常用也熟知 LINE Chatbot、LINE Login、LIFF 等等，但在一個平台上我們也花了很多心力建置了許多開源專案，希望藉由分享我們的開源貢獻幫助每位開發者在開發上能夠更方便、更有彈性的去創造許多創意的點子在我們的平台上，以下會為各位分享一些
+或許大家很常用也熟知 LINE Chatbot、LINE Login、LIFF 等等的技術與服務，在提供服務之虞 LINE 也花了很多心力建置了許多開源專案，希望藉由分享我們的使用情境、經驗、開源貢獻來幫助每位開發者，在開發的路上能夠更高效、更有彈性的去創造許多創意的產品，以下列幾個讓大家稍微瞭解一下：
 
-我們許多內容也都是經由 open source，是我們的基礎，同時我們也回饋多數的專案
+> Open Source 的程式碼以及任何內容，都是經由內部縝密的各項審查才可以對外開放，因此大家在使用上不太需要擔心喔～
 
+### [line/armeria](https://github.com/line/armeria)
 
-- [line/armeria](https://github.com/line/armeria)
-第一個是 Armeria，他是個讓開發者能夠使用的微服務框架，現在容器化這麼盛行，服務間溝通可能會用到 gRPC, 然後可能是用 spring boot 開發的程式，以及 Kotlin 一條龍開發等等，讓 Java 生態圈的的開發者可以更輕易用的內容，當然像是 http/2 …都還是有支援
+Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器化這麼盛行，開發上會因應許多技術需要開發，如 gRPC、Spring Boot、Kotlin 一條龍開發等等，都可以透過 Armeria 更輕易使用到許多的技術。像是 http/2、日誌記錄、監控、追蹤也都有提供，並且有 async 架構提供出色的性能跟高併發能力
 
-微服務的時代， oberservibility 是很重要的，包括日誌記錄、監控、跟踪、服務發現和 RPC，Armiria 都有提供，並且有 async 架構提供出色的性能跟高併發能力
 - 範例專案：https://github.com/line/armeria-examples
-- [Central Dogma](https://github.com/line/centraldogma)
+
+<script async class="speakerdeck-embed" data-slide="9" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+另一方面，在 2020 年也正式釋出 **1.0 的版本**，1.0 對於大型開源專案來說都是個里程碑，意味著開源專案是能夠 Production。此外還有一個重點，就是有超多 Contributor 第一次貢獻 Pull Request 就是給 Armeria 啦，當然送 Pull Request 除了**新刪修**程式之外，大家也可以從修改文件、增加範例程式開始著手，此舉也可以讓你更快速地學習如何貢獻開源專案喔！
+
+> 更多開源專案細節可以參考此篇文章 [LINE 開發社群計畫: 「手把手教你建立自己的開源專案」](https://engineering.linecorp.com/zh-hant/blog/gdsc-opensource/)
+
+### [Central Dogma](https://github.com/line/centraldogma)
 
 當然還有更多的開源專案大家可以上去查看並使用它們
 
-## 參與開源社群
+## 參與開源
+
+### 動手做比較有印象
+
+<script async class="speakerdeck-embed" data-slide="21" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+上述提到這麼多開源專案相關的內容，或許大家有疑問，一定要送程式碼才是參與開源嗎？當然有，就是把你所學的內容透過文章/部落格的方式記錄下來，可以是短短的一篇解決某個問題(如上圖)，也可以是一整篇來解釋緣由，並分享到社群上讓更多人知道，可能你現在紀錄的問題，也正好是其他人正在卡關的問題，如果能透過分享的方式幫助到別人，是否也覺得很棒呢？
+
 # 團隊介紹
 
 ## Frontend 工程團隊
