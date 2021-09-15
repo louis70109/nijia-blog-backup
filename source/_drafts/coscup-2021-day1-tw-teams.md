@@ -66,12 +66,17 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 
 ## 參與開源
 
-### 動手做比較有印象
+### 動手寫作比較有印象
 
 <script async class="speakerdeck-embed" data-slide="21" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 上述提到這麼多開源專案相關的內容，或許大家有疑問，一定要送程式碼才是參與開源嗎？當然有，就是把你所學的內容透過文章/部落格的方式記錄下來，可以是短短的一篇解決某個問題(如上圖)，也可以是一整篇來解釋緣由，並分享到社群上讓更多人知道，可能你現在紀錄的問題，也正好是其他人正在卡關的問題，如果能透過分享的方式幫助到別人，是否也覺得很棒呢？
 
+### 開口講印象更深
+
+<script async class="speakerdeck-embed" data-slide="23" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+另一方面，時常我們在公司內部的活動中也都鼓勵每位開發者出外至社群分享自己的經驗/心得，透過分享，驗證自己在技術領域上的理解是否正確，雖然上台講看起來是分享給觀眾們相關技術，但實際上學最多的一定是講者，從**事前準備/前一天趕Demo/整理資料/開口分享**，一切都是會幫助整理內容
 # 團隊介紹
 
 ## Frontend 工程團隊
