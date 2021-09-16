@@ -72,11 +72,46 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 
 上述提到這麼多開源專案相關的內容，或許大家有疑問，一定要送程式碼才是參與開源嗎？當然有，就是把你所學的內容透過文章/部落格的方式記錄下來，可以是短短的一篇解決某個問題(如上圖)，也可以是一整篇來解釋緣由，並分享到社群上讓更多人知道，可能你現在紀錄的問題，也正好是其他人正在卡關的問題，如果能透過分享的方式幫助到別人，是否也覺得很棒呢？
 
+- [Open Policy Agent – 快速導入 Authz 至 Microservice 架構](https://engineering.linecorp.com/zh-hant/blog/open-policy-agent-authz-in-microservice/)
+- [ICASSP 2021 會議心得](https://engineering.linecorp.com/zh-hant/blog/icassp-2021/)
+
 ### 開口講印象更深
 
 <script async class="speakerdeck-embed" data-slide="23" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-另一方面，時常我們在公司內部的活動中也都鼓勵每位開發者出外至社群分享自己的經驗/心得，透過分享，驗證自己在技術領域上的理解是否正確，雖然上台講看起來是分享給觀眾們相關技術，但實際上學最多的一定是講者，從**事前準備/前一天趕Demo/整理資料/開口分享**，一切都是會幫助思緒整理，讓自己更能掌握技術本身的脈絡。
+另一方面，時常我們在公司內部的活動中也都鼓勵每位開發者出外至社群分享自己的經驗/心得，透過分享，驗證自己在技術領域上的理解是否正確，雖然上台講看起來是分享給觀眾們相關技術，但實際上學最多的一定是講者，從**事前準備/前一天趕 Demo/整理資料/開口分享**，一切都是會幫助思緒整理，讓自己更能掌握技術本身的脈絡。
+
+- [【訪談】QA 工作老實說](https://engineering.linecorp.com/zh-hant/blog/qa-interview-2021/)
+- [COSCUP 2021 議程分享：Empower Your Kubernetes with Service Mesh + Distributed Tracing](https://engineering.linecorp.com/zh-hant/blog/coscup-2021-empower-your-kubernetes-with-service-mesh-distributed-tracing/)
+- [使用 Kubernetes 打造具有會員註冊、身份驗證的多功能聊天機器人](https://engineering.linecorp.com/zh-hant/blog/coscup-2021-chatbot-in-kubernetes-session/)
+- [OpenTelemetry 初體驗：實踐 Chaos Engineering 來 Drive the Observability’s best practice](https://engineering.linecorp.com/zh-hant/blog/opentelemetry-chaos-engineering-drive-the-observability-best-practice/)
+- [LINE 資料工程團隊如何透過專業分工與 MLOps 打造不同服務 | 以 MarTech & NLP 為例](https://engineering.linecorp.com/zh-hant/blog/lets-play-in-data-park/)
+- [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
+
+
+### 還有沒有其他方法？
+
+<script async class="speakerdeck-embed" data-slide="24" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+或許有些同學對自己的要求比較高，覺得自己目前能力需要磨練，或者是覺得文章需要一系列、內容深度要夠等等(準備時間需要較多)，那這邊推薦一個做法 - 「**實習**」，實習過程中除了可以了解企業用的技術趨勢之外，也能透過與 Mentor 互相學習琢磨**軟/硬**實力，讓能力能透過實習的時間大幅提升。
+
+<script async class="speakerdeck-embed" data-slide="25" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+過程中也可以透過 **讀書會/工作坊/公司公開活動** 爭取機會把自己學習的經驗分享給他人，同步增進自己的實力，因此，若你希望透過類似的方式來嘗試看看，除了期待接下來 TECH FRESH 招募時間外，也可以看看學長姐們的經驗分享喔！
+
+- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
+- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
+- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
+- [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
+- [LINE Developer Day 2020 – The past and future of machine learning research 議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-dev-day-2020-the-past-and-future-of-machine-learning-research/)
+
+### 「動手做就對了」 - 組對參加黑客松競賽
+
+<script async class="speakerdeck-embed" data-slide="29" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+身為工程師，有好的想法以及技術架構後，動手做是不二法則，真的把自己的想法實踐出來，並透過黑客松競賽來驗證團隊的想法是否能在比賽中展露頭角，創造出新的機會
+
+
 # 團隊介紹
 
 ## Frontend 工程團隊
@@ -207,6 +242,7 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 - [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
 - [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
 - [LINE Developer Day 2020 – The past and future of machine learning research 議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-dev-day-2020-the-past-and-future-of-machine-learning-research/)
+- [LINE 實習經驗分享 / Wayne Wu](https://engineering.linecorp.com/zh-hant/blog/2020-10-21-twjug/#line-%E5%AF%A6%E7%BF%92%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB--wayne-wu)
 
 <script async class="speakerdeck-embed" data-slide="8" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
