@@ -62,6 +62,7 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 
 ### [Central Dogma](https://github.com/line/centraldogma)
 
+隨著 CI/CD 越來越盛行，集中式管理 Config 也越來越重要，透過 Git 
 當然還有更多的開源專案大家可以上去查看並使用它們
 
 ## 參與開源
@@ -109,8 +110,12 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 
 <script async class="speakerdeck-embed" data-slide="29" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-身為工程師，有好的想法以及技術架構後，動手做是不二法則，真的把自己的想法實踐出來，並透過黑客松競賽來驗證團隊的想法是否能在比賽中展露頭角，創造出新的機會
+身為工程師，有好的想法以及技術架構後，動手做是不二法則，真的把自己的想法實踐出來，並透過黑客松競賽來驗證團隊的想法是否能在比賽中展露頭角，為自己的履歷加分！以下就分享近期 LINE 舉辦的校園競賽給大家：
 
+- LINE FRESH 報名連結：https://tw-fresh.line.me/
+  - 報名到 **9/27**
+  - 有常見問題欄位可以查看
+  - 跨界組隊
 
 # 團隊介紹
 
@@ -212,45 +217,6 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 
 - [QA Automation Engineer](https://careers.linecorp.com/jobs/18)
 - [QA Engineer](https://careers.linecorp.com/jobs/19)
-
-> Q: 請問您們用 cypress 自動化測試工具時，有遇到什麼困難點嗎？
-
-1. Cypress 是 Javascript based, 大部分的 QA 需要學習了解 JS 的特性
-2. Cypress 不支援 mobile app solution
-3. 目前 Cypress 未支援 iframe，官方已經在開發中
-4. Cypress 無法進行垮 domain 測試
-5. 團隊從 Python / Selenium / Robot Framework 體系切換過來，對 JS 開發生態 / 語法的不熟悉。這個是透過團隊內部的 study group，以及直接找前端同事請益的方式解決
-
-> Q: 當有測試的情境是無法用 cypress 測試時，是如何克服呢
-
-1. 就技術上而言，如果夠了解 JS 相關語言，可以解決蠻多 Cypress 本身的限制。例如上方提到 iframe 的問題，可以運用 jQuery 寫一個 Cypress comment 來處理，抑或是請教前端工程師來協助一同開發 Cypress。
-2. 如果是 UX 相關的情境，不得不手動測，自動化的幫助就是把小工具準備好，讓測試執行順暢。
-3. 就測試情境上來說，應該蠻多機會會遇到 E2E 需要 cross domain 的 situation．LINE QA 團隊其實會把 test case 維持一個主軸來測試，test case 不會過於複雜，遇到 crosses domain 會運用 mock, stub 等相關 SUT 概念來完成整合測試。
-
-## LINE TECH FRESH 技術新星人才計畫
-
-<script async class="speakerdeck-embed" data-slide="3" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-過去在公開活動中，同仁們時常會被詢問：「實習生再加入後是否只能在特定團隊內工作？」，過往有許多同學透過特定專業能力進到實習生計畫中，而我們都很鼓勵每位同學勇於挑戰不同的領域，持續強化不同的專業能力，找尋出自己的想走的道路。
-
-<script async class="speakerdeck-embed" data-slide="7" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-除了日常專案與累積技術能力之外，我們很鼓勵透過文章的方式呈現來記錄自己的學習成果，同時也將自己的學習成果分享給未來的學弟妹們，讓大家可以參考學長姐們的結晶，有興趣可以參考以下內容：
-
-- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
-- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
-- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
-- [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
-- [LINE Developer Day 2020 – The past and future of machine learning research 議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-dev-day-2020-the-past-and-future-of-machine-learning-research/)
-- [LINE 實習經驗分享 / Wayne Wu](https://engineering.linecorp.com/zh-hant/blog/2020-10-21-twjug/#line-%E5%AF%A6%E7%BF%92%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB--wayne-wu)
-
-<script async class="speakerdeck-embed" data-slide="8" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-此外，我們每個月皆會舉辦月會讓實習生可以在固定的時間中與不同專業領域的 Mentor 們聊聊，除了了解前輩們過往的經驗之外，透過交流也可以了解到新興人才們所思考以及顧慮的部分，也讓我們能夠更持續的優化這個計畫的內容。
-
-<script async class="speakerdeck-embed" data-slide="11" data-id="865916ecea2a421587fe956fff64b23d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-在經過一年的磨練過後，我們也希望菁英同學們有機會加入 LINE 工程部門的大家庭中，一同為 LINE 打造 WoW 的產品給社會大眾，讓你所寫的每一行程式碼都成為大家日常生活的一部份！
 
 # 結論
 
