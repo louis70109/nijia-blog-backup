@@ -1,8 +1,14 @@
 ---
 title: 透過 Vue + FastAPI 完成 LINE Login 一鍵式登入
-categories: LINE
 tags:
+  - LINE
+  - Vue
+  - FastAPI
+  - SSO
+categories: LINE
+date: 2021-09-21 17:01:15
 ---
+
 
 <style>
   section.compact {
@@ -33,6 +39,29 @@ tags:
 <!-- more -->
 
 # 介紹
+
+## LINE Login 綁定步驟
+
+- 進入 [LINE Developer Console](https://developers.line.biz/console/)
+- 建立 Provider
+- 建立 LINE Login channel
+
+![](https://nijialin.com/images/2021/login/2.png)
+
+- 點選最右面選項把 LINE Login channel 設定為 `published`
+
+![](https://nijialin.com/images/2021/login/3.png)
+
+- 啟動 `Web App` 選項並設定 Callback URL 為 `http://localhost:8080/line/auth`
+
+![](https://nijialin.com/images/2021/login/4.png)
+
+- 把 client_id、client_secret、Callback URL 複製到後端 FastAPI 的環境變數中
+- 開始以下文章內容
+
+## 用戶看見的頁面
+
+![](https://nijialin.com/images/2021/login/1.png)
 
 首先先參考[前端的路由](https://github.com/louis70109/WordsGame/blob/master/src/router/index.js)(後續實作上可能有差)
 
