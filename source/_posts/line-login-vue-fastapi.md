@@ -53,6 +53,7 @@ date: 2021-09-21 17:01:15
 ![](https://nijialin.com/images/2021/login/3.png)
 
 - 啟動 `Web App` 選項並設定 Callback URL 為 `http://localhost:8080/line/auth`
+  - LINE Login 開發時不用 SSL+Domain，但上線後記得改成自家 Domain + SSL
 
 ![](https://nijialin.com/images/2021/login/4.png)
 
