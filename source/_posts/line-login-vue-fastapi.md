@@ -26,7 +26,7 @@ date: 2021-09-21 17:01:15
 
 # TL;DR
 
-- LINE Login 範例從 Flask 轉到 FastAPI 上
+- LINE Login 範例從 Flask 轉到 Vue+FastAPI
 - 前後端分離
   - 前端用兩個頁面清楚展示 LINE Login SSO 步驟
   - 後端兩個 API
