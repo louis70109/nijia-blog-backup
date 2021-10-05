@@ -78,6 +78,11 @@ LINE 工程團隊為了持續增加開發品質，一直很遵守所以資安以
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XE7-xpTCCTM?start=945" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+### 延伸閱讀
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CfPf9VtvkNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # 結論
 
 # 活動小結
