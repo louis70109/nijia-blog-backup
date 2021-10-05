@@ -38,15 +38,15 @@ LINE 工程團隊為了持續增加開發品質，一直很遵守所以資安以
 ![](https://nijialin.com/images/2021/ojt/2.png)
 
 除了打造服務外，由於人員越來越多，當然也就需要 Developer Relations 這樣的部門角色來建立起優良的內部文化，讓大家除了在打造生態系服務的同時，也可以透過各式各樣的內部活動來互相學習與交流，讓每位工程師可以將自身努力的經驗分享給大家。那到底做了些什麼呢？以下就由 Developer Relations 部門的資深技術推廣工程師 – Evan Lin 為大家介紹這個角色日常都在做些什麼。
-# Developer Relations - Evan Lin
+# 文化的重要性 Developer Relations - Evan Lin
 
 ![](https://nijialin.com/images/2021/ojt/4.png)
 
-Take Ownership
+- Take Ownership
 我們注重讓每位開發人員的自主權，從規劃、開發、參與討論，讓大家決定該做什麼、該怎麼做。這邊講者首先以 Antman 這個專案為開場介紹，透過工程師們自主提出問題，與不同團隊協同開發，讓壓縮的方式來節省圖片儲存空間 (詳細參考此篇)。
 接著是去年的 LINE SPOT 口罩地圖，因為疫情的關係，剛好搭配 location-based 的 LINE SPOT，在短短的幾天內迅速打造出口罩地圖，讓各位可以在線上就可以查詢還有哪邊還可以買到口罩，在嚴峻的疫情下效率最大化讓大家可以以最有效的方式找到需要的東西。
-Be Open：我們鼓勵每位同仁多參加研討會或是當講者，除了分享自己在專案上學到的東西外，也能學習不同領域的講者所使用的技能，在以下也會有片段介紹相關內容。
-Trust and Respect：因為疫情，我們需要透過 Work From Home 的機制來避免相關問題，透過此案例也驗證了這個文化的精髓。
+- Be Open：我們鼓勵每位同仁多參加研討會或是當講者，除了分享自己在專案上學到的東西外，也能學習不同領域的講者所使用的技能，在以下也會有片段介紹相關內容。
+- Trust and Respect：因為疫情，我們需要透過 Work From Home 的機制來避免相關問題，透過此案例也驗證了這個文化的精髓。
 
 
 ![](https://nijialin.com/images/2021/ojt/4.png)
@@ -57,10 +57,26 @@ Trust and Respect：因為疫情，我們需要透過 Work From Home 的機制�
 
 
 
-## Security team - Ethan
+## 為什麼需要資安? Security team - Ethan
 
 ![](https://nijialin.com/images/2021/ojt/6.png)
 
+
+## 共用工具的需求 - SRE
+
+
+## 開發流程的重要性
+
+- DevOps Task Force
+- Development Regulations Highlights
+  - Development Processes
+  - Source Code Management
+  - Deployment System
+  - Log Management
+
+當中的內容圍繞著以上列點的項目，首先的 Task Force，在 TECHPULSE 2020 有提到，
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XE7-xpTCCTM?start=945" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # 結論
 
