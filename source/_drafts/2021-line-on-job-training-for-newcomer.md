@@ -30,6 +30,8 @@ LINE 工程團隊為了持續增加開發品質，一直很遵守所以資安以
 # Engineering Introduction - CTO Marco
 
 - 部門歷史
+
+從很小到現在許多部門，
 - 人員組成
 
 ## 任何一段 Code 進入前都需要被 Review
