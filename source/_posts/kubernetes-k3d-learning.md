@@ -84,6 +84,41 @@ k3d cluster create mycluster --agents 1 -p '8082:30080@agent[0]'
 
 -p 的意思是將本機(Mac)的 8082 port 轉到 Docker 裡的 Kubernetes 環境中的 30080 port
 
+#### [2021/10/15 更新]
+
+在這天我在回顧使用時遇到了以下錯誤
+
+```
+Error from server (InternalError): an error on the server ("") has prevented the request from succeeding
+```
+
+問題是在 `kubectl` 沒有跟 `k3d` 建立的 cluster 連結
+
+因此重新建立一個 cluster 之後會看到以下的 logs:
+
+```
+INFO[0000] Prep: Network
+INFO[0000] Network with name 'k3d-nijiacluster' already exists with ID 'cd6c156a979c5cdec361aa1322a8b0486a1e910589041c5fdbee361f14693152'
+INFO[0000] Created volume 'k3d-nijiacluster-images'
+INFO[0001] Creating node 'k3d-nijiacluster-server-0'
+INFO[0001] Creating node 'k3d-nijiacluster-agent-0'
+INFO[0001] Creating LoadBalancer 'k3d-nijiacluster-serverlb'
+INFO[0001] Starting cluster 'nijiacluster'
+INFO[0001] Starting Node 'k3d-nijiacluster-server-0'
+INFO[0010] Starting Node 'k3d-nijiacluster-agent-0'
+INFO[0011] Starting Node 'k3d-nijiacluster-serverlb'
+INFO[0012] (Optional) Trying to get IP of the docker host and inject it into the cluster as 'host.k3d.internal' for easy access
+WARN[0017] Failed to patch CoreDNS ConfigMap to include entry '192.168.65.2 host.k3d.internal': Exec process in node 'k3d-nijiacluster-server-0' failed with exit code '1'
+INFO[0017] Successfully added host record to /etc/hosts in 3/3 nodes
+INFO[0017] Cluster 'nijiacluster' created successfully!
+INFO[0017] --kubeconfig-update-default=false --> sets --kubeconfig-switch-context=false
+INFO[0017] You can now use it like this:
+kubectl config use-context k3d-nijiacluster
+kubectl cluster-info
+```
+
+其中 `kubectl config use-context k3d-nijiacluster` 非常中藥，它需要設定 config 讓 kubectl 認識你的 k3d container，下完這指令之後就不會出現剛剛以上的問題喔。
+
 #### [2021/02/24 更新]
 
 透過 `docker ps` 會看到剛剛建立的 agent 被起了一個 Docker Container，並 forward `8082:30080` port，這就是 k3d 將 k3s 包裝起來的 Container
