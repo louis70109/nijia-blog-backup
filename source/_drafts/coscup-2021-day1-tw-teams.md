@@ -62,9 +62,11 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 
 ### [Central Dogma](https://github.com/line/centraldogma)
 
-隨著 CI/CD 越來越盛行，集中式管理 Config 也越來越重要，透過 Git 
-當然還有更多的開源專案大家可以上去查看並使用它們
+隨著 CI/CD 越來越盛行，集中式管理 Config 也越來越重要，透過 Git 來做版本管理也就成為趨勢之一，查過往修改的內容、透過 Pull Request 管理、全縣管例、[Git-to-CD](https://line.github.io/centraldogma/mirroring.html) 等等都是透過 Git 管理很重要的一環，雖然原生是透過 Java 撰寫，當然也還有其他版本的 SDK 提供給大家使用，如果大家對於 GitOps 相關實作有興趣可以使用看看。
 
+- Java
+- Go
+- xxx
 ## 參與開源
 
 ### 動手寫作比較有印象
@@ -90,7 +92,7 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 - [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
 
 
-### 還有沒有其他方法？
+### 還有沒有其他方法？來跨國公司實習
 
 <script async class="speakerdeck-embed" data-slide="24" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -106,16 +108,7 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 - [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
 - [LINE Developer Day 2020 – The past and future of machine learning research 議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-dev-day-2020-the-past-and-future-of-machine-learning-research/)
 
-### 「動手做就對了」 - 組對參加黑客松競賽
-
-<script async class="speakerdeck-embed" data-slide="29" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-身為工程師，有好的想法以及技術架構後，動手做是不二法則，真的把自己的想法實踐出來，並透過黑客松競賽來驗證團隊的想法是否能在比賽中展露頭角，為自己的履歷加分！以下就分享近期 LINE 舉辦的校園競賽給大家：
-
-- LINE FRESH 報名連結：https://tw-fresh.line.me/
-  - 報名到 **9/27**
-  - 有常見問題欄位可以查看
-  - 跨界組隊
+> [秋季場正火熱加開中](https://careers.linecorp.com/jobs/83)，不想錯過在跨國公司實習機會趕快手刀投下你的履歷，此次期間即日起至 2021.11.12 截止，趕快把握機會～
 
 # 團隊介紹
 
