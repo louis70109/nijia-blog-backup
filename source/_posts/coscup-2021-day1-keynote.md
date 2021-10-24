@@ -1,8 +1,15 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 【COSCUP throwback】Keynote | 參與開源
 tags:
+  - LINE
+  - COSCUP 主議程
+  - Open Source
+  - TECH FRESH
+  - 實習生
+categories: 研討會
+date: 2021-10-24 11:46:06
 ---
+
 
 <style>
   section.compact {
@@ -14,17 +21,15 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/coscup/keynote/1.JPG)
-
-# 前言
-
-<!-- more -->
+![](https://nijialin.com/images/2021/coscup/keynote/4.png)
 
 # 什麼是 COSCUP?
 
 [COSCUP](https://coscup.org/2021/zh-TW/) 是亞洲最大的開源會議之一，自 2006 年開始由開源社群舉行的年度會議，也是台灣自由開源軟體運動 (FOSSM) 的主要倡導者。COSCUP 包含演講、贊助商、社群攤位，以及 BoF 社群同樂會等，COSCUP 的宗旨在於提供一個聯結開放原始碼開發者、使用者與推廣者的平台。
 
 > 可惜今年因為疫情關係改為線上，但也不減大家參與 COSCUP 的熱情！
+
+<!-- more -->
 
 <script async class="speakerdeck-embed" data-slide="3" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -39,6 +44,8 @@ tags:
 <script async class="speakerdeck-embed" data-slide="5" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 今年是 LINE 的十週年，對於 LINE 來說，過去的十年只是一個開始。 10 週年概念口號 “To The Next” 表達了 LINE 將繼續傾聽用戶的聲音，並在未來 10 年繼續創造更好服務的理念。
+
+![](https://nijialin.com/images/2021/coscup/keynote/1.JPG)
 
 ## 支持開源專案
 
@@ -64,12 +71,13 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 
 隨著 CI/CD 越來越盛行，集中式管理 Config 也越來越重要，透過 Git 來做版本管理也就成為趨勢之一，查過往修改的內容、透過 Pull Request 管理、全縣管例、[Git-to-CD](https://line.github.io/centraldogma/mirroring.html) 等等都是透過 Git 管理很重要的一環，雖然原生是透過 Java 撰寫，當然也還有其他版本的 SDK 提供給大家使用，如果大家對於 GitOps 相關實作有興趣可以使用看看。
 
-- Java
-- Go
-- xxx
-## 參與開源
+- [Java](https://github.com/line/centraldogma)
+- [Golang](https://github.com/line/centraldogma-go)
+- [Rust](https://github.com/line/centraldogma-rs)
 
-### 動手寫作比較有印象
+## 一起參與開源
+
+### 1. 動手寫作比較有印象
 
 <script async class="speakerdeck-embed" data-slide="21" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -78,7 +86,7 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 - [Open Policy Agent – 快速導入 Authz 至 Microservice 架構](https://engineering.linecorp.com/zh-hant/blog/open-policy-agent-authz-in-microservice/)
 - [ICASSP 2021 會議心得](https://engineering.linecorp.com/zh-hant/blog/icassp-2021/)
 
-### 開口講印象更深
+### 2. 開口講印象更深
 
 <script async class="speakerdeck-embed" data-slide="23" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -90,7 +98,6 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 - [OpenTelemetry 初體驗：實踐 Chaos Engineering 來 Drive the Observability’s best practice](https://engineering.linecorp.com/zh-hant/blog/opentelemetry-chaos-engineering-drive-the-observability-best-practice/)
 - [LINE 資料工程團隊如何透過專業分工與 MLOps 打造不同服務 | 以 MarTech & NLP 為例](https://engineering.linecorp.com/zh-hant/blog/lets-play-in-data-park/)
 - [輕鬆「Go」建事件驅動應用 @ Golang Taipei Gathering #55](https://engineering.linecorp.com/zh-hant/blog/20210226-golang-event-driven/)
-
 
 ### 還有沒有其他方法？來跨國公司實習
 
@@ -188,6 +195,8 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 
 ## QA 工程團隊
 
+![](https://nijialin.com/images/2021/coscup/keynote/3.png)
+
 <script async class="speakerdeck-embed" data-slide="2" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 開場 Richard 帶大家了解 Quality Assurance(QA) 以及 Quality Control(QC) 的差別，很多時候會覺得當產品(服務)要上線前只要讓 QA 測完後就可以上線，而若在上線前的階段才做測試，往往所遇到的問題以及付出的代價都會相對高許多。
@@ -212,6 +221,10 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 - [QA Engineer](https://careers.linecorp.com/jobs/19)
 
 # 結論
+
+在一年一度 COSCUP 的活動與每一位開發者交流都讓讓我們同仁收穫非常多，感受到開源同伴們的熱情參與，如果你也想參與開源專案的開發，不妨參考[ LINE GitHub](https://github.com/line) 中的專案，從發送一個增加功能的 Pull Request 開始，抑或是從修改、整理文件內容，我們也都很歡迎你勇敢跨出第一步來一起加入開源行列喔！
+
+> 那我們就下次見！
 
 # 活動小結
 
