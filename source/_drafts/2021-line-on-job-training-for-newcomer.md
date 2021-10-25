@@ -76,15 +76,18 @@ LINE 工程團隊為了持續增加開發品質，一直很遵守所以資安以
 ## 開發流程的重要性
 
 - DevOps Task Force
+
+當中的內容圍繞著以上列點的項目，首先的 Task Force，在 TECHPULSE 2020 有提到，歡迎大家參考影片中的內容
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XE7-xpTCCTM?start=945" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 - Development Regulations Highlights
   - Development Processes
   - Source Code Management
   - Deployment System
   - Log Management
 
-當中的內容圍繞著以上列點的項目，首先的 Task Force，在 TECHPULSE 2020 有提到，
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XE7-xpTCCTM?start=945" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+團隊擴編、程式碼持續迭代、Sprint 一個接著一個之餘，管理開發流程就相當的重要，一切都是要從基本做起，因此在這個部分的介紹讓新進人員可以透過訓練讓相關知識更加穩固，未來開發上也可以更依循相關的技巧讓專案變得更好維護以及監控。
 
 ### 延伸閱讀
 
@@ -92,9 +95,22 @@ LINE 工程團隊為了持續增加開發品質，一直很遵守所以資安以
 
 ## [世界地圖競賽](https://virtualvacation.us/guess)
 
-因為疫情關係無法在日本總部 Training
+因為疫情關係無法帶同仁們去日本總部 Training (洗禮?)，但身在跨國公司怎麼能不有國際觀呢？因此將同仁們分到每組來體驗異國風情，當中許多同仁會透過各種方法來辨認地區，右駕、招牌、穿著、植物等等，甚至同仁直接開啟 F12 來檢查一下是不是有答案(API)在後面...(小編覺得佩服)
+
+![](https://nijialin.com/images/2021/ojt/7.jpeg)
+
+過程中非常的精彩，在有限時間內搭配組員間的默契也可以在分組討論的空間中互相幫忙，也讓每位同仁可以認識未來有機會合作的同仁，經過最後的競爭也前三名的同仁獲得小禮物啦～
+
+![](https://nijialin.com/images/2021/ojt/9.jpeg)
 
 # 結論
+
+![](https://nijialin.com/images/2021/ojt/8.jpeg)
+
+我們重視每位同仁的發展與相關的訓練制度，確保同仁們加入工程部門後對於跨部門知識是有一定的見解，日後合作時可以更清楚相關問題可以諮詢哪個部門，如果你也想加入我們，除了到 LINE Career 上投遞正職職缺外，如果讀者目前還是學生身份，也很歡迎申請我們 [TECH FRESH 計畫](https://careers.linecorp.com/jobs/83)的職缺，相關訊息放在下面提供給大家參考囉！
+
+- [LINE Career 台灣類別](https://careers.linecorp.com/jobs?ca=All&ci=Taipei&co=East%20Asia)
+- [TECH FRESH 計畫](https://careers.linecorp.com/jobs/83)
 
 # 活動小結
 
