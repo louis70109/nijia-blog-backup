@@ -121,19 +121,18 @@ Armeria 是個讓 Java 開發者能夠使用的微服務框架，在現在容器
 
 ## Frontend 工程團隊
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HGu7jUmxXJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為前端的一份子，就是要讓用戶可以在 Client 端與 Web 端使用起來的體驗一致，以下這些服務你使用時是否也覺得跟 APP 差不多呢？
 
-<script async class="speakerdeck-embed" data-slide="4" data-id="3448a654c505429ba38fb8c1a7f24a65" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="6" data-id="824faed02d31456d96d39997915677f9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 且由於前端產品線很多，許多時候需要打造共用的工具來讓不同服務可以使用共同的元件，把已有成效的解決方案有計畫的打造出來，除了品質統一與避免重造輪子之外，也讓往後新進來的人員能夠有個標準化的內容參閱來維護既有的產品。
 
-<script async class="speakerdeck-embed" data-slide="9" data-id="3448a654c505429ba38fb8c1a7f24a65" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="8" data-id="824faed02d31456d96d39997915677f9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 而接下來公司的方向將會漸漸將重心轉換到自然流量上，因此 Frontend 團隊就會更多處理 **SEO** 與 **Web 效能優化** 相關的工作內容，同時也引入 SSR 以及 AMP 來對齊公司的目標。
 
-<script async class="speakerdeck-embed" data-slide="12" data-id="3448a654c505429ba38fb8c1a7f24a65" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="11" data-id="824faed02d31456d96d39997915677f9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 當然在裡面也會與不同團隊的成員合作，讓產品可以更快速地交付、維護、更安全以外，內部也會透過分享來讓更多團隊了解不同的解決方案的優點。
 
@@ -143,11 +142,11 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 
 ## LINE Pay 團隊
 
-<script async class="speakerdeck-embed" data-slide="4" data-id="3298c104de1646e89c202f575f04fc4f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="3" data-id="e38aa395c27a4bad99df1fcfd699b6e3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 除了大家平常所使用且熟悉的支付服務以外，其實日常也需要處理**金融相關**、**信用卡回饋**等等的專案內容，而從 [TECHPUSE 2020](https://www.youtube.com/watch?v=K9ZHOdjZyug) 之後，LINE Pay 陸續提供了 Extra Service 來達到在地化服務，像是 **我的會員卡**、**廣告投放**與透過**LINE Pay 地圖**讓大家知道到底有哪些商家支援 LINE Pay，不用出門就可以知道可去哪邊使用 LINE Point 回饋點數了。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rndT5K8isww?start=336" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script async class="speakerdeck-embed" data-slide="15" data-id="e38aa395c27a4bad99df1fcfd699b6e3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 在日常處理不同的專案之外，LINE Pay 也含有許多內部 PoC 專案，身為工程師一定會有很多想法想用，想實驗很多新學的東西，透過這些專案去驗證想法的可行性，讓想法有機會進入產品之中。
 
@@ -201,7 +200,7 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 
 開場 Richard 帶大家了解 Quality Assurance(QA) 以及 Quality Control(QC) 的差別，很多時候會覺得當產品(服務)要上線前只要讓 QA 測完後就可以上線，而若在上線前的階段才做測試，往往所遇到的問題以及付出的代價都會相對高許多。
 
-<script async class="speakerdeck-embed" data-slide="3" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="15" data-id="e38aa395c27a4bad99df1fcfd699b6e3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 而在 LINE Taiwan QA 部門這邊為了確保整體服務的品質，會在專案早期就參與計劃定製，與 Developer、Design、Planner..等等不同部門的角色一起討論整個流程，協助訂定不同的 Scenario 讓初期的討論可以更加完整。
 
