@@ -43,13 +43,18 @@ date: 2021-10-24 11:46:06
 
 <script async class="speakerdeck-embed" data-slide="5" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-今年是 LINE 的十週年，對於 LINE 來說，過去的十年只是一個開始。 10 週年概念口號 “To The Next” 表達了 LINE 將繼續傾聽用戶的聲音，並在未來 10 年繼續創造更好服務的理念。
+今年是 LINE 的十週年，很高興可以在 COSCUP 上與大家一起分享這個喜悅，對於 LINE 來說，過去的十年只是一個開始，10 週年概念口號 “To The Next“ 表達了 LINE 將繼續傾聽用戶的聲音，並在未來 10 年繼續創造更好服務的理念。
 
-![](https://nijialin.com/images/2021/coscup/keynote/1.JPG)
+在十週年的今天若你也對於 LINE 的工程團隊、抑或是 LINER 在 COSCUP 上分享內容有興趣，歡迎參考以下回放文章，當中都有許多很精彩的分享！
 
+- [COSCUP 2021 議程分享：Empower Your Kubernetes with Service Mesh + Distributed Tracing](https://engineering.linecorp.com/zh-hant/blog/coscup-2021-empower-your-kubernetes-with-service-mesh-distributed-tracing/)
+- [使用 Kubernetes 打造具有會員註冊、身份驗證的多功能聊天機器人](https://engineering.linecorp.com/zh-hant/blog/coscup-2021-chatbot-in-kubernetes-session/)
+- [【COSCUP throwback】日本團隊分享 | Verda, LIFF](https://engineering.linecorp.com/zh-hant/blog/coscup-throwback-verda-liff/)
+- [【COSCUP Throwback】LINE Fukuoka 團隊分享](https://engineering.linecorp.com/zh-hant/blog/coscup-2021-line-fukuoka/)
+- [【COSCUP Throwback】LINE Thailand Developer Relations 議程分享](https://engineering.linecorp.com/zh-hant/blog/coscup-2021-line-thailand-developer-relations/)
 ## 支持開源專案
 
-<script async class="speakerdeck-embed" data-slide="9" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="98f89fa9638e48bfbbeaff2bcd9d9653" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 或許大家很常用也熟知 LINE Chatbot、LINE Login、LIFF 等等的技術與服務，在提供服務之虞 LINE 也花了很多心力建置了許多開源專案，希望藉由分享我們的使用情境、經驗、開源貢獻來幫助每位開發者，在開發的路上能夠更高效、更有彈性的去創造許多創意的產品，以下列幾個讓大家稍微瞭解一下：
 
