@@ -1,8 +1,12 @@
 ---
-title: '2021 LINE Taiwan On Job Training(OJT) 線上花絮'
+title: 2021 LINE Taiwan On Job Training(OJT) 線上花絮
+tags:
+  - On Job Training
+  - LINE
 categories: LINE
-tags: ['On Job Training', 'LINE']
+date: 2021-10-29 20:44:17
 ---
+
 
 <style>
   section.compact {
@@ -53,11 +57,12 @@ LINE 工程團隊為了持續增加開發品質，一直很遵守所以資安以
 
 ![](https://nijialin.com/images/2021/ojt/4.png)
 
-- Take Ownership
+- **Take Ownership**
   我們注重讓每位開發人員的自主權，從規劃、開發、參與討論，讓大家決定該做什麼、該怎麼做。這邊講者首先以 Antman 這個專案為開場介紹，透過工程師們自主提出問題，與不同團隊協同開發，讓壓縮的方式來節省圖片儲存空間 (詳細參考此篇)。
-  接著是去年的 LINE SPOT 口罩地圖，因為疫情的關係，剛好搭配 location-based 的 LINE SPOT，在短短的幾天內迅速打造出口罩地圖，讓各位可以在線上就可以查詢還有哪邊還可以買到口罩，在嚴峻的疫情下效率最大化讓大家可以以最有效的方式找到需要的東西。
-- Be Open：我們鼓勵每位同仁多參加研討會或是當講者，除了分享自己在專案上學到的東西外，也能學習不同領域的講者所使用的技能，回饋平台上應用的新技術與新知於社群上，讓自己更進步外也能更多瞭解其他地方是如何應用相關技術。
-- Trust and Respect：團隊間成員彼此互相信任且尊重彼此的意見，當團隊裡的成員提出不同角度的想法時，能夠藉由彼此的討論，進而增加產品的創新性與提升團隊的化學效應。
+  接著是去年的 LINE SPOT 口罩地圖，因為疫情的關係，剛好搭配 location-based 的 LINE SPOT，在短短的幾天內迅速打造出口罩地圖，讓各位可以在線上就可以查詢還有哪邊還可以買到口罩，在嚴峻的疫情下效率最大化讓大家可以以最有效的方式找到需要的東西，同時也鼓勵每位同仁發揮黑客的精神持續打造與發想新的應用。
+> 延伸閱讀： [LINE Taiwan Internal Hackathon 2020 活動紀錄](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-internal-hackathon-2020/)
+- **Be Open**：鼓勵每位同仁踴躍參加研討會或是當講者，除了分享自己在專案上學到的東西外，也能學習成果不同領域的講者所使用的技能，回饋平台上應用的新技術與新知於社群上，讓自己更進步外也能更多瞭解其他地方是如何應用相關技術。
+- **Trust and Respect**：團隊間成員彼此互相信任且尊重彼此的意見，當團隊裡的成員提出不同角度的想法時，能夠藉由彼此的討論，進而增加產品的創新性與提升團隊的化學效應。
 
 > 歡迎參考在 [Recruitment Day 2021 的議程](https://engineering.linecorp.com/zh-hant/blog/line-recruitment-day-2021/#internal-developer-relations)
 
