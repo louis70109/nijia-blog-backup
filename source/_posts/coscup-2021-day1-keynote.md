@@ -200,23 +200,23 @@ LINE 裡有許多服務都是使用 Web 相關技術打造而成的，而作為�
 
 ![](https://nijialin.com/images/2021/coscup/keynote/3.png)
 
-<script async class="speakerdeck-embed" data-slide="2" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="8" data-id="a6d4590aa77a47389473cc2b6999db4c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 開場 Richard 帶大家了解 Quality Assurance(QA) 以及 Quality Control(QC) 的差別，很多時候會覺得當產品(服務)要上線前只要讓 QA 測完後就可以上線，而若在上線前的階段才做測試，往往所遇到的問題以及付出的代價都會相對高許多。
 
-<script async class="speakerdeck-embed" data-slide="15" data-id="e38aa395c27a4bad99df1fcfd699b6e3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="7" data-id="a6d4590aa77a47389473cc2b6999db4c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 而在 LINE Taiwan QA 部門這邊為了確保整體服務的品質，會在專案早期就參與計劃定製，與 Developer、Design、Planner..等等不同部門的角色一起討論整個流程，協助訂定不同的 Scenario 讓初期的討論可以更加完整。
 
-<script async class="speakerdeck-embed" data-slide="4" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="10" data-id="a6d4590aa77a47389473cc2b6999db4c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 而在開發階段時，QA 同仁則會開始建立許多不同情境的測試案例，同時也與 developer 討論相關情境與測試自動化的相關問題，讓 QA 的同仁可以有更好的切入點找出問題，同時也透過自動化讓整體作業更加順暢。
 
-<script async class="speakerdeck-embed" data-slide="7" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="13" data-id="a6d4590aa77a47389473cc2b6999db4c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 同時 QA 團隊除了建置自動化流程外，也會打造 CI/CD 輔助優化整體流程。我們透過自動化讓我們獲得了不少的好處。更多精彩內容也歡迎各位參閱影片內容。
 
-<script async class="speakerdeck-embed" data-slide="11" data-id="9b2a340848894e58bc109bd6f19ab992" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="16" data-id="a6d4590aa77a47389473cc2b6999db4c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 若您對於優化提升品質與以及自動化工程等等的工作內容有興趣的話歡迎參考以下職缺，目前也正如火如荼地找尋優秀人才！
 
