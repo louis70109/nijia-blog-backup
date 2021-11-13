@@ -57,6 +57,7 @@ date: 2019-10-16 11:28:36
 
 # Workshop
 
+- [手把手透過 LINE Bot 打造出雲端的 ChatOps @ Cloud Edge Summit 2021](https://cloudsummit.ithome.com.tw/2021/workshop-page/550)
 - [[EN] NYCU Glocal Design Competition @ online](https://event.oia.nycu.edu.tw/page/competition)
   - [LINE Bot APIs introduction and demonstration](https://speakerdeck.com/line_developers_tw2/line-bot-apis-introduction-and-demonstration)
   - [Agenda](https://event.oia.nycu.edu.tw/page/competition#agenda)
