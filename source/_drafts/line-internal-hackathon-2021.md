@@ -1,7 +1,7 @@
 ---
-title: '2021 梅竹黑客松活動紀錄'
+title: 'AI for the New Normal - LINE Taiwan Internal Hackathon'
 categories: 研討會
-tags:
+tags: ['Internal Hackathon', 'LINE']
 ---
 
 <style>
@@ -17,7 +17,8 @@ tags:
 ![](https://nijialin.com/images/2021/)
 
 # 前言
-大家好，很高興 LINE 能參加一年一度的梅竹黑客松，即便在疫情之下大家還是很有熱情的在線上舉辦工作坊、黑客松等等的活動，以下就為各位分享本次參加的活動紀錄以及前三名的作品吧！
+
+一年一度的 Internal Hackathon 以線上結合線下的方式執行
 
 <!-- more -->
 
