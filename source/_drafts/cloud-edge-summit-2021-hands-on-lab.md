@@ -20,8 +20,14 @@ tags:
 
 <!-- more -->
 
+# 影片
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zeMrJ6rdZvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 # 介紹
 
+<script async class="speakerdeck-embed" data-slide="3" data-id="0b9da9e06a3f47c2ab0d7aabf6fae517" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 # 結論
 
 - [prometheus/client_python](https://github.com/prometheus/client_python)

@@ -14,7 +14,7 @@ tags: ['Internal Hackathon', 'LINE']
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://nijialin.com/images/2021/internal_hack/1.JPG)
 
 # 前言
 
@@ -24,7 +24,32 @@ tags: ['Internal Hackathon', 'LINE']
 
 # 介紹
 
-# 結論
+11/05 是個很特別的日子，活動一直在持續準備，
+
+- 持續關注疫情最新消息，盡可能降低
+- 在安全的範圍內讓大家體驗到最好的服務
+
+
+也是在大家一同為防疫努力這麼久後第一次的大型聚會，
+
+這次結合了來新辦公室時公司所打造的高級直播設備
+
+## 線上線下的直播體驗的黑客松
+
+- 同仁們可以在會議室中專心準備接下來的簡報
+- 同時觀看現場狀態
+- 避免群聚
+
+
+
+
+最後當然還有一個環節，就是靠著大家平時累積的人脈所頒發的特別獎！
+# 結論 - 「AI for the New Normal」
+
+透過黑客松讓 LINER 可以發揮平常
+
+
+![](https://nijialin.com/images/2021/internal_hack/5.JPG)
 
 # 活動小結
 
