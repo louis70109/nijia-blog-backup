@@ -47,7 +47,9 @@ with PostgresContainer("postgres:9.5") as postgres:
 
 ## 整合進 Global 宣告的 FastAPI 中
 
-API 啟動時會建立相關的 engine:
+> 以下程式來自我的 [Side Project](https://github.com/louis70109/WordsGame)
+
+我的後端 API 啟動時會建立相關的 engine，把相關資料庫的東西都一起建立出來:
 
 ```python
 @app.on_event("startup")
@@ -57,7 +59,7 @@ async def startup() -> None:
     db.Base.metadata.create_all(bind=engine)
 ```
 
-同時會 reference 到以下的 Code:
+並同時會 reference 到以下的 Code: ([參考網址](https://github.com/louis70109/WordsGame/blob/master/fastapi-backend/main.py#L10))
 
 ```python
 SQLALCHEMY_DATABASE_URL = os.getenv('DATABASE_URI')
