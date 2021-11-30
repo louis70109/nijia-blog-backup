@@ -1,6 +1,15 @@
 @startuml
-user->sticker: click mission sticker
-sticker->store: enter to store
-store->landing page: click button to enter page
-landing page->opensea: check UID and wallet, if YES will send Mission sticker
+User->Frontend: 按下 LINE Login 按鈕
+Frontend->Backend: 索取認證網址(authorize URI)
+note over Frontend: Client_id, Redirect_uri 存在後端較保險，因此不讓前端自組
+Backend->Frontend: 回傳認證網址
+Frontend->LINE: 導向登入畫面(window.replace)
+LINE->User: 登入請求
+User->LINE: 輸入帳號密碼
+LINE->Frontend: 透過 Redirect_uri 回到認證頁面(code, state)
+Frontend->Backend: 將資訊傳送至後端
+note over Backend: 藉由 Secret + Client_id 來解開 JWT
+Backend->Frontend: 回傳解開後的用戶資訊
+Frontend->Frontend: 將資訊放入 localStorage 中
+Frontend->User: 登入成功，進行遊戲
 @enduml
