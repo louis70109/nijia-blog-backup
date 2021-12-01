@@ -18,7 +18,6 @@ tags:
 
 # 前言
 
-
 大家好，我是 LINE Taiwan 的 Tech Evangelist - NiJia Lin。這次很開心受到 chatbot 社群的邀請，參加了 "[中部人的 Chatbots Meetup 聊天機器人小小聚 #18 @ 臉書社團直播](https://hackmd.io/@chatbot-tw/chatbots-meetup-in-central-taiwan-018)" 的聚會活動，並且分享 LINE API 更新與個人彈幕遊戲的開發心得。在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。
 
 - 社群 Chatbots Meetup： [https://chatbots.kktix.cc/](https://chatbots.kktix.cc/)
@@ -33,22 +32,71 @@ tags:
 
 # 彈幕遊戲開發分享
 
+- [GitHub](https://github.com/louis70109/WordsGame)
+
+之前有寫過一個彈幕與 LINE Bot 結合的[一個範例](https://github.com/louis70109/Screen-LINE-Bullets)，當時就在想除了在活動上與大家互動之外，還有什麼功能是可以結合的呢？伴隨著前一陣子我在背日文五十音，為了加強自己的印象因此開發與彈幕整合在一起，嘗試讓自己的印象可以更深刻，不過一直忘記眼前的單字是誰。
+
+- 影片
+
+## 遊戲本體
+
+<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在前端頁面上已較簡易的方式呈現，僅需**用戶登入**、**輸出日文**、**查看排名**三個功能，而在用戶登入的功能上我選擇 LINE Login 做快速登入，實作用戶相關功能時我會考慮以下幾點：
+
+- 如何最簡化登入步驟
+- 什麼帳號是大部分人都有
+- 只需能快速確認真實用戶即可
+- 開發文件需要持續有在更新
+- 帳號安全性
+
+<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+實作的部分過去有寫過相關的文章，大家在參考流程圖時不仿看看之前寫的文章，此次 LINE Login 整合參考如下：
+
+- [透過 Vue + FastAPI 完成 LINE Login 一鍵式登入](https://engineering.linecorp.com/zh-hant/blog/line-login-vue-fastapi/)
+- [LINE Bot 開發者指南詳解 – 4. LINE Login](https://engineering.linecorp.com/zh-hant/blog/line-bot-guideline-4/)
+- [LINE Bot 開發者指南詳解 – 5. LINE Login (補充)](https://engineering.linecorp.com/zh-hant/blog/line-bot-guideline-5/)
+
 ## 後端 FastAPI 在 Docker 中開發(含資料庫)
 
-- 環境孤立化，怎麼弄都跟外面的世界(筆電/PC) 沒關係
-- Docker 非常肥，如果有空間考慮開發完記得刪除
+過去我在開發的經驗如下：
+
+- 獨立開一台測試用的環境 + 資料庫
+  - 所有測試資料都在這，新服務多了之後需反覆確認表格
+- 或在 Docker 中建立測試用的資料庫，只能共用一個
+  - Docker 多開資料庫也會增加電腦負擔
+  - API 在本地端，資料庫在 Docker，開發久了會搞混
+
+而在學會把環境藉由 VSCode 整合進 Docker 裡面開發之後，發現了一個非常酷的世界，畢竟在開發上我個人還是喜歡把東西放在一起開發，因此透過 VSCode 遠端的方式連到 Docker 裡面開發 FastAPI + 資料庫時就非常的棒，且有以下的優點：
+
+- 環境孤立化，在裡面就像在虛擬機裡開發一樣
+- 用完就可以刪除，不會影響到本機的內容
+- 都在 VSCode，開發前端也沒問題 (開發習慣統一)
+
+> 若你對相關的設定方式也有興趣可以參考這篇文章 - [如何在 VSCode 中以 Container 方式開發 FastAPI + PostgreSQL](https://nijialin.com/2021/05/29/fastapi-dev-in-container-vscode/)
+
 <script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## 實裝 Test Container 於 GitHub Actions 中
 
-- 真實訪問資料庫
+這一陣子許多同事除了在內部分享會中分享 Testcontainer 的技術，也有到 JCConf 2021 上分享 - [Integration testing with Testcontainers](https://jcconf.tw/2021/)，在內容上都非常精彩，也讓我想試試看這部分
 
-- Chatbot 部分
-  - 測試階段因 LINE Bot 需要介面操作才有辦法觸發
-  - 因此這邊建議可以 Mock LINE Server
-  - 抑或是在抑或是在環境變數中設定 LINE Bot 的真實金鑰讓初始化成功
-  - Webhook 裡面的用法針對韓式去做測試即可
+而過往我在寫單元測試 (Unit) 時，時常都把資料庫的函式都直接擋住 (Mock)，假裝他是成功的情況下往下走。但在一個 API 中資料庫往往是最容易在緊繃時掛掉，亦或是工程是手癢去改了某個欄位，讓整個服務瞬間炸掉，這些問題都是我們無法控制的部分… 因此實際讓資料庫跑在測試時可以有個真的環境可以使用是很重要的一環，雖然看專案規模，測試時間有多有少有長有短，但放著一個 Container/VM 在那邊沒用就是很浪費啊，因此就有本次要介紹的 Test Container。
 
+使用 Test Container 有以下的好處：
+
+- 使用時才建立容器
+- 能夠真實訪問資料庫
+- 讓 API 的測試可以完整走流程
+
+而相對 LINE Bot 的部分測試上需要多注意點
+
+- 測試階段因 LINE Bot 需要介面操作才有辦法觸發
+  - 這部分可以嘗試 Mock LINE Server
+- 抑或是在環境變數中設定 LINE Bot 的真實金鑰讓初始化
+  - 簽證過了就表示成功
+- Webhook 裡面的用法針對函式去做測試即可
 
 ## Chatbot 在本次的用途
 
