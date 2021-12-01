@@ -90,21 +90,33 @@ tags:
 - 能夠真實訪問資料庫
 - 讓 API 的測試可以完整走流程
 
+<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 而相對 LINE Bot 的部分測試上需要多注意點
 
 - 測試階段因 LINE Bot 需要介面操作才有辦法觸發
-  - 這部分可以嘗試 Mock LINE Server
+  - 這部分可以嘗試 Mock LINE Server，期望 Server 都正常回覆
 - 抑或是在環境變數中設定 LINE Bot 的真實金鑰讓初始化
   - 簽證過了就表示成功
 - Webhook 裡面的用法針對函式去做測試即可
 
-## Chatbot 在本次的用途
+## LINE Bot 在本次的用途
 
-- 透過對話當作簡易的管
-- 僅限 admin
+<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-# API Update 分享
+過去我們都習慣在聊天機器人讓做各式應用，其實對話式應用都存在於各種輸入框中，而這次的分享我以日文單字的小遊戲來做一個對話應用，最後再讓管理者可以透過 LINE Bot 中去設定遊戲的難度，增加遊戲的樂趣。
 
+而後續還可以再整合一些功能，讓這次的分享內容可以有更多的應用，像是整合 **平假**/**片假**、抓字典、甚至到 STT 的整合也是可以(只是 latency 要測看看)，如果你也想試看看類似的作法，歡迎參考這次的[範例專案](https://github.com/louis70109/WordsGame)，更多資訊也會在之後於 README 中補充!
+
+# 最後還是需要來個 API Update
+
+<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+相信有在使用 LINE 的朋友一定對隨你填貼圖不陌生(甚至人手好幾組)，於今年初時貼圖的 Webhook 回傳更新上就能透過收到 keywords 來了解用戶發送貼圖的契機，而隨著更新至今，隨你填貼圖裡面的內容也可以在 Webhook 中被收到囉！也可以更進一步當使用者傳送這類型貼圖時，更能抓住使用者當前的狀態，進一步地提供更客製化的資訊給他們，讓應用場景更加活躍。
+
+<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+LIFF 更新
 # 結論
 
 雖然 demo 時還是老樣子 Server 不聽話，只能先架設在本地端讓大家試玩，希望能透過這次的分享讓大家有新的點子以及參考內容來打造更酷很有趣的應用，Chatbot 社群也都非常有活力，歡迎各路好手踴躍前往分享參加。
