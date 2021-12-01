@@ -31,11 +31,29 @@ tags:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xaOpNhB0vBs?start=373" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# 彈幕遊戲分享
+# 彈幕遊戲開發分享
 
 ## 後端 FastAPI 在 Docker 中開發(含資料庫)
 
-## 實裝 Test Container
+- 環境孤立化，怎麼弄都跟外面的世界(筆電/PC) 沒關係
+- Docker 非常肥，如果有空間考慮開發完記得刪除
+<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 實裝 Test Container 於 GitHub Actions 中
+
+- 真實訪問資料庫
+
+- Chatbot 部分
+  - 測試階段因 LINE Bot 需要介面操作才有辦法觸發
+  - 因此這邊建議可以 Mock LINE Server
+  - 抑或是在抑或是在環境變數中設定 LINE Bot 的真實金鑰讓初始化成功
+  - Webhook 裡面的用法針對韓式去做測試即可
+
+
+## Chatbot 在本次的用途
+
+- 透過對話當作簡易的管理介面
+- 僅限 admin
 
 # API Update 分享
 
