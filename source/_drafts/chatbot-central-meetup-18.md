@@ -114,17 +114,15 @@ tags:
 
 相信有在使用 LINE 的朋友一定對隨你填貼圖不陌生(甚至人手好幾組)，於今年初時貼圖的 Webhook 回傳更新上就能透過收到 keywords 來了解用戶發送貼圖的契機，而隨著更新至今，隨你填貼圖裡面的內容也可以在 Webhook 中被收到囉！也可以更進一步當使用者傳送這類型貼圖時，更能抓住使用者當前的狀態，進一步地提供更客製化的資訊給他們，讓應用場景更加活躍。
 
-
 ## LIFF 更新
 
 <script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-
 往往加入一個領域開發時，都會希望有個能夠參考的範例，讓首次或是往後的開發可以依照一個樣板去開發。在 LIFF 中，你可以使用官方提供的 [line-liff-v2-starter](https://github.com/line/line-liff-v2-starter) 開始，讓開發者們在加入 LIFF 開發時可以有個樣板參考。
 
-另一方面，除了開發上，任何專案在開始前都需要確認功能是否能正常使用，
+另一方面，除了開發上，任何專案在開始前都需要確認接下來要引入的工具功能是否能正常使用，這方面 LIFF 提供了一個 [Playground](https://liff-playground.netlify.app/) 讓各位正在考慮使用的人可以有的地方拿各種手機、桌電、筆電來確認 LIFF 的使用狀態，如果大家也在考慮開發 LIFF 的話歡迎參考以下連結：
 
-https://liff-playground.netlify.app/
+> [https://liff-playground.netlify.app/](https://liff-playground.netlify.app/)
 
 # 結論
 
