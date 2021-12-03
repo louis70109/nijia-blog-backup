@@ -1,6 +1,6 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: "LINE 開發者社群計畫: 中部人的 Chatbot Meetup #18 心得分享"
+categories: 研討會
 date: 2021-12-02 19:13:56
 tags:
 ---
@@ -16,7 +16,6 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
 
 # 前言
 
