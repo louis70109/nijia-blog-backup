@@ -69,15 +69,25 @@ tags:
 
 在聽每一組的報告之後，我們當然有準備美味的點心讓同學的可以放下緊張的心情，在享受美味的點心之餘可以認識不同組別的同學，即便在競賽的當下也可以廣結善緣，說不定大家未來都會是好同事呢！
 
-因為是競賽，一定會分出前三名，每組成績真的都非常相近，或許這次沒有得名，但每位同學可以從茫茫人海中入選到總決賽的十組已經是非常棒了!
-
-# 結論
 ![](https://nijialin.com/images/2021/fresh-2021/5.JPG)
 
 
-LINE FRESH 過去是提供給同學的一個實習計畫，這兩屆藉由競賽讓同學們在競賽中發想出
+因為是競賽，一定會分出前三名，每組成績真的都非常相近，或許這次沒有得名，但每位同學可以從茫茫人海中入選到總決賽的十組已經是非常棒了！且每組的內容都相當有吸引力，每位評審與現場同仁也都聽得津津有味，希望每位同學可以藉由這次競賽的動力幫助社會解決更多需要被關注的議題，把新活力注入到社會中，讓大家的未來能夠更加美好！
+
+# 結論
+
+LINE FRESH 過去是提供給同學的一個實習計畫，這兩屆藉由競賽讓同學們在競賽中發想出許多非常棒的主題內容，
 
 <script async class="speakerdeck-embed" data-id="0ec99040fbed4ad592fcf1c40dfa1f4e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+如果你也身懷絕技，想透過技術解決大家生活中所會遇到的事情，歡迎持續關注我們的 TECH FRESH 的實習計畫，過去有許多學長姐分享各種經驗，歡迎大家參考以下的文章，相信對你未來加入 LINE 大家庭都會有幫助喔！
+
+- [LINE TECH FRESH: 從實習到成為正職的經歷](https://engineering.linecorp.com/zh-hant/blog/from-line-tech-fresh-to-liner/)
+- [【訪談】TECH FRESH 工作老實說 – 後續花絮與相關資訊整理](https://engineering.linecorp.com/zh-hant/blog/what-is-tech-fresh-interview/)
+- [TECH FRESH 實習的一年間，除了開發還有什麼內部活動呢？](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2020-graduate/)
+- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
+- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
+- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
 
 # 活動小結
 
