@@ -14,43 +14,76 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://nijialin.com/images/2021/fresh-2021/4.JPG)
 
 # 前言
 
-今年五月台灣受到嚴重的疫情衝擊，百行百業都受到衝擊(也包括了此場活動)，隨著時間的推進疫情逐漸趨緩，同學們可以實地勘察商圈的情況，了解商圈所需要的內容以及應用相關的技術來解決面臨到的問題
+今年，台灣本土疫情加劇，各行各業面臨了更嚴峻的衝擊與挑戰，迫切需要進行數位轉型，才能在消費市場中逆勢突圍。從疫情三級警戒以來，民眾減少外出、實體消費大幅降低。在全球疫情持續發展的情況下，許多台灣在地的中小型店家同時面臨防疫規範與人流流失的困境，卻也因此意識到轉型的急迫性，積極導入數位平台資源和多元行銷工具。
+ 
 
+為了讓數位轉型的推動更規模化、系統化，本屆以台灣北、中、南、東的地區四大各具特色在地商圈為主題，包含台北**師大龍泉商圈**、雲林**虎尾魅力商圈**、高雄**六龜商圈**與台東**鐵花商圈**。讓同學們針對所選擇的商圈主題之發展現況、同時結合 LINE 的數位生活服務與開放平台技術，了解商圈所需要的內容以及應用相關的技術來解決面臨到的問題，協助商圈朝數位化全速前進，創造疫情後的數位商機。
+
+
+除了四大商圈外，也讓同學們可以透過 LINE SPOT 、LINE 社群以及更多的 LINE 平台技術來展示，依照各商圈的面臨問題，制定屬於你們的最佳商業解決方案。
+
+![](https://nijialin.com/images/2021/fresh-2021/10.png)
+
+
+
+本次大會提供同學許多管道可以了解第一手競賽資訊，相關連結:
+- [本次活動連結](https://tw-fresh.line.me/)
+- [LINE FRESH 官方社群](https://line.me/ti/g2/5HE7p2ZJqSWVmRhK0yf-yvulbn-ruJRM3cYVcw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default)
+- [粉絲團](https://www.facebook.com/LINEFRESHTW)
+- [媒合社團](https://www.facebook.com/groups/1088588318552834)
 <!-- more -->
 
-四大商圈
-LINE SPOT ，社群，平台技術
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vBJ50m14dw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 # 初選
 
-在大家還在創意發想階段，大會提供了一些課程
+在大家報名結束之後，大家正如火如荼的準備企劃書，在這邊大會還準備了各種工作坊讓同學們有途徑可以更清楚的了解 LINE 的平台上的服務究竟要如何使用，如「LINE Bot 基礎實作課程」中，藉由完整的說明建立起大家對於 LINE 平台技術有初階了解，對於後續的企劃應用更得心應手
 
 <script async class="speakerdeck-embed" data-id="0ec99040fbed4ad592fcf1c40dfa1f4e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-LINE Bot 基礎實作課程
-
-讓大家在疫情情況還在觀察的九月中可以藉由線上的方式先了解 LINE 個服務間的應用情境，並藉由往後的提案來讓商圈可以更加復甦
 
 
-- 媒合會
+- 組隊媒合會
 - 媒合社團
 - LINE 社群
   - 讓大家可以了解大會的相關問題，也都會有小幫手一直在裡面替大家解大一些大會上的問提
 
-# 導師媒合
+# 導師媒合 11 月
 
 
 30 取 10 進入總決賽
 
 # 總決賽
-看到同學們為了解決每個商圈所遇到的問題，渾身解數的透過各種分析，統計，開發技術應用來解決每個區域所遇到的問題
+
+![](https://nijialin.com/images/2021/fresh-2021/1.JPG)
+
+
+看到同學們為了解決每個商圈所遇到的問題，渾身解數的透過各種分析、統計方法，並結合開發技術應用來解決每個區域所遇到的問題，讓小編在聽完每組同學的報告，都很想去立即起身直接去這四大商圈去看看，這麼有吸引力的地方小編居然過去都不知道 :P
+
+![](https://nijialin.com/images/2021/fresh-2021/3.JPG)
+
+在聽每一組的報告之後，我們當然有準備美味的點心讓同學的可以放下緊張的心情，在享受美味的點心之餘可以認識不同組別的同學，即便在競賽的當下也可以廣結善緣，說不定大家未來都會是好同事呢！
 
 因為是競賽，一定會分出前三名，每組成績真的都非常相近，或許這次沒有得名，但每位同學可以從茫茫人海中入選到總決賽的十組已經是非常棒了!
+
+# 結論
+![](https://nijialin.com/images/2021/fresh-2021/5.JPG)
+
+
+LINE FRESH 過去是提供給同學的一個實習計畫，這兩屆藉由競賽讓同學們在競賽中發想出
+
+<script async class="speakerdeck-embed" data-id="0ec99040fbed4ad592fcf1c40dfa1f4e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 # 活動小結
+
+
+![](https://nijialin.com/images/2021/fresh-2021/5.JPG)
+
 
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 
