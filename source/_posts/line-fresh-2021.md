@@ -1,8 +1,13 @@
 ---
 title: LINE FRESH 2021 校園競賽 - 活動總結
+tags:
+  - LINE FRESH
+  - Hackathon
+  - 黑客松
 categories: 研討會
-tags: ['LINE FRESH', 'Hackathon', '黑客松']
+date: 2021-12-06 16:01:27
 ---
+
 
 ![](https://nijialin.com/images/2021/fresh-2021/4.JPG)
 
