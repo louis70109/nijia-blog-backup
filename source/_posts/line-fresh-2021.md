@@ -76,7 +76,7 @@ date: 2021-12-06 16:01:27
 
 LINE FRESH 這兩屆轉型成競賽讓同學們在競賽中發想出許多非常棒的主題內容，除了尋找出優秀的人才外，也讓同學們在競賽中真實累積相關的實戰經驗，透過整合既有的工具發想出更特別的解決方案，藉此來解決社會中所面臨到的問題，協助不同產業朝數位化前進，創造出屬於下一個世代的最佳解決方案。
 
-<script async class="speakerdeck-embed" data-id="0ec99040fbed4ad592fcf1c40dfa1f4e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="52" data-id="0ec99040fbed4ad592fcf1c40dfa1f4e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 如果你也身懷絕技，想透過技術解決大家生活中所會遇到的事情，歡迎持續關注我們的 TECH FRESH 的實習計畫，過去有許多學長姐分享各種經驗，歡迎大家參考以下的文章，相信對你未來加入 LINE 大家庭都會有幫助喔！
 
