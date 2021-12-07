@@ -119,8 +119,6 @@ LINE FRESH 這兩屆轉型成競賽讓同學們在競賽中發想出許多非常
 
 # 活動小結
 
-![](https://nijialin.com/images/2021/fresh-2021/5.JPG)
-
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 
 「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev

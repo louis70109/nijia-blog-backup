@@ -1,10 +1,9 @@
 ---
-title: "LINE 開發者社群計畫: 中部人的 Chatbot Meetup #18 心得分享"
+title: 'LINE 開發者社群計畫: 中部人的 Chatbot Meetup #18 心得分享'
 categories: 研討會
 date: 2021-12-02 19:13:56
 tags:
 ---
-
 
 <style>
   section.compact {
@@ -15,7 +14,6 @@ tags:
     margin: 0 auto;
   }
 </style>
-
 
 # 前言
 
@@ -36,8 +34,6 @@ tags:
 - [GitHub](https://github.com/louis70109/WordsGame)
 
 之前有寫過一個彈幕與 LINE Bot 結合的[一個範例](https://github.com/louis70109/Screen-LINE-Bullets)，當時就在想除了在活動上與大家互動之外，還有什麼功能是可以結合的呢？伴隨著前一陣子我在背日文五十音，為了加強自己的印象因此開發與彈幕整合在一起，嘗試讓自己的印象可以更深刻，不過一直忘記眼前的單字是誰。
-
-- 影片
 
 ## 遊戲本體
 
