@@ -37,7 +37,7 @@ tags:
 
 ## 遊戲本體
 
-<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="5" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 在前端頁面上已較簡易的方式呈現，僅需**用戶登入**、**輸出日文**、**查看排名**三個功能，而在用戶登入的功能上我選擇 LINE Login 做快速登入，實作用戶相關功能時我會考慮以下幾點：
 
@@ -47,7 +47,7 @@ tags:
 - 開發文件需要持續有在更新
 - 帳號安全性
 
-<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="7" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 實作的部分過去有寫過相關的文章，大家在參考流程圖時不仿看看之前寫的文章，此次 LINE Login 整合參考如下：
 
@@ -73,7 +73,7 @@ tags:
 
 > 若你對相關的設定方式也有興趣可以參考這篇文章 - [如何在 VSCode 中以 Container 方式開發 FastAPI + PostgreSQL](https://nijialin.com/2021/05/29/fastapi-dev-in-container-vscode/)
 
-<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="8" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## 實裝 Test Container 於 GitHub Actions 中
 
@@ -87,7 +87,7 @@ tags:
 - 能夠真實訪問資料庫
 - 讓 API 的測試可以完整走流程
 
-<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="11" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 而相對 LINE Bot 的部分測試上需要多注意點
 
@@ -99,7 +99,7 @@ tags:
 
 ## LINE Bot 在本次的用途
 
-<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="12" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 過去我們都習慣在聊天機器人讓做各式應用，其實對話式應用都存在於各種輸入框中，而這次的分享我以日文單字的小遊戲來做一個對話應用，最後再讓管理者可以透過 LINE Bot 中去設定遊戲的難度，增加遊戲的樂趣。
 
@@ -107,13 +107,13 @@ tags:
 
 # 最後還是需要來個 API Update
 
-<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="19" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 相信有在使用 LINE 的朋友一定對隨你填貼圖不陌生(甚至人手好幾組)，於今年初時貼圖的 Webhook 回傳更新上就能透過收到 keywords 來了解用戶發送貼圖的契機，而隨著更新至今，隨你填貼圖裡面的內容也可以在 Webhook 中被收到囉！也可以更進一步當使用者傳送這類型貼圖時，更能抓住使用者當前的狀態，進一步地提供更客製化的資訊給他們，讓應用場景更加活躍。
 
 ## LIFF 更新
 
-<script async class="speakerdeck-embed" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="20" data-id="7491b80124ce4c0fa8e1c0a98172b6d2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 往往加入一個領域開發時，都會希望有個能夠參考的範例，讓首次或是往後的開發可以依照一個樣板去開發。在 LIFF 中，你可以使用官方提供的 [line-liff-v2-starter](https://github.com/line/line-liff-v2-starter) 開始，讓開發者們在加入 LIFF 開發時可以有個樣板參考。
 
