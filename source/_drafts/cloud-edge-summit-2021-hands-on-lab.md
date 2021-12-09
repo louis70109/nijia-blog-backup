@@ -1,6 +1,6 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: CLoud Edge Summit 工作坊分享
+categories: 研討會
 tags:
 ---
 
@@ -14,7 +14,7 @@ tags:
   }
 </style>
 
-![](https://nijialin.com/images/2021/)
+![](https://nijialin.com/images/2021/data-dev-interview.png)
 
 # 前言
 
