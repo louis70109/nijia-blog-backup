@@ -15,6 +15,8 @@ date: 2021-12-13 00:13:13
 
 本次介紹的專案 [act](https://github.com/nektos/act)，是一個以 Golang 實作的專案，目標可以讓開發者可以在本地端跑 GitHub Actions，不用每次要測試 CI 就先推一個沒用的 Commit 上去等(如果是生產環境也是浪費資源)，只要在本地跑就可以快速得到相關的回饋，不用再為了測試推一堆沒用的 Commit 上去了 🎉
 
+> 本次使用的範例專案：https://github.com/louis70109/WordsGame
+
 <!-- more -->
 
 # 安裝步驟
@@ -75,6 +77,8 @@ Error: exit with `FAILURE`: 1
 ![](https://nijialin.com/images/2021/action/act.png)
 
 ## 狀況排除 - 如果有環境變數還是要 export ooo=qqq
+
+因為我在建立此專案時是需要先幫 chatbot 放 Token 測試才可以順利跑，因此在這邊 `${}` 裡的直就需要在環境變數中 export
 
 ```
 ...
