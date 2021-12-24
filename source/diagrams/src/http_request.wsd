@@ -1,10 +1,14 @@
 @startuml
-User->Frontend: 登入遊戲
-Frontend->Backend: 取得用戶資訊、彈幕樣式
-Backend->Frontend: 回傳設定檔
-Frontend->User: 初始化遊戲設定
-Chatbot->Backend: 管理者設定所有人的樣式(Style)
-Frontend->Backend: Reload 重新載入設定檔
-Backend->Frontend: 回傳 admin 設定
-Frontend->User: 使用 admin 設定的難度
+Admin->Chatbot: Input any keyword
+Chatbot->Flex_API: Request Flex template
+Flex_API->Chatbot: Response Flex JSON
+Chatbot->Admin: Flex Message template
+Admin->Chatbot: Select template
+Chatbot->Admin: Render to Editor page
+Admin->Editor: Input data
+Editor->Flex_API: Send metadata to generate JSON
+Flex_API->Editor: Response template JSON
+Editor->LINE: Send Flex by Share Target Picker
+LINE->Editor: Send callback message(Success/Fail)
+LINE->User: Push Flex to LINE User/Group/Chat
 @enduml
