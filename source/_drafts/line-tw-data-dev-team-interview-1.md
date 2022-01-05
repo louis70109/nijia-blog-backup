@@ -24,11 +24,11 @@ tags: ['資料工程', 'Data Dev', 'LINE']
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o2lj8r9wW-g?start=35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# 介紹
+# 開場介紹
 
-LINE 除了通訊外還有很多周邊的服務，像是新聞，購物，旅遊，音樂，貼文串等等。
+LINE 除了通訊外還有很多周邊的服務，像是新聞、購物、旅遊、音樂、貼文串等等。
 
-而且這些服務其實產生了大量的內容。我們團隊透過許多機器學習、統計方法等等技能，可以更了解內容間的關係，內容與使用者的關係，進而優化這些服務的使用者體驗。
+而且這些服務其實產生了大量的內容。Data Dev 團隊透過許多**機器學習**、**統計方法**等等技能，可以更了解內容之間的關係、內容與使用者的關係，進而優化這些服務的使用者體驗。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o2lj8r9wW-g?start=316" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
