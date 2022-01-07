@@ -42,11 +42,16 @@ LINE 除了通訊外還有很多周邊的服務，像是新聞、購物、旅遊
 ## 訊息查證
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o2lj8r9wW-g?start=500" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 訊息查證的運作方式是以兩個功能來完成：假訊息搜索與被檢舉的文章分類。用戶可以在oa上提供/檢舉訊息內容或來源，後台會使用到由我們開發的近似文章搜尋模型，
 來與我們現有的假新聞資料庫做一個比對，如果有很類似的文章被找到，代表他是假新聞的可能性非常高，可以作為用戶查證的結果。
 而當新的假新聞出現時，我們則需要第三方合作夥伴來人工驗證訊息的真偽；而為了加快整個人工查證的過程，我們透過分類文章的功能，加速了尋找專家跟判斷訊息專業領域資訊的過程。
 模型的細節上，我們使用目前比較常見的自監督式學習的模型 Bert系列的模型在文章分類的功能上，接著進一步搭配最鄰近搜索的演算法，透過自監督式學習模型將文章編碼並做好類似index的做法，來實現近似文章搜索的功能
 我們使用了預訓練好的Sentence Bert模型來做文章編碼，finetube ELECTRA 模型在少量的假新聞資料集上來做文章分類。
+
+加入訊息茶生小幫手，一起協助查證 https://engineering.linecorp.com/wp-content/uploads/2020/07/0707_2.jpg
+
+> 關於訊息查證，講者 Johnson 也在過去的活動中提過 - [LINE 開發社群計畫: 20200707 Test Corner #26 聚會心得](https://engineering.linecorp.com/zh-hant/blog/20200707-test-corner-26/#line-%E8%A8%8A%E6%81%AF%E6%9F%A5%E8%AD%89---hank-chen-and-johnson-wu)
 
 ### Penny
 
