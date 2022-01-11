@@ -8,15 +8,7 @@ date: 2022-01-11 12:33:29
 ---
 
 
-<style>
-  section.compact {
-    font-size: 150%  
-  }
-  img[alt~="center"] {
-    display: block;
-    margin: 0 auto;
-  }
-</style>
+![](https://nijialin.com/images/2022/techpulse/_music_1280x720.png)
 
 # 前言
 
@@ -168,3 +160,14 @@ date: 2022-01-11 12:33:29
 > 貼圖何時之前要使用與領取呢？
 
 且必須於 2022 年 04 月 20 日（星期三）23:59 前領取與使用。期間過後，將無法領取與使用專屬活動任務貼圖。
+
+
+<style>
+  section.compact {
+    font-size: 150%  
+  }
+  img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
