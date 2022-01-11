@@ -8,7 +8,7 @@ date: 2022-01-11 12:33:29
 ---
 
 
-![](https://nijialin.com/images/2022/techpulse/_music_1280x720.png)
+![](https://nijialin.com/images/2022/techpulse/0.png)
 
 # 前言
 
