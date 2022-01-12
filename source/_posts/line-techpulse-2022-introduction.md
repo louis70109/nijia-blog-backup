@@ -116,7 +116,7 @@ date: 2022-01-11 12:33:29
 
 ![](https://nijialin.com/images/2022/techpulse/3.PNG)
 
-- 議程資訊，可一次看到兩天的精彩議程內容，在每個議程中街會放上當天 MUSIC LIVE 播出連結，撥出當天敬請期待！
+- 議程資訊，可一次看到兩天的精彩議程內容，在每個議程中皆會放上當天 MUSIC LIVE 播出連結，播出當天敬請期待！
 
 ![](https://nijialin.com/images/2022/techpulse/2.png)
 
