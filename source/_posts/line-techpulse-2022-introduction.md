@@ -35,7 +35,7 @@ date: 2022-01-11 12:33:29
 
 # DAY 1 : LINE 技術分享日
 
-由 LINE 台灣、LINE Bank 與 LINE TAXI 的重量級講者除了分享 2021 年度發展重點，並將揭露未來技術發展的策略與目標，而其他服務團隊也將介紹最新的開發經驗，包含近年最夯的 MarTech、Kubernetes、Data-Driven Testing、共用平台開發、O2O 平潭開發...諸多精彩內容以及由現役實習生所分享的實習生活，讓大家可以一探究竟 LINE 所應用的新技術。
+由 LINE 台灣、LINE Bank 與 LINE TAXI 的重量級講者除了分享 2021 年度發展重點，並將揭露未來技術發展的策略與目標，而其他服務團隊也將介紹最新的開發經驗，包含近年最夯的 MarTech、Kubernetes、Data-Driven Testing、共用平台開發、O2O 平台開發...諸多精彩內容以及由現役實習生所分享的實習生活，讓大家可以一探究竟 LINE 所應用的新技術。
 
 ## 議程
 
