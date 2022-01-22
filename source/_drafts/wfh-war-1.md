@@ -1,6 +1,6 @@
 ---
 title: 【WFH 戰記】題目
-categories: 學習紀錄
+categories: 'WFH 戰記'
 tags:
 ---
 

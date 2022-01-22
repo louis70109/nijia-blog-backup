@@ -1,15 +1,11 @@
 @startuml
-User->Frontend: 按下 LINE Login 按鈕
-Frontend->Backend: 索取認證網址(authorize URI)
-note over Frontend: Client_id, Redirect_uri 存在後端較保險，因此不讓前端自組
-Backend->Frontend: 回傳認證網址
-Frontend->LINE: 導向登入畫面(window.replace)
-LINE->User: 登入請求
-User->LINE: 輸入帳號密碼
-LINE->Frontend: 透過 Redirect_uri 回到認證頁面(code, state)
-Frontend->Backend: 將資訊傳送至後端
-note over Backend: 藉由 Secret + Client_id 來解開 JWT
-Backend->Frontend: 回傳解開後的用戶資訊
-Frontend->Frontend: 將資訊放入 localStorage 中
-Frontend->User: 登入成功，進行遊戲
+DevRel->NCP: 登入帳號，更改密碼
+NCP->DevRel: 修改完成
+DevRel->NCP: 拔除 API Token
+NCP->DevRel: 用戶已無法使用
+note right of NCP
+  使用方需進入 Domain 
+  把使用到的服務都檢查一遍
+  並且與開發者逐一確認後刪除
+end note 
 @enduml
