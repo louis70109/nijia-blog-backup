@@ -1,7 +1,7 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
-tags:
+title: 【LINE TECHPLUSE 2022】議程回顧
+categories: 研討會
+tags: ['LINE', 'TECHPULSE']
 ---
 
 
