@@ -5,18 +5,26 @@ tags:
 ---
 
 
-![](https://nijialin.com/images/2022/techpulse/session)
+![](https://nijialin.com/images/2022/techpulse/session/0.png)
 
 # 前言
-![](https://nijialin.com/images/2022/techpulse/0.png)
+
+作為 LINE 一年一度的技術研討會，本質還是以技術為主出發，讓大家了解除了 LINE 工程團隊這一年來的努力之外，也要讓彼此可以透過分享技術來處理不同情境下所能解決的方式，在 LINE TECHPULSE 2022 中並將活動分為**技術分享日**、**平台推廣日**兩天，讓大家可以在線上可以聽到不同團隊來分享的經驗、技術、工具...，讓大家在不同的空間下，也可以與 LINER 們互相學習，以下就讓小編帶大家快速了解一下議程內容吧！
 
 <!-- more -->
 
 # 介紹
 
-## [Opening & KEYNOTE](https://music-tw.line.me/live/player/24e45a1b-aa46-44e4-8ac5-c24cf11f902d)
+## [KEYNOTE](https://music-tw.line.me/live/player/24e45a1b-aa46-44e4-8ac5-c24cf11f902d)
+
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="e5b8aba8f9384cd9836cc2db79e7b777" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+LINE 作為大家日常生活的入口，擁有許多服務來乘載用戶每天生活之所需，圖上的內容大家用過幾個呢？
 
 <script async class="speakerdeck-embed" data-slide="17" data-id="e5b8aba8f9384cd9836cc2db79e7b777" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+基於一個人數持續上升的組織、專案也提升的狀態，隨著資料量越來越大，同時有許多工程知識與開發技巧都會需要更大質量的提升，除了需要按造流程，避免在開發上重複造輪子、沒照 spec 導致錯誤發生，因此 LINE TAIWAN 工程團隊除了以自身經驗規劃流程外，也參考了許多 Open Source 的規範流程，打造出屬於我們的的文化，並透過內外的宣導，讓持續擴張的組織可以更加的瞭解相關規範，有讓工程上的內容可以更符合作業規範。
 
 ## [LINE Bank, the Future and Beyond](https://music-tw.line.me/live/player/9914ff22-f810-4f23-a750-74940b799cf9)
 
@@ -59,6 +67,11 @@ LINE Pay 分享
 ## [How we build TECHPULSE Bot](https://music-tw.line.me/live/player/8bec255f-83f3-46d3-a1f0-62aa711da9b6)
 
 ## [Rapid development using LINE Bot framework Kamigo](https://music-tw.line.me/live/player/fed61687-4e9f-45af-a1f9-e59c5cca354d)
+
+
+## [Playing real escape games in LINE, a RPG metaverse](https://music-tw.line.me/live/player/959f3074-3ec2-4d5f-8bd3-213fa3561fed)
+
+## [LINE PROTOSTAR Program Introduction & Startup Demo](https://music-tw.line.me/live/player/435677af-f577-4396-a117-d8f6eaf8b05f)
 
 # 結論
 
