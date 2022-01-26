@@ -15,7 +15,7 @@ date: 2022-01-26 17:36:27
 
 <!-- more -->
 
-# TOC
+# 目錄
 
 - [KEYNOTE](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#KEYNOTE)
 - [LINE Bank, the Future and Beyond](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#LINE-Bank-the-Future-and-Beyond)
