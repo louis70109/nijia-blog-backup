@@ -16,6 +16,27 @@ date: 2022-01-26 17:36:27
 
 <!-- more -->
 
+# TOC
+
+- [KEYNOTE](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#KEYNOTW)
+- [LINE Bank, the Future and Beyond](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#LINE-Bank-the-Future-and-Beyond)
+- [Pandemic Pivot: transformation from ride-hailing to vegetable box and food delivery](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#Pandemic-Pivot-transformation-from-ride-hailing-to-vegetable-box-and-food-delivery)
+- [How We Build Up O2O Platform to Our Partner Corporation Service](https://nijialin.com/2022/01/26/techpulse-2022-session/#How-We-Build-Up-O2O-Platform-to-Our-Partner-Corporation-Service)
+- [AI solutions of MarTech in LINE](https://nijialin.com/2022/01/26/techpulse-2022-session/#AI-solutions-of-MarTech-in-LINE)
+- [Implementing Observability Practices on Kubernetes](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [Data-Driven Testing for LINE SHOPPING](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [Reduce iOS app binary size by analyzing source code with SourceKit](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [How Do We Assess Our Tests to Measure and Monitor Their Reliability?](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [Utility Platform - how we use Safeframe to display content from 3rd party](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [LINE TECH FRESH Program](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [Platform Opening](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [CLOVA Keynote](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [Marketplace Review and Chat-Plugin](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [How we build TECHPULSE Bot](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [Rapid development using LINE Bot framework Kamigo](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [Playing real escape games in LINE, a RPG metaverse](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [LINE PROTOSTAR Program Introduction & Startup Demo](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#LINE-PROTOSTAR-Program-Introduction-amp-Startup-Demo)
+
 # 介紹
 
 ## [KEYNOTE](https://music-tw.line.me/live/player/24e45a1b-aa46-44e4-8ac5-c24cf11f902d)
@@ -238,7 +259,7 @@ Kamigo 是使用基於 Rails 的 MVC LINE Bot 框架，目的是讓開發者能�
 實境解謎是這幾年來非常火紅的主題，讓玩家在實體上可以與同伴合作解出謎題之外，也須在移動裝置作出相關的應對才能順利通關。本次由 LINE API Expert 佳新為大家介紹他們是如何在 LINE 聊天視窗可以打造一個角色扮演的虛擬遊戲世界，化身成為實境解謎的故事場景，在訊息對話來回之間，讓多位玩家一起破關、一起獲得樂趣，讓作為通訊軟體的 LINE，在聊天視窗裡除了聊天之外，也能夠與每位玩家做虛實整合的應用。
 ## [LINE PROTOSTAR Program Introduction & Startup Demo](https://music-tw.line.me/live/player/435677af-f577-4396-a117-d8f6eaf8b05f)
 
-![](https://nijialin.com/images/2022/techpulse/session/0.png)
+![](https://nijialin.com/images/2022/techpulse/session/1.png)
 
 每年 TECHPULSE 不管在實體或是此次的線上，都是社群上大家關注的焦點之一，本次 LINE PROTOSTAR 團隊邀請了七隻不同的團隊為大家帶來分享，讓大家了解 LINE 官方帳號上究竟有什麼樣的應用方式，與真正商業上的內容做整合，想知道每個團隊是怎麼打造這樣子的服務，趕快點選標題中的影片觀看吧！
 
