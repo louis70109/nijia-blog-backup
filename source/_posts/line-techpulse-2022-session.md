@@ -7,7 +7,6 @@ categories: 研討會
 date: 2022-01-26 17:36:27
 ---
 
-
 ![](https://nijialin.com/images/2022/techpulse/session/0.png)
 
 # 前言
@@ -18,14 +17,14 @@ date: 2022-01-26 17:36:27
 
 # TOC
 
-- [KEYNOTE](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#KEYNOTW)
+- [KEYNOTE](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#KEYNOTE)
 - [LINE Bank, the Future and Beyond](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#LINE-Bank-the-Future-and-Beyond)
 - [Pandemic Pivot: transformation from ride-hailing to vegetable box and food delivery](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#Pandemic-Pivot-transformation-from-ride-hailing-to-vegetable-box-and-food-delivery)
 - [How We Build Up O2O Platform to Our Partner Corporation Service](https://nijialin.com/2022/01/26/techpulse-2022-session/#How-We-Build-Up-O2O-Platform-to-Our-Partner-Corporation-Service)
 - [AI solutions of MarTech in LINE](https://nijialin.com/2022/01/26/techpulse-2022-session/#AI-solutions-of-MarTech-in-LINE)
-- [Implementing Observability Practices on Kubernetes](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
-- [Data-Driven Testing for LINE SHOPPING](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
-- [Reduce iOS app binary size by analyzing source code with SourceKit](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
+- [Implementing Observability Practices on Kubernetes](https://nijialin.com/2022/01/26/techpulse-2022-session/#Implementing-Observability-Practices-on-Kubernetes)
+- [Data-Driven Testing for LINE SHOPPING](https://nijialin.com/2022/01/26/techpulse-2022-session/#Data-Driven-Testing-for-LINE-SHOPPING)
+- [Reduce iOS app binary size by analyzing source code with SourceKit](https://nijialin.com/2022/01/26/techpulse-2022-session/#Reduce-iOS-app-binary-size-by-analyzing-source-code-with-SourceKit)
 - [How Do We Assess Our Tests to Measure and Monitor Their Reliability?](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
 - [Utility Platform - how we use Safeframe to display content from 3rd party](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
 - [LINE TECH FRESH Program](https://nijialin.com/2022/01/26/line-techpulse-2022-session/#)
@@ -71,13 +70,13 @@ LINE 作為大家日常生活的入口，這十週年擁有許多服務來乘載
 
 ## [How We Build Up O2O Platform to Our Partner Corporation Service](https://music-tw.line.me/live/player/3d89c1ea-f387-42be-802f-9c2da8f2fb4c)
 
-LINE Pay 深根台灣許久，上面的服務照顧了許多人的生活起居，從日常花費、繳費、會員卡管理、以及這次分享的星意禮的服務開發，以下為架構圖
-
 <script async class="speakerdeck-embed" data-slide="15" data-id="fc5c1c5b577f4f6fa15a3dc34a487eea" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-除了架構須清楚劃分以外，支付上也有許多加解密的細節在其中，來支援每個用戶在支付時的資訊安全，付得安心也用得安心
+LINE Pay 深根台灣許久，上面的服務照顧了許多人的生活起居，從日常花費、繳費、會員卡管理、以及這次分享的星意禮的服務開發，以下為架構圖
 
 <script async class="speakerdeck-embed" data-slide="20" data-id="fc5c1c5b577f4f6fa15a3dc34a487eea" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+除了架構須清楚劃分以外，支付上也有許多加解密的細節在其中，來支援每個用戶在支付時的資訊安全，付得安心也用得安心
 
 當然若你也想擔任 [LINE Pay 合作夥伴](https://pay.line.me/merchant-apply/tw/contact-request?dm=1641975167088&locale=zh_TW)。我們提供夥伴線上與線下間的雙向機制平台，進行數位支付生態的整合，打造 O2O 平台與其系統架構來幫助合作夥伴與使用者創造雙贏的機會！
 
@@ -257,18 +256,18 @@ Kamigo 是使用基於 Rails 的 MVC LINE Bot 框架，目的是讓開發者能�
 ## [Playing real escape games in LINE, a RPG metaverse](https://music-tw.line.me/live/player/959f3074-3ec2-4d5f-8bd3-213fa3561fed)
 
 實境解謎是這幾年來非常火紅的主題，讓玩家在實體上可以與同伴合作解出謎題之外，也須在移動裝置作出相關的應對才能順利通關。本次由 LINE API Expert 佳新為大家介紹他們是如何在 LINE 聊天視窗可以打造一個角色扮演的虛擬遊戲世界，化身成為實境解謎的故事場景，在訊息對話來回之間，讓多位玩家一起破關、一起獲得樂趣，讓作為通訊軟體的 LINE，在聊天視窗裡除了聊天之外，也能夠與每位玩家做虛實整合的應用。
+
 ## [LINE PROTOSTAR Program Introduction & Startup Demo](https://music-tw.line.me/live/player/435677af-f577-4396-a117-d8f6eaf8b05f)
 
 ![](https://nijialin.com/images/2022/techpulse/session/1.png)
 
 每年 TECHPULSE 不管在實體或是此次的線上，都是社群上大家關注的焦點之一，本次 LINE PROTOSTAR 團隊邀請了七隻不同的團隊為大家帶來分享，讓大家了解 LINE 官方帳號上究竟有什麼樣的應用方式，與真正商業上的內容做整合，想知道每個團隊是怎麼打造這樣子的服務，趕快點選標題中的影片觀看吧！
 
-
 > LINE 新星計劃歡迎開發者及新創公司一同加入，藉由提供免費 LINE 官方帳號、平台資源、技術支援，戰略夥伴諮詢輔導、提高您在 LINE 平台上開發的速度，並確保推出服務的成功。
+
 # 結論
 
 每年的 LINE TECHPULSE 都希望帶給大家最純粹的技術資訊，讓大家在軟體技術的這條路上不會寂寞，有大家的鼓勵才是我們持續辦下去的動力，希望兩天的技術與平台分享內容各位會喜歡！敬請期待我們接下來的活動內容，謝謝大家的支持，讓我們接下來的活動見！
-
 
 > 加入以下的官方帳號，絕對不讓你錯過任何第一手的資訊！
 
