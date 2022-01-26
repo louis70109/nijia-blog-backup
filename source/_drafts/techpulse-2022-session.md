@@ -80,37 +80,141 @@ LINE Pay 深根台灣許久，上面的服務照顧了許多人的生活起居�
 
 在 2020 年的 TECHPULSE 中，LINE 台灣 SRE 團隊有分享如何[透過 GitOps 來協助 Kubernetes](https://www.youtube.com/watch?v=jk8nBXb74sQ&list=PL4u2gEb6gu2ta2oMhDmq1pZwXGzu_hGug&index=9) 相關的流程，經過了一年之後，SRE 團隊提供更多測量**應用程序可靠性**的工具和平台，並從我們將從台灣應用團隊各種監控實踐的背景開始，簡要地概述我們的可觀察性平台，並介紹我們在 Kubernetes 上監控應用程式的各種組件，以及我們如何引入新的實踐來增強可觀察性。
 
-
-當然在引入的過程中也會遇到相對應的挑戰，如 LogQL、PromQL、以及導入到現有的各種基礎設施上面，都會是導入過程中所需要注意的部分。
+在引入的過程中也會遇到相對應的挑戰，如 LogQL、PromQL、以及導入到現有的各種基礎設施上面，都會是導入過程中所需要注意的部分。
 
 當然，想了解 LINE 台灣 SRE 都是如何實作以及導入到各個團隊中的實作，歡迎參考簡報內容以及[影片](https://music-tw.line.me/live/player/b0fed22c-88cd-44f4-9c02-6ff87477f165)喔！
 
 <script async class="speakerdeck-embed" data-slide="38" data-id="a092eb115abe43649755692eb519a9de" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-
 - [LINE TAIWAN TECHPULSE 2020_How GitOps Helps Kubernete Adoption_Denny Tsai](https://www.youtube.com/watch?v=jk8nBXb74sQ&list=PL4u2gEb6gu2ta2oMhDmq1pZwXGzu_hGug&index=9)
 
 ## [Data-Driven Testing for LINE SHOPPING](https://music-tw.line.me/live/player/9967e832-6446-4fb2-9096-50bd8c126373)
 
+資料量一直都是每個服務所需要的材料，而 LINE SHOPPING 是一個導購型的服務，介接各大電商平台的內容，自然就有許多資料是需要彙整處理且重要性相當大。而在測試的過程中，除了一般的測試手法之外，也借助 Machine Learning 的方式協助測試。
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="80ebfc08d2bc4f28a14349aca2012a4b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- 各式搜尋區塊
+- Mock Server
+- 資料儲存位置
+- 利用 GORM 來加速撰寫與測試相關的任務
+
+<script async class="speakerdeck-embed" data-slide="22" data-id="80ebfc08d2bc4f28a14349aca2012a4b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當然在其中也獲得了許多好處，歡迎大家查看講者的影片內容喔！
+
 ## [Reduce iOS app binary size by analyzing source code with SourceKit](https://music-tw.line.me/live/player/d5c91b62-aba2-424f-beb8-f69090e95993)
 
-最佳化 App 大小的過程就如同幫 App 增肌減脂一般，除了增肌之外減脂也相當重要，我們將介紹如何使用工具如 SourceKit，幫助我們分析程式原始碼，找到冗余的程式碼片段並去蕪存菁已達到減少 App 大小的目的。
+隨著程式以及服務越來越多，有些程式碼可能在功能開發迭代的過程中逐漸被棄用，但這些程式碼透過肉眼檢查的方式開發者也不一定敢動它，因此本次的 QC 就與大家分享最佳化 App 大小的過程，介紹如何使用工具如 SourceKit，幫助我們分析程式原始碼，找到冗余的程式碼片段並去蕪存菁已達到減少 App 大小的目的。
 
-https://speakerdeck.com/line_developers_tw/line-techpulse-2022-reduce-ios-app-size-by-analyzing-source-code
+<script async class="speakerdeck-embed" data-slide="25" data-id="f4354357f0bb41ba9bd34eaada8247cf" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+- Link map
+  - Object file, Sections, Symbols, Mangling
+- sourcekitd
+- SourceKit C API
+
+如果你也是 iOS 的開發者，不妨參考這次影片的內容來學習一下如何幫自家的 app 瘦身吧！
+
+<script async class="speakerdeck-embed" data-slide="40" data-id="f4354357f0bb41ba9bd34eaada8247cf" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## [How Do We Assess Our Tests to Measure and Monitor Their Reliability?](https://music-tw.line.me/live/player/7cb2845d-e85c-4328-a51a-90d78aceec6b)
 
+<script async class="speakerdeck-embed" data-slide="5" data-id="969771d182e547a4be1f5b39b40cf9ad" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+Flaky test 一直是測試中常被拿出來探討的問題，也就是測試過程中有時成功有時失敗，而你可能毫無頭緒到底發生在哪邊的問題。
+
+<script async class="speakerdeck-embed" data-slide="9" data-id="969771d182e547a4be1f5b39b40cf9ad" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+而在 LINE TODAY 中，裡面的服務量非常大，相對為了確保服務品質，測試案例也一定非常多，因此跑一次可能都會花費非常多建立、Retry、修復的時間...，因此在這邊就要先整理一下自己的測試內容到底會花費多少的精力，避免再重複測試時，浪費過多同仁的時間。
+
+LINE TODAY QA 團隊開發了一個框架 – Test Analysis Dashboard，該工具在每次自動化測試後會即時監控測試結果，並立刻計算和識別是否找到真正的錯誤。
+
+<script async class="speakerdeck-embed" data-slide="15" data-id="969771d182e547a4be1f5b39b40cf9ad" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當然過程中講者有分享出許多經驗，歡迎大家來參考看看。
+
 ## [Utility Platform - how we use Safeframe to display content from 3rd party](https://music-tw.line.me/live/player/ad46428e-dcdd-4a0a-a204-f058305ea10c)
+
+LINE TODAY 為一個跨國專案，但功能需要在地話，而在開發功能上要如何面對排山倒海的跨國需求，以及多樣化的服務串接？
+
+<script async class="speakerdeck-embed" data-slide="3" data-id="ce92f7e9237c4673a46c1b66aad8083f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+因此這次就由 Willy 為大家介紹 Utility Platform，一個由 LINE TODAY 開發輕量化以及快速的上架串接測試的開發模式，幫助產品透過 Safeframe 的方式擴充開發量能，以及有效分享集團內部的資源。
+
+<script async class="speakerdeck-embed" data-slide="10" data-id="ce92f7e9237c4673a46c1b66aad8083f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+> 大家在看完這場之後，不妨到你們的 LINE TODAY 頁面找找，到底哪邊是 Utility Platform 製作的東西呢～
 
 ## [LINE TECH FRESH Program](https://music-tw.line.me/live/player/73d6151e-159f-4435-a3ec-82481b27b6d6)
 
+<script async class="speakerdeck-embed" data-slide="6" data-id="a3a2283e8f9745ec88a5971b3c228e00" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+在學校時，不論考慮是繼續在學鑽研知識，抑或是出來實習，都要瞭解自身所想要的、動機，清楚知道自己想要的是什麼，來 LINE 實習之後才會更加事半功倍。
+
+<script async class="speakerdeck-embed" data-slide="16" data-id="560a5208b1d84e57a26d693cd49f9bc7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+而此場由三位現役實習生 TU Lin、Yi-Han, Hsiao、Kevin Chen 輪番上正跟大家分享自身從學校到實習的經驗談，讓還在觀望實習計畫的各位可以先了解學長姐們所遇到的問題與挑戰，讓大家可以有更多的參考。
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="c0cf66a8537e4cf69a7328a9ac68847c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+因此在準備進入寒假之餘，大家不妨來聽聽看分享，也歡迎大家參考下列文章，讓你對於來 LINE 實習有更多的了解喔！
+
+- [TECH FRESH 實習的一年間，除了開發還有什麼內部活動呢？](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2020-graduate/)
+- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
+- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
+- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
+
+> 投遞投起來，[LINE TECH FRESH](https://careers.linecorp.com/jobs/83)
+
 ## [Platform Opening](https://music-tw.line.me/live/player/47d5bac5-0f07-45cd-acce-4cc96e1ea774)
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="1b800bf7086e48cfa6f184da2ce08122" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+每年大家應該都跟忍編一樣，都很期待 LINE 平台一年來究竟往前走了多少，以下為大家快速整理一下這些內容
+
+- [Mention API](https://developers.line.biz/en/reference/messaging-api/#message-event)
+  - [文章](https://engineering.linecorp.com/zh-hant/blog/chatbot-meetups-202101/#%E7%94%A8-mention-api-%E5%BE%97%E7%9F%A5%E8%AA%B0-tag-%E8%AA%B0)
+- [Quick Reply 中支援 URI action](https://developers.line.biz/en/reference/messaging-api/#uri-action)
+- Rich Menu switch Action
+  - [透過 Rich Menu Switch Action 快速地切換 LINE 的個人化的 Rich Menu](https://engineering.linecorp.com/zh-hant/blog/rich-menu-alias-switch-action/)
+- ImageSet
+- [在 Webhook 中收到隨你填貼圖的文字](https://developers.line.biz/en/news/2021/11/#messaging-api-202111-01)
+
+<script async class="speakerdeck-embed" data-slide="14" data-id="1b800bf7086e48cfa6f184da2ce08122" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+而大家在開發 LIFF 時會先如何測試與評估呢？直接開發？尋找網路上的程式？
+
+LIFF 團隊有為大家準備一個 playground (開發者應該不陌生這詞)，透過在桌機版、手機版上開啟此 LIFF，可以快速驗證當前的功能是否有滿足該大家專案上的需求。
+
+<script async class="speakerdeck-embed" data-slide="16" data-id="1b800bf7086e48cfa6f184da2ce08122" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+經過了一段時間，LIFF 也重新支援了 QR Code 的掃描，[稱之為 ScanCodeV2](https://developers.line.biz/en/reference/liff/#scan-code-v2)，大家開發應用上有相關的需求，請切記 **LINE 版本號碼**以及 **LIFF SDK** 的版本喔!
+
+<script async class="speakerdeck-embed" data-slide="18" data-id="1b800bf7086e48cfa6f184da2ce08122" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+LIFF 團隊在接下來的開發上，會開始邁向以 plugin-based 的方式開發，讓大家在使用 LIFF 時，能夠更輕巧地引入自己想用的模組，兼具擴充性讓你的 LIFF 可以組合出更多更不一樣的應用。
 
 ## [CLOVA Keynote](https://music-tw.line.me/live/player/cff8c12d-a887-4067-93e4-2dd46e393925)
 
+自從三年前 LINE 宣布要成為一家 AI 公司，到推出 LINE BRAIN，之後整合成 LINE CLOVA 的單一產品線，LINE 持續在 AI 的產品以及技術上努力著，希望帶給使用者更好的生活，更人性化的體驗。LINE CLOVA 的未來展望，以及在台灣的持續發展以及落地的計畫，歡迎大家透過上方影片連結，來看看這次 CLOVA 與大家分享的內容。
+
+
+<script async class="speakerdeck-embed" data-slide="44" data-id="dac94bd01c7746128eedaf7af423d4c8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+> 如果你也關注 LINE CLOVA 許久，想與我們合作的話歡迎參考上方 QR Code
+
+
 ## [Marketplace Review and Chat-Plugin](https://music-tw.line.me/live/player/b9017840-2036-43c2-96df-200755dc58ed)
 
-https://speakerdeck.com/line_developers_tw/line-techpulse-2022-marketplace-review-and-chat-plugin
+
+<script async class="speakerdeck-embed" data-slide="11" data-id="b5938f4e2d5040b8875a571753d92e3a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+LINE OA Marketplace 是一個能夠讓各式想整合 LINE 官方帳號的商家，透過外掛模組的方式，快速地引入所需採用的模組。並介紹最新的擴充功能 Chat Plugin，能更方便地在官方帳號一對一聊天功能中，連動模組的後台資訊，快速回應客戶的詢問或需求。
+
+<script async class="speakerdeck-embed" data-slide="30" data-id="b5938f4e2d5040b8875a571753d92e3a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+如果聽完後覺得你們也很適合申請的話，歡迎參考簡報中的 QR Code 與我們聯繫！
 
 ## [How we build TECHPULSE Bot](https://music-tw.line.me/live/player/8bec255f-83f3-46d3-a1f0-62aa711da9b6)
 
