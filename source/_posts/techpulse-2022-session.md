@@ -1,8 +1,12 @@
 ---
 title: 【LINE TECHPLUSE 2022】議程回顧
+tags:
+  - LINE
+  - TECHPULSE
 categories: 研討會
-tags: ['LINE', 'TECHPULSE']
+date: 2022-01-26 17:36:27
 ---
+
 
 ![](https://nijialin.com/images/2022/techpulse/session/0.png)
 
@@ -199,14 +203,11 @@ LIFF 團隊在接下來的開發上，會開始邁向以 plugin-based 的方式�
 
 自從三年前 LINE 宣布要成為一家 AI 公司，到推出 LINE BRAIN，之後整合成 LINE CLOVA 的單一產品線，LINE 持續在 AI 的產品以及技術上努力著，希望帶給使用者更好的生活，更人性化的體驗。LINE CLOVA 的未來展望，以及在台灣的持續發展以及落地的計畫，歡迎大家透過上方影片連結，來看看這次 CLOVA 與大家分享的內容。
 
-
 <script async class="speakerdeck-embed" data-slide="44" data-id="dac94bd01c7746128eedaf7af423d4c8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 > 如果你也關注 LINE CLOVA 許久，想與我們合作的話歡迎參考上方 QR Code
 
-
 ## [Marketplace Review and Chat-Plugin](https://music-tw.line.me/live/player/b9017840-2036-43c2-96df-200755dc58ed)
-
 
 <script async class="speakerdeck-embed" data-slide="11" data-id="b5938f4e2d5040b8875a571753d92e3a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -218,17 +219,41 @@ LINE OA Marketplace 是一個能夠讓各式想整合 LINE 官方帳號的商家
 
 ## [How we build TECHPULSE Bot](https://music-tw.line.me/live/player/8bec255f-83f3-46d3-a1f0-62aa711da9b6)
 
+<script async class="speakerdeck-embed" data-slide="9" data-id="6d79b253713b499db376506d5dd1336f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+首先將者先為各位科普一下 LINE 開發者常見的問題，Provider、Channel 以及 Developer Console 與 OA Manager 間的愛恨情仇。
+
+<script async class="speakerdeck-embed" data-slide="30" data-id="6d79b253713b499db376506d5dd1336f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+且由於本次大會回洞是在 LINE MUSIC 上播放，因此講者在這部分詳細解釋了當中系統是如何串接以及有什麼需要注意的事項，帶大家了解在影音撥方相關所會遇到的挑戰。
+
 ## [Rapid development using LINE Bot framework Kamigo](https://music-tw.line.me/live/player/fed61687-4e9f-45af-a1f9-e59c5cca354d)
+
+Kamigo 是使用基於 Rails 的 MVC LINE Bot 框架，目的是讓開發者能夠快速開發整合 LINE 登入的網站後台以及具高維護性的 Flex Message 和 LIFF 表單 的 LINE Bot。
+
+這次的演講中，LINE API Expert 卡米哥很詳細地為大家介紹在 Rails 這個完整的框架中，如何與 LINE Bot 的開發做整合，讓開發 LINE Bot 的各位可以達到人跡一體的開發效率！
 
 ## [Playing real escape games in LINE, a RPG metaverse](https://music-tw.line.me/live/player/959f3074-3ec2-4d5f-8bd3-213fa3561fed)
 
+實境解謎是這幾年來非常火紅的主題，讓玩家在實體上可以與同伴合作解出謎題之外，也須在移動裝置作出相關的應對才能順利通關。本次由 LINE API Expert 佳新為大家介紹他們是如何在 LINE 聊天視窗可以打造一個角色扮演的虛擬遊戲世界，化身成為實境解謎的故事場景，在訊息對話來回之間，讓多位玩家一起破關、一起獲得樂趣，讓作為通訊軟體的 LINE，在聊天視窗裡除了聊天之外，也能夠與每位玩家做虛實整合的應用。
 ## [LINE PROTOSTAR Program Introduction & Startup Demo](https://music-tw.line.me/live/player/435677af-f577-4396-a117-d8f6eaf8b05f)
 
+![](https://nijialin.com/images/2022/techpulse/session/0.png)
+
+每年 TECHPULSE 不管在實體或是此次的線上，都是社群上大家關注的焦點之一，本次 LINE PROTOSTAR 團隊邀請了七隻不同的團隊為大家帶來分享，讓大家了解 LINE 官方帳號上究竟有什麼樣的應用方式，與真正商業上的內容做整合，想知道每個團隊是怎麼打造這樣子的服務，趕快點選標題中的影片觀看吧！
+
+
+> LINE 新星計劃歡迎開發者及新創公司一同加入，藉由提供免費 LINE 官方帳號、平台資源、技術支援，戰略夥伴諮詢輔導、提高您在 LINE 平台上開發的速度，並確保推出服務的成功。
 # 結論
+
+每年的 LINE TECHPULSE 都希望帶給大家最純粹的技術資訊，讓大家在軟體技術的這條路上不會寂寞，有大家的鼓勵才是我們持續辦下去的動力，希望兩天的技術與平台分享內容各位會喜歡！敬請期待我們接下來的活動內容，謝謝大家的支持，讓我們接下來的活動見！
+
+
+> 加入以下的官方帳號，絕對不讓你錯過任何第一手的資訊！
 
 # 活動小結
 
-立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
+立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手活動資訊，或與開發者計畫有關的最新消息的推播通知。▼
 
 「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev
 ![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
