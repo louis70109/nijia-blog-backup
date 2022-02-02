@@ -133,7 +133,7 @@ staffList = {
 
 ### Template 3
 
-![](https://nijialin.com/images/2022/announcer/template1.png)
+![](https://nijialin.com/images/2022/announcer/template3.png)
 
 ```javascript
 Card = {
