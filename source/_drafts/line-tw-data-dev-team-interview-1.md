@@ -147,6 +147,7 @@ SHAP 是用 Shapley Value 找貢獻值的概念，找出影響模型推測的原
 # 結論
 
 
+
 - [帶你了解 LINE Developers Meetup 第 14 場的精彩內容！](https://engineering.linecorp.com/zh-hant/blog/line-developer-meetup-14/)
 - [TechPulse 2019 – Timeline Post Recommender System 議程回顧](https://engineering.linecorp.com/zh-hant/blog/techpulse-2019-timeline-post-recommender/)
 - [「How ML Powers LINE Services」機器學習如何的讓 LINE 的服務能更貼近使用者](https://engineering.linecorp.com/zh-hant/blog/how-ml-powers-line-services/)
