@@ -5,16 +5,7 @@ date: 2022-02-13 23:11:57
 tags:
 ---
 
-
-<style>
-  section.compact {
-    font-size: 150%  
-  }
-  img[alt~="center"] {
-    display: block;
-    margin: 0 auto;
-  }
-</style>
+![](https://nijialin.com/images/2022/talk-quality.jpeg)
 
 ```
 質感說話課：言語的溫柔力量，是送給自己和他人最美的禮物
@@ -87,3 +78,13 @@ ISBN：9789573287629
 # 結論
 
 剛好這個時間看到影片中的一段話「人生就像一齣戲」，我們需要把握好每個時光，就如同上面`飲食`、`定力`維持等等，讓自己的時間可以最大化，並藉由更有吸引、質感的說話，讓說出來的每一句話，在這齣戲中，可以讓底下的觀眾可以享受這些你的努力帶來的內容，給這齣戲的品質再更加上升！
+
+<style>
+  section.compact {
+    font-size: 150%  
+  }
+  img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
