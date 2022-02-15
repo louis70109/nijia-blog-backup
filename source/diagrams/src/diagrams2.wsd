@@ -1,11 +1,13 @@
 @startuml
-DevRel->NCP: 登入帳號，更改密碼
-NCP->DevRel: 修改完成
-DevRel->NCP: 拔除 API Token
-NCP->DevRel: 用戶已無法使用
-note right of NCP
-  使用方需進入 Domain 
-  把使用到的服務都檢查一遍
-  並且與開發者逐一確認後刪除
-end note 
+User->Bot: Send audio message.
+Bot->Google_Bucket: From m4a to mp3 by byte and uploading. (Both of them file Hz were same)
+Google_Bucket->Bot: Save file done.
+Bot->Speech: Request Speech to Text.
+Speech->Google_Bucket: Find Speech file.
+Google_Bucket->Speech: Give file to operation.
+Speech->Bot: Give transcript and confidence.
+Bot->Dialogflow: Transfer transcript to NLP.
+Dialogflow->Bot: Detect transcript intent.
+Bot->Firebase: Judge intent and save to db.
+Firebase->Bot: Done.
 @enduml
