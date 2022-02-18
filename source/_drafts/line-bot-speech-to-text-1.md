@@ -1,6 +1,6 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 【在 LINE 中用語音訂飲料】串接 Google STT 前置作業
+categories: Google
 tags:
 ---
 
@@ -9,34 +9,70 @@ tags:
 
 # 前言
 
+
+- 串接 STT 的前置作業 (IAM and Bucket)
+- STT 串接說明
+  - 細節調整
+- LINE Bot 語音檔案處理與分析
+- Firebase IAM role setting
+- Firestore setting and upload data
+  - Python code
+- Local testing
+  - 一般開發方式
+  - k3d
+- Deploy to GKE
+- gcloud install
+  - Download: https://cloud.google.com/sdk/docs/install
+
+```
+gcloud config set project PROJECT_ID
+```
+
+```
+gcloud auth configure-docker \
+    asia-east1-docker.pkg.dev
+```
 <!-- more -->
 
-# 介紹
+使用 GCP 建立 Speech-to-Text(語音轉文字)時有三個步驟需要執行
+
+- 建立專案
+- IAM Role(權限申請)
+- Cloud Bucket(音檔儲存空間)
+- Speech-to-text(服務本身)
+
+接下來為大家介紹
+
+## 1. 建立專案
+
+![](https://nijialin.com/images/2022/speech-1/create-project.png)
+
+想使用 Google Cloud 服務時，都是以一個 Project 為單位來使用各種服務，因此可以參考圖片來建立一個 Project，名字以好辨別為主，後續再追朔費用時才會知道是誰花的錢(笑)。
+
+> 如果讀者有遇到費用超標問題，可以參考我之前寫的文章：[【GCP】忘記關服務產生費用該怎麼辦？](https://nijialin.com/2020/08/17/gcp-billing-support/)
+
+## 2. 申請 IAM & Admin
+
+使用各種 Public/Private Cloud 時，都需要申請金鑰才有權限透過機器去訪問各種服務的 API 們。
+
+因此我們先到 GCP 的任意頁面中，點選左上角的`漢堡`後選擇 `IAM & Admin`，接著裡點到分頁中的 `Service Accounts`
+
+![](https://nijialin.com/images/2022/speech-1/iam1.png)
+
+來到這裡之後，因為可能之前什麼都沒建立，請選擇 `CREATE SERVICE ACCOUNT`
+![](https://nijialin.com/images/2022/speech-1/iam2.png)
+
+把當中內容填寫完送出之後，點選剛剛你建立的 Service account，並看到畫面中有出現 `KEYS` 的子頁面，給他大力的點下去，並接著看到 `ADD KEY` 的地方，透過它來建立一個可以訪問服務的 JSON 檔。
+![](https://nijialin.com/images/2022/speech-1/role.png)
+
+
+TODO JSON 圖片
+
+接著把 JSON 檔放到專案裡面就可以啦！
+
+## 建立 Cloud Bucket
+如果有使用 AWS 的朋友應該會知道，這個功能相當於 S3，讓大家有個儲存的空間，並且可以做檔案的權限控管，並可以透過 API CRUD，
 
 # 結論
 
-# 活動小結
-
-立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
-
-「LINE 開發者官方社群」官方帳號 ID：@line_tw_dev
-![](https://www.evanlin.com/images/2020/line-tw-dev-qr.png)
-
-# 關於「LINE 開發社群計畫」
-
-LINE 今年年初在台灣啟動「LINE 開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，已經舉辦 30 場以上的活動。歡迎讀者們能夠持續回來察看最新的狀況。詳情請看:
-
-- [2019 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
-- [LINE Taiwan Developer Relations 2019 回顧與 2019 開發社群計畫報告](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019/)
-- [2020 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2020-line-tw-devrel/)
-- [2021 年 LINE 開發社群計畫活動時程表 (持續更新)](https://engineering.linecorp.com/zh-hant/blog/2021-line-tw-devrel/)
-
-<style>
-  section.compact {
-    font-size: 150%  
-  }
-  img[alt~="center"] {
-    display: block;
-    margin: 0 auto;
-  }
-</style>
+下一篇將開始介紹如何使用剛剛拿到的 JSON Key，進一步開始實測建立 Bucket 的步驟。
