@@ -1,16 +1,29 @@
 ---
 title: 【Flagr】Feature Toggle 練習與放在 Heroku 上測試
-categories: 學習紀錄
 tags:
+  - Flagr
+  - DevOps
+  - Heroku
+categories: 學習紀錄
+date: 2022-03-04 16:57:24
 ---
+
 
 ![](https://nijialin.com/images/2022/)
 
 # 前言
 
+前一陣子在一些討論上聽到聽前輩分享 [Feature Toggle](https://zh.wikipedia.org/wiki/%E7%89%B9%E6%80%A7%E5%88%87%E6%8D%A2) 這個做法，想說開發上哪有那麼神奇的事，可以在 Production 上動態調整用戶跟管理者能看到的範圍，因此稍微搜尋了解一下：
+
 <!-- more -->
 
-# 介紹
+> 參考維基：特性切換或稱功能切換，英語：feature toggle、feature switch、feature flag、feature flipper 或 conditional feature 等。它是軟體開發中的一種技術，是替代維護多個原始碼分支（也稱特性分支）的一種方案，這使特性在完成並正式發布前也可以得到測試。特性切換是在執行期間隱藏、啟用或禁用特定功能。例如在開發過程中，開發人員可以啟用功能以進行測試，而其他使用者不會被啟用該功能和受到它的影響。
+
+聽前輩娓娓道來，Feature Toggle 是 Chunk-based development 的其中一環，整個 DevOps 中的一小部分，有了 Toggle 之後才可以讓`持續性交付`這件事更容易被達成，並且可以讓大家看到動態調整用戶可視範圍內的東西，真的非常酷。
+
+不過要解釋 Feature Toggle 可能要幾天幾夜過去了，不如就直接實際使用 [Flagr](https://openflagr.github.io/flagr/#/README) 這個 Open Source 來試玩看看。
+
+# 操作介紹
 
 > 官網: https://openflagr.github.io/flagr/#/README
 
@@ -165,6 +178,6 @@ if (evaluation_result.variant_id == new_feature_on) {
 
 # 結論
 
-官方也有建議 Flagr 盡量在 k8s 當中，放在裡面或是一些內部網路中才可以確保 Flagr 不會被其他用戶呼叫到 API，因此上述使用 Heroku 範例`僅供參考測試使用`，如果真的需要上線使用，還是需要把 Flagr 好好的關在內部網路裡面喔！
+官方也有建議 Flagr 盡量在 k8s 當中，放在裡面或是一些內部網路中才可以確保 Flagr 不會被其他用戶呼叫到 API，因此上述使用 Heroku 範例`僅供參考測試使用`，如果真的需要上線使用，還是需要把 Flagr 好好的關在內部網路裡面。
 
 最後藉著在 Flagr 上操控除了讓 stackholder 們控制並調整條件，且開發端也可以有彈性的放入類似的判斷式讓程式碼更整潔，個人認為引入 Flagr 對整個產品/作品也會有更好的幫助喔！
