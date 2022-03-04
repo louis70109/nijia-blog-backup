@@ -28,10 +28,6 @@ tags:
 gcloud config set project PROJECT_ID
 ```
 
-```
-gcloud auth configure-docker \
-    asia-east1-docker.pkg.dev
-```
 <!-- more -->
 
 使用 GCP 建立 Speech-to-Text(語音轉文字)時有三個步驟需要執行
@@ -43,7 +39,7 @@ gcloud auth configure-docker \
 
 接下來為大家介紹
 
-## 1. 建立專案
+## 1. 建立 GCP 專案
 
 ![](https://nijialin.com/images/2022/speech-1/create-project.png)
 
