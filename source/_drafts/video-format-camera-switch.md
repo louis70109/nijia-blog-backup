@@ -1,11 +1,11 @@
 ---
-title: 【標題】題目
+title: 【設備分享】直播、線上會議、錄影、Vlog 總會需要的清單
 categories: 學習紀錄
 tags:
 ---
 
 
-![](https://nijialin.com/images/2022/)
+![](https://nijialin.com/images/2022/device-sharing)
 
 # 前言
 
@@ -29,6 +29,7 @@ tags:
 - Mac 只有一個輸入孔
   - 要嘛一轉二讓麥克風可以分開輸入
 - 或是皆在相機上，透過擷取盒進來
+- 買聲卡直接轉 USB 進電腦
 
 
 # 結論
