@@ -61,12 +61,26 @@ gcloud config set project PROJECT_ID
 把當中內容填寫完送出之後，點選剛剛你建立的 Service account，並看到畫面中有出現 `KEYS` 的子頁面，給他大力的點下去，並接著看到 `ADD KEY` 的地方，透過它來建立一個可以訪問服務的 JSON 檔。
 ![](https://nijialin.com/images/2022/speech-1/role.png)
 
+### 影片
 
-TODO JSON 圖片
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EODGZnE8eUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-接著把 JSON 檔放到專案裡面就可以啦！
+## 設定 Service Account
+
+![](https://nijialin.com/images/2022/speech-1/iam1.png)
+
+到 GCP 左上角的漢堡中可以點選，找到 IAM & ADMIN 的地方，點進去後就進到管理頁面。
+
+![](https://nijialin.com/images/2022/speech-1/iam2.png)
+
+進入後點到左邊的 Service Account，上方的 `Create Service Account` 給他按下去後，照著步驟把相關的內容填完(如影片)。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EODGZnE8eUI?start=302" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+建立完後要到 `KEYS` 的 tab，按下  `ADD KEY` 的按鈕後， `Create new key`，最後就能拿到我們今天要的 JSON 金鑰，把它存在接下來要使用的專案位置上即可。
 
 ## 建立 Cloud Bucket
+
 如果有使用 AWS 的朋友應該會知道，這個功能相當於 S3，讓大家有個儲存的空間，並且可以做檔案的權限控管，並可以透過 API CRUD，
 
 # 結論
