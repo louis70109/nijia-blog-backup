@@ -4,28 +4,40 @@ categories: 學習紀錄
 tags:
 ---
 
-
-![](https://nijialin.com/images/2022/)
+![](https://nijialin.com/images/2022/it-seed/1.jpg)
 
 # 前言
 
 大家好，我們 LINE 台灣開發者暨技術推廣部門。LINE 致力於舉辦對內的技術交流、教育訓練，以及對外的社群聚會、企業參訪、校園演講、開發者徵才日與開發者大會等各式各樣的活動。我們希望創造更多技術分享與跨國交流的機會，同時持續招募優秀人才加入 LINE 台灣開發工程團隊！本次很榮幸在新辦公室與**資訊種子**聯合舉辦企業參訪，透過了解不同企業文化讓同學們可以更能了解自己心之所向，不囉唆，讓我們繼續看下去！
+
 <!-- more -->
 
 # LINE TODAY Planning 介紹
+
+![](https://nijialin.com/images/2022/it-seed/2.jpg)
+
+![](https://nijialin.com/images/2022/it-seed/3.jpg)
 
 ## 挑戰
 
 # Data dev 介紹
 
+![](https://nijialin.com/images/2022/it-seed/5.jpg)
+
 ## 挑戰
+
+![](https://nijialin.com/images/2022/it-seed/4.jpg)
+
+![](https://nijialin.com/images/2022/it-seed/6.jpg)
+
+## 過去經驗分享
+
 
 # 結論
 
 很高興經過了這麼久時間可以在線下與大家見面，透過社群分享的活力讓大家可以面對面討論各種不同面向的技術主題，不管你是技術社群、學校、社團、系學會，若對於來 LINE 辦公室舉辦活動有興，歡迎發送各位的需求到這個連絡信箱： dl_twn_devrel@linecorp.com
 
 那我們就下次活動見囉！
-
 
 # 活動小結
 
