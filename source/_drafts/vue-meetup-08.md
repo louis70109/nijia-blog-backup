@@ -4,7 +4,6 @@ categories: 學習紀錄
 tags:
 ---
 
-
 ![](https://nijialin.com/images/2022/vue008/1.jpeg)
 
 # 前言
@@ -12,26 +11,38 @@ tags:
 大家好，我們 LINE 台灣開發者暨技術推廣部門。LINE 致力於舉辦對內的技術交流、教育訓練，以及對外的社群聚會、企業參訪、校園演講、開發者徵才日與開發者大會等各式各樣的活動。我們希望創造更多技術分享與跨國交流的機會，同時持續招募優秀人才加入 LINE 台灣開發工程團隊！本次很榮幸在新辦公室與**Vue.JS 社群**聯合舉辦線下技術分享活動，透過討論前端主題讓現場觀眾們可以對該領域有更深入的了解，當然大家會想要知道現場活動內容，不囉唆，讓我們繼續看下去！
 
 本次報名連結：https://vuejs.kktix.cc/events/v-tw-meetup-008
+
 <!-- more -->
 
-# 玩轉 Vue component, 積木堆起來 - Angela Wang, LINE TODAY 前端工程師
+# [玩轉 Vue component, 積木堆起來](https://speakerdeck.com/line_developers_tw/line-today-vue-component) - Angela Wang, LINE TODAY 前端工程師
 
-> 簡述: 元件設計與切割一直是個有趣的課題，如何活用Vue做出具備復用性,彈性,同時兼顧效能的元件？今天來分享 LINE TODAY 的一些想法與經驗
+> 簡述: 元件設計與切割一直是個有趣的課題，如何活用 Vue 做出具備復用性,彈性,同時兼顧效能的元件？今天來分享 LINE TODAY 的一些想法與經驗
 
-投影片
+## LINE TODAY 介紹
 
-部門介紹，TODAY 是一個...
+<script async class="speakerdeck-embed" data-slide="4" data-id="f65f1f308fdc429da50be0f24e44b3f2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-投影片
+LINE TODAY 的目標是成為最大內容入口網站，目前已經陸續推出新聞、賽事直播、電影訂票、選情專區等服務，以台灣為例，LINE TODAY 月活躍用戶超過 1800 萬，最高同時在線人數超過 40 萬。主要開發團隊以台灣團隊為主力，除了使用者多流量大之外，系統也整合了許多 LINE 內部的技術服務。歡迎對產品前端、後端有興趣、希望服務廣大使用者的工程師們加入我們！
 
-技術部分
-
+## 技術部分
 
 # 活動分享
 
-現場照片，錄影...
+![](https://nijialin.com/images/2022/vue008/3.jpg)
 
-大家對於這次主題也是非常感興趣呢，第二位講者也分享了...
+現場提供美味的餐點讓大家在下班過來活動後，還可以吃飽來聽聽社群活動的分享，飽餐一頓！
+
+![](https://nijialin.com/images/2022/vue008/4.jpg)
+
+開場前介紹一下公司現在的職缺以及舉辦活動的相關辦法
+
+### 如何與我們合作
+
+想知道如何申請校園授課與分享嗎？ 歡迎各個系學會與相關社團發送各位的需求到這個連絡信箱： dl_twn_devrel@linecorp.com
+
+![](https://nijialin.com/images/2022/vue008/2.JPG)
+
+大家在聽 LINE TODAY 工程師都分享非常認真呢！
 
 # 結論
 
