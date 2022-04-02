@@ -6,6 +6,8 @@ categories: 學習紀錄
 
 
 ![](https://nijialin.com/images/2022/)
+![](https://nijialin.com/images/common.jpeg)
+
 
 # 前言
 
