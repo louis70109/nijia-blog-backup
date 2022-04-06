@@ -1,5 +1,5 @@
 ---
-title: '把 JSON 字串寫入記憶體中的暫時檔案並放入環境變數 | Python, FastAPI'
+title: '把 JSON 字串寫入記憶體中的暫時檔案並放路徑至環境變數中 | Python, FastAPI'
 tags:
   - Python
   - GCP
