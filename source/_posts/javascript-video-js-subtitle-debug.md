@@ -1,5 +1,5 @@
 ---
-title: 處理 video.js 字幕編碼問題
+title: 處理 video.js 字幕編碼問題 | 使用 blob 放上字幕檔
 tags:
   - video.js
   - JavaScript
@@ -8,8 +8,6 @@ tags:
 categories: JavaScript
 date: 2022-04-16 22:09:31
 ---
-
-
 
 # 前言
 
