@@ -1,12 +1,15 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
-date: 2022-04-16 22:08:22
+title: 處理 video.js 字幕編碼問題
 tags:
+  - video.js
+  - JavaScript
+  - WEBVTT
+  - 字幕
+categories: JavaScript
+date: 2022-04-16 22:09:31
 ---
 
 
-![](https://nijialin.com/images/2022/)
 
 # 前言
 
