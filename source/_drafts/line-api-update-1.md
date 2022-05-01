@@ -4,10 +4,8 @@ categories: 學習紀錄
 tags:
 ---
 
-
 ![](https://nijialin.com/images/2022/line-api-update-1)
 ![](https://nijialin.com/images/common.jpeg)
-
 
 # 前言
 
@@ -17,9 +15,61 @@ tags:
 
 最近 LIFF 團隊釋出了讓大家可以快速建立 web app 的工具，參考[最近的新聞](https://developers.line.biz/en/docs/liff/cli-tool-create-liff-app/#advance-preparation)說明
 
+
+### 透過 npx 初始化一個 LIFF app
+```
+$ npx @line/create-liff-app
 ```
 
+### 選擇享用的框架與相關參數
+
+![](https://nijialin.com/images/2022/line-api-update-1/2.png)
+
+- 名稱
+- 框架
+- 型別
+  - JavaScript/TypeScript
+- LIFF ID
+  - 會在 `.env` 中，還沒填後續可以改
+- 套件管理？ yarn || npm
+
+## localhost 建立 SSL
+
+> refer [web.dev](https://web.dev/how-to-use-local-https/)
+
+### 安裝 mkcert 於 MacOS
+
 ```
+brew install mkcert
+brew install nss # If Firefox
+```
+
+### 透過 mkcert 安裝 CA 在電腦上
+
+![](https://nijialin.com/images/2022/line-api-update-1/3.png)
+
+```
+mkcert -install
+```
+
+### 建立 localhost 的兩把 pem
+
+![](https://nijialin.com/images/2022/line-api-update-1/4.png)
+
+
+```
+mkcert localhost
+```
+
+### 透過 mkcert 建立兩個 localhost pem key
+
+```
+mkdir -p cert && mkcert -key-file ./cert/key.pem -cert-file ./cert/cert.pem 'localhost'
+```
+
+### 在 vite.config.js 中設定位置
+
+<script src="https://gist.github.com/louis70109/b77b22ece137fbc1945153a9d1767b23.js"></script>
 
 # 結論
 
