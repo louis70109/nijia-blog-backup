@@ -33,43 +33,6 @@ $ npx @line/create-liff-app
   - 會在 `.env` 中，還沒填後續可以改
 - 套件管理？ yarn || npm
 
-## localhost 建立 SSL
-
-> refer [web.dev](https://web.dev/how-to-use-local-https/)
-
-### 安裝 mkcert 於 MacOS
-
-```
-brew install mkcert
-brew install nss # If Firefox
-```
-
-### 透過 mkcert 安裝 CA 在電腦上
-
-![](https://nijialin.com/images/2022/line-api-update-1/3.png)
-
-```
-mkcert -install
-```
-
-### 建立 localhost 的兩把 pem
-
-![](https://nijialin.com/images/2022/line-api-update-1/4.png)
-
-
-```
-mkcert localhost
-```
-
-### 透過 mkcert 建立兩個 localhost pem key
-
-```
-mkdir -p cert && mkcert -key-file ./cert/key.pem -cert-file ./cert/cert.pem 'localhost'
-```
-
-### 在 vite.config.js 中設定位置
-
-<script src="https://gist.github.com/louis70109/b77b22ece137fbc1945153a9d1767b23.js"></script>
 
 # 結論
 
