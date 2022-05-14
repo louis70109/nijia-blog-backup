@@ -15,6 +15,16 @@ tags:
 
 最近 LIFF 團隊釋出了讓大家可以快速建立 web app 的工具，參考[最近的新聞](https://developers.line.biz/en/docs/liff/cli-tool-create-liff-app/#advance-preparation)說明
 
+## Rich menu 
+
+[新聞稿](https://developers.line.biz/en/news/2022/05/13/richmenu-keyboard/)
+closeRichMenu: Close rich menu
+openRichMenu: Open rich menu
+openKeyboard: Open keyboard
+openVoice: Open voice message input mode
+
+- 還可以輸入文字，並且可以有 `\n`
+[新功能：在官方帳號開關選單、切換文字或語音輸入](https://taichunmin.idv.tw/blog/2022-05-14-line-postback-input-option.html)
 
 ### 透過 npx 初始化一個 LIFF app
 ```
