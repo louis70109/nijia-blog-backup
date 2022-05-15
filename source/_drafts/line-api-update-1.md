@@ -13,25 +13,61 @@ tags:
 
 # 介紹
 
-最近 LIFF 團隊釋出了讓大家可以快速建立 web app 的工具，參考[最近的新聞](https://developers.line.biz/en/docs/liff/cli-tool-create-liff-app/#advance-preparation)說明
 
-## Rich menu 
 
-[新聞稿](https://developers.line.biz/en/news/2022/05/13/richmenu-keyboard/)
-closeRichMenu: Close rich menu
-openRichMenu: Open rich menu
-openKeyboard: Open keyboard
-openVoice: Open voice message input mode
+## Rich menu 更新
 
-- 還可以輸入文字，並且可以有 `\n`
-[新功能：在官方帳號開關選單、切換文字或語音輸入](https://taichunmin.idv.tw/blog/2022-05-14-line-postback-input-option.html)
+
+> [官方 API 更新新聞](https://developers.line.biz/en/news/2022/05/13/richmenu-keyboard/)
+
+Rich Menu 在與官方帳號互動時很方便，不過過去在使用上會遇到一些小問題，在如今已經有方法解決囉！讓我們繼續往下看。
+
+
+### 過去遇到 或 無法處理的問題
+
+- 從 Rich Menu 按下按鈕後送出 Flex Message 後，如果訊息量太長，上面的內容會看不到
+- 只能手動縮小 Rich Menu
+- 切換鍵盤步驟過多
+  - 高互動的官方帳號不好處理(例如: 遊戲型OA)
+### 現在能怎麼做?
+
+在這次更新中支援了以下四種功能:
+
+- closeRichMenu: 關閉 rich menu
+- openRichMenu: 打開 rich menu
+- openKeyboard: 打開鍵盤
+- openVoice: 打開 voice message 的輸入模式
+
+
+此外還可以透過 [postback action](https://developers.line.biz/en/reference/messaging-api/#postback-action) 在打開鍵盤同時，輸入文字，並且可以帶有 `\n`，最多 300 字
+
+範例:
+```json
+{
+  "type": "postback",
+  "label": "Buy",
+  "data": "action=buy&itemid=123",
+  "displayText": "Buy",
+  "inputOption": "openKeyboard",
+  "fillInText": "---\nName: \nPhone: \nBirthday: \n---"
+}
+```
+
+> API Expert - 均民 詳細寫了一篇文章，歡迎大家參考: [新功能：在官方帳號開關選單、切換文字或語音輸入](https://taichunmin.idv.tw/blog/2022-05-14-line-postback-input-option.html)
+
+
+##  LIFF 更新
+
+最近 LIFF 團隊釋出了讓大家可以快速建立 web app 的工具，支援了各大主流框架，且使用方式相當容易。
+
+> 參考[最近的新聞](https://developers.line.biz/en/docs/liff/cli-tool-create-liff-app/#advance-preparation)
 
 ### 透過 npx 初始化一個 LIFF app
 ```
 $ npx @line/create-liff-app
 ```
 
-### 選擇享用的框架與相關參數
+### 選擇想用的框架與相關參數
 
 ![](https://nijialin.com/images/2022/line-api-update-1/2.png)
 
