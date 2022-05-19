@@ -67,6 +67,8 @@ Rich Menu 在與官方帳號互動時很方便，不過過去在使用上會遇�
 $ npx @line/create-liff-app
 ```
 
+![](https://user-images.githubusercontent.com/6940010/169269805-b468dbc6-ec6d-4372-b32c-a697112f52e5.mov)
+
 ### 選擇想用的框架與相關參數
 
 ![](https://nijialin.com/images/2022/line-api-update-1/2.png)
@@ -79,6 +81,49 @@ $ npx @line/create-liff-app
   - 會在 `.env` 中，還沒填後續可以改
 - 套件管理？ yarn || npm
 
+
+### LIFF Inspector/Mock
+
+## Flex Message Update 3
+
+video 可展示在 hero 區塊
+在 box component 中指定寬、高最大值
+text component 可加上行距(line spacing)
+Flex Message Simulator 支援 Update 3
+
+## Webhook redelivery
+
+過去可能在某次上版之後，開發者自己寫的 Chatbot(Backend API) 忽然壞掉，導致 chatbot 在收到訊息轉打到 webhook 時完全沒反應，更前端的用戶卻不知道發生什麼事，即便再後來修好了，當時用戶的需求沒辦法被滿足，這樣子的體驗就會變得不太好。(如下)
+
+```puml
+@startuml
+
+User->Chatbot: 發送訊息
+Chatbot->User: 已讀，資訊處理中
+Chatbot->LINE: LINE Server 收到資訊
+LINE->Chatbot: 已收到，轉至 webhook
+LINE->Backend: 透過 webhook 打到 Backend API
+Backend->LINE: 200 OK
+note over LINE, Backend #ADFF2F: 一般回傳成功
+
+
+LINE->Backend: 透過 webhook 打到 Backend API
+Backend->LINE: 400 || 500... LINE Server 找不到
+
+note over LINE, Backend #FA8072: 失敗回傳後，用戶不知道發生什麼事
+
+User<-->LINE: 怎麼沒有回應呢???
+@enduml
+```
+
+在這次有了 Webhook redelivery 之後，可以在 LINE Developer Console 中去設定按鈕。
+
+
+讓
+
+### Check error statistics for sending webhooks
+
+打開之後可以看到
 
 # 結論
 
