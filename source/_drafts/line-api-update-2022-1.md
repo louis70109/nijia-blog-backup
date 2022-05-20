@@ -1,7 +1,7 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
-tags:
+title: "LINE API Update: 上半年度整理"
+categories: 研討會
+tags: ['LINE', 'Chatbot']
 ---
 
 ![](https://nijialin.com/images/2022/line-api-update-1)
