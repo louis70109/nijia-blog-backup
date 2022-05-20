@@ -15,7 +15,7 @@ tags:
 
 
 
-## Rich menu 更新
+## 📊 Rich menu 更新
 
 
 > [官方 API 更新新聞](https://developers.line.biz/en/news/2022/05/13/richmenu-keyboard/)
@@ -29,6 +29,7 @@ Rich Menu 在與官方帳號互動時很方便，不過過去在使用上會遇�
 - 只能手動縮小 Rich Menu
 - 切換鍵盤步驟過多
   - 高互動的官方帳號不好處理(例如: 遊戲型OA)
+
 ### 現在能怎麼做?
 
 在這次更新中支援了以下四種功能:
@@ -39,7 +40,7 @@ Rich Menu 在與官方帳號互動時很方便，不過過去在使用上會遇�
 - openVoice: 打開 voice message 的輸入模式
 
 
-此外還可以透過 [postback action](https://developers.line.biz/en/reference/messaging-api/#postback-action) 在打開鍵盤同時，輸入文字，並且可以帶有 `\n`，最多 300 字
+除了透過 [postback action](https://developers.line.biz/en/reference/messaging-api/#postback-action) 打開以上四種 actions，另外還可以在打開鍵盤同時，輸入文字，並且可以帶有 `\n`，最多 300 字
 
 範例:
 ```json
@@ -53,12 +54,14 @@ Rich Menu 在與官方帳號互動時很方便，不過過去在使用上會遇�
 }
 ```
 
+如此一來解決了透過 Rich Menu 發送 Flex Message 版面看不清楚、切換鍵盤、自動輸入文字等等的問題，讓大家在開發 Chatbot 時可以有更好的使用者體驗！
+
 > API Expert - 均民 詳細寫了一篇文章，歡迎大家參考: [新功能：在官方帳號開關選單、切換文字或語音輸入](https://taichunmin.idv.tw/blog/2022-05-14-line-postback-input-option.html)
 
 
-##  LIFF 更新
+## 🌏LIFF 更新
 
-最近 LIFF 團隊釋出了讓大家可以快速建立 web app 的工具，支援了各大主流框架，且使用方式相當容易。
+最近 LIFF 團隊釋出了讓大家可以快速建立 web app 的工具，支援了各大主流框架，且使用方式相當容易。並且也提供了去年 DevDay 提到的兩個 plugin，以下就帶大家看一下！
 
 > 參考[最近的新聞](https://developers.line.biz/en/docs/liff/cli-tool-create-liff-app/#advance-preparation)
 
@@ -82,16 +85,26 @@ $ npx @line/create-liff-app
 - 套件管理？ yarn || npm
 
 
-### LIFF Inspector/Mock
+### [LIFF Inspector/Mock](https://developers.line.biz/en/news/2022/04/25/liff-plugin/)
 
-## Flex Message Update 3
+各位開發者不管在開發何種網頁上的內容，最需要的就是透過 DevTools 去檢查是否有元素跑掉，或是相關邏輯印出來的資訊是否有符合預期。過去在開發 LIFF 時會遇到的問題就是，在手機端測試開發項目時，除了用 alert() 暴力破解之外，就是 vConsole 來協助開發時顯示一些 log 方便除錯。
 
-video 可展示在 hero 區塊
-在 box component 中指定寬、高最大值
-text component 可加上行距(line spacing)
-Flex Message Simulator 支援 Update 3
+而在如今 LIFF 團隊出了全新的 plugin - Inspector，協助大家在手機/桌機開發 LIFF app 時，可以讓相關的訊息透過 websocket 的方式到 PC 瀏覽器的 DevTools 中顯示，如此一來就可以在開發上有更好的體驗。
 
-## Webhook redelivery
+
+另一方面的 plugin，Mock 是許多開發 LIFF 的前端開發者很大的福音，畢竟 LIFF 有一部份還是依靠 LINE Server 上的交握才可以讓大家獲取一些應用程式中的行為，在這邊透過 Mock 就可以測試流程中把 LIFF 給擋住，預設他的行為會是正確的，進而達到測試的目的性。
+
+## 🚀 [Flex Message Update 3](https://developers.line.biz/en/news/2022/03/11/flex-message-update-3-released/)
+
+- video 可展示在 hero 區塊 🚀
+- 在 box component 中指定寬、高最大值
+- text component 可加上行距(line spacing)
+- [Flex Message Simulator](https://developers.line.biz/flex-simulator/) 支援 Update 3
+
+影片功能是我在早期開發 Flex Message 時就很期待的功能之一，如今終於可以使用啦！並且搭配在上一版中已可以放上 APNG 來展示動圖，如此一來整個 Flex 就可以更加的完整使用，搭配更多的英用來操作。
+
+> 文章可以參考： [如何透過 LINE Video Flex Message 來打造影片翻譯（自動輸出文字）LINE Bot 聊天機器人](https://engineering.linecorp.com/zh-hant/blog/line-video-flex-message-bot/)
+## 📝 [Webhook redelivery](https://developers.line.biz/en/news/2022/03/07/pre-release-webhook-redelivery/)
 
 過去可能在某次上版之後，開發者自己寫的 Chatbot(Backend API) 忽然壞掉，導致 chatbot 在收到訊息轉打到 webhook 時完全沒反應，更前端的用戶卻不知道發生什麼事，即便再後來修好了，當時用戶的需求沒辦法被滿足，這樣子的體驗就會變得不太好。(如下)
 
@@ -119,11 +132,11 @@ User<-->LINE: 怎麼沒有回應呢???
 在這次有了 Webhook redelivery 之後，可以在 LINE Developer Console 中去設定按鈕。
 
 
-讓
+設定完了之後，在請求失敗後 LINE Server 也會在一定的時間內持續打訊息到 webhook url 中，讓暫時故障的 Server 可以在修復後收到請求，讓用戶後續還可以收到回饋，避免用戶流失的問題。
 
 ### Check error statistics for sending webhooks
 
-打開之後可以看到
+一般來說會開啟 redelivery，就是預計會有失敗的呼叫產生，因此在這也會一起把這些歷程也給記錄下來，因此這邊打開之後可以看到被呼叫的錯誤狀態，進而搭配 Server log 去追朔到狀態發生當下的問題，協助大家可以更釐清是否有邏輯上的問題產生。
 
 # 結論
 
