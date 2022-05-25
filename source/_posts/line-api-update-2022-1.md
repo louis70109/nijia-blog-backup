@@ -8,8 +8,7 @@ date: 2022-05-25 21:10:18
 ---
 
 
-![](https://nijialin.com/images/2022/line-api-update-1)
-![](https://nijialin.com/images/common.jpeg)
+![](https://nijialin.com/images/2022/line-api-update-1/2.png)
 
 # 前言
 
