@@ -1,23 +1,21 @@
 ---
 title: 'LINE API Update: 上半年度整理'
+tags:
+  - LINE
+  - Chatbot
 categories: 研討會
-tags: ['LINE', 'Chatbot']
+date: 2022-05-25 21:10:18
 ---
+
 
 ![](https://nijialin.com/images/2022/line-api-update-1)
 ![](https://nijialin.com/images/common.jpeg)
 
 # 前言
 
-大家好，我是 LINE Taiwan 的 Technology Evangelist - Nijia Lin。這次很開心受到 chatbot 社群的邀請，參加了 "[Chatbot meetup 聊天機器人小小聚 20 @Online](https://chatbots.kktix.cc/events/meetup-020)" 的聚會活動，並且分享 LINE API 更新與個人開發的心得。在此也跟各位分享本次參與的心得，並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。
+大家好，我是 LINE Taiwan 的 Technology Evangelist - Nijia Lin。這次很開心受到 chatbot 社群的邀請，參加了 "[Chatbot meetup 聊天機器人小小聚 31 @ Gather Town](https://events.chatbot.tw/events/30)" 的聚會活動，並且分享 LINE API 更新心得。在此也跟各位分享本次參與的紀錄，並且也希望透過社群分享的力量能夠讓聊天機器人的開發動能更加的盛大。
 
-- 社群 Chatbots Meetup： [https://chatbots.kktix.cc/](https://chatbots.kktix.cc/)
-- 本次活動網頁: [活動網址](https://chatbots.kktix.cc/events/meetup-020)
-- 本次活動的共筆紀錄： [https://hackmd.io/@chatbot-tw/meetups-020](https://hackmd.io/@chatbot-tw/meetups-020)
-
-由於 Chatbots Meetup 本身屬於社群自主性的活動，裡面也有許多社群朋友所贊助的閃電秀。裡面的所有內容也是相當的難得與有趣。也希望能夠透過本篇文章讓大家稍微了解 Chatbots Meetup 社群閃電秀的魅力。
-
-這次活動總算又回到 LINE 台灣的辦公室來舉辦，同時這也是疫情後 LINE 辦公室第一次舉辦線下的聚會。希望透過這次的聚會可以讓更多朋友了解到打造自己的聊天機器人是如此讓人開心的事情。
+- 本次活動網頁: [活動網址](https://events.chatbot.tw/events/30)
 
 <!-- more -->
 
