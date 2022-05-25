@@ -1,5 +1,5 @@
 ---
-title: 'LINE API Update: 上半年度整理'
+title: 'LINE 開發者社群計畫：LINE API Update: 上半年度整理 @ Chatbot meetups 31'
 tags:
   - LINE
   - Chatbot
