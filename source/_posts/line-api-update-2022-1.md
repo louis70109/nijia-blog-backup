@@ -18,6 +18,9 @@ date: 2022-05-25 21:10:18
 
 <!-- more -->
 
+- 活動影片
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I6AWuSM5ln8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # 介紹
 
 ## 📊 Rich menu 更新
