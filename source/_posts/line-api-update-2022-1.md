@@ -78,7 +78,7 @@ Rich Menu 在與官方帳號互動時很方便，不過過去在使用上會遇�
 $ npx @line/create-liff-app
 ```
 
-![](https://user-images.githubusercontent.com/6940010/169269805-b468dbc6-ec6d-4372-b32c-a697112f52e5.mov)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wrcJTeD77ZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 選擇想用的框架與相關參數
 
