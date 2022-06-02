@@ -1,6 +1,12 @@
 name: Hexo Build and Deploy
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: '0 13 * * *'
 
 jobs:
   build:
@@ -22,7 +28,7 @@ jobs:
         uses: louis70109/line-notify-action@master
         with:
           token: ${{ secrets.LINE_NOTIFY_TOKEN }}
-          message: '✅  Blog deploy done. draft: https://github.com/louis70109/nijia-blog-backup/tree/master/source/_drafts'
+          message: '✅📝 Blog deploy done. draft: https://github.com/louis70109/nijia-blog-backup/tree/master/source/_drafts'
       - name: send failure message
         if: ${{ failure() }}
         uses: louis70109/line-notify-action@master
