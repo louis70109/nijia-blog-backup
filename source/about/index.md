@@ -3,7 +3,7 @@ title: 關於 NiJia Lin
 date: 2019-10-16 11:28:36
 ---
 
-平時喜愛關注與貢獻 GitHub 上的各種開源專案，從文件的撰寫到程式碼的各種架構應用。同時也熱愛參加各大研討會了解當前技術的走向與認識來自不同社群的朋友，對於新事物總是有著很多的熱情並勇於嘗試。休閒時間可為一位 **農夫**、**健身者** 或 從替代役時期服務至今的**身障教養院 志工**，其餘時間則熱愛研究與貢獻各種有趣的開源專案，並於 2019 獲得 **LINE 官方專家認證** 與 iThome 鐵人賽 Modern Web 組**佳作**。
+Technology Evangelist at LINE Taiwan. Passion for sharing and creating new ideas in the engineering ecosystem. Also, contribute open-source in free time.
 
 - ☘️ Technology Evangelist / Software Engineer
 - 👨‍🌾 Farmer / 🏋️‍♂️ Body Builder
@@ -38,7 +38,6 @@ date: 2019-10-16 11:28:36
 
 - Python / Flask, FastAPI
 - NodeJS / Express
-- Ruby / Rails
 
 ### SQL, NoSQL
 
@@ -82,6 +81,12 @@ date: 2019-10-16 11:28:36
 
 # Talks
 
+- 朝陽資工所座談會 - 都到了研究所, 真的想往資訊領域嗎？
+  - [投影片](https://speakerdeck.com/line_developers_tw/nijia-career-sharing)
+- [Chatbot Meetup 31](https://events.chatbot.tw/events/30)
+  - [投影片](https://speakerdeck.com/line_developers_tw/line-api-update-20220525)
+  - [官方文章](https://engineering.linecorp.com/zh-hant/blog/line-line-api-update-chatbot-meetups-31)
+- [TECHPULSE 2022 Platform Opening](https://techpulse.line.me/)
 - COSCUP Keynote: [Open up with LINE: from beginning to the next​.](https://coscup.org/2021/zh-TW/session/7YY9MN)
   - [投影片](https://speakerdeck.com/line_developers_tw/coscup-2021-open-up-with-line-from-beginning-to-the-next)
 - [Chatbot Taiwan 中部人 meetup 16 - LINE Bot 入門介紹與 Platorm API 更新資訊 202107](https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-016)
@@ -118,8 +123,10 @@ date: 2019-10-16 11:28:36
 # Activities
 
 - [LINE Style](https://careers.linecorp.com/culture/17)
-### Organizer
+### Event host
 
+- [LINE TECH FRESH 畢業分享會]()
+- [LINE Taiwan Developers Recruitment Day 2022](https://engineering.linecorp.com/zh-hant/blog/line-dev-recruitment-day-2022)
 - [2019 / 2020 COSCUP [chatbot Taiwan]](https://coscup.org/2019/)
 - [2019 Modern Web [Chatbot Taiwan]](https://modernweb.tw/2019/index.html)
 - [2019 MOPCON [Chatbot Taiwan]](https://mopcon.org/2019/community/)
