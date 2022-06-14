@@ -1,17 +1,21 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 到了資工領域，你想前往軟體世界的副本嗎？
 tags:
+  - 資工
+  - 工作記錄
+categories: 研討會
+date: 2022-06-14 14:47:15
 ---
+
 
 ![](https://nijialin.com/images/common.jpeg)
 
-# 前言
+本篇內容為筆者到朝陽資工所分享的內容，分享工作以來的一些經驗，讓同學們在踏入社會之前可以提早做準備，那到底有什麼需要注意的呢？讓我們一起看下去！
 
 - [簡報內容](https://speakerdeck.com/line_developers_tw/nijia-career-sharing)
 <!-- more -->
 
-# 歡迎來到「軟體世界」副本 - 跳傘
+# 歡迎來到「軟體世界」副本 - 遊戲前先看看人家都怎麼玩
 
 <script async class="speakerdeck-embed" data-slide="4" data-id="8ac72fc5ee224eefb6ff76497665af26" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -33,26 +37,26 @@ tags:
 
 ### 目標 (短、中、長)
 
-以我自己而言，我的目標與大多數常見的框架類似，以30歲為一個分水嶺，先定義快十年的時間你想成為什麼樣的人，再往前推算中期、短期想達到什麼目標。
+以我自己而言，我的目標與大多數常見的框架類似，以 30 歲為一個分水嶺，先定義快十年的時間你想成為什麼樣的人，再往前推算中期、短期想達到什麼目標。
 
 - 短(碩班～服役)：把面試、軟體方向不足的地方補足，讓相關能力別落後別人太多
+
   - 從 FB 加入各種技術社團看每個訊息動態，了解現在大家關注什麼方向，進而往那方面多研究
   - 到 HackerNews 上看看是否有哪些是剛好自己也有興趣的東西
 
 - 中：尋找自己喜歡&適合的產業，別限縮自己只在單一個領域發展
+
   - 開始加入社群認識朋友，甚至成為 Organizer 都是我目前很棒的經驗
   - 前、後端、Cloud Native 的相關知識都會收集，讓自己涉略的領域可以更廣，對於愛聊天的我也很有幫助！
 
 - 長(30)：如果有發展順利，就繼續軟體業待著；反之轉行成到時喜歡的行業(開小吃 || 農夫)
   - 看來接下來應該軟體業繼續待著了～
 
-
 > 大家寫論文或履歷，應該都有被要求過短、中、長期應該做什麼吧？或許你也可以嘗試這麼方法
 
 # 挑選裝備/武器，看看自己的技能樹
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="8ac72fc5ee224eefb6ff76497665af26" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
 
 整理自己當前技能是個**很重要**的能力，許多優秀的同學都能在履歷中把自己的優點給<mark>特別</mark>的，讓未來合作夥伴、主管可以更快地了解你，畢竟大家時間都很寶貴，他們可能有其他跟錢有關係的會議在等著，你是否也可以讓自己在這些利益關係中突出呢？
 
@@ -92,8 +96,6 @@ tags:
 
 # 都決定好了，遊戲開始準備跑圖！
 
-
-
 準備好開始面試了，隨之而來競爭者也跟同跟著面試中，接著會開始遇到一些問題，「是我不夠努力嗎?」「他的運氣好好哦...」「他都找到工作了呢」這些聲音可能大家也時常聽見。
 
 而這邊分享一個看法，平常我們看到名校的學生，都會覺得「他們應該就順遂了吧？」「工作都不用擔心了」等等的想法，但其實他們身處於當下的環境，相對而來的競爭力也很高，需要付出的努力可能不是我們表面看得這麼簡單，他們在課餘時間的努力可能是我們沒看見的。提出這個例子是想跟大家說，如果覺得自己努力應該獲得些什麼的時候，回頭問問自己是否真的努力了？在這些高競爭力的領域中，"努力"這件事情已經是基本了。
@@ -126,11 +128,11 @@ tags:
 
 隨著大家經驗值越來越多，就會越來越清楚自己/對方要的是什麼，過程中犯錯是難免的，但請時刻保持謙虛，多聽/想/問，跟同儕間互相學習，找出屬於自己的方程式，也許在這過程中會找到真正屬於你的打法！(誰說補師之能補血？)
 
-> 推薦聽這集 Podcast - [EP05│職場心聲│閱人無數非HR莫屬！各界HR獨家解密新鮮人求職（上） ft. 金色三麥、Dcard](https://lin.ee/uDZZKQz/yltz)
+> 推薦聽這集 Podcast - [EP05│ 職場心聲 │ 閱人無數非 HR 莫屬！各界 HR 獨家解密新鮮人求職（上） ft. 金色三麥、Dcard](https://lin.ee/uDZZKQz/yltz)
 
 <script async class="speakerdeck-embed" data-slide="27" data-id="8ac72fc5ee224eefb6ff76497665af26" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-# 撰寫約八年的部落格
+# 最終篇：若發現有東西不懂，記錄下來就對了
 
 > 沒想到大學已經是八年前了...
 
@@ -142,7 +144,7 @@ tags:
 
 想想也對，程式一直寫，今天程式沒問題，不代表明天程式就會乖乖地給你跑正確，可能記憶體炸了、cpu 不夠...try catch 抓錯...之類的，因此我就下定決心開始記錄我的這些過程
 
-圖片
+<script async class="speakerdeck-embed" data-slide="20" data-id="8ac72fc5ee224eefb6ff76497665af26" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 從一開始毫無章法的開始記錄，到了現在會開始有結構性的去撰寫我的文章，把內容大致分類出來，當然這樣的技能也是要隨時間累積，相信任何一個作家一定也是累積了大量的撰寫跟思考才有辦法達到，因此還沒踏出這一步的朋友，現在網路上有很多免費的部落格空間，讓大家可以很快速的上線第一篇文章，心動不如馬上行動！
 
@@ -159,14 +161,18 @@ A: 可以，除了熟悉以外，也建議要對這領域有一定的熱誠！�
 Q: 實習建議是兩個月嗎？建議是什麼時候呢？
 
 A: 任何的實習機會都是最快與業界接觸的機會，學習到真正在賺錢的技能是非常重要的呢！如果是暑期實習就沒什麼限制，而如果像是 LINE TECH FRESH program 這樣一年的實習計畫，建議**大二升大三之後~碩班**期間來實習，一來畢竟大一大二相對必修課程會比較多，二來大家在即將畢業的年紀比較近，也能更好的銜接到未來工作。
+
 - [資料工程團隊 TECH FRESH 實習生活分享](https://engineering.linecorp.com/zh-hant/blog/data-dev-team-tech-fresh-life-1)
-- 【訪談】TECH FRESH 工作老實說 - 後續花絮與相關資訊整理
-- LINE TECH FRESH: 從實習到成為正職的經歷
-- TECH FRESH 實習的一年間，除了開發還有什麼內部活動呢？
-- Life in LINE – 直擊 TECH FRESH 實習內容！
-- Life in LINE – 你不知道的 LINE TECH FRESH 實習日常
-- LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開
+- [【訪談】TECH FRESH 工作老實說 - 後續花絮與相關資訊整理](https://engineering.linecorp.com/zh-hant/blog/what-is-tech-fresh-interview/)
+- [LINE TECH FRESH: 從實習到成為正職的經歷](https://engineering.linecorp.com/zh-hant/blog/from-line-tech-fresh-to-liner/)
+- [TECH FRESH 實習的一年間，除了開發還有什麼內部活動呢？](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2020-graduate/)
+- [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
+- [Life in LINE – 你不知道的 LINE TECH FRESH 實習日常](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021/)
+- [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
+
 # 結論
+
+這次很榮幸可以回朝陽資工所跟所有的學弟妹們分享我工作這段期間的一些看法以及經歷，而不管你現在身處何處，希望這次文章的內容可以幫助每位即將踏入軟體世界的同學們，如果你也覺得這篇文章對你有幫助，歡迎分享給周遭的朋友！
 
 # 活動小結
 
