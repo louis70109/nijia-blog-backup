@@ -86,7 +86,7 @@ date: 2022-06-14 14:47:15
 
 # 僚機隊員 - 同儕間的比較
 
-> 有看 Top Gun 的朋友應該知道挑選療機隊員是多麽重要的事情吧？
+> 有看 Top Gun 的朋友應該知道挑選僚機隊員是多麽重要的事情吧？
 
 不管求學階段，以致於到後面開始工作，作為人類的我們都會有朋友、同學去做比較，良性的競爭、比較我一直都相信是好的，互相砥礪讓雙方都持續進步，而在比較的同時最大的影響程度通常會有**家庭背景**、**個體差異**、**目前環境**，大家會因為**環境**、**做事方式**、**個性**、擁有的**資源不同**而影響到，進而對某個**領域的掌握度**(環境耳濡目然)、**適應力**有所不同，而讓你在做事上對於適合做 應用型 || 核心型 的開發者很有關連。
 
@@ -116,7 +116,9 @@ date: 2022-06-14 14:47:15
 
 <script async class="speakerdeck-embed" data-slide="21" data-id="8ac72fc5ee224eefb6ff76497665af26" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這個時候在網路上各種資源都非常發達，從各家機構的線上/下課程、各種研討會([【LINE TECHPLUSE 2022】議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-techpluse-2022-session-throw-back))以及各式技術社群(["Cross-country"專案測試心法 @ Test Corner #32](https://engineering.linecorp.com/zh-hant/blog/cross-country-test-corner-32))都可以參加，可能會有一些場地費、課程費用產生；但如果像我以前一樣在中南部，你則會需要負擔**車馬費**、**住宿費**等需要嗑金的費用，現在許多軟體領域的東西其實相較過去費用真的不高，雖然在工作前~前幾份工作這些費用可能會有一定的影響，許多遊戲雖然不一定嗑金就可以獲得很好的輸出，但嗑金總是讓你有機會翻身，玩遊戲都願意賭一把的話，現在的你想在職涯上賭一把嗎?
+這個時候在網路上各種資源都非常發達，從各家機構的線上/下課程、各種研討會([【LINE TECHPLUSE 2022】議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-techpluse-2022-session-throw-back))以及各式技術社群(["Cross-country"專案測試心法 @ Test Corner #32](https://engineering.linecorp.com/zh-hant/blog/cross-country-test-corner-32))都可以參加，可能會有一些場地費、課程費用產生；
+
+但如果像我以前一樣在中南部，你則會需要負擔**車馬費**、**住宿費**等需要嗑金的費用，現在許多軟體領域的東西其實相較過去費用真的不高，雖然在工作前~前幾份工作這些費用可能會有一定的影響，許多遊戲雖然不一定嗑金就可以獲得很好的輸出，但嗑金總是讓你有機會翻身，玩遊戲都願意賭一把的話，現在的你想在職涯上賭一把嗎?
 
 <script async class="speakerdeck-embed" data-slide="22" data-id="8ac72fc5ee224eefb6ff76497665af26" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
