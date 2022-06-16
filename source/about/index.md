@@ -10,7 +10,7 @@ Technology Evangelist at LINE Taiwan. Passion for sharing and creating new ideas
 - 👾 [Chatbot Developer Taiwan](https://www.facebook.com/groups/chatbot.tw/) - Co-organizers
 - 😇 德水園身障教養院 - 志工 2016~
 
-# Experience
+# Experiences
 
 - LINE Taiwan 2020/07~
 - 凱納股份有限公司 2019/06~2020/04
