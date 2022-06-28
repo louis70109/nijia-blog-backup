@@ -15,18 +15,19 @@ TECH FRESH 畢業分享會是一年一度 LINE TECH FRESH 的內部公開活動�
 ## 關於開發，可能會讓你很驚訝的 POINTS
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/1.png)
+
+這組同學手氣非常好，抽組別時開抽就到了第一組，開場就由 Yi Han 打先鋒，介紹了 QA TECH FRESH 在 LINE SHOPPING 擔任的腳色與定位，分享了許多測試相關的機制與自動化的撇步，讓大家了解到實習生來到 QA 團隊其實也是可以學到非常多精實的內容！
+
 ![](https://nijialin.com/images/2022/tech-fresh-2022/1-1.png)
 
-QA TECH FRESH in LINE SHOPPING
-Load Test PR Checks Mechanism
-開源 feature flagging 工具：Flagr
-實習雜談（對談形式）
+另一方面由 Euni 介紹了如何研究開源 feature flagging 工具：Flagr 的一些技巧，並且分享如何文件化讓內部同仁未來可以更有效率地從文件中找到更多有用的資訊。而最後兩位透過對談的形式來分享一下實習中的一些甘苦談，讓 Yi Han 在畢業之餘也可以把更多的經驗傳承給 Euni，讓接下來實習的過程有個借鏡，學到更多更不宜樣的經驗！
 
 ## 歸剛欸！前端開發經驗談
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/2-1.png)
-做過的前端專案 - 澎湖花火節
-用到的前端小撇步
+
+接下來由 Jerry、JunBin 分享在做一些活動上的專案時，需要注意哪些細節，才能讓更多的用戶達到更好的體驗，這邊就以前陣子「澎湖花火節」來當作範例跟大家分享用到的前端小撇步，因為有許多支援性的問題，當中也用到許多原生的作法，讓專案在上線之餘也可以增加未來的可維護性，
+
 遇到的前端問題
 團隊間溝通
 結論
