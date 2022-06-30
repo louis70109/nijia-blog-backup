@@ -1,13 +1,14 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
-tags:
+title: "Goggle I/O 2022 Extended 線下活動分享"
+categories: 研討會
+tags: ['GCP', 'AlloyDB', 'eventarc']
 ---
 
-![](https://nijialin.com/images/2022/)
 ![](https://nijialin.com/images/common.jpeg)
 
 # 前言
+
+上次參加外部活動時大概是四月多了，因為疫情關係讓這幾個月沒辦法參加實體活動，這次參加了 Google I/O 2022 extended 的線下活動，透過這次文章快速記下一些現場有聽到的內容～
 
 活動連結：https://gdg.community.dev/events/details/google-gdg-cloud-taipei-presents-gdgcloud-taipei-meetup-io-2022-extended-cloud-edition/
 
@@ -94,7 +95,7 @@ cloud storage 丟到一個檔案 -> eventarc 收到資訊後 -> workflow 接上p
 
 # 結論
 
-這次是首次來參加線下 GDG 活動，難得在聽演講同時也可以看看周遭的風景也真的不錯，現場也遇到了許多認識的人，世界真的很小呢(哈)，希望接下來有更多的機會可以到線下跟大家見面！
+這次是首次來參加線下 GDG 活動，難得在聽演講同時也可以看看周遭的風景也真的不錯，現場也遇到了許多認識的人，世界真的很小呢(哈)，希望接下來有更多的機會可以到線下跟大家見面！有任何問題歡迎留言讓我知道：）
 
 <style>
   section.compact {
