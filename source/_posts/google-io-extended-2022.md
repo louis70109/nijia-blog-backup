@@ -93,7 +93,7 @@ cloud storage 丟到一個檔案 -> eventarc 收到資訊後 -> workflow 接上p
 
 - cloud SQL: 這邊用了 Primary, HA 還有一個忘了，這三個地方。
 
-在建立時因為機制，會去讀寫實體的硬碟，因此就會需要三個地方就各自會有個 1TB 硬碟(Storage)，讀寫上要去 SYNC 也會有較多的 cost，且 read write 相對 downtime 也比較久 -> 三個環境會建立各自的 AlloyDB
+在建立時因為機制，會去讀寫實體的硬碟，因此就會需要三個地方就各自會有個 1TB 硬碟(Storage)，讀寫上要去 SYNC 也會有較多的 cost，且 read write 相對 downtime 也比較久：
 
 - AlloyDB: 跟 cloud SQL 不一樣的部分是三個地方都會分享同一個 Storage，文件中也保證即便硬碟因為人為或伺服器有問題，都不會讓資料不見。
   - 這邊有另外詢問講者問題，提到資料也會有類似 git 版控的概念，讓大家可能在一些人為因素不小心動到，或是種種原因後，也是一樣可以回到上一版本的資料，跟快照不太一樣，但至少知道自己的資料們還在，損失也會相對少
