@@ -1,8 +1,13 @@
 ---
-title: "Goggle I/O 2022 Extended 線下活動分享"
+title: Goggle I/O 2022 Extended 線下活動分享
+tags:
+  - GCP
+  - AlloyDB
+  - eventarc
 categories: 研討會
-tags: ['GCP', 'AlloyDB', 'eventarc']
+date: 2022-07-01 01:11:47
 ---
+
 
 ![S__3801091](https://user-images.githubusercontent.com/6940010/176736874-e16463da-d1a3-4de0-9ffa-669ba78a5417.jpg)
 
