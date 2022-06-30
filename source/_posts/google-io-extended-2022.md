@@ -29,6 +29,7 @@ date: 2022-07-01 01:11:47
 開場稍微介紹了 Serverless 以及 Kubernetes 大致使用場景與面對的方向：
 
 - Serverless -> Developer 導向，只要把 code 寫完推上去就能使用
+  - 過去也有寫過一些 Serverless 的文章，[歡迎參考](https://nijialin.com/tags/Serverless/)
 - kubernetes -> 較針對 Infra manager，需要管理各種應用場景，針對不同需求提供方案
 
 接著簡介帶入產品，把用戶常見 FAQ 分享給大家，這裡主要重點就是在使用時，要幫使用者顧跳槽的東西(彈性)，也要顧及到方便性與 Downtime 的部分。
