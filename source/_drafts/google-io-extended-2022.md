@@ -4,7 +4,8 @@ categories: 研討會
 tags: ['GCP', 'AlloyDB', 'eventarc']
 ---
 
-![](https://nijialin.com/images/common.jpeg)
+![S__3801091](https://user-images.githubusercontent.com/6940010/176736874-e16463da-d1a3-4de0-9ffa-669ba78a5417.jpg)
+
 
 # 前言
 
@@ -15,6 +16,8 @@ tags: ['GCP', 'AlloyDB', 'eventarc']
 <!-- more -->
 
 # 介紹
+
+![S__3801093](https://user-images.githubusercontent.com/6940010/176736858-8d6c21df-54d6-4d97-8614-e60b04226d43.jpg)
 
 ## What's new in the latest Serverless World?
 
@@ -62,6 +65,7 @@ cloud storage 丟到一個檔案 -> eventarc 收到資訊後 -> workflow 接上p
 
 ## AlloyDB, The best of Google + PostgreSQL compatibility
 
+![S__3801094](https://user-images.githubusercontent.com/6940010/176736800-7ef83aa0-80c7-4851-a44d-a8970fce28cd.jpg)
 
 以 PostgreSQL 為主體去做的，以下做了些小筆記：
 
@@ -77,8 +81,6 @@ cloud storage 丟到一個檔案 -> eventarc 收到資訊後 -> workflow 接上p
     - `1,2 a,b AAA,BBB`
 
 > free during public preview，講者有提到GA後就會收費，因為儲存機制不同於 Cloud SQL，相對收費會高些
-
-
 
 ### Position
 
@@ -96,6 +98,8 @@ cloud storage 丟到一個檔案 -> eventarc 收到資訊後 -> workflow 接上p
 # 結論
 
 這次是首次來參加線下 GDG 活動，難得在聽演講同時也可以看看周遭的風景也真的不錯，現場也遇到了許多認識的人，世界真的很小呢(哈)，希望接下來有更多的機會可以到線下跟大家見面！有任何問題歡迎留言讓我知道：）
+
+![S__3801095](https://user-images.githubusercontent.com/6940010/176736868-fe6aa721-6893-4279-bcd4-632413f4b9ab.jpg)
 
 <style>
   section.compact {
