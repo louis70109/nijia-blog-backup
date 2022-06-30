@@ -5,6 +5,7 @@ tags:
 ---
 
 ![](https://nijialin.com/images/common.jpeg)
+![](https://nijialin.com/images/yearly-review/1.jpeg)
 
 
 # 前言
@@ -54,10 +55,11 @@ tags:
 
 ## 目標迷失時怎辦?
 
-不管是多好的環境上班，總是會有各種事物影響到當前，甚至是讓你懷疑自己
+不管是多好的環境上班，總是會有各種事物影響到當前的心理狀態，甚至是讓你懷疑自己
 
 - 看點書
 - 運動
+- 看比賽找興趣
 ## 多多關心身旁的人
 
 
