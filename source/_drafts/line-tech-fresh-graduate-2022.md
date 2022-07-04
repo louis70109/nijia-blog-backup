@@ -54,7 +54,7 @@ TECH FRESH 畢業分享會是一年一度 LINE TECH FRESH 的內部公開活動�
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/4.png)
 
-來到了第四組，由 Data Dev team 三位女孩組成，分享在裡面做到的工作內容，由身為 Data Analyst, Data Scientist 及 Data Engineer 三個面向去帶到，從跟隨正職一起分析 Voom 的一些內容、Knowledge Graph、推薦系統、及許多 NLP 上的開發，當中的內容主題也非常有趣，分享給大家：
+來到了第四組，由 Data Dev team 三位女孩組成，分享在裡面做到的工作內容，由身為 Data Analyst, Data Scientist 及 Data Engineer 三個面向去帶到，從跟隨正職一起分析 Voom 的一些內容、Knowledge Graph、推薦系統、及許多 NLP 上的開發，當中的內容大綱也非常有趣，分享給大家：
 
 - 如果是實習生看到 - Voom，不喜歡他的話，那就不是實習生
 - 做不到一人的寵愛，那就做萬人的喜歡
