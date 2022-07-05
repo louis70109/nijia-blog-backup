@@ -4,15 +4,41 @@ categories: 學習紀錄
 tags:
 ---
 
-![](https://nijialin.com/images/2022/tech-fresh-2022/Preview_blog.png)
 
-
-
-TECH FRESH 畢業分享會是一年一度 LINE TECH FRESH 的內部公開活動，讓同學在實習的過程的最後，可以跟大家分享這一年來的旅程，以下跟大家分享內容。
+2021 屆的 TECH FRESH 在六月底時已經畢業囉！不管是繼續留下，抑或是生涯另有規劃，相信在 LINE 研發工程團隊中經歷的一切都會讓大家印象深刻。而除了日常的開發工作外，究竟在其他的工作時間 TECH FRESH 會經歷哪些活動呢？讓我們一探究竟！
 
 <!-- more -->
 
-# 主題介紹
+# 把握每次的曝光機會
+
+## [十一月內部黑客松競賽]((https://engineering.linecorp.com/zh-hant/blog/internal-hackathon-2021/))
+
+![](https://engineering.linecorp.com/wp-content/uploads/2022/04/1-1024x768.jpeg)
+
+在 2021 十一月，舉辦了[【AI For The New Normal】 LINE Taiwan Internal Hackathon 2021](https://engineering.linecorp.com/zh-hant/blog/internal-hackathon-2021/)，雖然當時因為疫情的關係有大多隊伍都於線上組隊/討論，在十一月時也順利舉辦，以跨部門組隊為核心，讓每個隊伍可以在黑客松期間，認識到平時可能不會接觸到的同事！
+
+而這場活動當然也都有不同屆的 TECH FRESH 參與其中，不管最後成績如何，相信在過程中與跨部門同仁合作、各種應用發想的討論經驗都會是非常寶貴的！
+
+## [TECHPULSE 2022 登壇]()
+
+- [【LINE TECHPLUSE 2022】議程回顧](https://engineering.linecorp.com/zh-hant/blog/line-techpluse-2022-session-throw-back/#line-tech-fresh-programhttpsmusic-twlinemeliveplayer73d6151e-159f-4435-a3ec-82481b27b6d6)
+
+## 社群活動
+
+![](https://engineering.linecorp.com/wp-content/uploads/2022/03/image-2-1024x576.jpeg)
+
+- [我的聰明，讓你知道 @ Test Corner 32](https://engineering.linecorp.com/zh-hant/blog/show-you-my-wisdom-test-corner-32/)
+- [資料工程團隊 TECH FRESH 實習生活分享](https://engineering.linecorp.com/zh-hant/blog/data-dev-team-tech-fresh-life-1/)
+
+
+## 個人分享
+
+[QA — Automation Engineer 日常都在做什麼？以 LINE SHOPPING 為例](https://engineering.linecorp.com/zh-hant/blog/qa-automation-engineer-line-shopping/)
+# 我們畢業囉！TECH FRESH 畢業分享會
+
+![](https://nijialin.com/images/2022/tech-fresh-2022/Preview_blog.png)
+
+TECH FRESH 畢業分享會是一年一度 LINE TECH FRESH 的內部公開活動，讓同學在實習的過程的最後，可以跟大家分享這一年來的旅程，以下跟大家分享內容。
 
 ## 關於開發，可能會讓你很驚訝的 POINTS
 
@@ -32,9 +58,7 @@ TECH FRESH 畢業分享會是一年一度 LINE TECH FRESH 的內部公開活動�
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/2-2.png)
 
-
 也因為跟上不同的專案，了解到除了與開發者們溝通之外，與不同團隊也需要有很多的技能，在這邊也學到不同的內容呢！
-
 
 ## EC: 叢林開始的異世界生活
 
@@ -69,22 +93,33 @@ TECH FRESH 畢業分享會是一年一度 LINE TECH FRESH 的內部公開活動�
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/5.png)
 
-最後由 Steve 帶來在 [LINE SPOT](https://spot.line.me/) 團隊中的實習生活，
+最後由 Steve 帶來在 [LINE SPOT](https://spot.line.me/) 團隊中的實習生活，作為一個前端的 TECH FRESH，除了了解瀏覽器、效能及語言特性外，時常也會做到 UI 上的改良，讓各種用戶/小編的體驗可以更棒，下圖則是 Steve 其中負責的一個部分。
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/steve.gif)
 
+而在 LINE SPOT 團隊中因為有專職的 Scrum Master 帶領，讓團隊的同仁可以更有效的進行工作，讓功能可以更快速的迭代上去。Steve 也分享了以 TECH FRESH 在一個 Scrum team 裡面的經驗談，學習到許多在學校之外更難得可貴的業界經驗，了解到分工的重要性，
 
-SPOT 介紹
-體驗
-跨團隊溝通
-小故事
-結論
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/2ca0ce07777a44368b36b49e3432caa5?slide=17" title="LINE Dev Meetup 16 - Frontend &amp; LINE SPOT" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+最後也分享 Steve 在工作上的一些個人經驗分享：
+
+- 嘗試自己解決問題
+  - 試著了解問題的本質，順利解決後也會更有印象；即便解不出來，也能有條理的整理問題詢問 Mentor。
+- 尋找最佳的解決方案
+  - 原生好？套件好？這在現實工作中沒有一定的解答，在每個環境下尋找最佳解都是個有挑戰的解法！
+- 注重質與量
+  - 太過注重「質」，時程會變很長，甚至耽誤到其他的 task；反之太注重「量」，則會犧牲很多品質，如何在當中取捨也是在團隊中學習到的一個課題。
+- 挑戰新事物
+  - LINE 裡面很鼓勵每位實習生勇敢挑戰不同的專案，累積專業能力的同時，也能增廣見聞！
 
 # 結論
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/TECH_FRESH.png)
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/all.JPG)
+
+校園資訊也歡迎跟我們聯絡
+- [](https://engineering.linecorp.com/zh-hant/blog/line-devrel-campus/)
 
 # 活動小結
 
