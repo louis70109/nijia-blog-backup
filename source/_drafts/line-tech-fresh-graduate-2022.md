@@ -4,7 +4,9 @@ categories: 學習紀錄
 tags:
 ---
 
-![](https://nijialin.com/images/2022/tech-fresh-2022/TECH_FRESH.png)
+![](https://nijialin.com/images/2022/tech-fresh-2022/Preview_blog.png)
+
+
 
 TECH FRESH 畢業分享會是一年一度 LINE TECH FRESH 的內部公開活動，讓同學在實習的過程的最後，可以跟大家分享這一年來的旅程，以下跟大家分享內容。
 
@@ -67,6 +69,10 @@ TECH FRESH 畢業分享會是一年一度 LINE TECH FRESH 的內部公開活動�
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/5.png)
 
+最後由 Steve 帶來在 [LINE SPOT](https://spot.line.me/) 團隊中的實習生活，
+
+![](https://nijialin.com/images/2022/tech-fresh-2022/steve.gif)
+
 
 SPOT 介紹
 體驗
@@ -75,6 +81,8 @@ SPOT 介紹
 結論
 
 # 結論
+
+![](https://nijialin.com/images/2022/tech-fresh-2022/TECH_FRESH.png)
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/all.JPG)
 
