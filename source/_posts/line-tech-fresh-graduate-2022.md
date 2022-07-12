@@ -5,14 +5,15 @@ date: 2022-07-12 12:10:10
 tags: ['LINE TECH FRESH', 'LINE']
 ---
 
-
 2021 屆的 [TECH FRESH](https://careers.linecorp.com/jobs/83) 在六月底時已經畢業囉！不管是繼續留下，抑或是生涯另有規劃，相信在 LINE 研發工程團隊中經歷的一切都會讓大家印象深刻。而除了日常的開發工作外，究竟在其他的工作時間 [TECH FRESH](https://careers.linecorp.com/jobs/83) 會經歷哪些活動呢？讓我們一探究竟！
 
 <!-- more -->
 
 # 把握每次的曝光機會
 
-## [十一月內部黑客松競賽](<(https://engineering.linecorp.com/zh-hant/blog/internal-hackathon-2021/)>)
+我們日常在工作中，有許多的研討會/讀書會/社群/訓練/社團...可以參加，一直以來我們都很鼓勵每位同仁多分享自己在日常生活的經驗(不僅限工作)，當然同學們也不例外啦！以下讓大家看看這一年來有參加哪些活動吧！
+
+## 發揮你的創意！[內部黑客松競賽](<(https://engineering.linecorp.com/zh-hant/blog/internal-hackathon-2021/)>)
 
 ![](https://engineering.linecorp.com/wp-content/uploads/2022/04/1-1024x768.jpeg)
 
@@ -20,7 +21,7 @@ tags: ['LINE TECH FRESH', 'LINE']
 
 而這場活動當然也都有不同屆的 TECH FRESH 參與其中，不管最後成績如何，相信在過程中與跨部門同仁合作、各種應用發想的討論經驗都會是非常寶貴的！
 
-## [TECHPULSE 2022 登壇](https://techpulse.line.me/)
+## 年度研討會 - 登壇 [TECHPULSE 2022](https://techpulse.line.me/)
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/techpulse.png)
 
@@ -32,7 +33,7 @@ tags: ['LINE TECH FRESH', 'LINE']
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-c26eLPUuOI?start=240" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 社群活動
+## 社群活動 - 拉近同學與 LINE 的距離
 
 ![](https://engineering.linecorp.com/wp-content/uploads/2022/03/image-2-1024x576.jpeg)
 
