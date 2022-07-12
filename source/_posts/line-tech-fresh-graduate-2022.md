@@ -47,7 +47,7 @@ tags: ['LINE TECH FRESH', 'LINE']
 
 # 我們畢業囉！TECH FRESH 畢業分享會
 
-![](https://nijialin.com/images/2022/tech-fresh-2022/Preview_blog.png)
+![](https://nijialin.com/images/2022/tech-fresh-2022/fb_blog.png)
 
 > 古人常說:「如果不曝光分享讓更多知道你，沒有人知道你到底做了多少事。」
 
