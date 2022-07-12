@@ -25,8 +25,9 @@ cloud build -> cloud storage 會開個資料夾 -> gcr.io 幫建立個 container
 
 > 需要 Dockerfile 才會部署成功。[文件](https://cloud.google.com/run/docs/deploying-source-code)
 
-```
+官方使用 flask，而我叫習慣使用 FastAPI，因此魔改了官方的範例，大家可以看看實際上有什麼差別～
 
+```Dockerfile
 # Use the official lightweight Python image.
 # https://hub.docker.com/_/python
 FROM python:3.10-slim

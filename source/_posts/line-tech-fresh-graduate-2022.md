@@ -1,8 +1,8 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 【LINE TECH FRESH】2021 屆畢業囉！這一年來又有什麼新鮮事呢？
+categories: LINE
 date: 2022-07-12 12:10:10
-tags:
+tags: ['LINE TECH FRESH', 'LINE']
 ---
 
 
@@ -20,7 +20,7 @@ tags:
 
 而這場活動當然也都有不同屆的 TECH FRESH 參與其中，不管最後成績如何，相信在過程中與跨部門同仁合作、各種應用發想的討論經驗都會是非常寶貴的！
 
-## [TECHPULSE 2022 登壇]()
+## [TECHPULSE 2022 登壇](https://techpulse.line.me/)
 
 ![](https://nijialin.com/images/2022/tech-fresh-2022/techpulse.png)
 
