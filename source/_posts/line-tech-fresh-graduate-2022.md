@@ -35,7 +35,7 @@ tags: ['LINE TECH FRESH', 'LINE']
 
 ## 社群活動 - 拉近同學與 LINE 的距離
 
-![](https://engineering.linecorp.com/wp-content/uploads/2022/03/image-2-1024x576.jpeg)
+![](https://nijialin.com/images/2022/ldm16/1.jpg)
 
 日常大家會在各種技術社團看到 LINE 的相關同仁到處分享工作上開發的經驗，就連我們在公司內部也有大量的讀書會/工作坊運作著，因此我們也會鼓勵所有的同學，進來 LINE 之後，要試著找到機會分享自己所學，別覺得自己只是新人就不敢分享，畢竟大家工作一陣子後，也需要不同角度的想法來碰撞出新的方向，因此不管在內部或外部，也希望大家踴躍分享！
 
