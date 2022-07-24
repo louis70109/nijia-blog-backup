@@ -39,7 +39,7 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.LINE_BOT_TOKEN }}" \
             -d '{
                     "to": "${{ secrets.ADMIN_LINE_ID }}",
-                    "messages":{
+                    "messages":[{
                       "type": "flex",
                       "altText": "FIFA Home",
                       "contents": {
@@ -102,7 +102,7 @@ jobs:
                         "flex": 0
                       }
                     }
-                  }
+                  }]
                 }'
       - name: send failure message
         if: ${{ failure() }}
