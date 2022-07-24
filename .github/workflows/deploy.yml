@@ -33,6 +33,25 @@ jobs:
            🌻 Blog: https://nijialin.com/
            ${{ github.run_id }} 
            ${{ github.repository }}
+      - name: success
+        if: ${{ success() }}
+        run: |
+          curl -v -X POST https://api.line.me/v2/bot/message/push \
+                -H "Content-Type: application/json" \
+                -H "Authorization: Bearer ${{ secrets.LINE_BOT_TOKEN }}" \
+                -d '{
+                    "to": "${{ secrets.ADMIN_LINE_ID }}",
+                    "messages":"[
+                        {
+                            "type":"text",
+                            "text":"Hello, world1"
+                        },
+                        {
+                            "type":"text",
+                            "text":"Hello, world2"
+                        }
+                    ]
+                }"
       - name: send failure message
         if: ${{ failure() }}
         uses: louis70109/line-notify-action@master
