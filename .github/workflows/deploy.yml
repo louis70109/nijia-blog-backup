@@ -31,8 +31,6 @@ jobs:
           message: |
            ✅📝 Blog deploy done. draft: https://github.com/louis70109/nijia-blog-backup/tree/master/source/_drafts
            🌻 Blog: https://nijialin.com/
-           ${{ github.run_id }} 
-           ${{ github.repository }}
       - name: success
         if: ${{ success() }}
         run: |
@@ -41,16 +39,70 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.LINE_BOT_TOKEN }}" \
             -d '{
                     "to": "${{ secrets.ADMIN_LINE_ID }}",
-                    "messages":[
-                        {
-                            "type":"text",
-                            "text":"Hello, world1"
-                        },
-                        {
-                            "type":"text",
-                            "text":"Hello, world2"
-                        }
-                    ]
+                    "messages":{
+                      "type": "flex",
+                      "altText": "FIFA Home",
+                      "contents": {
+                      "type": "bubble",
+                      "hero": {
+                        "type": "image",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+                        "size": "full",
+                        "aspectRatio": "20:13",
+                        "aspectMode": "cover",
+                      },
+                      "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "Brown Cafe",
+                            "weight": "bold",
+                            "size": "xl"
+                          }
+                        ]
+                      },
+                      "footer": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "spacing": "sm",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "style": "link",
+                            "height": "sm",
+                            "action": {
+                              "type": "uri",
+                              "label": "📝 Draft",
+                              "uri": "https://github.com/louis70109/nijia-blog-backup/tree/master/source/_drafts"
+                            }
+                          },
+                          {
+                            "type": "button",
+                            "style": "link",
+                            "height": "sm",
+                            "action": {
+                              "type": "uri",
+                              "label": "🌻 Blog",
+                              "uri": "https://nijialin.com/"
+                            }
+                          },
+                          {
+                            "type": "button",
+                            "style": "link",
+                            "height": "sm",
+                            "action": {
+                              "type": "message",
+                              "label": "Deploy",
+                              "text": "${{ github.repository }} ${{ github.run_id }}"
+                            }
+                          }
+                        ],
+                        "flex": 0
+                      }
+                    }
+                  }
                 }'
       - name: send failure message
         if: ${{ failure() }}
