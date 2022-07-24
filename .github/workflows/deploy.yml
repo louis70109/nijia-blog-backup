@@ -37,9 +37,9 @@ jobs:
         if: ${{ success() }}
         run: |
           curl -v -X POST https://api.line.me/v2/bot/message/push \
-                -H "Content-Type: application/json" \
-                -H "Authorization: Bearer ${{ secrets.LINE_BOT_TOKEN }}" \
-                -d '{
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.LINE_BOT_TOKEN }}" \
+            -d '{
                     "to": "${{ secrets.ADMIN_LINE_ID }}",
                     "messages":"[
                         {
