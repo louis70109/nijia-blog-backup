@@ -39,7 +39,7 @@ jobs:
           curl -v -X POST https://api.line.me/v2/bot/message/push \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${{ secrets.LINE_BOT_TOKEN }}" \
-            -d "{
+            -d '{
                     "to": "${{ secrets.ADMIN_LINE_ID }}",
                     "messages":[
                         {
@@ -51,7 +51,7 @@ jobs:
                             "text":"Hello, world2"
                         }
                     ]
-                }"
+                }'
       - name: send failure message
         if: ${{ failure() }}
         uses: louis70109/line-notify-action@master
