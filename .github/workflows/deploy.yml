@@ -59,7 +59,8 @@ jobs:
                             "type": "text",
                             "text": "${{ github.repository }}",
                             "weight": "bold",
-                            "size": "xl"
+                            "size": "xl",
+                            "wrap": "true"
                           }
                         ]
                       },
@@ -128,7 +129,8 @@ jobs:
                             "type": "text",
                             "text": "${{ github.repository }}",
                             "weight": "bold",
-                            "size": "xl"
+                            "size": "xl",
+                            "wrap": "true"
                           }
                         ]
                       },
