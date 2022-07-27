@@ -57,7 +57,7 @@ jobs:
                         "contents": [
                           {
                             "type": "text",
-                            "text": "Brown Cafe",
+                            "text": "${{ github.repository }}",
                             "weight": "bold",
                             "size": "xl"
                           }
@@ -126,7 +126,7 @@ jobs:
                         "contents": [
                           {
                             "type": "text",
-                            "text": "Brown Cafe",
+                            "text": "${{ github.repository }}",
                             "weight": "bold",
                             "size": "xl"
                           }
