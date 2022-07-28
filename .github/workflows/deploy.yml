@@ -31,7 +31,7 @@ jobs:
           message: |
            ✅📝 Blog deploy done. draft: https://github.com/louis70109/nijia-blog-backup/tree/master/source/_drafts
            🌻 Blog: https://nijialin.com/
-      - name: success
+      - name: success deploy
         if: ${{ success() }}
         run: |
           curl -v -X POST https://api.line.me/v2/bot/message/push \
@@ -41,7 +41,7 @@ jobs:
                     "to": "${{ secrets.ADMIN_LINE_ID }}",
                     "messages":[{
                       "type": "flex",
-                      "altText": "FIFA Home",
+                      "altText": "✅ Blog",
                       "contents": {
                       "type": "bubble",
                       "hero": {
@@ -57,9 +57,80 @@ jobs:
                         "contents": [
                           {
                             "type": "text",
-                            "text": "Brown Cafe",
+                            "text": "${{ github.repository }}",
                             "weight": "bold",
-                            "size": "xl"
+                            "size": "xl",
+                            "wrap": "true"
+                          }
+                        ]
+                      },
+                      "footer": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "spacing": "sm",
+                        "contents": [
+                          {
+                            "type": "button",
+                            "style": "link",
+                            "height": "sm",
+                            "action": {
+                              "type": "uri",
+                              "label": "📝 Draft",
+                              "uri": "https://github.com/louis70109/nijia-blog-backup/tree/master/source/_drafts"
+                            }
+                          },
+                          {
+                            "type": "button",
+                            "style": "link",
+                            "height": "sm",
+                            "action": {
+                              "type": "uri",
+                              "label": "🌻 Blog",
+                              "uri": "https://nijialin.com/"
+                            }
+                          }
+                        ],
+                        "flex": 0
+                      }
+                    }
+                  }]
+                }'
+      - name: send failure message
+        if: ${{ failure() }}
+        uses: louis70109/line-notify-action@master
+        with:
+          token: ${{ secrets.LINE_NOTIFY_TOKEN }}
+          message: '🔥 Blog deploy failure. Check Action: https://github.com/louis70109/nijia-blog-backup/actions'
+      - name: fail deploy
+        if: ${{ failure() }}
+        run: |
+          curl -v -X POST https://api.line.me/v2/bot/message/push \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.LINE_BOT_TOKEN }}" \
+            -d '{
+                    "to": "${{ secrets.ADMIN_LINE_ID }}",
+                    "messages":[{
+                      "type": "flex",
+                      "altText": "🔥 Blog",
+                      "contents": {
+                      "type": "bubble",
+                      "hero": {
+                        "type": "image",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+                        "size": "full",
+                        "aspectRatio": "20:13",
+                        "aspectMode": "cover"
+                      },
+                      "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "${{ github.repository }}",
+                            "weight": "bold",
+                            "size": "xl",
+                            "wrap": "true"
                           }
                         ]
                       },
@@ -93,8 +164,18 @@ jobs:
                             "style": "link",
                             "height": "sm",
                             "action": {
+                              "type": "uri",
+                              "label": "⛅️ Actions",
+                              "uri": "https://github.com/louis70109/nijia-blog-backup/actions"
+                            }
+                          },
+                          {
+                            "type": "button",
+                            "style": "link",
+                            "height": "sm",
+                            "action": {
                               "type": "message",
-                              "label": "Deploy",
+                              "label": "⏰ Deploy",
                               "text": "${{ github.repository }} ${{ github.run_id }}"
                             }
                           }
@@ -104,9 +185,3 @@ jobs:
                     }
                   }]
                 }'
-      - name: send failure message
-        if: ${{ failure() }}
-        uses: louis70109/line-notify-action@master
-        with:
-          token: ${{ secrets.LINE_NOTIFY_TOKEN }}
-          message: '🔥 Blog deploy failure. Check Action: https://github.com/louis70109/nijia-blog-backup/actions'
