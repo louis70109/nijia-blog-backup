@@ -60,7 +60,7 @@ jobs:
                             "text": "${{ github.repository }}",
                             "weight": "bold",
                             "size": "xl",
-                            "wrap": "true"
+                            "wrap": true
                           }
                         ]
                       },
@@ -130,7 +130,7 @@ jobs:
                             "text": "${{ github.repository }}",
                             "weight": "bold",
                             "size": "xl",
-                            "wrap": "true"
+                            "wrap": true
                           }
                         ]
                       },
