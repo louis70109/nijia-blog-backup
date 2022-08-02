@@ -1,18 +1,20 @@
 ---
-title: 【Parse Server】經驗談
-categories: 學習紀錄
+title: 如何部署 Parse Server 與 Dashboard 於 Heroku 上使用
 tags:
+  - Parse Server
+  - Dashboard
+categories: 應用
+date: 2022-08-03 00:19:59
 ---
 
-![](https://nijialin.com/images/2022/)
-![](https://nijialin.com/images/common.jpeg)
+
+![](https://nijialin.com/images/2022/parse-server/header.png)
 
 # 前言
 
-平常在寫 PoC 時，是否會像筆者一樣很困擾，每個東西都需要一個 DB，都要重新 create table、塞資料，像是每次寫 LINE Bot，一定都會綁用戶資訊(userId, name, email...)，如果範例專案共用的資料能放在一起，是不是就能更快上線呢？因此這次就來介紹一下 Parse Server 這個開源莊案究竟有多好用吧！
+平常在寫 PoC 時，是否會像筆者一樣很困擾，每個東西都需要一個 DB，都要重新 create table、塞資料，像是每次寫 LINE Bot，一定都會綁用戶資訊(userId, name, email...)，如果範例專案共用的資料能放在一起，是不是就能更快上線呢？透過部署 Parse Server，讓許多的 CRUD 工作都可以省下來，避免許多東西重工的時間。因此這次就來介紹一下 Parse Server 這個開源莊案究竟有多好用吧！
 
 > 以下都是建立在 Heroku 上，若需要搭建在自家，請參考使用 Dockerfile。
-
 
 - Parse Server Dashboard 部署範例：[連結](https://github.com/louis70109/parse-dashboard-example)
   - Fork 來自名間版本，目前由我會手動來改 package.json 裡面的版本。
@@ -30,8 +32,6 @@ GitHub 下方有個 Heroku 部署的按鈕，按下去後會導向`部署畫面`
 ![](https://nijialin.com/images/2022/parse-server/2.png)
 
 > 這 fork 的版本是由官方維護的，因此使用上不太需要擔心。
-
-
 
 ## Parse Server 環境變數
 
@@ -119,10 +119,10 @@ git push heroku master
   - 登入 Dashboard 的密碼
 
 ## 登入
+
 ![](https://nijialin.com/images/2022/parse-server/pd1.png)
 
 輸入剛剛環境變數上的 `USERNAME` 以及 `PASSWORD`。
-
 
 ## 欄位操作
 
@@ -130,11 +130,11 @@ git push heroku master
 
 在 parse-server 裡面一個表(table)稱為 class，這邊先透過[1]去點選建立，接著在[2]的地方輸入這張表的名稱，按下建立後就可以開始操作表了。
 
-
 ![](https://nijialin.com/images/2022/parse-server/pd3.png)
 
 建立完之後也可以在這邊新增欄位，如果要新增資料，也可以在裡面找到地方去新增一藍，裡面俗稱 Object。
-## 測試
+
+## 測試資料
 
 Dashboard 方便點在於除了可以像 Firebase 一樣在網頁上放資料，另外還能有個介面直接測試 API，只要把該有的條件放好按下 `Send Query`，就能看測試資料如何囉！
 
@@ -154,8 +154,8 @@ $ curl -X GET \
 
 ## 測試資料想刪除怎麼辦
 
-要先刪掉所有資料(Row)，才可以刪 Class (保護機制避免亂刪)
-
-## 小結
+在 Dashboard 的右上角有個 `Edit`，點下去之後可以需要先刪掉所有資料(Row)，才可以刪 Class，此舉動是保護機制，避免管理者手誤亂刪到表，導致悲劇產生...XD (真貼心)
 
 # 結論
+
+這次部署完終於有久違的成就感了～～(感動)，官方也貼心的提供了許多前端 SDK 讓開發者們可以用，接下來就能開始建立服務來把資料集中儲存，後面 Parse Server 也有許多其他的功能(Webhook, GraphQL...)，後續玩完之後再來與大家分享！
