@@ -1,8 +1,7 @@
 {
   "name": "hexo-site",
   "version": "6.0.0",
-  "private": true,
-  "author": "NiJia Lin <louis70109@gmail.com>",
+  "author": "🥷NiJia Lin <louis70109@gmail.com>",
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
@@ -11,7 +10,7 @@
     "new": "hexo new draft ",
     "p": "hexo publish ",
     "sync": "git pull",
-    "d": "git add --all . ; git commit -am 'deploy blog resource'; git push"
+    "d": "git add . ; git commit -am '✨ Deploy blog resource'; git push"
   },
   "hexo": {
     "version": "5.2.0"
