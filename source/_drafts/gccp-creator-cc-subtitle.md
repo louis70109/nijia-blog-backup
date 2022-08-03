@@ -14,6 +14,8 @@ tags:
 - [大會共筆](https://hackmd.io/@coscup/r1TovCJ65/%2F%40coscup%2Frk8ivC1a5)
 <!-- more -->
 
+> 此次在 COSCUP 2022 分享內容是日常的 Side Project
+
 # 主題圍繞
 
 - 凡事總有個原因
@@ -64,11 +66,40 @@ tags:
 ## 我在講它要聽！ ✍️ 開啟 SpeechToText
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d069e1978c504743b6509a7fc336c0fb?slide=12" title="GCCP Creator @ COSCUP 2022" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
-通常我們在使用服務時，都會很習慣進 UI 看一下這服務能做到些什麼事，而 STT 的 UI 上就是一些常見設定，來源、編碼、取樣率...，讓還在觀察測試的用戶可以先稍微玩看看了解能力，在進行 API 使用的部分。
+
+通常我們在使用服務時，都會很習慣進 UI 看一下這服務能做到些什麼事，而 STT 的 UI 上就是一些常見設定，來源、編碼、取樣率...，讓還在觀察測試的用戶可以先稍微玩看看了解 STT 能力到哪，在進行 API 使用的部分。
 
 ## 總會需要個玻璃櫃 🦖 建立 Cloud Storage
 
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d069e1978c504743b6509a7fc336c0fb?slide=16" title="GCCP Creator @ COSCUP 2022" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+Cloud Storage(GCS) 顧名思義就是要建立一個雲端儲存庫，相當於 AWS S3，除了可以放上東西儲存以外，也可以透過它去介接其他的服務，此篇後面將會透過 Eventarc 去介接 Cloud Storage 與 Cloud Run。
+
+> GCS 與 AWS S3 經常也會被拿來放置前端編譯完放置檔案的地方，再透過其他 DNS route 之類的功能，借接起來把前端資訊打在用戶的瀏覽器上。
+> 其他參考 [Day28 - 用 AWS S3 幫忙轉址到原有的服務上](https://nijialin.com/2019/10/12/Day28-%E7%94%A8-S3-%E5%B9%AB%E5%BF%99%E8%BD%89%E5%9D%80%E5%88%B0%E5%8E%9F%E6%9C%89%E7%9A%84%E6%9C%8D%E5%8B%99%E4%B8%8A/)
+
 ## 而且要有鎖頭 🔐 來點 IAM & Role
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d069e1978c504743b6509a7fc336c0fb?slide=19" title="GCCP Creator @ COSCUP 2022" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+首先要先到 GCP 左上的找到 `IAM & Role`，找到 Service Account(服務帳戶) 建立授權過的帳號。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d069e1978c504743b6509a7fc336c0fb?slide=20" title="GCCP Creator @ COSCUP 2022" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+順利建立完後會出現有兩種方式的金鑰讓你選擇使用，這邊一般會使用 `JSON 的檔案`來與雲端服務串接 API 使用。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d069e1978c504743b6509a7fc336c0fb?slide=21" title="GCCP Creator @ COSCUP 2022" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+這邊與大家分享一個切身之痛的事情，之前有次因為與 .gitignore 發生了點誤會，不小心把 JSON Key 往 GitHub 踢，結果導致 Key 被抓到拿去做壞壞的事，因此被寄了通知信鎖住帳號 QAQ，所以以下提供一些之前文章有做過的做法給大家，盡可能必免把 Key 踢出去的方法。
+
+- 建立一個暫時檔
+- 路徑放環境變數中
+- 寫入 `GOOGLE_APPLICATION_CREDENTIALS`
+- ⚠️ 需要框架啟動前
+- ⚠️ 需整理成 JSON 樣式
+- 單引號 -> 雙引號
+
+> 更詳細內容請參考我之前寫的文章：[把 JSON 字串寫入記憶體中的暫時檔案並放路徑至環境變數中 | Python, FastAPI](https://nijialin.com/2022/04/02/python-env-import-json-string/)
 
 ## 萬事皆上雲 ⛅️ 如何部署到 GCP
 

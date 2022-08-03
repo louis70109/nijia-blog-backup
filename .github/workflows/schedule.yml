@@ -1,10 +1,8 @@
-name: Hexo Build and Deploy
+name: Hexo Schedule Build and Deploy
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  schedule:
+    - cron: '0 13 * * *'
 
 jobs:
   build:
@@ -21,15 +19,7 @@ jobs:
           deploykey: ${{ secrets.BLOG_DEPLOY_TOKEN }}
           username: nijia-blog[bot]
           email: nijia-blog-backup@example.com
-      - name: send deploy success message
-        if: ${{ success() }}
-        uses: louis70109/line-notify-action@master
-        with:
-          token: ${{ secrets.LINE_NOTIFY_TOKEN }}
-          message: |
-           ✅📝 Blog deploy done. draft: https://github.com/louis70109/nijia-blog-backup/tree/master/source/_drafts
-           🌻 Blog: https://nijialin.com/
-      - name: success deploy
+      - name: schedule success deploy
         if: ${{ success() }}
         run: |
           curl -v -X POST https://api.line.me/v2/bot/message/push \
@@ -39,7 +29,7 @@ jobs:
                     "to": "${{ secrets.ADMIN_LINE_ID }}",
                     "messages":[{
                       "type": "flex",
-                      "altText": "✅ Blog",
+                      "altText": "✅ Schedule Blog",
                       "contents": {
                       "type": "bubble",
                       "hero": {
@@ -93,13 +83,13 @@ jobs:
                     }
                   }]
                 }'
-      - name: send failure message
+      - name: send schedule failure message
         if: ${{ failure() }}
         uses: louis70109/line-notify-action@master
         with:
           token: ${{ secrets.LINE_NOTIFY_TOKEN }}
           message: '🔥 Blog deploy failure. Check Action: https://github.com/louis70109/nijia-blog-backup/actions'
-      - name: fail deploy
+      - name: schedule fail deploy
         if: ${{ failure() }}
         run: |
           curl -v -X POST https://api.line.me/v2/bot/message/push \
@@ -109,7 +99,7 @@ jobs:
                     "to": "${{ secrets.ADMIN_LINE_ID }}",
                     "messages":[{
                       "type": "flex",
-                      "altText": "🔥 Blog",
+                      "altText": "🔥 Schedule Blog",
                       "contents": {
                       "type": "bubble",
                       "hero": {
