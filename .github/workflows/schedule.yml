@@ -19,7 +19,8 @@ jobs:
           deploykey: ${{ secrets.BLOG_DEPLOY_TOKEN }}
           username: nijia-blog[bot]
           email: nijia-blog-backup@example.com
-      - name: schedule success deploy
+      - run: echo 'Push Hexo BLOG deploy Flex Message to Admin'
+      - name: ⏰✅ Schedule success deploy
         if: ${{ success() }}
         run: |
           curl -v -X POST https://api.line.me/v2/bot/message/push \
@@ -83,7 +84,7 @@ jobs:
                     }
                   }]
                 }'
-      - name: send schedule failure message
+      - name: ⏰🔥 Schedule failure message
         if: ${{ failure() }}
         uses: louis70109/line-notify-action@master
         with:
