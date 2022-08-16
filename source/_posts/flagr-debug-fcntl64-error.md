@@ -137,4 +137,3 @@ FROM frolvlad/alpine-glibc:alpine-3.14_glibc-2.33
 
 經過 `heroku container:push web` + `heroku container:release web` 後功能又再度正常了，終於可以開始把相關的東西都串上了....
 
-# 結論
