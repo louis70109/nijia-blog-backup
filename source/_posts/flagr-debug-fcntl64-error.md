@@ -137,3 +137,7 @@ FROM frolvlad/alpine-glibc:alpine-3.14_glibc-2.33
 
 經過 `heroku container:push web` + `heroku container:release web` 後功能又再度正常了，終於可以開始把相關的東西都串上了....
 
+# 結論
+
+在這次除蟲過程最後居然是 Dockerfile 中用到的 image 有版本更新，導致這次推上 GCP 跟 Heroku 有問題，可能的原因是 glibc 在新版不需要某個功能，而這個功能是在舊版的 Flagr 被需要的，後續若有朋友有繼續挖下去的下歡迎留言讓我知道～～
+
