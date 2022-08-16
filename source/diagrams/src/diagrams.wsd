@@ -24,4 +24,10 @@ note left of (Redis)
   by JSON.
 end note 
 
+
+管理者->(LINE Bot): 輸入想儲存的訊息
+(LINE Bot)->(忍者的後端): 送至 webhook Server
+(忍者的後端)-down->(GitHub): 打 Commit 進專案中
+(GitHub)-->(Ideas-tree專案): 建立檔案放入訊息 &LINE用戶資訊
+管理者-->(Ideas-tree專案): 查看今日整理內容
 @enduml
