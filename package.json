@@ -16,7 +16,7 @@
     "version": "5.2.0"
   },
   "dependencies": {
-    "hexo": "5.2.0",
+    "hexo": "5.4.1",
     "hexo-deployer-git": "^2.1.0",
     "hexo-filter-plantuml": "^2.1.1",
     "hexo-filter-sequence": "^1.0.3",
