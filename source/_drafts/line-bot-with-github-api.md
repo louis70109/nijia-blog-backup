@@ -4,14 +4,12 @@ categories: CI/CD
 tags: ['LINE', 'GitHub', 'CI']
 ---
 
-
 ![](https://nijialin.com/images/2022/)
 ![](https://nijialin.com/images/common.jpeg)
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=1" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 # 前言
-
 
 - [簡報連結](https://speakerdeck.com/line_developers_tw/life-hacker-with-line-bot-and-github-api)
 <!-- more -->
@@ -21,7 +19,7 @@ tags: ['LINE', 'GitHub', 'CI']
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=3" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 - 訊息散落在個人群組、各種聊天室
-- 「那個OOO網址借我放一下」，應該很常看到這句話?
+- 「那個 OOO 網址借我放一下」，應該很常看到這句話?
 - 平常喜歡看 GitHub
 - 許多工作訊息、聊天內容都在 LINE 上面
 
@@ -47,6 +45,33 @@ tags: ['LINE', 'GitHub', 'CI']
 @enduml
 ```
 
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=7" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+結果大概像這樣，可以把輸入的大頭貼+人名放上，並且在以下放入在 LINE Bot 上輸入的內容。
+
+## 使用 Markdown 轉 HTML 的 GitHub API
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=8" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+雖然在手機上打 Markdown 格式不太方便，但因為有時候也會用到電腦紀錄資訊，因此還是當內容建立時格式化成 html 格式，如此以來即便是換行也可以被放進去，才不會輸入的訊息都變成同一行。
+
+> 剛看到上面的檔案會寫 .md 檔案是為什麼呢? 原本是預計放入內容是 Markdown，但因為在使用之後覺得還是格式化成 html 是比較統一，因此在檔案的名稱上改成 .html 是比較正確的喔！
+
+以下附一段 python code 給大家參考
+
+<script src="https://gist.github.com/louis70109/bfc722790051807dac10458f234b0cf3.js"></script>
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=9" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+輸入完之後如上圖所示。
+
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=11" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+因為透過 GitHub API 自動幫忙判斷使用的樣式，因此所有的內容擺放位置都已經幫忙調整好了，就不用自己想著到底要怎麼寫 html 了！說不定之後也可以使用 Markdown 格式寫一些東西，然後產生像是 Hackmd 那樣的輸出格式～也甚至有機會把它弄成 GitHub page 給大家看！
+
+# Part 2. 每日透過 GitHub Actions 佈署上 GitHub Page
+
 # 結論
 
 # 活動小結
@@ -64,7 +89,6 @@ LINE 於 2019 年開始在台灣啟動「LINE 開發社群計畫」，將長期�
 - [2020 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2020-line-tw-devrel/)
 - [2019 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
 - [LINE Taiwan Developer Relations 2019 回顧與 2019 開發社群計畫報告](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019/)
-
 
 <style>
   section.compact {
