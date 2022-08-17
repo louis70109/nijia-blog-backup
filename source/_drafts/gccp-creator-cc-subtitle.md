@@ -90,7 +90,7 @@ Cloud Storage(GCS) 顧名思義就是要建立一個雲端儲存庫，相當於 
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d069e1978c504743b6509a7fc336c0fb?slide=21" title="GCCP Creator @ COSCUP 2022" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
-這邊與大家分享一個切身之痛的事情，之前有次因為與 .gitignore 發生了點誤會，不小心把 JSON Key 往 GitHub 踢，結果導致 Key 被抓到拿去做壞壞的事，因此被寄了通知信鎖住帳號 QAQ，所以以下提供一些之前文章有做過的做法給大家，盡可能必免把 Key 踢出去的方法。
+這邊與大家分享一個切身之痛的事情，之前有次因為與 .gitignore 發生了點誤會，不小心把 JSON Key 往 GitHub 踢，結果導致 Key 被抓到拿去做壞壞的事，因此被寄了通知信鎖住帳號 QAQ，所以以下提供一些之前文章有做過的做法給大家，盡可能避免大家不小心把 Key 踢出去:
 
 - 建立一個暫時檔
 - 路徑放環境變數中
@@ -99,9 +99,32 @@ Cloud Storage(GCS) 顧名思義就是要建立一個雲端儲存庫，相當於 
 - ⚠️ 需整理成 JSON 樣式
 - 單引號 -> 雙引號
 
+以下提供一段 python code 示範上面的內容
+
+```python
+import tempfile, os
+
+google_temp = tempfile.NamedTemporaryFile(suffix='.json')
+try:
+    GOOGLE_KEY = os.environ.get('GOOGLE_KEY', '{}')
+    google_temp.write(GOOGLE_KEY.encode())
+    google_temp.seek(0)
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = google_temp.name
+except:
+    google_temp.close()
+```
+
 > 更詳細內容請參考我之前寫的文章：[把 JSON 字串寫入記憶體中的暫時檔案並放路徑至環境變數中 | Python, FastAPI](https://nijialin.com/2022/04/02/python-env-import-json-string/)
 
 ## 萬事皆上雲 ⛅️ 如何部署到 GCP
+
+gcloud 提供了很便利的方式，不用在本地端 build container 占空間，下指令時會幫忙在 GCP 上 build container，但因為是使用公有雲，所以還是需要出動神奇小卡才行，但可以省去許多初期建置的成本，也推薦大家可以使用。
+
+```bash
+git clone https://github.com/louis70109/GCCP-Creator.git
+cd GCCP-Creator
+gcloud run deploy xxxxxx --source .
+```
 
 ### 做什麼才會觸發 - 在 CloudRun 設定 Eventarc
 
