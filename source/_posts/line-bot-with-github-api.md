@@ -15,7 +15,12 @@ date: 2022-08-17 14:35:50
 
 # 前言
 
+此次的內容於「中部人的聊天機器人小小聚 #22」分享，分享這陣子以來自己做的一個小專案，拋磚引玉希望能讓更多點子於社群上發酵，想了解更多分享的內容請繼續往下看吧！
+
+
+- [活動頁](https://chatbots.kktix.cc/events/chatbots-meetup-in-central-taiwan-022)
 - [簡報連結](https://speakerdeck.com/line_developers_tw/life-hacker-with-line-bot-and-github-api)
+
 <!-- more -->
 
 # 為什麼誕生這篇文章(分享)?
