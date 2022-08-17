@@ -1,11 +1,15 @@
 ---
 title: 'Life Hacker 初章: 用 LINE Bot 看你平常做的事'
+tags:
+  - LINE
+  - GitHub
+  - CI
 categories: CI/CD
-tags: ['LINE', 'GitHub', 'CI']
+date: 2022-08-17 14:35:50
 ---
 
-![](https://nijialin.com/images/2022/)
-![](https://nijialin.com/images/common.jpeg)
+
+![](https://nijialin.com/images/2022/chatbot-mid-birth.png)
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=1" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
@@ -72,7 +76,38 @@ tags: ['LINE', 'GitHub', 'CI']
 
 # Part 2. 每日透過 GitHub Actions 佈署上 GitHub Page
 
+以下將會大家介紹一下我日常撰寫部落格時後續執行的自動部署與相關問題，以及為什麼要選擇 LINE Bot 作為我操作的介面👀
+## 遇到的問題
+
+- Hexo 部署跑編譯時偶爾會出現 timeout
+- 一次部署大約在三分鐘左右，手動部署會很耗時
+- 因為是透過 js 編譯，因此會有 node_module (比較肥)
+
+## 為什麼用 LINE Bot 而不是 LINE Notify 呢？
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=15" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+- 可以發送 flex message，除了比較漂亮外，可以做的事情也比較多
+- LINE Bot 中可以獲取 user id ，可以間接做用戶辨識，避免機器人被發現亂打 commit
+- 承上，做部署之類的事情可以更清楚是誰按的，不會死無對證
+
+## 為什麼選擇 GitHub Actions？
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=16" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+主要也是因為我的專案基本上都在 GitHub 上執行，因此透過 GitHub Actions 也是相對方便許多，不用再額外設定其他內容。
+
+另一部分也因為無需架設，在GitHub上就可以無痛免費使用，且社群也相較於兩年前我使用時更加完整，有許多東西都可以參考使用，讓我們在實現點子時可以更加快速～
+
 # 結論
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f9e836869da46879b027b8750fe43d1?slide=18" title="Life Hacker with LINE Bot and GitHub API" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+這次做的專案主要也是為了收集我日常尚未發酵的點子，接著安排每個週末把這週的內容好好整理，就可以更加收斂自己點子的發想了！
+
+另外本來想介接 json2video 的服務，但因為測試的數量較少，想說未來如果真的需要想串接其他平台時可以再來使用～
+
+最後也很鼓勵大家使用 LINE Bot 去做更多的應用，500 封免費的訊息相信對於日常使用應該是綽綽有餘，且也可以同步做身份認證，簡直就是一兼二顧：），後續有更多串接的應用我也會在持續分享給大家！
 
 # 活動小結
 
