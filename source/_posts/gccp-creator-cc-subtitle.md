@@ -1,8 +1,13 @@
 ---
-title: 【GCCP Creator】增加字幕編輯的效率！| feat. GCP, GCS, STT
+title: '【GCCP Creator】增加字幕編輯的效率！| feat. GCP, GCS, STT'
+tags:
+  - Google
+  - Cloud Storage
+  - Speech to Text
 categories: GCP
-tags: ['Google', 'Cloud Storage', 'Speech to Text']
+date: 2022-08-20 23:10:55
 ---
+
 
 ![](https://nijialin.com/images/2022/coscup.JPG)
 
