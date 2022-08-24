@@ -165,7 +165,7 @@ jobs:
                             "action": {
                               "type": "message",
                               "label": "⏰ Deploy",
-                              "text": "${{ github.repository }} ${{ github.run_id }}"
+                              "text": "ReRun ${{ github.repository }} ${{ github.run_id }}"
                             }
                           }
                         ],
