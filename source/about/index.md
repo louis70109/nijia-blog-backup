@@ -13,14 +13,14 @@ Technology Evangelist at LINE Taiwan. Passion for sharing and creating new ideas
 # Experiences
 
 - LINE Taiwan 2020/07~
-- 凱納股份有限公司 2019/06~2020/04
+- Hyena Inc. 2019/06~2020/04
 - 慶宇行銷有限公司 2018/05~2019/05
 - 宜興資訊有限公司 2017/09~2018/05
 
 # Education
 
-- 朝陽科技大學 - 碩士 2015/09~2016/6
-- 朝陽科技大學 - 學士 2011/09~2015/6
+- CYUT - Master 2015/09~2016/6
+- CYUT - Bachelor 2011/09~2015/6
 
 # Achievements
 
@@ -43,16 +43,6 @@ Technology Evangelist at LINE Taiwan. Passion for sharing and creating new ideas
 
 - PostgreSQL / MySQL
 - MongoDB / Redis
-
-### Others
-
-| Category       | List                                                                      |
-| -------------- | ------------------------------------------------------------------------- |
-| AWS            | Route53, CloudFront, SQS, Lambda, API Gateway, Amplify, S3, Cognito, IoT  |
-| LINE           | Messaging API(Bot), Notify, Login, LIFF                                   |
-| Git            | GitHub, Azure DevOps, Bitbucket                                           |
-| Document tools | Markdown, [Swagger](https://github.com/louis70109/aws-swagger-wsgi-flask) |
-| Others         | Docker, Serverless                                                        |
 
 # Workshop
 
