@@ -5,15 +5,20 @@ tags:
 ---
 
 
-![](https://nijialin.com/images/2022/)
-![](https://nijialin.com/images/common.jpeg)
+![](https://nijialin.com/images/2022/th-1/all.jpg)
 
 
 # 前言
 
 <!-- more -->
 
-# 介紹
+# 泰國辦公室
+
+![](https://nijialin.com/images/2022/th-1/brown1.JPG)
+
+# Tech evangelist
+
+![](https://nijialin.com/images/2022/th-1/evangelist1.JPG)
 
 # 結論
 
