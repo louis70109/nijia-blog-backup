@@ -5,7 +5,7 @@ tags:
   - 應用型
   - 社群
   - 學習
-categories: 觀察系列
+categories: 日記
 abbrlink: 738122234
 date: 2020-06-12 01:06:04
 ---

@@ -3,7 +3,7 @@ title: 【PlantUML】在 Windows 上執行的步驟
 tags:
   - PlantUML
   - Windows
-categories: 學習紀錄
+categories: 應用
 date: 2021-09-10 13:13:41
 ---
 

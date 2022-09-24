@@ -5,7 +5,7 @@ tags:
   - LINE Notify
   - GitHub
   - GitHub Actions
-categories: GitHub
+categories: CI/CD
 date: 2021-02-17 17:51:55
 ---
 
