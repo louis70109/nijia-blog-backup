@@ -5,7 +5,7 @@ tags:
   - Cypress
   - LIFF
   - Testing
-categories: Testing
+categories: 翻譯
 date: 2020-10-03 15:04:58
 ---
 

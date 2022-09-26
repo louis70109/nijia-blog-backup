@@ -7,7 +7,7 @@ tags:
   - jest
   - npm
   - yarn
-categories: 學習紀錄
+categories: JavaScript
 abbrlink: 2114632633
 date: 2020-02-02 00:51:46
 ---

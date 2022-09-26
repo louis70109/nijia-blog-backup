@@ -4,7 +4,7 @@ tags:
   - Google
   - GCP
   - Billing
-categories: 學習紀錄
+categories: GCP
 date: 2020-08-17 18:01:25
 ---
 

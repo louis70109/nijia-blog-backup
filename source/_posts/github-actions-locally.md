@@ -5,7 +5,7 @@ tags:
   - act
   - CI
   - 本地端
-categories: CI
+categories: CI/CD
 date: 2021-12-13 00:13:13
 ---
 
