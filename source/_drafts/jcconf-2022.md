@@ -46,6 +46,12 @@ LINE TODAY 團隊也相當重視 DevOps 的流程，以下概略列出來給大�
 # 攤位
 ![](https://nijialin.com/images/2022/jcconf/1.JPG)
 
+
+## Android & iOS team
+
+[Flutter iOS Developer](https://careers.linecorp.com/jobs/1362)
+[Android Developer](https://careers.linecorp.com/jobs/1227)
+
 ## [LINE Pay](https://speakerdeck.com/line_developers_tw/line-pay-in-jcconf-2022)
 ![](https://nijialin.com/images/2022/jcconf/3.JPG)
 
@@ -59,7 +65,8 @@ LINE TODAY 團隊也相當重視 DevOps 的流程，以下概略列出來給大�
 
 當然在技能方面也是含有許多 Open Source 的工具，如果想了解 LINE Pay 日常開發到底會用到哪些工具，請看這邊:
 
-- Server-side Engineer - LINE Pay https://careers.linecorp.com/jobs/75
+- [Server-side Engineer - LINE Pay](https://careers.linecorp.com/jobs/75)
+- [Android Developer - LINE Pay](https://careers.linecorp.com/jobs/639)
 
 ## [Global Content Platform team](https://speakerdeck.com/line_developers_tw/global-content-platform-in-jcconf-2022)
 
