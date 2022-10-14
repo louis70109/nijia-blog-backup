@@ -1,8 +1,13 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: '【JCConf 2022】活動紀錄 | Keynote, 攤位, 開發統計版'
 tags:
+  - JCConf
+  - Java
+  - LINE
+categories: 研討會
+date: 2022-10-14 18:00:50
 ---
+
 
 ![](https://nijialin.com/images/2022/jcconf/2.JPG)
 
@@ -16,11 +21,7 @@ JCConf 為台灣最大的 Java 開發者研討會，這次的研討會中也看�
 
 JCConf Taiwan (Java Community Conference Taiwan) 是由社群成員發起的 Java 程式語言及相關領域研討會，由 TWJUG (Taiwan Java User Group) 主辦，Scala Taiwan 和 科斯高 協辦。宗旨在提供台灣的 Java 開發者有更多參與社群以及交流技術的機會，目標與會對象主要為使用 Java 語言及 JVM 相關技術的程式開發者和相關從業人員。
 
-- 講者：30+
-- 會眾：450+
-- 贊助：10+
-
-# 介紹
+# Keynote - LINE TODAY
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4d3bbc1078594d23b6146d0e7949d098?slide=4" title="LINE TODAY keynote in JCConf 2022 " allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
@@ -40,19 +41,35 @@ LINE TODAY 團隊也相當重視 DevOps 的流程，以下概略列出來給大�
 
 當然你若想了解更細節的團隊內容，歡迎參考以下職缺：
 
-- Server-Side Developer - LINE TODAY https://lnkd.in/gUYE4dTi
-- Android Developer https://lnkd.in/gyziQqdP
+- [Server-Side Developer - LINE TODAY](https://lnkd.in/gUYE4dTi)
 
 # 攤位
+
 ![](https://nijialin.com/images/2022/jcconf/1.JPG)
 
+## [EC team](https://engineering.linecorp.com/zh-hant/teams/LINE%20SHOPPING/)
 
-## Android & iOS team
+LINE 電商包含購物、直播、禮物、口袋商店、快電商以及金物流 / 電子發票等 microservices。LINE 購物是我們的主要服務，透過商品比價功能，讓用戶可以從上千萬筆的商品中找到最低價或回饋最多的商品，當用戶透過 LINE 購物完成消費，我們將回饋 LINE POINTS 給用戶，除了新功能的開發外，也需要與各合作廠商或 LINE 其他國家的服務合作或平台串接。
 
-[Flutter iOS Developer](https://careers.linecorp.com/jobs/1362)
-[Android Developer](https://careers.linecorp.com/jobs/1227)
+- [Senior Data Engineer - EC](https://careers.linecorp.com/jobs/1155)
+- [Machine Learning Engineer - EC](https://careers.linecorp.com/jobs/1308)
+- [Full Stack Developer - EC](https://careers.linecorp.com/jobs/1230)
+
+## [Android & iOS team](https://speakerdeck.com/line_developers_tw/2022-ios-and-android-team-introduction)
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/2bf0b0ada56e4bd3a004fe0b0a0e6c4c?slide=7" title="2022 iOS &amp; Android team introduction" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+作為 Android 和 iOS 開發者，加入 LINE 工程團隊，可以親手維護自己與親友每天使用的軟體。在這次攤位中分享了在 LINE 當中負責的應用程式以及使用的語言，同時也因為 LINE 功能眾多為大型程式，有機會深入研究模組化與編譯技術。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/2bf0b0ada56e4bd3a004fe0b0a0e6c4c?slide=9" title="2022 iOS &amp; Android team introduction" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+也分享去年推出的 LINE 購物 App，由台灣團隊一手打造出來，採用了最新的 Google Flutter 技術，讓 Android 及 iOS 兩個平台的開發能更密切，讓現場交流的會眾覺得非常有趣，詢問了許多使用者體驗的問題，當然若讀者有興趣也歡迎參考以下資訊：
+
+- [Flutter iOS Developer](https://careers.linecorp.com/jobs/1362)
+- [Android Developer](https://careers.linecorp.com/jobs/1227)
 
 ## [LINE Pay](https://speakerdeck.com/line_developers_tw/line-pay-in-jcconf-2022)
+
 ![](https://nijialin.com/images/2022/jcconf/3.JPG)
 
 這次的攤位中也邀請的 LINE Pay 的 Luther 以及 Kevin 來攤位上跟大家分享在團隊中處理支付上的一些討論。
@@ -72,7 +89,6 @@ LINE TODAY 團隊也相當重視 DevOps 的流程，以下概略列出來給大�
 
 ![](https://nijialin.com/images/2022/jcconf/6.JPG)
 
-
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/34ba3bd80e8d440d95254f8952b7441e?slide=2" title="Global Content Platform in JCConf 2022" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 在 LINE 服務當中，像是 LINE TODAY、LINE 旅遊、LINE 購物、LINE 熱點等等，都會需要有許多的資料來呈現內容給使用者，隨著服務越來越多，也就需要專門在負責消化/吞吐這些資料的團隊，來幫助大家處理日常資料流。
@@ -82,6 +98,12 @@ LINE TODAY 團隊也相當重視 DevOps 的流程，以下概略列出來給大�
 而在處理資料上會因為許多來源跟需求不同，需要處理/整理不同的格式(JSON, XML...)，進而讓介接的服務可以在使用體驗上達到一致。
 
 # 結論
+
+![](https://nijialin.com/images/2022/jcconf/IMG_2609.JPG)
+
+以語言開發為基礎的研討會中，有相關的調查都是非常有趣的，本次的攤位中調查「使用何種方式開發 Java」、「都怎麼版控」；其中多數開發者都以 JetBrain 的 IntelliJ IDEA 作為開發首選，搭配 Git 作為版本控制，當然也有開發者選用其他的方式開發以及版本控制，透過這問卷版在現場的互動中真的是很有趣呢！
+
+很高興這次有機會參與年度的 Java 盛事，如果對於加入我們有興趣的開發者，歡迎參考上方的團隊敘述中的連結喔！希望能在 LINE 台灣與大家相見！
 
 # 活動小結
 
