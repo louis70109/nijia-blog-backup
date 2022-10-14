@@ -57,7 +57,7 @@ LINE TODAY 團隊也相當重視 DevOps 的流程，以下概略列出來給大�
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/2d79c6c989c44c519132da68f67fcd97?slide=10" title="LINE Pay in JCConf 2022" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
-當然在技能方面也是含有許多 Open Source 的工具，如果想了解 LINE Pay 日常開發到底會用到哪些工具，請看這邊:
+當然在技能方面也是含有許多 Open Source 的工具，如果想更透徹了解 LINE Pay 日常開發到底會用到哪些工具，請看這邊:
 
 - Server-side Engineer - LINE Pay https://careers.linecorp.com/jobs/75
 
