@@ -5,8 +5,7 @@ tags:
 ---
 
 
-![](https://nijialin.com/images/2022/)
-![](https://nijialin.com/images/common.jpeg)
+![](https://nijialin.com/images/2022/OJT/all.jpeg)
 
 
 # 前言
@@ -14,8 +13,39 @@ tags:
 <!-- more -->
 
 # 介紹
+## 訓練環節
+
+- 部門介紹
+
+![](https://nijialin.com/images/2022/OJT/whatisline.jpeg)
+
+
+- 開發規範 & DevOps
+- 資料規範
+- 開發者關係
+- SRE
+- Agile basic
+
+## 互動環節 - 認識同組的同事！
+![](https://nijialin.com/images/2022/OJT/game1.JPG)
+
+## 中場遊戲
+
+![](https://nijialin.com/images/2022/OJT/game2.jpeg)
+
+本次分成三個部分
+
+- 再夾一下下就好
+- 支援前線
+- 用英文解釋日常開發的內容
+
+## 午餐時間
+
+![](https://nijialin.com/images/2022/OJT/lunch.jpeg)
 
 # 結論
+
+藉由年度的 On Joh Training，讓 LINER 再加入工程大家庭時可以更了解部門日常規範並認識周遭的同仁，
 
 # 活動小結
 
