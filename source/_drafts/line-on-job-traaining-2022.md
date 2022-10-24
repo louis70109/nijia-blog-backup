@@ -14,16 +14,31 @@ LINE 台灣每年會定期舉辦 On Job Training，提供新進同仁可以在�
 
 <!-- more -->
 
-# 介紹
-## 訓練環節
+# 訓練環節
 
-- 部門介紹
+## 部門介紹
 
 ![](https://nijialin.com/images/2022/OJT/whatisline.jpeg)
 
+開場由 CTO - Marco 為大家介紹 LINE 的由來與經過，雖然大家日常都使用 LINE 做許多的事情，但在 APP 成長過程中是如何演進，以及因應長大後的各種組織架構由來，都透過開場的議程帶每位到職的同仁一次滿滿的認識!
 
-- 開發規範 & DevOps
-- 資料規範
+> 讀者們知道 LINE APP 以前也是黑克松的作品嗎?
+
+## 開發規範 & DevOps
+
+團隊因應各種商業場景會有不同的開發需求，而隨著服務與產品越來越多，許多開發上都需要有相關規範，除了讓大家的開發上的使用手冊能盡可能統一外，也是要預防軟體災害發生時的規範，因此在這部分來...。
+
+另一方面，LINE 台灣很注重 DevOps 的實踐，在 DevOps 中文化 (culture) 與流程 (process) 佔了一大部份，需要透過每位同仁在日常中逐步實踐 CI/CD，讓軟體開發可以更快、品質更好、更穩定等，而更多的 DevOps 細節大家可以參考下文:
+
+> [DevOps 十年了，你，想改變了嗎?](https://engineering.linecorp.com/zh-hant/blog/tech-sharing-devops/)
+
+## 資料規範
+
+在每個服務中，因應各種商業場景會有許多的資料在日常生活中流動，舉凡 LINE TODAY 的新聞、LINE 購物的搜尋、LINE 貼圖的推薦購買...等等，
+
+> 
+從大家熟知的 LINE Bot 上
+
 - 開發者關係
 - SRE
 - Agile basic
