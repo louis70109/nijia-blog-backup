@@ -52,10 +52,6 @@ tags:
 
 簡化成 RFM(衡量用戶歷史價值)＆CLV(用模型估測未來用戶帶來的價值)，個別對不同的用戶下不同的行銷操作，預測接下來收益的提升，增加用戶未來在行銷上的價值。
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b10ee31f40924274afb48a8d69f0ada1?slide=39" title="竟然有人說AI不能拿來做行銷" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 1120px; height: 628px;" data-ratio="1.78343949044586"></iframe>
-
-接著提到 RFM 模型上的切法部分，Data Dev 團隊用了許多方法來找到相關的切法。
-
 ## CLV
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b10ee31f40924274afb48a8d69f0ada1?slide=46" title="竟然有人說AI不能拿來做行銷" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 1120px; height: 628px;" data-ratio="1.78343949044586"></iframe>
@@ -68,7 +64,7 @@ tags:
 
 因為 LINE 的服務很多，其中也會有許多用戶歷程資料(都是用戶同意的)，並透過 MLOps 把機器學習上在行銷應用上的技術內容，讓每個解決方案能夠套用不同的服務與情境。
 
-### 問：如何從事資料科學家相關職業？
+## 問：如何從事資料科學家相關職業？
 
 - 從工程方向上，需要更多對於 coding 以及對於模型上的調校的經驗。
 - 對於數據統計以及數學上的計算等等的技能。
