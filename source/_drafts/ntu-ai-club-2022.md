@@ -17,7 +17,7 @@ tags:
 
 ## MarTech
 
-開始先提到在行銷上常使用 AARRR 來歸納用戶歷程的漏斗，也因為行銷人員需要在有限的行銷資源下，把資源頭放對的用戶上，進而達到平衡廣告的效益。
+開始先提到在行銷上常使用 AARRR 來歸納用戶歷程的漏斗，從用戶進入服務、使用服務、引流服務的一段用戶歷程的角度來說明 LINE 將 AI 引入 Martech 的切入點。
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b10ee31f40924274afb48a8d69f0ada1?slide=9" title="竟然有人說AI不能拿來做行銷" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 1120px; height: 628px;" data-ratio="1.78343949044586"></iframe>
 
@@ -25,7 +25,7 @@ tags:
 
 ## Uplift Model (增益模型)
 
-這邊提到在跟商業團隊討論時，如何優化廣告的效率是很重要的議題，因為一直廣灑的話會有背後成本考量的問題，因此也要衡量廣告帶來的行銷行為。
+這邊提到在跟商業團隊討論時，如何優化廣告的效率是很重要的議題，因為一直廣灑的話會有背後成本考量的問題，所以行銷人員需要在有限的行銷資源下，把資源頭放對的用戶上，這裡使用增益模型來衡量廣告對用戶的影響評估，進而達到平衡廣告的效益。
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b10ee31f40924274afb48a8d69f0ada1?slide=24" title="竟然有人說AI不能拿來做行銷" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 1120px; height: 628px;" data-ratio="1.78343949044586"></iframe>
 
@@ -44,8 +44,8 @@ tags:
 
 接著 Johnson 解釋在平常的購買行為上，是如何透過 [RFM](<https://en.wikipedia.org/wiki/RFM_(market_research)>) 來了解你的客戶群：
 
-- R：什麼時候來
-- F：來的多久
+- R：最近一次什麼時候來
+- F：來的頻率
 - M：花了多少錢，數量多少
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b10ee31f40924274afb48a8d69f0ada1?slide=36" title="竟然有人說AI不能拿來做行銷" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 1120px; height: 628px;" data-ratio="1.78343949044586"></iframe>
@@ -56,13 +56,17 @@ tags:
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b10ee31f40924274afb48a8d69f0ada1?slide=46" title="竟然有人說AI不能拿來做行銷" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 1120px; height: 628px;" data-ratio="1.78343949044586"></iframe>
 
-也解釋如何透過 CLV 來計算顧客終身價值，此外，用戶身上都會有 RFM 以及 CLV 的標籤，增加後續的行銷策略，讓未來的消費可以在更多一些，揭露用戶在未來的消費力。
+也解釋如何透過 CLV 來計算顧客終身價值，此外，用戶身上都會有 RFM 以及 CLV 的標籤，增加後續的行銷策略，讓未來的消費可以再更多一些，揭露用戶在未來的消費力。
 
 ## Foundation Model
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b10ee31f40924274afb48a8d69f0ada1?slide=53" title="竟然有人說AI不能拿來做行銷" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 1120px; height: 628px;" data-ratio="1.78343949044586"></iframe>
 
-因為 LINE 的服務很多，其中也會有許多用戶歷程資料(都是用戶同意的)，並透過 MLOps 把機器學習上在行銷應用上的技術內容，讓每個解決方案能夠套用不同的服務與情境。
+因為 LINE 的服務很多，其中也會有許多用戶歷程資料(都是用戶同意的)，並透過 Foundation models 學習更大量的用戶歷程資料，進而可以套用更多小規模資料的微調來達成任何行銷任務，讓同個解決方案能夠套用不同的服務與情境。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b10ee31f40924274afb48a8d69f0ada1?slide=54" title="竟然有人說AI不能拿來做行銷" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+這樣多元的行銷科技解決方案可以透過 MLOps 的概念將層層環節模組化並集中化，把機器學習在行銷應用上的技術內容，套用不同的服務與情境。
 
 ## 問：如何從事資料科學家相關職業？
 
