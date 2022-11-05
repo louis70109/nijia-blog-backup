@@ -18,8 +18,7 @@ jobs:
           path: node_modules
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
-jobs:
-  build:
+  build-Hexo:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
