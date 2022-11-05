@@ -8,6 +8,7 @@ on:
 
 jobs:
   Install-Node-package:
+    name: Install Node package
     runs-on: macos-latest
     timeout-minutes: 3
     steps:
@@ -19,6 +20,7 @@ jobs:
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
 
   build-Hexo:
+    name: Build blog
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
