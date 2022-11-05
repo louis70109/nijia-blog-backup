@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  Install-Node-package:
     runs-on: macos-latest
     timeout-minutes: 3
     steps:
@@ -17,6 +17,12 @@ jobs:
         with:
           path: node_modules
           key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
       - uses: yrpang/github-actions-hexo@v1.3
         with:
           deploykey: ${{ secrets.BLOG_DEPLOY_TOKEN }}
