@@ -1,19 +1,16 @@
 ---
-title: 【Mac】忍者轉移電腦之術，照著步驟就回覆環境啦！
+title: 【Mac】忍者轉移電腦之術 | 照著步驟就回覆環境啦！
 tags:
   - Mac
 categories: 學習紀錄
 date: 2022-11-05 17:32:47
 ---
 
-
-
 ![](https://nijialin.com/images/common.jpeg)
 
 # 前言
 
 最近公司電腦要換了(Macbook pro 15 -> Macbook air 13)，距離上次換電腦也差不多兩年前了[[轉移文章](https://nijialin.com/2020/07/15/restore-my-mac-environment/)]，以下快速整理一些常用的軟體。
-
 
 <!-- more -->
 
@@ -73,6 +70,7 @@ date: 2022-11-05 17:32:47
 - [gcloud cli](https://cloud.google.com/sdk/docs/install?hl=zh-tw)
 - [iTerm2](https://iterm2.com/)
   - zsh
+
 ```
 alias gs="git status"
 alias gl="git pull"
@@ -84,7 +82,6 @@ alias gc="git checkout"
 alias k="kubectl"
 alias dc="docker-compose"
 ```
-
 
 # 結論
 
