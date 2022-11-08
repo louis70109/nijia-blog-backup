@@ -22,9 +22,13 @@ date: 2022-11-05 17:32:47
 - Caplock <-> Control
   - 因為使用 HHKB 鍵盤，因此筆電的鍵盤也跟著習慣統一。[【HHKB】為什麼要它？怎麼在二手市集挑？](https://nijialin.com/2022/08/20/why-you-need-hhkb/)
 - Brew
-  - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
 - `mkdir ~/Programs`
-- `cd ~/Document ; git clone https://github.com/louis70109/nijia-blog-backup.git`
+```
+cd ~/Document ; git clone https://github.com/louis70109/nijia-blog-backup.git
+```
 - brew install jq
 
 ## 常用軟體
