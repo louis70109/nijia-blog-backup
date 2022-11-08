@@ -9,7 +9,7 @@ on:
 jobs:
   Install-Node-package:
     name: Install Node package
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
       - uses: actions/checkout@v3
