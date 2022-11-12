@@ -26,7 +26,7 @@ date: 2022-10-02 18:27:05
 
 ## Google Cloud Storage(GCS)
 
-![](https://nijialin.com/images/cloud-storage-productcard.jpg)
+![](https://nijialin.com/images/2022/cloud-storage-productcard.jpg)
 
 > [定價表](https://cloud.google.com/storage/pricing)
 > Cloud Storage「一律免費」部分的用量限制
