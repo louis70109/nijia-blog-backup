@@ -69,6 +69,7 @@ cd ~/Document ; git clone https://github.com/louis70109/nijia-blog-backup.git
 
 - [VS Code](https://code.visualstudio.com/download)
   - Settings sync
+  - cmd+shift+p -> "在PATH中安裝 'code' 命令"
   - [Gist](https://gist.github.com/louis70109/8ea88b9b26570d521c81922572f8309d)
 - [PyCharm](https://www.jetbrains.com/pycharm/download/#section=mac)
 - [gcloud cli](https://cloud.google.com/sdk/docs/install?hl=zh-tw)

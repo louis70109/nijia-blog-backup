@@ -15,12 +15,24 @@ tags:
 
 <!-- more -->
 
+- [忍者開源圖鑑 - 藉由開源充實職涯與驅動開發](https://speakerdeck.com/line_developers_tw/open-source-drive-your-career-by-nijia)
+
 # 透過 [Roadmap](https://roadmap.sh/) 找出路與學習關鍵字
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/95e302aa691f4150805d8bd57f5467ed?slide=6" title="忍者開源圖鑑 - 藉由開源充實職涯與驅動開發" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 學習關鍵字是工程師必學的技能之一，而在初期還沒定位自己未來的職涯時會不清楚相關領域的內容
 ，因此可以透過 Roadmap 來了解不同領域的軟體工程師究竟要注意哪些，
+
+基於好奇心，開始看看各大主流框架之後，感覺我也可以弄個簡單版本？
+
+> 心裡OS: 但我瘋了嗎，那些都是破萬星星以及有追隨者，我何德何能做這些？
+
+<script async class="speakerdeck-embed" data-slide="9" data-id="95e302aa691f4150805d8bd57f5467ed" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+從知名的 Linux 範例來說，當初有個七歲小女孩只是因為修個 README，從此以後她就留名於 Linux Kernel 中。
+
+這故事告訴我們，即便再大的專案，都會有沒注意到的細節需要被調整，在開源的世界內，互相幫忙以及共識都是相當重要，不管是實質的贊助(出錢)，抑或是幫忙刁出文件、程式上的修正(出力)，都是對於整個軟體生態圈的貢獻，因為有了過去大家的貢獻才有今日我們的方便，現在我們貢獻一些，也是幫助未來這些軟體人才的邁進！
 # 結論
 
 # 活動小結
