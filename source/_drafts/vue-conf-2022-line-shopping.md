@@ -33,12 +33,37 @@ tags:
 
 而在一個平台當中當然會有廣告來吸引不同的用戶客群，因應不同的步驟需要展示的廣告也都不同(對應各種 Component)，對應 Vue 渲染週期中都會需要知道之前的步驟是否完成，也有可能遇到先前步驟還沒完成就需要執行的挑戰。
 
+~~放上廣告範例影片
+
 > Page 16~26 可參考 LINE 購物 xxx 的週期
 
+## History state
+
+- Form Inputs
+- Popup/Tab State
+- Infinite Scrolling
+
+
+- 使用下面參考的內容來對應 router 上操作
+  - https://github.com/vuejs/vue-router/blob/dev/src/util/state-key.js
+  - window.history.state.key
+  - history.pushState({ key })
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/85764f222cc34173bd4c0054a833f922?slide=30" title="那些我們在LINE購物中自行打造的輪子" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+為什麼不用 keep-live 實作？
+
+## 開發小技巧分享
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/85764f222cc34173bd4c0054a833f922?slide=33" title="那些我們在LINE購物中自行打造的輪子" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+這邊講者提到，通常開發者可能 80% 都使用 Mac 做開發，但實際市場上市 80% 用戶在使用 Windows，因此開發上也需要模擬一般用戶會遇到的體驗問題，除了可以從 Mac 的設定上操作，也可以透過 CSS 的方式處理這個問題：
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/85764f222cc34173bd4c0054a833f922?slide=34" title="那些我們在LINE購物中自行打造的輪子" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 
 # 結論
 
+感謝這次來自研討會的邀約，讓同仁有機會可以到年度的研討會上分享 LINE 購物上前端開發的經驗，若以上的內容對於各位開發上有幫助，也歡迎大家分享出去喔！
 # 活動小結
 
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
