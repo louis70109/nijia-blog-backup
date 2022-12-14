@@ -1,10 +1,12 @@
 ---
 title: 【AppWorks】企業參訪
 categories: 研討會
+date: 2022-12-14 14:55:07
 tags:
 ---
 
-![](https://nijialin.com/images/common.jpeg)
+
+![](https://nijialin.com/images/2022/appworks.JPG)
 
 # 前言
 
