@@ -10,8 +10,10 @@
     "new": "hexo new draft ",
     "p": "hexo publish ",
     "sync": "git pull",
-    "d": "git add . ; git commit -am '✨ Deploy blog resource'; git push"
-  },
+    "//": "Deploy to the Nijia Blog!!",
+    "d": "git add . ; git commit -am '✨ Deploy blog resource'; git push",
+    "t": "hexo publish $A; git add . ; git commit -am 'Publish '$A; git push"
+    },
   "hexo": {
     "version": "5.2.0"
   },
