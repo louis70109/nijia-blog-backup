@@ -9,15 +9,13 @@
     "hexo": "hexo generate; hexo clean -g; hexo deploy ",
     "new": "hexo new draft ",
     "sync": "git pull",
-    "//": "Publish article",
-    "p": "hexo publish",
-    "//": "Publish article and push to GitHub",
-    "pd": "git add . ; git commit -am 'Publish'; git push", 
     "//": "Deploy to the Nijia Blog!!",
+    "p": "hexo publish",
+    "pd": "git add . ; git commit -am 'Publish'; git push",
     "d": "git add . ; git commit -am 'Deploy'; git push"
-    },
+  },
   "hexo": {
-    "version": "5.2.0"
+    "version": "5.4.1"
   },
   "dependencies": {
     "hexo": "5.4.1",
