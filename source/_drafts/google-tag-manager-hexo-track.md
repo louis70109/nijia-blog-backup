@@ -11,9 +11,17 @@ tags:
 
 # 前言
 
+- Google Tag Manager 以下簡稱 GTM
+- Google Analytics 簡稱 GA
 <!-- more -->
 
+# 流程圖
+
+TBC
+
 # 介紹
+
+# Hexo 中怎麼放入 GTM?
 
 themes > next > layout > _partials > head > head.swig
 
@@ -38,4 +46,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 ...
 
 ```
+
+## 針對特定按鈕想追蹤怎辦？
+
+## Q&A
+
+### 以前我都要放 UA-xxx，那現在我GA要放哪？(G-xxxx)
+
+只要 GTM 裡面有設定觸發之後打到對應的 GA後，就不用管現在的G-xxx 追蹤碼了，因為當GTM 觸發之後他就會把相關流量打給GA，因此給工程師 GTM 追蹤碼之後就可以開始進後台做事啦：）
 # 結論
+
+# 參考好文
+
+- [GTM是什麼？入門必看的Google Tag Manager 代碼管理工具設定教學！](https://doordata.tw/blog/gtm-tutorial-for-beginner)
