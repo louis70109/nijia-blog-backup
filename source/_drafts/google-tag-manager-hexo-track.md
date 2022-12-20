@@ -21,7 +21,21 @@ TBC
 
 # 介紹
 
+## 1. 建立 GTM
+
+![](https://nijialin.com/images/2022/GTM/1.createGTM.jpg)
+
+首先先到 [Google Tag Manager 首頁](https://tagmanager.google.com/#/home)，首次來到這裡的人應該都是空白的，因此按下圖片上的`建立帳戶`的按鈕來建立一個，當中都是填一些基本資訊，主要要寫一個可辨別的名稱，並選擇 Web。
+
+## 2. GTM Code 在哪呢？
+
+![](https://nijialin.com/images/2022/GTM/2.GTMcode.jpg)
+
+建立完成之後，點選剛剛的帳戶(a.k.a **容器名稱**)，在一個琳瑯滿目的畫面中會不好找 GTM 程式碼的位置，在圖片上的箭頭指示位置，也就是 GTM Code 名稱的位置給他點下去，這邊的程式碼內容就是要提供給前端工程師塞入HTML的部分，因此要記得這個位置喔！
+
 # Hexo 中怎麼放入 GTM?
+
+![](https://nijialin.com/images/2022/GTM/3.Hexo.jpg)
 
 themes > next > layout > _partials > head > head.swig
 
