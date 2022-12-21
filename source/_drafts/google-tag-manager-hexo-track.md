@@ -63,6 +63,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 ```
 
+> 參考文章： [Hexo 手動新增 Google Analytics、Google Tag Manager 的追蹤碼](https://blog.balabambe.com/2021/07/29/Hexo-%E6%89%8B%E5%8B%95%E6%96%B0%E5%A2%9E-Google-Analytics%E3%80%81Google-Tag-Manager-%E7%9A%84%E8%BF%BD%E8%B9%A4%E7%A2%BC/)
+
 ## 4. 那我要怎麼設定 GTM 監聽事件呢？
 ![](https://nijialin.com/images/2022/GTM/4.createevent.jpg)
 
