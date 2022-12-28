@@ -4,9 +4,7 @@ categories: 學習紀錄
 tags:
 ---
 
-
 ![](https://nijialin.com/images/common.jpeg)
-
 
 # 前言
 
@@ -30,7 +28,7 @@ tags:
 
 ![](https://nijialin.com/images/2022/GTM/2GTMcode.png)
 
-建立完成之後，點選剛剛的帳戶(a.k.a **容器名稱**)，在一個琳瑯滿目的畫面中會不好找 GTM 程式碼的位置，在圖片上的箭頭指示位置，也就是 GTM Code 名稱的位置給他點下去，這邊的程式碼內容就是要提供給前端工程師塞入HTML的部分，因此要記得這個位置喔！
+建立完成之後，點選剛剛的帳戶(a.k.a **容器名稱**)，在一個琳瑯滿目的畫面中會不好找 GTM 程式碼的位置，在圖片上的箭頭指示位置，也就是 GTM Code 名稱的位置給他點下去，這邊的程式碼內容就是要提供給前端工程師塞入 HTML 的部分，因此要記得這個位置喔！
 
 ## 3. Hexo 中怎麼放入 GTM Code?
 
@@ -46,25 +44,31 @@ themes > next > layout > _partials > head > head.swig
 
 ```html
 ...省略
-<meta name="theme-color" content="{{ theme.android_chrome_color }}">
-<meta name="generator" content="Hexo {{ hexo_version }}">
+<meta name="theme-color" content="{{ theme.android_chrome_color }}" />
+<meta name="generator" content="Hexo {{ hexo_version }}" />
 
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-YOUR_GTM_CODE');</script>
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-YOUR_GTM_CODE');
+</script>
 <!-- End Google Tag Manager -->
 
-{%- if theme.favicon.apple_touch_icon %}
-...省略
-
+{%- if theme.favicon.apple_touch_icon %} ...省略
 ```
 
 > 參考文章： [Hexo 手動新增 Google Analytics、Google Tag Manager 的追蹤碼](https://blog.balabambe.com/2021/07/29/Hexo-%E6%89%8B%E5%8B%95%E6%96%B0%E5%A2%9E-Google-Analytics%E3%80%81Google-Tag-Manager-%E7%9A%84%E8%BF%BD%E8%B9%A4%E7%A2%BC/)
 
 ## 4. 那我要怎麼設定 GTM 監聽事件呢？
+
 ![](https://nijialin.com/images/2022/GTM/4createevent.png)
 
 到左邊的`代碼`頁面，點選新增來建立事件。
@@ -80,9 +84,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 一般你會用到這邊的話通常要嘛被強迫升級或是你已經使用 GA 許久(如圖)，如果尚未升級 GA4，那麼他會跳出通知說 2023/07/01 將會停止處理新資料，因此來到你的 GA 畫面上之後趕快點選右上角的部分來更新你的 GA。
 
 ## 6. 點哪更新我的 GA？
+
 ![](https://nijialin.com/images/2022/GTM/7UpdateGA4.png)
 
-點選中間`開始使用`，GA就會自動幫你升級了～
+點選中間`開始使用`，GA 就會自動幫你升級了～
 
 ![](https://nijialin.com/images/2022/GTM/8completeupdateGA4.png)
 
@@ -104,23 +109,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 ![](https://nijialin.com/images/2022/GTM/11whereisroottrigger.png)
 
-亦或是你還沒建立畫面，可以找GTM主畫面中選擇左邊的`觸發條件`來建立你的 Root Trigger。
+亦或是你還沒建立畫面，可以找 GTM 主畫面中選擇左邊的`觸發條件`來建立你的 Root Trigger。
+
 ## 針對特定按鈕想追蹤怎辦？
+
 ![](https://nijialin.com/images/2022/GTM/121findclass.png)
+
+假設我看看部落格左邊的欄位是否有人來按，滑鼠滑過去右鍵檢查，先找看看 id 或 class，且盡量以 id 為主，因為他是唯一值，在觀察流量上才會更準確。其次當然 class 也可以，不過同一層欄位可能就會一起被觀察到，但若像我一樣沒差的話那就沒問題嚕！
 ![](https://nijialin.com/images/2022/GTM/122addevent.png)
 ![](https://nijialin.com/images/2022/GTM/123addclassevent.png)
 ![](https://nijialin.com/images/2022/GTM/124addnewtriggerevent.png)
 
 ## 大功告成！
+
 ![](https://nijialin.com/images/2022/GTM/125done.png)
 
 ## Q&A
 
-### 以前我都要放 UA-xxx，那現在我GA要放哪？(G-xxxx)
+### 以前我都要放 UA-xxx，那現在我 GA 要放哪？(G-xxxx)
 
-只要 GTM 裡面有設定觸發之後打到對應的 GA後，就不用管現在的G-xxx 追蹤碼了，因為當GTM 觸發之後他就會把相關流量打給GA，因此給工程師 GTM 追蹤碼之後就可以開始進後台做事啦：）
+只要 GTM 裡面有設定觸發之後打到對應的 GA 後，就不用管現在的 G-xxx 追蹤碼了，因為當 GTM 觸發之後他就會把相關流量打給 GA，因此給工程師 GTM 追蹤碼之後就可以開始進後台做事啦：）
+
 # 結論
 
 # 參考好文
 
-- [GTM是什麼？入門必看的Google Tag Manager 代碼管理工具設定教學！](https://doordata.tw/blog/gtm-tutorial-for-beginner)
+- [GTM 是什麼？入門必看的 Google Tag Manager 代碼管理工具設定教學！](https://doordata.tw/blog/gtm-tutorial-for-beginner)
