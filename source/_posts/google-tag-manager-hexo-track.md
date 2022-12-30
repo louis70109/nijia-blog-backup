@@ -1,20 +1,25 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 設定 GTM & GA 來觀察你的 Hexo 部落格流量！
 tags:
+  - GTM
+  - GA
+categories: 學習紀錄
+date: 2022-12-30 15:38:24
 ---
 
-![](https://nijialin.com/images/common.jpeg)
 
 # 前言
 
+當你完成了一個網頁、部落格之後，當然最期待的就是開始有用戶開始使用啦！但過去在使用 GA3 來協助監控流量時很方便，只要放入 UA-xxxx + Script 基本上就完成了。但在一陣子之後需要搬到 GA4 + GTM 上，這讓許多記憶還停在舊方法上的人頭都很痛，因此以下就由頭痛的筆者帶各位操作一次新的 GTM + GA4 來放入 Hexo 的部落格中囉！
+
 - Google Tag Manager 以下簡稱 GTM
 - Google Analytics 簡稱 GA
-<!-- more -->
 
-# 流程圖
+## 流程圖
 
 ![](https://nijialin.com/images/2022/GTM/GTMflow.png)
+
+<!-- more -->
 
 # 介紹
 
@@ -116,13 +121,23 @@ themes > next > layout > _partials > head > head.swig
 ![](https://nijialin.com/images/2022/GTM/121findclass.png)
 
 假設我看看部落格左邊的欄位是否有人來按，滑鼠滑過去右鍵檢查，先找看看 id 或 class，且盡量以 id 為主，因為他是唯一值，在觀察流量上才會更準確。其次當然 class 也可以，不過同一層欄位可能就會一起被觀察到，但若像我一樣沒差的話那就沒問題嚕！
+
 ![](https://nijialin.com/images/2022/GTM/122addevent.png)
+
+到變數的地方，右邊可以`新增`來建立一個變數，因為 class 需要另外建立。
 ![](https://nijialin.com/images/2022/GTM/123addclassevent.png)
+
+按造圖片上的內容，我們來把變數的地方放入 class 的數值。
+
 ![](https://nijialin.com/images/2022/GTM/124addnewtriggerevent.png)
+
+建立完成變數之後，回到`代碼`的地方，去針對想監聽的 event 中去選上，然後數值在變數那已經設定過了，這邊就不用再多跑一次嚕！
 
 ## 大功告成！
 
 ![](https://nijialin.com/images/2022/GTM/125done.png)
+
+到了這邊基本上只要按右上角提交之後就完成啦，而接下的部分就是有關於要怎麼測試 GTM & GA 到底有沒有實際成功，但因這篇幅實在太長了～測試的部分留給下一篇吧！
 
 ## Q&A
 
