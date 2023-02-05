@@ -8,7 +8,6 @@ categories: JavaScript
 date: 2023-02-05 18:43:57
 ---
 
-
 ![](https://github.com/louis70109/qrcode-background-generator/raw/main/qrcode.png?raw=true)
 
 # 前言
@@ -23,6 +22,7 @@ date: 2023-02-05 18:43:57
 
 剛好最近也正在準備研討會，更是被這句話深深的打中，好奇心之下找到了[Awesome-qr.js](https://github.com/SumiMakito/Awesome-qr.js/blob/master/README.md)，以下就快速分享個實作心得。
 
+> <mark>[qrcode-background-generator 專案](https://github.com/louis70109/qrcode-background-generator)</mark>
 
 # 介紹
 
@@ -45,7 +45,7 @@ date: 2023-02-05 18:43:57
 
 ## 透過 `<img>` + Base64 來顯示圖片
 
-大致上在 [qrcode-background-generator 專案](https://github.com/louis70109/qrcode-background-generator)中都是網路上皆可找到的範例程式，而在本地開發時因為環境都很安裝許多套件，因此測試時好處理。
+大致上在 <mark>[qrcode-background-generator 專案](https://github.com/louis70109/qrcode-background-generator)</mark>中都是網路上皆可找到的範例程式，而在本地開發時因為環境都很安裝許多套件，因此測試時好處理。
 
 但部署上去後若沒 encode，則在 Server-side render 時 `res.write()` 裡則會變成亂碼。因此這邊就 `base64` 並透過 `<img>` 放上去，這樣就不會有問題了。
 
