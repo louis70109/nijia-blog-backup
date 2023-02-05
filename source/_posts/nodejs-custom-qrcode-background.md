@@ -15,13 +15,14 @@ date: 2023-02-05 18:43:57
 
 前幾天在 FB 社群中意外的點到[貝克菜 FB](https://www.facebook.com/tony.tsai/posts/pfbid063T7uwSme1k8dqqoDC2Q5RsJT9JVBBHB2n3bQiVo6LFZjPg39f8G3YSA1S7mBQQml?comment_id=1414642782639170&notif_id=1675426505084880&notif_t=feedback_reaction_generic&ref=notif) 中分享的內容(範例如下)，其中寫到：「<mark>讓你的 QR Code 更符合品牌形象，而不是停留在黑白</mark>」。
 
+<!-- more -->
+
 ![](https://scontent.frmq2-1.fna.fbcdn.net/v/t39.30808-6/328689276_1224285545106496_5760418307112715847_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=eFqj_2RKTwkAX99JEtM&_nc_ht=scontent.frmq2-1.fna&oh=00_AfBbEk1FeFkUNjxA2JlYyLLl-_G9TcCBSLixwAy9SFuWHw&oe=63E4F33A)
 
 > 引用至： [貝克菜 FB](https://www.facebook.com/tony.tsai/posts/pfbid063T7uwSme1k8dqqoDC2Q5RsJT9JVBBHB2n3bQiVo6LFZjPg39f8G3YSA1S7mBQQml?comment_id=1414642782639170&notif_id=1675426505084880&notif_t=feedback_reaction_generic&ref=notif)
 
 剛好最近也正在準備研討會，更是被這句話深深的打中，好奇心之下找到了[Awesome-qr.js](https://github.com/SumiMakito/Awesome-qr.js/blob/master/README.md)，以下就快速分享個實作心得。
 
-<!-- more -->
 
 # 介紹
 
