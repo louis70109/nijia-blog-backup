@@ -1,8 +1,8 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 【LINE TECHPULSE 2023】久違實體活動消息一把抓
+categories: LINE
 date: 2023-02-13 21:50:34
-tags:
+tags: ['LINE', 'TECHPULSE', '實體活動']
 ---
 
 
