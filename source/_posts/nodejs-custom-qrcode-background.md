@@ -10,9 +10,13 @@ date: 2023-02-05 18:43:57
 
 ![](https://github.com/louis70109/qrcode-background-generator/raw/main/qrcode.png?raw=true)
 
+> 來自 chatGPT 的說明：它可以生成一個帶有背景圖片的 QR code。這個 QR code 產生器可以通過 GitHub 上的項目連結 https://github.com/louis70109/qrcode-background-generator 來使用。特點是，它可以讓使用者自行選擇背景圖片，並在其上生成一個具有特殊圖案的 QR code，使 QR code 看起來更具吸引力和美感。這個 QR code 產生器可以給您的商業或個人項目帶來更多的創意和更佳的用戶體驗。
+
 # 前言
 
 前幾天在 FB 社群中意外的點到[貝克菜 FB](https://www.facebook.com/tony.tsai/posts/pfbid063T7uwSme1k8dqqoDC2Q5RsJT9JVBBHB2n3bQiVo6LFZjPg39f8G3YSA1S7mBQQml?comment_id=1414642782639170&notif_id=1675426505084880&notif_t=feedback_reaction_generic&ref=notif) 中分享的內容(範例如下)，其中寫到：「<mark>讓你的 QR Code 更符合品牌形象，而不是停留在黑白</mark>」。
+
+它可以讓你自行選擇背景圖片，使 QR code 看起來更有設計感和美觀。這對於您的商業或個人項目來說，可以提高曝光率和吸引力，並提高用戶體驗。
 
 <!-- more -->
 
@@ -84,3 +88,5 @@ apk add --update --no-cache \
 ![](https://github.com/louis70109/qrcode-background-generator/raw/main/qrcode.png?raw=true)
 
 - 畢竟處理畫面上用 Canvas 還是前端支援度比較高(瀏覽器)，因為 NodeJS 是使用 V8 引擎去實作的，因此支援度應該 > Python (?)，最後就選擇 NodeJS 作為這次的開發。
+
+最後，這個 QR code generator 是開源的，您可以透過 Pull Request 來修改這程式碼，以滿足您的特定需求。這對於開發者來說是一個很好的選擇，滿足您的商業或個人需求，並提高您的創意和體驗。
