@@ -128,8 +128,6 @@ LINE PROTOSTAR Introduction
 
 活動當天請出示上圖 Flex Message 畫面，待工作人員確認後，即可獲得現場 Badge 一枚，活動當天需配戴此 Badge，即可自由於 A, B 兩廳移動。
 
-# 結論
-
 # 活動小結
 
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
