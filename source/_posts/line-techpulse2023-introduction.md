@@ -53,7 +53,7 @@ How We Foster Rapid Development Workflows with a Performant and Extensible Build
 
 > 12:00 ~ 13:00 將會換場，預計 12:30 開放 A 廳 「在地化技術分享廳」
 
-## A 廳 - 在地化技術分享廳
+## A 廳 - 「在地化技術分享廳」
 
 由 LINE 台灣研發工程團隊為您介紹最新技術與在地化應用，帶大家深入基礎設施、自然語言處理、推薦引擎、回歸測試等相關技術議題。透過技術讓您更了解 LINE 服務背後的運作，請千萬別錯過！
 
@@ -68,7 +68,6 @@ How We Foster Rapid Development Workflows with a Performant and Extensible Build
   - #meme = high traffic guarantee? — Cracking the Code to LINE VOOM Virality
   - How to develop merchant browsing history feature in LINE SHOPPING App using Clean Architecture
   - Use test automation tool to improve quality of LINE SHOPPING
-
 - #### 14 : 05 – 14 : 30
   How LINE Invoice handle millions of transactions under limited 3rd party API?
 - #### 14 : 30 – 14 : 55
@@ -107,7 +106,7 @@ Lightning Speech 2
   -  SwiftUI with TCA in LINE LIVE Commerce Assistant App
   -  Global Common Platform - Introduction
 
-- ##### 16 : 00 – 17 : 00 
+- #### 16 : 00 – 17 : 00 
 LINE PROTOSTAR Introduction
   - 自由食間
   - Care724
