@@ -86,19 +86,46 @@ Brickmaster 是 LINE 購物於 2022 年推出的情境感知深度學習推薦�
 
 - [Opening the Black Box of NLP Models: A Self-Service NLP Platform for Content Moderation](https://speakerdeck.com/line_developers_tw/opening-the-black-box-of-nlp-models-a-self-service-nlp-platform-for-content-moderation-at-techpulse-2023)
 
-本次議程將分享如何透過 NLP 的技術減少不同服務在內容審核時的時間。透過我們提供的平台 - SmartText，讓內部用戶能夠建立各服務服務的NLP模型，讓 AI 能夠存在於各位日常生活中。然而，由於機器學習的可解釋性較弱，因此我們透過 XAI 和 EDA，讓用戶除了能夠了解模型是如何預測，並進一步進行故障排除和改進模型，提高模型性能和預測結果。
+本次議程將分享如何透過 NLP 的技術減少不同服務在內容審核時的時間。透過我們提供的平台 - SmartText，讓內部用戶能夠建立各服務服務的 NLP 模型，讓 AI 能夠存在於各位日常生活中。然而，由於機器學習的可解釋性較弱，因此我們透過 XAI 和 EDA，讓用戶除了能夠了解模型是如何預測，並進一步進行故障排除和改進模型，提高模型性能和預測結果。
 
 ## B 廳 - 「創新、技術分享廳」
 
-Devtools for Flex Message
-As an Engineer, let's build the CRM system via LINE Official Account 2.0
-Introduce to LINE MINI App
-Our approach to New Year's traffic of LINE STICKER
-A/B Testing in LINE TODAY – Recommendation Tab Case
-How JS task-force improve the quality of projects in LINE Taiwan
-SwiftUI with TCA in LINE LIVE Commerce Assistant App
-Global Common Platform - Introduction
-LINE PROTOSTAR Introduction
+- Devtools for Flex Message
+  -     「Flex 開發人員工具」是講者為了輔助開發 LINE chatbot 而製作的小工具，它主打的功能是在收到 Messaging API 的 Event 時會直接回傳 JSON，如果傳送 Message JSON 或是 Flex Message Simulator 複製的 JSON 給它，你還能直接看到這個 JSON 的呈現結果！在這個議程內將會詳細介紹這個小工具的使用方法。
+- As an Engineer, let's build the CRM system via LINE Official Account 2.0
+  - 面對越來越複雜的應用，系統面對許多客製化與多種不同串接，我們要如何透過 LINE 官方帳號 2.0 打造出屬於自己的 CRM 系統，這邊將採用 Rocket chat 為串接標地，透過 LINE Webhook / LINE API 同時與 LIFF 進行搭配，打造出可轉接窗口，多重狀態的 CRM 系統。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/10fa2046a5304b0585db7eb1c138c552?slide=3" title="Introduce to LINE MINI App @ TECHPULSE 2023" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
+
+- [Introduce to LINE MINI App](https://speakerdeck.com/line_developers_tw/introduce-to-line-mini-app-at-techpulse-2023)
+  - LINE MINI App 是基於 LIFF 框架實作的服務，讓用戶的網站能夠透過 Web 的整合其服務，並讓服務能夠釘選在 LINE 首頁。此議程將會帶大家透過許多案例，了解整合 LINE 服務間的許多差異與變化。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/acf9394909d5492d8b8ba0eb10145df2?slide=14" title="Our approach to New Year's traffic of LINE STICKER @ TECHPULSE 2023" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
+
+- [Our approach to New Year's traffic of LINE STICKER](https://speakerdeck.com/line_developers_tw/our-approach-to-new-years-traffic-of-line-sticker-at-techpulse-2023)
+- 在過年的期間，大家是否有透過貼圖與親朋好友拜年呢？本次議程將透過各種視角，帶大家了解我們是如何設計與規劃系統架構，因應不同時區的新年流量，並了解在新年期間是如何透過監控與營運機制，讓服務被有效運用。
+
+ <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/bc3268996e8a45d2a5d1d5118e18d090?slide=5" title="A/B Testing in LINE TODAY – Recommendation Tab Case @ TECHPULSE 2023" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
+
+- [A/B Testing in LINE TODAY – Recommendation Tab Case](https://speakerdeck.com/line_developers_tw/b-testing-in-line-today-recommendation-tab-case-at-techpulse-2023)
+  - 好的推薦功能讓用戶在看 LINE TODAY 時能夠看到關注的內容。本次將以 LINE TODAY 的推薦頁面為案例，帶大家了解 LINE TODAY 是如何透過 A/B Testing ，分析用戶對於不同功能的接受度，進一步了解用戶需求與體驗。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/bfc0df64ac164f7eb37296c023d0bdd3?slide=15" title="How JS task-force improve the quality of projects in LINE Taiwan @ TECHPULSE 2023" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
+
+- [How JS task-force improve the quality of projects in LINE Taiwan](https://speakerdeck.com/line_developers_tw/how-js-task-force-improve-the-quality-of-projects-in-line-taiwan-at-techpulse-2023)
+  - 隨著組織與產品線的擴大，長期的維護與經營就相當重要。因此 LINE 台灣成立了 Frontend Infra 團隊，Infra 團隊整合總部的規範與在地的開發經驗，讓前端團隊在開發初期或現有產線上能夠符合規範並增進開發品質。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4746d462ff2c4a7aae5ca63adc170285?slide=5" title="SwiftUI with TCA in LINE LIVE Commerce Assistant App @ TECHPULSE 2023" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
+
+- [SwiftUI with TCA in LINE LIVE Commerce Assistant App](https://speakerdeck.com/line_developers_tw/swiftui-with-tca-in-line-live-commerce-assistant-app-at-techpulse-2023)
+  - 隨著電商直播的需求越來越高，因此今年上半年將推出 LINE LIVE Commerce Assistant App，讓直播主能夠更快速地開啟直播。本次議程將透過 swiftUI 與 TCA，帶大家走訪在 App 開發時所會遇到的各種眉角，了解框架與測試所帶來的好處。
+- [Global Common Platform - Introduction](https://speakerdeck.com/line_developers_tw/global-common-platform-introduction-at-techpulse-2023)
+  - 在各式各樣的行銷需求之中，如何透過共用的平台，讓不同地區的操作人員，藉由平台的整合，把各種行銷內容透過抽獎、官方帳號、集點卡...功能交付給使用者。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/bb6c50048ff14c959786bab0073034e9?slide=10" title="LINE PROTOSTAR Introduction @ TECHPULSE 2023" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
+
+- [LINE PROTOSTAR Introduction](https://speakerdeck.com/line_developers_tw/line-protostar-introduction-at-techpulse-2023)
+  -     LINE 新星計劃歡迎開發者及新創公司一同加入，藉由提供免費 LINE 官方帳號、平台資源、技術支援，戰略夥伴諮詢輔導、提高您在 LINE 平台上開發的速度，並確保推出服務的成功。
 
 # 攤位系列
 
