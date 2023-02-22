@@ -103,7 +103,7 @@ Brickmaster 是 LINE 購物於 2022 年推出的情境感知深度學習推薦�
 ![](https://nijialin.com/images/2023/techpulse/滿場b.jpeg)
 
 - Devtools for Flex Message
-  -     「Flex 開發人員工具」是講者為了輔助開發 LINE chatbot 而製作的小工具，它主打的功能是在收到 Messaging API 的 Event 時會直接回傳 JSON，如果傳送 Message JSON 或是 Flex Message Simulator 複製的 JSON 給它，你還能直接看到這個 JSON 的呈現結果！在這個議程內將會詳細介紹這個小工具的使用方法。
+  - 「Flex 開發人員工具」是講者為了輔助開發 LINE chatbot 而製作的小工具，它主打的功能是在收到 Messaging API 的 Event 時會直接回傳 JSON，如果傳送 Message JSON 或是 Flex Message Simulator 複製的 JSON 給它，你還能直接看到這個 JSON 的呈現結果！在這個議程內將會詳細介紹這個小工具的使用方法。
 - As an Engineer, let's build the CRM system via LINE Official Account 2.0
   - 面對越來越複雜的應用，系統面對許多客製化與多種不同串接，我們要如何透過 LINE 官方帳號 2.0 打造出屬於自己的 CRM 系統，這邊將採用 Rocket chat 為串接標地，透過 LINE Webhook / LINE API 同時與 LIFF 進行搭配，打造出可轉接窗口，多重狀態的 CRM 系統。
 
