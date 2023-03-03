@@ -4,10 +4,8 @@ categories: 學習紀錄
 tags:
 ---
 
-
 ![](https://nijialin.com/images/2023/)
 ![](https://nijialin.com/images/common.jpeg)
-
 
 # 前言
 
@@ -40,13 +38,7 @@ LINE_Bot->User: 提供用戶下載原圖
 
 對我來說，因為我時常會手機跟電腦頻繁切換，因此即便在電腦上有存在書籤，但在手機上則可能會弄丟網址，而做成 Bot 就不容易弄丟，只要打開 LINE 即可。
 
-### 優點
-
-因為這次的 conversation 只需要兩步驟，因此就不用勞煩前端或 LIFF，也讓我這後端工程師少寫點不熟悉的 HTML ... XD
-
-### 缺點
-
-
+因為這次的`流程`只需要兩步驟，因此就不用勞煩前端或 LIFF，也讓我這後端工程師少寫點不熟悉的 HTML ... XD
 
 ### 圖片存哪好？
 
@@ -74,7 +66,6 @@ LINE 於 2019 年開始在台灣啟動「LINE 開發社群計畫」，將長期�
 - [2020 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2020-line-tw-devrel/)
 - [2019 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
 - [LINE Taiwan Developer Relations 2019 回顧與 2019 開發社群計畫報告](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019/)
-
 
 <style>
   section.compact {
