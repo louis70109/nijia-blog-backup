@@ -1,10 +1,13 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
+title: 客製 QR Code 就用 LINE Bot
 tags:
+  - LINE
+  - JavaScript
+categories: JavaScript
+date: 2023-03-06 21:14:48
 ---
 
-![](https://nijialin.com/images/2023/)
+
 ![](https://nijialin.com/images/common.jpeg)
 
 # 前言
@@ -46,26 +49,34 @@ LINE_Bot->User: 提供用戶下載原圖
 
 > https://raw.githubusercontent.com/帳號/專案/master/檔案.png
 
-但若串接 LINE Bot 上放入該檔案連結，在桌機版(v7.13)上目前會顯示不出來，但手機顯示的出來，但考量下載傳輸過程是會`壓縮圖片`(增加性能)，因此在實作上還是以傳連結的方式，讓使用者可以抓到原檔的大小，不會被平台壓縮。
+但若串接 LINE Bot 上放入該檔案連結，在桌機版(v7.13)上目前會顯示不出來，但手機顯示的出來，目前還不確定實際原因。另外考量下載傳輸過程是會`壓縮圖片`(增加性能)，因此在實作上還是以傳連結的方式，讓使用者可以抓到原檔的大小，不會被平台壓縮。
+
+> 良心建議: 上傳到 GitHub 專案上只是暫時解，建議還是放在自己的 S3 || Cloud Storage 比較好喔！😁
+
+## Talk too more, show me video!!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V8Q0b6ZFmbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+歡迎大家搬去自己的地方使用：[GitHub URL](https://github.com/louis70109/qrcode-background-generator)
+
+## [環境變數說明](https://github.com/louis70109/qrcode-background-generator/blob/main/.env.sample)
+
+- CHANNEL_ACCESS_TOKEN=
+  - LINE Bot 使用
+- CHANNEL_SECRET=
+  - LINE Bot 驗證使用
+- NODE_ENV=developer
+  - Developer 模式會讀取 .env 檔
+- BASE_URL=
+  - 當時哪來建立 ngrok 使用，不用管它
+- NGROK_TOKEN=
+  - 跟上面一樣，不用管它
+- GITHUB=
+  - 請放上 GitHub developer token，並修改[程式碼中 repo 的名稱](https://github.com/louis70109/qrcode-background-generator/blob/main/utils/github.js#L17)
 
 # 結論
 
-# 活動小結
-
-立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
-
-「LINE 開發者官方社群」官方帳號 ID：[@line_tw_dev](https://qr-official.line.me/gs/M_908lugfe_BW.png)
-
-<img src="https://qr-official.line.me/gs/M_908lugfe_BW.png" width="200" height="200">
-
-# 關於「LINE 開發社群計畫」
-
-LINE 於 2019 年開始在台灣啟動「LINE 開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，已經舉辦 30 場以上的活動。歡迎讀者們能夠持續回來查看最新的狀況。詳情請看:
-
-- [2021 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2021-line-tw-devrel/)
-- [2020 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2020-line-tw-devrel/)
-- [2019 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
-- [LINE Taiwan Developer Relations 2019 回顧與 2019 開發社群計畫報告](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019/)
+現在工具百百種，如果能運用這些技術解決日常生活中的問題就在好不過了！以上內容推薦給大家，如果看完本篇你也有相關的想法，歡迎以下留言給我知道唷！那我們下期見，西Ｕ～🥷
 
 <style>
   section.compact {
