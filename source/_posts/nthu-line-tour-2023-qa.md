@@ -1,8 +1,10 @@
 ---
 title: 清大資工「軟體專案管理」企業參訪
-categories: 研討會
 tags: []
+categories: 研討會
+date: 2023-03-17 18:11:13
 ---
+
 
 ![](https://vos.line-scdn.net/landpress-content-v2_1761/1679047399731.JPG?updatedAt=1679047400000)
 
