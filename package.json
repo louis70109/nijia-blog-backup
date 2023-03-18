@@ -16,7 +16,7 @@
     "d": "npm run hexo; git add . ; git commit -am 'Deploy'; git push"
   },
   "hexo": {
-    "version": "5.4.1"
+    "version": "5.2.0"
   },
   "dependencies": {
     "hexo": "5.4.1",
