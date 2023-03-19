@@ -188,7 +188,11 @@ Allow unauthenticated invocations to [my-fastapi-app] (y/N)?  y
 
 #### 測試是否正常運行
 
-若佈署成功的話，會在 command 中看到網址，點下去就知道成功能沒囉！若出現錯誤訊息，需要從 log 看一下是否有相關的東西沒安裝好唷！
+若佈署成功的話，會在 command 中看到網址，點下去基本上應該會先看到 Unauthorize 的資訊，這是因為 Cloud Run 初期設定會要求要認證才行(應該是符合資安)，因此前往以下圖片的地方開啟，就可以成功訪問網站囉！
+
+![](https://nijialin.com/images/2023/gcp/1.png)
+
+> 小知識：稍早測試用 8000 port 都失敗，看起來 Cloud Run 預設都是 8080，因此若自行佈署會失敗的話不仿看看 Port 有沒有設定錯喔！
 
 # 結論
 
