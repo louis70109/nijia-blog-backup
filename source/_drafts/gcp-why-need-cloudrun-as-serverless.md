@@ -1,7 +1,7 @@
 ---
-title: 【標題】題目
-categories: 學習紀錄
-tags:
+title: 【GCP】將 FastAPI 佈署上 Cloud Run
+categories: GCP
+tags: ['GCP', 'Cloud Run', 'ChatGPT', 'Serverless']
 ---
 
 ![](https://nijialin.com/images/common.jpeg)
@@ -20,11 +20,11 @@ tags:
 
 而使用 Severless 佈署，開發者可以完全不必考慮基礎架構的維護和擴展，只需專注於撰寫應用程式。當使用者發送請求時，Severless 會自動處理應用程式的擴展性和可用性，以應對流量高峰。因此，Severless 佈署不僅更省時、省力，也更加彈性和可靠度。
 
-由於 Severless 模型僅計費實際使用的計算資源和服務，因此在閒置時不會產生額外的成本，這對開發者和企業而言都是非常有利的。
+由於 Severless 僅計費實際使用的計算資源和服務，因此在閒置時不會產生額外的成本，這對開發者和企業而言都是非常有利的。
 
 ### 御三家比較
 
-以下是 GCP、AWS、Azure 三家 Severless 服務的比較表。這裡僅列舉了一些常見的計算資源和服務，如有其他需求，請參考各家雲服務商的官方文檔。
+以下是 GCP、AWS、Azure 三家 Severless 服務的比較表。這裡僅列舉了一些常見的計算資源和服務。
 
 | Cloud Provider | 計算資源 | 代價單位 |  最小費用   |                其他服務                 |
 | :------------: | :------: | :------: | :---------: | :-------------------------------------: |
@@ -44,7 +44,7 @@ tags:
 |                | 網路傳輸 |  每 GB   |    0.08     |                                         |
 |                | 空間儲存 |  每 GB   |   0.0217    |                                         |
 
-以上價格僅供參考，具體的費用和條件可能會因各家雲服務商的不同而有所不同。建議使用者在選擇之前，要詳細閱讀各家雲服務商的條款和費用結構，以選擇最適合自己的服務。
+> 以上價格僅供參考，具體的費用和條件可能會因各家雲服務商而有所不同。建議使用者在選擇之前，要詳細閱讀各家雲服務商的條款和費用，選擇最適合自己的服務。
 
 ## GCP 介紹
 
@@ -65,11 +65,52 @@ Google Cloud Run 具有以下優點，使其成為開發人員選擇 Severless �
 5. 支援多種程式語言和框架，可滿足開發人員不同的需求。
 6. 無需管理基礎設施，開發人員可以專注於應用程式的開發和佈署，而不是基礎設施的管理。
 
+> Serverless 都會有 Cold start 的問題，請參考我過去寫的文章 [這篇文章](https://nijialin.com/2020/02/16/serverless-cold-start/)
+
 ## 如何佈署到 Cloud Run 上
 
 以下是將 FastAPI 佈署到 Google Cloud Run 上的執行指令的步驟：
 
-### 1. 建立 Dockerfile
+```
+mkdir my_fastapi/
+cd my_fastapi/
+```
+### 0. 建立 main.py
+
+```
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+```
+
+### 1. 建立 requirements.txt 並放入以下內容
+
+```
+fastapi
+uvicorn
+```
+
+#### 安裝相依套件
+
+```
+pip install -r requirements.txt
+```
+
+#### 測試一下
+
+```
+python main.py
+curl http://localhost:8000/
+```
+### 2. 建立 Dockerfile
 
 當你需要在不同的環境中運行 FastAPI 應用程式時，Docker 提供了一種簡單而有效的方式。以下是一個基於 Python 3.9、使用 Uvicorn 和 Gunicorn 作為伺服器的 FastAPI Dockerfile 範例：
 
@@ -92,53 +133,42 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 
 ```
 
-這個 Dockerfile 使用 tiangolo/uvicorn-gunicorn-fastapi 映像檔作為基底，並將應用程式碼複製到容器中，並安裝必要的套件。最後，使用 CMD 指令啟動 FastAPI 應用程式。
+這個 Dockerfile 使用 `tiangolo/uvicorn-gunicorn-fastapi` 映像檔作為基底，並將應用程式碼複製到容器中，並安裝必要的套件。最後，使用 CMD 指令啟動 FastAPI 應用程式。
 
 > 請注意，上述的 Dockerfile 需要依照您實際上的程式進行修改，以符合您的需求和環境。
 
-### 2. 建立 requirements.txt 檔案
-
-```
-fastapi
-uvicorn
-```
-
-### 3. 使用 Dockerfile 建立 Docker 映像檔
-
-```
-docker build -t my-fastapi-app .
-```
-
-### 4. 將 Docker 映像檔上傳到 Google Container Registry
-
-```
-docker tag my-fastapi-app gcr.io/[PROJECT_ID]/my-fastapi-app
-docker push gcr.io/[PROJECT_ID]/my-fastapi-app
-```
-
 ### 5. 佈署到 Google Cloud Run
 
+#### 安裝 gcloud command line
+
+gcloud 是 Google Cloud Platform 的命令行工具，它提供了一個簡單的方法來管理您在 GCP 上的資源。以下是安裝和使用 gcloud 的基本步驟：
+
+前往 [Google Cloud SDK 官方網站](https://cloud.google.com/sdk/docs/install) 下載對應作業系統的安裝檔案。
+
+安裝 Cloud SDK，按照安裝提示進行操作，並選擇您需要安裝的元件。您可以在安裝過程中選擇安裝 gcloud CLI。
+
+安裝完成後，在終端或命令提示字元中輸入 gcloud --version 檢查安裝是否成功。
+
+#### gcloud 基礎設定
+
+- gcloud init：初始化 gcloud CLI，該指令會提示登錄 Google 帳戶，並選擇您要使用的 GCP 項目。
+- `gcloud config set project PROJECT_ID`：設定 GCP Project ID，以便 gcloud CLI 與該項目交互使用。
+
+- `gcloud auth login`：登錄 Google 帳戶。
+
+#### 透過 gcloud 佈署
 ```
-gcloud run deploy --image gcr.io/[PROJECT_ID]/my-fastapi-app --platform managed
+gcloud run deploy my-fastapi-app --source .
 ```
 
 這樣就可以將 FastAPI 應用程式成功佈署到 Google Cloud Run 上了。
 
+> 現在無須手動將 Docker 映像檔上傳到 Google Container Registry，在執行 gclou deploy 時就會幫忙上傳 cloud storage & Registry 中了，但需要注意的是: `記得定期清理 cloud storage`(佈署一次一個檔案)，否則會一直收儲存費用唷！
+
+
 #### 測試是否正常運行
 
-```
-gcloud run services describe [SERVICE-NAME] --platform managed
-```
-
-上述指令中的 [SERVICE-NAME] 需要替換為您的服務名稱。成功運行後，您應該可以看到類似以下的輸出：
-
-```
-status:
-  conditions:
-  - lastTransitionTime: '2022-04-01T01:23:45Z'
-    status: 'True'
-    type: Ready
-```
+若佈署成功的話，會在 command 中看到網址，點下去就知道成功能沒囉！若出現錯誤訊息，需要從 log 看一下是否有相關的東西沒安裝好唷！
 
 # 結論
 
