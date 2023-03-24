@@ -16,6 +16,8 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Who am I
         run: |
           git config --global user.email "louis70109@gmail.com"
