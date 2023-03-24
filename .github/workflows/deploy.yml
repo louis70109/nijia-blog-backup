@@ -16,29 +16,27 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
-      - name: git config
-        run: |
-            git config --global user.name "Nijia Lin"
-            git config --global user.email louis70109@gmail.com
-      - name: Cache node modules
-        uses: actions/cache@v1
-        id: cache
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.OS }}-npm-cache
           restore-keys: |
-            ${{ runner.os }}-node-    
-      # Deploy hexo blog website.
+            ${{ runner.OS }}-npm-cache
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run hexo
       - name: Deploy
-        id: deploy
-        uses: sma11black/hexo-action@v1.0.3
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.BLOG_DEPLOY_TOKEN }}
-          commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
-      # Use the output from the `deploy` step(use for test action)
-      - name: Get the output
-        run: |
-          echo "${{ steps.deploy.outputs.notify }}"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
       - name: success deploy
         if: ${{ success() }}
         run: |
