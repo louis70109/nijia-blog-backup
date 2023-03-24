@@ -1,16 +1,16 @@
 name: Hexo Build and Deploy
 
-# on:
-#   push:
-#     branches: [ master ]
-#   pull_request:
-#     branches: [ master ]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   Install-Node-package:
     name: Install Node package
-    runs-on: ubuntu-latest
-#     timeout-minutes: 5
+    runs-on: macos-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v3
       - name: Cache node modules
