@@ -16,7 +16,9 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
-
+        run: |
+            git config --global user.name "Nijia Lin"
+            git config --global user.email louis70109@gmail.com
       - name: Cache node modules
         uses: actions/cache@v1
         id: cache
