@@ -101,6 +101,6 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  # repo: https://github.com/louis70109/louis70109.github.io
-  repo: git@github.com:louis70109/louis70109.github.io.git
+  repo: https://github.com/louis70109/louis70109.github.io
+  # repo: git@github.com:louis70109/louis70109.github.io.git
   branch: master
