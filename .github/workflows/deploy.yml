@@ -12,17 +12,29 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          submodules: true
       - name: Cache node modules
-        uses: actions/cache@v3
+        uses: actions/cache@v1
+        id: cache
         with:
           path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-      - uses: yrpang/github-actions-hexo@v1.3
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-    
+      # Deploy hexo blog website.
+      - name: Deploy
+        id: deploy
+        uses: sma11black/hexo-action@v1.0.3
         with:
-          deploykey: ${{ secrets.BLOG_DEPLOY_TOKEN }}
-          username: nijia-blog[bot]
-          email: nijia-blog-backup@example.com
+          deploy_key: ${{ secrets.BLOG_DEPLOY_TOKEN }}
+          commit_msg: ${{ github.event.head_commit.message }}  # (or delete this input setting to use hexo default settings)
+      # Use the output from the `deploy` step(use for test action)
+      - name: Get the output
+        run: |
+          echo "${{ steps.deploy.outputs.notify }}"
       - name: success deploy
         if: ${{ success() }}
         run: |
