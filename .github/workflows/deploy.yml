@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
+      - name: git config
         run: |
             git config --global user.name "Nijia Lin"
             git config --global user.email louis70109@gmail.com
