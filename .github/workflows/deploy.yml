@@ -16,6 +16,10 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
+      - name: Who am I
+        run: |
+          git config --global user.email "louis70109@gmail.com"
+          git config --global user.name "Nijia Lin"
       - uses: actions/checkout@v2
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
