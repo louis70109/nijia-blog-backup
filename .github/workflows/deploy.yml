@@ -1,28 +1,44 @@
 name: Hexo Build and Deploy
 
-# on:
-#   push:
-#     branches: [ master ]
-#   pull_request:
-#     branches: [ master ]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   Install-Node-package:
     name: Install Node package
     runs-on: ubuntu-latest
-#     timeout-minutes: 5
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v3
-      - name: Cache node modules
-        uses: actions/cache@v3
+      - name: Checkout
+        uses: actions/checkout@master
+        
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
         with:
           path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-      - uses: yrpang/github-actions-hexo@v1.3
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: |
+          git config --global user.email "louis70109@gmail.com"
+          git config --global user.name "Nijia Lin"
+          npm run hexo
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          deploykey: ${{ secrets.BLOG_DEPLOY_TOKEN }}
-          username: nijia-blog[bot]
-          email: nijia-blog-backup@example.com
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
       - name: success deploy
         if: ${{ success() }}
         run: |
