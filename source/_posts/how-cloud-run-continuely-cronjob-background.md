@@ -1,5 +1,5 @@
 ---
-title: 【GCP 基本操作】如何讓 Cloud Run 持續執行背景程式
+title: 【GCP】如何讓 Cloud Run 持續執行背景程式
 tags:
   - Cold Start
   - GCP
