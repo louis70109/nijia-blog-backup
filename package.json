@@ -6,7 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "server": "hexo server",
-    "hexo": "hexo generate&& hexo clean -g && hexo algolia && hexo deploy ",
+    "hexo": "hexo clean -g && hexo generate && hexo algolia && hexo deploy ",
     "new": "hexo new draft ",
     "sync": "git pull",
     "deploy": "hexo deploy",
