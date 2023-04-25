@@ -12,11 +12,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: recursive
-      - name: Commit report
-        run: |
-          git config --global user.name 'NiJia Lin'
-          git config --global user.email 'actions@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - name: Use Node.js 16
         uses: actions/setup-node@v2
         with:
@@ -38,7 +33,11 @@ jobs:
         # env:
         #   HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
       - name: deploy
-        run: npx hexo deploy
+        run: |
+          git config --global user.name 'NiJia Lin'
+          git config --global user.email 'actions@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          npx hexo deploy
 
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3
