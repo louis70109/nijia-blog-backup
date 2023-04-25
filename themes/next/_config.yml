@@ -717,13 +717,13 @@ busuanzi_count:
 # Algolia Search
 # For more information: https://www.algolia.com
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 10
   labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
+    input_placeholder: 搜尋文章 & 內容
+    hits_empty: "找不到您輸入的關鍵字: ${query}"
+    hits_stats: "找到了 ${hits} 筆結果，花了 ${time} ms"
 
 # Local Search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb

@@ -6,20 +6,21 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "server": "hexo server",
-    "hexo": "hexo generate; hexo clean -g; hexo deploy ",
+    "hexo": "hexo generate&& hexo clean -g && hexo algolia && hexo deploy ",
     "new": "hexo new draft ",
     "sync": "git pull",
     "deploy": "hexo deploy",
     "//": "Deploy to the Nijia Blog!!",
     "p": "hexo publish",
-    "pd": "git add . ; git commit -am 'Publish'; git push",
-    "d": "npm run hexo; git add . ; git commit -am 'Deploy'; git push"
+    "pd": "git add . && git commit -am 'Publish' && git push",
+    "d": "npm run hexo ; git add . ; git commit -am 'Deploy'&& git push"
   },
   "hexo": {
     "version": "5.4.1"
   },
   "dependencies": {
     "hexo": "5.4.1",
+    "hexo-algoliasearch": "^1.0.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-filter-plantuml": "^2.1.1",
     "hexo-filter-sequence": "^1.0.3",
