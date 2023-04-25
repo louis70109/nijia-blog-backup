@@ -31,8 +31,17 @@ jobs:
         run: npx hexo algolia
         # env:
         #   HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+
+      - uses: actions/checkout@v1
+      - name: Commit report
+        run: |
+          git config --global user.name 'NiJia Lin'
+          git config --global user.email 'actions@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          hexo deploy
+
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./public
