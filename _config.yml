@@ -97,23 +97,6 @@ search:
   content: true
   format: html
 
-algolia:
-  appId: "SY0XRJ8TKG" 
-  applicationID: "SY0XRJ8TKG"
-  apiKey: "3598514b8d34a9c4d1fa895de761cfa2"
-  adminApiKey: "3598514b8d34a9c4d1fa895de761cfa2"
-  chunkSize: 5000
-  indexName: "忍者工坊"
-  fields:
-    - content:strip:truncate,0,500
-    - excerpt:strip
-    - gallery
-    - permalink
-    - photos
-    - slug
-    - tags
-    - title
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
