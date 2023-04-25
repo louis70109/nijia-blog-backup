@@ -938,7 +938,6 @@ vendors:
   # Algolia Search
   # algolia_search: //cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
   # instant_search: //cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
-  algolia_search:
   instant_search:
 
   # Mermaid
@@ -980,20 +979,3 @@ vendors:
 css: css
 js: js
 images: images
-
-algolia:
-  appId: "SY0XRJ8TKG" 
-  applicationID: "SY0XRJ8TKG"
-  apiKey: "3598514b8d34a9c4d1fa895de761cfa2"
-  adminApiKey: "3598514b8d34a9c4d1fa895de761cfa2"
-  chunkSize: 5000
-  indexName: "忍者工坊"
-  fields:
-    - content:strip:truncate,0,500
-    - excerpt:strip
-    - gallery
-    - permalink
-    - photos
-    - slug
-    - tags
-    - title

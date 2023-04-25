@@ -86,6 +86,22 @@ use_date_for_updated: 'date'
 per_page: 10
 pagination_dir: page
 
+algolia:
+  appId: "SY0XRJ8TKG" 
+  applicationID: "SY0XRJ8TKG"
+  apiKey: "3598514b8d34a9c4d1fa895de761cfa2"
+  adminApiKey: "3598514b8d34a9c4d1fa895de761cfa2"
+  chunkSize: 5000
+  indexName: "nijia_factor"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
