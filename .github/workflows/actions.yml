@@ -34,8 +34,9 @@ jobs:
         #   HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
       - name: deploy
         run: |
-          git config --global user.name 'NiJia Lin'
-          git config --global user.email 'louis70109@gmail.com'
+          git remote set-url origin git@github.com:louis70109/nijia-blog-backup.git
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git config --global init.defaultBranch 'master'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           npx hexo deploy
