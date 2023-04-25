@@ -36,6 +36,7 @@ jobs:
         run: |
           git config --global user.name 'NiJia Lin'
           git config --global user.email 'actions@users.noreply.github.com'
+          git config --global init.defaultBranch 'master'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           npx hexo deploy
 
