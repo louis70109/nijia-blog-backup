@@ -35,7 +35,7 @@ jobs:
       - name: deploy
         run: |
           git remote set-url origin git@github.com:louis70109/nijia-blog-backup.git
-          git config --global user.name 'NiJia Lin'
+          git config --global user.name 'louis70109'
           git config --global user.email 'louis70109@gmail.com'
           git config --global init.defaultBranch 'master'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
